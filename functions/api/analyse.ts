@@ -548,57 +548,169 @@ INSTANZENWEG ÜBERBLICK:
 Antworte IMMER präzise auf Deutsch. Passe den antwortbrief.inhalt konkret an den analysierten Brieftyp an.
 Für Strafrecht, Asylrecht, und Fremdenrecht: immer sofort Anwalt empfehlen.`
 
-// ── Handler ───────────────────────────────────────────────────────
+// ── Hilfsfunktionen ──────────────────────────────────────────────
+
+// JSON sicher aus API-Antwort extrahieren
+function extractJson(raw: string): string {
+  // Markdown-Backticks entfernen
+  let text = raw.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim()
+  // Erstes { bis letztes } suchen
+  const first = text.indexOf('{')
+  const last  = text.lastIndexOf('}')
+  if (first !== -1 && last > first) {
+    return text.substring(first, last + 1)
+  }
+  return text
+}
+
+// Alle Pflichtfelder absichern mit sinnvollen Defaults
+function validateResult(r: any): any {
+  const validDringlichkeit = ['hoch', 'mittel', 'niedrig']
+  return {
+    brieftyp:           r.brieftyp           || 'Behördenschreiben',
+    behoerde:           r.behoerde           || 'Österreichische Behörde',
+    dringlichkeit:      validDringlichkeit.includes(r.dringlichkeit) ? r.dringlichkeit : 'mittel',
+    einfache_erklaerung: r.einfache_erklaerung || 'Analyse konnte nicht vollständig durchgeführt werden.',
+    frist: {
+      hat_frist:    r.frist?.hat_frist    ?? false,
+      frist_text:   r.frist?.frist_text   || '',
+      frist_hinweis: r.frist?.frist_hinweis || '',
+    },
+    handlungsempfehlung: {
+      aktion:    r.handlungsempfehlung?.aktion    || 'Sachverhalt mit Fachkraft klären',
+      bis_wann:  r.handlungsempfehlung?.bis_wann  || 'So bald wie möglich',
+      wie:       r.handlungsempfehlung?.wie       || '',
+      prioritaet: r.handlungsempfehlung?.prioritaet || 'normal',
+    },
+    was_tun:           Array.isArray(r.was_tun)           ? r.was_tun           : [],
+    rechtsmittel:      Array.isArray(r.rechtsmittel)      ? r.rechtsmittel      : [],
+    rechtsgrundlage:   Array.isArray(r.rechtsgrundlage)   ? r.rechtsgrundlage   : [],
+    wichtige_hinweise: Array.isArray(r.wichtige_hinweise) ? r.wichtige_hinweise : [],
+    konsequenzen: {
+      frist_verpasst:             r.konsequenzen?.frist_verpasst             || '',
+      naechste_schritte_behoerde: Array.isArray(r.konsequenzen?.naechste_schritte_behoerde)
+                                  ? r.konsequenzen.naechste_schritte_behoerde : [],
+      langfristige_folgen:        r.konsequenzen?.langfristige_folgen        || '',
+    },
+    beratungsstellen: Array.isArray(r.beratungsstellen) ? r.beratungsstellen : [],
+  }
+}
+
+// JSON mit mehreren Fallback-Strategien parsen
+function parseApiResponse(rawText: string): { result: any; antwortbrief: any } {
+
+  // Strategie 1: Direkt als vollständiges JSON parsen
+  try {
+    const json = extractJson(rawText)
+    const parsed = JSON.parse(json)
+    const antwortbrief = parsed.antwortbrief || null
+    const result = { ...parsed }
+    delete result.antwortbrief
+    return { result, antwortbrief }
+  } catch (_) { /* weiter mit Fallback */ }
+
+  // Strategie 2: JSON ohne antwortbrief parsen (falls am Ende abgeschnitten)
+  try {
+    let text = extractJson(rawText)
+    // antwortbrief-Feld entfernen falls JSON dadurch ungültig
+    const letterKey = text.lastIndexOf('"antwortbrief"')
+    if (letterKey > 0) {
+      // Schneide vor antwortbrief ab und schließe JSON korrekt
+      let truncated = text.substring(0, letterKey)
+      truncated = truncated.replace(/,\s*$/, '') + '}'
+      const parsed = JSON.parse(truncated)
+      return { result: parsed, antwortbrief: null }
+    }
+  } catch (_) { /* weiter */ }
+
+  // Strategie 3: Notfall-Antwort mit Roh-Text
+  return {
+    result: {
+      brieftyp: 'Behördenschreiben',
+      behoerde: 'Österreichische Behörde',
+      dringlichkeit: 'mittel',
+      einfache_erklaerung: 'Die automatische Analyse konnte den Brief nicht vollständig verarbeiten. Bitte wende dich an die Arbeiterkammer oder einen Anwalt.',
+      frist: { hat_frist: false, frist_text: '', frist_hinweis: 'Fristen bitte manuell prüfen!' },
+      handlungsempfehlung: { aktion: 'Fachkraft kontaktieren', bis_wann: 'So bald wie möglich', wie: 'Arbeiterkammer (kostenlos): arbeiterkammer.at', prioritaet: 'hoch' },
+      was_tun: ['Brief sorgfältig durchlesen', 'Datum der Zustellung notieren', 'Arbeiterkammer oder Anwalt kontaktieren'],
+      rechtsmittel: [],
+      rechtsgrundlage: [],
+      wichtige_hinweise: ['Analyse war nicht vollständig erfolgreich — bitte Fachkraft konsultieren'],
+      konsequenzen: { frist_verpasst: '', naechste_schritte_behoerde: [], langfristige_folgen: '' },
+      beratungsstellen: ['Arbeiterkammer (kostenlos): arbeiterkammer.at', 'Volksanwaltschaft: volksanwaltschaft.gv.at'],
+    },
+    antwortbrief: null,
+  }
+}
+
+// ── Hauptfunktion: Anthropic API aufrufen ─────────────────────────
+async function callAnthropic(
+  briefText: string,
+  includeLetter: boolean,
+  apiKey: string
+): Promise<string> {
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 4000,
+      system: SYSTEM_PROMPT,
+      messages: [{
+        role: 'user',
+        content: `Analysiere dieses österreichische Behördenschreiben${includeLetter ? ' und erstelle einen passenden Antwortbrief im antwortbrief-Feld' : ' (antwortbrief-Feld kann leer bleiben)'}.\n\nBrieftext:\n${briefText}`
+      }],
+    }),
+  })
+
+  if (!response.ok) {
+    const err = await response.text()
+    throw new Error(`Anthropic API ${response.status}: ${err.substring(0, 200)}`)
+  }
+
+  const data = await response.json() as any
+  return data.content?.[0]?.text || ''
+}
+
+// ── Cloudflare Pages Function Handler ────────────────────────────
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
+    // Request lesen
     const body = await context.request.json() as {
-      briefText: string
-      includeLetter: boolean
+      briefText?: string
+      includeLetter?: boolean
     }
 
-    const { briefText, includeLetter } = body
+    const rawBriefText  = (body.briefText  || '').trim()
+    const includeLetter = body.includeLetter ?? false
 
-    if (!briefText || briefText.trim().length < 20) {
+    // Mindestlänge prüfen
+    if (rawBriefText.length < 20) {
       return new Response(
-        JSON.stringify({ error: 'Brieftext zu kurz (mindestens 20 Zeichen)' }),
+        JSON.stringify({ error: 'Brieftext zu kurz (mindestens 20 Zeichen).' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
       )
     }
 
-    const anthropicResponse = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': context.env.ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 2500,
-        system: SYSTEM_PROMPT,
-        messages: [{
-          role: 'user',
-          content: `Analysiere dieses österreichische Behördenschreiben${includeLetter ? ' und erstelle einen passenden Antwortbrief' : ''} (antwortbrief-Feld immer ausfüllen):\n\n${briefText.trim()}`
-        }],
-      })
-    })
+    // Eingabe auf max. 8000 Zeichen kürzen (verhindert Token-Überschreitung)
+    // Österreichische Bescheide sind selten länger als das Relevante
+    const MAX_CHARS = 8000
+    const briefText = rawBriefText.length > MAX_CHARS
+      ? rawBriefText.substring(0, MAX_CHARS) + '\n\n[Hinweis: Text wurde auf 8000 Zeichen gekürzt]'
+      : rawBriefText
 
-    if (!anthropicResponse.ok) {
-      const errText = await anthropicResponse.text()
-      console.error('Anthropic Fehler:', errText)
-      return new Response(
-        JSON.stringify({ error: 'KI-Analyse fehlgeschlagen. Bitte erneut versuchen.' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      )
-    }
+    // API aufrufen
+    const rawApiResponse = await callAnthropic(briefText, includeLetter, context.env.ANTHROPIC_API_KEY)
 
-    const anthropicData = await anthropicResponse.json() as any
-    const rawText = anthropicData.content?.[0]?.text || ''
-    const cleanText = rawText.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim()
-    const parsed = JSON.parse(cleanText)
+    // Antwort parsen (mit Fallbacks)
+    const { result: rawResult, antwortbrief } = parseApiResponse(rawApiResponse)
 
-    const antwortbrief = parsed.antwortbrief || null
-    const { antwortbrief: _, ...result } = parsed
+    // Alle Felder validieren und mit Defaults absichern
+    const result = validateResult(rawResult)
 
     return new Response(
       JSON.stringify({
@@ -608,10 +720,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       { headers: { 'Content-Type': 'application/json' } }
     )
 
-  } catch (err) {
-    console.error('Fehler:', err)
+  } catch (err: any) {
+    // Unerwartete Fehler loggen aber nie sensible Daten zurückgeben
+    console.error('AmtsKlar Analyse-Fehler:', err?.message || err)
     return new Response(
-      JSON.stringify({ error: 'Interner Fehler. Bitte erneut versuchen.' }),
+      JSON.stringify({ error: 'Analyse fehlgeschlagen. Bitte erneut versuchen.' }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     )
   }

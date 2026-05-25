@@ -82,6 +82,11 @@ const URGENCY = {
 // Anzahl kostenloser Analysen
 const FREE_LIMIT = 1
 
+// Zeichenlimit für Texteingabe
+const CHAR_LIMIT   = 8000  // Ab hier wird Text gekürzt
+const CHAR_WARN    = 6000  // Ab hier gelbe Warnung
+const CHAR_DANGER  = 7500  // Ab hier rote Warnung
+
 // LocalStorage Keys
 const SK = {
   count: 'ak_count',   // Anzahl bisheriger Analysen
@@ -236,6 +241,10 @@ export default function Analyse() {
   const [isDragOver, setIsDragOver]   = useState(false)
   const [pdfLoading, setPdfLoading]   = useState(false)
   const [pdfFileName, setPdfFileName] = useState<string | null>(null)
+
+  // State: Lange Texte / Kürzungswarnung
+  const [wasTruncated, setWasTruncated]           = useState(false)
+  const [showLongTextWarning, setShowLongTextWarning] = useState(false)
 
   // ── Initialisierung beim Start ──────────────────────────────────
   useEffect(() => {
@@ -399,12 +408,12 @@ export default function Analyse() {
   }
 
   // ── Brief analysieren ───────────────────────────────────────────
-  const analyse = async () => {
+  const analyse = async (forceAnalyse = false) => {
     const trimmed = briefText.trim()
 
-    // Validierung
-    if (trimmed.length < 30) {
-      setError('Bitte den vollständigen Brieftext einfügen (mindestens 30 Zeichen).')
+    // Mindestlänge
+    if (trimmed.length < 20) {
+      setError('Bitte den vollständigen Brieftext einfügen (mindestens 20 Zeichen).')
       return
     }
 
@@ -414,22 +423,25 @@ export default function Analyse() {
       return
     }
 
+    // Wenn Text sehr lang: Warnung zeigen (außer User hat bereits bestätigt)
+    if (!forceAnalyse && trimmed.length > CHAR_LIMIT) {
+      setShowLongTextWarning(true)
+      return
+    }
+
+    setShowLongTextWarning(false)
     setLoading(true)
     setError(null)
     setAntwortbrief(null)
+    setWasTruncated(false)
 
     try {
-      // API aufrufen
-      // includeLetter: nur wenn Plan Brief-Zugang hat
       const includeLetter = planHatBrief(plan)
 
       const res = await fetch('/api/analyse', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          briefText: trimmed,
-          includeLetter,
-        }),
+        body: JSON.stringify({ briefText: trimmed, includeLetter }),
       })
 
       const data = await res.json()
@@ -438,12 +450,11 @@ export default function Analyse() {
         throw new Error(data.error || 'Unbekannter Fehler')
       }
 
-      // Ergebnisse setzen
       setResult(data.result)
       setAntwortbrief(data.antwortbrief || null)
+      setWasTruncated(trimmed.length > CHAR_LIMIT)
       setScreen('result')
 
-      // Zähler erhöhen und speichern
       const newCount = count + 1
       setCount(newCount)
       localStorage.setItem(SK.count, String(newCount))
@@ -506,6 +517,8 @@ export default function Analyse() {
     setError(null)
     setCopied(false)
     setPdfFileName(null)
+    setWasTruncated(false)
+    setShowLongTextWarning(false)
   }
 
   // ── Dringlichkeits-Styling ──────────────────────────────────────
@@ -769,7 +782,80 @@ export default function Analyse() {
         </div>
       )}
 
-      {/* ── HEADER ── */}
+      {/* ── LANGER TEXT WARNUNG MODAL ── */}
+      {showLongTextWarning && (
+        <div style={{
+          position: 'fixed', inset: 0, background: 'rgba(15,36,64,0.7)',
+          zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20,
+        }}>
+          <div style={{
+            background: '#FFFFFF', border: '1px solid #C5D8ED',
+            borderRadius: 16, padding: '28px 24px', maxWidth: 480, width: '100%',
+            boxShadow: '0 20px 60px rgba(15,36,64,0.2)',
+          }}>
+            <div style={{ textAlign: 'center', marginBottom: 20 }}>
+              <div style={{ fontSize: 32, marginBottom: 10 }}>📄</div>
+              <div style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 700, color: '#0F2440', marginBottom: 8 }}>
+                Sehr langer Text erkannt
+              </div>
+              <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.65 }}>
+                Ihr Text hat <strong>{briefText.trim().length.toLocaleString('de-AT')} Zeichen</strong> — das entspricht einem sehr umfangreichen Bescheid (z.B. mehrseitiger Baubescheid).
+              </div>
+            </div>
+
+            {/* Info-Box */}
+            <div style={{
+              background: '#F5F8FC', border: '1px solid #C5D8ED',
+              borderRadius: 10, padding: '14px 16px', marginBottom: 20,
+            }}>
+              <div style={{ fontSize: 13, fontWeight: 600, color: '#0F2440', marginBottom: 8 }}>
+                💡 Was wird analysiert?
+              </div>
+              <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.65 }}>
+                AmtsKlar analysiert die ersten 8.000 Zeichen. Bei österreichischen Bescheiden enthält dieser Teil typischerweise:
+              </div>
+              <ul style={{ margin: '8px 0 0 16px', padding: 0, fontSize: 13, color: '#2A5080', lineHeight: 1.8 }}>
+                <li><strong>Spruch</strong> (die eigentliche Entscheidung)</li>
+                <li><strong>Begründung</strong> (Erklärung)</li>
+                <li><strong>Rechtsmittelbelehrung</strong> (Fristen)</li>
+              </ul>
+            </div>
+
+            {/* Empfehlung */}
+            <div style={{
+              background: 'rgba(201,150,58,0.08)', border: '1px solid rgba(201,150,58,0.25)',
+              borderRadius: 10, padding: '12px 16px', marginBottom: 20,
+              fontSize: 13, color: '#8B6020', lineHeight: 1.65,
+            }}>
+              <strong>💡 Tipp:</strong> Für den besten Analyse-Ergebnis: Fügen Sie nur den <strong>Spruch</strong> (Seite 1-2) und die <strong>Rechtsmittelbelehrung</strong> (letzte Seite) ein — das sind die wichtigsten Teile für Fristen und Handlungsempfehlungen.
+            </div>
+
+            {/* Buttons */}
+            <div style={{ display: 'flex', gap: 10, flexDirection: 'column' }}>
+              <button
+                onClick={() => analyse(true)}
+                style={{
+                  padding: '13px', background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
+                  border: 'none', borderRadius: 10, fontSize: 15, fontWeight: 700,
+                  color: '#FFFFFF', cursor: 'pointer',
+                }}
+              >
+                Trotzdem analysieren (erste 8.000 Zeichen)
+              </button>
+              <button
+                onClick={() => setShowLongTextWarning(false)}
+                style={{
+                  padding: '13px', background: '#F5F8FC',
+                  border: '1.5px solid #C5D8ED', borderRadius: 10,
+                  fontSize: 14, fontWeight: 600, color: '#2A5080', cursor: 'pointer',
+                }}
+              >
+                Text selbst kürzen (empfohlen)
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <div style={S.header}>
         <Logo />
         {/* Plan-Badge oder Gratis-Zähler */}
@@ -928,12 +1014,34 @@ export default function Analyse() {
                 rows={pdfFileName ? 8 : 11}
               />
 
-              {/* Zeichenzähler */}
-              <div style={{ textAlign: 'right', fontSize: 12, color: '#6A8AAA', marginTop: 4, marginBottom: 16 }}>
-                {briefText.length} Zeichen
-                {pdfFileName && (
-                  <span style={{ marginLeft: 8, color: '#4CAF82' }}>· aus PDF extrahiert</span>
-                )}
+              {/* Zeichenzähler mit Farbwarnung */}
+              <div style={{
+                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                marginTop: 4, marginBottom: 16,
+              }}>
+                <div style={{ fontSize: 12 }}>
+                  {briefText.length > CHAR_DANGER ? (
+                    <span style={{ color: '#E05252', fontWeight: 600 }}>
+                      ⚠️ Text sehr lang — wird auf 8.000 Zeichen gekürzt
+                    </span>
+                  ) : briefText.length > CHAR_WARN ? (
+                    <span style={{ color: '#D4943A', fontWeight: 500 }}>
+                      ⏳ Text lang — unter 8.000 Zeichen empfohlen
+                    </span>
+                  ) : (
+                    <span style={{ color: '#6A8AAA' }}>
+                      {pdfFileName && <span style={{ color: '#4CAF82' }}>· aus PDF extrahiert</span>}
+                    </span>
+                  )}
+                </div>
+                <span style={{
+                  fontSize: 12, fontWeight: briefText.length > CHAR_DANGER ? 700 : 400,
+                  color: briefText.length > CHAR_DANGER ? '#E05252'
+                       : briefText.length > CHAR_WARN   ? '#D4943A'
+                       : '#6A8AAA',
+                }}>
+                  {briefText.length.toLocaleString('de-AT')} / {CHAR_LIMIT.toLocaleString('de-AT')} Zeichen
+                </span>
               </div>
 
               {/* Fehlermeldung */}
@@ -955,7 +1063,7 @@ export default function Analyse() {
                   opacity: briefText.trim().length < 20 ? 0.5 : 1,
                   cursor: briefText.trim().length < 20 ? 'not-allowed' : 'pointer',
                 }}
-                onClick={analyse}
+                onClick={() => analyse(false)}
                 disabled={briefText.trim().length < 20}
               >
                 {pdfFileName ? '📄 PDF analysieren →' : 'Brief analysieren →'}
@@ -1026,6 +1134,27 @@ export default function Analyse() {
           ════════════════════════════════════════ */}
           {screen === 'result' && result && !loading && (
             <div className="fade-in">
+
+              {/* Kürzungshinweis wenn Text zu lang war */}
+              {wasTruncated && (
+                <div style={{
+                  background: 'rgba(212,148,58,0.08)',
+                  border: '1.5px solid rgba(212,148,58,0.3)',
+                  borderRadius: 12, padding: '14px 16px', marginBottom: 16,
+                }}>
+                  <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+                    <span style={{ fontSize: 18, flexShrink: 0 }}>✂️</span>
+                    <div>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: '#8B6020', marginBottom: 4 }}>
+                        Analyse basiert auf den ersten 8.000 Zeichen
+                      </div>
+                      <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6 }}>
+                        Ihr Dokument war sehr umfangreich. Spruch, Begründung und Rechtsmittelbelehrung wurden vollständig erfasst. Falls weitere Details wichtig sind: fügen Sie den entsprechenden Abschnitt separat ein.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Brieftyp und Dringlichkeit */}
               <div style={{
