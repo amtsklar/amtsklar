@@ -7,19 +7,19 @@ import { Link } from 'react-router-dom'
 // ═══════════════════════════════════════════════════════════════════
 
 const S = {
-  page: { background: '#0C1825', minHeight: '100vh', color: '#EDF2FA', fontFamily: 'DM Sans,sans-serif' },
-  header: { padding: '14px 20px', borderBottom: '1px solid #1D3350', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  page: { background: '#182638', minHeight: '100vh', color: '#EDF2FA', fontFamily: 'DM Sans,sans-serif' },
+  header: { padding: '14px 20px', borderBottom: '1px solid #2A4A6A', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
   body: { maxWidth: 760, margin: '0 auto', padding: '48px 24px 80px' },
   h1: { fontFamily: 'Libre Baskerville,serif', fontSize: 32, fontWeight: 700, color: '#EDF2FA', marginBottom: 8 } as React.CSSProperties,
-  h2: { fontFamily: 'Libre Baskerville,serif', fontSize: 20, fontWeight: 700, color: '#EDF2FA', marginTop: 40, marginBottom: 12, paddingTop: 24, borderTop: '1px solid #1D3350' } as React.CSSProperties,
+  h2: { fontFamily: 'Libre Baskerville,serif', fontSize: 20, fontWeight: 700, color: '#EDF2FA', marginTop: 40, marginBottom: 12, paddingTop: 24, borderTop: '1px solid #2A4A6A' } as React.CSSProperties,
   h3: { fontSize: 15, fontWeight: 600, color: '#C9963A', marginTop: 20, marginBottom: 8 } as React.CSSProperties,
   p: { fontSize: 15, color: '#C8D8EC', lineHeight: 1.75, marginBottom: 12 } as React.CSSProperties,
   ul: { paddingLeft: 20, marginBottom: 16 } as React.CSSProperties,
   li: { fontSize: 15, color: '#C8D8EC', lineHeight: 1.75, marginBottom: 6 } as React.CSSProperties,
-  box: { background: '#112236', border: '1px solid #1D3350', borderRadius: 10, padding: '16px 20px', marginBottom: 16 } as React.CSSProperties,
+  box: { background: '#1E3248', border: '1px solid #2A4A6A', borderRadius: 10, padding: '16px 20px', marginBottom: 16 } as React.CSSProperties,
   warn: { background: 'rgba(224,82,82,0.08)', border: '1px solid rgba(224,82,82,0.25)', borderRadius: 10, padding: '14px 18px', fontSize: 14, color: '#E08080', lineHeight: 1.65, marginBottom: 20 } as React.CSSProperties,
   note: { background: 'rgba(201,150,58,0.08)', border: '1px solid rgba(201,150,58,0.2)', borderRadius: 10, padding: '14px 18px', fontSize: 14, color: '#C9963A', lineHeight: 1.65, marginBottom: 28 } as React.CSSProperties,
-  updated: { fontSize: 13, color: '#4A6A87', marginBottom: 32 } as React.CSSProperties,
+  updated: { fontSize: 13, color: '#6A8AAA', marginBottom: 32 } as React.CSSProperties,
   a: { color: '#C9963A' } as React.CSSProperties,
 }
 
@@ -34,7 +34,7 @@ export default function AGB() {
             <span style={{ color: '#C9963A', fontWeight: 700 }}>Klar</span>
           </span>
         </Link>
-        <Link to="/" style={{ fontSize: 14, color: '#6E8EAD', textDecoration: 'none' }}>← Zurück</Link>
+        <Link to="/" style={{ fontSize: 14, color: '#90AECA', textDecoration: 'none' }}>← Zurück</Link>
       </div>
 
       <div style={S.body}>

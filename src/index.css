@@ -1,15 +1,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --navy: #0C1825;
-  --navy-light: #112236;
-  --border: #1D3350;
+  --navy: #182638;
+  --navy-light: #1E3248;
+  --border: #2A4A6A;
   --gold: #C9963A;
   --gold-light: #D4A84B;
   --gold-dark: #A8731E;
   --text: #EDF2FA;
-  --text-muted: #6E8EAD;
-  --text-dim: #4A6A87;
+  --text-muted: #90AECA;
+  --text-dim: #6A8AAA;
 }
 
 body {

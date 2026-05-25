@@ -56,7 +56,7 @@ const Logo = () => (
         <span style={{ color: '#EDF2FA', fontWeight: 400 }}>Amts</span>
         <span style={{ color: '#C9963A', fontWeight: 700 }}>Klar</span>
       </div>
-      <div style={{ fontSize: 9, color: '#4A6A87', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
+      <div style={{ fontSize: 9, color: '#6A8AAA', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
         Österreich · Behördenbriefe sofort verstehen
       </div>
     </div>
@@ -152,15 +152,15 @@ export default function Analyse() {
 
   // ── Styles ──────────────────────────────────────────────────────────────
   const S = {
-    app:    { background: '#0C1825', minHeight: '100vh', display: 'flex', flexDirection: 'column' as const },
-    header: { padding: '14px 20px', borderBottom: '1px solid #1D3350', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky' as const, top: 0, background: '#0C1825', zIndex: 10 },
+    app:    { background: '#182638', minHeight: '100vh', display: 'flex', flexDirection: 'column' as const },
+    header: { padding: '14px 20px', borderBottom: '1px solid #2A4A6A', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky' as const, top: 0, background: '#182638', zIndex: 10 },
     scroll: { flex: 1, overflowY: 'auto' as const, padding: '24px 20px 48px' },
     inner:  { maxWidth: 640, margin: '0 auto', width: '100%' },
-    card:   { background: '#112236', border: '1px solid #1D3350', borderRadius: 14, padding: 18, marginBottom: 12 },
-    label:  { fontSize: 10, fontWeight: 600 as const, textTransform: 'uppercase' as const, letterSpacing: '1.2px', color: '#4A6A87', marginBottom: 8 },
-    btn:    { width: '100%', padding: 15, background: 'linear-gradient(135deg,#B8832A,#D4A84B)', color: '#0C1825', border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 700 as const, cursor: 'pointer' as const },
-    btnOut: { width: '100%', padding: 13, background: 'transparent', color: '#6E8EAD', border: '1.5px solid #1D3350', borderRadius: 12, fontSize: 15, fontWeight: 500 as const, cursor: 'pointer' as const, marginTop: 12 },
-    ta:     { width: '100%', background: '#112236', border: '1.5px solid #1D3350', borderRadius: 14, padding: 16, color: '#EDF2FA', fontFamily: 'inherit', fontSize: 14, lineHeight: 1.65, resize: 'vertical' as const, minHeight: 220, outline: 'none' },
+    card:   { background: '#1E3248', border: '1px solid #2A4A6A', borderRadius: 14, padding: 18, marginBottom: 12 },
+    label:  { fontSize: 10, fontWeight: 600 as const, textTransform: 'uppercase' as const, letterSpacing: '1.2px', color: '#6A8AAA', marginBottom: 8 },
+    btn:    { width: '100%', padding: 15, background: 'linear-gradient(135deg,#B8832A,#D4A84B)', color: '#182638', border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 700 as const, cursor: 'pointer' as const },
+    btnOut: { width: '100%', padding: 13, background: 'transparent', color: '#90AECA', border: '1.5px solid #2A4A6A', borderRadius: 12, fontSize: 15, fontWeight: 500 as const, cursor: 'pointer' as const, marginTop: 12 },
+    ta:     { width: '100%', background: '#1E3248', border: '1.5px solid #2A4A6A', borderRadius: 14, padding: 16, color: '#EDF2FA', fontFamily: 'inherit', fontSize: 14, lineHeight: 1.65, resize: 'vertical' as const, minHeight: 220, outline: 'none' },
   }
 
   return (
@@ -169,19 +169,19 @@ export default function Analyse() {
       {/* PAYWALL */}
       {showPaywall && (
         <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
-          <div style={{ background: '#112236', border: '1.5px solid rgba(201,150,58,0.4)', borderRadius: 16, padding: '32px 28px', maxWidth: 420, width: '100%' }}>
+          <div style={{ background: '#1E3248', border: '1.5px solid rgba(201,150,58,0.4)', borderRadius: 16, padding: '32px 28px', maxWidth: 420, width: '100%' }}>
             <div style={{ textAlign: 'center', marginBottom: 24 }}>
               <div style={{ fontFamily: 'serif', fontSize: 36, color: '#C9963A', marginBottom: 12 }}>§</div>
               <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#EDF2FA', marginBottom: 8 }}>Weiter mit AmtsKlar</div>
-              <div style={{ fontSize: 14, color: '#6E8EAD', lineHeight: 1.6 }}>Deine kostenlose Analyse ist aufgebraucht.<br/>Unbegrenzte Analysen für €2,99/Monat.</div>
+              <div style={{ fontSize: 14, color: '#90AECA', lineHeight: 1.6 }}>Deine kostenlose Analyse ist aufgebraucht.<br/>Unbegrenzte Analysen für €2,99/Monat.</div>
             </div>
             <button onClick={openCheckout} style={{ ...S.btn, marginBottom: 16 }}>Jetzt abonnieren — €2,99/Monat →</button>
-            <div style={{ borderTop: '1px solid #1D3350', paddingTop: 16 }}>
-              <div style={{ fontSize: 12, color: '#4A6A87', marginBottom: 8, textAlign: 'center' }}>Bereits Abonnent? E-Mail eingeben:</div>
+            <div style={{ borderTop: '1px solid #2A4A6A', paddingTop: 16 }}>
+              <div style={{ fontSize: 12, color: '#6A8AAA', marginBottom: 8, textAlign: 'center' }}>Bereits Abonnent? E-Mail eingeben:</div>
               <input type="email" value={email} placeholder="deine@email.com" onChange={e => setEmail(e.target.value)}
                 style={{ ...S.ta, minHeight: 'auto', padding: '10px 14px', marginBottom: 8, borderRadius: 8 }} />
               <button onClick={verifySubscription} disabled={verifying}
-                style={{ ...S.btn, background: 'transparent', border: '1.5px solid #1D3350', color: '#6E8EAD', padding: 11 }}>
+                style={{ ...S.btn, background: 'transparent', border: '1.5px solid #2A4A6A', color: '#90AECA', padding: 11 }}>
                 {verifying ? 'Prüfe...' : 'Zugang prüfen'}
               </button>
               {error && <div style={{ fontSize: 12, color: '#E08080', marginTop: 8, textAlign: 'center' }}>{error}</div>}
@@ -194,7 +194,7 @@ export default function Analyse() {
       {/* HEADER */}
       <div style={S.header}>
         <Logo />
-        <span style={{ fontSize: 12, color: isPaid ? '#4CAF82' : '#6E8EAD',
+        <span style={{ fontSize: 12, color: isPaid ? '#4CAF82' : '#90AECA',
           background: isPaid ? 'rgba(76,175,130,0.1)' : 'transparent',
           border: isPaid ? '1px solid rgba(76,175,130,0.3)' : 'none',
           borderRadius: 6, padding: isPaid ? '3px 10px' : 0 }}>
@@ -209,22 +209,22 @@ export default function Analyse() {
           {screen === 'input' && !loading && (
             <div className="fade-in">
               <h1 style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 28, fontWeight: 700, lineHeight: 1.2, color: '#EDF2FA', marginBottom: 8 }}>Brief<br/>erhalten?</h1>
-              <p style={{ fontSize: 15, color: '#6E8EAD', lineHeight: 1.6, marginBottom: 24 }}>Einfügen, analysieren — sofort verstehen was er bedeutet, welche Frist gilt und was zu tun ist.</p>
+              <p style={{ fontSize: 15, color: '#90AECA', lineHeight: 1.6, marginBottom: 24 }}>Einfügen, analysieren — sofort verstehen was er bedeutet, welche Frist gilt und was zu tun ist.</p>
               <textarea style={S.ta} placeholder={'Brieftext hier einfügen…\n\nz.B. Strafverfügung, Finanzamtsbescheid, AMS-Schreiben, Inkasso, Mietkündigung…'}
                 value={briefText} onChange={e => setBriefText(e.target.value)} rows={11}/>
-              <div style={{ textAlign: 'right', fontSize: 12, color: '#3A5570', marginTop: 4, marginBottom: 16 }}>{briefText.length} Zeichen</div>
+              <div style={{ textAlign: 'right', fontSize: 12, color: '#587090', marginTop: 4, marginBottom: 16 }}>{briefText.length} Zeichen</div>
               {error && <div style={{ background: 'rgba(224,82,82,0.08)', border: '1px solid rgba(224,82,82,0.25)', borderRadius: 10, padding: '12px 16px', color: '#E08080', fontSize: 14, marginBottom: 14 }}>⚠️ {error}</div>}
               <button style={S.btn} onClick={analyse} disabled={briefText.trim().length < 30}>Brief analysieren →</button>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginTop: 28, paddingTop: 24, borderTop: '1px solid #1D3350' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginTop: 28, paddingTop: 24, borderTop: '1px solid #2A4A6A' }}>
                 {[['📋','Einfügen','Text kopieren'],['⚖️','Analysieren','Österr. Gesetze'],['✅','Verstehen','Klare Schritte']].map(([i,t,d]) => (
                   <div key={t} style={{ textAlign: 'center' }}>
                     <div style={{ fontSize: 22, marginBottom: 6 }}>{i}</div>
                     <div style={{ fontSize: 13, fontWeight: 600, color: '#C4D4E8', marginBottom: 3 }}>{t}</div>
-                    <div style={{ fontSize: 11, color: '#4A6A87', lineHeight: 1.4 }}>{d}</div>
+                    <div style={{ fontSize: 11, color: '#6A8AAA', lineHeight: 1.4 }}>{d}</div>
                   </div>
                 ))}
               </div>
-              <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid #192B42', borderRadius: 12, padding: '14px 16px', marginTop: 28, fontSize: 11, color: '#3A5570', lineHeight: 1.65, textAlign: 'center' }}>
+              <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid #1E3248', borderRadius: 12, padding: '14px 16px', marginTop: 28, fontSize: 11, color: '#587090', lineHeight: 1.65, textAlign: 'center' }}>
                 AmtsKlar informiert und erklärt — <strong style={{ color: '#4A7A9A' }}>ersetzt keine Rechtsberatung.</strong>
               </div>
             </div>
@@ -233,10 +233,10 @@ export default function Analyse() {
           {/* LOADING */}
           {loading && (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh', gap: 24, textAlign: 'center' }}>
-              <div style={{ width: 50, height: 50, border: '3px solid #1D3350', borderTop: '3px solid #C9963A', borderRadius: '50%', animation: 'spin 0.9s linear infinite' }}/>
+              <div style={{ width: 50, height: 50, border: '3px solid #2A4A6A', borderTop: '3px solid #C9963A', borderRadius: '50%', animation: 'spin 0.9s linear infinite' }}/>
               <div>
                 <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 20, color: '#EDF2FA' }}>Analysiere Ihren Brief…</div>
-                <div style={{ fontSize: 13, color: '#4A6A87', marginTop: 8 }}>Prüfe österreichische Gesetze & Fristen</div>
+                <div style={{ fontSize: 13, color: '#6A8AAA', marginTop: 8 }}>Prüfe österreichische Gesetze & Fristen</div>
               </div>
             </div>
           )}
@@ -248,7 +248,7 @@ export default function Analyse() {
               <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10, marginBottom: 20 }}>
                 <div>
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(201,150,58,0.1)', border: '1px solid rgba(201,150,58,0.28)', borderRadius: 8, padding: '5px 12px', fontSize: 13, color: '#C9963A', fontWeight: 500, marginBottom: 6 }}>📄 {result.brieftyp}</div>
-                  <div style={{ fontSize: 12, color: '#4A6A87' }}>Von: {result.behoerde}</div>
+                  <div style={{ fontSize: 12, color: '#6A8AAA' }}>Von: {result.behoerde}</div>
                 </div>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, borderRadius: 8, padding: '6px 12px', fontSize: 13, fontWeight: 600, background: urg.bg, border: `1px solid ${urg.border}`, color: urg.color }}>{urg.icon} {urg.label}</div>
               </div>
@@ -288,7 +288,7 @@ export default function Analyse() {
                   <div style={S.label}>Was jetzt tun?</div>
                   {result.was_tun.map((s, i) => (
                     <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', marginBottom: 12 }}>
-                      <div style={{ width: 26, height: 26, background: 'linear-gradient(135deg,#B8832A,#D4A84B)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 700, color: '#0C1825', flexShrink: 0, marginTop: 2 }}>{i + 1}</div>
+                      <div style={{ width: 26, height: 26, background: 'linear-gradient(135deg,#B8832A,#D4A84B)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 700, color: '#182638', flexShrink: 0, marginTop: 2 }}>{i + 1}</div>
                       <div style={{ fontSize: 14, lineHeight: 1.65, color: '#C8D8EC' }}>{s.replace(/^Schritt\s*\d+[.:]\s*/i, '')}</div>
                     </div>
                   ))}
@@ -300,10 +300,10 @@ export default function Analyse() {
                 <div style={S.card}>
                   <div style={S.label}>Rechtsmittel & Einspruch</div>
                   {result.rechtsmittel.map((rm, i) => (
-                    <div key={i} style={{ border: '1px solid #1D3350', borderRadius: 10, padding: 14, marginBottom: 10 }}>
+                    <div key={i} style={{ border: '1px solid #2A4A6A', borderRadius: 10, padding: 14, marginBottom: 10 }}>
                       <div style={{ fontWeight: 600, fontSize: 15, color: '#EDF2FA', marginBottom: 4 }}>{rm.name}</div>
                       <div style={{ fontSize: 12, color: '#C9963A', marginBottom: 6, fontWeight: 500 }}>Frist: {rm.frist} · Wohin: {rm.wohin}</div>
-                      <div style={{ fontSize: 13, color: '#6E8EAD', lineHeight: 1.5 }}>{rm.beschreibung}</div>
+                      <div style={{ fontSize: 13, color: '#90AECA', lineHeight: 1.5 }}>{rm.beschreibung}</div>
                     </div>
                   ))}
                 </div>
@@ -361,7 +361,7 @@ export default function Analyse() {
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
                     {result.rechtsgrundlage.map((r, i) => (
                       <a key={i} href={getRISUrl(r)} target="_blank" rel="noopener noreferrer"
-                        style={{ background: 'rgba(29,51,80,0.7)', border: '1px solid #253D58', borderRadius: 6, padding: '4px 10px', fontSize: 12, color: '#6E8EAD', fontFamily: 'monospace', textDecoration: 'none' }}>
+                        style={{ background: 'rgba(29,51,80,0.7)', border: '1px solid #2E4D6A', borderRadius: 6, padding: '4px 10px', fontSize: 12, color: '#90AECA', fontFamily: 'monospace', textDecoration: 'none' }}>
                         {r} ↗
                       </a>
                     ))}
@@ -381,7 +381,7 @@ export default function Analyse() {
                 </div>
               )}
 
-              <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid #192B42', borderRadius: 12, padding: '14px 16px', marginTop: 20, marginBottom: 4, fontSize: 11, color: '#3A5570', lineHeight: 1.65, textAlign: 'center' }}>
+              <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid #1E3248', borderRadius: 12, padding: '14px 16px', marginTop: 20, marginBottom: 4, fontSize: 11, color: '#587090', lineHeight: 1.65, textAlign: 'center' }}>
                 ⚖️ <strong style={{ color: '#4A7A9A' }}>Rechtlicher Hinweis:</strong> AmtsKlar dient zur Information. Ersetzt keine Rechtsberatung durch einen zugelassenen Anwalt.{' '}
                 Quelle Gesetze: <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer" style={{ color: '#4A7A9A' }}>RIS.bka.gv.at</a> (CC BY 4.0)
               </div>
