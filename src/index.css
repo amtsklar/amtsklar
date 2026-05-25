@@ -1,0 +1,36 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0C1825;
+  --navy-light: #112236;
+  --border: #1D3350;
+  --gold: #C9963A;
+  --gold-light: #D4A84B;
+  --gold-dark: #A8731E;
+  --text: #EDF2FA;
+  --text-muted: #6E8EAD;
+  --text-dim: #4A6A87;
+}
+
+body {
+  background: var(--navy);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a { color: inherit; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease both;
+}
