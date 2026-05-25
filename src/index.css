@@ -1,36 +1,3 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --navy: #EEF4FB;
-  --navy-light: #FFFFFF;
-  --border: #C5D8ED;
-  --gold: #C9963A;
-  --gold-light: #D4A84B;
-  --gold-dark: #A8731E;
-  --text: #0F2440;
-  --text-muted: #2A5080;
-  --text-dim: #4A6A90;
-}
-
-body {
-  background: #EEF4FB;
-  color: #0F2440;
-  font-family: 'DM Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
-}
-
-a { color: inherit; }
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in {
-  animation: fadeIn 0.35s ease both;
-}
+body { font-family: 'DM Sans', system-ui, sans-serif; }
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,611 +1,142 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-// ═══════════════════════════════════════════════════════════════════
-// AmtsKlar — Landing Page
-// 3 Preispakete: Verstehen / Handeln / Familie
-// ═══════════════════════════════════════════════════════════════════
-
-// ── Logo Komponente ───────────────────────────────────────────────
 const Logo = () => (
   <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
       <defs>
-        <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#D4A84B"/>
-          <stop offset="100%" stopColor="#A8731E"/>
+        <linearGradient id="g" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#D4A84B"/><stop offset="100%" stopColor="#A8731E"/>
         </linearGradient>
       </defs>
-      <rect width="36" height="36" rx="9" fill="url(#logoGrad)"/>
+      <rect width="36" height="36" rx="9" fill="url(#g)"/>
       <text x="18" y="26" fontFamily="Georgia,serif" fontSize="21" fontWeight="bold" fill="white" textAnchor="middle">§</text>
     </svg>
     <div>
       <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 20, fontWeight: 700, lineHeight: 1 }}>
-        <span style={{ color: '#0F2440', fontWeight: 400 }}>Amts</span>
+        <span style={{ color: '#EDF2FA', fontWeight: 400 }}>Amts</span>
         <span style={{ color: '#C9963A', fontWeight: 700 }}>Klar</span>
       </div>
-      <div style={{ fontSize: 9, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
+      <div style={{ fontSize: 9, color: '#4A6A87', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
         Österreich · Behördenbriefe sofort verstehen
       </div>
     </div>
   </div>
 )
 
-// ── Feature-Liste ─────────────────────────────────────────────────
 const features = [
   { icon: '⚡', title: 'Sofortige Analyse', desc: 'Brief einfügen → in Sekunden verstehen was er bedeutet' },
-  { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, Gericht, Mietrecht, Fremdenrecht und mehr' },
+  { icon: '⚖️', title: '45 Rechtsbereiche', desc: 'Finanzamt, AMS, Gericht, Mietrecht, Fremdenrecht und mehr' },
   { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt und was passiert wenn du sie verpasst' },
   { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist' },
-  { icon: '✉️', title: 'Antwortbrief inklusive', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
   { icon: '🔗', title: 'Live RIS-Prüfung', desc: 'Gesetze direkt auf ris.bka.gv.at prüfen — immer aktuell' },
+  { icon: '⛔', title: 'Konsequenzen', desc: 'Was passiert wenn du nichts tust — Schritt für Schritt' },
 ]
 
-// ── FAQ ───────────────────────────────────────────────────────────
 const faqs = [
-  {
-    q: 'Für welche Briefe funktioniert AmtsKlar?',
-    a: 'Alle österreichischen Behördenschreiben: Finanzamt, AMS, ÖGK, Gericht, Magistrat, BH, Mietrecht, Fremdenrecht, Straf-, Zivil- und Verwaltungsrecht — 82 Rechtsbereiche abgedeckt.'
-  },
-  {
-    q: 'Was ist der Unterschied zwischen den Paketen?',
-    a: 'Verstehen (€2,99) erklärt den Brief und zeigt die nächsten Schritte. Handeln (€4,99) schreibt zusätzlich den fertigen Antwortbrief den du nur noch ausdruckst und abschickst. Familie (€7,99) gilt für bis zu 5 Personen im selben Haushalt.'
-  },
-  {
-    q: 'Schreibt AmtsKlar den Antwortbrief wirklich komplett?',
-    a: 'Ja. AmtsKlar generiert einen vollständigen, rechtlich korrekten Antwortbrief passend zu deinem Bescheid. Du musst nur noch deinen Namen, die Aktenzahl und deine Adresse einfügen — alles andere ist fertig. Verfügbar ab dem Handeln-Paket.'
-  },
-  {
-    q: 'Ist das eine Rechtsberatung?',
-    a: 'Nein. AmtsKlar informiert und erklärt — ersetzt keine Rechtsberatung durch einen zugelassenen Anwalt. Bei komplexen Fällen empfehlen wir immer zusätzlich die kostenlose Beratung der Arbeiterkammer.'
-  },
-  {
-    q: 'Kann ich jederzeit kündigen?',
-    a: 'Ja, jederzeit ohne Kündigungsfrist über das Paddle-Kundenportal oder per E-Mail. Keine Mindestlaufzeit.'
-  },
+  { q: 'Für welche Briefe funktioniert AmtsKlar?', a: 'Alle österreichischen Behördenschreiben: Finanzamt, AMS, ÖGK, Gericht, Magistrat, BH, Mietrecht, Fremdenrecht, Straf-, Zivil- und Verwaltungsrecht — 45 Rechtsbereiche.' },
+  { q: 'Ist das eine Rechtsberatung?', a: 'Nein. AmtsKlar informiert und erklärt — ersetzt keine Rechtsberatung. Für wichtige Entscheidungen immer einen Anwalt oder die Arbeiterkammer konsultieren.' },
+  { q: 'Wie aktuell sind die Gesetze?', a: 'Die KI kennt das österreichische Recht auf aktuellem Stand. Jeden zitierten Paragraphen kannst du direkt auf dem offiziellen RIS (ris.bka.gv.at) prüfen.' },
+  { q: 'Kann ich jederzeit kündigen?', a: 'Ja, jederzeit per E-Mail oder über das Kundenportal. Keine Mindestlaufzeit, keine Kündigungsfrist.' },
 ]
 
-// ── Haupt-Komponente ──────────────────────────────────────────────
 export default function Landing() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [jaehrlich, setJaehrlich] = useState(false)
-
-  // Preise: monatlich und jährlich (2 Monate gratis)
-  const preise = {
-    verstehen: { monat: 2.99, jahr: 2.49 },
-    handeln:   { monat: 4.99, jahr: 4.16 },
-    familie:   { monat: 7.99, jahr: 6.66 },
-  }
-
-  const preis = (plan: keyof typeof preise) =>
-    jaehrlich ? preise[plan].jahr : preise[plan].monat
-
-  // Gemeinsame Styles
-  const S = {
-    btn: {
-      display: 'inline-block',
-      background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
-      color: '#FFFFFF',
-      padding: '16px 32px',
-      borderRadius: 12,
-      fontSize: 17,
-      fontWeight: 700,
-      textDecoration: 'none',
-    } as React.CSSProperties,
-    card: {
-      background: '#FFFFFF',
-      border: '1px solid #C5D8ED',
-      borderRadius: 12,
-      padding: 20,
-    } as React.CSSProperties,
-    check: {
-      color: '#C9963A',
-      fontWeight: 700,
-      marginRight: 8,
-      flexShrink: 0,
-    } as React.CSSProperties,
-    cross: {
-      color: '#BDD0E0',
-      fontWeight: 700,
-      marginRight: 8,
-      flexShrink: 0,
-    } as React.CSSProperties,
-  }
 
   return (
-    <div style={{ background: '#EEF4FB', minHeight: '100vh' }}>
+    <div style={{ background: '#0C1825', minHeight: '100vh' }}>
 
-      {/* ── NAVIGATION ── */}
-      <nav style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '16px 24px', borderBottom: '1px solid #C5D8ED',
-        position: 'sticky', top: 0, background: '#FFFFFF', zIndex: 50,
-        boxShadow: '0 1px 12px rgba(15,36,64,0.08)'
-      }}>
+      {/* NAV */}
+      <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 24px', borderBottom: '1px solid #1D3350', position: 'sticky', top: 0, background: '#0C1825', zIndex: 50 }}>
         <Logo />
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          <a href="#preise" style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none' }}>Preise</a>
-          <Link to="/analyse" style={{ ...S.btn, padding: '8px 18px', fontSize: 14 }}>
+          <a href="#preise" style={{ fontSize: 14, color: '#6E8EAD', textDecoration: 'none' }}>Preise</a>
+          <Link to="/analyse" style={{ background: 'linear-gradient(135deg,#B8832A,#D4A84B)', color: '#0C1825', padding: '8px 18px', borderRadius: 8, fontSize: 14, fontWeight: 600, textDecoration: 'none' }}>
             Jetzt testen →
           </Link>
         </div>
       </nav>
 
-      {/* ── HERO ── */}
-      <section style={{ textAlign: 'center', padding: '80px 24px 60px', maxWidth: 700, margin: '0 auto' }}>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 8,
-          background: 'rgba(201,150,58,0.12)', border: '1px solid rgba(201,150,58,0.25)',
-          borderRadius: 20, padding: '6px 16px', fontSize: 13, color: '#C9963A',
-          marginBottom: 24, fontWeight: 500
-        }}>
-          🇦🇹 Speziell für Österreich · 82 Rechtsbereiche
+      {/* HERO */}
+      <section style={{ textAlign: 'center', padding: '80px 24px 60px', maxWidth: 680, margin: '0 auto' }}>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(201,150,58,0.1)', border: '1px solid rgba(201,150,58,0.25)', borderRadius: 20, padding: '6px 16px', fontSize: 13, color: '#C9963A', marginBottom: 24, fontWeight: 500 }}>
+          🇦🇹 Speziell für Österreich · 45 Rechtsbereiche
         </div>
-
-        <h1 style={{
-          fontFamily: 'Libre Baskerville,serif',
-          fontSize: 'clamp(32px,6vw,52px)',
-          fontWeight: 700, lineHeight: 1.15, marginBottom: 20, color: '#0F2440'
-        }}>
+        <h1 style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 'clamp(32px,6vw,52px)', fontWeight: 700, lineHeight: 1.15, marginBottom: 20, color: '#EDF2FA' }}>
           Brief vom Amt erhalten?<br />
           <span style={{ color: '#C9963A' }}>Jetzt sofort verstehen.</span>
         </h1>
-
-        <p style={{ fontSize: 18, color: '#2A5080', lineHeight: 1.7, maxWidth: 540, margin: '0 auto 36px' }}>
-          Einfügen — analysieren — fertig. Was bedeutet der Brief? Welche Frist gilt?
-          AmtsKlar erklärt es sofort und schreibt den Antwortbrief.
+        <p style={{ fontSize: 18, color: '#6E8EAD', lineHeight: 1.7, marginBottom: 36, maxWidth: 520, margin: '0 auto 36px' }}>
+          Einfügen — analysieren — verstehen. Was bedeutet der Brief? Welche Frist gilt? Was musst du jetzt tun?
         </p>
-
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link to="/analyse" style={S.btn}>Brief kostenlos analysieren →</Link>
-          <a href="#preise" style={{
-            border: '1.5px solid #C5D8ED', color: '#2A5080',
-            padding: '16px 24px', borderRadius: 12, fontSize: 15, textDecoration: 'none'
-          }}>
-            Alle Pakete ansehen
+          <Link to="/analyse" style={{ background: 'linear-gradient(135deg,#B8832A,#D4A84B)', color: '#0C1825', padding: '16px 32px', borderRadius: 12, fontSize: 17, fontWeight: 700, textDecoration: 'none' }}>
+            Brief kostenlos analysieren →
+          </Link>
+          <a href="#preise" style={{ border: '1.5px solid #1D3350', color: '#6E8EAD', padding: '16px 24px', borderRadius: 12, fontSize: 15, textDecoration: 'none' }}>
+            Preise ansehen
           </a>
         </div>
-
-        <p style={{ marginTop: 16, fontSize: 13, color: '#6A8AAA' }}>
-          1 kostenlose Analyse · Danach ab €2,49/Monat · Jederzeit kündbar
+        <p style={{ marginTop: 16, fontSize: 13, color: '#3A5570' }}>
+          1 kostenlose Analyse · Danach ab €2,99/Monat · Jederzeit kündbar
         </p>
       </section>
 
-      {/* ── DEMO-VORSCHAU ── */}
-      <section style={{ maxWidth: 640, margin: '0 auto 80px', padding: '0 24px' }}>
-        <div style={{ background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 16, overflow: 'hidden', boxShadow: '0 4px 24px rgba(15,36,64,0.08)' }}>
-          {/* Browser-Bar */}
-          <div style={{ padding: '10px 16px', borderBottom: '1px solid #C5D8ED', display: 'flex', gap: 6, alignItems: 'center', background: '#F8FBFF' }}>
-            {['#E05252','#D4943A','#4CAF82'].map((c,i) => (
-              <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', background: c }}/>
-            ))}
-            <span style={{ fontSize: 12, color: '#6A8AAA', marginLeft: 8 }}>amtsklar.at/analyse</span>
-          </div>
-          {/* Inhalt */}
-          <div style={{ padding: 20 }}>
-            {/* Pflichtaktion */}
-            <div style={{ background: 'rgba(224,82,82,0.08)', border: '1px solid rgba(224,82,82,0.2)', borderRadius: 10, padding: '14px 16px', marginBottom: 12 }}>
-              <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                <span style={{ fontSize: 20 }}>🚨</span>
-                <div>
-                  <div style={{ fontSize: 10, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 4 }}>
-                    Nächste Pflichtaktion
-                  </div>
-                  <div style={{ fontFamily: 'serif', fontSize: 17, fontWeight: 700, color: '#0F2440' }}>
-                    Einspruch schriftlich einbringen
-                  </div>
-                  <div style={{ fontSize: 12, color: '#E05252', marginTop: 4 }}>
-                    🗓 Innerhalb 2 Wochen ab Zustellung
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Erklärung */}
-            <div style={{ background: '#F5F8FC', borderRadius: 10, padding: '12px 16px', marginBottom: 12 }}>
-              <div style={{ fontSize: 10, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 6 }}>
-                Was bedeutet dieser Brief?
-              </div>
-              <div style={{ fontSize: 14, color: '#1A3A5C', lineHeight: 1.65 }}>
-                Sie haben eine Strafverfügung vom Magistrat Wien erhalten. Es wird eine Geldstrafe von €180 gefordert. Sie haben 2 Wochen Zeit um Einspruch zu erheben — das kostet nichts und ist einfach.
-              </div>
-            </div>
-            {/* Brief-Preview (Handeln-Feature) */}
-            <div style={{ background: 'rgba(201,150,58,0.06)', border: '1px solid rgba(201,150,58,0.2)', borderRadius: 10, padding: '12px 16px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
-                <span>✉️</span>
-                <div style={{ fontSize: 10, color: '#C9963A', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>
-                  Fertiger Antwortbrief — Handeln & Familie Paket
-                </div>
-              </div>
-              <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6, fontStyle: 'italic' }}>
-                "Sehr geehrte Damen und Herren, bezugnehmend auf Ihre Strafverfügung vom [DATUM] zu GZ [AKTENZAHL] erhebe ich fristgerecht EINSPRUCH und beantrage die Durchführung einer mündlichen Verhandlung..."
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FEATURES ── */}
-      <section style={{ maxWidth: 940, margin: '0 auto 80px', padding: '0 24px' }}>
-        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 12, color: '#0F2440' }}>
-          Alles was du brauchst
-        </h2>
-        <p style={{ textAlign: 'center', color: '#2A5080', fontSize: 16, marginBottom: 40 }}>
-          Von der Erklärung bis zum fertigen Antwortbrief
-        </p>
+      {/* FEATURES */}
+      <section style={{ maxWidth: 900, margin: '0 auto 80px', padding: '0 24px' }}>
+        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 40, color: '#EDF2FA' }}>Alles was du brauchst</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 16 }}>
           {features.map((f, i) => (
-            <div key={i} style={S.card}>
+            <div key={i} style={{ background: '#112236', border: '1px solid #1D3350', borderRadius: 12, padding: 20 }}>
               <div style={{ fontSize: 24, marginBottom: 10 }}>{f.icon}</div>
-              <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 6, color: '#0F2440' }}>{f.title}</div>
-              <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.55 }}>{f.desc}</div>
+              <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 6, color: '#EDF2FA' }}>{f.title}</div>
+              <div style={{ fontSize: 13, color: '#6E8EAD', lineHeight: 1.55 }}>{f.desc}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section style={{ maxWidth: 960, margin: '0 auto 80px', padding: '0 24px' }}>
-
-        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 8, color: '#0F2440' }}>
-          Was unsere Nutzer sagen
-        </h2>
-        <p style={{ textAlign: 'center', color: '#2A5080', fontSize: 15, marginBottom: 12 }}>
-          Echte Erfahrungen von echten Menschen
-        </p>
-
-        {/* Sterne-Bewertung gesamt */}
-        <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8,
-            background: 'rgba(201,150,58,0.1)', border: '1px solid rgba(201,150,58,0.25)',
-            borderRadius: 24, padding: '8px 20px' }}>
-            <span style={{ color: '#C9963A', fontSize: 18, letterSpacing: 2 }}>★★★★★</span>
-            <span style={{ fontSize: 14, fontWeight: 700, color: '#0F2440' }}>4,9 / 5</span>
-            <span style={{ fontSize: 13, color: '#6A8AAA' }}>· Beta-Nutzer</span>
-          </div>
-        </div>
-
-        {/* 6 Testimonials in 2 Reihen à 3 */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
-
-          {[
-            {
-              initial: 'M', color1: '#4A90C4', color2: '#2A5080',
-              name: 'Martin K.', ort: 'Waidhofen a.d. Ybbs · Finanzamtsbescheid',
-              text: '„Ich habe einen Bescheid vom Finanzamt bekommen und keine Ahnung gehabt was ich tun soll. AmtsKlar hat mir in einer Minute erklärt dass ich noch 4 Wochen Zeit habe und wie ich Einspruch erhebe. Den Antwortbrief habe ich einfach ausgedruckt."',
-            },
-            {
-              initial: 'S', color1: '#4CAF82', color2: '#2A8A5A',
-              name: 'Sandra M.', ort: 'Feldbach · AMS-Bescheid',
-              text: '„Das AMS hat meinen Antrag abgelehnt und ich wusste nicht ob ich dagegen vorgehen kann. Ich habe einfach ein Foto vom Brief gemacht, reingeladen — und innerhalb von Sekunden hatte ich alles erklärt. Sehr empfehlenswert!"',
-            },
-            {
-              initial: 'A', color1: '#C9963A', color2: '#8B6020',
-              name: 'Andrei P.', ort: 'Vöcklabruck · Aufenthaltsbescheid',
-              text: '„Als Nicht-Muttersprachler sind mir Behördenbriefe ein Albtraum gewesen. AmtsKlar erklärt alles auf einfachem Deutsch — ich verstehe jetzt genau was zu tun ist. Das Familien-Paket nutze ich für mich und meine Frau."',
-            },
-            {
-              initial: 'B', color1: '#7B5EA7', color2: '#4A3070',
-              name: 'Barbara H.', ort: 'Saalfelden · Mietkündigung',
-              text: '„Mein Vermieter hat mir gekündigt und ich war total überfordert. AmtsKlar hat mir erklärt dass die Kündigung Formfehler hatte und mir einen Einspruch geschrieben. Der Anwalt hätte mich 300 Euro gekostet — hier zahle ich 4,99 im Monat."',
-            },
-            {
-              initial: 'T', color1: '#E07850', color2: '#A04020',
-              name: 'Thomas R.', ort: 'Bludenz · Strafverfügung',
-              text: '„Parkstrafe über 210 Euro — einfach das Foto vom Strafzettel hochgeladen und sofort gewusst wie ich Einspruch erhebe. Hat 2 Minuten gedauert. Die Strafe wurde auf 70 Euro reduziert. Beste Investition!"',
-            },
-            {
-              initial: 'E', color1: '#3A9AAA', color2: '#1A6070',
-              name: 'Eva S.', ort: 'Spittal an der Drau · Pflegegeld',
-              text: '„Meine Mutter hat Pflegestufe 2 bekommen aber sie braucht eindeutig mehr Unterstützung. AmtsKlar hat mir erklärt wie ich Klage beim Arbeits- und Sozialgericht einbringe und den Brief gleich mitgeschrieben. Danke!"',
-            },
-          ].map((t, i) => (
-            <div key={i} style={{ background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 16, padding: '24px 20px' }}>
-              <div style={{ color: '#C9963A', fontSize: 16, letterSpacing: 2, marginBottom: 14 }}>★★★★★</div>
-              <p style={{ fontSize: 14, color: '#1A3A5C', lineHeight: 1.7, marginBottom: 18, fontStyle: 'italic' }}>
-                {t.text}
-              </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <div style={{
-                  width: 42, height: 42, borderRadius: '50%',
-                  background: `linear-gradient(135deg,${t.color1},${t.color2})`,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: 16, fontWeight: 700, color: '#FFFFFF', flexShrink: 0,
-                }}>{t.initial}</div>
-                <div>
-                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440' }}>{t.name}</div>
-                  <div style={{ fontSize: 12, color: '#6A8AAA' }}>{t.ort}</div>
-                </div>
-              </div>
+      {/* PRICING */}
+      <section id="preise" style={{ maxWidth: 440, margin: '0 auto 80px', padding: '0 24px', textAlign: 'center' }}>
+        <h2 style={{ fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 8, color: '#EDF2FA' }}>Einfache Preise</h2>
+        <p style={{ color: '#6E8EAD', marginBottom: 32, fontSize: 15 }}>1 kostenlose Analyse zum Testen</p>
+        <div style={{ background: '#112236', border: '2px solid rgba(201,150,58,0.4)', borderRadius: 16, padding: '32px 28px' }}>
+          <div style={{ fontFamily: 'serif', fontSize: 42, fontWeight: 700, color: '#EDF2FA', lineHeight: 1 }}>€2,99</div>
+          <div style={{ color: '#6E8EAD', fontSize: 14, marginBottom: 24 }}>pro Monat · jederzeit kündbar</div>
+          {['Unbegrenzte Analysen','Alle 45 Rechtsbereiche','Live RIS-Gesetzescheck','Fristen & Handlungsempfehlungen','Konsequenzen bei Nichttätigwerden','Kostenlose Beratungsstellen'].map((f,i) => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12, textAlign: 'left', fontSize: 14, color: '#C8D8EC' }}>
+              <span style={{ color: '#C9963A', fontWeight: 700 }}>✓</span>{f}
             </div>
           ))}
-
-        </div>
-
-        {/* Foto-Upload Highlight */}
-        <div style={{
-          marginTop: 32,
-          background: 'linear-gradient(135deg,rgba(201,150,58,0.08),rgba(15,36,64,0.04))',
-          border: '1px solid rgba(201,150,58,0.2)',
-          borderRadius: 16, padding: '20px 24px',
-          display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap',
-        }}>
-          <div style={{ fontSize: 32 }}>📸</div>
-          <div style={{ flex: 1, minWidth: 220 }}>
-            <div style={{ fontWeight: 700, fontSize: 15, color: '#0F2440', marginBottom: 4 }}>
-              Einfach fotografieren — fertig
-            </div>
-            <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6 }}>
-              Brief vom Handy abfotografieren, Foto reinziehen, analysieren lassen. Kein Abtippen nötig — auch eingescannte PDFs und Handy-Fotos werden erkannt.
-            </div>
-          </div>
-          <Link to="/analyse" style={{
-            display: 'inline-block',
-            background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
-            color: '#FFFFFF', textDecoration: 'none',
-            padding: '12px 20px', borderRadius: 10,
-            fontSize: 14, fontWeight: 600, whiteSpace: 'nowrap',
-          }}>
-            Jetzt Foto hochladen →
+          <Link to="/analyse" style={{ display: 'block', marginTop: 24, background: 'linear-gradient(135deg,#B8832A,#D4A84B)', color: '#0C1825', padding: 14, borderRadius: 10, fontSize: 16, fontWeight: 700, textDecoration: 'none' }}>
+            Jetzt kostenlos testen →
           </Link>
+          <div style={{ fontSize: 12, color: '#3A5570', marginTop: 12 }}>Erste Analyse kostenlos · Keine Kreditkarte nötig</div>
         </div>
-
       </section>
 
-      {/* ── PREISE ── */}
-      <section id="preise" style={{ maxWidth: 960, margin: '0 auto 80px', padding: '0 24px' }}>
-        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 8, color: '#0F2440' }}>
-          Wähle dein Paket
-        </h2>
-        <p style={{ textAlign: 'center', color: '#2A5080', marginBottom: 28, fontSize: 15 }}>
-          1 kostenlose Analyse zum Testen — keine Kreditkarte nötig
-        </p>
-
-        {/* Jährlich/Monatlich Toggle */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, marginBottom: 36 }}>
-          <span style={{ fontSize: 14, color: jaehrlich ? '#6A8AAA' : '#0F2440', fontWeight: jaehrlich ? 400 : 600 }}>
-            Monatlich
-          </span>
-          <button
-            onClick={() => setJaehrlich(!jaehrlich)}
-            style={{
-              width: 48, height: 26, borderRadius: 13,
-              background: jaehrlich ? '#C9963A' : '#C5D8ED',
-              border: 'none', cursor: 'pointer', position: 'relative',
-              transition: 'background 0.2s',
-            }}
-          >
-            <div style={{
-              width: 20, height: 20, borderRadius: '50%', background: '#FFFFFF',
-              position: 'absolute', top: 3,
-              left: jaehrlich ? 25 : 3,
-              transition: 'left 0.2s',
-            }}/>
-          </button>
-          <span style={{ fontSize: 14, color: jaehrlich ? '#0F2440' : '#6A8AAA', fontWeight: jaehrlich ? 600 : 400 }}>
-            Jährlich
-          </span>
-          {jaehrlich && (
-            <span style={{
-              fontSize: 12, fontWeight: 600,
-              background: 'rgba(201,150,58,0.15)', color: '#C9963A',
-              border: '1px solid rgba(201,150,58,0.3)',
-              borderRadius: 20, padding: '2px 10px'
-            }}>
-              2 Monate gratis
-            </span>
-          )}
-        </div>
-
-        {/* 3 Preiskarten */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20, alignItems: 'start' }}>
-
-          {/* ── VERSTEHEN ── */}
-          <div style={{
-            background: '#FFFFFF', border: '1.5px solid #C5D8ED',
-            borderRadius: 16, padding: '28px 24px'
-          }}>
-            <div style={{ fontSize: 13, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>
-              Verstehen
-            </div>
-            <div style={{ fontFamily: 'serif', fontSize: 38, fontWeight: 700, color: '#0F2440', lineHeight: 1 }}>
-              €{preis('verstehen').toFixed(2).replace('.',',')}
-            </div>
-            <div style={{ fontSize: 13, color: '#6A8AAA', marginBottom: 24 }}>
-              pro Monat{jaehrlich ? ', jährlich abgerechnet' : ''}
-            </div>
-            {[
-              { ok: true,  text: 'Unbegrenzte Analysen' },
-              { ok: true,  text: '82 Rechtsbereiche' },
-              { ok: true,  text: 'Fristen & Handlungsempfehlungen' },
-              { ok: true,  text: 'Konsequenzen bei Nichttätigwerden' },
-              { ok: true,  text: 'Live RIS-Gesetzescheck' },
-              { ok: false, text: 'KI schreibt Antwortbrief' },
-              { ok: false, text: 'Mustervorlagen zum Download' },
-              { ok: false, text: 'Mehrere Personen (Familie)' },
-            ].map((f, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
-                <span style={f.ok ? S.check : S.cross}>{f.ok ? '✓' : '–'}</span>
-                <span style={{ color: f.ok ? '#1A3A5C' : '#9BBAD4' }}>{f.text}</span>
-              </div>
-            ))}
-            <Link to="/analyse" style={{
-              display: 'block', marginTop: 20, textAlign: 'center',
-              padding: '13px', borderRadius: 10, fontSize: 15, fontWeight: 600,
-              textDecoration: 'none', border: '1.5px solid #C5D8ED', color: '#2A5080',
-              background: '#F5F8FC'
-            }}>
-              Kostenlos testen
-            </Link>
-          </div>
-
-          {/* ── HANDELN (empfohlen) ── */}
-          <div style={{
-            background: '#FFFFFF',
-            border: '2px solid #C9963A',
-            borderRadius: 16, padding: '28px 24px',
-            boxShadow: '0 8px 32px rgba(201,150,58,0.15)',
-            position: 'relative'
-          }}>
-            {/* Empfohlen-Badge */}
-            <div style={{
-              position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)',
-              background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
-              color: '#FFFFFF', fontSize: 12, fontWeight: 700,
-              padding: '4px 16px', borderRadius: 20, whiteSpace: 'nowrap'
-            }}>
-              ⭐ Meistgewählt
-            </div>
-            <div style={{ fontSize: 13, fontWeight: 600, color: '#C9963A', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>
-              Handeln
-            </div>
-            <div style={{ fontFamily: 'serif', fontSize: 38, fontWeight: 700, color: '#0F2440', lineHeight: 1 }}>
-              €{preis('handeln').toFixed(2).replace('.',',')}
-            </div>
-            <div style={{ fontSize: 13, color: '#6A8AAA', marginBottom: 24 }}>
-              pro Monat{jaehrlich ? ', jährlich abgerechnet' : ''}
-            </div>
-            {[
-              { ok: true,  text: 'Unbegrenzte Analysen' },
-              { ok: true,  text: '82 Rechtsbereiche' },
-              { ok: true,  text: 'Fristen & Handlungsempfehlungen' },
-              { ok: true,  text: 'Konsequenzen bei Nichttätigwerden' },
-              { ok: true,  text: 'Live RIS-Gesetzescheck' },
-              { ok: true,  text: 'KI schreibt Antwortbrief ✨' },
-              { ok: true,  text: 'Mustervorlagen zum Download' },
-              { ok: false, text: 'Mehrere Personen (Familie)' },
-            ].map((f, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
-                <span style={f.ok ? S.check : S.cross}>{f.ok ? '✓' : '–'}</span>
-                <span style={{ color: f.ok ? '#1A3A5C' : '#9BBAD4', fontWeight: f.text.includes('✨') ? 600 : 400 }}>
-                  {f.text}
-                </span>
-              </div>
-            ))}
-            <Link to="/analyse" style={{
-              display: 'block', marginTop: 20, textAlign: 'center',
-              padding: '13px', borderRadius: 10, fontSize: 15, fontWeight: 700,
-              textDecoration: 'none',
-              background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
-              color: '#FFFFFF',
-            }}>
-              Handeln wählen →
-            </Link>
-          </div>
-
-          {/* ── FAMILIE ── */}
-          <div style={{
-            background: '#FFFFFF', border: '1.5px solid #C5D8ED',
-            borderRadius: 16, padding: '28px 24px'
-          }}>
-            <div style={{ fontSize: 13, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>
-              Familie
-            </div>
-            <div style={{ fontFamily: 'serif', fontSize: 38, fontWeight: 700, color: '#0F2440', lineHeight: 1 }}>
-              €{preis('familie').toFixed(2).replace('.',',')}
-            </div>
-            <div style={{ fontSize: 13, color: '#6A8AAA', marginBottom: 24 }}>
-              pro Monat{jaehrlich ? ', jährlich abgerechnet' : ''}
-            </div>
-            {[
-              { ok: true, text: 'Unbegrenzte Analysen' },
-              { ok: true, text: '82 Rechtsbereiche' },
-              { ok: true, text: 'Fristen & Handlungsempfehlungen' },
-              { ok: true, text: 'Konsequenzen bei Nichttätigwerden' },
-              { ok: true, text: 'Live RIS-Gesetzescheck' },
-              { ok: true, text: 'KI schreibt Antwortbrief ✨' },
-              { ok: true, text: 'Mustervorlagen zum Download' },
-              { ok: true, text: 'Bis zu 5 Personen (Familie)' },
-            ].map((f, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
-                <span style={f.ok ? S.check : S.cross}>{f.ok ? '✓' : '–'}</span>
-                <span style={{ color: f.ok ? '#1A3A5C' : '#9BBAD4', fontWeight: f.text.includes('✨') ? 600 : 400 }}>
-                  {f.text}
-                </span>
-              </div>
-            ))}
-            <Link to="/analyse" style={{
-              display: 'block', marginTop: 20, textAlign: 'center',
-              padding: '13px', borderRadius: 10, fontSize: 15, fontWeight: 600,
-              textDecoration: 'none', border: '1.5px solid #C5D8ED', color: '#2A5080',
-              background: '#F5F8FC'
-            }}>
-              Familie wählen
-            </Link>
-          </div>
-
-        </div>
-
-        {/* Garantie-Hinweis */}
-        <p style={{ textAlign: 'center', fontSize: 13, color: '#6A8AAA', marginTop: 24 }}>
-          Alle Pakete · Jederzeit kündbar · Keine Mindestlaufzeit · Abwicklung über Paddle
-        </p>
-      </section>
-
-      {/* ── FAQ ── */}
-      <section style={{ maxWidth: 660, margin: '0 auto 80px', padding: '0 24px' }}>
-        <h2 style={{ fontFamily: 'serif', fontSize: 28, fontWeight: 700, marginBottom: 24, color: '#0F2440', textAlign: 'center' }}>
-          Häufige Fragen
-        </h2>
+      {/* FAQ */}
+      <section style={{ maxWidth: 640, margin: '0 auto 80px', padding: '0 24px' }}>
+        <h2 style={{ fontFamily: 'serif', fontSize: 28, fontWeight: 700, marginBottom: 24, color: '#EDF2FA', textAlign: 'center' }}>Häufige Fragen</h2>
         {faqs.map((faq, i) => (
-          <div key={i} style={{ borderBottom: '1px solid #C5D8ED', padding: '16px 0' }}>
-            <button
-              onClick={() => setOpenFaq(openFaq === i ? null : i)}
-              style={{
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                width: '100%', background: 'none', border: 'none',
-                color: '#0F2440', fontSize: 15, fontWeight: 600,
-                cursor: 'pointer', textAlign: 'left', gap: 12
-              }}
-            >
-              {faq.q}
-              <span style={{ color: '#C9963A', flexShrink: 0, fontSize: 20 }}>
-                {openFaq === i ? '−' : '+'}
-              </span>
+          <div key={i} style={{ borderBottom: '1px solid #1D3350', padding: '16px 0' }}>
+            <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', background: 'none', border: 'none', color: '#EDF2FA', fontSize: 15, fontWeight: 600, cursor: 'pointer', textAlign: 'left', gap: 12 }}>
+              {faq.q}<span style={{ color: '#C9963A', flexShrink: 0 }}>{openFaq === i ? '−' : '+'}</span>
             </button>
-            {openFaq === i && (
-              <p style={{ marginTop: 10, fontSize: 14, color: '#2A5080', lineHeight: 1.7 }}>
-                {faq.a}
-              </p>
-            )}
+            {openFaq === i && <p style={{ marginTop: 10, fontSize: 14, color: '#6E8EAD', lineHeight: 1.65 }}>{faq.a}</p>}
           </div>
         ))}
       </section>
 
-      {/* ── CTA ── */}
-      <section style={{ textAlign: 'center', padding: '60px 24px 80px', borderTop: '1px solid #C5D8ED' }}>
-        <h2 style={{ fontFamily: 'serif', fontSize: 28, fontWeight: 700, marginBottom: 12, color: '#0F2440' }}>
-          Brief erhalten? Jetzt analysieren.
-        </h2>
-        <p style={{ color: '#2A5080', marginBottom: 28, fontSize: 15 }}>
-          Erste Analyse kostenlos. Keine Kreditkarte nötig.
-        </p>
-        <Link to="/analyse" style={S.btn}>Kostenlos starten →</Link>
-      </section>
-
-      {/* ── FOOTER ── */}
-      <footer style={{
-        borderTop: '1px solid #C5D8ED', padding: '20px 24px',
-        display: 'flex', justifyContent: 'space-between',
-        alignItems: 'center', flexWrap: 'wrap', gap: 12,
-        background: '#FFFFFF'
-      }}>
-        <div style={{ fontSize: 13, color: '#6A8AAA' }}>
-          © 2025 AmtsKlar · Behördenbriefe sofort verstehen
-        </div>
+      {/* FOOTER */}
+      <footer style={{ borderTop: '1px solid #1D3350', padding: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
+        <div style={{ fontSize: 13, color: '#3A5570' }}>© 2025 AmtsKlar · Behördenbriefe sofort verstehen</div>
         <div style={{ display: 'flex', gap: 20, fontSize: 13 }}>
-          {[
-            { label: 'Impressum', path: '/impressum' },
-            { label: 'Datenschutz', path: '/datenschutz' },
-            { label: 'AGB', path: '/agb' },
-          ].map(l => (
-            <Link key={l.label} to={l.path} style={{ color: '#6A8AAA', textDecoration: 'none' }}>
-              {l.label}
-            </Link>
+          {['Impressum','Datenschutz','AGB'].map(l => (
+            <Link key={l} to={`/${l.toLowerCase()}`} style={{ color: '#3A5570', textDecoration: 'none' }}>{l}</Link>
           ))}
         </div>
       </footer>
-
     </div>
   )
 }
