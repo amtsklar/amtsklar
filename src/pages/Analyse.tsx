@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import * as pdfjsLib from 'pdfjs-dist'
 
-// PDF.js Worker — Vite lädt ihn als URL
-// @ts-ignore
-import pdfjsWorker from 'pdfjs-dist/build/pdf.worker?url'
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker
+// PDF.js Worker via CDN — stabiler als ?url Import in Cloudflare Pages
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
 
 // ═══════════════════════════════════════════════════════════════════
 // AmtsKlar — Analyse-Seite
