@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom'
 // ═══════════════════════════════════════════════════════════════════
 
 const S = {
-  page: { background: '#182638', minHeight: '100vh', color: '#EDF2FA', fontFamily: 'DM Sans,sans-serif' },
-  header: { padding: '14px 20px', borderBottom: '1px solid #2A4A6A', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  page: { background: '#EEF4FB', minHeight: '100vh', color: '#0F2440', fontFamily: 'DM Sans,sans-serif' },
+  header: { padding: '14px 20px', borderBottom: '1px solid #C5D8ED', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
   body: { maxWidth: 760, margin: '0 auto', padding: '48px 24px 80px' },
-  h1: { fontFamily: 'Libre Baskerville,serif', fontSize: 32, fontWeight: 700, color: '#EDF2FA', marginBottom: 8 } as React.CSSProperties,
-  h2: { fontFamily: 'Libre Baskerville,serif', fontSize: 20, fontWeight: 700, color: '#EDF2FA', marginTop: 40, marginBottom: 12, paddingTop: 24, borderTop: '1px solid #2A4A6A' } as React.CSSProperties,
+  h1: { fontFamily: 'Libre Baskerville,serif', fontSize: 32, fontWeight: 700, color: '#0F2440', marginBottom: 8 } as React.CSSProperties,
+  h2: { fontFamily: 'Libre Baskerville,serif', fontSize: 20, fontWeight: 700, color: '#0F2440', marginTop: 40, marginBottom: 12, paddingTop: 24, borderTop: '1px solid #C5D8ED' } as React.CSSProperties,
   h3: { fontSize: 15, fontWeight: 600, color: '#C9963A', marginTop: 20, marginBottom: 8 } as React.CSSProperties,
-  p: { fontSize: 15, color: '#C8D8EC', lineHeight: 1.75, marginBottom: 12 } as React.CSSProperties,
+  p: { fontSize: 15, color: '#1A3A5C', lineHeight: 1.75, marginBottom: 12 } as React.CSSProperties,
   note: { background: 'rgba(201,150,58,0.08)', border: '1px solid rgba(201,150,58,0.2)', borderRadius: 10, padding: '14px 18px', fontSize: 14, color: '#C9963A', lineHeight: 1.65, marginBottom: 28 } as React.CSSProperties,
-  updated: { fontSize: 13, color: '#6A8AAA', marginBottom: 32 } as React.CSSProperties,
+  updated: { fontSize: 13, color: '#4A6A90', marginBottom: 32 } as React.CSSProperties,
 }
 
 export default function Impressum() {
@@ -25,11 +25,11 @@ export default function Impressum() {
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <svg width="32" height="32" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#D4A84B"/><stop offset="100%" stopColor="#A8731E"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#g)"/><text x="16" y="22" fontFamily="Georgia,serif" fontSize="18" fontWeight="bold" fill="white" textAnchor="middle">§</text></svg>
           <span style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 18 }}>
-            <span style={{ color: '#EDF2FA', fontWeight: 400 }}>Amts</span>
+            <span style={{ color: '#0F2440', fontWeight: 400 }}>Amts</span>
             <span style={{ color: '#C9963A', fontWeight: 700 }}>Klar</span>
           </span>
         </Link>
-        <Link to="/" style={{ fontSize: 14, color: '#90AECA', textDecoration: 'none' }}>← Zurück</Link>
+        <Link to="/" style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none' }}>← Zurück</Link>
       </div>
 
       <div style={S.body}>

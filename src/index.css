@@ -1,20 +1,20 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --navy: #182638;
-  --navy-light: #1E3248;
-  --border: #2A4A6A;
+  --navy: #EEF4FB;
+  --navy-light: #FFFFFF;
+  --border: #C5D8ED;
   --gold: #C9963A;
   --gold-light: #D4A84B;
   --gold-dark: #A8731E;
-  --text: #EDF2FA;
-  --text-muted: #90AECA;
-  --text-dim: #6A8AAA;
+  --text: #0F2440;
+  --text-muted: #2A5080;
+  --text-dim: #4A6A90;
 }
 
 body {
-  background: var(--navy);
-  color: var(--text);
+  background: #EEF4FB;
+  color: #0F2440;
   font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
