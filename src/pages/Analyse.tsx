@@ -1,10 +1,32 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import * as pdfjsLib from 'pdfjs-dist'
 
-// PDF.js Worker via CDN — stabiler als ?url Import in Cloudflare Pages
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
+// PDF.js wird NUR bei Bedarf dynamisch von CDN geladen
+// → kein Build-Problem, kein npm-Paket nötig
+let pdfJsLoaded = false
+
+async function loadPdfJs(): Promise<any> {
+  // Bereits geladen → direkt zurückgeben
+  if (pdfJsLoaded && (window as any).pdfjsLib) {
+    return (window as any).pdfjsLib
+  }
+
+  return new Promise<any>((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js'
+    script.crossOrigin = 'anonymous'
+    script.onload = () => {
+      const lib = (window as any).pdfjsLib
+      if (!lib) { reject(new Error('PDF.js nicht verfügbar')); return }
+      lib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
+      pdfJsLoaded = true
+      resolve(lib)
+    }
+    script.onerror = () => reject(new Error('PDF.js konnte nicht geladen werden'))
+    document.head.appendChild(script)
+  })
+}
 
 // ═══════════════════════════════════════════════════════════════════
 // AmtsKlar — Analyse-Seite
@@ -132,8 +154,10 @@ function planHatBrief(plan: Plan): boolean {
 
 // ── Text aus PDF extrahieren ──────────────────────────────────────
 async function extractTextFromPdf(file: File): Promise<string> {
+  // PDF.js dynamisch laden (CDN, nur beim ersten Aufruf)
   const arrayBuffer = await file.arrayBuffer()
-  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
+  const lib = await loadPdfJs()
+  const pdf = await lib.getDocument({ data: arrayBuffer }).promise
 
   const pageTexts: string[] = []
 
@@ -1181,27 +1205,17 @@ export default function Analyse() {
               )}
 
               {/* Analyse-Button */}
-              {(() => {
-                const canAnalyse = imageData !== null || briefText.trim().length >= 20
-                const btnLabel   = imageData
-                  ? '📸 Foto analysieren →'
-                  : pdfFileName
-                  ? '📄 PDF analysieren →'
-                  : 'Brief analysieren →'
-                return (
-                  <button
-                    style={{
-                      ...S.btn,
-                      opacity: canAnalyse ? 1 : 0.5,
-                      cursor:  canAnalyse ? 'pointer' : 'not-allowed',
-                    }}
-                    onClick={() => analyse(false)}
-                    disabled={!canAnalyse}
-                  >
-                    {btnLabel}
-                  </button>
-                )
-              })()}
+              <button
+                style={{
+                  ...S.btn,
+                  opacity: (imageData !== null || briefText.trim().length >= 20) ? 1 : 0.5,
+                  cursor:  (imageData !== null || briefText.trim().length >= 20) ? 'pointer' : 'not-allowed',
+                }}
+                onClick={() => analyse(false)}
+                disabled={imageData === null && briefText.trim().length < 20}
+              >
+                {imageData ? '📸 Foto analysieren →' : pdfFileName ? '📄 PDF analysieren →' : 'Brief analysieren →'}
+              </button>
 
               {/* Wie es funktioniert */}
               <div style={{
