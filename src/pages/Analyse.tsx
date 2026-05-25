@@ -120,6 +120,64 @@ function planHatBrief(plan: Plan): boolean {
   return plan === 'handeln' || plan === 'familie'
 }
 
+// ── PDF.js laden (von CDN, nur wenn gebraucht) ────────────────────
+function loadPdfJs(): Promise<any> {
+  return new Promise((resolve, reject) => {
+    // Bereits geladen?
+    if ((window as any).pdfjsLib) {
+      resolve((window as any).pdfjsLib)
+      return
+    }
+    const script = document.createElement('script')
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js'
+    script.onload = () => {
+      const lib = (window as any).pdfjsLib
+      // Worker-URL setzen (verhindert CORS-Fehler)
+      lib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
+      resolve(lib)
+    }
+    script.onerror = () => reject(new Error('PDF.js konnte nicht geladen werden'))
+    document.head.appendChild(script)
+  })
+}
+
+// ── Text aus PDF extrahieren ──────────────────────────────────────
+async function extractTextFromPdf(file: File): Promise<string> {
+  const pdfjsLib = await loadPdfJs()
+  const arrayBuffer = await file.arrayBuffer()
+  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
+
+  const pageTexts: string[] = []
+
+  for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+    const page = await pdf.getPage(pageNum)
+    const textContent = await page.getTextContent()
+
+    // Text-Items zusammenfügen mit Zeilenumbrüchen
+    let lastY: number | null = null
+    let pageText = ''
+
+    for (const item of textContent.items as any[]) {
+      if (item.str.trim() === '') continue
+
+      // Neuer Absatz wenn Y-Position stark wechselt (andere Zeile)
+      if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) {
+        pageText += '\n'
+      } else if (lastY !== null) {
+        pageText += ' '
+      }
+
+      pageText += item.str
+      lastY = item.transform[5]
+    }
+
+    pageTexts.push(pageText.trim())
+  }
+
+  return pageTexts.filter(t => t.length > 0).join('\n\n')
+}
+
 // ── Logo Komponente ───────────────────────────────────────────────
 const Logo = () => (
   <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
@@ -173,6 +231,11 @@ export default function Analyse() {
 
   // State: Paddle
   const [paddleReady, setPaddleReady] = useState(false)
+
+  // State: PDF Drag & Drop
+  const [isDragOver, setIsDragOver]   = useState(false)
+  const [pdfLoading, setPdfLoading]   = useState(false)
+  const [pdfFileName, setPdfFileName] = useState<string | null>(null)
 
   // ── Initialisierung beim Start ──────────────────────────────────
   useEffect(() => {
@@ -272,6 +335,67 @@ export default function Analyse() {
     } finally {
       setVerifying(false)
     }
+  }
+
+  // ── PDF Datei verarbeiten ───────────────────────────────────────
+  const processPdfFile = async (file: File) => {
+    if (file.type !== 'application/pdf') {
+      setError('Bitte nur PDF-Dateien hochladen.')
+      return
+    }
+    if (file.size > 10 * 1024 * 1024) { // 10MB Limit
+      setError('PDF zu groß (max. 10 MB)')
+      return
+    }
+
+    setPdfLoading(true)
+    setError(null)
+    setPdfFileName(file.name)
+
+    try {
+      const extractedText = await extractTextFromPdf(file)
+      if (extractedText.trim().length < 20) {
+        setError('Text konnte nicht aus dem PDF gelesen werden. Bitte Text manuell eingeben.')
+        setPdfFileName(null)
+        return
+      }
+      setBriefText(extractedText)
+    } catch (e) {
+      setError('Fehler beim Lesen des PDFs. Bitte Text manuell einfügen.')
+      setPdfFileName(null)
+    } finally {
+      setPdfLoading(false)
+    }
+  }
+
+  // ── Drag & Drop Handler ─────────────────────────────────────────
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragOver(true)
+  }
+
+  const handleDragLeave = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragOver(false)
+  }
+
+  const handleDrop = async (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragOver(false)
+
+    const file = e.dataTransfer.files[0]
+    if (file) await processPdfFile(file)
+  }
+
+  // ── Datei-Auswahl per Klick ─────────────────────────────────────
+  const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (file) await processPdfFile(file)
+    // Input zurücksetzen damit gleiche Datei nochmal wählbar
+    e.target.value = ''
   }
 
   // ── Brief analysieren ───────────────────────────────────────────
@@ -381,6 +505,7 @@ export default function Analyse() {
     setBriefText('')
     setError(null)
     setCopied(false)
+    setPdfFileName(null)
   }
 
   // ── Dringlichkeits-Styling ──────────────────────────────────────
@@ -681,23 +806,134 @@ export default function Analyse() {
                 Brief<br/>erhalten?
               </h1>
 
-              <p style={{ fontSize: 15, color: '#2A5080', lineHeight: 1.6, marginBottom: 24 }}>
-                Einfügen, analysieren — sofort verstehen was er bedeutet,
-                welche Frist gilt und was zu tun ist.
+              <p style={{ fontSize: 15, color: '#2A5080', lineHeight: 1.6, marginBottom: 20 }}>
+                PDF reinziehen oder Text einfügen — sofort verstehen was er bedeutet.
               </p>
+
+              {/* ── PDF DRAG & DROP ZONE ── */}
+              <div
+                onDragOver={handleDragOver}
+                onDragLeave={handleDragLeave}
+                onDrop={handleDrop}
+                style={{
+                  border: `2px dashed ${isDragOver ? '#C9963A' : pdfFileName ? '#4CAF82' : '#C5D8ED'}`,
+                  borderRadius: 12,
+                  padding: '20px',
+                  marginBottom: 12,
+                  background: isDragOver
+                    ? 'rgba(201,150,58,0.06)'
+                    : pdfFileName
+                    ? 'rgba(76,175,130,0.05)'
+                    : '#FAFCFF',
+                  textAlign: 'center',
+                  transition: 'all 0.2s ease',
+                  cursor: 'pointer',
+                }}
+                onClick={() => document.getElementById('pdf-input')?.click()}
+              >
+                {/* Versteckter File-Input */}
+                <input
+                  id="pdf-input"
+                  type="file"
+                  accept=".pdf"
+                  onChange={handleFileInput}
+                  style={{ display: 'none' }}
+                />
+
+                {pdfLoading ? (
+                  /* PDF wird gerade verarbeitet */
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
+                    <div style={{
+                      width: 20, height: 20,
+                      border: '2px solid #C5D8ED',
+                      borderTop: '2px solid #C9963A',
+                      borderRadius: '50%',
+                      animation: 'spin 0.8s linear infinite',
+                    }}/>
+                    <span style={{ fontSize: 14, color: '#2A5080' }}>
+                      PDF wird gelesen…
+                    </span>
+                  </div>
+                ) : pdfFileName ? (
+                  /* PDF erfolgreich geladen */
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+                    <span style={{ fontSize: 20 }}>📄</span>
+                    <div style={{ textAlign: 'left' }}>
+                      <div style={{ fontSize: 14, fontWeight: 600, color: '#4CAF82' }}>
+                        ✓ PDF geladen
+                      </div>
+                      <div style={{ fontSize: 12, color: '#6A8AAA' }}>
+                        {pdfFileName}
+                      </div>
+                    </div>
+                    <button
+                      onClick={e => {
+                        e.stopPropagation()
+                        setPdfFileName(null)
+                        setBriefText('')
+                      }}
+                      style={{
+                        marginLeft: 8, background: 'none', border: 'none',
+                        color: '#6A8AAA', cursor: 'pointer', fontSize: 18, lineHeight: 1,
+                      }}
+                      title="Entfernen"
+                    >
+                      ×
+                    </button>
+                  </div>
+                ) : isDragOver ? (
+                  /* Drag-Over Zustand */
+                  <div>
+                    <div style={{ fontSize: 28, marginBottom: 6 }}>📂</div>
+                    <div style={{ fontSize: 14, fontWeight: 600, color: '#C9963A' }}>
+                      PDF hier ablegen
+                    </div>
+                  </div>
+                ) : (
+                  /* Normal-Zustand */
+                  <div>
+                    <div style={{ fontSize: 24, marginBottom: 8 }}>📎</div>
+                    <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440', marginBottom: 4 }}>
+                      PDF hier reinziehen
+                    </div>
+                    <div style={{ fontSize: 12, color: '#6A8AAA' }}>
+                      oder klicken zum Auswählen · max. 10 MB
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Trennlinie */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+                <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
+                <span style={{ fontSize: 12, color: '#6A8AAA', whiteSpace: 'nowrap' }}>
+                  oder Text direkt einfügen
+                </span>
+                <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
+              </div>
 
               {/* Textarea für Brieftext */}
               <textarea
-                style={S.ta}
+                style={{
+                  ...S.ta,
+                  // Grüner Rand wenn PDF geladen und Text vorhanden
+                  border: pdfFileName ? '1.5px solid rgba(76,175,130,0.5)' : '1.5px solid #C5D8ED',
+                }}
                 placeholder={'Brieftext hier einfügen…\n\nz.B. Strafverfügung, Finanzamtsbescheid, AMS-Schreiben, Inkasso, Mietkündigung…'}
                 value={briefText}
-                onChange={e => setBriefText(e.target.value)}
-                rows={11}
+                onChange={e => {
+                  setBriefText(e.target.value)
+                  if (pdfFileName && e.target.value !== briefText) setPdfFileName(null)
+                }}
+                rows={pdfFileName ? 8 : 11}
               />
 
               {/* Zeichenzähler */}
               <div style={{ textAlign: 'right', fontSize: 12, color: '#6A8AAA', marginTop: 4, marginBottom: 16 }}>
                 {briefText.length} Zeichen
+                {pdfFileName && (
+                  <span style={{ marginLeft: 8, color: '#4CAF82' }}>· aus PDF extrahiert</span>
+                )}
               </div>
 
               {/* Fehlermeldung */}
@@ -716,13 +952,13 @@ export default function Analyse() {
               <button
                 style={{
                   ...S.btn,
-                  opacity: briefText.trim().length < 30 ? 0.5 : 1,
-                  cursor: briefText.trim().length < 30 ? 'not-allowed' : 'pointer',
+                  opacity: briefText.trim().length < 20 ? 0.5 : 1,
+                  cursor: briefText.trim().length < 20 ? 'not-allowed' : 'pointer',
                 }}
                 onClick={analyse}
-                disabled={briefText.trim().length < 30}
+                disabled={briefText.trim().length < 20}
               >
-                Brief analysieren →
+                {pdfFileName ? '📄 PDF analysieren →' : 'Brief analysieren →'}
               </button>
 
               {/* Wie es funktioniert */}
@@ -732,9 +968,9 @@ export default function Analyse() {
                 borderTop: '1px solid #C5D8ED',
               }}>
                 {[
-                  ['📋', 'Einfügen', 'Text kopieren'],
-                  ['⚖️', 'Analysieren', 'Österr. Gesetze'],
-                  ['✅', 'Verstehen', 'Klare Schritte'],
+                  ['📎', 'PDF oder Text', 'Reinziehen oder einfügen'],
+                  ['⚖️', 'Analysieren', 'Österr. Gesetze, 82 Bereiche'],
+                  ['✅', 'Verstehen', 'Klare Schritte & Fristen'],
                 ].map(([icon, title, desc]) => (
                   <div key={title} style={{ textAlign: 'center' }}>
                     <div style={{ fontSize: 22, marginBottom: 6 }}>{icon}</div>
@@ -752,6 +988,7 @@ export default function Analyse() {
               }}>
                 AmtsKlar informiert und erklärt —{' '}
                 <strong style={{ color: '#2A5080' }}>ersetzt keine Rechtsberatung.</strong>
+                {' '}PDFs werden lokal verarbeitet und nicht gespeichert.
               </div>
 
             </div>

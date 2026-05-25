@@ -34,7 +34,7 @@ const Logo = () => (
 // ── Feature-Liste ─────────────────────────────────────────────────
 const features = [
   { icon: '⚡', title: 'Sofortige Analyse', desc: 'Brief einfügen → in Sekunden verstehen was er bedeutet' },
-  { icon: '⚖️', title: '45 Rechtsbereiche', desc: 'Finanzamt, AMS, Gericht, Mietrecht, Fremdenrecht und mehr' },
+  { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, Gericht, Mietrecht, Fremdenrecht und mehr' },
   { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt und was passiert wenn du sie verpasst' },
   { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist' },
   { icon: '✉️', title: 'KI schreibt den Brief', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
@@ -45,7 +45,7 @@ const features = [
 const faqs = [
   {
     q: 'Für welche Briefe funktioniert AmtsKlar?',
-    a: 'Alle österreichischen Behördenschreiben: Finanzamt, AMS, ÖGK, Gericht, Magistrat, BH, Mietrecht, Fremdenrecht, Straf-, Zivil- und Verwaltungsrecht — 45 Rechtsbereiche abgedeckt.'
+    a: 'Alle österreichischen Behördenschreiben: Finanzamt, AMS, ÖGK, Gericht, Magistrat, BH, Mietrecht, Fremdenrecht, Straf-, Zivil- und Verwaltungsrecht — 82 Rechtsbereiche abgedeckt.'
   },
   {
     q: 'Was ist der Unterschied zwischen den Paketen?',
@@ -139,7 +139,7 @@ export default function Landing() {
           borderRadius: 20, padding: '6px 16px', fontSize: 13, color: '#C9963A',
           marginBottom: 24, fontWeight: 500
         }}>
-          🇦🇹 Speziell für Österreich · 45 Rechtsbereiche
+          🇦🇹 Speziell für Österreich · 82 Rechtsbereiche
         </div>
 
         <h1 style={{
@@ -308,7 +308,7 @@ export default function Landing() {
             </div>
             {[
               { ok: true,  text: 'Unbegrenzte Analysen' },
-              { ok: true,  text: '45 Rechtsbereiche' },
+              { ok: true,  text: '82 Rechtsbereiche' },
               { ok: true,  text: 'Fristen & Handlungsempfehlungen' },
               { ok: true,  text: 'Konsequenzen bei Nichttätigwerden' },
               { ok: true,  text: 'Live RIS-Gesetzescheck' },
@@ -359,7 +359,7 @@ export default function Landing() {
             </div>
             {[
               { ok: true,  text: 'Unbegrenzte Analysen' },
-              { ok: true,  text: '45 Rechtsbereiche' },
+              { ok: true,  text: '82 Rechtsbereiche' },
               { ok: true,  text: 'Fristen & Handlungsempfehlungen' },
               { ok: true,  text: 'Konsequenzen bei Nichttätigwerden' },
               { ok: true,  text: 'Live RIS-Gesetzescheck' },
@@ -401,7 +401,7 @@ export default function Landing() {
             </div>
             {[
               { ok: true, text: 'Unbegrenzte Analysen' },
-              { ok: true, text: '45 Rechtsbereiche' },
+              { ok: true, text: '82 Rechtsbereiche' },
               { ok: true, text: 'Fristen & Handlungsempfehlungen' },
               { ok: true, text: 'Konsequenzen bei Nichttätigwerden' },
               { ok: true, text: 'Live RIS-Gesetzescheck' },
