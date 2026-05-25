@@ -162,6 +162,61 @@ async function extractTextFromPdf(file: File): Promise<string> {
   return pageTexts.filter(t => t.length > 0).join('\n\n')
 }
 
+// ── Bild komprimieren (Canvas API) ───────────────────────────────
+// Verhindert zu große Base64-Daten für die API
+// Gibt immer JPEG zurück — breite Kompatibilität, gute Kompression
+async function compressImage(file: File): Promise<{
+  base64:    string
+  mediaType: string
+  preview:   string
+}> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader()
+
+    reader.onload = (e) => {
+      const img = new Image()
+
+      img.onload = () => {
+        // Max 1920px — ausreichend für Textlesbarkeit durch KI
+        const MAX = 1920
+        let { width, height } = img
+
+        if (width > MAX || height > MAX) {
+          if (width >= height) {
+            height = Math.round((height * MAX) / width)
+            width  = MAX
+          } else {
+            width  = Math.round((width * MAX) / height)
+            height = MAX
+          }
+        }
+
+        const canvas = document.createElement('canvas')
+        canvas.width  = width
+        canvas.height = height
+
+        const ctx = canvas.getContext('2d')!
+        // Weißer Hintergrund (wichtig für transparente PNGs)
+        ctx.fillStyle = '#FFFFFF'
+        ctx.fillRect(0, 0, width, height)
+        ctx.drawImage(img, 0, 0, width, height)
+
+        // JPEG mit guter Qualität — typischerweise 200–600 KB nach Kompression
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.88)
+        const base64  = dataUrl.split(',')[1]
+
+        resolve({ base64, mediaType: 'image/jpeg', preview: dataUrl })
+      }
+
+      img.onerror = () => reject(new Error('Bild konnte nicht geladen werden'))
+      img.src = e.target?.result as string
+    }
+
+    reader.onerror = () => reject(new Error('Datei konnte nicht gelesen werden'))
+    reader.readAsDataURL(file)
+  })
+}
+
 // ── Logo Komponente ───────────────────────────────────────────────
 const Logo = () => (
   <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
@@ -275,17 +330,25 @@ export default function Analyse() {
   const openCheckout = (selectedPlan: 'verstehen' | 'handeln' | 'familie') => {
     const priceId = PADDLE_PRICES[selectedPlan]
 
+    // Paddle bereit und Price ID vorhanden → Checkout öffnen
     if (paddleReady && (window as any).Paddle && priceId) {
       ;(window as any).Paddle.Checkout.open({
         items: [{ priceId, quantity: 1 }],
         customer: email ? { email } : undefined,
-        // Plan-Info in der Success-URL übergeben
         successUrl: `${window.location.origin}/analyse?success=1&plan=${selectedPlan}`,
       })
-    } else {
-      // Fallback: zur Preisseite scrollen
-      window.location.href = 'https://amtsklar.at/#preise'
+      return
     }
+
+    // Paddle noch nicht konfiguriert → Hinweis anzeigen statt wegzuleiten
+    if (!priceId) {
+      setError('Zahlungssystem wird gerade eingerichtet — bitte in Kürze erneut versuchen.')
+      setShowPaywall(false)
+      return
+    }
+
+    // Paddle.js noch nicht geladen → kurz warten und nochmal versuchen
+    setError('Zahlungssystem lädt gerade — bitte einen Moment warten und nochmal klicken.')
   }
 
   // ── Subscription per E-Mail prüfen ─────────────────────────────
@@ -365,6 +428,48 @@ export default function Analyse() {
     }
   }
 
+  // ── Bild-Datei verarbeiten ─────────────────────────────────────
+  const processImageFile = async (file: File) => {
+    const SUPPORTED = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp']
+    if (!SUPPORTED.includes(file.type)) {
+      setError('Unterstützte Formate: JPG, PNG, WEBP (Handy-Foto) oder PDF (Bescheid).')
+      return
+    }
+    if (file.size > 25 * 1024 * 1024) {
+      setError('Bild zu groß (max. 25 MB). Bitte Foto in niedrigerer Auflösung aufnehmen.')
+      return
+    }
+
+    setImageLoading(true)
+    setError(null)
+    // Bei Bild: Text und PDF zurücksetzen
+    setBriefText('')
+    setPdfFileName(null)
+
+    try {
+      const compressed = await compressImage(file)
+      setImageData({ ...compressed, fileName: file.name })
+      setError(null)
+    } catch {
+      setError('Bild konnte nicht verarbeitet werden. Bitte nochmal versuchen.')
+    } finally {
+      setImageLoading(false)
+    }
+  }
+
+  // ── Datei verarbeiten (PDF oder Bild) ──────────────────────────
+  const processFile = async (file: File) => {
+    if (file.type === 'application/pdf') {
+      // Bei PDF: Bild zurücksetzen
+      setImageData(null)
+      await processPdfFile(file)
+    } else if (file.type.startsWith('image/')) {
+      await processImageFile(file)
+    } else {
+      setError('Bitte PDF oder Foto (JPG, PNG, WEBP) hochladen.')
+    }
+  }
+
   // ── Drag & Drop Handler ─────────────────────────────────────────
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault()
@@ -382,26 +487,26 @@ export default function Analyse() {
     e.preventDefault()
     e.stopPropagation()
     setIsDragOver(false)
-
     const file = e.dataTransfer.files[0]
-    if (file) await processPdfFile(file)
+    if (file) await processFile(file)
   }
 
   // ── Datei-Auswahl per Klick ─────────────────────────────────────
   const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
-    if (file) await processPdfFile(file)
-    // Input zurücksetzen damit gleiche Datei nochmal wählbar
+    if (file) await processFile(file)
     e.target.value = ''
   }
 
   // ── Brief analysieren ───────────────────────────────────────────
   const analyse = async (forceAnalyse = false) => {
-    const trimmed = briefText.trim()
+    const trimmed   = briefText.trim()
+    const hasImage  = imageData !== null
+    const hasText   = trimmed.length >= 20
 
-    // Mindestlänge
-    if (trimmed.length < 20) {
-      setError('Bitte den vollständigen Brieftext einfügen (mindestens 20 Zeichen).')
+    // Etwas muss vorhanden sein
+    if (!hasImage && !hasText) {
+      setError('Bitte Text einfügen oder Foto/PDF hochladen.')
       return
     }
 
@@ -411,8 +516,8 @@ export default function Analyse() {
       return
     }
 
-    // Wenn Text sehr lang: Warnung zeigen (außer User hat bereits bestätigt)
-    if (!forceAnalyse && trimmed.length > CHAR_LIMIT) {
+    // Langtextwarnung: nur bei reinem Text, nicht bei Bild
+    if (!hasImage && !forceAnalyse && trimmed.length > CHAR_LIMIT) {
       setShowLongTextWarning(true)
       return
     }
@@ -426,21 +531,24 @@ export default function Analyse() {
     try {
       const includeLetter = planHatBrief(plan)
 
+      // Request-Body: Bild ODER Text
+      const requestBody = hasImage
+        ? { briefImage: { data: imageData!.base64, mediaType: imageData!.mediaType }, includeLetter }
+        : { briefText: trimmed, includeLetter }
+
       const res = await fetch('/api/analyse', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ briefText: trimmed, includeLetter }),
+        body: JSON.stringify(requestBody),
       })
 
       const data = await res.json()
-
-      if (!res.ok || data.error) {
-        throw new Error(data.error || 'Unbekannter Fehler')
-      }
+      if (!res.ok || data.error) throw new Error(data.error || 'Unbekannter Fehler')
 
       setResult(data.result)
       setAntwortbrief(data.antwortbrief || null)
-      setWasTruncated(trimmed.length > CHAR_LIMIT)
+      // Kürzungshinweis nur bei Text
+      setWasTruncated(!hasImage && trimmed.length > CHAR_LIMIT)
       setScreen('result')
 
       const newCount = count + 1
@@ -505,6 +613,8 @@ export default function Analyse() {
     setError(null)
     setCopied(false)
     setPdfFileName(null)
+    setImageData(null)
+    setImageLoading(false)
     setWasTruncated(false)
     setShowLongTextWarning(false)
   }
@@ -760,7 +870,7 @@ export default function Analyse() {
 
             {/* Schließen */}
             <button
-              onClick={() => setShowPaywall(false)}
+              onClick={() => { setShowPaywall(false); setError(null) }}
               style={{ ...S.btnOut, fontSize: 13, marginTop: 12 }}
             >
               Schließen
@@ -884,38 +994,43 @@ export default function Analyse() {
                 PDF reinziehen oder Text einfügen — sofort verstehen was er bedeutet.
               </p>
 
-              {/* ── PDF DRAG & DROP ZONE ── */}
+              {/* ── UPLOAD ZONE: PDF + Foto ── */}
               <div
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
                 style={{
-                  border: `2px dashed ${isDragOver ? '#C9963A' : pdfFileName ? '#4CAF82' : '#C5D8ED'}`,
+                  border: `2px dashed ${
+                    isDragOver   ? '#C9963A'
+                    : imageData  ? '#4CAF82'
+                    : pdfFileName ? '#4CAF82'
+                    : '#C5D8ED'
+                  }`,
                   borderRadius: 12,
-                  padding: '20px',
+                  padding: imageData ? '12px 20px' : '20px',
                   marginBottom: 12,
                   background: isDragOver
                     ? 'rgba(201,150,58,0.06)'
-                    : pdfFileName
+                    : (imageData || pdfFileName)
                     ? 'rgba(76,175,130,0.05)'
                     : '#FAFCFF',
                   textAlign: 'center',
                   transition: 'all 0.2s ease',
                   cursor: 'pointer',
                 }}
-                onClick={() => document.getElementById('pdf-input')?.click()}
+                onClick={() => document.getElementById('file-input')?.click()}
               >
-                {/* Versteckter File-Input */}
+                {/* Versteckter File-Input — PDF + Bilder */}
                 <input
-                  id="pdf-input"
+                  id="file-input"
                   type="file"
-                  accept=".pdf"
+                  accept=".pdf,.jpg,.jpeg,.png,.webp"
                   onChange={handleFileInput}
                   style={{ display: 'none' }}
                 />
 
-                {pdfLoading ? (
-                  /* PDF wird gerade verarbeitet */
+                {/* ── Laden ── */}
+                {(pdfLoading || imageLoading) ? (
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
                     <div style={{
                       width: 20, height: 20,
@@ -925,112 +1040,134 @@ export default function Analyse() {
                       animation: 'spin 0.8s linear infinite',
                     }}/>
                     <span style={{ fontSize: 14, color: '#2A5080' }}>
-                      PDF wird gelesen…
+                      {imageLoading ? 'Foto wird vorbereitet…' : 'PDF wird gelesen…'}
                     </span>
                   </div>
-                ) : pdfFileName ? (
-                  /* PDF erfolgreich geladen */
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-                    <span style={{ fontSize: 20 }}>📄</span>
-                    <div style={{ textAlign: 'left' }}>
+
+                /* ── Foto geladen → Vorschau ── */
+                ) : imageData ? (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                    <img
+                      src={imageData.preview}
+                      alt="Vorschau"
+                      style={{
+                        width: 52, height: 52, objectFit: 'cover',
+                        borderRadius: 6, border: '1px solid #C5D8ED', flexShrink: 0,
+                      }}
+                    />
+                    <div style={{ textAlign: 'left', flex: 1, minWidth: 0 }}>
                       <div style={{ fontSize: 14, fontWeight: 600, color: '#4CAF82' }}>
-                        ✓ PDF geladen
+                        ✓ Foto geladen — bereit zur Analyse
                       </div>
-                      <div style={{ fontSize: 12, color: '#6A8AAA' }}>
-                        {pdfFileName}
+                      <div style={{ fontSize: 12, color: '#6A8AAA', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {imageData.fileName}
                       </div>
                     </div>
                     <button
-                      onClick={e => {
-                        e.stopPropagation()
-                        setPdfFileName(null)
-                        setBriefText('')
-                      }}
-                      style={{
-                        marginLeft: 8, background: 'none', border: 'none',
-                        color: '#6A8AAA', cursor: 'pointer', fontSize: 18, lineHeight: 1,
-                      }}
+                      onClick={e => { e.stopPropagation(); setImageData(null) }}
+                      style={{ background: 'none', border: 'none', color: '#6A8AAA', cursor: 'pointer', fontSize: 20, flexShrink: 0 }}
                       title="Entfernen"
-                    >
-                      ×
-                    </button>
+                    >×</button>
                   </div>
+
+                /* ── PDF geladen ── */
+                ) : pdfFileName ? (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+                    <span style={{ fontSize: 20 }}>📄</span>
+                    <div style={{ textAlign: 'left' }}>
+                      <div style={{ fontSize: 14, fontWeight: 600, color: '#4CAF82' }}>✓ PDF geladen</div>
+                      <div style={{ fontSize: 12, color: '#6A8AAA' }}>{pdfFileName}</div>
+                    </div>
+                    <button
+                      onClick={e => { e.stopPropagation(); setPdfFileName(null); setBriefText('') }}
+                      style={{ marginLeft: 8, background: 'none', border: 'none', color: '#6A8AAA', cursor: 'pointer', fontSize: 18 }}
+                      title="Entfernen"
+                    >×</button>
+                  </div>
+
+                /* ── Drag-Over ── */
                 ) : isDragOver ? (
-                  /* Drag-Over Zustand */
                   <div>
                     <div style={{ fontSize: 28, marginBottom: 6 }}>📂</div>
                     <div style={{ fontSize: 14, fontWeight: 600, color: '#C9963A' }}>
-                      PDF hier ablegen
+                      Hier ablegen
                     </div>
                   </div>
+
+                /* ── Normal ── */
                 ) : (
-                  /* Normal-Zustand */
                   <div>
-                    <div style={{ fontSize: 24, marginBottom: 8 }}>📎</div>
+                    <div style={{ fontSize: 22, marginBottom: 6 }}>📎 📸</div>
                     <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440', marginBottom: 4 }}>
-                      PDF hier reinziehen
+                      PDF oder Foto hier reinziehen
                     </div>
-                    <div style={{ fontSize: 12, color: '#6A8AAA' }}>
-                      oder klicken zum Auswählen · max. 10 MB
+                    <div style={{ fontSize: 12, color: '#6A8AAA', lineHeight: 1.6 }}>
+                      oder klicken zum Auswählen<br/>
+                      <span style={{ color: '#4A6A90' }}>PDF · JPG · PNG · WEBP</span>
                     </div>
                   </div>
                 )}
               </div>
 
-              {/* Trennlinie */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
-                <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
-                <span style={{ fontSize: 12, color: '#6A8AAA', whiteSpace: 'nowrap' }}>
-                  oder Text direkt einfügen
-                </span>
-                <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
-              </div>
-
-              {/* Textarea für Brieftext */}
-              <textarea
-                style={{
-                  ...S.ta,
-                  // Grüner Rand wenn PDF geladen und Text vorhanden
-                  border: pdfFileName ? '1.5px solid rgba(76,175,130,0.5)' : '1.5px solid #C5D8ED',
-                }}
-                placeholder={'Brieftext hier einfügen…\n\nz.B. Strafverfügung, Finanzamtsbescheid, AMS-Schreiben, Inkasso, Mietkündigung…'}
-                value={briefText}
-                onChange={e => {
-                  setBriefText(e.target.value)
-                  if (pdfFileName && e.target.value !== briefText) setPdfFileName(null)
-                }}
-                rows={pdfFileName ? 8 : 11}
-              />
-
-              {/* Zeichenzähler mit Farbwarnung */}
-              <div style={{
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                marginTop: 4, marginBottom: 16,
-              }}>
-                <div style={{ fontSize: 12 }}>
-                  {briefText.length > CHAR_DANGER ? (
-                    <span style={{ color: '#E05252', fontWeight: 600 }}>
-                      ⚠️ Text sehr lang — wird auf 8.000 Zeichen gekürzt
-                    </span>
-                  ) : briefText.length > CHAR_WARN ? (
-                    <span style={{ color: '#D4943A', fontWeight: 500 }}>
-                      ⏳ Text lang — unter 8.000 Zeichen empfohlen
-                    </span>
-                  ) : (
-                    <span style={{ color: '#6A8AAA' }}>
-                      {pdfFileName && <span style={{ color: '#4CAF82' }}>· aus PDF extrahiert</span>}
-                    </span>
-                  )}
+              {/* Trennlinie — ausblenden wenn Bild geladen */}
+              {!imageData && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+                  <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
+                  <span style={{ fontSize: 12, color: '#6A8AAA', whiteSpace: 'nowrap' }}>
+                    oder Text direkt einfügen
+                  </span>
+                  <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
                 </div>
-                <span style={{
-                  fontSize: 12, fontWeight: briefText.length > CHAR_DANGER ? 700 : 400,
-                  color: briefText.length > CHAR_DANGER ? '#E05252'
-                       : briefText.length > CHAR_WARN   ? '#D4943A'
-                       : '#6A8AAA',
+              )}
+
+              {/* Textarea — ausblenden wenn Bild geladen */}
+              {!imageData && (
+                <textarea
+                  style={{
+                    ...S.ta,
+                    border: pdfFileName ? '1.5px solid rgba(76,175,130,0.5)' : '1.5px solid #C5D8ED',
+                  }}
+                  placeholder={'Brieftext hier einfügen…\n\nz.B. Strafverfügung, Finanzamtsbescheid, AMS-Schreiben, Inkasso, Mietkündigung…'}
+                  value={briefText}
+                  onChange={e => {
+                    setBriefText(e.target.value)
+                    if (pdfFileName && e.target.value !== briefText) setPdfFileName(null)
+                  }}
+                  rows={pdfFileName ? 8 : 11}
+                />
+              )}
+
+              {/* Zeichenzähler — nur bei Text, nicht bei Bild */}
+              {!imageData && (
+                <div style={{
+                  display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                  marginTop: 4, marginBottom: 16,
                 }}>
-                  {briefText.length.toLocaleString('de-AT')} / {CHAR_LIMIT.toLocaleString('de-AT')} Zeichen
-                </span>
-              </div>
+                  <div style={{ fontSize: 12 }}>
+                    {briefText.length > CHAR_DANGER ? (
+                      <span style={{ color: '#E05252', fontWeight: 600 }}>
+                        ⚠️ Text sehr lang — wird auf 8.000 Zeichen gekürzt
+                      </span>
+                    ) : briefText.length > CHAR_WARN ? (
+                      <span style={{ color: '#D4943A', fontWeight: 500 }}>
+                        ⏳ Text lang — unter 8.000 Zeichen empfohlen
+                      </span>
+                    ) : (
+                      <span style={{ color: '#6A8AAA' }}>
+                        {pdfFileName && <span style={{ color: '#4CAF82' }}>· aus PDF extrahiert</span>}
+                      </span>
+                    )}
+                  </div>
+                  <span style={{
+                    fontSize: 12, fontWeight: briefText.length > CHAR_DANGER ? 700 : 400,
+                    color: briefText.length > CHAR_DANGER ? '#E05252'
+                         : briefText.length > CHAR_WARN   ? '#D4943A'
+                         : '#6A8AAA',
+                  }}>
+                    {briefText.length.toLocaleString('de-AT')} / {CHAR_LIMIT.toLocaleString('de-AT')} Zeichen
+                  </span>
+                </div>
+              )}
 
               {/* Fehlermeldung */}
               {error && (
@@ -1045,17 +1182,27 @@ export default function Analyse() {
               )}
 
               {/* Analyse-Button */}
-              <button
-                style={{
-                  ...S.btn,
-                  opacity: briefText.trim().length < 20 ? 0.5 : 1,
-                  cursor: briefText.trim().length < 20 ? 'not-allowed' : 'pointer',
-                }}
-                onClick={() => analyse(false)}
-                disabled={briefText.trim().length < 20}
-              >
-                {pdfFileName ? '📄 PDF analysieren →' : 'Brief analysieren →'}
-              </button>
+              {(() => {
+                const canAnalyse = imageData !== null || briefText.trim().length >= 20
+                const btnLabel   = imageData
+                  ? '📸 Foto analysieren →'
+                  : pdfFileName
+                  ? '📄 PDF analysieren →'
+                  : 'Brief analysieren →'
+                return (
+                  <button
+                    style={{
+                      ...S.btn,
+                      opacity: canAnalyse ? 1 : 0.5,
+                      cursor:  canAnalyse ? 'pointer' : 'not-allowed',
+                    }}
+                    onClick={() => analyse(false)}
+                    disabled={!canAnalyse}
+                  >
+                    {btnLabel}
+                  </button>
+                )
+              })()}
 
               {/* Wie es funktioniert */}
               <div style={{
@@ -1064,7 +1211,7 @@ export default function Analyse() {
                 borderTop: '1px solid #C5D8ED',
               }}>
                 {[
-                  ['📎', 'PDF oder Text', 'Reinziehen oder einfügen'],
+                  ['📎📸', 'PDF oder Foto', 'Reinziehen oder einfügen'],
                   ['⚖️', 'Analysieren', 'Österr. Gesetze, 82 Bereiche'],
                   ['✅', 'Verstehen', 'Klare Schritte & Fristen'],
                 ].map(([icon, title, desc]) => (
@@ -1084,7 +1231,7 @@ export default function Analyse() {
               }}>
                 AmtsKlar informiert und erklärt —{' '}
                 <strong style={{ color: '#2A5080' }}>ersetzt keine Rechtsberatung.</strong>
-                {' '}PDFs werden lokal verarbeitet und nicht gespeichert.
+                {' '}Fotos und PDFs werden lokal verarbeitet und nicht gespeichert.
               </div>
 
             </div>

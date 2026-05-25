@@ -643,12 +643,45 @@ function parseApiResponse(rawText: string): { result: any; antwortbrief: any } {
   }
 }
 
-// ── Hauptfunktion: Anthropic API aufrufen ─────────────────────────
+// ── Anthropic API aufrufen — Text oder Bild ──────────────────────
 async function callAnthropic(
-  briefText: string,
+  input: { briefText?: string; briefImage?: { data: string; mediaType: string } },
   includeLetter: boolean,
   apiKey: string
 ): Promise<string> {
+
+  // Nachrichteninhalt je nach Eingabetyp aufbauen
+  let userContent: any
+
+  if (input.briefImage) {
+    // ── Bild-Modus: Claude liest das Bild direkt ──
+    userContent = [
+      {
+        type: 'image',
+        source: {
+          type: 'base64',
+          media_type: input.briefImage.mediaType,
+          data: input.briefImage.data,
+        },
+      },
+      {
+        type: 'text',
+        text: `Analysiere dieses österreichische Behördenschreiben. Das Bild zeigt ein Foto oder einen Scan eines Briefes/Bescheides. Bitte lies den gesamten sichtbaren Text im Bild und analysiere ihn vollständig.${includeLetter ? ' Erstelle auch einen passenden Antwortbrief im antwortbrief-Feld.' : ' Das antwortbrief-Feld kann leer bleiben.'}`,
+      },
+    ]
+  } else {
+    // ── Text-Modus: direkt als String ──
+    const raw = (input.briefText || '').trim()
+    const text = raw.length > 8000
+      ? raw.substring(0, 8000) + '\n\n[Hinweis: Text wurde auf 8000 Zeichen gekürzt]'
+      : raw
+    userContent = `Analysiere dieses österreichische Behördenschreiben${
+      includeLetter
+        ? ' und erstelle einen passenden Antwortbrief im antwortbrief-Feld'
+        : ' (antwortbrief-Feld kann leer bleiben)'
+    }.\n\nBrieftext:\n${text}`
+  }
+
   const response = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -660,10 +693,7 @@ async function callAnthropic(
       model: 'claude-sonnet-4-6',
       max_tokens: 4000,
       system: SYSTEM_PROMPT,
-      messages: [{
-        role: 'user',
-        content: `Analysiere dieses österreichische Behördenschreiben${includeLetter ? ' und erstelle einen passenden Antwortbrief im antwortbrief-Feld' : ' (antwortbrief-Feld kann leer bleiben)'}.\n\nBrieftext:\n${briefText}`
-      }],
+      messages: [{ role: 'user', content: userContent }],
     }),
   })
 
@@ -681,30 +711,30 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
     // Request lesen
     const body = await context.request.json() as {
-      briefText?: string
+      briefText?:  string
+      briefImage?: { data: string; mediaType: string }
       includeLetter?: boolean
     }
 
-    const rawBriefText  = (body.briefText  || '').trim()
     const includeLetter = body.includeLetter ?? false
+    const hasBriefText  = typeof body.briefText === 'string' && body.briefText.trim().length >= 20
+    const hasBriefImage = !!body.briefImage?.data && !!body.briefImage?.mediaType
 
-    // Mindestlänge prüfen
-    if (rawBriefText.length < 20) {
+    // Mindestens Text oder Bild muss vorhanden sein
+    if (!hasBriefText && !hasBriefImage) {
       return new Response(
-        JSON.stringify({ error: 'Brieftext zu kurz (mindestens 20 Zeichen).' }),
+        JSON.stringify({ error: 'Bitte Brieftext einfügen oder Foto/PDF hochladen.' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
       )
     }
 
-    // Eingabe auf max. 8000 Zeichen kürzen (verhindert Token-Überschreitung)
-    // Österreichische Bescheide sind selten länger als das Relevante
-    const MAX_CHARS = 8000
-    const briefText = rawBriefText.length > MAX_CHARS
-      ? rawBriefText.substring(0, MAX_CHARS) + '\n\n[Hinweis: Text wurde auf 8000 Zeichen gekürzt]'
-      : rawBriefText
+    // Input-Objekt aufbauen
+    const input = hasBriefImage
+      ? { briefImage: body.briefImage }
+      : { briefText: body.briefText }
 
     // API aufrufen
-    const rawApiResponse = await callAnthropic(briefText, includeLetter, context.env.ANTHROPIC_API_KEY)
+    const rawApiResponse = await callAnthropic(input, includeLetter, context.env.ANTHROPIC_API_KEY)
 
     // Antwort parsen (mit Fallbacks)
     const { result: rawResult, antwortbrief } = parseApiResponse(rawApiResponse)

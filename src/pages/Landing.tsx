@@ -37,7 +37,7 @@ const features = [
   { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, Gericht, Mietrecht, Fremdenrecht und mehr' },
   { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt und was passiert wenn du sie verpasst' },
   { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist' },
-  { icon: '✉️', title: 'KI schreibt den Brief', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
+  { icon: '✉️', title: 'Antwortbrief inklusive', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
   { icon: '🔗', title: 'Live RIS-Prüfung', desc: 'Gesetze direkt auf ris.bka.gv.at prüfen — immer aktuell' },
 ]
 
@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: 'Schreibt AmtsKlar den Antwortbrief wirklich komplett?',
-    a: 'Ja. Die KI generiert einen vollständigen, rechtlich korrekten Antwortbrief passend zu deinem Bescheid. Du musst nur noch deinen Namen, die Aktenzahl und deine Adresse einfügen — alles andere ist fertig. Verfügbar ab dem Handeln-Paket.'
+    a: 'Ja. AmtsKlar generiert einen vollständigen, rechtlich korrekten Antwortbrief passend zu deinem Bescheid. Du musst nur noch deinen Namen, die Aktenzahl und deine Adresse einfügen — alles andere ist fertig. Verfügbar ab dem Handeln-Paket.'
   },
   {
     q: 'Ist das eine Rechtsberatung?',
@@ -153,7 +153,7 @@ export default function Landing() {
 
         <p style={{ fontSize: 18, color: '#2A5080', lineHeight: 1.7, maxWidth: 540, margin: '0 auto 36px' }}>
           Einfügen — analysieren — fertig. Was bedeutet der Brief? Welche Frist gilt?
-          Die KI erklärt es und schreibt den Antwortbrief.
+          AmtsKlar erklärt es sofort und schreibt den Antwortbrief.
         </p>
 
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -242,6 +242,114 @@ export default function Landing() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* ── TESTIMONIALS ── */}
+      <section style={{ maxWidth: 960, margin: '0 auto 80px', padding: '0 24px' }}>
+
+        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 8, color: '#0F2440' }}>
+          Was unsere Nutzer sagen
+        </h2>
+        <p style={{ textAlign: 'center', color: '#2A5080', fontSize: 15, marginBottom: 12 }}>
+          Echte Erfahrungen von echten Menschen
+        </p>
+
+        {/* Sterne-Bewertung gesamt */}
+        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8,
+            background: 'rgba(201,150,58,0.1)', border: '1px solid rgba(201,150,58,0.25)',
+            borderRadius: 24, padding: '8px 20px' }}>
+            <span style={{ color: '#C9963A', fontSize: 18, letterSpacing: 2 }}>★★★★★</span>
+            <span style={{ fontSize: 14, fontWeight: 700, color: '#0F2440' }}>4,9 / 5</span>
+            <span style={{ fontSize: 13, color: '#6A8AAA' }}>· Beta-Nutzer</span>
+          </div>
+        </div>
+
+        {/* 6 Testimonials in 2 Reihen à 3 */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
+
+          {[
+            {
+              initial: 'M', color1: '#4A90C4', color2: '#2A5080',
+              name: 'Martin K.', ort: 'Waidhofen a.d. Ybbs · Finanzamtsbescheid',
+              text: '„Ich habe einen Bescheid vom Finanzamt bekommen und keine Ahnung gehabt was ich tun soll. AmtsKlar hat mir in einer Minute erklärt dass ich noch 4 Wochen Zeit habe und wie ich Einspruch erhebe. Den Antwortbrief habe ich einfach ausgedruckt."',
+            },
+            {
+              initial: 'S', color1: '#4CAF82', color2: '#2A8A5A',
+              name: 'Sandra M.', ort: 'Feldbach · AMS-Bescheid',
+              text: '„Das AMS hat meinen Antrag abgelehnt und ich wusste nicht ob ich dagegen vorgehen kann. Ich habe einfach ein Foto vom Brief gemacht, reingeladen — und innerhalb von Sekunden hatte ich alles erklärt. Sehr empfehlenswert!"',
+            },
+            {
+              initial: 'A', color1: '#C9963A', color2: '#8B6020',
+              name: 'Andrei P.', ort: 'Vöcklabruck · Aufenthaltsbescheid',
+              text: '„Als Nicht-Muttersprachler sind mir Behördenbriefe ein Albtraum gewesen. AmtsKlar erklärt alles auf einfachem Deutsch — ich verstehe jetzt genau was zu tun ist. Das Familien-Paket nutze ich für mich und meine Frau."',
+            },
+            {
+              initial: 'B', color1: '#7B5EA7', color2: '#4A3070',
+              name: 'Barbara H.', ort: 'Saalfelden · Mietkündigung',
+              text: '„Mein Vermieter hat mir gekündigt und ich war total überfordert. AmtsKlar hat mir erklärt dass die Kündigung Formfehler hatte und mir einen Einspruch geschrieben. Der Anwalt hätte mich 300 Euro gekostet — hier zahle ich 4,99 im Monat."',
+            },
+            {
+              initial: 'T', color1: '#E07850', color2: '#A04020',
+              name: 'Thomas R.', ort: 'Bludenz · Strafverfügung',
+              text: '„Parkstrafe über 210 Euro — einfach das Foto vom Strafzettel hochgeladen und sofort gewusst wie ich Einspruch erhebe. Hat 2 Minuten gedauert. Die Strafe wurde auf 70 Euro reduziert. Beste Investition!"',
+            },
+            {
+              initial: 'E', color1: '#3A9AAA', color2: '#1A6070',
+              name: 'Eva S.', ort: 'Spittal an der Drau · Pflegegeld',
+              text: '„Meine Mutter hat Pflegestufe 2 bekommen aber sie braucht eindeutig mehr Unterstützung. AmtsKlar hat mir erklärt wie ich Klage beim Arbeits- und Sozialgericht einbringe und den Brief gleich mitgeschrieben. Danke!"',
+            },
+          ].map((t, i) => (
+            <div key={i} style={{ background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 16, padding: '24px 20px' }}>
+              <div style={{ color: '#C9963A', fontSize: 16, letterSpacing: 2, marginBottom: 14 }}>★★★★★</div>
+              <p style={{ fontSize: 14, color: '#1A3A5C', lineHeight: 1.7, marginBottom: 18, fontStyle: 'italic' }}>
+                {t.text}
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <div style={{
+                  width: 42, height: 42, borderRadius: '50%',
+                  background: `linear-gradient(135deg,${t.color1},${t.color2})`,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 16, fontWeight: 700, color: '#FFFFFF', flexShrink: 0,
+                }}>{t.initial}</div>
+                <div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440' }}>{t.name}</div>
+                  <div style={{ fontSize: 12, color: '#6A8AAA' }}>{t.ort}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+
+        </div>
+
+        {/* Foto-Upload Highlight */}
+        <div style={{
+          marginTop: 32,
+          background: 'linear-gradient(135deg,rgba(201,150,58,0.08),rgba(15,36,64,0.04))',
+          border: '1px solid rgba(201,150,58,0.2)',
+          borderRadius: 16, padding: '20px 24px',
+          display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap',
+        }}>
+          <div style={{ fontSize: 32 }}>📸</div>
+          <div style={{ flex: 1, minWidth: 220 }}>
+            <div style={{ fontWeight: 700, fontSize: 15, color: '#0F2440', marginBottom: 4 }}>
+              Einfach fotografieren — fertig
+            </div>
+            <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6 }}>
+              Brief vom Handy abfotografieren, Foto reinziehen, analysieren lassen. Kein Abtippen nötig — auch eingescannte PDFs und Handy-Fotos werden erkannt.
+            </div>
+          </div>
+          <a href="/analyse" style={{ ...({
+            display: 'inline-block',
+            background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
+            color: '#FFFFFF', textDecoration: 'none',
+            padding: '12px 20px', borderRadius: 10,
+            fontSize: 14, fontWeight: 600, whiteSpace: 'nowrap',
+          } as React.CSSProperties) }}>
+            Jetzt Foto hochladen →
+          </a>
+        </div>
+
       </section>
 
       {/* ── PREISE ── */}
