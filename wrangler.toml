@@ -4,3 +4,7 @@ pages_build_output_dir = "./dist"
 
 [vars]
 ENVIRONMENT = "production"
+VITE_PADDLE_CLIENT_TOKEN = "live_d14248bcda57483d19dcb846fed"
+VITE_PADDLE_PRICE_VERSTEHEN = "pri_01ksft9sb5nbptry9pyyd6q54y"
+VITE_PADDLE_PRICE_HANDELN = "pri_01ksftcj51p1jsmjk2pr0jbcat"
+VITE_PADDLE_PRICE_FAMILIE = "pri_01ksftg5nw1a2nztra644zhd5a"
