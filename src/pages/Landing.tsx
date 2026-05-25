@@ -339,15 +339,15 @@ export default function Landing() {
               Brief vom Handy abfotografieren, Foto reinziehen, analysieren lassen. Kein Abtippen nötig — auch eingescannte PDFs und Handy-Fotos werden erkannt.
             </div>
           </div>
-          <a href="/analyse" style={{ ...({
+          <Link to="/analyse" style={{
             display: 'inline-block',
             background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
             color: '#FFFFFF', textDecoration: 'none',
             padding: '12px 20px', borderRadius: 10,
             fontSize: 14, fontWeight: 600, whiteSpace: 'nowrap',
-          } as React.CSSProperties) }}>
+          }}>
             Jetzt Foto hochladen →
-          </a>
+          </Link>
         </div>
 
       </section>
