@@ -1,5 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import * as pdfjsLib from 'pdfjs-dist'
+
+// PDF.js Worker — Vite lädt ihn als URL
+// @ts-ignore
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker?url'
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker
 
 // ═══════════════════════════════════════════════════════════════════
 // AmtsKlar — Analyse-Seite
@@ -125,31 +131,8 @@ function planHatBrief(plan: Plan): boolean {
   return plan === 'handeln' || plan === 'familie'
 }
 
-// ── PDF.js laden (von CDN, nur wenn gebraucht) ────────────────────
-function loadPdfJs(): Promise<any> {
-  return new Promise((resolve, reject) => {
-    // Bereits geladen?
-    if ((window as any).pdfjsLib) {
-      resolve((window as any).pdfjsLib)
-      return
-    }
-    const script = document.createElement('script')
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js'
-    script.onload = () => {
-      const lib = (window as any).pdfjsLib
-      // Worker-URL setzen (verhindert CORS-Fehler)
-      lib.GlobalWorkerOptions.workerSrc =
-        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
-      resolve(lib)
-    }
-    script.onerror = () => reject(new Error('PDF.js konnte nicht geladen werden'))
-    document.head.appendChild(script)
-  })
-}
-
 // ── Text aus PDF extrahieren ──────────────────────────────────────
 async function extractTextFromPdf(file: File): Promise<string> {
-  const pdfjsLib = await loadPdfJs()
   const arrayBuffer = await file.arrayBuffer()
   const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
 
@@ -159,20 +142,16 @@ async function extractTextFromPdf(file: File): Promise<string> {
     const page = await pdf.getPage(pageNum)
     const textContent = await page.getTextContent()
 
-    // Text-Items zusammenfügen mit Zeilenumbrüchen
     let lastY: number | null = null
     let pageText = ''
 
     for (const item of textContent.items as any[]) {
       if (item.str.trim() === '') continue
-
-      // Neuer Absatz wenn Y-Position stark wechselt (andere Zeile)
       if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) {
         pageText += '\n'
       } else if (lastY !== null) {
         pageText += ' '
       }
-
       pageText += item.str
       lastY = item.transform[5]
     }
@@ -349,11 +328,11 @@ export default function Analyse() {
   // ── PDF Datei verarbeiten ───────────────────────────────────────
   const processPdfFile = async (file: File) => {
     if (file.type !== 'application/pdf') {
-      setError('Bitte nur PDF-Dateien hochladen.')
+      setError('Bitte nur PDF-Dateien hochladen (z.B. Ihr gespeicherter Bescheid).')
       return
     }
-    if (file.size > 10 * 1024 * 1024) { // 10MB Limit
-      setError('PDF zu groß (max. 10 MB)')
+    if (file.size > 15 * 1024 * 1024) {
+      setError('PDF zu groß (max. 15 MB). Bitte Text manuell einfügen.')
       return
     }
 
@@ -363,15 +342,24 @@ export default function Analyse() {
 
     try {
       const extractedText = await extractTextFromPdf(file)
+
       if (extractedText.trim().length < 20) {
-        setError('Text konnte nicht aus dem PDF gelesen werden. Bitte Text manuell eingeben.')
+        // Kein Text gefunden → wahrscheinlich gescanntes PDF
+        setError(null)
         setPdfFileName(null)
+        // Zeige hilfreiche Erklärung statt kurzer Fehlermeldung
+        setError(
+          'Dieses PDF enthält keinen lesbaren Text (wahrscheinlich gescannt). ' +
+          'Bitte den Text manuell einfügen: PDF öffnen → Text markieren → kopieren → hier einfügen.'
+        )
         return
       }
+
       setBriefText(extractedText)
-    } catch (e) {
-      setError('Fehler beim Lesen des PDFs. Bitte Text manuell einfügen.')
+      setError(null)
+    } catch (e: any) {
       setPdfFileName(null)
+      setError('PDF konnte nicht gelesen werden. Bitte Text manuell einfügen.')
     } finally {
       setPdfLoading(false)
     }
