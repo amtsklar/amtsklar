@@ -269,25 +269,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── FEATURES ── */}
-      <section style={{ maxWidth: 940, margin: '0 auto 80px', padding: '0 24px' }}>
-        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 12, color: '#0F2440' }}>
-          Alles was du brauchst
-        </h2>
-        <p style={{ textAlign: 'center', color: '#2A5080', fontSize: 16, marginBottom: 40 }}>
-          Von der Erklärung bis zum fertigen Antwortbrief
-        </p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 16 }}>
-          {features.map((f, i) => (
-            <div key={i} style={S.card}>
-              <div style={{ fontSize: 24, marginBottom: 10 }}>{f.icon}</div>
-              <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 6, color: '#0F2440' }}>{f.title}</div>
-              <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.55 }}>{f.desc}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── TESTIMONIALS ── */}
       <section style={{ maxWidth: 960, margin: '0 auto 80px', padding: '0 24px' }}>
 
@@ -394,6 +375,25 @@ export default function Landing() {
           </Link>
         </div>
 
+      </section>
+
+      {/* ── FEATURES ── */}
+      <section style={{ maxWidth: 940, margin: '0 auto 80px', padding: '0 24px' }}>
+        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 12, color: '#0F2440' }}>
+          Alles was du brauchst
+        </h2>
+        <p style={{ textAlign: 'center', color: '#2A5080', fontSize: 16, marginBottom: 40 }}>
+          Von der Erklärung bis zum fertigen Antwortbrief
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 16 }}>
+          {features.map((f, i) => (
+            <div key={i} style={S.card}>
+              <div style={{ fontSize: 24, marginBottom: 10 }}>{f.icon}</div>
+              <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 6, color: '#0F2440' }}>{f.title}</div>
+              <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.55 }}>{f.desc}</div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* ── PREISE ── */}
@@ -559,7 +559,7 @@ export default function Landing() {
               { ok: true, text: 'Live RIS-Gesetzescheck' },
               { ok: true, text: 'Fertiger Einspruch — nur noch unterschreiben' },
               { ok: true, text: 'Mustervorlagen zum Download' },
-              { ok: true, text: 'Bis zu 5 Personen (Familie)' },
+              { ok: true, text: '1 Abo — ganze Familie abgesichert' },
             ].map((f, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
                 <span style={f.ok ? S.check : S.cross}>{f.ok ? '✓' : '–'}</span>

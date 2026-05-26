@@ -4,6 +4,7 @@ import Analyse from './pages/Analyse'
 import Impressum from './pages/legal/Impressum'
 import Datenschutz from './pages/legal/Datenschutz'
 import AGB from './pages/legal/AGB'
+import Vorlagen from './pages/Vorlagen'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/impressum"   element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/agb"         element={<AGB />} />
+        <Route path="/vorlagen"     element={<Vorlagen />} />
       </Routes>
     </HashRouter>
   )
