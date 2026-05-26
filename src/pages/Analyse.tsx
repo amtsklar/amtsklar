@@ -1733,7 +1733,7 @@ export default function Analyse() {
                 }}>
                   <div style={{ fontSize: 24, marginBottom: 10 }}>✉️</div>
                   <div style={{ fontFamily: 'serif', fontSize: 17, fontWeight: 700, color: '#0F2440', marginBottom: 8 }}>
-                    KI schreibt den Antwortbrief für Sie
+                    AmtsKlar schreibt den Antwortbrief für Sie
                   </div>
                   <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.65, marginBottom: 16 }}>
                     Mit dem <strong>Handeln-Paket</strong> erstellt AmtsKlar automatisch einen

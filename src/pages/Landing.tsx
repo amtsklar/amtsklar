@@ -34,7 +34,7 @@ const Logo = () => (
 // ── Feature-Liste ─────────────────────────────────────────────────
 const features = [
   { icon: '⚡', title: 'Sofortige Analyse', desc: 'Brief einfügen → in Sekunden verstehen was er bedeutet' },
-  { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, Gericht, Mietrecht, Fremdenrecht und mehr' },
+  { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, ÖGK, Magistrat, BH, Gericht & Inkasso — jeder Brief hat eine Frist. Wir erklären sie, bevor sie abläuft.' },
   { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt und was passiert wenn du sie verpasst' },
   { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist' },
   { icon: '✉️', title: 'Antwortbrief inklusive', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
@@ -45,7 +45,7 @@ const features = [
 const faqs = [
   {
     q: 'Für welche Briefe funktioniert AmtsKlar?',
-    a: 'Alle österreichischen Behördenschreiben: Finanzamt, AMS, ÖGK, Gericht, Magistrat, BH, Mietrecht, Fremdenrecht, Straf-, Zivil- und Verwaltungsrecht — 82 Rechtsbereiche abgedeckt.'
+    a: 'Alle österreichischen Behördenschreiben: Finanzamt, AMS, ÖGK, Magistrat, BH, Gericht, Inkasso, Mietrecht, Fremdenrecht, Straf-, Zivil- und Verwaltungsrecht — 82 Rechtsbereiche abgedeckt.'
   },
   {
     q: 'Was ist der Unterschied zwischen den Paketen?',
@@ -124,7 +124,7 @@ export default function Landing() {
       }}>
         <Logo />
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          <a href="#preise" style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none' }}>Preise</a>
+          <a href="#preise" onClick={e => { e.preventDefault(); document.getElementById('preise')?.scrollIntoView({ behavior: 'smooth' }) }} style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none', cursor: 'pointer' }}>Preise</a>
           <Link to="/analyse" style={{ ...S.btn, padding: '8px 18px', fontSize: 14 }}>
             Jetzt testen →
           </Link>
@@ -158,7 +158,7 @@ export default function Landing() {
 
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/analyse" style={S.btn}>Brief kostenlos analysieren →</Link>
-          <a href="#preise" style={{
+          <a href="#preise" onClick={e => { e.preventDefault(); document.getElementById('preise')?.scrollIntoView({ behavior: 'smooth' }) }} style={{
             border: '1.5px solid #C5D8ED', color: '#2A5080',
             padding: '16px 24px', borderRadius: 12, fontSize: 15, textDecoration: 'none'
           }}>
