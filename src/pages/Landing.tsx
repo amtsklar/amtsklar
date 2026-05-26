@@ -73,8 +73,8 @@ export default function Landing() {
   // Preise: monatlich und jährlich (2 Monate gratis)
   const preise = {
     verstehen: { monat: 2.99, jahr: 2.49 },
-    handeln:   { monat: 4.99, jahr: 4.16 },
-    familie:   { monat: 7.99, jahr: 6.66 },
+    handeln:   { monat: 4.99, jahr: 4.19 },
+    familie:   { monat: 7.99, jahr: 6.79 },
   }
 
   const preis = (plan: keyof typeof preise) =>
