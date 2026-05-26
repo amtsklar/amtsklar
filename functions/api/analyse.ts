@@ -8,6 +8,11 @@ interface Env {
   ANTHROPIC_API_KEY: string
 }
 
+// ── Server-seitiges IP-Tracking (Basis-Schutz) ────────────────────
+const ipUsageMap = new Map<string, { count: number; firstSeen: number }>()
+const SERVER_FREE_LIMIT = 1
+const RESET_AFTER_MS = 24 * 60 * 60 * 1000
+
 const SYSTEM_PROMPT = `Du bist AmtsKlar, der führende österreichische Rechtsinformationsassistent.
 Du analysierst Behördenschreiben, Bescheide, Strafverfügungen und offizielle Schreiben
 und erklärst sie verständlich für österreichische Bürger.
@@ -717,8 +722,38 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     const includeLetter = body.includeLetter ?? false
+    const isPaidRequest = body.isPaid === true
     const hasBriefText  = typeof body.briefText === 'string' && body.briefText.trim().length >= 20
     const hasBriefImage = !!body.briefImage?.data && !!body.briefImage?.mediaType
+
+    // ── IP-basiertes Freikontingent prüfen (Schicht 3: Server) ──
+    if (!isPaidRequest) {
+      const clientIp = context.request.headers.get('CF-Connecting-IP')
+        || context.request.headers.get('X-Forwarded-For')?.split(',')[0]?.trim()
+        || 'unknown'
+
+      const now = Date.now()
+      const ipData = ipUsageMap.get(clientIp)
+
+      // Nach 24h zurücksetzen
+      if (ipData && (now - ipData.firstSeen) > RESET_AFTER_MS) {
+        ipUsageMap.delete(clientIp)
+      }
+
+      const currentCount = ipUsageMap.get(clientIp)?.count || 0
+      if (currentCount >= SERVER_FREE_LIMIT) {
+        return new Response(
+          JSON.stringify({ error: 'Kostenlose Analyse bereits genutzt. Bitte Paket wählen um fortzufahren.' }),
+          { status: 429, headers: { 'Content-Type': 'application/json' } }
+        )
+      }
+
+      // Zähler erhöhen
+      ipUsageMap.set(clientIp, {
+        count: currentCount + 1,
+        firstSeen: ipData?.firstSeen || now,
+      })
+    }
 
     // Mindestens Text oder Bild muss vorhanden sein
     if (!hasBriefText && !hasBriefImage) {

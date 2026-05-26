@@ -109,6 +109,54 @@ const URGENCY = {
 // Anzahl kostenloser Analysen
 const FREE_LIMIT = 1
 
+// ── Cookie Helpers ────────────────────────────────────────────────
+function setCookie(name: string, value: string, days: number) {
+  const expires = new Date()
+  expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000)
+  document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/; SameSite=Strict`
+}
+
+function getCookie(name: string): string | null {
+  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'))
+  return match ? match[2] : null
+}
+
+// ── Browser Fingerprint (pseudo-eindeutige Geräte-ID) ─────────────
+// Kombination aus Sprache, Auflösung, Zeitzone, Hardware-Threads
+// Kein 100% Schutz, aber macht Missbrauch deutlich schwerer
+function getFingerprint(): string {
+  const parts = [
+    navigator.language || '',
+    `${screen.width}x${screen.height}`,
+    String(screen.colorDepth),
+    Intl.DateTimeFormat().resolvedOptions().timeZone,
+    String(navigator.hardwareConcurrency || 0),
+    navigator.platform || '',
+  ].join('|')
+  let hash = 0
+  for (let i = 0; i < parts.length; i++) {
+    hash = Math.imul(31, hash) + parts.charCodeAt(i) | 0
+  }
+  return Math.abs(hash).toString(36)
+}
+
+// ── Freikontingent: Alle 3 Schichten prüfen ───────────────────────
+function isFreeLimitReached(count: number): boolean {
+  if (count >= FREE_LIMIT) return true           // Schicht 1: localStorage Zähler
+  if (getCookie('ak_free_done') === '1') return true  // Schicht 2: Cookie (90 Tage)
+  const fp = getFingerprint()
+  if (localStorage.getItem(`ak_fp_${fp}`) === '1') return true  // Schicht 3: Fingerprint
+  return false
+}
+
+// ── Alle 3 Schichten als "verbraucht" markieren ───────────────────
+function markFreeUsed(newCount: number) {
+  localStorage.setItem('ak_count', String(newCount))
+  setCookie('ak_free_done', '1', 90)
+  const fp = getFingerprint()
+  localStorage.setItem(`ak_fp_${fp}`, '1')
+}
+
 // Zeichenlimit für Texteingabe
 const CHAR_LIMIT   = 8000  // Ab hier wird Text gekürzt
 const CHAR_WARN    = 6000  // Ab hier gelbe Warnung
@@ -313,7 +361,13 @@ export default function Analyse() {
     const savedPlan  = (localStorage.getItem(SK.plan) || 'none') as Plan
     const savedEmail = localStorage.getItem(SK.email) || ''
 
-    setCount(savedCount)
+    // Cookie oder Fingerprint vorhanden → Zähler auf FREE_LIMIT setzen
+    // (auch wenn localStorage gelöscht wurde)
+    const effectiveCount = isFreeLimitReached(savedCount) && !savedPaid
+      ? Math.max(savedCount, FREE_LIMIT)
+      : savedCount
+
+    setCount(effectiveCount)
     setIsPaid(savedPaid)
     setPlan(savedPlan)
     setEmail(savedEmail)
@@ -539,8 +593,8 @@ export default function Analyse() {
       return
     }
 
-    // Paywall prüfen
-    if (!isPaid && count >= FREE_LIMIT) {
+    // Paywall prüfen — alle 3 Schichten
+    if (!isPaid && isFreeLimitReached(count)) {
       setShowPaywall(true)
       return
     }
@@ -560,10 +614,10 @@ export default function Analyse() {
     try {
       const includeLetter = planHatBrief(plan)
 
-      // Request-Body: Bild ODER Text
+      // Request-Body: Bild ODER Text + isPaid-Flag für Server-seitigen IP-Check
       const requestBody = hasImage
-        ? { briefImage: { data: imageData!.base64, mediaType: imageData!.mediaType }, includeLetter }
-        : { briefText: trimmed, includeLetter }
+        ? { briefImage: { data: imageData!.base64, mediaType: imageData!.mediaType }, includeLetter, isPaid }
+        : { briefText: trimmed, includeLetter, isPaid }
 
       const res = await fetch('/api/analyse', {
         method: 'POST',
@@ -582,7 +636,7 @@ export default function Analyse() {
 
       const newCount = count + 1
       setCount(newCount)
-      localStorage.setItem(SK.count, String(newCount))
+      markFreeUsed(newCount)  // Alle 3 Schichten: localStorage + Cookie + Fingerprint
 
     } catch (e: any) {
       setError(e.message || 'Analyse fehlgeschlagen. Bitte erneut versuchen.')
