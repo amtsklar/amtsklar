@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 // ═══════════════════════════════════════════════════════════════════
@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom'
 
 // ── Logo Komponente ───────────────────────────────────────────────
 const Logo = () => (
-  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+  <div
+    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
       <defs>
         <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
@@ -35,6 +37,7 @@ const Logo = () => (
 const features = [
   { icon: '⚡', title: 'Sofortige Analyse', desc: 'Brief einfügen → in Sekunden verstehen was er bedeutet' },
   { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, ÖGK, Magistrat, BH, Gericht & Inkasso — jeder Brief hat eine Frist. Wir erklären sie, bevor sie abläuft.' },
+  { icon: '🏢', title: 'Unternehmer & Freelancer', desc: 'BAO, Gewerberecht, SVS, Finanzstrafrecht — auch für Selbstständige, Freelancer und GmbHs.' },
   { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt und was passiert wenn du sie verpasst' },
   { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist' },
   { icon: '✉️', title: 'Antwortbrief inklusive', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
@@ -68,6 +71,13 @@ const faqs = [
 // ── Haupt-Komponente ──────────────────────────────────────────────
 export default function Landing() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setShowScrollTop(window.scrollY > 400)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
   const [jaehrlich, setJaehrlich] = useState(false)
 
   // Preise: monatlich und jährlich (2 Monate gratis)
@@ -114,6 +124,35 @@ export default function Landing() {
 
   return (
     <div style={{ background: '#EEF4FB', minHeight: '100vh' }}>
+
+      {/* ── SCROLL TO TOP BUTTON ── */}
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          style={{
+            position: 'fixed',
+            right: 20,
+            bottom: 30,
+            zIndex: 999,
+            width: 48,
+            height: 48,
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
+            border: 'none',
+            color: '#FFFFFF',
+            fontSize: 22,
+            cursor: 'pointer',
+            boxShadow: '0 4px 16px rgba(184,131,42,0.4)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'opacity 0.3s ease',
+          }}
+          title="Nach oben"
+        >
+          ↑
+        </button>
+      )}
 
       {/* ── NAVIGATION ── */}
       <nav style={{
@@ -420,7 +459,7 @@ export default function Landing() {
               { ok: true,  text: 'Fristen & Handlungsempfehlungen' },
               { ok: true,  text: 'Konsequenzen bei Nichttätigwerden' },
               { ok: true,  text: 'Live RIS-Gesetzescheck' },
-              { ok: false, text: 'KI schreibt Antwortbrief' },
+              { ok: false, text: 'Fertiger Einspruch — nur noch unterschreiben' },
               { ok: false, text: 'Mustervorlagen zum Download' },
               { ok: false, text: 'Mehrere Personen (Familie)' },
             ].map((f, i) => (
@@ -471,7 +510,7 @@ export default function Landing() {
               { ok: true,  text: 'Fristen & Handlungsempfehlungen' },
               { ok: true,  text: 'Konsequenzen bei Nichttätigwerden' },
               { ok: true,  text: 'Live RIS-Gesetzescheck' },
-              { ok: true,  text: 'KI schreibt Antwortbrief ✨' },
+              { ok: true,  text: 'Fertiger Einspruch — nur noch unterschreiben' },
               { ok: true,  text: 'Mustervorlagen zum Download' },
               { ok: false, text: 'Mehrere Personen (Familie)' },
             ].map((f, i) => (
@@ -513,7 +552,7 @@ export default function Landing() {
               { ok: true, text: 'Fristen & Handlungsempfehlungen' },
               { ok: true, text: 'Konsequenzen bei Nichttätigwerden' },
               { ok: true, text: 'Live RIS-Gesetzescheck' },
-              { ok: true, text: 'KI schreibt Antwortbrief ✨' },
+              { ok: true, text: 'Fertiger Einspruch — nur noch unterschreiben' },
               { ok: true, text: 'Mustervorlagen zum Download' },
               { ok: true, text: 'Bis zu 5 Personen (Familie)' },
             ].map((f, i) => (
