@@ -299,6 +299,7 @@ export default function Analyse() {
   const [pdfLoading, setPdfLoading]   = useState(false)
   const [pdfFileName, setPdfFileName] = useState<string | null>(null)
   const [imageData, setImageData]     = useState<{ base64: string; mediaType: string; preview: string; fileName: string } | null>(null)
+  const [imageLoading, setImageLoading] = useState(false)
 
   // State: Lange Texte / Kürzungswarnung
   const [wasTruncated, setWasTruncated]           = useState(false)
