@@ -35,13 +35,18 @@ const Logo = () => (
 
 // ── Feature-Liste ─────────────────────────────────────────────────
 const features = [
-  { icon: '⚡', title: 'Sofortige Analyse', desc: 'Brief einfügen → in Sekunden verstehen was er bedeutet' },
+  // Zeile 1 — So einfach geht's
+  { icon: '📱', title: 'Foto oder PDF', desc: 'Brief fotografieren oder PDF hochladen — AmtsKlar liest und analysiert sofort.' },
+  { icon: '⚡', title: 'Sofortige Analyse', desc: 'Brief einfügen → in Sekunden verstehen was er bedeutet.' },
   { icon: '⚖️', title: '82 Rechtsbereiche', desc: 'Finanzamt, AMS, ÖGK, Magistrat, BH, Gericht & Inkasso — jeder Brief hat eine Frist. Wir erklären sie, bevor sie abläuft.' },
+  // Zeile 2 — Das bekommst du
+  { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt — und was passiert wenn du sie verpasst.' },
+  { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist.' },
+  { icon: '⛔', title: 'Konsequenzen bei Nichttun', desc: 'Was passiert wenn du nichts tust — Schritt für Schritt erklärt.' },
+  // Zeile 3 — Extras die überzeugen
+  { icon: '✉️', title: 'Fertiger Antwortbrief', desc: 'Einspruch oder Antwort fertig formuliert — nur noch unterschreiben und absenden.' },
   { icon: '🏢', title: 'Unternehmer & Freelancer', desc: 'BAO, Gewerberecht, SVS, Finanzstrafrecht — auch für Selbstständige, Freelancer und GmbHs.' },
-  { icon: '🗓', title: 'Fristen & Deadlines', desc: 'Welche Frist gilt und was passiert wenn du sie verpasst' },
-  { icon: '🚨', title: 'Pflichtaktion', desc: 'Eine klare Handlungsempfehlung: was genau jetzt zu tun ist' },
-  { icon: '✉️', title: 'Antwortbrief inklusive', desc: 'Fertiger Antwortbrief zum Ausdrucken — nur noch unterschreiben' },
-  { icon: '🔗', title: 'Live RIS-Prüfung', desc: 'Gesetze direkt auf ris.bka.gv.at prüfen — immer aktuell' },
+  { icon: '🔗', title: 'Live RIS-Prüfung', desc: 'Jeden zitierten Paragraphen direkt auf ris.bka.gv.at prüfen — immer aktuell.' },
 ]
 
 // ── FAQ ───────────────────────────────────────────────────────────
@@ -132,7 +137,7 @@ export default function Landing() {
           style={{
             position: 'fixed',
             right: 20,
-            bottom: 30,
+            bottom: 80,
             zIndex: 999,
             width: 48,
             height: 48,
