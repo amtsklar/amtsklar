@@ -1,3 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-export default defineConfig({ plugins: [react()] })
+
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        // Fixer Präfix "app" statt "index" → generiert anderen Hash ohne Unterstrich
+        entryFileNames: 'assets/app-[hash].js',
+        chunkFileNames: 'assets/chunk-[hash].js',
+        assetFileNames: 'assets/style-[hash].[ext]',
+      }
+    }
+  }
+})
