@@ -34,3 +34,5 @@ a { color: inherit; }
 .fade-in {
   animation: fadeIn 0.35s ease both;
 }
+
+/* v2 */
