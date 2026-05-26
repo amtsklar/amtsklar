@@ -329,7 +329,11 @@ export default function Analyse() {
     document.head.appendChild(script)
 
     // Nach erfolgreicher Paddle-Zahlung: Plan aus URL lesen
-    const params = new URLSearchParams(window.location.search)
+    // HashRouter: params sind im hash (#/analyse?success=1&plan=handeln)
+    const hashSearch = window.location.hash.includes('?')
+      ? window.location.hash.split('?')[1]
+      : window.location.search
+    const params = new URLSearchParams(hashSearch)
     if (params.get('success') === '1') {
       const urlPlan = (params.get('plan') || 'verstehen') as Plan
       localStorage.setItem(SK.paid, 'true')
@@ -338,7 +342,7 @@ export default function Analyse() {
       setPlan(urlPlan)
       setShowPaywall(false)
       // URL bereinigen
-      window.history.replaceState({}, '', '/analyse')
+      window.history.replaceState({}, '', '/#/analyse')
     }
 
     // Aufräumen beim Unmount
@@ -358,7 +362,7 @@ export default function Analyse() {
       ;(window as any).Paddle.Checkout.open({
         items: [{ priceId, quantity: 1 }],
         customer: email ? { email } : undefined,
-        successUrl: `${window.location.origin}/analyse?success=1&plan=${selectedPlan}`,
+        successUrl: `${window.location.origin}/#/analyse?success=1&plan=${selectedPlan}`,
       })
       return
     }
