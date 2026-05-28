@@ -665,10 +665,14 @@ async function callAnthropic(
   // Sprach-Instruktion: ZUERST und DEUTLICH — nicht als Anhang
   const langName = LANG_NAMES[language] || 'Deutsch'
   const langPrefix = language !== 'de'
-    ? `CRITICAL LANGUAGE INSTRUCTION: You MUST respond entirely in ${langName}. Every single text value in the JSON must be in ${langName}. Do NOT use German. Do NOT use any other language. ONLY ${langName}.\n\n`
+    ? `CRITICAL LANGUAGE INSTRUCTION: You MUST respond in ${langName} for ALL explanatory fields: einfache_erklaerung, handlungsempfehlung.aktion, handlungsempfehlung.bis_wann, handlungsempfehlung.wie, was_tun, rechtsmittel descriptions, wichtige_hinweise, konsequenzen, beratungsstellen.
+
+EXCEPTION - ALWAYS IN GERMAN REGARDLESS OF LANGUAGE: The fields antwortbrief.inhalt, antwortbrief.betreff, antwortbrief.empfaenger_block MUST ALWAYS be written in German because they are sent to Austrian authorities.
+
+So: explanations = ${langName}, reply letter content = ALWAYS German.\n\n`
     : ''
   const langSuffix = language !== 'de'
-    ? `\n\nREMINDER: ALL text values in your JSON response MUST be in ${langName}. This is mandatory. JSON keys stay in German/English, but ALL values must be in ${langName}.`
+    ? `\n\nREMINDER: Explanations in ${langName}. BUT antwortbrief.inhalt/betreff/empfaenger_block ALWAYS in German (Austrian official language).`
     : ''
   const systemPromptWithLang = langPrefix + SYSTEM_PROMPT + langSuffix
 

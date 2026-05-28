@@ -576,12 +576,12 @@ export default function Landing() {
       {/* ── CTA ── */}
       <section style={{ textAlign: 'center', padding: '60px 24px 80px', borderTop: '1px solid #C5D8ED' }}>
         <h2 style={{ fontFamily: 'serif', fontSize: 28, fontWeight: 700, marginBottom: 12, color: '#0F2440' }}>
-          Brief erhalten? Jetzt analysieren.
+          {t.cta_title}
         </h2>
         <p style={{ color: '#2A5080', marginBottom: 28, fontSize: 15 }}>
-          Erste Analyse kostenlos. Keine Kreditkarte nötig.
+          {t.cta_sub}
         </p>
-        <Link to="/analyse" style={S.btn}>Kostenlos starten →</Link>
+        <Link to="/analyse" style={S.btn}>{t.cta_btn}</Link>
       </section>
 
       </main>

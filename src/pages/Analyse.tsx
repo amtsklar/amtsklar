@@ -880,7 +880,7 @@ export default function Analyse() {
             <div style={{ textAlign: 'center', marginBottom: 24 }}>
               <div style={{ fontFamily: 'serif', fontSize: 32, color: '#C9963A', marginBottom: 10 }}>§</div>
               <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 8 }}>
-                Wähle dein Paket
+                {t.price_choose}
               </div>
               <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.6 }}>
                 {t.pay_sub1}<br/>
@@ -1044,7 +1044,7 @@ export default function Analyse() {
               onClick={() => { setShowPaywall(false); setError(null) }}
               style={{ ...S.btnOut, fontSize: 13, marginTop: 12 }}
             >
-              Schließen
+              {t.close_btn}
             </button>
 
           </div>
@@ -1180,7 +1180,7 @@ export default function Analyse() {
               </h1>
 
               <p style={{ fontSize: 15, color: '#2A5080', lineHeight: 1.6, marginBottom: 20 }}>
-                PDF reinziehen oder Text einfügen — sofort verstehen was er bedeutet.
+                {t.analyse_tagline}
               </p>
 
               {/* ── UPLOAD ZONE: PDF + Foto ── */}
@@ -1726,7 +1726,7 @@ export default function Analyse() {
                   {result.konsequenzen.frist_verpasst && (
                     <div style={{ marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid rgba(224,82,82,0.15)' }}>
                       <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', color: '#E05252', opacity: 0.7, marginBottom: 6 }}>
-                        Sofort bei Fristversäumnis
+                        {t.konq_sofort}
                       </div>
                       <div style={{ fontSize: 14, lineHeight: 1.65, color: '#1A3A5C' }}>
                         {result.konsequenzen.frist_verpasst}
@@ -1737,7 +1737,7 @@ export default function Analyse() {
                   {result.konsequenzen.naechste_schritte_behoerde?.length > 0 && (
                     <div style={{ marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid rgba(224,82,82,0.15)' }}>
                       <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', color: '#E05252', opacity: 0.7, marginBottom: 8 }}>
-                        Nächste Schritte der Behörde
+                        {t.konq_behoerde}
                       </div>
                       {result.konsequenzen.naechste_schritte_behoerde.map((s, i) => (
                         <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', marginBottom: 10 }}>
@@ -1824,6 +1824,11 @@ export default function Analyse() {
                       <div style={{ fontSize: 13, color: '#2A5080' }}>
                         {t.letter_hint}
                       </div>
+                      {lang !== 'de' && (
+                        <div style={{ fontSize: 11, color: '#6A8AAA', marginTop: 4, fontStyle: 'italic' }}>
+                          🇩🇪 {t.letter_lang_note}
+                        </div>
+                      )}
                     </div>
                   </div>
 

@@ -59,6 +59,9 @@ export default function Vorlagen() {
   }, [])
 
   const canDownload = isPaid && (plan === 'handeln' || plan === 'familie')
+  const savedEmail = typeof window !== 'undefined'
+    ? (localStorage.getItem('ak_email') || localStorage.getItem('ak_capture_email') || '')
+    : ''
   const ui = VORLAGEN_UI[lang] || VORLAGEN_UI.en
   const texts = VORLAGEN_TEXT[lang] || VORLAGEN_TEXT.en
 
@@ -127,8 +130,8 @@ export default function Vorlagen() {
                   </div>
                   {canDownload ? (
                     <a
-                      href={`/vorlagen/${base.datei}`}
-                      download
+                      href={`/api/download-vorlage?file=${encodeURIComponent(base.datei)}&email=${encodeURIComponent(savedEmail)}`}
+                      download={base.datei}
                       style={{
                         background:'linear-gradient(135deg,#B8832A,#D4A84B)',
                         color:'#FFFFFF', border:'none', borderRadius:10,

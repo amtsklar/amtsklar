@@ -26,10 +26,9 @@
 /robots.txt
   Cache-Control: public, max-age=86400
 
-# ── Vorlagen (DOCX Downloads) ─────────────────────────────────────
+# ── Vorlagen: Direktzugriff gesperrt ─────────────────────────────
 /vorlagen/*.docx
-  Content-Disposition: attachment
-  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
 
 # ── API Endpunkte: CORS ───────────────────────────────────────────
 /api/analyse

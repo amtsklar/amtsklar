@@ -1,8 +1,12 @@
 User-agent: *
 Allow: /
 
+# Geschützte Bereiche — nicht indexieren
+Disallow: /vorlagen/*.docx
+Disallow: /api/
+
 # Sitemap
 Sitemap: https://www.amtsklar.at/sitemap.xml
 
-# Cloudflare Pages
+# Cloudflare
 Disallow: /cdn-cgi/
