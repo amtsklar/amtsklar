@@ -866,19 +866,26 @@ export default function Analyse() {
             </div>
 
             {/* 3 Plan-Karten */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 20 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 20, alignItems: 'stretch' }}>
 
               {/* Verstehen */}
               <div style={{
                 border: '1.5px solid #C5D8ED', borderRadius: 12,
-                padding: '16px 12px', textAlign: 'center',
-                cursor: 'pointer',
+                padding: '16px 12px', display: 'flex', flexDirection: 'column',
               }}>
                 <div style={{ fontSize: 12, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', marginBottom: 6 }}>Verstehen</div>
                 <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€2,49' : '€2,99'}</div>
-                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 12 }}>{yearlyBilling ? '€24,90/Jahr' : 'pro Monat'}</div>
-                <div style={{ fontSize: 11, color: '#2A5080', marginBottom: 12, lineHeight: 1.5 }}>
-                  Analyse & Fristen
+                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 10 }}>{yearlyBilling ? '€24,90/Jahr' : t.per_month}</div>
+                <div style={{ flex: 1, marginBottom: 12 }}>
+                  {t.plan_f.map((text, i) => {
+                    const ok = i < 5
+                    return (
+                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 5, fontSize: 10 }}>
+                        <span style={{ color: ok ? '#4CAF82' : '#C5D8ED', fontWeight: 700, marginRight: 5, flexShrink: 0, marginTop: 1 }}>{ok ? '✓' : '✗'}</span>
+                        <span style={{ color: ok ? '#2A5080' : '#C5D8ED', textDecoration: ok ? 'none' : 'line-through', lineHeight: 1.4 }}>{text}</span>
+                      </div>
+                    )
+                  })}
                 </div>
                 <button
                   onClick={() => openCheckout('verstehen')}
@@ -889,16 +896,16 @@ export default function Analyse() {
                     color: '#2A5080', cursor: 'pointer',
                   }}
                 >
-                  Wählen
+                  {t.free_test.replace('Kostenlos ', '').replace('gratis', '').trim() || 'Wählen'}
                 </button>
               </div>
 
               {/* Handeln (hervorgehoben) */}
               <div style={{
                 border: '2px solid #C9963A', borderRadius: 12,
-                padding: '16px 12px', textAlign: 'center',
+                padding: '16px 12px',
                 background: 'rgba(201,150,58,0.04)',
-                position: 'relative',
+                position: 'relative', display: 'flex', flexDirection: 'column',
               }}>
                 <div style={{
                   position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)',
@@ -910,9 +917,17 @@ export default function Analyse() {
                 </div>
                 <div style={{ fontSize: 12, fontWeight: 600, color: '#C9963A', textTransform: 'uppercase', marginBottom: 6 }}>Handeln</div>
                 <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€4,19' : '€4,99'}</div>
-                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 12 }}>{yearlyBilling ? '€41,90/Jahr' : 'pro Monat'}</div>
-                <div style={{ fontSize: 11, color: '#2A5080', marginBottom: 12, lineHeight: 1.5 }}>
-                  + Antwortbrief
+                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 10 }}>{yearlyBilling ? '€41,90/Jahr' : t.per_month}</div>
+                <div style={{ flex: 1, marginBottom: 12 }}>
+                  {t.plan_f.map((text, i) => {
+                    const ok = i < 7
+                    return (
+                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 5, fontSize: 10 }}>
+                        <span style={{ color: ok ? '#4CAF82' : '#C5D8ED', fontWeight: 700, marginRight: 5, flexShrink: 0, marginTop: 1 }}>{ok ? '✓' : '✗'}</span>
+                        <span style={{ color: ok ? '#2A5080' : '#C5D8ED', textDecoration: ok ? 'none' : 'line-through', lineHeight: 1.4 }}>{text}</span>
+                      </div>
+                    )
+                  })}
                 </div>
                 <button
                   onClick={() => openCheckout('handeln')}
@@ -931,14 +946,18 @@ export default function Analyse() {
               {/* Familie */}
               <div style={{
                 border: '1.5px solid #C5D8ED', borderRadius: 12,
-                padding: '16px 12px', textAlign: 'center',
-                cursor: 'pointer',
+                padding: '16px 12px', display: 'flex', flexDirection: 'column',
               }}>
                 <div style={{ fontSize: 12, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', marginBottom: 6 }}>Familie</div>
                 <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€6,79' : '€7,99'}</div>
-                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 12 }}>{yearlyBilling ? '€67,90/Jahr' : 'pro Monat'}</div>
-                <div style={{ fontSize: 11, color: '#2A5080', marginBottom: 12, lineHeight: 1.5 }}>
-                  Bis zu 5 Personen
+                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 10 }}>{yearlyBilling ? '€67,90/Jahr' : t.per_month}</div>
+                <div style={{ flex: 1, marginBottom: 12 }}>
+                  {t.plan_f.map((text, i) => (
+                    <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 5, fontSize: 10 }}>
+                      <span style={{ color: '#4CAF82', fontWeight: 700, marginRight: 5, flexShrink: 0, marginTop: 1 }}>✓</span>
+                      <span style={{ color: '#2A5080', lineHeight: 1.4 }}>{text}</span>
+                    </div>
+                  ))}
                 </div>
                 <button
                   onClick={() => openCheckout('familie')}

@@ -415,13 +415,14 @@ export default function Landing() {
           )}
         </div>
 
-        {/* 3 Preiskarten */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20, alignItems: 'start' }}>
+        {/* 3 Preiskarten — gleiche Höhe, alle Features sichtbar */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20, alignItems: 'stretch' }}>
 
           {/* ── VERSTEHEN ── */}
           <div style={{
             background: '#FFFFFF', border: '1.5px solid #C5D8ED',
-            borderRadius: 16, padding: '28px 24px'
+            borderRadius: 16, padding: '28px 24px',
+            display: 'flex', flexDirection: 'column'
           }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>
               Verstehen
@@ -432,12 +433,20 @@ export default function Landing() {
             <div style={{ fontSize: 13, color: '#6A8AAA', marginBottom: 24 }}>
               {jaehrlich ? t.per_month_y : t.per_month}
             </div>
-            {t.plan_v.map((text, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
-                <span style={S.check}>✓</span>
-                <span style={{ color: '#1A3A5C' }}>{text}</span>
-              </div>
-            ))}
+            <div style={{ flex: 1 }}>
+              {t.plan_f.map((text, i) => {
+                const included = i < 5
+                return (
+                  <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
+                    <span style={included ? S.check : S.cross}>{included ? '✓' : '✗'}</span>
+                    <span style={{
+                      color: included ? '#1A3A5C' : '#B0C4D8',
+                      textDecoration: included ? 'none' : 'line-through',
+                    }}>{text}</span>
+                  </div>
+                )
+              })}
+            </div>
             <Link to="/analyse" style={{
               display: 'block', marginTop: 20, textAlign: 'center',
               padding: '13px', borderRadius: 10, fontSize: 15, fontWeight: 600,
@@ -454,9 +463,9 @@ export default function Landing() {
             border: '2px solid #C9963A',
             borderRadius: 16, padding: '28px 24px',
             boxShadow: '0 8px 32px rgba(201,150,58,0.15)',
-            position: 'relative'
+            position: 'relative',
+            display: 'flex', flexDirection: 'column'
           }}>
-            {/* Empfohlen-Badge */}
             <div style={{
               position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)',
               background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
@@ -474,12 +483,20 @@ export default function Landing() {
             <div style={{ fontSize: 13, color: '#6A8AAA', marginBottom: 24 }}>
               {jaehrlich ? t.per_month_y : t.per_month}
             </div>
-            {t.plan_h.map((text, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
-                <span style={S.check}>✓</span>
-                <span style={{ color: '#1A3A5C' }}>{text}</span>
-              </div>
-            ))}
+            <div style={{ flex: 1 }}>
+              {t.plan_f.map((text, i) => {
+                const included = i < 7
+                return (
+                  <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
+                    <span style={included ? S.check : S.cross}>{included ? '✓' : '✗'}</span>
+                    <span style={{
+                      color: included ? '#1A3A5C' : '#B0C4D8',
+                      textDecoration: included ? 'none' : 'line-through',
+                    }}>{text}</span>
+                  </div>
+                )
+              })}
+            </div>
             <Link to="/analyse" style={{
               display: 'block', marginTop: 20, textAlign: 'center',
               padding: '13px', borderRadius: 10, fontSize: 15, fontWeight: 700,
@@ -494,7 +511,8 @@ export default function Landing() {
           {/* ── FAMILIE ── */}
           <div style={{
             background: '#FFFFFF', border: '1.5px solid #C5D8ED',
-            borderRadius: 16, padding: '28px 24px'
+            borderRadius: 16, padding: '28px 24px',
+            display: 'flex', flexDirection: 'column'
           }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>
               Familie
@@ -505,12 +523,14 @@ export default function Landing() {
             <div style={{ fontSize: 13, color: '#6A8AAA', marginBottom: 24 }}>
               {jaehrlich ? t.per_month_y : t.per_month}
             </div>
-            {t.plan_f.map((text, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
-                <span style={S.check}>✓</span>
-                <span style={{ color: '#1A3A5C' }}>{text}</span>
-              </div>
-            ))}
+            <div style={{ flex: 1 }}>
+              {t.plan_f.map((text, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 10, fontSize: 14 }}>
+                  <span style={S.check}>✓</span>
+                  <span style={{ color: '#1A3A5C' }}>{text}</span>
+                </div>
+              ))}
+            </div>
             <Link to="/analyse" style={{
               display: 'block', marginTop: 20, textAlign: 'center',
               padding: '13px', borderRadius: 10, fontSize: 15, fontWeight: 600,
