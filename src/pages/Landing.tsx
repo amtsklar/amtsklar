@@ -81,7 +81,7 @@ export default function Landing() {
       padding: 20,
     } as React.CSSProperties,
     check: {
-      color: '#C9963A',
+      color: '#4CAF82',
       fontWeight: 700,
       marginRight: 8,
       flexShrink: 0,
