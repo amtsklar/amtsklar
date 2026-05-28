@@ -1,163 +1,95 @@
-# AmtsKlar — Setup Guide
-Österreichische Behördenbriefe sofort verstehen.
-**Tech:** React + Vite + Cloudflare Pages + Cloudflare Functions + Paddle
+# AmtsKlar 🇦🇹
 
+**Österreichische Behördenbriefe sofort verstehen — KI-Analyse in 12 Sprachen**
 
----
-
-## ✅ Was wirklich kostenlos ist (verifiziert)
-
-| Service | Kosten | Einschränkung |
-|---------|--------|---------------|
-| **GitHub** | Gratis | Keine |
-| **Cloudflare Pages** | Gratis auch kommerziell | 500 Deploys/Monat |
-| **Cloudflare Functions** | Gratis | 100.000 Requests/Tag |
-| **Paddle** | Keine Setup-Kosten | 5% + €0,50 pro Transaktion |
-| **Anthropic API** | ~$5 Startguthaben | Danach pay-as-you-go |
-
-**Monatliche Fixkosten:** ~€0 bis zu großem Traffic
+Betreiber: Philipp Hofer · Fischerweg 7 · 9434 Au · Schweiz  
+Website: https://amtsklar.at
 
 ---
 
-## 🚀 Setup in 5 Schritten
-
-### Schritt 1: GitHub Account + Repository
-1. github.com → Sign up (kostenlos, keine Kreditkarte)
-2. Neues Repository erstellen: "amtsklar"
-3. Diesen Ordner hochladen (alle Dateien)
-
-### Schritt 2: Cloudflare Account
-1. cloudflare.com → Sign up (kostenlos, keine Kreditkarte)
-2. Workers & Pages → Create application → Pages
-3. Connect to Git → dein GitHub Repo wählen
-4. Build settings:
-   - Framework preset: **None** (oder Vite)
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-5. → Save and Deploy
-
-### Schritt 3: Anthropic API Key
-1. console.anthropic.com → Sign up
-2. Telefonnummer verifizieren → ~$5 Gratisguthaben erscheint automatisch
-3. Settings → API Keys → Create Key → kopieren
-4. **Kreditkarte erst nötig wenn $5 aufgebraucht sind**
-
-### Schritt 4: Paddle Account
-1. vendors.paddle.com → Sign up
-2. Firmendaten eingeben (kanadische LLP):
-   - Business type: Limited Liability Partnership
-   - Country: Canada
-   - Firmendokumente hochladen (Registrierungsurkunde)
-3. Warten auf KYB-Verifikation (2-4 Werktage)
-4. Nach Verifikation:
-   - Catalog → Products → Add Product → "AmtsKlar Monatsabo"
-   - Add Price → Recurring → €2,99 → Monthly
-   - Price ID notieren: `pri_01...`
-5. Developer Tools → Authentication:
-   - API Key (Secret) kopieren
-   - Client-side token kopieren
-6. Developer Tools → Webhooks:
-   - Add webhook: `https://amtsklar.at/api/paddle`
-   - Events: subscription.created, subscription.canceled, subscription.past_due, transaction.completed
-   - Webhook secret kopieren
-
-### Schritt 5: Keys in Cloudflare eintragen
-1. Cloudflare Dashboard → dein Projekt → Settings → Environment Variables
-2. Diese Variables hinzufügen (Type: Secret):
-
-```
-ANTHROPIC_API_KEY     = sk-ant-...
-PADDLE_API_KEY        = ...
-PADDLE_WEBHOOK_SECRET = ...
-```
-
-3. Diese Variables hinzufügen (Type: Plain text):
-```
-VITE_PADDLE_CLIENT_TOKEN = live_...
-VITE_PADDLE_PRICE_ID     = pri_01...
-```
-
-4. → Save → Redeploy
+## 🌍 Sprachen
+🇦🇹 DE · 🇬🇧 EN · 🇹🇷 TR · 🇷🇸 SR · 🇭🇷 HR · 🇭🇺 HU · 🇸🇮 SL · 🇸🇰 SK · 🇷🇴 RO · 🇵🇱 PL · 🇷🇺 RU · 🇮🇹 IT
 
 ---
 
-## 🌐 Domain verbinden
-
-1. In Cloudflare Pages → dein Projekt → Custom domains → Add domain
-2. "amtsklar.at" eingeben
-3. Cloudflare zeigt dir DNS-Einträge
-4. In world4you (Domain-Registrar) die Nameserver ändern auf:
-   ```
-   jule.ns.cloudflare.com
-   lloyd.ns.cloudflare.com
-   ```
-   (Cloudflare gibt dir die genauen Namen)
-5. Warten 1-24 Stunden → Domain aktiv
+## 💰 API-Kosten (optimiert)
+- Modell: **claude-haiku-4-5** (günstigste Option)
+- System-Prompt: ~85 Tokens (statt 400+)
+- Max. Output: 700 Tokens
+- **Geschätzte Kosten: ~0,3–0,5 Cent pro Analyse** ✅
 
 ---
 
-## 💻 Lokal entwickeln
+## 🚀 Setup
 
-```bash
-npm install
-cp .env.example .env.local
-# .env.local mit deinen Keys füllen
-npm run dev
+### 1. GitHub — Repository erstellen
+Alle Dateien in ein neues GitHub Repository hochladen.
+
+### 2. Cloudflare Pages verbinden
+- cloudflare.com → Pages → GitHub Repository verbinden  
+- Build-Befehl: `npm run build`  
+- Output-Verzeichnis: `dist`
+
+### 3. Environment Variables (Secrets) in Cloudflare
+Settings → Environment Variables → Production:
+
+| Variable | Wert |
+|---|---|
+| `ANTHROPIC_API_KEY` | `sk-ant-api03-...` |
+| `PADDLE_API_KEY` | `pdl_live_...` |
+| `PADDLE_WEBHOOK_SECRET` | aus Paddle Dashboard |
+
+### 4. Paddle Price IDs eintragen
+In `src/pages/Analyse.tsx` Zeile 13–14:
+```ts
+basic: 'pri_XXXXX',   // ← deine Basic Price ID
+pro:   'pri_YYYYY',   // ← deine Pro Price ID
 ```
 
-→ http://localhost:5173
+### 5. Domain verbinden (nach Paddle-Freigabe)
+- World4You: DNS → CNAME `www` → `amtsklar.pages.dev`
+- Cloudflare Pages: Custom Domain → `amtsklar.at`
 
 ---
 
-## 📁 Projektstruktur
-
+## 📁 Dateistruktur
 ```
 amtsklar/
-├── functions/              # Cloudflare Pages Functions (Server-Side, gratis)
-│   └── api/
-│       ├── analyse.ts      → /api/analyse  (Anthropic API)
-│       ├── verify.ts       → /api/verify   (Paddle Abo prüfen)
-│       └── paddle.ts       → /api/paddle   (Paddle Webhooks)
-├── public/
-│   ├── _redirects          # SPA Routing
-│   └── favicon.svg
+├── functions/api/
+│   ├── analyse.ts        ← KI-Analyse (Haiku, ~0,3ct/Anfrage)
+│   ├── verify.ts         ← Paddle Abo-Prüfung
+│   └── paddle.ts         ← Paddle Webhooks
 ├── src/
+│   ├── components/
+│   │   └── LanguageSwitcher.tsx   ← Dropdown für 12 Sprachen
+│   ├── i18n/
+│   │   ├── index.tsx              ← Language Context (optimiert)
+│   │   └── translations.ts        ← Alle 12 Sprachen in 1 Datei
 │   ├── pages/
-│   │   ├── Landing.tsx     # Marketing-Seite
-│   │   └── Analyse.tsx     # Die App + Paywall
-│   ├── App.tsx             # Router
-│   ├── main.tsx
-│   └── index.css
+│   │   ├── Landing.tsx            ← Startseite
+│   │   ├── Analyse.tsx            ← App (lazy PDF, compressed images)
+│   │   └── legal/
+│   │       ├── Impressum.tsx      ← § 5 ECG + Art. 3 UWG
+│   │       ├── Datenschutz.tsx    ← DSGVO + CH DSG
+│   │       └── AGB.tsx            ← Schweizer Recht, EU-Widerrufsrecht
+│   ├── App.tsx       ← Router (legal pages lazy-loaded)
+│   ├── main.tsx      ← Entry + Suspense
+│   └── index.css     ← Minimal reset
+├── public/favicon.svg
 ├── index.html
 ├── package.json
-├── vite.config.ts
-├── wrangler.toml           # Cloudflare Config
-└── .env.example
+├── vite.config.ts    ← Chunk splitting (vendor separate)
+├── wrangler.toml
+└── tsconfig.json
 ```
 
 ---
 
-## 💰 Kostenübersicht
-
-| Was | Kosten/Monat |
-|-----|-------------|
-| Cloudflare Pages + Functions | **€0** (wirklich gratis, auch kommerziell) |
-| GitHub | **€0** |
-| Anthropic API (100 User × 5 Analysen) | **~€1** |
-| Paddle (5% + €0,50 pro €2,99) | **~14% des Umsatzes** |
-| Domain amtsklar.at | **€1,67** (€20/Jahr) |
-| **Total bei 100 Usern** | **~€7 Kosten / ~€243 Umsatz** |
-
-Break-Even: **3 zahlende User** decken alle Fixkosten.
-
----
-
-## ⚠️ Wichtige Hinweise
-
-1. **Anthropic API**: Kreditkarte erst nötig wenn ~$5 Gratisguthaben aufgebraucht. Danach pay-as-you-go (~€0,01 pro Analyse).
-
-2. **Paddle KYB**: Firmendokumente der kanadischen LLP bereithalten. Registrierungsurkunde als PDF.
-
-3. **Cloudflare Functions**: 100.000 Requests/Tag gratis = ca. 3 Millionen Anfragen/Monat. Für den Start mehr als genug.
-
-4. **Paddle Sandbox**: Zum Testen sandbox.paddle.com verwenden. Echte Zahlungen erst über vendors.paddle.com.
+## ⚡ Optimierungen
+- React.lazy() für Legal-Seiten
+- Chunk splitting (vendor bundle)
+- Images: max 1200px, JPEG 72% vor API-Übergabe
+- PDF-Text: direkt als Text (keine Vision-Tokens)
+- System-Prompt: 85 statt 400+ Tokens
+- useCallback überall — keine unnötigen Re-renders
+- Style-Konstanten außerhalb Komponenten — kein Re-create
