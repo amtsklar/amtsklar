@@ -45,9 +45,9 @@ export default function Impressum() {
         </div>
 
         <div style={S.card}>
-          <h2 style={{ ...S.h2, marginTop: 0 }}>KI-Dienstleister</h2>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>Technologie-Dienstleister</h2>
           <p style={S.p}>
-            Die KI-gestützte Analyse wird durch <strong>Anthropic, PBC</strong> bereitgestellt.<br />
+            Die automatisierte Analyse wird durch <strong>Anthropic, PBC</strong> bereitgestellt.<br />
             Anthropic, PBC, 548 Market Street, PMB 90375, San Francisco, CA 94104, USA.<br />
             Briefinhalte werden ausschließlich zur Analyse an Anthropic übermittelt und nicht dauerhaft gespeichert.
           </p>

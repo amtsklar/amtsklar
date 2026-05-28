@@ -32,7 +32,7 @@ export default function AGB() {
 
         <div style={S.card}>
           <h2 style={{ ...S.h2, marginTop: 0 }}>§ 2 Leistungsbeschreibung</h2>
-          <p style={S.p}>AmtsKlar ist ein KI-gestützter Informationsdienst zur Erklärung österreichischer Behördenschreiben. Der Dienst:</p>
+          <p style={S.p}>AmtsKlar ist ein automatisierter Informationsdienst zur Erklärung österreichischer Behördenschreiben. Der Dienst:</p>
           <ul style={{ paddingLeft: 20 }}>
             <li style={S.li}>Analysiert und erklärt Behördenbriefe in verständlicher Sprache</li>
             <li style={S.li}>Gibt Hinweise auf relevante Fristen und mögliche Handlungsoptionen</li>

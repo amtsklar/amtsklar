@@ -662,12 +662,15 @@ async function callAnthropic(
   language = 'de'
 ): Promise<string> {
 
-  // Sprach-Instruktion ans System-Prompt anhängen
+  // Sprach-Instruktion: ZUERST und DEUTLICH — nicht als Anhang
   const langName = LANG_NAMES[language] || 'Deutsch'
-  const langInstruction = language !== 'de'
-    ? `\n\nWICHTIG: Antworte vollständig auf ${langName}. Alle Felder (was_bedeutet_das, handlung, konsequenzen usw.) auf ${langName} — nur die JSON-Schlüssel bleiben auf Englisch/Deutsch.`
+  const langPrefix = language !== 'de'
+    ? `CRITICAL LANGUAGE INSTRUCTION: You MUST respond entirely in ${langName}. Every single text value in the JSON must be in ${langName}. Do NOT use German. Do NOT use any other language. ONLY ${langName}.\n\n`
     : ''
-  const systemPromptWithLang = SYSTEM_PROMPT + langInstruction
+  const langSuffix = language !== 'de'
+    ? `\n\nREMINDER: ALL text values in your JSON response MUST be in ${langName}. This is mandatory. JSON keys stay in German/English, but ALL values must be in ${langName}.`
+    : ''
+  const systemPromptWithLang = langPrefix + SYSTEM_PROMPT + langSuffix
 
   // Nachrichteninhalt je nach Eingabetyp aufbauen
   let userContent: any

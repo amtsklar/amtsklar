@@ -59,7 +59,7 @@ export default function Datenschutz() {
 
         <div style={S.card}>
           <h2 style={{ ...S.h2, marginTop: 0 }}>4. Drittanbieter & Auftragsverarbeiter</h2>
-          <p style={S.p}><strong>Anthropic, PBC</strong> (USA) — KI-Analyse. Grundlage: Standardvertragsklauseln (SCC). Brieftexte werden nicht für Modelltraining verwendet (API-Nutzungsbedingungen).</p>
+          <p style={S.p}><strong>Anthropic, PBC</strong> (USA) — automatisierte Analyse. Grundlage: Standardvertragsklauseln (SCC). Brieftexte werden nicht für Modelltraining verwendet (API-Nutzungsbedingungen).</p>
           <p style={S.p}><strong>Cloudflare, Inc.</strong> (USA) — Hosting & CDN. Grundlage: Standardvertragsklauseln (SCC).</p>
           <p style={S.p}><strong>Paddle.com Market Limited</strong> (UK) — Zahlungsabwicklung. Grundlage: Angemessenheitsbeschluss (UK GDPR).</p>
         </div>

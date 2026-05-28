@@ -296,7 +296,9 @@ async function compressImage(file: File): Promise<{
 }
 
 // ── Logo Komponente ───────────────────────────────────────────────
-const Logo = () => (
+const Logo = () => {
+  const { t } = useLang()
+  return (
   <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
     <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
       <defs>
@@ -313,12 +315,13 @@ const Logo = () => (
         <span style={{ color: '#0F2440', fontWeight: 400 }}>Amts</span>
         <span style={{ color: '#C9963A', fontWeight: 700 }}>Klar</span>
       </div>
-      <div style={{ fontSize: 9, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
-        Österreich · Behördenbriefe sofort verstehen
+      <div style={{ fontSize: 9, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '0.8px' }} className="logo-sub">
+        {t.logo_sub}
       </div>
     </div>
   </Link>
-)
+  )
+}
 
 // ── Hauptkomponente ───────────────────────────────────────────────
 export default function Analyse() {
@@ -437,19 +440,19 @@ export default function Analyse() {
 
     // Paddle noch nicht konfiguriert → Hinweis anzeigen statt wegzuleiten
     if (!priceId) {
-      setError('Zahlungssystem wird gerade eingerichtet — bitte in Kürze erneut versuchen.')
+      setError(t.err_payment)
       setShowPaywall(false)
       return
     }
 
     // Paddle.js noch nicht geladen → kurz warten und nochmal versuchen
-    setError('Zahlungssystem lädt gerade — bitte einen Moment warten und nochmal klicken.')
+    setError(t.err_payment)
   }
 
   // ── Subscription per E-Mail prüfen ─────────────────────────────
   const verifySubscription = async () => {
     if (!email.includes('@')) {
-      setError('Bitte eine gültige E-Mail-Adresse eingeben.')
+      setError(t.err_email)
       return
     }
 
@@ -474,10 +477,10 @@ export default function Analyse() {
         setPlan(verifiedPlan)
         setShowPaywall(false)
       } else {
-        setError('Kein aktives Abonnement für diese E-Mail gefunden.')
+        setError(t.err_verify)
       }
     } catch {
-      setError('Prüfung fehlgeschlagen. Bitte erneut versuchen.')
+      setError(t.err_verify)
     } finally {
       setVerifying(false)
     }
@@ -490,7 +493,7 @@ export default function Analyse() {
       return
     }
     if (file.size > 15 * 1024 * 1024) {
-      setError('PDF zu groß (max. 15 MB). Bitte Text manuell einfügen.')
+      setError(t.err_pdf_big)
       return
     }
 
@@ -506,10 +509,7 @@ export default function Analyse() {
         setError(null)
         setPdfFileName(null)
         // Zeige hilfreiche Erklärung statt kurzer Fehlermeldung
-        setError(
-          'Dieses PDF enthält keinen lesbaren Text (wahrscheinlich gescannt). ' +
-          'Bitte den Text manuell einfügen: PDF öffnen → Text markieren → kopieren → hier einfügen.'
-        )
+        setError(t.err_pdf_scan)
         return
       }
 
@@ -517,7 +517,7 @@ export default function Analyse() {
       setError(null)
     } catch (e: any) {
       setPdfFileName(null)
-      setError('PDF konnte nicht gelesen werden. Bitte Text manuell einfügen.')
+      setError(t.err_pdf_scan)
     } finally {
       setPdfLoading(false)
     }
@@ -527,11 +527,11 @@ export default function Analyse() {
   const processImageFile = async (file: File) => {
     const SUPPORTED = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp']
     if (!SUPPORTED.includes(file.type)) {
-      setError('Unterstützte Formate: JPG, PNG, WEBP (Handy-Foto) oder PDF (Bescheid).')
+      setError(t.err_img_fmt)
       return
     }
     if (file.size > 25 * 1024 * 1024) {
-      setError('Bild zu groß (max. 25 MB). Bitte Foto in niedrigerer Auflösung aufnehmen.')
+      setError(t.err_img_big)
       return
     }
 
@@ -601,7 +601,7 @@ export default function Analyse() {
 
     // Etwas muss vorhanden sein
     if (!hasImage && !hasText) {
-      setError('Bitte Text einfügen oder Foto/PDF hochladen.')
+      setError(t.err_empty)
       return
     }
 
@@ -736,7 +736,7 @@ export default function Analyse() {
       flexDirection: 'column' as const,
     },
     header: {
-      padding: '14px 20px',
+      padding: '12px 16px',
       borderBottom: '1px solid #C5D8ED',
       display: 'flex',
       alignItems: 'center',
@@ -1190,7 +1190,7 @@ export default function Analyse() {
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
                     <span style={{ fontSize: 20 }}>📄</span>
                     <div style={{ textAlign: 'left' }}>
-                      <div style={{ fontSize: 14, fontWeight: 600, color: '#4CAF82' }}>✓ PDF geladen</div>
+                      <div style={{ fontSize: 14, fontWeight: 600, color: '#4CAF82' }}>{t.pdf_loaded}</div>
                       <div style={{ fontSize: 12, color: '#6A8AAA' }}>{pdfFileName}</div>
                     </div>
                     <button
@@ -1242,7 +1242,7 @@ export default function Analyse() {
                     ...S.ta,
                     border: pdfFileName ? '1.5px solid rgba(76,175,130,0.5)' : '1.5px solid #C5D8ED',
                   }}
-                  placeholder={'Brieftext hier einfügen…\n\nz.B. Strafverfügung, Finanzamtsbescheid, AMS-Schreiben, Inkasso, Mietkündigung…'}
+                  placeholder={t.placeholder.replace('\\n', '\n')}
                   value={briefText}
                   onChange={e => {
                     setBriefText(e.target.value)
@@ -1269,7 +1269,7 @@ export default function Analyse() {
                       </span>
                     ) : (
                       <span style={{ color: '#6A8AAA' }}>
-                        {pdfFileName && <span style={{ color: '#4CAF82' }}>· aus PDF extrahiert</span>}
+                        {pdfFileName && <span style={{ color: '#4CAF82' }}>{t.pdf_extracted}</span>}
                       </span>
                     )}
                   </div>

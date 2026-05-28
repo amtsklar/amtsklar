@@ -9,7 +9,9 @@ import { LanguageSwitcher } from '../components/LanguageSwitcher'
 // ═══════════════════════════════════════════════════════════════════
 
 // ── Logo Komponente ───────────────────────────────────────────────
-const Logo = () => (
+const Logo = () => {
+  const { t } = useLang()
+  return (
   <div
     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
@@ -28,12 +30,13 @@ const Logo = () => (
         <span style={{ color: '#0F2440', fontWeight: 400 }}>Amts</span>
         <span style={{ color: '#C9963A', fontWeight: 700 }}>Klar</span>
       </div>
-      <div style={{ fontSize: 9, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
-        Österreich · Behördenbriefe sofort verstehen
+      <div style={{ fontSize: 9, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '0.8px' }} className="logo-sub">
+        {t.logo_sub}
       </div>
     </div>
   </div>
-)
+  )
+}
 
 
 // ── Haupt-Komponente ──────────────────────────────────────────────
@@ -126,15 +129,22 @@ export default function Landing() {
       {/* ── NAVIGATION ── */}
       <nav style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '16px 24px', borderBottom: '1px solid #C5D8ED',
+        padding: '12px 16px', borderBottom: '1px solid #C5D8ED',
         position: 'sticky', top: 0, background: '#FFFFFF', zIndex: 50,
         boxShadow: '0 1px 12px rgba(15,36,64,0.08)'
       }}>
         <Logo />
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexShrink: 0 }}>
           <LanguageSwitcher />
-          <a href="#preise" onClick={e => { e.preventDefault(); document.getElementById('preise')?.scrollIntoView({ behavior: 'smooth' }) }} style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none', cursor: 'pointer' }}>{t.nav_prices}</a>
-          <Link to="/analyse" style={{ ...S.btn, padding: '8px 18px', fontSize: 14 }}>
+          <a href="#preise" onClick={e => { e.preventDefault(); document.getElementById('preise')?.scrollIntoView({ behavior: 'smooth' }) }}
+            className="hide-mobile"
+            style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none', cursor: 'pointer' }}>
+            {t.nav_prices}
+          </a>
+          <Link to="/analyse" style={{
+            ...S.btn, padding: '8px 14px', fontSize: 13,
+            whiteSpace: 'nowrap', flexShrink: 0
+          }}>
             {t.nav_test}
           </Link>
         </div>
@@ -156,7 +166,7 @@ export default function Landing() {
           fontSize: 'clamp(32px,6vw,52px)',
           fontWeight: 700, lineHeight: 1.15, marginBottom: 20, color: '#0F2440'
         }}>
-          Brief vom Amt erhalten?<br />
+          {t.h1a}<br />
           <span style={{ color: '#C9963A' }}>{t.h1b}</span>
         </h1>
 
@@ -197,13 +207,13 @@ export default function Landing() {
                 <span style={{ fontSize: 20 }}>🚨</span>
                 <div>
                   <div style={{ fontSize: 10, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 4 }}>
-                    Nächste Pflichtaktion
+                    {t.demo_pflicht}
                   </div>
                   <div style={{ fontFamily: 'serif', fontSize: 17, fontWeight: 700, color: '#0F2440' }}>
-                    Einspruch schriftlich einbringen
+                    {t.demo_action}
                   </div>
                   <div style={{ fontSize: 12, color: '#E05252', marginTop: 4 }}>
-                    🗓 Innerhalb 2 Wochen ab Zustellung
+                    {t.demo_date}
                   </div>
                 </div>
               </div>
@@ -211,10 +221,10 @@ export default function Landing() {
             {/* Erklärung */}
             <div style={{ background: '#F5F8FC', borderRadius: 10, padding: '12px 16px', marginBottom: 12 }}>
               <div style={{ fontSize: 10, color: '#4A6A90', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 6 }}>
-                Was bedeutet dieser Brief?
+                {t.demo_meaning_label}
               </div>
               <div style={{ fontSize: 14, color: '#1A3A5C', lineHeight: 1.65 }}>
-                Sie haben eine Strafverfügung vom Magistrat Wien erhalten. Es wird eine Geldstrafe von €180 gefordert. Sie haben 2 Wochen Zeit um Einspruch zu erheben — das kostet nichts und ist einfach.
+                {t.demo_meaning_text}
               </div>
             </div>
             {/* Brief-Preview (Handeln-Feature) */}
@@ -222,11 +232,11 @@ export default function Landing() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
                 <span>✉️</span>
                 <div style={{ fontSize: 10, color: '#C9963A', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>
-                  Fertiger Antwortbrief — Handeln & Familie Paket
+                  {t.demo_letter_label}
                 </div>
               </div>
               <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6, fontStyle: 'italic' }}>
-                "Sehr geehrte Damen und Herren, bezugnehmend auf Ihre Strafverfügung vom [DATUM] zu GZ [AKTENZAHL] erhebe ich fristgerecht EINSPRUCH und beantrage die Durchführung einer mündlichen Verhandlung..."
+                {t.demo_letter_text}
               </div>
             </div>
           </div>
@@ -568,7 +578,7 @@ export default function Landing() {
         background: '#FFFFFF'
       }}>
         <div style={{ fontSize: 13, color: '#6A8AAA' }}>
-          © 2025 AmtsKlar · Behördenbriefe sofort verstehen
+          © {new Date().getFullYear()} AmtsKlar · {t.logo_sub}
         </div>
         <div style={{ display: 'flex', gap: 20, fontSize: 13 }}>
           {[

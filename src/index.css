@@ -36,3 +36,22 @@ a { color: inherit; }
 }
 
 /* v2 */
+
+/* Mobile nav: Preise-Link ausblenden unter 520px */
+@media (max-width: 520px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Nav-Button nicht abschneiden */
+nav a, nav button {
+  flex-shrink: 0;
+}
+
+/* Logo-Tagline auf Mobile ausblenden */
+@media (max-width: 480px) {
+  .logo-sub {
+    display: none !important;
+  }
+}
