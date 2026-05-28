@@ -26,7 +26,7 @@ export default function AGB() {
 
         <div style={S.card}>
           <h2 style={{ ...S.h2, marginTop: 0 }}>§ 1 Anbieter & Geltungsbereich</h2>
-          <p style={S.p}>Diese AGB gelten für die Nutzung des Online-Dienstes AmtsKlar, betrieben von Philipp Hofer, Fischerweg 7, 9430 Au, Schweiz (nachfolgend „Anbieter").</p>
+          <p style={S.p}>Diese AGB gelten für die Nutzung des Online-Dienstes AmtsKlar, betrieben von Philipp Hofer, Fischerweg 7, 9434 Au, Schweiz (nachfolgend „Anbieter").</p>
           <p style={S.p}>AmtsKlar richtet sich an Verbraucher und Unternehmer mit Wohnsitz oder Sitz im deutschsprachigen Raum (Österreich, Deutschland, Schweiz).</p>
         </div>
 

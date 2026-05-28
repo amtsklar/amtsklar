@@ -28,7 +28,7 @@ export default function Datenschutz() {
           <h2 style={{ ...S.h2, marginTop: 0 }}>1. Verantwortlicher</h2>
           <p style={S.p}>
             <strong>Philipp Hofer</strong><br />
-            Fischerweg 7, 9430 Au, Schweiz<br />
+            Fischerweg 7, 9434 Au, Schweiz<br />
             E-Mail: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a>
           </p>
         </div>

@@ -27,7 +27,7 @@ export default function Impressum() {
           <p style={S.p}>
             <strong>Philipp Hofer</strong><br />
             Fischerweg 7<br />
-            9430 Au<br />
+            9434 Au<br />
             Schweiz
           </p>
           <p style={S.p}>

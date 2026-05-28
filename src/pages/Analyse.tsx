@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { LanguageSwitcher, getLang, setLangStored, type LangCode } from '../components/LanguageSwitcher'
+import { LanguageSwitcher } from '../components/LanguageSwitcher'
+import { useLang } from '../i18n/LangContext'
 
 // PDF.js wird NUR bei Bedarf dynamisch von CDN geladen
 // → kein Build-Problem, kein npm-Paket nötig
@@ -88,21 +89,21 @@ const URGENCY = {
     color: '#E05252',
     bg: 'rgba(224,82,82,0.08)',
     border: 'rgba(224,82,82,0.25)',
-    label: 'Dringend',
+    labelKey: 'urg_dringend' as const,
     icon: '⚠️',
   },
   mittel: {
     color: '#D4943A',
     bg: 'rgba(212,148,58,0.08)',
     border: 'rgba(212,148,58,0.25)',
-    label: 'Mittelfristig',
+    labelKey: 'urg_mittel' as const,
     icon: '⏰',
   },
   niedrig: {
     color: '#4CAF82',
     bg: 'rgba(76,175,130,0.08)',
     border: 'rgba(76,175,130,0.25)',
-    label: 'Keine Eile',
+    labelKey: 'urg_keine' as const,
     icon: '✓',
   },
 }
@@ -342,9 +343,8 @@ export default function Analyse() {
   const [showPaywall, setShowPaywall] = useState(false)
   const [yearlyBilling, setYearlyBilling] = useState(false)
 
-  // State: Sprache
-  const [lang, setLang] = useState<LangCode>(getLang)
-  const handleLangChange = (l: LangCode) => { setLangStored(l); setLang(l) }
+  // Sprache aus globalem Context
+  const { lang, t } = useLang()
 
   // State: E-Mail Verifikation
   const [email, setEmail]             = useState('')
@@ -561,7 +561,7 @@ export default function Analyse() {
     } else if (file.type.startsWith('image/')) {
       await processImageFile(file)
     } else {
-      setError('Bitte PDF oder Foto (JPG, PNG, WEBP) hochladen.')
+      setError(t.err_no_file)
     }
   }
 
@@ -843,24 +843,24 @@ export default function Analyse() {
                 Wähle dein Paket
               </div>
               <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.6 }}>
-                Deine kostenlose Analyse ist aufgebraucht.<br/>
-                Wähle ein Paket für unbegrenzte Analysen.
+                {t.pay_sub1}<br/>
+                {t.pay_sub2}
               </div>
             </div>
 
             {/* Monatlich / Jährlich Toggle */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 20 }}>
-              <span style={{ fontSize: 13, color: yearlyBilling ? '#6A8AAA' : '#0F2440', fontWeight: yearlyBilling ? 400 : 600 }}>Monatlich</span>
+              <span style={{ fontSize: 13, color: yearlyBilling ? '#6A8AAA' : '#0F2440', fontWeight: yearlyBilling ? 400 : 600 }}>{t.monthly}</span>
               <div
                 onClick={() => setYearlyBilling(y => !y)}
                 style={{ width: 42, height: 23, borderRadius: 12, background: yearlyBilling ? '#C9963A' : '#C5D8ED', position: 'relative', cursor: 'pointer', transition: 'background 0.2s' }}
               >
                 <div style={{ position: 'absolute', top: 3, left: yearlyBilling ? 21 : 3, width: 17, height: 17, borderRadius: '50%', background: '#fff', transition: 'left 0.2s', boxShadow: '0 1px 3px rgba(0,0,0,0.2)' }} />
               </div>
-              <span style={{ fontSize: 13, color: yearlyBilling ? '#0F2440' : '#6A8AAA', fontWeight: yearlyBilling ? 600 : 400 }}>Jährlich</span>
+              <span style={{ fontSize: 13, color: yearlyBilling ? '#0F2440' : '#6A8AAA', fontWeight: yearlyBilling ? 600 : 400 }}>{t.yearly}</span>
               {yearlyBilling && (
                 <span style={{ background: '#FEF3C7', color: '#92400E', fontSize: 11, fontWeight: 700, padding: '2px 8px', borderRadius: 10 }}>
-                  2 Monate gratis
+                  {t.months_free}
                 </span>
               )}
             </div>
@@ -957,7 +957,7 @@ export default function Analyse() {
             {/* E-Mail Verifikation für bestehende Abonnenten */}
             <div style={{ borderTop: '1px solid #C5D8ED', paddingTop: 16 }}>
               <div style={{ fontSize: 12, color: '#4A6A90', marginBottom: 8, textAlign: 'center' }}>
-                Bereits Abonnent? E-Mail eingeben:
+                {t.already_sub}
               </div>
               <input
                 type="email"
@@ -971,7 +971,7 @@ export default function Analyse() {
                 disabled={verifying}
                 style={{ ...S.btn, background: '#F5F8FC', border: '1.5px solid #C5D8ED', color: '#2A5080', padding: 11, fontSize: 14 }}
               >
-                {verifying ? 'Prüfe...' : 'Zugang prüfen'}
+                {verifying ? t.verifying : t.verify_btn}
               </button>
               {error && (
                 <div style={{ fontSize: 12, color: '#E08080', marginTop: 8, textAlign: 'center' }}>
@@ -1069,7 +1069,7 @@ export default function Analyse() {
       <div style={S.header}>
         <Logo />
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <LanguageSwitcher lang={lang} onChange={handleLangChange} />
+          <LanguageSwitcher />
           {/* Plan-Badge oder Gratis-Zähler */}
           {isPaid ? (
             <span style={{
@@ -1082,7 +1082,7 @@ export default function Analyse() {
             </span>
           ) : (
             <span style={{ fontSize: 12, color: '#2A5080' }}>
-              {isPaid ? '' : (Math.max(0, FREE_LIMIT - count) === 0 ? 'Kein Gratis mehr' : `${Math.max(0, FREE_LIMIT - count)} gratis`)}
+              {isPaid ? '' : (Math.max(0, FREE_LIMIT - count) === 0 ? t.free_none : `${Math.max(0, FREE_LIMIT - count)} ${t.free_left}`)}
             </span>
           )}
         </div>
@@ -1205,7 +1205,7 @@ export default function Analyse() {
                   <div>
                     <div style={{ fontSize: 28, marginBottom: 6 }}>📂</div>
                     <div style={{ fontSize: 14, fontWeight: 600, color: '#C9963A' }}>
-                      Hier ablegen
+                      {t.drop_over}
                     </div>
                   </div>
 
@@ -1214,10 +1214,10 @@ export default function Analyse() {
                   <div>
                     <div style={{ fontSize: 22, marginBottom: 6 }}>📎 📸</div>
                     <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440', marginBottom: 4 }}>
-                      PDF oder Foto hier reinziehen
+                      {t.drop_title}
                     </div>
                     <div style={{ fontSize: 12, color: '#6A8AAA', lineHeight: 1.6 }}>
-                      oder klicken zum Auswählen<br/>
+                      {t.drop_or}<br/>
                       <span style={{ color: '#4A6A90' }}>PDF · JPG · PNG · WEBP</span>
                     </div>
                   </div>
@@ -1229,7 +1229,7 @@ export default function Analyse() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
                   <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
                   <span style={{ fontSize: 12, color: '#6A8AAA', whiteSpace: 'nowrap' }}>
-                    oder Text direkt einfügen
+                    {t.text_divider}
                   </span>
                   <div style={{ flex: 1, height: 1, background: '#C5D8ED' }}/>
                 </div>
@@ -1261,11 +1261,11 @@ export default function Analyse() {
                   <div style={{ fontSize: 12 }}>
                     {briefText.length > CHAR_DANGER ? (
                       <span style={{ color: '#E05252', fontWeight: 600 }}>
-                        ⚠️ Text sehr lang — wird auf 8.000 Zeichen gekürzt
+                        {t.char_long}
                       </span>
                     ) : briefText.length > CHAR_WARN ? (
                       <span style={{ color: '#D4943A', fontWeight: 500 }}>
-                        ⏳ Text lang — unter 8.000 Zeichen empfohlen
+                        {t.char_warn}
                       </span>
                     ) : (
                       <span style={{ color: '#6A8AAA' }}>
@@ -1306,7 +1306,7 @@ export default function Analyse() {
                 onClick={() => analyse(false)}
                 disabled={imageData === null && briefText.trim().length < 20}
               >
-                {imageData ? '📸 Foto analysieren →' : pdfFileName ? '📄 PDF analysieren →' : 'Brief analysieren →'}
+                {imageData ? t.btn_foto : pdfFileName ? t.btn_pdf : t.btn_brief}
               </button>
 
               {/* Wie es funktioniert */}
@@ -1316,9 +1316,9 @@ export default function Analyse() {
                 borderTop: '1px solid #C5D8ED',
               }}>
                 {[
-                  ['📎📸', 'PDF oder Foto', 'Reinziehen oder einfügen'],
-                  ['⚖️', 'Analysieren', 'Österr. Gesetze, 82 Bereiche'],
-                  ['✅', 'Verstehen', 'Klare Schritte & Fristen'],
+                  ['📎📸', t.step1_t, t.step1_d],
+                  ['⚖️',   t.step2_t, t.step2_d],
+                  ['✅',   t.step3_t, t.step3_d],
                 ].map(([icon, title, desc]) => (
                   <div key={title} style={{ textAlign: 'center' }}>
                     <div style={{ fontSize: 22, marginBottom: 6 }}>{icon}</div>
@@ -1334,7 +1334,7 @@ export default function Analyse() {
                 borderRadius: 12, padding: '14px 16px', marginTop: 28,
                 fontSize: 11, color: '#6A8AAA', lineHeight: 1.65, textAlign: 'center',
               }}>
-                AmtsKlar informiert und erklärt —{' '}
+                {t.legal_note.split('—')[0]}—{' '}
                 <strong style={{ color: '#2A5080' }}>ersetzt keine Rechtsberatung.</strong>
                 {' '}Fotos und PDFs werden lokal verarbeitet und nicht gespeichert.
               </div>
@@ -1360,10 +1360,10 @@ export default function Analyse() {
               }}/>
               <div>
                 <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 20, color: '#0F2440' }}>
-                  Analysiere Ihren Brief…
+                  {t.loading_title}
                 </div>
                 <div style={{ fontSize: 13, color: '#4A6A90', marginTop: 8 }}>
-                  Prüfe österreichische Gesetze & Fristen
+                  {t.loading_sub}
                 </div>
               </div>
             </div>
@@ -1386,7 +1386,7 @@ export default function Analyse() {
                     <span style={{ fontSize: 18, flexShrink: 0 }}>✂️</span>
                     <div>
                       <div style={{ fontSize: 13, fontWeight: 600, color: '#8B6020', marginBottom: 4 }}>
-                        Analyse basiert auf den ersten 8.000 Zeichen
+                        {t.trunc_title}
                       </div>
                       <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6 }}>
                         Ihr Dokument war sehr umfangreich. Spruch, Begründung und Rechtsmittelbelehrung wurden vollständig erfasst. Falls weitere Details wichtig sind: fügen Sie den entsprechenden Abschnitt separat ein.
@@ -1421,7 +1421,7 @@ export default function Analyse() {
                   borderRadius: 8, padding: '6px 12px', fontSize: 13, fontWeight: 600,
                   background: urg.bg, border: `1px solid ${urg.border}`, color: urg.color,
                 }}>
-                  {urg.icon} {urg.label}
+                  {urg.icon} {t[urg.labelKey]}
                 </div>
               </div>
 
@@ -1443,7 +1443,7 @@ export default function Analyse() {
                         textTransform: 'uppercase', letterSpacing: '1.2px',
                         color: '#4A6A90', marginBottom: 5,
                       }}>
-                        Ihre nächste Pflichtaktion
+                        {t.lbl_pflicht}
                       </div>
                       <div style={{
                         fontFamily: 'Libre Baskerville,serif', fontSize: 20,
@@ -1477,7 +1477,7 @@ export default function Analyse() {
 
               {/* Was bedeutet dieser Brief */}
               <div style={S.card}>
-                <div style={S.label}>Was bedeutet dieser Brief?</div>
+                <div style={S.label}>{t.lbl_meaning}</div>
                 <div style={{ fontSize: 15, lineHeight: 1.75, color: '#1A3A5C' }}>
                   {result.einfache_erklaerung}
                 </div>
@@ -1486,7 +1486,7 @@ export default function Analyse() {
               {/* Frist */}
               {result.frist?.hat_frist && (
                 <div style={{ ...S.card, background: urg.bg, border: `1.5px solid ${urg.border}` }}>
-                  <div style={{ ...S.label, color: urg.color }}>⏰ Frist beachten</div>
+                  <div style={{ ...S.label, color: urg.color }}>{t.lbl_frist}</div>
                   <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: urg.color, marginBottom: 6 }}>
                     {result.frist.frist_text}
                   </div>
@@ -1501,7 +1501,7 @@ export default function Analyse() {
               {/* Was jetzt tun */}
               {result.was_tun?.length > 0 && (
                 <div style={S.card}>
-                  <div style={S.label}>Was jetzt tun?</div>
+                  <div style={S.label}>{t.lbl_tun}</div>
                   {result.was_tun.map((schritt, i) => (
                     <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', marginBottom: 12 }}>
                       <div style={{
@@ -1525,7 +1525,7 @@ export default function Analyse() {
               {/* Rechtsmittel */}
               {result.rechtsmittel?.length > 0 && (
                 <div style={S.card}>
-                  <div style={S.label}>Rechtsmittel & Einspruch</div>
+                  <div style={S.label}>{t.lbl_rechtsmittel}</div>
                   {result.rechtsmittel.map((rm, i) => (
                     <div key={i} style={{ border: '1px solid #C5D8ED', borderRadius: 10, padding: 14, marginBottom: 10 }}>
                       <div style={{ fontWeight: 600, fontSize: 15, color: '#0F2440', marginBottom: 4 }}>
@@ -1545,7 +1545,7 @@ export default function Analyse() {
               {/* Wichtige Hinweise */}
               {result.wichtige_hinweise?.length > 0 && (
                 <div style={S.card}>
-                  <div style={S.label}>⚠️ Wichtige Hinweise</div>
+                  <div style={S.label}>{t.lbl_hinweise}</div>
                   {result.wichtige_hinweise.map((h, i) => (
                     <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 10 }}>
                       <div style={{
@@ -1615,10 +1615,10 @@ export default function Analyse() {
                 </div>
               )}
 
-              {/* Rechtsgrundlage mit RIS-Links */}
+              {/* {t.lbl_grundlage} mit RIS-Links */}
               {result.rechtsgrundlage?.length > 0 && (
                 <div style={S.card}>
-                  <div style={S.label}>Rechtsgrundlage</div>
+                  <div style={S.label}>{t.lbl_grundlage}</div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
                     {result.rechtsgrundlage.map((r, i) => (
                       <a
@@ -1640,10 +1640,10 @@ export default function Analyse() {
                 </div>
               )}
 
-              {/* Kostenlose Beratungsstellen */}
+              {/* {t.lbl_beratung} */}
               {result.beratungsstellen?.length > 0 && (
                 <div style={S.card}>
-                  <div style={S.label}>Kostenlose Beratungsstellen</div>
+                  <div style={S.label}>{t.lbl_beratung}</div>
                   {result.beratungsstellen.map((b, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 9, fontSize: 14, color: '#1A3A5C', lineHeight: 1.5 }}>
                       <span>🏛️</span><span>{b}</span>
@@ -1665,10 +1665,10 @@ export default function Analyse() {
                     <span style={{ fontSize: 20 }}>✉️</span>
                     <div>
                       <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1.2px', color: '#C9963A', marginBottom: 2 }}>
-                        Ihr Antwortbrief — fertig zum Ausdrucken
+                        {t.letter_ready}
                       </div>
                       <div style={{ fontSize: 13, color: '#2A5080' }}>
-                        Platzhalter [IN ECKIGEN KLAMMERN] durch Ihre echten Daten ersetzen
+                        {t.letter_hint}
                       </div>
                     </div>
                   </div>
@@ -1676,7 +1676,7 @@ export default function Analyse() {
                   {/* Empfänger */}
                   <div style={{ marginBottom: 12 }}>
                     <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', color: '#4A6A90', marginBottom: 6 }}>
-                      An:
+                      {t.lbl_to}
                     </div>
                     <div style={{
                       background: '#F5F8FC', border: '1px solid #C5D8ED',
@@ -1691,7 +1691,7 @@ export default function Analyse() {
                   {/* Betreff */}
                   <div style={{ marginBottom: 12 }}>
                     <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', color: '#4A6A90', marginBottom: 6 }}>
-                      Betreff:
+                      {t.lbl_subject}
                     </div>
                     <div style={{
                       background: '#F5F8FC', border: '1px solid #C5D8ED',
@@ -1705,7 +1705,7 @@ export default function Analyse() {
                   {/* Brieftext */}
                   <div style={{ marginBottom: 16 }}>
                     <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', color: '#4A6A90', marginBottom: 6 }}>
-                      Briefinhalt:
+                      {t.lbl_body}
                     </div>
                     <div style={{
                       background: '#F5F8FC', border: '1px solid #C5D8ED',
@@ -1738,7 +1738,7 @@ export default function Analyse() {
                         color: copied ? '#4CAF82' : '#2A5080', cursor: 'pointer',
                       }}
                     >
-                      {copied ? '✓ Kopiert!' : '📋 Kopieren'}
+                      {copied ? t.btn_copied : t.btn_copy}
                     </button>
                     <button
                       onClick={downloadBrief}
@@ -1750,7 +1750,7 @@ export default function Analyse() {
                         color: '#FFFFFF', cursor: 'pointer',
                       }}
                     >
-                      ⬇️ Herunterladen
+                      {t.btn_dl}
                     </button>
                   </div>
                 </div>
@@ -1765,12 +1765,10 @@ export default function Analyse() {
                 }}>
                   <div style={{ fontSize: 24, marginBottom: 10 }}>✉️</div>
                   <div style={{ fontFamily: 'serif', fontSize: 17, fontWeight: 700, color: '#0F2440', marginBottom: 8 }}>
-                    AmtsKlar schreibt den Antwortbrief für Sie
+                    {t.upgrade_title}
                   </div>
                   <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.65, marginBottom: 16 }}>
-                    Mit dem <strong>Handeln-Paket</strong> erstellt AmtsKlar automatisch einen
-                    fertigen Einspruchs- oder Antwortbrief. Nur noch ausdrucken, unterschreiben
-                    und per Einschreiben versenden.
+                    {t.upgrade_text}
                   </div>
                   <button
                     onClick={() => setShowPaywall(true)}
@@ -1781,7 +1779,7 @@ export default function Analyse() {
                       fontSize: 14, fontWeight: 700, cursor: 'pointer',
                     }}
                   >
-                    Auf Handeln upgraden — €4,99/Monat →
+                    {t.upgrade_btn}
                   </button>
                 </div>
               ) : null}
@@ -1795,7 +1793,7 @@ export default function Analyse() {
               }}>
                 ⚖️{' '}
                 <strong style={{ color: '#2A5080' }}>Rechtlicher Hinweis:</strong>{' '}
-                AmtsKlar dient zur Information. Ersetzt keine Rechtsberatung durch einen zugelassenen Anwalt.{' '}
+                {t.legal_text}{' '}
                 Quelle Gesetze:{' '}
                 <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer" style={{ color: '#2A5080' }}>
                   RIS.bka.gv.at
@@ -1805,7 +1803,7 @@ export default function Analyse() {
 
               {/* Zurück-Button */}
               <button style={S.btnOut} onClick={reset}>
-                ← Neuen Brief analysieren
+                {t.btn_new}
               </button>
 
             </div>
