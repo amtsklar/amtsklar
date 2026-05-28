@@ -55,3 +55,49 @@ nav a, nav button {
     display: none !important;
   }
 }
+
+/* ── Print / PDF Export ── */
+@media print {
+  /* Nav, Buttons, Paywall, Cookie-Banner ausblenden */
+  nav, .hide-mobile, #cookie-banner,
+  button:not(.print-keep),
+  [class*="paywall"],
+  [class*="email-capture"] {
+    display: none !important;
+  }
+  body { background: white !important; }
+  /* Karten ohne Box-Shadow drucken */
+  * { box-shadow: none !important; }
+}
+
+/* Skip-Link on focus */
+.skip-link:focus {
+  left: 0 !important;
+}
+
+/* ── Mobile: Pricing cards 1 column unter 600px ── */
+@media (max-width: 599px) {
+  /* Preiskarten: 1 Spalte */
+  [style*="repeat(auto-fit, minmax(280px"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* Hero Buttons: volle Breite */
+  section > div > a[href="/analyse"],
+  section > div > a[href="#preise"] {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ── Mobile: Share/Action Buttons wrappen ── */
+@media (max-width: 480px) {
+  /* Analyse-Ergebnis Aktions-Buttons */
+  .action-btns {
+    flex-direction: column !important;
+  }
+  .action-btns a,
+  .action-btns button {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+}

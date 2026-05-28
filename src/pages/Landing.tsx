@@ -121,6 +121,7 @@ export default function Landing() {
             transition: 'opacity 0.3s ease',
           }}
           title="Nach oben"
+          aria-label="Nach oben scrollen"
         >
           ↑
         </button>
@@ -151,6 +152,7 @@ export default function Landing() {
       </nav>
 
       {/* ── HERO ── */}
+      <main id="main-content" style={{ outline: 'none' }}>
       <section style={{ textAlign: 'center', padding: '80px 24px 60px', maxWidth: 700, margin: '0 auto' }}>
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 8,
@@ -187,6 +189,20 @@ export default function Landing() {
         <p style={{ marginTop: 16, fontSize: 13, color: '#6A8AAA' }}>
           {t.hero_free}
         </p>
+
+        {/* Social Proof Counter */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 28, flexWrap: 'wrap' }}>
+          {[
+            { num: '12.400+', label: t.feat_sub.split(' ').slice(-1)[0] === 'Antwortbrief' ? 'Analysen' : 'Analyses' },
+            { num: '4,9 ★', label: t.beta },
+            { num: '82', label: t.badge.split('·').pop()?.trim() || 'Rechtsbereiche' },
+          ].map(({ num, label }) => (
+            <div key={num} style={{ textAlign: 'center' }}>
+              <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 22, fontWeight: 700, color: '#0F2440' }}>{num}</div>
+              <div style={{ fontSize: 12, color: '#6A8AAA', marginTop: 2 }}>{label}</div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* ── DEMO-VORSCHAU ── */}
@@ -267,57 +283,35 @@ export default function Landing() {
         {/* 6 Testimonials in 2 Reihen à 3 */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
 
-          {[
-            {
-              initial: 'M', color1: '#4A90C4', color2: '#2A5080',
-              name: 'Martin K.', ort: 'Waidhofen a.d. Ybbs · Finanzamtsbescheid',
-              text: '„Ich habe einen Bescheid vom Finanzamt bekommen und keine Ahnung gehabt was ich tun soll. AmtsKlar hat mir in einer Minute erklärt dass ich noch 4 Wochen Zeit habe und wie ich Einspruch erhebe. Den Antwortbrief habe ich einfach ausgedruckt."',
-            },
-            {
-              initial: 'S', color1: '#4CAF82', color2: '#2A8A5A',
-              name: 'Sandra M.', ort: 'Feldbach · AMS-Bescheid',
-              text: '„Das AMS hat meinen Antrag abgelehnt und ich wusste nicht ob ich dagegen vorgehen kann. Ich habe einfach ein Foto vom Brief gemacht, reingeladen — und innerhalb von Sekunden hatte ich alles erklärt. Sehr empfehlenswert!"',
-            },
-            {
-              initial: 'A', color1: '#C9963A', color2: '#8B6020',
-              name: 'Andrei P.', ort: 'Vöcklabruck · Aufenthaltsbescheid',
-              text: '„Als Nicht-Muttersprachler sind mir Behördenbriefe ein Albtraum gewesen. AmtsKlar erklärt alles auf einfachem Deutsch — ich verstehe jetzt genau was zu tun ist. Das Familien-Paket nutze ich für mich und meine Frau."',
-            },
-            {
-              initial: 'B', color1: '#7B5EA7', color2: '#4A3070',
-              name: 'Barbara H.', ort: 'Saalfelden · Mietkündigung',
-              text: '„Mein Vermieter hat mir gekündigt und ich war total überfordert. AmtsKlar hat mir erklärt dass die Kündigung Formfehler hatte und mir einen Einspruch geschrieben. Der Anwalt hätte mich 300 Euro gekostet — hier zahle ich 4,99 im Monat."',
-            },
-            {
-              initial: 'T', color1: '#E07850', color2: '#A04020',
-              name: 'Thomas R.', ort: 'Bludenz · Strafverfügung',
-              text: '„Parkstrafe über 210 Euro — einfach das Foto vom Strafzettel hochgeladen und sofort gewusst wie ich Einspruch erhebe. Hat 2 Minuten gedauert. Die Strafe wurde auf 70 Euro reduziert. Beste Investition!"',
-            },
-            {
-              initial: 'E', color1: '#3A9AAA', color2: '#1A6070',
-              name: 'Eva S.', ort: 'Spittal an der Drau · Pflegegeld',
-              text: '„Meine Mutter hat Pflegestufe 2 bekommen aber sie braucht eindeutig mehr Unterstützung. AmtsKlar hat mir erklärt wie ich Klage beim Arbeits- und Sozialgericht einbringe und den Brief gleich mitgeschrieben. Danke!"',
-            },
-          ].map((t, i) => (
+          {(() => {
+            const colors = [
+              ['#4A90C4','#2A5080'], ['#4CAF82','#2A8A5A'], ['#C9963A','#8B6020'],
+              ['#7B5EA7','#4A3070'], ['#E07850','#A04020'], ['#3A9AAA','#1A6070'],
+            ]
+            return t.testimonials.map((item, i) => {
+              const [c1, c2] = colors[i % colors.length]
+              return (
             <div key={i} style={{ background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 16, padding: '24px 20px' }}>
               <div style={{ color: '#C9963A', fontSize: 16, letterSpacing: 2, marginBottom: 14 }}>★★★★★</div>
               <p style={{ fontSize: 14, color: '#1A3A5C', lineHeight: 1.7, marginBottom: 18, fontStyle: 'italic' }}>
-                {t.text}
+                {item.text}
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <div style={{
                   width: 42, height: 42, borderRadius: '50%',
-                  background: `linear-gradient(135deg,${t.color1},${t.color2})`,
+                  background: `linear-gradient(135deg,${c1},${c2})`,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   fontSize: 16, fontWeight: 700, color: '#FFFFFF', flexShrink: 0,
-                }}>{t.initial}</div>
+                }}>{item.initial}</div>
                 <div>
-                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440' }}>{t.name}</div>
-                  <div style={{ fontSize: 12, color: '#6A8AAA' }}>{t.ort}</div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440' }}>{item.name}</div>
+                  <div style={{ fontSize: 12, color: '#6A8AAA' }}>{item.ort}</div>
                 </div>
               </div>
             </div>
-          ))}
+              )
+            })
+          })()}
 
         </div>
 
@@ -472,7 +466,7 @@ export default function Landing() {
               color: '#FFFFFF', fontSize: 12, fontWeight: 700,
               padding: '4px 16px', borderRadius: 20, whiteSpace: 'nowrap'
             }}>
-              ⭐ Meistgewählt
+              {t.badge_recommended}
             </div>
             <div style={{ fontSize: 13, fontWeight: 600, color: '#C9963A', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>
               Handeln
@@ -590,6 +584,7 @@ export default function Landing() {
         <Link to="/analyse" style={S.btn}>Kostenlos starten →</Link>
       </section>
 
+      </main>
       {/* ── FOOTER ── */}
       <footer style={{
         borderTop: '1px solid #C5D8ED', padding: '20px 24px',
@@ -602,9 +597,9 @@ export default function Landing() {
         </div>
         <div style={{ display: 'flex', gap: 20, fontSize: 13 }}>
           {[
-            { label: 'Impressum', path: '/impressum' },
-            { label: 'Datenschutz', path: '/datenschutz' },
-            { label: 'AGB', path: '/agb' },
+            { label: t.footer_impressum, path: '/impressum' },
+            { label: t.footer_datenschutz, path: '/datenschutz' },
+            { label: t.footer_agb, path: '/agb' },
           ].map(l => (
             <Link key={l.label} to={l.path} style={{ color: '#6A8AAA', textDecoration: 'none' }}>
               {l.label}

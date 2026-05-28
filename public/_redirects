@@ -1,0 +1,7 @@
+# Alle Routen auf index.html — React Router übernimmt
+/analyse          /index.html  200
+/vorlagen         /index.html  200
+/impressum        /index.html  200
+/datenschutz      /index.html  200
+/agb              /index.html  200
+/*                /index.html  200

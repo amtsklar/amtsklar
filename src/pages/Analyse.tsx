@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { LanguageSwitcher } from '../components/LanguageSwitcher'
 import { useLang } from '../i18n/LangContext'
+import { calcDeadlineDate, formatDeadline, daysLeftLabel, googleCalendarLink } from '../utils/deadlineCalc'
 
 // PDF.js wird NUR bei Bedarf dynamisch von CDN geladen
 // → kein Build-Problem, kein npm-Paket nötig
@@ -166,10 +167,27 @@ const CHAR_DANGER  = 7500  // Ab hier rote Warnung
 
 // LocalStorage Keys
 const SK = {
-  count: 'ak_count',   // Anzahl bisheriger Analysen
-  paid:  'ak_paid',    // boolean: hat bezahlt
-  plan:  'ak_plan',    // 'verstehen' | 'handeln' | 'familie'
-  email: 'ak_email',   // E-Mail des Abonnenten
+  count:   'ak_count',   // Anzahl bisheriger Analysen
+  paid:    'ak_paid',    // boolean: hat bezahlt
+  plan:    'ak_plan',    // 'verstehen' | 'handeln' | 'familie'
+  email:   'ak_email',   // E-Mail des Abonnenten
+  history: 'ak_history', // letzte 5 Analyse-Ergebnisse
+}
+
+// Analyse in History speichern (max. 5 Einträge)
+function saveToHistory(result: any, brieftyp: string) {
+  try {
+    const existing = JSON.parse(localStorage.getItem(SK.history) || '[]')
+    const entry = {
+      id: Date.now(),
+      date: new Date().toLocaleDateString('de-AT'),
+      brieftyp: brieftyp || result.brieftyp || 'Analyse',
+      dringlichkeit: result.dringlichkeit || 'mittel',
+      kurzfassung: (result.einfache_erklaerung || '').slice(0, 120),
+    }
+    const updated = [entry, ...existing].slice(0, 5)
+    localStorage.setItem(SK.history, JSON.stringify(updated))
+  } catch { /* ignore */ }
 }
 
 // Paddle Preis-IDs je Paket (aus .env)
@@ -346,6 +364,14 @@ export default function Analyse() {
   const [showPaywall, setShowPaywall] = useState(false)
   const [yearlyBilling, setYearlyBilling] = useState(false)
 
+  // State: E-Mail Capture (nach kostenloser Analyse)
+  const [showEmailCapture, setShowEmailCapture] = useState(false)
+  const [captureEmail, setCaptureEmail]         = useState('')
+  const [captureSubmitted, setCaptureSubmitted] = useState(false)
+
+  // State: Analyse-History
+  const [history, setHistory] = useState<{id:number;date:string;brieftyp:string;dringlichkeit:string;kurzfassung:string}[]>([])
+
   // Sprache aus globalem Context
   const { lang, t } = useLang()
 
@@ -386,6 +412,12 @@ export default function Analyse() {
     setPlan(savedPlan)
     setEmail(savedEmail)
 
+    // History laden
+    try {
+      const savedHistory = JSON.parse(localStorage.getItem(SK.history) || '[]')
+      setHistory(savedHistory)
+    } catch { /* ignore */ }
+
     // Paddle.js dynamisch laden
     const script = document.createElement('script')
     script.src = 'https://cdn.paddle.com/paddle/v2/paddle.js'
@@ -412,7 +444,7 @@ export default function Analyse() {
       setPlan(urlPlan)
       setShowPaywall(false)
       // URL bereinigen
-      window.history.replaceState({}, '', '/#/analyse')
+      window.history.replaceState({}, '', '/analyse')
     }
 
     // Aufräumen beim Unmount
@@ -642,13 +674,21 @@ export default function Analyse() {
 
       setResult(data.result)
       setAntwortbrief(data.antwortbrief || null)
-      // Kürzungshinweis nur bei Text
       setWasTruncated(!hasImage && trimmed.length > CHAR_LIMIT)
       setScreen('result')
 
       const newCount = count + 1
       setCount(newCount)
-      markFreeUsed(newCount)  // Alle 3 Schichten: localStorage + Cookie + Fingerprint
+      markFreeUsed(newCount)
+
+      // History speichern
+      saveToHistory(data.result, data.result?.brieftyp || '')
+
+      // E-Mail Capture: nach der ersten kostenlosen Analyse anzeigen (wenn noch keine E-Mail gespeichert)
+      const savedEmail = localStorage.getItem('ak_capture_email')
+      if (!isPaid && newCount >= FREE_LIMIT && !savedEmail) {
+        setTimeout(() => setShowEmailCapture(true), 2000)
+      }
 
     } catch (e: any) {
       setError(e.message || 'Analyse fehlgeschlagen. Bitte erneut versuchen.')
@@ -866,7 +906,7 @@ export default function Analyse() {
             </div>
 
             {/* 3 Plan-Karten */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 20, alignItems: 'stretch' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 10, marginBottom: 20, alignItems: 'stretch' }}>
 
               {/* Verstehen */}
               <div style={{
@@ -913,7 +953,7 @@ export default function Analyse() {
                   color: '#FFFFFF', fontSize: 10, fontWeight: 700,
                   padding: '2px 10px', borderRadius: 20, whiteSpace: 'nowrap',
                 }}>
-                  ⭐ Beliebt
+                  {t.badge_popular}
                 </div>
                 <div style={{ fontSize: 12, fontWeight: 600, color: '#C9963A', textTransform: 'uppercase', marginBottom: 6 }}>Handeln</div>
                 <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€4,19' : '€4,99'}</div>
@@ -939,7 +979,7 @@ export default function Analyse() {
                     color: '#FFFFFF', cursor: 'pointer',
                   }}
                 >
-                  Wählen →
+                  {t.btn_choose_arrow}
                 </button>
               </div>
 
@@ -968,7 +1008,7 @@ export default function Analyse() {
                     color: '#2A5080', cursor: 'pointer',
                   }}
                 >
-                  Wählen
+                  {t.btn_choose}
                 </button>
               </div>
             </div>
@@ -1025,10 +1065,10 @@ export default function Analyse() {
             <div style={{ textAlign: 'center', marginBottom: 20 }}>
               <div style={{ fontSize: 32, marginBottom: 10 }}>📄</div>
               <div style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 700, color: '#0F2440', marginBottom: 8 }}>
-                Sehr langer Text erkannt
+                {t.longtext_title}
               </div>
               <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.65 }}>
-                Ihr Text hat <strong>{briefText.trim().length.toLocaleString('de-AT')} Zeichen</strong> — das entspricht einem sehr umfangreichen Bescheid (z.B. mehrseitiger Baubescheid).
+                {briefText.trim().length.toLocaleString('de-AT')} {t.longtext_chars}
               </div>
             </div>
 
@@ -1038,15 +1078,15 @@ export default function Analyse() {
               borderRadius: 10, padding: '14px 16px', marginBottom: 20,
             }}>
               <div style={{ fontSize: 13, fontWeight: 600, color: '#0F2440', marginBottom: 8 }}>
-                💡 Was wird analysiert?
+                {t.longtext_what}
               </div>
               <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.65 }}>
-                AmtsKlar analysiert die ersten 8.000 Zeichen. Bei österreichischen Bescheiden enthält dieser Teil typischerweise:
+                {t.longtext_info}
               </div>
               <ul style={{ margin: '8px 0 0 16px', padding: 0, fontSize: 13, color: '#2A5080', lineHeight: 1.8 }}>
-                <li><strong>Spruch</strong> (die eigentliche Entscheidung)</li>
-                <li><strong>Begründung</strong> (Erklärung)</li>
-                <li><strong>Rechtsmittelbelehrung</strong> (Fristen)</li>
+                <li>{t.longtext_item1}</li>
+                <li>{t.longtext_item2}</li>
+                <li>{t.longtext_item3}</li>
               </ul>
             </div>
 
@@ -1056,7 +1096,7 @@ export default function Analyse() {
               borderRadius: 10, padding: '12px 16px', marginBottom: 20,
               fontSize: 13, color: '#8B6020', lineHeight: 1.65,
             }}>
-              <strong>💡 Tipp:</strong> Für den besten Analyse-Ergebnis: Fügen Sie nur den <strong>Spruch</strong> (Seite 1-2) und die <strong>Rechtsmittelbelehrung</strong> (letzte Seite) ein — das sind die wichtigsten Teile für Fristen und Handlungsempfehlungen.
+              {t.longtext_tip}
             </div>
 
             {/* Buttons */}
@@ -1069,7 +1109,7 @@ export default function Analyse() {
                   color: '#FFFFFF', cursor: 'pointer',
                 }}
               >
-                Trotzdem analysieren (erste 8.000 Zeichen)
+                {t.longtext_btn_analyse}
               </button>
               <button
                 onClick={() => setShowLongTextWarning(false)}
@@ -1079,7 +1119,7 @@ export default function Analyse() {
                   fontSize: 14, fontWeight: 600, color: '#2A5080', cursor: 'pointer',
                 }}
               >
-                Text selbst kürzen (empfohlen)
+                {t.longtext_btn_shorten}
               </button>
             </div>
           </div>
@@ -1091,14 +1131,29 @@ export default function Analyse() {
           <LanguageSwitcher />
           {/* Plan-Badge oder Gratis-Zähler */}
           {isPaid ? (
-            <span style={{
-              fontSize: 12, color: '#4CAF82',
-              background: 'rgba(76,175,130,0.1)',
-              border: '1px solid rgba(76,175,130,0.3)',
-              borderRadius: 6, padding: '3px 10px',
-            }}>
-              ✓ {planLabel[plan]}
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{
+                fontSize: 12, color: '#4CAF82',
+                background: 'rgba(76,175,130,0.1)',
+                border: '1px solid rgba(76,175,130,0.3)',
+                borderRadius: 6, padding: '3px 10px',
+              }}>
+                ✓ {planLabel[plan]}
+              </span>
+              <a
+                href="https://customer.paddle.com/subscriptions"
+                target="_blank"
+                rel="noopener noreferrer"
+                title={lang === 'de' ? 'Abo verwalten' : lang === 'en' ? 'Manage subscription' : lang === 'tr' ? 'Aboneliği yönet' : 'Abo verwalten'}
+                style={{
+                  fontSize: 11, color: '#6A8AAA', textDecoration: 'none',
+                  border: '1px solid #C5D8ED', borderRadius: 6, padding: '3px 8px',
+                  display: 'flex', alignItems: 'center', gap: 4,
+                }}
+              >
+                ⚙️ {lang === 'de' ? 'Abo' : lang === 'en' ? 'Manage' : lang === 'tr' ? 'Yönet' : lang === 'it' ? 'Gestisci' : lang === 'ru' ? 'Управл.' : lang === 'pl' ? 'Zarządzaj' : lang === 'hu' ? 'Kezelés' : 'Abo'}
+              </a>
+            </div>
           ) : (
             <span style={{ fontSize: 12, color: '#2A5080' }}>
               {isPaid ? '' : (Math.max(0, FREE_LIMIT - count) === 0 ? t.free_none : `${Math.max(0, FREE_LIMIT - count)} ${t.free_left}`)}
@@ -1330,7 +1385,7 @@ export default function Analyse() {
 
               {/* Wie es funktioniert */}
               <div style={{
-                display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
+                display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
                 gap: 12, marginTop: 28, paddingTop: 24,
                 borderTop: '1px solid #C5D8ED',
               }}>
@@ -1346,6 +1401,32 @@ export default function Analyse() {
                   </div>
                 ))}
               </div>
+
+              {/* Letzte Analysen */}
+              {history.length > 0 && (
+                <div style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid #C5D8ED' }}>
+                  <div style={{ fontSize: 11, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 10 }}>
+                    🕐 {lang === 'de' ? 'Zuletzt analysiert' : lang === 'en' ? 'Recently analysed' : lang === 'tr' ? 'Son analizler' : lang === 'it' ? 'Analisi recenti' : lang === 'ru' ? 'Недавние анализы' : 'Zuletzt analysiert'}
+                  </div>
+                  {history.slice(0, 3).map(h => (
+                    <div key={h.id} style={{
+                      display: 'flex', alignItems: 'center', gap: 10,
+                      padding: '8px 12px', background: '#F5F8FC',
+                      borderRadius: 8, marginBottom: 6, fontSize: 12,
+                    }}>
+                      <span style={{ fontSize: 14 }}>
+                        {h.dringlichkeit === 'hoch' ? '🔴' : h.dringlichkeit === 'mittel' ? '🟡' : '🟢'}
+                      </span>
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{ fontWeight: 600, color: '#0F2440', marginBottom: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                          {h.brieftyp}
+                        </div>
+                        <div style={{ color: '#6A8AAA', fontSize: 11 }}>{h.date}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* Rechtlicher Hinweis */}
               <div style={{
@@ -1408,7 +1489,7 @@ export default function Analyse() {
                         {t.trunc_title}
                       </div>
                       <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.6 }}>
-                        Ihr Dokument war sehr umfangreich. Spruch, Begründung und Rechtsmittelbelehrung wurden vollständig erfasst. Falls weitere Details wichtig sind: fügen Sie den entsprechenden Abschnitt separat ein.
+                        {t.trunc_desc_full}
                       </div>
                     </div>
                   </div>
@@ -1503,19 +1584,73 @@ export default function Analyse() {
               </div>
 
               {/* Frist */}
-              {result.frist?.hat_frist && (
+              {result.frist?.hat_frist && (() => {
+                const deadlineDate = calcDeadlineDate(result.frist.frist_text)
+                const dl = deadlineDate ? formatDeadline(deadlineDate, lang) : null
+                return (
                 <div style={{ ...S.card, background: urg.bg, border: `1.5px solid ${urg.border}` }}>
                   <div style={{ ...S.label, color: urg.color }}>{t.lbl_frist}</div>
                   <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: urg.color, marginBottom: 6 }}>
                     {result.frist.frist_text}
                   </div>
+                  {/* Konkretes Datum + Countdown + Calendar Link */}
+                  {dl && (() => {
+                    const calLink = googleCalendarLink({
+                      title: result.handlungsempfehlung?.aktion || result.brieftyp,
+                      deadlineDate: calcDeadlineDate(result.frist.frist_text)!,
+                      description: result.einfache_erklaerung || '',
+                      lang,
+                    })
+                    return (
+                      <div style={{
+                        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                        gap: 10, background: 'rgba(255,255,255,0.7)', borderRadius: 10,
+                        padding: '10px 14px', marginBottom: 8, flexWrap: 'wrap',
+                      }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                          <span style={{ fontSize: 20 }}>
+                            {dl.urgency === 'critical' ? '🚨' : dl.urgency === 'warn' ? '⚠️' : '📅'}
+                          </span>
+                          <div>
+                            <div style={{
+                              fontSize: 17, fontWeight: 700,
+                              color: dl.urgency === 'critical' ? '#E05252' : dl.urgency === 'warn' ? '#D4943A' : '#0F2440'
+                            }}>
+                              {dl.dateStr}
+                            </div>
+                            <div style={{
+                              fontSize: 13, fontWeight: 600,
+                              color: dl.urgency === 'critical' ? '#E05252' : dl.urgency === 'warn' ? '#D4943A' : '#4CAF82'
+                            }}>
+                              {daysLeftLabel(dl.daysLeft, lang)}
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          href={calLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            display: 'inline-flex', alignItems: 'center', gap: 6,
+                            background: 'rgba(255,255,255,0.9)', border: '1px solid #C5D8ED',
+                            borderRadius: 8, padding: '6px 12px', fontSize: 12,
+                            color: '#2A5080', textDecoration: 'none', fontWeight: 600,
+                            whiteSpace: 'nowrap', flexShrink: 0,
+                          }}
+                        >
+                          📅 {lang === 'de' ? 'Zum Kalender' : lang === 'en' ? 'Add to Calendar' : lang === 'tr' ? 'Takvime ekle' : lang === 'it' ? 'Al calendario' : lang === 'ru' ? 'В календарь' : lang === 'pl' ? 'Do kalendarza' : lang === 'hr' || lang === 'sr' ? 'U kalendar' : lang === 'hu' ? 'Naptárba' : lang === 'sl' ? 'V koledar' : lang === 'sk' ? 'Do kalendára' : lang === 'ro' ? 'În calendar' : 'Add to Calendar'}
+                        </a>
+                      </div>
+                    )
+                  })()}
                   {result.frist.frist_hinweis && (
                     <div style={{ fontSize: 13, color: '#1A3A5C', lineHeight: 1.55 }}>
                       {result.frist.frist_hinweis}
                     </div>
                   )}
                 </div>
-              )}
+                )
+              })()}
 
               {/* Was jetzt tun */}
               {result.was_tun?.length > 0 && (
@@ -1803,6 +1938,108 @@ export default function Analyse() {
                 </div>
               ) : null}
 
+              {/* E-Mail Capture Banner — erscheint 2s nach der 1. kostenlosen Analyse */}
+              {showEmailCapture && !isPaid && !captureSubmitted && (
+                <div style={{
+                  background: 'linear-gradient(135deg, rgba(201,150,58,0.08), rgba(15,36,64,0.05))',
+                  border: '1.5px solid rgba(201,150,58,0.35)',
+                  borderRadius: 14, padding: '18px 20px', marginTop: 16,
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                    <span style={{ fontSize: 24, flexShrink: 0 }}>💌</span>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 15, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>
+                        {lang === 'de' ? 'Ergebnis per E-Mail + Frist-Erinnerung?' :
+                         lang === 'en' ? 'Get results by email + deadline reminder?' :
+                         lang === 'tr' ? 'Sonuç e-posta + son tarih hatırlatması?' :
+                         lang === 'it' ? 'Risultato via e-mail + promemoria scadenza?' :
+                         lang === 'ru' ? 'Результат по e-mail + напоминание о сроке?' :
+                         lang === 'pl' ? 'Wynik e-mailem + przypomnienie o terminie?' :
+                         lang === 'ro' ? 'Rezultat pe e-mail + reminder termen?' :
+                         lang === 'hu' ? 'Eredmény e-mailben + határidő emlékeztető?' :
+                         lang === 'sr' ? 'Rezultat e-mailom + podsetnik roka?' :
+                         lang === 'hr' ? 'Rezultat e-mailom + podsjetnik roka?' :
+                         lang === 'sl' ? 'Rezultat po e-pošti + opomnik roka?' :
+                         lang === 'sk' ? 'Výsledok e-mailom + pripomienka termínu?' :
+                         'Get results by email + deadline reminder?'}
+                      </div>
+                      <div style={{ fontSize: 13, color: '#2A5080', marginBottom: 12, lineHeight: 1.5 }}>
+                        {lang === 'de' ? 'Wir senden dir das Ergebnis und erinnern dich rechtzeitig an deine Frist. Kostenlos, kein Spam.' :
+                         lang === 'en' ? "We'll send you the analysis and remind you before your deadline. Free, no spam." :
+                         lang === 'tr' ? 'Analiz sonucunu ve son tarihi hatırlatacağız. Ücretsiz, spam yok.' :
+                         lang === 'it' ? "Ti inviamo l'analisi e ti ricordiamo prima della scadenza. Gratis, niente spam." :
+                         lang === 'ru' ? 'Пришлём результат и напомним о сроке. Бесплатно, без спама.' :
+                         lang === 'pl' ? 'Wyślemy wynik i przypomnimy o terminie. Bezpłatnie, bez spamu.' :
+                         lang === 'ro' ? 'Trimitem rezultatul și vă amintim termenul. Gratuit, fără spam.' :
+                         lang === 'hu' ? 'Elküldjük az eredményt és emlékeztetünk a határidőre. Ingyen, spam nélkül.' :
+                         "We'll send you the analysis and remind you before your deadline. Free, no spam."}
+                      </div>
+                      <div style={{ display: 'flex', gap: 8 }}>
+                        <input
+                          type="email"
+                          value={captureEmail}
+                          placeholder="deine@email.com"
+                          onChange={e => setCaptureEmail(e.target.value)}
+                          onKeyDown={async e => {
+                            if (e.key === 'Enter' && captureEmail.includes('@')) {
+                              localStorage.setItem('ak_capture_email', captureEmail)
+                              setCaptureSubmitted(true)
+                              setShowEmailCapture(false)
+                              try {
+                                await fetch('/api/capture-email', {
+                                  method: 'POST',
+                                  headers: { 'Content-Type': 'application/json' },
+                                  body: JSON.stringify({ email: captureEmail, lang }),
+                                })
+                              } catch {}
+                            }
+                          }}
+                          style={{
+                            flex: 1, padding: '9px 12px', borderRadius: 8,
+                            border: '1.5px solid #C5D8ED', fontSize: 14,
+                            outline: 'none', color: '#0F2440',
+                          }}
+                        />
+                        <button
+                          onClick={async () => {
+                            if (!captureEmail.includes('@')) return
+                            localStorage.setItem('ak_capture_email', captureEmail)
+                            setCaptureSubmitted(true)
+                            setShowEmailCapture(false)
+                            // Send to API (fire and forget)
+                            try {
+                              await fetch('/api/capture-email', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ email: captureEmail, lang }),
+                              })
+                            } catch {}
+                          }}
+                          style={{
+                            padding: '9px 16px', borderRadius: 8,
+                            background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
+                            border: 'none', color: '#fff', fontSize: 13,
+                            fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap',
+                          }}
+                        >
+                          {lang === 'de' ? 'Senden →' : 'Send →'}
+                        </button>
+                        <button
+                          onClick={() => setShowEmailCapture(false)}
+                          style={{
+                            padding: '9px 10px', borderRadius: 8,
+                            background: 'transparent', border: '1.5px solid #C5D8ED',
+                            color: '#6A8AAA', fontSize: 13, cursor: 'pointer',
+                          }}
+                        >
+                          ✕
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Rechtlicher Hinweis */}
               <div style={{
                 background: '#F5F8FC', border: '1px solid #C5D8ED',
@@ -1820,10 +2057,79 @@ export default function Analyse() {
                 {' '}(CC BY 4.0)
               </div>
 
-              {/* Zurück-Button */}
-              <button style={S.btnOut} onClick={reset}>
-                {t.btn_new}
-              </button>
+              {/* Aktions-Buttons: PDF + Teilen + Zurück */}
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 16 }}>
+                {/* Alles kopieren */}
+                <button
+                  onClick={() => {
+                    const lines = [
+                      `📄 ${result.brieftyp} — ${result.behoerde}`,
+                      '',
+                      result.einfache_erklaerung,
+                      '',
+                      result.frist?.hat_frist ? `⏰ ${result.frist.frist_text}` : '',
+                      result.handlungsempfehlung?.aktion ? `✅ ${result.handlungsempfehlung.aktion}` : '',
+                      result.handlungsempfehlung?.bis_wann ? `📅 ${result.handlungsempfehlung.bis_wann}` : '',
+                      '',
+                      ...(result.was_tun || []).map((s: string, i: number) => `${i+1}. ${s}`),
+                    ].filter(Boolean).join('\n')
+                    navigator.clipboard?.writeText(lines)
+                      .then(() => {
+                        const btn = document.getElementById('copy-all-btn')
+                        if (btn) { btn.textContent = '✓ Kopiert!'; setTimeout(() => { btn.textContent = lang === 'de' ? '📋 Alles kopieren' : lang === 'en' ? '📋 Copy all' : '📋 Kopieren' }, 2000) }
+                      })
+                  }}
+                  id="copy-all-btn"
+                  style={{
+                    flex: 1, minWidth: 140,
+                    background: '#F5F8FC', border: '1.5px solid #C5D8ED',
+                    borderRadius: 10, padding: '11px', fontSize: 13, fontWeight: 600,
+                    color: '#2A5080', cursor: 'pointer',
+                  }}
+                >
+                  📋 {lang === 'de' ? 'Alles kopieren' : lang === 'en' ? 'Copy all' : lang === 'tr' ? 'Tümünü kopyala' : lang === 'it' ? 'Copia tutto' : lang === 'ru' ? 'Скопировать всё' : lang === 'pl' ? 'Kopiuj wszystko' : 'Kopieren'}
+                </button>
+
+                {/* WhatsApp teilen */}
+                <a
+                  href={`https://wa.me/?text=${encodeURIComponent(
+                    (lang === 'de' ? `Behördenbrief analysiert mit AmtsKlar:\n\n📄 ${result.brieftyp}\n${result.einfache_erklaerung}\n${result.frist?.hat_frist ? `⏰ Frist: ${result.frist.frist_text}` : ''}\n\nwww.amtsklar.at`
+                    : `Official letter analysed with AmtsKlar:\n\n📄 ${result.brieftyp}\n${result.einfache_erklaerung}\n\nwww.amtsklar.at`)
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    flex: 1, minWidth: 140, display: 'flex', alignItems: 'center',
+                    justifyContent: 'center', gap: 6,
+                    background: '#25D366', border: 'none',
+                    borderRadius: 10, padding: '11px', fontSize: 13, fontWeight: 600,
+                    color: '#FFFFFF', textDecoration: 'none',
+                  }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                  </svg>
+                  {lang === 'de' ? 'Teilen' : lang === 'en' ? 'Share' : lang === 'tr' ? 'Paylaş' : lang === 'it' ? 'Condividi' : lang === 'ru' ? 'Поделиться' : lang === 'pl' ? 'Udostępnij' : 'Teilen'}
+                </a>
+
+                {/* Drucken */}
+                <button
+                  onClick={() => window.print()}
+                  style={{
+                    flex: 1, minWidth: 140,
+                    background: '#F5F8FC', border: '1.5px solid #C5D8ED',
+                    borderRadius: 10, padding: '11px', fontSize: 13, fontWeight: 600,
+                    color: '#2A5080', cursor: 'pointer',
+                  }}
+                >
+                  🖨️ {lang === 'de' ? 'Als PDF speichern' : lang === 'en' ? 'Save as PDF' : lang === 'tr' ? 'PDF olarak kaydet' : 'Save PDF'}
+                </button>
+
+                {/* Zurück */}
+                <button style={{ ...S.btnOut, flex: 1, minWidth: 140 }} onClick={reset}>
+                  {t.btn_new}
+                </button>
+              </div>
 
             </div>
           )}

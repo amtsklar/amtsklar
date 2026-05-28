@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.amtsklar.at/sitemap.xml
+
+# Cloudflare Pages
+Disallow: /cdn-cgi/

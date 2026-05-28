@@ -1,0 +1,44 @@
+{
+  "name": "AmtsKlar – Behördenbriefe verstehen",
+  "short_name": "AmtsKlar",
+  "description": "Österreichische Behördenbriefe sofort verstehen: Fristen, Pflichten, Antwortbrief.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EEF4FB",
+  "theme_color": "#0F2440",
+  "orientation": "portrait-primary",
+  "categories": ["legal", "utilities", "productivity"],
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.svg",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "label": "AmtsKlar Landing Page"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Brief analysieren",
+      "short_name": "Analysieren",
+      "description": "Brief direkt analysieren",
+      "url": "/#/analyse",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Mustervorlagen",
+      "short_name": "Vorlagen",
+      "description": "Vorlagen herunterladen",
+      "url": "/#/vorlagen",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}

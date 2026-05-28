@@ -36,6 +36,9 @@ export function LanguageSwitcher() {
     <div ref={ref} style={{ position:'relative' }}>
       <button
         onClick={() => setOpen(o => !o)}
+        aria-label={`Sprache wählen: ${current.label}`}
+        aria-expanded={open}
+        aria-haspopup="listbox"
         style={{
           display:'flex', alignItems:'center', gap:6,
           padding:'6px 10px', borderRadius:8,
@@ -63,6 +66,8 @@ export function LanguageSwitcher() {
             <button
               key={l.code}
               onClick={() => { setLang(l.code); setOpen(false) }}
+              role="option"
+              aria-selected={l.code === lang}
               style={{
                 display:'flex', alignItems:'center', gap:10,
                 width:'100%', padding:'9px 14px',

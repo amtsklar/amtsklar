@@ -550,7 +550,7 @@ INSTANZENWEG ÜBERBLICK:
 - Strafrecht gerichtlich: → LG → OLG → OGH
 - Verwaltungsstrafrecht: Strafverfügung → Einspruch (2 Wo) → Straferkenntnis → LVwG (4 Wo)
 
-Antworte IMMER präzise auf Deutsch. Passe den antwortbrief.inhalt konkret an den analysierten Brieftyp an.
+Passe den antwortbrief.inhalt konkret an den analysierten Brieftyp an.
 Für Strafrecht, Asylrecht, und Fremdenrecht: immer sofort Anwalt empfehlen.`
 
 // ── Hilfsfunktionen ──────────────────────────────────────────────
@@ -737,13 +737,29 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       briefImage?: { data: string; mediaType: string }
       includeLetter?: boolean
       language?: string
+      isPaid?: boolean
     }
 
     const includeLetter = body.includeLetter ?? false
     const isPaidRequest = body.isPaid === true
     const language      = body.language || 'de'
-    const hasBriefText  = typeof body.briefText === 'string' && body.briefText.trim().length >= 20
-    const hasBriefImage = !!body.briefImage?.data && !!body.briefImage?.mediaType
+    const hasBriefText  = typeof body.briefText === 'string' && (body.briefText as string).trim().length >= 20
+    const hasBriefImage = body.briefImage != null && !!(body.briefImage as any).data && !!(body.briefImage as any).mediaType
+
+    // ── Kosten-Schutz: Input-Größe limitieren ──
+    if (hasBriefText && body.briefText!.length > 20000) {
+      return new Response(
+        JSON.stringify({ error: 'Text zu lang (max. 20.000 Zeichen). Bitte kürzen.' }),
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      )
+    }
+    // Bild-Größe prüfen (base64 → ~75% der Originalgröße)
+    if (hasBriefImage && body.briefImage!.data.length > 35_000_000) {
+      return new Response(
+        JSON.stringify({ error: 'Bild zu groß. Bitte unter 25 MB.' }),
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      )
+    }
 
     // ── IP-basiertes Freikontingent prüfen (Schicht 3: Server) ──
     if (!isPaidRequest) {
@@ -760,6 +776,15 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       }
 
       const currentCount = ipUsageMap.get(clientIp)?.count || 0
+
+      // Harte Grenze: mehr als 5 Versuche pro IP in 24h → auch bei Paid-Flag blockieren
+      if (currentCount >= 5) {
+        return new Response(
+          JSON.stringify({ error: 'Zu viele Anfragen. Bitte in 24 Stunden erneut versuchen.' }),
+          { status: 429, headers: { 'Content-Type': 'application/json' } }
+        )
+      }
+
       if (currentCount >= SERVER_FREE_LIMIT) {
         return new Response(
           JSON.stringify({ error: 'Kostenlose Analyse bereits genutzt. Bitte Paket wählen um fortzufahren.' }),

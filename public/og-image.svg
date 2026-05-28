@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#EEF4FB"/>
+
+  <!-- Gold accent bar left -->
+  <rect x="0" y="0" width="8" height="630" fill="#C9963A"/>
+
+  <!-- Logo icon -->
+  <rect x="80" y="200" width="80" height="80" rx="20" fill="url(#grad)"/>
+  <text x="120" y="258" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">§</text>
+
+  <!-- Logo text -->
+  <text x="180" y="248" font-family="Georgia, serif" font-size="52" font-weight="400" fill="#0F2440">Amts</text>
+  <text x="337" y="248" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#C9963A">Klar</text>
+
+  <!-- Tagline -->
+  <text x="180" y="280" font-family="Arial, sans-serif" font-size="16" fill="#4A6A90" letter-spacing="2">ÖSTERREICH · BEHÖRDENBRIEFE SOFORT VERSTEHEN</text>
+
+  <!-- Main headline -->
+  <text x="80" y="370" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#0F2440">Brief vom Amt erhalten?</text>
+  <text x="80" y="440" font-family="Georgia, serif" font-size="54" font-weight="700" fill="#C9963A">Jetzt sofort verstehen.</text>
+
+  <!-- Feature pills -->
+  <rect x="80" y="485" width="200" height="36" rx="18" fill="rgba(201,150,58,0.15)" stroke="rgba(201,150,58,0.4)" stroke-width="1"/>
+  <text x="180" y="508" font-family="Arial, sans-serif" font-size="14" fill="#C9963A" text-anchor="middle" font-weight="600">82 Rechtsbereiche</text>
+
+  <rect x="296" y="485" width="220" height="36" rx="18" fill="rgba(201,150,58,0.15)" stroke="rgba(201,150,58,0.4)" stroke-width="1"/>
+  <text x="406" y="508" font-family="Arial, sans-serif" font-size="14" fill="#C9963A" text-anchor="middle" font-weight="600">Fristen & Einsprüche</text>
+
+  <rect x="532" y="485" width="220" height="36" rx="18" fill="rgba(201,150,58,0.15)" stroke="rgba(201,150,58,0.4)" stroke-width="1"/>
+  <text x="642" y="508" font-family="Arial, sans-serif" font-size="14" fill="#C9963A" text-anchor="middle" font-weight="600">Fertiger Antwortbrief</text>
+
+  <rect x="768" y="485" width="240" height="36" rx="18" fill="rgba(201,150,58,0.15)" stroke="rgba(201,150,58,0.4)" stroke-width="1"/>
+  <text x="888" y="508" font-family="Arial, sans-serif" font-size="14" fill="#C9963A" text-anchor="middle" font-weight="600">Ab €2,49 / Monat</text>
+
+  <!-- Bottom URL -->
+  <text x="1120" y="600" font-family="Arial, sans-serif" font-size="18" fill="#6A8AAA" text-anchor="end">www.amtsklar.at</text>
+
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D4A84B"/>
+      <stop offset="100%" stop-color="#A8731E"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Analyse from './pages/Analyse'
 import Impressum from './pages/legal/Impressum'
@@ -9,7 +9,7 @@ import Vorlagen from './pages/Vorlagen'
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <CookieBanner />
       <Routes>
         <Route path="/"            element={<Landing />} />
@@ -17,8 +17,9 @@ export default function App() {
         <Route path="/impressum"   element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/agb"         element={<AGB />} />
-        <Route path="/vorlagen"     element={<Vorlagen />} />
+        <Route path="/vorlagen"    element={<Vorlagen />} />
+        <Route path="*"            element={<Landing />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
