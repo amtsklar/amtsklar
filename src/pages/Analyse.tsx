@@ -863,28 +863,28 @@ export default function Analyse() {
           position: 'fixed', inset: 0,
           background: 'rgba(15,36,64,0.7)',
           zIndex: 100,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          padding: 20,
+          display: 'flex', alignItems: 'flex-start', justifyContent: 'center',
+          padding: '16px 12px',
+          overflowY: 'auto',
         }}>
           <div style={{
             background: '#FFFFFF',
             border: '1px solid #C5D8ED',
             borderRadius: 16,
-            padding: '32px 24px',
-            maxWidth: 560,
+            padding: '20px 16px',
+            maxWidth: 500,
             width: '100%',
             boxShadow: '0 20px 60px rgba(15,36,64,0.2)',
+            margin: 'auto',
           }}>
 
             {/* Titel */}
-            <div style={{ textAlign: 'center', marginBottom: 24 }}>
-              <div style={{ fontFamily: 'serif', fontSize: 32, color: '#C9963A', marginBottom: 10 }}>§</div>
-              <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 8 }}>
+            <div style={{ textAlign: 'center', marginBottom: 14 }}>
+              <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>
                 {t.price_choose}
               </div>
-              <div style={{ fontSize: 14, color: '#2A5080', lineHeight: 1.6 }}>
-                {t.pay_sub1}<br/>
-                {t.pay_sub2}
+              <div style={{ fontSize: 13, color: '#2A5080', lineHeight: 1.5 }}>
+                {t.pay_sub1} {t.pay_sub2}
               </div>
             </div>
 
@@ -905,77 +905,63 @@ export default function Analyse() {
               )}
             </div>
 
-            {/* 3 Plan-Karten */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 10, marginBottom: 20, alignItems: 'stretch' }}>
+            {/* 3 Plan-Karten — kompakt */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8, marginBottom: 14 }}>
 
               {/* Verstehen */}
               <div style={{
-                border: '1.5px solid #C5D8ED', borderRadius: 12,
-                padding: '16px 12px', display: 'flex', flexDirection: 'column',
+                border: '1.5px solid #C5D8ED', borderRadius: 10,
+                padding: '12px 8px', textAlign: 'center',
               }}>
-                <div style={{ fontSize: 12, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', marginBottom: 6 }}>Verstehen</div>
-                <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€2,49' : '€2,99'}</div>
-                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 10 }}>{yearlyBilling ? '€24,90/Jahr' : t.per_month}</div>
-                <div style={{ flex: 1, marginBottom: 12 }}>
-                  {t.plan_f.map((text, i) => {
-                    const ok = i < 5
-                    return (
-                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 5, fontSize: 10 }}>
-                        <span style={{ color: ok ? '#4CAF82' : '#C5D8ED', fontWeight: 700, marginRight: 5, flexShrink: 0, marginTop: 1 }}>{ok ? '✓' : '✗'}</span>
-                        <span style={{ color: ok ? '#2A5080' : '#C5D8ED', textDecoration: ok ? 'none' : 'line-through', lineHeight: 1.4 }}>{text}</span>
-                      </div>
-                    )
-                  })}
+                <div style={{ fontSize: 11, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', marginBottom: 4 }}>Verstehen</div>
+                <div style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 700, color: '#0F2440', marginBottom: 2 }}>{yearlyBilling ? '€2,49' : '€2,99'}</div>
+                <div style={{ fontSize: 10, color: '#6A8AAA', marginBottom: 8 }}>{t.per_month}</div>
+                <div style={{ fontSize: 10, color: '#4A6A90', marginBottom: 10, lineHeight: 1.4 }}>
+                  {t.plan_v.slice(0,3).map((f,i) => <div key={i}>✓ {f}</div>)}
+                  <div style={{color:'#C5D8ED'}}>✗ {t.plan_f[5]?.split('—')[0]}</div>
                 </div>
                 <button
                   onClick={() => openCheckout('verstehen')}
                   style={{
-                    width: '100%', padding: '8px 0',
+                    width: '100%', padding: '7px 0',
                     background: '#F5F8FC', border: '1.5px solid #C5D8ED',
-                    borderRadius: 8, fontSize: 12, fontWeight: 600,
+                    borderRadius: 7, fontSize: 11, fontWeight: 600,
                     color: '#2A5080', cursor: 'pointer',
                   }}
                 >
-                  {t.free_test.replace('Kostenlos ', '').replace('gratis', '').trim() || 'Wählen'}
+                  {t.btn_choose}
                 </button>
               </div>
 
               {/* Handeln (hervorgehoben) */}
               <div style={{
-                border: '2px solid #C9963A', borderRadius: 12,
-                padding: '16px 12px',
+                border: '2px solid #C9963A', borderRadius: 10,
+                padding: '12px 8px', textAlign: 'center',
                 background: 'rgba(201,150,58,0.04)',
-                position: 'relative', display: 'flex', flexDirection: 'column',
+                position: 'relative',
               }}>
                 <div style={{
-                  position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)',
+                  position: 'absolute', top: -9, left: '50%', transform: 'translateX(-50%)',
                   background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
-                  color: '#FFFFFF', fontSize: 10, fontWeight: 700,
-                  padding: '2px 10px', borderRadius: 20, whiteSpace: 'nowrap',
+                  color: '#FFFFFF', fontSize: 9, fontWeight: 700,
+                  padding: '2px 8px', borderRadius: 20, whiteSpace: 'nowrap',
                 }}>
                   {t.badge_popular}
                 </div>
-                <div style={{ fontSize: 12, fontWeight: 600, color: '#C9963A', textTransform: 'uppercase', marginBottom: 6 }}>Handeln</div>
-                <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€4,19' : '€4,99'}</div>
-                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 10 }}>{yearlyBilling ? '€41,90/Jahr' : t.per_month}</div>
-                <div style={{ flex: 1, marginBottom: 12 }}>
-                  {t.plan_f.map((text, i) => {
-                    const ok = i < 7
-                    return (
-                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 5, fontSize: 10 }}>
-                        <span style={{ color: ok ? '#4CAF82' : '#C5D8ED', fontWeight: 700, marginRight: 5, flexShrink: 0, marginTop: 1 }}>{ok ? '✓' : '✗'}</span>
-                        <span style={{ color: ok ? '#2A5080' : '#C5D8ED', textDecoration: ok ? 'none' : 'line-through', lineHeight: 1.4 }}>{text}</span>
-                      </div>
-                    )
-                  })}
+                <div style={{ fontSize: 11, fontWeight: 600, color: '#C9963A', textTransform: 'uppercase', marginBottom: 4 }}>Handeln</div>
+                <div style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 700, color: '#0F2440', marginBottom: 2 }}>{yearlyBilling ? '€4,19' : '€4,99'}</div>
+                <div style={{ fontSize: 10, color: '#6A8AAA', marginBottom: 8 }}>{t.per_month}</div>
+                <div style={{ fontSize: 10, color: '#4A6A90', marginBottom: 10, lineHeight: 1.4 }}>
+                  {t.plan_h.slice(0,3).map((f,i) => <div key={i}>✓ {f}</div>)}
+                  <div style={{color:'#C5D8ED'}}>✗ {t.plan_f[7]?.split('—')[0]}</div>
                 </div>
                 <button
                   onClick={() => openCheckout('handeln')}
                   style={{
-                    width: '100%', padding: '8px 0',
+                    width: '100%', padding: '7px 0',
                     background: 'linear-gradient(135deg,#B8832A,#D4A84B)',
-                    border: 'none', borderRadius: 8,
-                    fontSize: 12, fontWeight: 700,
+                    border: 'none', borderRadius: 7,
+                    fontSize: 11, fontWeight: 700,
                     color: '#FFFFFF', cursor: 'pointer',
                   }}
                 >
@@ -985,26 +971,23 @@ export default function Analyse() {
 
               {/* Familie */}
               <div style={{
-                border: '1.5px solid #C5D8ED', borderRadius: 12,
-                padding: '16px 12px', display: 'flex', flexDirection: 'column',
+                border: '1.5px solid #C5D8ED', borderRadius: 10,
+                padding: '12px 8px', textAlign: 'center',
               }}>
-                <div style={{ fontSize: 12, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', marginBottom: 6 }}>Familie</div>
-                <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, color: '#0F2440', marginBottom: 4 }}>{yearlyBilling ? '€6,79' : '€7,99'}</div>
-                <div style={{ fontSize: 11, color: '#6A8AAA', marginBottom: 10 }}>{yearlyBilling ? '€67,90/Jahr' : t.per_month}</div>
-                <div style={{ flex: 1, marginBottom: 12 }}>
-                  {t.plan_f.map((text, i) => (
-                    <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 5, fontSize: 10 }}>
-                      <span style={{ color: '#4CAF82', fontWeight: 700, marginRight: 5, flexShrink: 0, marginTop: 1 }}>✓</span>
-                      <span style={{ color: '#2A5080', lineHeight: 1.4 }}>{text}</span>
-                    </div>
-                  ))}
+                <div style={{ fontSize: 11, fontWeight: 600, color: '#6A8AAA', textTransform: 'uppercase', marginBottom: 4 }}>Familie</div>
+                <div style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 700, color: '#0F2440', marginBottom: 2 }}>{yearlyBilling ? '€6,79' : '€7,99'}</div>
+                <div style={{ fontSize: 10, color: '#6A8AAA', marginBottom: 8 }}>{t.per_month}</div>
+                <div style={{ fontSize: 10, color: '#4A6A90', marginBottom: 10, lineHeight: 1.4 }}>
+                  {t.plan_f.slice(0,2).map((f,i) => <div key={i}>✓ {f}</div>)}
+                  <div>✓ {t.plan_f[5]?.split('—')[0]}</div>
+                  <div>✓ {t.plan_f[7]?.split('—')[0]}</div>
                 </div>
                 <button
                   onClick={() => openCheckout('familie')}
                   style={{
-                    width: '100%', padding: '8px 0',
+                    width: '100%', padding: '7px 0',
                     background: '#F5F8FC', border: '1.5px solid #C5D8ED',
-                    borderRadius: 8, fontSize: 12, fontWeight: 600,
+                    borderRadius: 7, fontSize: 11, fontWeight: 600,
                     color: '#2A5080', cursor: 'pointer',
                   }}
                 >
@@ -1014,35 +997,36 @@ export default function Analyse() {
             </div>
 
             {/* E-Mail Verifikation für bestehende Abonnenten */}
-            <div style={{ borderTop: '1px solid #C5D8ED', paddingTop: 16 }}>
-              <div style={{ fontSize: 12, color: '#4A6A90', marginBottom: 8, textAlign: 'center' }}>
+            <div style={{ borderTop: '1px solid #C5D8ED', paddingTop: 12, marginTop: 4 }}>
+              <div style={{ fontSize: 11, color: '#4A6A90', marginBottom: 6, textAlign: 'center' }}>
                 {t.already_sub}
               </div>
-              <input
-                type="email"
-                value={email}
-                placeholder="deine@email.com"
-                onChange={e => setEmail(e.target.value)}
-                style={{ ...S.ta, minHeight: 'auto', padding: '10px 14px', marginBottom: 8, borderRadius: 8 }}
-              />
-              <button
-                onClick={verifySubscription}
-                disabled={verifying}
-                style={{ ...S.btn, background: '#F5F8FC', border: '1.5px solid #C5D8ED', color: '#2A5080', padding: 11, fontSize: 14 }}
-              >
-                {verifying ? t.verifying : t.verify_btn}
-              </button>
+              <div style={{ display: 'flex', gap: 6 }}>
+                <input
+                  type="email"
+                  value={email}
+                  placeholder="deine@email.com"
+                  onChange={e => setEmail(e.target.value)}
+                  style={{ flex: 1, padding: '8px 10px', borderRadius: 7, border: '1.5px solid #C5D8ED', fontSize: 13, outline: 'none' }}
+                />
+                <button
+                  onClick={verifySubscription}
+                  disabled={verifying}
+                  style={{ ...S.btn, padding: '8px 12px', fontSize: 12, whiteSpace: 'nowrap', flexShrink: 0 }}
+                >
+                  {verifying ? t.verifying : t.verify_btn}
+                </button>
+              </div>
               {error && (
-                <div style={{ fontSize: 12, color: '#E08080', marginTop: 8, textAlign: 'center' }}>
+                <div style={{ fontSize: 11, color: '#E08080', marginTop: 6, textAlign: 'center' }}>
                   {error}
                 </div>
               )}
             </div>
 
-            {/* Schließen */}
             <button
               onClick={() => { setShowPaywall(false); setError(null) }}
-              style={{ ...S.btnOut, fontSize: 13, marginTop: 12 }}
+              style={{ ...S.btnOut, fontSize: 12, marginTop: 10, padding: '8px' }}
             >
               {t.close_btn}
             </button>
