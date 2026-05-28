@@ -1051,7 +1051,7 @@ export default function Analyse() {
           </span>
         ) : (
           <span style={{ fontSize: 12, color: '#2A5080' }}>
-            {Math.max(0, FREE_LIMIT - count)} gratis
+            {isPaid ? '' : (Math.max(0, FREE_LIMIT - count) === 0 ? 'Kein Gratis mehr' : `${Math.max(0, FREE_LIMIT - count)} gratis`)}
           </span>
         )}
       </div>

@@ -4,11 +4,13 @@ import Analyse from './pages/Analyse'
 import Impressum from './pages/legal/Impressum'
 import Datenschutz from './pages/legal/Datenschutz'
 import AGB from './pages/legal/AGB'
+import CookieBanner from './components/CookieBanner'
 import Vorlagen from './pages/Vorlagen'
 
 export default function App() {
   return (
     <HashRouter>
+      <CookieBanner />
       <Routes>
         <Route path="/"            element={<Landing />} />
         <Route path="/analyse"     element={<Analyse />} />

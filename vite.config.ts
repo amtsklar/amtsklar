@@ -6,6 +6,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
+        // Fixer Präfix "app" statt "index" → generiert anderen Hash ohne Unterstrich
         entryFileNames: 'assets/app-[hash].js',
         chunkFileNames: 'assets/chunk-[hash].js',
         assetFileNames: 'assets/style-[hash].[ext]',
