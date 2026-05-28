@@ -2,6 +2,7 @@
 Österreichische Behördenbriefe sofort verstehen.
 **Tech:** React + Vite + Cloudflare Pages + Cloudflare Functions + Paddle
 
+
 ---
 
 ## ✅ Was wirklich kostenlos ist (verifiziert)
