@@ -1012,7 +1012,12 @@ export default function Analyse() {
                 <button
                   onClick={verifySubscription}
                   disabled={verifying}
-                  style={{ ...S.btn, padding: '8px 12px', fontSize: 12, whiteSpace: 'nowrap', flexShrink: 0 }}
+                  style={{
+                    padding: '8px 12px', borderRadius: 7, fontSize: 12,
+                    fontWeight: 600, whiteSpace: 'nowrap', flexShrink: 0,
+                    background: '#F5F8FC', border: '1.5px solid #C5D8ED',
+                    color: '#2A5080', cursor: 'pointer',
+                  }}
                 >
                   {verifying ? t.verifying : t.verify_btn}
                 </button>
