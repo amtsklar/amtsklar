@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",
-    "preview": "vite preview",
-    "deploy": "npm run build && wrangler pages deploy dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",

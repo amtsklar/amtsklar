@@ -1,5 +1,38 @@
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#F8F9FB;color:#1a1a2e;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-button{cursor:pointer;border:none;background:none;font-family:inherit}
-input,textarea{font-family:inherit}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #EEF4FB;
+  --navy-light: #FFFFFF;
+  --border: #C5D8ED;
+  --gold: #C9963A;
+  --gold-light: #D4A84B;
+  --gold-dark: #A8731E;
+  --text: #0F2440;
+  --text-muted: #2A5080;
+  --text-dim: #4A6A90;
+}
+
+body {
+  background: #EEF4FB;
+  color: #0F2440;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a { color: inherit; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease both;
+}
+
+/* v2 */

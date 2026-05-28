@@ -1,165 +1,78 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+
+const S = {
+  page: { background: '#EEF4FB', minHeight: '100vh', color: '#0F2440' },
+  header: { padding: '14px 20px', borderBottom: '1px solid #C5D8ED', background: '#FFFFFF', boxShadow: '0 1px 12px rgba(15,36,64,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  inner: { maxWidth: 700, margin: '0 auto', padding: '40px 24px 80px' },
+  h1: { fontFamily: 'Libre Baskerville,serif', fontSize: 30, fontWeight: 700, marginBottom: 32, color: '#0F2440' },
+  h2: { fontFamily: 'Libre Baskerville,serif', fontSize: 18, fontWeight: 700, marginBottom: 12, marginTop: 28, color: '#0F2440' },
+  p: { fontSize: 15, lineHeight: 1.8, color: '#2A5080', marginBottom: 12 },
+  card: { background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 12, padding: '20px 24px', marginBottom: 16 },
+}
 
 export default function Impressum() {
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: '#F8F9FB',
-      fontFamily: "'Inter', -apple-system, sans-serif",
-      color: '#1a1a2e',
-    }}>
-      {/* Header */}
-      <header style={{
-        background: '#1a1a2e',
-        padding: '16px 24px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-      }}>
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '22px', fontWeight: 700, color: '#EDF2FA', letterSpacing: '-0.5px' }}>
-            Amts<span style={{ color: '#C9963A' }}>Klar</span>
-          </span>
+    <div style={S.page}>
+      <div style={S.header}>
+        <Link to="/" style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 19, fontWeight: 700, textDecoration: 'none' }}>
+          <span style={{ color: '#0F2440' }}>Amts</span><span style={{ color: '#C9963A' }}>Klar</span>
         </Link>
-        <Link to="/" style={{
-          color: '#C9963A',
-          textDecoration: 'none',
-          fontSize: '14px',
-          fontWeight: 500,
-        }}>
-          ← Zurück zur Startseite
-        </Link>
-      </header>
+        <Link to="/" style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none' }}>← Zurück</Link>
+      </div>
+      <div style={S.inner}>
+        <h1 style={S.h1}>Impressum</h1>
 
-      {/* Content */}
-      <main style={{
-        maxWidth: '720px',
-        margin: '0 auto',
-        padding: '48px 24px',
-      }}>
-        <h1 style={{
-          fontSize: '32px',
-          fontWeight: 700,
-          marginBottom: '8px',
-          color: '#1a1a2e',
-        }}>
-          Impressum
-        </h1>
-        <p style={{ color: '#6b7280', marginBottom: '40px', fontSize: '14px' }}>
-          Angaben gemäß § 5 ECG (Österreich) und Art. 3 UWG (Schweiz)
-        </p>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>Betreiber</h2>
-          <p style={pStyle}>
-            Philipp Hofer<br />
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>Betreiber</h2>
+          <p style={S.p}>
+            <strong>Philipp Hofer</strong><br />
             Fischerweg 7<br />
-            9434 Au<br />
+            9430 Au<br />
             Schweiz
           </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>Kontakt</h2>
-          <p style={pStyle}>
-            E-Mail:{' '}
-            <a
-              href="mailto:info@amtsklar.at"
-              style={{ color: '#C9963A', textDecoration: 'none', fontWeight: 500 }}
-            >
-              info@amtsklar.at
-            </a>
+          <p style={S.p}>
+            E-Mail: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a>
           </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>Hinweis zur Website</h2>
-          <p style={pStyle}>
-            AmtsKlar ist ein Online-Dienst zur Erläuterung österreichischer Behördenbriefe
-            und Bescheide mithilfe von Künstlicher Intelligenz. Die Inhalte dienen ausschließlich
-            der allgemeinen Information und stellen keine Rechtsberatung dar.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>Haftungsausschluss</h2>
-          <p style={pStyle}>
-            Die durch AmtsKlar bereitgestellten KI-Analysen ersetzen keine professionelle
-            Rechtsberatung. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
-            wird keine Gewähr übernommen. Bei rechtlichen Fragen empfehlen wir die Konsultation
-            eines zugelassenen Rechtsanwalts oder einer Rechtsberatungsstelle.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>Urheberrecht</h2>
-          <p style={pStyle}>
-            Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem
-            österreichischen und schweizerischen Urheberrecht. Vervielfältigung, Bearbeitung,
-            Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts
-            bedürfen der schriftlichen Zustimmung des Betreibers.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>Streitbeilegung</h2>
-          <p style={pStyle}>
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS)
-            bereit:{' '}
-            <a
-              href="https://ec.europa.eu/consumers/odr"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#C9963A', textDecoration: 'none' }}
-            >
-              https://ec.europa.eu/consumers/odr
-            </a>
-            . Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
-            vor einer Verbraucherschlichtungsstelle teilzunehmen.
-          </p>
-        </section>
-
-        <div style={{
-          marginTop: '48px',
-          paddingTop: '24px',
-          borderTop: '1px solid #e5e7eb',
-          display: 'flex',
-          gap: '24px',
-          flexWrap: 'wrap',
-        }}>
-          <Link to="/datenschutz" style={linkStyle}>Datenschutzerklärung</Link>
-          <Link to="/agb" style={linkStyle}>AGB</Link>
-          <Link to="/" style={linkStyle}>Startseite</Link>
         </div>
-      </main>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>Zahlungsabwicklung</h2>
+          <p style={S.p}>
+            Die Zahlungsabwicklung erfolgt über <strong>Paddle.com Market Limited</strong> als Merchant of Record.<br />
+            Paddle.com Market Limited, Judd House, 18-29 Mora Street, London, EC1V 8BT, Vereinigtes Königreich.<br />
+            Paddle handelt als autorisierter Wiederverkäufer und Händler für AmtsKlar-Abonnements.
+          </p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>KI-Dienstleister</h2>
+          <p style={S.p}>
+            Die KI-gestützte Analyse wird durch <strong>Anthropic, PBC</strong> bereitgestellt.<br />
+            Anthropic, PBC, 548 Market Street, PMB 90375, San Francisco, CA 94104, USA.<br />
+            Briefinhalte werden ausschließlich zur Analyse an Anthropic übermittelt und nicht dauerhaft gespeichert.
+          </p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>Haftungsausschluss</h2>
+          <p style={S.p}>
+            AmtsKlar ist ein Informationsdienst und kein zugelassener Rechtsdienstleister. Die bereitgestellten Analysen und Erklärungen stellen keine Rechtsberatung im Sinne des österreichischen Rechtsanwaltsgesetzes (RAO) oder des schweizerischen Anwaltsgesetzes dar. Für rechtlich verbindliche Auskünfte wenden Sie sich bitte an einen zugelassenen Rechtsanwalt oder die Arbeiterkammer.
+          </p>
+          <p style={S.p}>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Analyse-Ergebnisse.
+          </p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>Streitbeilegung</h2>
+          <p style={S.p}>
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" style={{ color: '#C9963A' }}>ec.europa.eu/consumers/odr</a>.<br />
+            Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+          </p>
+        </div>
+
+        <p style={{ ...S.p, fontSize: 13, color: '#6A8AAA' }}>Stand: Mai 2025</p>
+      </div>
     </div>
-  );
+  )
 }
-
-const sectionStyle: React.CSSProperties = {
-  marginBottom: '32px',
-  padding: '24px',
-  background: '#ffffff',
-  borderRadius: '12px',
-  border: '1px solid #e5e7eb',
-};
-
-const h2Style: React.CSSProperties = {
-  fontSize: '16px',
-  fontWeight: 600,
-  marginBottom: '12px',
-  color: '#1a1a2e',
-};
-
-const pStyle: React.CSSProperties = {
-  fontSize: '15px',
-  lineHeight: '1.7',
-  color: '#4b5563',
-  margin: 0,
-};
-
-const linkStyle: React.CSSProperties = {
-  color: '#6b7280',
-  textDecoration: 'none',
-  fontSize: '14px',
-};

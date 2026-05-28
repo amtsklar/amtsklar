@@ -1,54 +1,63 @@
-interface Env { PADDLE_API_KEY: string }
+interface Env {
+  PADDLE_API_KEY: string
+}
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
-  const CORS = {
-    'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json',
-  };
-
+export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
-    const { email } = await request.json() as { email?: string };
+    const { email } = await context.request.json() as { email: string }
 
-    if (!email?.includes('@')) {
-      return new Response(JSON.stringify({ active: false }), { headers: CORS });
+    if (!email || !email.includes('@')) {
+      return new Response(JSON.stringify({ active: false, error: 'Ungültige E-Mail' }), {
+        headers: { 'Content-Type': 'application/json' }
+      })
     }
 
-    const res = await fetch(
-      `https://api.paddle.com/subscriptions?status=active`,
-      {
-        headers: {
-          Authorization: `Bearer ${env.PADDLE_API_KEY}`,
-          'Content-Type': 'application/json',
-        },
+    // Paddle API: aktive Subscriptions prüfen
+    const res = await fetch('https://api.paddle.com/subscriptions?status=active&per_page=50', {
+      headers: {
+        Authorization: `Bearer ${context.env.PADDLE_API_KEY}`,
+        'Content-Type': 'application/json',
       }
-    );
+    })
 
     if (!res.ok) {
-      return new Response(JSON.stringify({ active: false }), { headers: CORS });
+      return new Response(JSON.stringify({ active: false, error: 'Paddle API nicht erreichbar' }), {
+        headers: { 'Content-Type': 'application/json' }
+      })
     }
 
-    const data = await res.json() as { data?: { customer_id: string }[] };
+    const data = await res.json() as any
+    const subs = data.data || []
 
-    // Check if any active subscription matches this email
-    // (Paddle v2: filter client-side or use customer email endpoint)
-    const hasActive = Array.isArray(data.data) && data.data.length > 0;
+    // Prüfe ob E-Mail eine aktive Subscription hat
+    // Paddle speichert Kunden-E-Mail im customer_id - wir suchen über Kundendaten
+    const active = subs.some((sub: any) =>
+      sub.status === 'active' &&
+      sub.customer?.email?.toLowerCase() === email.toLowerCase()
+    )
 
-    return new Response(JSON.stringify({ active: hasActive }), { headers: CORS });
+    if (active) {
+      return new Response(JSON.stringify({ active: true, status: 'active' }), {
+        headers: { 'Content-Type': 'application/json' }
+      })
+    }
 
-  } catch (e: unknown) {
-    const msg = e instanceof Error ? e.message : 'Error';
-    return new Response(
-      JSON.stringify({ active: false, error: msg }),
-      { status: 500, headers: CORS }
-    );
+    // Auch trialing prüfen
+    const trialRes = await fetch('https://api.paddle.com/subscriptions?status=trialing&per_page=50', {
+      headers: { Authorization: `Bearer ${context.env.PADDLE_API_KEY}` }
+    })
+    const trialData = await trialRes.json() as any
+    const trialing = (trialData.data || []).some((sub: any) =>
+      sub.customer?.email?.toLowerCase() === email.toLowerCase()
+    )
+
+    return new Response(JSON.stringify({ active: trialing, status: trialing ? 'trialing' : 'none' }), {
+      headers: { 'Content-Type': 'application/json' }
+    })
+  } catch (err) {
+    console.error(err)
+    return new Response(JSON.stringify({ active: false, error: 'Fehler bei Prüfung' }), {
+      status: 500, headers: { 'Content-Type': 'application/json' }
+    })
   }
-};
-
-export const onRequestOptions: PagesFunction = async () =>
-  new Response(null, {
-    headers: {
-      'Access-Control-Allow-Origin':  '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
+}

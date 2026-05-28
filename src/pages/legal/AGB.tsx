@@ -1,213 +1,96 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+
+const S = {
+  page: { background: '#EEF4FB', minHeight: '100vh' },
+  header: { padding: '14px 20px', borderBottom: '1px solid #C5D8ED', background: '#FFFFFF', boxShadow: '0 1px 12px rgba(15,36,64,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  inner: { maxWidth: 700, margin: '0 auto', padding: '40px 24px 80px' },
+  h1: { fontFamily: 'Libre Baskerville,serif', fontSize: 30, fontWeight: 700 as const, marginBottom: 8, color: '#0F2440' },
+  h2: { fontFamily: 'Libre Baskerville,serif', fontSize: 17, fontWeight: 700 as const, marginBottom: 10, marginTop: 24, color: '#0F2440' },
+  p: { fontSize: 15, lineHeight: 1.8, color: '#2A5080', marginBottom: 12 },
+  card: { background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 12, padding: '20px 24px', marginBottom: 16 },
+  li: { fontSize: 15, lineHeight: 1.8, color: '#2A5080', marginBottom: 6 },
+}
 
 export default function AGB() {
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: '#F8F9FB',
-      fontFamily: "'Inter', -apple-system, sans-serif",
-      color: '#1a1a2e',
-    }}>
-      {/* Header */}
-      <header style={{
-        background: '#1a1a2e',
-        padding: '16px 24px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-      }}>
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '22px', fontWeight: 700, color: '#EDF2FA', letterSpacing: '-0.5px' }}>
-            Amts<span style={{ color: '#C9963A' }}>Klar</span>
-          </span>
+    <div style={S.page}>
+      <div style={S.header}>
+        <Link to="/" style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 19, fontWeight: 700, textDecoration: 'none' }}>
+          <span style={{ color: '#0F2440' }}>Amts</span><span style={{ color: '#C9963A' }}>Klar</span>
         </Link>
-        <Link to="/" style={{ color: '#C9963A', textDecoration: 'none', fontSize: '14px', fontWeight: 500 }}>
-          ← Zurück zur Startseite
-        </Link>
-      </header>
+        <Link to="/" style={{ fontSize: 14, color: '#2A5080', textDecoration: 'none' }}>← Zurück</Link>
+      </div>
+      <div style={S.inner}>
+        <h1 style={S.h1}>Allgemeine Geschäftsbedingungen</h1>
+        <p style={{ ...S.p, marginBottom: 28 }}>Stand: Mai 2025</p>
 
-      <main style={{ maxWidth: '720px', margin: '0 auto', padding: '48px 24px' }}>
-        <h1 style={{ fontSize: '32px', fontWeight: 700, marginBottom: '8px', color: '#1a1a2e' }}>
-          Allgemeine Geschäftsbedingungen
-        </h1>
-        <p style={{ color: '#6b7280', marginBottom: '40px', fontSize: '14px' }}>
-          Stand: Mai 2026
-        </p>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>1. Anbieter & Geltungsbereich</h2>
-          <p style={pStyle}>
-            Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung des Online-Dienstes
-            <strong> AmtsKlar</strong> (amtsklar.at), betrieben von:
-          </p>
-          <p style={{ ...pStyle, marginTop: '12px', paddingLeft: '16px', borderLeft: '3px solid #C9963A' }}>
-            Philipp Hofer<br />
-            Fischerweg 7, 9434 Au, Schweiz<br />
-            E-Mail: <a href="mailto:info@amtsklar.at" style={linkGoldStyle}>info@amtsklar.at</a>
-          </p>
-          <p style={{ ...pStyle, marginTop: '12px' }}>
-            Es gilt Schweizer Recht. Für Verbraucher mit Wohnsitz in der EU (insbesondere
-            Österreich) bleiben zwingende Verbraucherschutzbestimmungen ihres Heimatlandes
-            unberührt.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>2. Leistungsbeschreibung</h2>
-          <p style={pStyle}>
-            AmtsKlar bietet eine KI-gestützte Analyse österreichischer Behördenbriefe,
-            Bescheide und Amtsschreiben. Nutzer können Dokumente (Text, PDF, Foto) hochladen
-            und erhalten eine verständliche Erläuterung des Inhalts.
-          </p>
-          <p style={{ ...pStyle, marginTop: '12px', padding: '12px', background: '#FEF2F2', borderRadius: '8px', borderLeft: '3px solid #EF4444' }}>
-            <strong>Wichtiger Hinweis:</strong> Die Analysen von AmtsKlar stellen
-            <strong> keine Rechtsberatung</strong> dar und ersetzen diese nicht. Bei
-            rechtlichen Fragen oder Fristen wenden Sie sich an einen zugelassenen
-            Rechtsanwalt oder eine anerkannte Rechtsberatungsstelle.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>3. Nutzung & Tarife</h2>
-          <p style={pStyle}><strong>Kostenlose Nutzung:</strong></p>
-          <p style={{ ...pStyle, marginBottom: '12px' }}>
-            Jeder Nutzer erhält eine begrenzte Anzahl kostenloser Analysen pro Gerät.
-            Danach ist eine kostenpflichtige Freischaltung erforderlich.
-          </p>
-          <p style={pStyle}><strong>Kostenpflichtige Tarife:</strong></p>
-          <p style={pStyle}>
-            Die aktuellen Preise und Leistungsumfänge sind auf der Website unter dem
-            Bereich „Tarife" einsehbar. Alle Preise verstehen sich inklusive der
-            gesetzlich anfallenden Steuern.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>4. Zahlungsabwicklung</h2>
-          <p style={pStyle}>
-            Zahlungen werden ausschließlich über <strong>Paddle</strong> (Paddle.com Market Ltd.)
-            abgewickelt. Paddle fungiert als Merchant of Record — das bedeutet, Paddle ist
-            rechtlich der Verkäufer und stellt die Rechnung aus. Es gelten ergänzend die
-            Nutzungsbedingungen von Paddle. AmtsKlar hat keinen Zugriff auf Ihre Zahlungsdaten.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>5. Widerrufsrecht (EU-Verbraucher)</h2>
-          <p style={pStyle}>
-            Verbrauchern mit Wohnsitz in der EU steht grundsätzlich ein gesetzliches
-            Widerrufsrecht von <strong>14 Tagen</strong> zu. Da es sich bei AmtsKlar um
-            einen digitalen Dienst handelt, erlischt das Widerrufsrecht mit Beginn der
-            Leistungserbringung, sofern der Verbraucher ausdrücklich zugestimmt hat und
-            zur Kenntnis genommen hat, dass er dadurch sein Widerrufsrecht verliert.
-          </p>
-          <p style={{ ...pStyle, marginTop: '12px' }}>
-            Bei Fragen zum Widerruf wenden Sie sich an:{' '}
-            <a href="mailto:info@amtsklar.at" style={linkGoldStyle}>info@amtsklar.at</a>
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>6. Verfügbarkeit & Haftung</h2>
-          <p style={pStyle}>
-            Wir bemühen uns um eine möglichst hohe Verfügbarkeit des Dienstes. Ein
-            Rechtsanspruch auf ununterbrochene Verfügbarkeit besteht nicht. Der Betreiber
-            haftet nicht für:
-          </p>
-          <ul style={{ ...pStyle, paddingLeft: '20px', marginTop: '8px' }}>
-            <li style={{ marginBottom: '6px' }}>Fehler oder Unvollständigkeiten in KI-generierten Analysen</li>
-            <li style={{ marginBottom: '6px' }}>Entscheidungen, die auf Basis der Analysen getroffen werden</li>
-            <li style={{ marginBottom: '6px' }}>Technische Ausfälle von Drittanbietern (Anthropic, Cloudflare, Paddle)</li>
-            <li style={{ marginBottom: '6px' }}>Schäden durch unsachgemäße Nutzung des Dienstes</li>
-          </ul>
-          <p style={{ ...pStyle, marginTop: '12px' }}>
-            Die Haftung ist im gesetzlich zulässigen Rahmen auf Vorsatz und grobe
-            Fahrlässigkeit beschränkt.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>7. Nutzerpflichten</h2>
-          <p style={pStyle}>Der Nutzer verpflichtet sich:</p>
-          <ul style={{ ...pStyle, paddingLeft: '20px', marginTop: '8px' }}>
-            <li style={{ marginBottom: '6px' }}>Den Dienst nur für legale Zwecke zu verwenden</li>
-            <li style={{ marginBottom: '6px' }}>Keine Dokumente hochzuladen, die Dritte in ihren Rechten verletzen</li>
-            <li style={{ marginBottom: '6px' }}>Den Dienst nicht automatisiert oder missbräuchlich zu nutzen</li>
-            <li style={{ marginBottom: '6px' }}>Keine Versuche zu unternehmen, die technische Infrastruktur zu manipulieren</li>
-          </ul>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>8. Änderungen der AGB</h2>
-          <p style={pStyle}>
-            Wir behalten uns vor, diese AGB jederzeit zu ändern. Über wesentliche Änderungen
-            informieren wir per E-Mail (sofern eine Adresse vorliegt) oder durch einen
-            deutlichen Hinweis auf der Website. Die fortgesetzte Nutzung nach Inkrafttreten
-            der Änderungen gilt als Zustimmung.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>9. Anwendbares Recht & Gerichtsstand</h2>
-          <p style={pStyle}>
-            Es gilt Schweizer Recht unter Ausschluss des UN-Kaufrechts. Gerichtsstand für
-            Streitigkeiten mit Unternehmern ist Au (Kanton St. Gallen), Schweiz. Für
-            Verbraucher mit Wohnsitz in der EU gelten die zwingenden Gerichtsstandsregelungen
-            des jeweiligen EU-Mitgliedstaates.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={h2Style}>10. Kontakt</h2>
-          <p style={pStyle}>
-            Bei Fragen zu diesen AGB wenden Sie sich an:{' '}
-            <a href="mailto:info@amtsklar.at" style={linkGoldStyle}>info@amtsklar.at</a>
-          </p>
-        </section>
-
-        <div style={{
-          marginTop: '48px',
-          paddingTop: '24px',
-          borderTop: '1px solid #e5e7eb',
-          display: 'flex',
-          gap: '24px',
-          flexWrap: 'wrap',
-        }}>
-          <Link to="/impressum" style={footerLinkStyle}>Impressum</Link>
-          <Link to="/datenschutz" style={footerLinkStyle}>Datenschutzerklärung</Link>
-          <Link to="/" style={footerLinkStyle}>Startseite</Link>
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 1 Anbieter & Geltungsbereich</h2>
+          <p style={S.p}>Diese AGB gelten für die Nutzung des Online-Dienstes AmtsKlar, betrieben von Philipp Hofer, Fischerweg 7, 9430 Au, Schweiz (nachfolgend „Anbieter").</p>
+          <p style={S.p}>AmtsKlar richtet sich an Verbraucher und Unternehmer mit Wohnsitz oder Sitz im deutschsprachigen Raum (Österreich, Deutschland, Schweiz).</p>
         </div>
-      </main>
-    </div>
-  );
-}
 
-const sectionStyle: React.CSSProperties = {
-  marginBottom: '24px',
-  padding: '24px',
-  background: '#ffffff',
-  borderRadius: '12px',
-  border: '1px solid #e5e7eb',
-};
-const h2Style: React.CSSProperties = {
-  fontSize: '16px',
-  fontWeight: 600,
-  marginBottom: '12px',
-  color: '#1a1a2e',
-};
-const pStyle: React.CSSProperties = {
-  fontSize: '15px',
-  lineHeight: '1.7',
-  color: '#4b5563',
-  margin: 0,
-};
-const linkGoldStyle: React.CSSProperties = {
-  color: '#C9963A',
-  textDecoration: 'none',
-  fontWeight: 500,
-};
-const footerLinkStyle: React.CSSProperties = {
-  color: '#6b7280',
-  textDecoration: 'none',
-  fontSize: '14px',
-};
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 2 Leistungsbeschreibung</h2>
+          <p style={S.p}>AmtsKlar ist ein KI-gestützter Informationsdienst zur Erklärung österreichischer Behördenschreiben. Der Dienst:</p>
+          <ul style={{ paddingLeft: 20 }}>
+            <li style={S.li}>Analysiert und erklärt Behördenbriefe in verständlicher Sprache</li>
+            <li style={S.li}>Gibt Hinweise auf relevante Fristen und mögliche Handlungsoptionen</li>
+            <li style={S.li}>Erstellt im Handeln- und Familie-Paket Muster-Antwortbriefe</li>
+            <li style={S.li}>Stellt Mustervorlagen zum Download bereit (Handeln & Familie)</li>
+          </ul>
+          <p style={{ ...S.p, marginTop: 12 }}><strong>AmtsKlar ist kein Rechtsdienstleister</strong> und erbringt keine Rechtsberatung im Sinne des österreichischen RAO. Die Ergebnisse sind unverbindliche Informationen.</p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 3 Kostenlose Nutzung & Abonnement</h2>
+          <p style={S.p}><strong>Kostenlose Testanalyse:</strong> Jeder Nutzer erhält 1 kostenlose Analyse ohne Registrierung.</p>
+          <p style={S.p}><strong>Abonnement:</strong> Für unbegrenzte Analysen ist ein Abonnement erforderlich. Die Abonnements werden über Paddle.com Market Limited abgewickelt, welche als Merchant of Record fungiert.</p>
+          <p style={S.p}><strong>Preise:</strong> Die aktuellen Preise sind auf der Website ersichtlich. Alle Preise verstehen sich inkl. der gesetzlichen MwSt.</p>
+          <p style={S.p}><strong>Laufzeit & Kündigung:</strong> Abonnements können jederzeit zum Ende des jeweiligen Abrechnungszeitraums gekündigt werden. Die Kündigung erfolgt über das Kundenportal oder per E-Mail an info@amtsklar.at.</p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 4 Widerrufsrecht</h2>
+          <p style={S.p}>Verbraucher haben das Recht, diesen Vertrag binnen 14 Tagen ohne Angabe von Gründen zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.</p>
+          <p style={S.p}>Durch die Inanspruchnahme der Leistung vor Ablauf der Widerrufsfrist stimmt der Verbraucher zu, dass das Widerrufsrecht nach vollständiger Vertragserfüllung erlischt.</p>
+          <p style={S.p}>Widerruf per E-Mail an: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a></p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 5 Haftungsbeschränkung</h2>
+          <p style={S.p}>Der Anbieter haftet nicht für:</p>
+          <ul style={{ paddingLeft: 20 }}>
+            <li style={S.li}>Entscheidungen, die auf Basis der AmtsKlar-Analysen getroffen werden</li>
+            <li style={S.li}>Verpasste Fristen oder fehlerhafte Rechtseinschätzungen</li>
+            <li style={S.li}>Schäden durch falsche oder unvollständige Eingaben des Nutzers</li>
+            <li style={S.li}>Vorübergehende Nichtverfügbarkeit des Dienstes</li>
+          </ul>
+          <p style={{ ...S.p, marginTop: 12 }}>Die Haftung für grobe Fahrlässigkeit und Vorsatz bleibt unberührt.</p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 6 Nutzungspflichten</h2>
+          <p style={S.p}>Der Nutzer verpflichtet sich:</p>
+          <ul style={{ paddingLeft: 20 }}>
+            <li style={S.li}>Den Dienst ausschließlich für legale Zwecke zu nutzen</li>
+            <li style={S.li}>Keine automatisierten Abfragen durchzuführen</li>
+            <li style={S.li}>Die kostenlose Testanalyse nicht durch technische Mittel zu umgehen</li>
+            <li style={S.li}>Keine personenbezogenen Daten Dritter ohne deren Einwilligung einzugeben</li>
+          </ul>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 7 Anwendbares Recht & Gerichtsstand</h2>
+          <p style={S.p}>Es gilt schweizerisches Recht unter Ausschluss des UN-Kaufrechts. Gerichtsstand ist St. Gallen, Schweiz, sofern der Nutzer Kaufmann oder juristische Person ist. Für Verbraucher gilt der gesetzliche Gerichtsstand.</p>
+          <p style={S.p}>Für österreichische Verbraucher bleiben die zwingenden Bestimmungen des österreichischen Konsumentenschutzgesetzes (KSchG) unberührt.</p>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 8 Änderungen der AGB</h2>
+          <p style={S.p}>Der Anbieter behält sich vor, diese AGB mit angemessener Ankündigungsfrist (mindestens 30 Tage) zu ändern. Änderungen werden per E-Mail oder durch Hinweis auf der Website bekannt gegeben.</p>
+        </div>
+      </div>
+    </div>
+  )
+}
