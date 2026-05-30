@@ -69,6 +69,12 @@ FRISTEN-GRUNDREGELN:
 - dringlichkeit="hoch" wenn Frist unter 4 Wochen; "mittel" 4-8 Wochen; "niedrig" länger
 - prioritaet="kritisch" bei Freiheitsentzug/Abschiebung/Entzug; "hoch" bei Geldstrafe/Kündigung; "normal" sonst
 
+KRITISCH — ERSATZFREIHEITSSTRAFE vs. FAHRVERBOT:
+- "Ersatzfreiheitsstrafe von X Tagen" = KEIN Fahrverbot! Das ist Gefängnis NUR falls die Geldstrafe NICHT bezahlt werden kann (uneinbringlich ist). In der Erklärung NIEMALS als Fahrverbot bezeichnen!
+- Ein echtes Fahrverbot steht explizit als "Fahrverbot" oder "Lenkberechtigungsentzug" im Brief.
+- Beispiel korrekte Erklärung: "Sie haben eine Geldstrafe von €280. Falls Sie diese nicht zahlen können, drohen 5 Tage 9 Stunden Ersatzfreiheitsstrafe (Gefängnis). Dies ist KEIN Fahrverbot."
+- Beispiel FALSCH: "5 Tage 9 Stunden Fahrverbot" — das ist ein gravierender Fehler!
+
 ═══════════════════════════════════════════════════════════════════════
 ÖSTERREICHISCHE RECHTSDATENBANK — 82 BEREICHE (Stand 2025/2026)
 ═══════════════════════════════════════════════════════════════════════

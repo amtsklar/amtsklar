@@ -167,14 +167,37 @@ const CHAR_DANGER  = 7500  // Ab hier rote Warnung
 
 // LocalStorage Keys
 const SK = {
-  count:   'ak_count',   // Anzahl bisheriger Analysen
-  paid:    'ak_paid',    // boolean: hat bezahlt
-  plan:    'ak_plan',    // 'verstehen' | 'handeln' | 'familie'
-  email:   'ak_email',   // E-Mail des Abonnenten
-  history: 'ak_history', // letzte 5 Analyse-Ergebnisse
+  count:        'ak_count',        // Anzahl bisheriger Analysen
+  paid:         'ak_paid',         // boolean: hat bezahlt
+  plan:         'ak_plan',         // 'verstehen' | 'handeln' | 'familie'
+  email:        'ak_email',        // E-Mail des Abonnenten
+  history:      'ak_history',      // letzte 5 Analyse-Kurzinfos
+  savedResult:  'ak_saved_result', // letztes vollständiges Analyse-Ergebnis
+  savedBrief:   'ak_saved_brief',  // letzter vollständiger Antwortbrief
 }
 
-// Analyse in History speichern (max. 5 Einträge)
+// Vollständige Analyse speichern (für Upgrade-Flow)
+function saveFullResult(result: any, antwortbrief: any) {
+  try {
+    const payload = { result, antwortbrief, savedAt: Date.now() }
+    localStorage.setItem(SK.savedResult, JSON.stringify(payload))
+  } catch { /* ignore - localStorage voll */ }
+}
+
+// Gespeicherte Analyse laden (nach Upgrade)
+function loadSavedResult(): { result: any; antwortbrief: any; savedAt: number } | null {
+  try {
+    const raw = localStorage.getItem(SK.savedResult)
+    if (!raw) return null
+    const parsed = JSON.parse(raw)
+    // Nur Ergebnisse der letzten 2 Stunden wiederherstellen
+    const TWO_HOURS = 2 * 60 * 60 * 1000
+    if (Date.now() - parsed.savedAt > TWO_HOURS) return null
+    return parsed
+  } catch { return null }
+}
+
+// Analyse in History speichern (Kurzinfo für Sidebar)
 function saveToHistory(result: any, brieftyp: string) {
   try {
     const existing = JSON.parse(localStorage.getItem(SK.history) || '[]')
@@ -445,6 +468,14 @@ export default function Analyse() {
       setShowPaywall(false)
       // URL bereinigen
       window.history.replaceState({}, '', '/analyse')
+
+      // Gespeicherte Analyse wiederherstellen
+      const saved = loadSavedResult()
+      if (saved?.result) {
+        setResult(saved.result)
+        setAntwortbrief(saved.antwortbrief || null)
+        setScreen('result')
+      }
     }
 
     // Aufräumen beim Unmount
@@ -508,6 +539,14 @@ export default function Analyse() {
         setIsPaid(true)
         setPlan(verifiedPlan)
         setShowPaywall(false)
+
+        // Gespeicherte Analyse wiederherstellen — User muss nicht neu analysieren!
+        const saved = loadSavedResult()
+        if (saved?.result) {
+          setResult(saved.result)
+          setAntwortbrief(saved.antwortbrief || null)
+          setScreen('result')
+        }
       } else {
         setError(t.err_verify)
       }
@@ -680,6 +719,9 @@ export default function Analyse() {
       const newCount = count + 1
       setCount(newCount)
       markFreeUsed(newCount)
+
+      // Vollständige Analyse speichern (für Upgrade-Flow)
+      saveFullResult(data.result, data.antwortbrief || null)
 
       // History speichern
       saveToHistory(data.result, data.result?.brieftyp || '')
@@ -1463,6 +1505,24 @@ export default function Analyse() {
           ════════════════════════════════════════ */}
           {screen === 'result' && result && !loading && (
             <div className="fade-in">
+
+              {/* Analyse gespeichert — Banner wenn nach Upgrade wiederhergestellt */}
+              {isPaid && planHatBrief(plan) && antwortbrief && (() => {
+                const saved = loadSavedResult()
+                const wasRestored = saved && (Date.now() - saved.savedAt < 30000) // innerhalb 30 Sek
+                return wasRestored ? (
+                  <div style={{
+                    background: 'rgba(76,175,130,0.08)', border: '1px solid rgba(76,175,130,0.3)',
+                    borderRadius: 10, padding: '10px 14px', marginBottom: 12,
+                    fontSize: 13, color: '#1A6A50', display: 'flex', alignItems: 'center', gap: 8,
+                  }}>
+                    ✅ {lang === 'de' ? 'Ihre Analyse wurde wiederhergestellt — der Antwortbrief ist bereit!' :
+                        lang === 'en' ? 'Your analysis has been restored — the reply letter is ready!' :
+                        lang === 'tr' ? 'Analiziniz geri yüklendi — yanıt mektubu hazır!' :
+                        '✅ Analyse wiederhergestellt!'}
+                  </div>
+                ) : null
+              })()}
 
               {/* Kürzungshinweis wenn Text zu lang war */}
               {wasTruncated && (
