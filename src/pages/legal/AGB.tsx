@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 import { Link } from 'react-router-dom'
 
 const S = {
@@ -26,7 +38,7 @@ export default function AGB() {
 
         <div style={S.card}>
           <h2 style={{ ...S.h2, marginTop: 0 }}>§ 1 Anbieter & Geltungsbereich</h2>
-          <p style={S.p}>Diese AGB gelten für die Nutzung des Online-Dienstes AmtsKlar, betrieben von Philipp Hofer, Fischerweg 7, 9434 Au, Schweiz (nachfolgend „Anbieter").</p>
+          <p style={S.p}>Diese AGB gelten für die Nutzung des Online-Dienstes AmtsKlar, betrieben von STAR:HORIZON LTD, Wilson Business Park Office 620, Manchester M40 8WN, England (Company Number: 13583376) (nachfolgend „Anbieter").</p>
           <p style={S.p}>AmtsKlar richtet sich an Verbraucher und Unternehmer mit Wohnsitz oder Sitz im deutschsprachigen Raum (Österreich, Deutschland, Schweiz).</p>
         </div>
 
@@ -55,6 +67,27 @@ export default function AGB() {
           <p style={S.p}>Verbraucher haben das Recht, diesen Vertrag binnen 14 Tagen ohne Angabe von Gründen zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.</p>
           <p style={S.p}>Durch die Inanspruchnahme der Leistung vor Ablauf der Widerrufsfrist stimmt der Verbraucher zu, dass das Widerrufsrecht nach vollständiger Vertragserfüllung erlischt.</p>
           <p style={S.p}>Widerruf per E-Mail an: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a></p>
+
+          <div style={{ background: '#F5F8FC', border: '1px solid #C5D8ED', borderRadius: 10, padding: '16px 20px', marginTop: 16 }}>
+            <p style={{ ...S.p, fontWeight: 600, marginBottom: 8 }}>Muster-Widerrufsformular (gemäß § 11 FAGG / Anhang I Teil B EU-Verbraucherrichtlinie):</p>
+            <p style={{ ...S.p, fontFamily: 'monospace', fontSize: 13, lineHeight: 1.9, whiteSpace: 'pre-line' }}>
+              {`An: STAR:HORIZON LTD, Wilson Business Park Office 620, Manchester M40 8WN, England
+E-Mail: info@amtsklar.at
+
+Ich/Wir (*) widerrufe(n) hiermit den von mir/uns (*) abgeschlossenen
+Vertrag über die Erbringung der folgenden Dienstleistung:
+
+AmtsKlar Abonnement (Paket: _______________)
+
+Bestellt am: _______________
+Name des/der Verbraucher(s): _______________
+Anschrift des/der Verbraucher(s): _______________
+Datum: _______________
+Unterschrift: _______________ (nur bei Mitteilung auf Papier)
+
+(*) Unzutreffendes streichen.`}
+            </p>
+          </div>
         </div>
 
         <div style={S.card}>
@@ -78,6 +111,29 @@ export default function AGB() {
             <li style={S.li}>Die kostenlose Testanalyse nicht durch technische Mittel zu umgehen</li>
             <li style={S.li}>Keine personenbezogenen Daten Dritter ohne deren Einwilligung einzugeben</li>
           </ul>
+        </div>
+
+        <div style={S.card}>
+          <h2 style={{ ...S.h2, marginTop: 0 }}>§ 6a Geistiges Eigentum & Urheberrecht</h2>
+          <p style={S.p}>
+            AmtsKlar und alle seine Bestandteile — insbesondere der Quellcode, die Benutzeroberfläche,
+            das Design, die Datenbank österreichischer Rechtsinformationen, die KI-Prompts,
+            die Übersetzungen sowie alle Texte und Grafiken — sind urheberrechtlich geschützt.
+            Copyright © 2025–2026 STAR:HORIZON LTD. Alle Rechte vorbehalten.
+          </p>
+          <p style={S.p}>Dem Nutzer ist ausdrücklich untersagt:</p>
+          <ul style={{ paddingLeft: 20 }}>
+            <li style={S.li}>Den Quellcode zu kopieren, zu dekompilieren, zu disassemblieren oder durch Reverse Engineering zu analysieren</li>
+            <li style={S.li}>Den Dienst oder wesentliche Teile davon nachzubauen, zu imitieren oder als Grundlage für eigene Produkte zu verwenden</li>
+            <li style={S.li}>Die KI-Prompts, Rechtsinhalt-Datenbank oder Übersetzungen zu extrahieren oder zu verwenden</li>
+            <li style={S.li}>Den Dienst ohne ausdrückliche schriftliche Genehmigung des Anbieters gewerblich weiterzuverwenden</li>
+            <li style={S.li}>Schutzvermerke, Copyright-Hinweise oder andere Eigentumshinweise zu entfernen oder zu verändern</li>
+          </ul>
+          <p style={S.p}>
+            Verstöße gegen diese Bestimmungen können zivil- und strafrechtlich verfolgt werden.
+            Der Anbieter behält sich ausdrücklich vor, bei Verletzung geistiger Eigentumsrechte
+            Unterlassungs-, Schadenersatz- und Gewinnherausgabeansprüche geltend zu machen.
+          </p>
         </div>
 
         <div style={S.card}>

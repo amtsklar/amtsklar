@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 import { useState, useRef, useEffect } from 'react'
 import { useLang, type LangCode } from '../i18n/LangContext'
 

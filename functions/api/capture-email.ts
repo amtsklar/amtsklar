@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 // AmtsKlar — E-Mail Capture Endpoint
 // Empfängt E-Mail-Adressen von Nutzern nach der kostenlosen Analyse
 // Sendet eine einfache Bestätigungs-E-Mail (benötigt Brevo/Resend API Key)

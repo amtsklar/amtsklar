@@ -153,5 +153,14 @@
     <a href="#main-content" style="position:absolute;left:-9999px;top:0;z-index:9999;background:#0F2440;color:#C9963A;padding:8px 16px;border-radius:0 0 8px 0;font-weight:700" class="skip-link">Zum Inhalt springen</a>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  </body>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .catch(() => {}) // Fehler ignorieren — kein Einfluss auf App
+      })
+    }
+  </script>
+</body>
 </html>

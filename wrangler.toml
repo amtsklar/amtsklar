@@ -3,7 +3,17 @@ pages_build_output_dir = "./dist"
 
 [vars]
 ENVIRONMENT = "production"
-VITE_PADDLE_CLIENT_TOKEN = "live_d14248bcda57483d19dcb846fed"
-VITE_PADDLE_PRICE_VERSTEHEN = "pri_01ksft9sb5nbptry9pyyd6q54y"
-VITE_PADDLE_PRICE_HANDELN = "pri_01ksftcj51p1jsmjk2pr0jbcat"
-VITE_PADDLE_PRICE_FAMILIE = "pri_01ksftg5nw1a2nztra644zhd5a"
+# WICHTIG: Sensible Tokens werden als Cloudflare Secrets gesetzt (NICHT hier!)
+# Secrets via CLI setzen:
+#   npx wrangler pages secret put ANTHROPIC_API_KEY
+#   npx wrangler pages secret put PADDLE_WEBHOOK_SECRET
+#   npx wrangler pages secret put PADDLE_API_KEY
+#   npx wrangler pages secret put BREVO_API_KEY
+
+# Öffentliche Paddle Preis-IDs (nicht sensitiv — können hier stehen)
+VITE_PADDLE_PRICE_VERSTEHEN_M = "pri_01ksft9sb5nbptry9pyyd6q54y"
+VITE_PADDLE_PRICE_HANDELN_M   = "pri_01ksftcj51p1jsmjk2pr0jbcat"
+VITE_PADDLE_PRICE_FAMILIE_M   = "pri_01ksftg5nw1a2nztra644zhd5a"
+VITE_PADDLE_PRICE_VERSTEHEN_Y = "pri_01kspy294ejb2cye55ahj4ypj1"
+VITE_PADDLE_PRICE_HANDELN_Y   = "pri_01kspy5h321a355ngn0qhjn5m4"
+VITE_PADDLE_PRICE_FAMILIE_Y   = "pri_01kspy9q00s8k4v4hsw6j3trmr"

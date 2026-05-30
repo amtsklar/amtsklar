@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 import { Link } from 'react-router-dom'
 
 const S = {
@@ -27,8 +39,8 @@ export default function Datenschutz() {
         <div style={S.card}>
           <h2 style={{ ...S.h2, marginTop: 0 }}>1. Verantwortlicher</h2>
           <p style={S.p}>
-            <strong>Philipp Hofer</strong><br />
-            Fischerweg 7, 9434 Au, Schweiz<br />
+            <strong>STAR:HORIZON LTD</strong><br />
+            Wilson Business Park, Office 620, Manchester M40 8WN, England<br />
             E-Mail: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a>
           </p>
         </div>

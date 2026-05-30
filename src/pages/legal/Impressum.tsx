@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 import { Link } from 'react-router-dom'
 
 const S = {
@@ -25,13 +37,36 @@ export default function Impressum() {
         <div style={S.card}>
           <h2 style={{ ...S.h2, marginTop: 0 }}>Betreiber</h2>
           <p style={S.p}>
-            <strong>Philipp Hofer</strong><br />
-            Fischerweg 7<br />
-            9434 Au<br />
-            Schweiz
+            <strong>STAR:HORIZON LTD</strong><br />
+            Wilson Business Park, Office 620<br />
+            Manchester M40 8WN<br />
+            England, United Kingdom
           </p>
           <p style={S.p}>
-            E-Mail: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a>
+            <strong>Company Number:</strong> 13583376<br />
+            <strong>Registered in England and Wales</strong><br />
+            <a
+              href="https://find-and-update.company-information.service.gov.uk/company/13583376"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#C9963A' }}
+            >
+              Companies House Eintrag →
+            </a>
+          </p>
+          <p style={S.p}>
+            <strong>Directors / Geschäftsführung:</strong><br />
+            Philipp Bekik &amp; Doris Sturmberger
+          </p>
+          <p style={S.p}>
+            E-Mail: <a href="mailto:info@amtsklar.at" style={{ color: '#C9963A' }}>info@amtsklar.at</a><br />
+            Website: <a href="https://www.amtsklar.at" style={{ color: '#C9963A' }}>www.amtsklar.at</a>
+          </p>
+          <p style={S.p}>
+            <strong>Unternehmensgegenstand:</strong> Betrieb eines Online-Informationsdienstes zur Erklärung österreichischer Behördenbriefe mittels KI-Technologie.
+          </p>
+          <p style={S.p}>
+            <strong>Hinweis gemäß § 5 ECG (Österreich):</strong> Der Anbieter ist kein zugelassener Rechtsdienstleister. Die Inhalte stellen keine Rechtsberatung dar.
           </p>
         </div>
 

@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 // AmtsKlar — Paddle Webhook Handler
 // Verarbeitet Subscription-Events und speichert Status in KV (oder als Cookie)
 // WICHTIG: PADDLE_WEBHOOK_SECRET als Cloudflare Secret hinterlegen

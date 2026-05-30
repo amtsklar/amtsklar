@@ -1,3 +1,15 @@
+/**
+ * AmtsKlar — Österreichische Behördenbriefe sofort verstehen
+ * Copyright © 2025-2026 STAR:HORIZON LTD
+ * Alle Rechte vorbehalten. All rights reserved.
+ *
+ * Unauthorized copying, modification, distribution or use of this
+ * software, via any medium, is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * www.amtsklar.at | info@amtsklar.at
+ */
+
 // ═══════════════════════════════════════════════════════════════════
 // AmtsKlar — Analyse API (Cloudflare Pages Function)
 // Vollständige österreichische Rechtsdatenbank: 82 Bereiche
@@ -714,20 +726,35 @@ So: explanations = ${langName}, reply letter content = ALWAYS German.\n\n`
     }.\n\nBrieftext:\n${text}`
   }
 
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-    },
-    body: JSON.stringify({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 4000,
-      system: systemPromptWithLang,
-      messages: [{ role: 'user', content: userContent }],
-    }),
-  })
+  // Timeout: 28 Sekunden (Cloudflare Workers Limit: 30s)
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 28000)
+
+  let response: Response
+  try {
+    response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-5',  // Sonnet: bessere Qualität für Rechtsinformationen
+        max_tokens: 4000,
+        system: systemPromptWithLang,
+        messages: [{ role: 'user', content: userContent }],
+      }),
+      signal: controller.signal,
+    })
+  } catch (e: any) {
+    if (e?.name === 'AbortError') {
+      throw new Error('TIMEOUT: Die Analyse hat zu lange gedauert. Bitte versuche es nochmal.')
+    }
+    throw e
+  } finally {
+    clearTimeout(timeoutId)
+  }
 
   if (!response.ok) {
     const err = await response.text()
