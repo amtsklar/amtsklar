@@ -745,7 +745,12 @@ export default function Analyse() {
       }
 
     } catch (e: any) {
-      setError(e.message || 'Analyse fehlgeschlagen. Bitte erneut versuchen.')
+      const msg = e.message || ''
+      if (msg.includes('Kostenlose') || msg.includes('bereits genutzt')) {
+        setShowPaywall(true)
+      } else {
+        setError(msg || 'Analyse fehlgeschlagen. Bitte erneut versuchen.')
+      }
     } finally {
       setLoading(false)
     }
