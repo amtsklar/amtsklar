@@ -471,6 +471,13 @@ script.onerror = () => {
   console.error('Paddle.js konnte nicht geladen werden')
 }
 document.head.appendChild(script)
+    }
+  }
+}
+script.onerror = () => {
+  console.error('Paddle.js konnte nicht geladen werden')
+}
+document.head.appendChild(script)
 
     // Nach erfolgreicher Paddle-Zahlung: Plan aus URL lesen
     // HashRouter: params sind im hash (#/analyse?success=1&plan=handeln)
