@@ -504,7 +504,7 @@ export default function Analyse() {
     const priceId = prices[selectedPlan]
 
     // Paddle bereit und Price ID vorhanden → Checkout öffnen
-    if (paddleReady && (window as any).Paddle && priceId) {
+    if ((window as any).Paddle && priceId) {
       ;(window as any).Paddle.Checkout.open({
         items: [{ priceId, quantity: 1 }],
         customer: email ? { email } : undefined,
