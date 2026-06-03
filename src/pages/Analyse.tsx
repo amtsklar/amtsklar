@@ -464,13 +464,7 @@ script.onload = () => {
       ;(window as any).Paddle.Initialize({ token })
     } catch (e) {
       console.error('Paddle init failed:', e)
-    }
-  }
-}
-script.onerror = () => {
-  console.error('Paddle.js konnte nicht geladen werden')
-}
-document.head.appendChild(script)
+ 
     }
  
 
