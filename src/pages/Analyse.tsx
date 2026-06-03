@@ -454,16 +454,23 @@ export default function Analyse() {
     } catch { /* ignore */ }
 
     // Paddle.js dynamisch laden
-    const script = document.createElement('script')
-    script.src = 'https://cdn.paddle.com/paddle/v2/paddle.js'
-    script.onload = () => {
-      const token = import.meta.env.VITE_PADDLE_CLIENT_TOKEN
-      if (token && (window as any).Paddle) {
-        ;(window as any).Paddle.Initialize({ token })
-        setPaddleReady(true)
-      }
+const script = document.createElement('script')
+script.src = 'https://cdn.paddle.com/paddle/v2/paddle.js'
+script.async = true
+script.onload = () => {
+  const token = import.meta.env.VITE_PADDLE_CLIENT_TOKEN
+  if (token && (window as any).Paddle) {
+    try {
+      ;(window as any).Paddle.Initialize({ token })
+    } catch (e) {
+      console.error('Paddle init failed:', e)
     }
-    document.head.appendChild(script)
+  }
+}
+script.onerror = () => {
+  console.error('Paddle.js konnte nicht geladen werden')
+}
+document.head.appendChild(script)
 
     // Nach erfolgreicher Paddle-Zahlung: Plan aus URL lesen
     // HashRouter: params sind im hash (#/analyse?success=1&plan=handeln)
