@@ -721,7 +721,8 @@ export default function Analyse() {
       })
 
       const data = await res.json()
-      if (!res.ok || data.error) throw new Error(data.error || 'Unbekannter Fehler')
+      if (res.status === 429) { setShowPaywall(true); setLoading(false); return }
+if (!res.ok || data.error) throw new Error(data.error || 'Unbekannter Fehler')
 
       setResult(data.result)
       setAntwortbrief(data.antwortbrief || null)
