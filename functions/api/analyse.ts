@@ -740,7 +740,7 @@ So: explanations = ${langName}, reply letter content = ALWAYS German.\n\n`
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-6',  // Sonnet: bessere Qualität für Rechtsinformationen
+        model: 'claude-sonnet-latest',  // Sonnet: bessere Qualität für Rechtsinformationen
         max_tokens: 4000,
         system: systemPromptWithLang,
         messages: [{ role: 'user', content: userContent }],
