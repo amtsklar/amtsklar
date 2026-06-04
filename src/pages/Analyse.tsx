@@ -431,7 +431,7 @@ export default function Analyse() {
       ;(window as any).Paddle.Checkout.open({
         items: [{ priceId, quantity: 1 }],
         customer: email ? { email } : undefined,
-        successUrl: `${window.location.origin}/#/analyse?success=1&plan=${selectedPlan}`,
+        successUrl: `https://amtsklar.pages.dev/#/analyse?success=1&plan=${selectedPlan}`,
       })
       return
     }
