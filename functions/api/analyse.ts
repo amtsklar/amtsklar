@@ -815,7 +815,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       const currentCount = ipUsageMap.get(clientIp)?.count || 0
 
       // Harte Grenze: mehr als 5 Versuche pro IP in 24h → auch bei Paid-Flag blockieren
-      if (currentCount >= 5) {
+      if (currentCount >= 50) {
         return new Response(
           JSON.stringify({ error: 'Zu viele Anfragen. Bitte in 24 Stunden erneut versuchen.' }),
           { status: 429, headers: { 'Content-Type': 'application/json' } }
