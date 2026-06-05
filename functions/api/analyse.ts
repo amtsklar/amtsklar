@@ -15,7 +15,7 @@ interface Env {
 }
 
 const ipUsageMap = new Map<string, { count: number; firstSeen: number }>()
-const SERVER_FREE_LIMIT = 999
+const SERVER_FREE_LIMIT = 1
 const RESET_AFTER_MS = 24 * 60 * 60 * 1000
 
 const SYSTEM_PROMPT = `Du bist AmtsKlar, der führende österreichische Rechtsinformationsassistent.
