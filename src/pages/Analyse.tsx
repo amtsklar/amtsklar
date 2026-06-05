@@ -1502,7 +1502,138 @@ export default function Analyse() {
                   {lang === 'de' ? 'Teilen' : lang === 'en' ? 'Share' : lang === 'tr' ? 'Paylaş' : lang === 'it' ? 'Condividi' : lang === 'ru' ? 'Поделиться' : lang === 'pl' ? 'Udostępnij' : 'Teilen'}
                 </a>
 
-                <button onClick={() => window.print()} style={{ flex: 1, minWidth: 140, background: '#F5F8FC', border: '1.5px solid #C5D8ED', borderRadius: 10, padding: '11px', fontSize: 13, fontWeight: 600, color: '#2A5080', cursor: 'pointer' }}>
+                <button
+  onClick={() => {
+    if (!result) return
+    const html = `<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>AmtsKlar Analyse — ${result.brieftyp}</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, serif; background: #fff; color: #1A3A5C; padding: 40px; max-width: 720px; margin: 0 auto; }
+  .header { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #C9963A; padding-bottom: 16px; margin-bottom: 28px; }
+  .logo { font-size: 24px; font-weight: 700; }
+  .logo span { color: #C9963A; }
+  .logo-sub { font-size: 10px; color: #4A6A90; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; font-family: sans-serif; }
+  .date { font-size: 12px; color: #6A8AAA; font-family: sans-serif; }
+  .badge { display: inline-block; background: rgba(201,150,58,0.12); border: 1px solid rgba(201,150,58,0.3); border-radius: 6px; padding: 4px 12px; font-size: 13px; color: #C9963A; font-family: sans-serif; margin-bottom: 6px; }
+  .behoerde { font-size: 12px; color: #4A6A90; font-family: sans-serif; margin-bottom: 20px; }
+  .urgency { display: inline-block; border-radius: 6px; padding: 5px 12px; font-size: 12px; font-weight: 700; font-family: sans-serif; margin-bottom: 20px; }
+  .urgency.hoch { background: rgba(224,82,82,0.1); color: #E05252; border: 1px solid rgba(224,82,82,0.3); }
+  .urgency.mittel { background: rgba(212,148,58,0.1); color: #D4943A; border: 1px solid rgba(212,148,58,0.3); }
+  .urgency.niedrig { background: rgba(76,175,130,0.1); color: #4CAF82; border: 1px solid rgba(76,175,130,0.3); }
+  .section { margin-bottom: 24px; }
+  .section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #4A6A90; font-family: sans-serif; margin-bottom: 8px; }
+  .section-content { font-size: 14px; line-height: 1.75; color: #1A3A5C; }
+  .action-box { background: #FFF8EC; border: 2px solid #C9963A; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px; }
+  .action-title { font-size: 18px; font-weight: 700; color: #0F2440; margin-bottom: 8px; }
+  .action-when { font-size: 13px; color: #C9963A; font-family: sans-serif; margin-bottom: 4px; }
+  .frist-box { background: #FEF2F2; border: 1.5px solid rgba(224,82,82,0.3); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; }
+  .frist-text { font-size: 20px; font-weight: 700; color: #E05252; margin-bottom: 4px; }
+  .step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+  .step-num { width: 24px; height: 24px; background: linear-gradient(135deg,#B8832A,#D4A84B); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #fff; flex-shrink: 0; font-family: sans-serif; }
+  .step-text { font-size: 14px; line-height: 1.65; color: #1A3A5C; padding-top: 2px; }
+  .hinweis-item { display: flex; gap: 10px; margin-bottom: 10px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #C9963A; flex-shrink: 0; margin-top: 7px; }
+  .letter-box { background: #FFFDF5; border: 1.5px solid rgba(201,150,58,0.4); border-radius: 10px; padding: 18px; margin-bottom: 20px; }
+  .letter-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #C9963A; font-family: sans-serif; margin-bottom: 12px; }
+  .letter-block { background: #F5F8FC; border: 1px solid #C5D8ED; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.75; color: #1A3A5C; white-space: pre-line; margin-bottom: 10px; }
+  .footer { border-top: 1px solid #C5D8ED; padding-top: 16px; margin-top: 32px; font-size: 11px; color: #6A8AAA; font-family: sans-serif; line-height: 1.6; text-align: center; }
+  @media print {
+    body { padding: 20px; }
+    button { display: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="logo">Amts<span>Klar</span></div>
+      <div class="logo-sub">Österreich · Behördenbriefe sofort verstehen</div>
+    </div>
+    <div class="date">Analyse vom ${new Date().toLocaleDateString('de-AT', { day: '2-digit', month: '2-digit', year: 'numeric' })}</div>
+  </div>
+
+  <div class="badge">📄 ${result.brieftyp}</div>
+  <div class="behoerde">Von: ${result.behoerde}</div>
+  <div class="urgency ${result.dringlichkeit}">${result.dringlichkeit === 'hoch' ? '⚠️ Dringend' : result.dringlichkeit === 'mittel' ? '⏰ Mittlere Dringlichkeit' : '✓ Keine Eile'}</div>
+
+  <div class="action-box">
+    <div class="section-label">Ihre Pflichtaktion</div>
+    <div class="action-title">${result.handlungsempfehlung?.aktion || ''}</div>
+    ${result.handlungsempfehlung?.bis_wann ? `<div class="action-when">🗓 Bis: ${result.handlungsempfehlung.bis_wann}</div>` : ''}
+    ${result.handlungsempfehlung?.wie ? `<div style="font-size:13px;color:#2A5080;font-family:sans-serif;margin-top:8px;line-height:1.6;">${result.handlungsempfehlung.wie}</div>` : ''}
+  </div>
+
+  ${result.frist?.hat_frist ? `
+  <div class="frist-box">
+    <div class="section-label">Frist</div>
+    <div class="frist-text">${result.frist.frist_text}</div>
+    ${result.frist.frist_hinweis ? `<div style="font-size:13px;color:#1A3A5C;font-family:sans-serif;">${result.frist.frist_hinweis}</div>` : ''}
+  </div>` : ''}
+
+  <div class="section">
+    <div class="section-label">Was bedeutet dieser Brief?</div>
+    <div class="section-content">${result.einfache_erklaerung}</div>
+  </div>
+
+  ${result.was_tun?.length > 0 ? `
+  <div class="section">
+    <div class="section-label">Was sollen Sie tun?</div>
+    ${result.was_tun.map((s: string, i: number) => `
+    <div class="step">
+      <div class="step-num">${i + 1}</div>
+      <div class="step-text">${s.replace(/^Schritt\s*\d+[.:]\s*/i, '')}</div>
+    </div>`).join('')}
+  </div>` : ''}
+
+  ${result.wichtige_hinweise?.length > 0 ? `
+  <div class="section">
+    <div class="section-label">Wichtige Hinweise</div>
+    ${result.wichtige_hinweise.map((h: string) => `
+    <div class="hinweis-item">
+      <div class="dot"></div>
+      <div style="font-size:14px;color:#1A3A5C;line-height:1.6;">${h}</div>
+    </div>`).join('')}
+  </div>` : ''}
+
+  ${result.beratungsstellen?.length > 0 ? `
+  <div class="section">
+    <div class="section-label">Beratungsstellen</div>
+    ${result.beratungsstellen.map((b: string) => `<div style="font-size:13px;color:#1A3A5C;margin-bottom:6px;font-family:sans-serif;">🏛️ ${b}</div>`).join('')}
+  </div>` : ''}
+
+  ${antwortbrief ? `
+  <div class="letter-box">
+    <div class="letter-label">✉️ Ihr Antwortbrief (AmtsKlar ${plan}-Paket)</div>
+    <div class="letter-block">${antwortbrief.empfaenger_block}</div>
+    <div style="font-size:12px;font-weight:700;color:#4A6A90;font-family:sans-serif;margin-bottom:4px;">Betreff</div>
+    <div class="letter-block">${antwortbrief.betreff}</div>
+    <div style="font-size:12px;font-weight:700;color:#4A6A90;font-family:sans-serif;margin-bottom:4px;">Inhalt</div>
+    <div class="letter-block">${antwortbrief.inhalt}</div>
+    <div style="font-size:11px;color:#C9963A;font-family:sans-serif;line-height:1.6;">💡 ${antwortbrief.hinweis}</div>
+  </div>` : ''}
+
+  <div class="footer">
+    ⚖️ <strong>Rechtlicher Hinweis:</strong> Diese Analyse ist eine automatisierte KI-Auswertung und ersetzt keine Rechtsberatung.<br>
+    AmtsKlar · STAR:HORIZON LTD · www.amtsklar.at · info@amtsklar.at
+  </div>
+
+  <script>window.onload = () => window.print();<\/script>
+</body>
+</html>`
+    const win = window.open('', '_blank')
+    if (win) {
+      win.document.write(html)
+      win.document.close()
+    }
+  }}
+  style={{ flex: 1, minWidth: 140, background: '#F5F8FC', border: '1.5px solid #C5D8ED', borderRadius: 10, padding: '11px', fontSize: 13, fontWeight: 600, color: '#2A5080', cursor: 'pointer' }}
+>
+  📄 {lang === 'de' ? 'Als PDF speichern' : lang === 'en' ? 'Save as PDF' : lang === 'tr' ? 'PDF olarak kaydet' : 'Save PDF'}
+</button> style={{ flex: 1, minWidth: 140, background: '#F5F8FC', border: '1.5px solid #C5D8ED', borderRadius: 10, padding: '11px', fontSize: 13, fontWeight: 600, color: '#2A5080', cursor: 'pointer' }}>
                   🖨️ {lang === 'de' ? 'Als PDF speichern' : lang === 'en' ? 'Save as PDF' : lang === 'tr' ? 'PDF olarak kaydet' : 'Save PDF'}
                 </button>
 
