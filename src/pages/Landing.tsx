@@ -421,7 +421,7 @@ export default function Landing() {
           )}
         </div>
 
-        {/* 3 Preiskarten — gleiche Höhe, alle Features sichtbar */}
+        {/* 3 Preiskarten */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20, alignItems: 'stretch' }}>
 
           {/* ── VERSTEHEN ── */}
@@ -597,6 +597,7 @@ export default function Landing() {
       </section>
 
       </main>
+
       {/* ── FOOTER ── */}
       <footer style={{
         borderTop: '1px solid #C5D8ED', padding: '20px 24px',
@@ -607,11 +608,12 @@ export default function Landing() {
         <div style={{ fontSize: 13, color: '#6A8AAA' }}>
           © {new Date().getFullYear()} AmtsKlar · {t.logo_sub}
         </div>
-        <div style={{ display: 'flex', gap: 20, fontSize: 13 }}>
+        <div style={{ display: 'flex', gap: 20, fontSize: 13, flexWrap: 'wrap' }}>
           {[
-            { label: t.footer_impressum, path: '/impressum' },
+            { label: t.footer_impressum,   path: '/impressum' },
             { label: t.footer_datenschutz, path: '/datenschutz' },
-            { label: t.footer_agb, path: '/agb' },
+            { label: t.footer_agb,         path: '/agb' },
+            { label: 'Widerruf & Refund',  path: '/widerruf' },
           ].map(l => (
             <Link key={l.label} to={l.path} style={{ color: '#6A8AAA', textDecoration: 'none' }}>
               {l.label}
