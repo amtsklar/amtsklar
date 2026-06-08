@@ -282,7 +282,7 @@ export default function Analyse() {
     const prices = yearlyBilling ? PADDLE_PRICES_YEARLY : PADDLE_PRICES_MONTHLY
     const priceId = prices[selectedPlan]
     if ((window as any).Paddle && priceId) {
-      ;(window as any).Paddle.Checkout.open({ items: [{ priceId, quantity: 1 }], customer: email ? { email } : undefined, successUrl: `https://amtsklar.pages.dev/#/analyse?success=1&plan=${selectedPlan}` })
+      ;(window as any).Paddle.Checkout.open({ items: [{ priceId, quantity: 1 }], customer: email ? { email } : undefined, successUrl: `https://amtsklar.at/#/analyse?success=1&plan=${selectedPlan}` })
       return
     }
     setError(t.err_payment); setShowPaywall(false)
