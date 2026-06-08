@@ -259,7 +259,7 @@ export default function Analyse() {
     script.onload = () => {
       const token = import.meta.env.VITE_PADDLE_CLIENT_TOKEN
       if (token && (window as any).Paddle) {
-        try { ;(window as any).Paddle.Initialize({ token, environment: 'sandbox' }) } catch (e) { console.error('Paddle init failed:', e) }
+        try { ;(window as any).Paddle.Initialize({ token }) } catch (e) { console.error('Paddle init failed:', e) }
       }
     }
     script.onerror = () => console.error('Paddle.js konnte nicht geladen werden')
