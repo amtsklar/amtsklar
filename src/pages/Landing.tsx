@@ -206,8 +206,8 @@ export default function Landing() {
         <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 28, flexWrap: 'wrap' }}>
           {[
             { num: '82', label: t.badge.split('·').pop()?.trim() || 'Rechtsbereiche' },
-            { num: '12', label: 'Sprachen' },
-            { num: 'gratis', label: '1. Analyse' },
+            { num: '12', label: '🌍' },
+            { num: '✓', label: t.hero_free.split('·')[0].trim() },
           ].map(({ num, label }) => (
             <div key={num} style={{ textAlign: 'center' }}>
               <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 22, fontWeight: 700, color: '#0F2440' }}>{num}</div>
