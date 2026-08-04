@@ -299,29 +299,30 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         || context.request.headers.get('X-Forwarded-For')?.split(',')[0]?.trim()
         || 'unknown'
 
-      const now = Date.now()
-      const ipData = ipUsageMap.get(clientIp)
+      const limitReached = () => new Response(
+        JSON.stringify({ error: 'Kostenlose Analyse bereits genutzt. Bitte Paket waehlen um fortzufahren.' }),
+        { status: 429, headers: { 'Content-Type': 'application/json' } }
+      )
 
-      if (ipData && (now - ipData.firstSeen) > RESET_AFTER_MS) {
-        ipUsageMap.delete(clientIp)
+      // Persistentes Gratis-Limit ueber Cloudflare KV, falls Binding RATE_LIMIT_KV vorhanden.
+      // Ohne Binding: Fallback auf In-Memory (bisheriges Verhalten) -> nichts bricht.
+      const kv = (context.env as any).RATE_LIMIT_KV
+      if (kv) {
+        const key = `free:${clientIp}`
+        const used = parseInt((await kv.get(key)) || '0', 10)
+        if (used >= SERVER_FREE_LIMIT) return limitReached()
+        await kv.put(key, String(used + 1), { expirationTtl: Math.floor(RESET_AFTER_MS / 1000) })
+      } else {
+        const now = Date.now()
+        const ipData = ipUsageMap.get(clientIp)
+        if (ipData && (now - ipData.firstSeen) > RESET_AFTER_MS) ipUsageMap.delete(clientIp)
+        const currentCount = ipUsageMap.get(clientIp)?.count || 0
+        if (currentCount >= SERVER_FREE_LIMIT) return limitReached()
+        ipUsageMap.set(clientIp, { count: currentCount + 1, firstSeen: ipData?.firstSeen || now })
       }
-
-      const currentCount = ipUsageMap.get(clientIp)?.count || 0
-
-      if (currentCount >= SERVER_FREE_LIMIT) {
-        return new Response(
-          JSON.stringify({ error: 'Kostenlose Analyse bereits genutzt. Bitte Paket wählen um fortzufahren.' }),
-          { status: 429, headers: { 'Content-Type': 'application/json' } }
-        )
-      }
-
-      ipUsageMap.set(clientIp, {
-        count: currentCount + 1,
-        firstSeen: ipData?.firstSeen || now,
-      })
     }
 
-    if (!hasBriefText && !hasBriefImage) {
+        if (!hasBriefText && !hasBriefImage) {
       return new Response(
         JSON.stringify({ error: 'Bitte Brieftext einfügen oder Foto/PDF hochladen.' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
