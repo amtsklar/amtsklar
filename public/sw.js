@@ -1,7 +1,7 @@
 // AmtsKlar Service Worker — Offline Support
 // Copyright © 2025-2026 STAR:HORIZON LTD
 
-const CACHE = 'amtsklar-v1'
+const CACHE = 'amtsklar-v2'
 const OFFLINE_PAGE = '/offline.html'
 
 // Assets die gecacht werden
