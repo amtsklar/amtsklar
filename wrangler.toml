@@ -10,3 +10,7 @@ VITE_PADDLE_PRICE_FAMILIE   = "pri_01ksftg5nw1a2nztra644zhd5a"
 VITE_PADDLE_PRICE_VERSTEHEN_Y = "pri_01kspy294ejb2cye55ahj4ypj1"
 VITE_PADDLE_PRICE_HANDELN_Y   = "pri_01kspy5h321a355ngn0qhjn5m4"
 VITE_PADDLE_PRICE_FAMILIE_Y   = "pri_01kspy9q00s8k4v4hsw6j3trmr"
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "fc45f3c652f04bf3b9afabb53f7fe35e"
