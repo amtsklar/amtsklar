@@ -205,9 +205,9 @@ export default function Landing() {
         {/* Social Proof Counter */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 28, flexWrap: 'wrap' }}>
           {[
-            { num: '12.400+', label: t.feat_sub.split(' ').slice(-1)[0] === 'Antwortbrief' ? 'Analysen' : 'Analyses' },
-            { num: '4,9 ★', label: t.beta },
             { num: '82', label: t.badge.split('·').pop()?.trim() || 'Rechtsbereiche' },
+            { num: '12', label: 'Sprachen' },
+            { num: 'gratis', label: '1. Analyse' },
           ].map(({ num, label }) => (
             <div key={num} style={{ textAlign: 'center' }}>
               <div style={{ fontFamily: 'Libre Baskerville,serif', fontSize: 22, fontWeight: 700, color: '#0F2440' }}>{num}</div>
@@ -273,59 +273,6 @@ export default function Landing() {
 
       {/* ── TESTIMONIALS ── */}
       <section style={{ maxWidth: 960, margin: '0 auto 80px', padding: '0 24px' }}>
-
-        <h2 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: 30, fontWeight: 700, marginBottom: 8, color: '#0F2440' }}>
-          {t.testi_title}
-        </h2>
-        <p style={{ textAlign: 'center', color: '#2A5080', fontSize: 15, marginBottom: 12 }}>
-          {t.testi_sub}
-        </p>
-
-        {/* Sterne-Bewertung gesamt */}
-        <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8,
-            background: 'rgba(201,150,58,0.1)', border: '1px solid rgba(201,150,58,0.25)',
-            borderRadius: 24, padding: '8px 20px' }}>
-            <span style={{ color: '#C9963A', fontSize: 18, letterSpacing: 2 }}>★★★★★</span>
-            <span style={{ fontSize: 14, fontWeight: 700, color: '#0F2440' }}>4,9 / 5</span>
-            <span style={{ fontSize: 13, color: '#6A8AAA' }}>· {t.beta}</span>
-          </div>
-        </div>
-
-        {/* 6 Testimonials in 2 Reihen à 3 */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
-
-          {(() => {
-            const colors = [
-              ['#4A90C4','#2A5080'], ['#4CAF82','#2A8A5A'], ['#C9963A','#8B6020'],
-              ['#7B5EA7','#4A3070'], ['#E07850','#A04020'], ['#3A9AAA','#1A6070'],
-            ]
-            return t.testimonials.map((item, i) => {
-              const [c1, c2] = colors[i % colors.length]
-              return (
-            <div key={i} style={{ background: '#FFFFFF', border: '1px solid #C5D8ED', borderRadius: 16, padding: '24px 20px' }}>
-              <div style={{ color: '#C9963A', fontSize: 16, letterSpacing: 2, marginBottom: 14 }}>★★★★★</div>
-              <p style={{ fontSize: 14, color: '#1A3A5C', lineHeight: 1.7, marginBottom: 18, fontStyle: 'italic' }}>
-                {item.text}
-              </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <div style={{
-                  width: 42, height: 42, borderRadius: '50%',
-                  background: `linear-gradient(135deg,${c1},${c2})`,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: 16, fontWeight: 700, color: '#FFFFFF', flexShrink: 0,
-                }}>{item.initial}</div>
-                <div>
-                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0F2440' }}>{item.name}</div>
-                  <div style={{ fontSize: 12, color: '#6A8AAA' }}>{item.ort}</div>
-                </div>
-              </div>
-            </div>
-              )
-            })
-          })()}
-
-        </div>
 
         {/* Foto-Upload Highlight */}
         <div style={{
