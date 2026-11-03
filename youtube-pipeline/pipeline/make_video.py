@@ -298,11 +298,10 @@ def stage_images_pixabay(project):
                 for v in pixabay("videos", q):
                     if f"v{v['id']}" in used or v.get("duration", 0) < 5:
                         continue
-                    f = v["videos"].get("large") or {}
-                    if not f.get("url") or f.get("width", 0) < 1280:
-                        f = v["videos"].get("medium") or {}
-                    if not f.get("url") or f.get("width", 0) < 1280:
+                    sizes = [f for f in v["videos"].values() if f.get("url") and 1280 <= f.get("width", 0) <= 1920]
+                    if not sizes:
                         continue
+                    f = max(sizes, key=lambda f: f["width"])
                     name = f"s{i:02d}_{k}.mp4"
                     try:
                         (img_dir / name).write_bytes(http_get(f["url"], 180))
