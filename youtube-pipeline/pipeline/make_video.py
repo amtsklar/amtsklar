@@ -339,7 +339,153 @@ def stage_images_pixabay(project):
         print(f"  media s{i:02d}: {k}/{need}  ({sc['query']})")
 
 
+WM_UA = "ROOTEDVideoPipeline/1.0 (https://github.com/amtsklar/amtsklar; educational workshop)"
+
+
+def wm_get(url, timeout=40):
+    req = urllib.request.Request(url, headers={"User-Agent": WM_UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
+
+
+def wikimedia_search(query, limit=25):
+    q = urllib.parse.urlencode({"q": f"{query} filetype:bitmap", "limit": limit})
+    for attempt in range(3):
+        try:
+            return json.loads(wm_get(f"https://api.wikimedia.org/core/v1/commons/search/page?{q}"))["pages"]
+        except Exception as e:
+            print("  wikimedia retry", query, e)
+            time.sleep(5 * (attempt + 1))
+    return []
+
+
+def wikimedia_thumb(file_key):
+    """Standard-size thumbnail URLs (1920 then 1280) on upload.wikimedia.org."""
+    import hashlib
+    name = file_key.split(":", 1)[1].replace(" ", "_")
+    h = hashlib.md5(name.encode()).hexdigest()
+    enc = urllib.parse.quote(name)
+    for w in (1920, 1280):
+        yield f"https://upload.wikimedia.org/wikipedia/commons/thumb/{h[0]}/{h[:2]}/{enc}/{w}px-{enc}"
+
+
+def stage_images_wikimedia(project):
+    """Free-licensed photos from Wikimedia Commons (CC BY / BY-SA / PD) - credits go in the description."""
+    from PIL import Image
+    cfg, b = load(project), build_dir(project)
+    tl = json.loads((b / "timeline.json").read_text())["scenes"]
+    img_dir = b / "images"
+    img_dir.mkdir(exist_ok=True)
+    credits_path = b / "credits.json"
+    credits = json.loads(credits_path.read_text()) if credits_path.exists() else {}
+    used = {c["id"] for c in credits.values()}
+    for i, sc in enumerate(cfg["scenes"]):
+        need = max(1, math.ceil((tl[i]["dur"] + tl[i]["gap"]) / CLIP_MAX))
+        k = len(list(img_dir.glob(f"s{i:02d}_*")))
+        queries = list(dict.fromkeys([sc["query"]] + sc.get("fallback", []) + [" ".join(sc["query"].split()[-2:])]))
+        for q in queries:
+            if k >= need:
+                break
+            for page in wikimedia_search(q):
+                if k >= need:
+                    break
+                key = page["key"]
+                if key in used or not re.search(r"\.(jpe?g|png)$", key, re.I):
+                    continue
+                im = None
+                for url in wikimedia_thumb(key):
+                    try:
+                        im = Image.open(BytesIO(wm_get(url)))
+                        break
+                    except Exception:
+                        im = None
+                if im is None or im.width < 1200 or im.width / im.height < 1.25:
+                    continue
+                name = f"s{i:02d}_{k}.jpg"
+                cover(im, 2560, 1440).save(img_dir / name, quality=90)
+                used.add(key)
+                excerpt = re.sub(r"<[^>]+>", "", page.get("excerpt") or "")
+                credits[name] = {"id": key, "title": page.get("title", "").removeprefix("File:"),
+                                 "creator": "see file page", "license": "Wikimedia Commons (free licence)",
+                                 "url": "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(key),
+                                 "excerpt": excerpt[:200], "query": q}
+                k += 1
+                credits_path.write_text(json.dumps(credits, indent=1))
+                time.sleep(0.5)
+        print(f"  media s{i:02d}: {k}/{need}  ({sc['query']})")
+
+
+def stage_pool(project, per_tag=8):
+    """Editor workflow: download candidate photos per topic (cfg['pool'] = {tag: query}) into build/pool/.
+    A human/agent then reviews contact sheets and assigns them to scenes via scene['images']."""
+    from PIL import Image
+    cfg, b = load(project), build_dir(project)
+    pool = b / "pool"
+    pool.mkdir(exist_ok=True)
+    cpath = b / "pool_credits.json"
+    credits = json.loads(cpath.read_text()) if cpath.exists() else {}
+    used = {c["id"] for c in credits.values()}
+    for tag, query in cfg.get("pool", {}).items():
+        k = len(list(pool.glob(f"{tag}_*.jpg")))
+        if k >= per_tag:
+            continue
+        pages = []
+        for attempt in range(5):
+            try:
+                q = urllib.parse.urlencode({"q": f"{query} filetype:bitmap", "limit": 40})
+                pages = json.loads(wm_get(f"https://api.wikimedia.org/core/v1/commons/search/page?{q}"))["pages"]
+                break
+            except Exception as e:
+                print("  wait (rate limit)", tag, e)
+                time.sleep(20 * (attempt + 1))
+        for page in pages:
+            if k >= per_tag:
+                break
+            key = page["key"]
+            if key in used or not re.search(r"\.(jpe?g|png)$", key, re.I):
+                continue
+            im = None
+            for url in wikimedia_thumb(key):
+                try:
+                    im = Image.open(BytesIO(wm_get(url)))
+                    break
+                except Exception:
+                    im = None
+            if im is None or im.width < 1200 or im.width / im.height < 1.25:
+                continue
+            name = f"{tag}_{k}"
+            cover(im, 2560, 1440).save(pool / f"{name}.jpg", quality=90)
+            used.add(key)
+            credits[name] = {"id": key, "title": page.get("title", "").removeprefix("File:"),
+                             "url": "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(key)}
+            cpath.write_text(json.dumps(credits, indent=1))
+            k += 1
+        print(f"  pool {tag}: {k} ({query})")
+        time.sleep(4)
+
+
+def stage_assign(project):
+    """Copy the reviewed pool photos listed in scene['images'] into build/images/ for rendering."""
+    import shutil
+    cfg, b = load(project), build_dir(project)
+    img_dir = b / "images"
+    if img_dir.exists():
+        shutil.rmtree(img_dir)
+    img_dir.mkdir()
+    pc = json.loads((b / "pool_credits.json").read_text())
+    credits = {}
+    for i, sc in enumerate(cfg["scenes"]):
+        for k, name in enumerate(sc.get("images", [])):
+            dst = f"s{i:02d}_{k}.jpg"
+            shutil.copy(b / "pool" / f"{name}.jpg", img_dir / dst)
+            credits[dst] = {**pc[name], "creator": "see file page", "license": "Wikimedia Commons (free licence)"}
+    (b / "credits.json").write_text(json.dumps(credits, indent=1))
+    print(f"assign: {len(credits)} images")
+
+
 def stage_images(project):
+    if os.environ.get("IMAGE_SOURCE") == "wikimedia":
+        return stage_images_wikimedia(project)
     if os.environ.get("PIXABAY_API_KEY"):
         return stage_images_pixabay(project)
     if os.environ.get("PEXELS_API_KEY"):
@@ -507,7 +653,8 @@ def stage_meta(project):
     print("meta:", b / "metadata.md")
 
 
-STAGES = {"voice": stage_voice, "images": stage_images, "render": stage_render,
+STAGES = {"voice": stage_voice, "images": stage_images, "pool": stage_pool, "assign": stage_assign,
+          "render": stage_render,
           "thumbs": stage_thumbs, "meta": stage_meta}
 
 if __name__ == "__main__":

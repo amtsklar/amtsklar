@@ -231,5 +231,33 @@
    "black walnut juglone",
    "mulching leaves lawn"
   ]
+ },
+ "pool": {
+  "rake": "leaf rake",
+  "leafpile": "pile of leaves garden",
+  "fallen": "fallen leaves ground",
+  "maple": "maple leaves autumn",
+  "oak": "oak leaves autumn",
+  "walnut": "juglans nigra leaves",
+  "forest": "forest floor leaf litter",
+  "leafmold": "leaf mould",
+  "compost": "compost heap",
+  "compostbin": "compost bin garden",
+  "mower": "lawn mower leaves",
+  "lawn": "lawn autumn",
+  "mulch": "mulch garden bed",
+  "gardenbed": "vegetable garden bed",
+  "cardboard": "sheet mulching cardboard",
+  "worm": "earthworm",
+  "soil": "humus soil",
+  "leafbags": "bags of leaves",
+  "hose": "watering garden hose",
+  "wire": "chicken wire",
+  "coffee": "used coffee grounds",
+  "garlic": "garlic plants",
+  "tree": "autumn tree",
+  "shed": "garden shed",
+  "roots": "tree roots",
+  "sunset": "garden evening light"
  }
 }
