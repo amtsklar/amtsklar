@@ -5,7 +5,7 @@ Aus einem Skript (`scenes.json`) entsteht automatisch ein upload-fertiges Video 
 | Stufe | Was passiert | Werkzeug |
 |---|---|---|
 | `voice` | Sprecherstimme je Szene, Pausen, Untertitel (`captions.srt`) | edge-tts (kostenlos) |
-| `images` | Passende Videoclips und Fotos je Szene, Quellen werden mitgeschrieben | Pexels (mit `PEXELS_API_KEY`), sonst Openverse |
+| `images` | Passende Videoclips und Fotos je Szene, Quellen werden mitgeschrieben | Pixabay (`PIXABAY_API_KEY`) oder Pexels (`PEXELS_API_KEY`), sonst Openverse |
 | `render` | Schwenks über Fotos, echte Clips, Kapiteltitel, Lautheit auf YouTube-Norm | ffmpeg |
 | `thumbs` | Thumbnail-Varianten (1280×720) | Pillow |
 | `meta` | Titelvarianten, Beschreibung mit Kapitelmarken, Tags, Upload-Checkliste | – |
@@ -14,7 +14,7 @@ Aus einem Skript (`scenes.json`) entsteht automatisch ein upload-fertiges Video 
 
 ```bash
 pip install edge-tts pillow certifi
-export PEXELS_API_KEY=...            # kostenlos auf pexels.com/api
+export PIXABAY_API_KEY=...           # kostenlos: pixabay.com/api/docs (eingeloggt)
 python3 pipeline/make_video.py projects/fall-leaves-black-gold          # alle Stufen
 python3 pipeline/make_video.py projects/fall-leaves-black-gold render   # nur eine Stufe
 ```

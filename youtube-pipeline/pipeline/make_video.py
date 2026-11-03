@@ -261,7 +261,87 @@ def stage_images_pexels(project):
         print(f"  media s{i:02d}: {k}/{need}  ({sc['query']})")
 
 
+def pixabay(kind, query, per_page=20):
+    """kind = 'photos' or 'videos'. Needs env PIXABAY_API_KEY (free at pixabay.com/api/docs)."""
+    base = "https://pixabay.com/api/" if kind == "photos" else "https://pixabay.com/api/videos/"
+    params = {"key": os.environ["PIXABAY_API_KEY"], "q": query[:100], "per_page": per_page,
+              "safesearch": "true"}
+    if kind == "photos":
+        params.update({"image_type": "photo", "orientation": "horizontal", "min_width": 1600})
+    else:
+        params.update({"video_type": "film", "min_width": 1280})
+    for attempt in range(3):
+        try:
+            return json.loads(http_get(f"{base}?{urllib.parse.urlencode(params)}"))["hits"]
+        except Exception as e:
+            print("  pixabay retry", query, e)
+            time.sleep(3 * (attempt + 1))
+    return []
+
+
+def stage_images_pixabay(project):
+    """Each scene: one real video clip first (if found), then photos. Pixabay licence: free use, no attribution."""
+    from PIL import Image
+    cfg, b = load(project), build_dir(project)
+    tl = json.loads((b / "timeline.json").read_text())["scenes"]
+    img_dir = b / "images"
+    img_dir.mkdir(exist_ok=True)
+    credits_path = b / "credits.json"
+    credits = json.loads(credits_path.read_text()) if credits_path.exists() else {}
+    used = {c["id"] for c in credits.values()}
+    for i, sc in enumerate(cfg["scenes"]):
+        need = max(1, math.ceil((tl[i]["dur"] + tl[i]["gap"]) / CLIP_MAX))
+        k = len(list(img_dir.glob(f"s{i:02d}_*")))
+        queries = list(dict.fromkeys([sc["query"]] + sc.get("fallback", []) + [" ".join(sc["query"].split()[-2:])]))
+        if k == 0 and sc.get("video", True):
+            for q in queries:
+                for v in pixabay("videos", q):
+                    if f"v{v['id']}" in used or v.get("duration", 0) < 5:
+                        continue
+                    f = v["videos"].get("large") or {}
+                    if not f.get("url") or f.get("width", 0) < 1280:
+                        f = v["videos"].get("medium") or {}
+                    if not f.get("url") or f.get("width", 0) < 1280:
+                        continue
+                    name = f"s{i:02d}_{k}.mp4"
+                    try:
+                        (img_dir / name).write_bytes(http_get(f["url"], 180))
+                    except Exception as e:
+                        print("  skip video", e)
+                        continue
+                    used.add(f"v{v['id']}")
+                    credits[name] = {"id": f"v{v['id']}", "title": v.get("tags"), "creator": v.get("user"),
+                                     "license": "Pixabay Content License", "url": v.get("pageURL"), "query": q}
+                    k += 1
+                    break
+                if k:
+                    break
+        for q in queries:
+            if k >= need:
+                break
+            for p in pixabay("photos", q):
+                if k >= need:
+                    break
+                if f"p{p['id']}" in used:
+                    continue
+                try:
+                    im = Image.open(BytesIO(http_get(p["largeImageURL"], 40)))
+                    name = f"s{i:02d}_{k}.jpg"
+                    cover(im, 2560, 1440).save(img_dir / name, quality=90)
+                except Exception as e:
+                    print("  skip photo", e)
+                    continue
+                used.add(f"p{p['id']}")
+                credits[name] = {"id": f"p{p['id']}", "title": p.get("tags"), "creator": p.get("user"),
+                                 "license": "Pixabay Content License", "url": p.get("pageURL"), "query": q}
+                k += 1
+        credits_path.write_text(json.dumps(credits, indent=1))
+        print(f"  media s{i:02d}: {k}/{need}  ({sc['query']})")
+
+
 def stage_images(project):
+    if os.environ.get("PIXABAY_API_KEY"):
+        return stage_images_pixabay(project)
     if os.environ.get("PEXELS_API_KEY"):
         return stage_images_pexels(project)
     from PIL import Image
