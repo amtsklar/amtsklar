@@ -8,7 +8,7 @@
   {
    "chapter": "Intro",
    "query": "phone charging night",
-   "text": "Plug in your phone at three in the morning. Then plug it into the same outlet at three in the afternoon. Same wall, same wires, same meter.",
+   "text": "Plug in your phone at 3 a.m. Then plug it into the same outlet at 3 p.m. Same wall, same wires.",
    "fallback": [
     "phone charger",
     "power outlet"
@@ -16,28 +16,27 @@
   },
   {
    "query": "wind turbines night",
-   "text": "But depending on where you live, the power plants on the other end of that wire can be completely different. At night, a wind farm a few hundred miles away. In the afternoon, a field of solar panels that was dark twelve hours earlier.",
+   "text": "Depending on where you live, the power plants on the other end can be completely different. At night, maybe a wind farm on the plains. In the afternoon, solar panels that were dark at 3 a.m.",
    "fallback": [
     "wind farm",
     "solar farm"
    ]
   },
   {
+   "query": "city timelapse",
+   "text": "Stick with me, and you'll see why the toughest hour for the grid usually isn't the hottest one. And why, some days, power plants pay to give their electricity away.",
+   "fallback": [
+    "city lights night",
+    "skyline sunset"
+   ]
+  },
+  {
    "query": "power lines sunset",
-   "text": "So here's the idea for this video. The grid isn't one machine. It's a different machine every hour, rebuilt over and over, all day long, while you sleep and while you work.",
+   "text": "Because the grid isn't one machine. It's a different machine every hour. So let's follow one day, hour by hour.",
    "fallback": [
     "electricity pylon",
     "transmission tower"
    ]
-  },
-  {
-   "query": "city timelapse",
-   "text": "We'll follow one day, hour by hour. By the end, you'll know why the hardest hour for the grid usually isn't the hottest one. And why, some days, power plants actually pay to give their electricity away.",
-   "fallback": [
-    "city lights night",
-    "skyline sunset"
-   ],
-   "graphic": "24-hour clock dial: 3 a.m. and 3 p.m. marked, icons for wind, nuclear, solar, battery, gas"
   },
   {
    "chapter": "3 a.m.: The night shift",
@@ -52,7 +51,7 @@
   },
   {
    "query": "refrigerator kitchen night",
-   "text": "But it never drops to zero. Refrigerators, pumps, servers and street lights keep running. That steady floor of demand is what the industry calls baseload.",
+   "text": "But it never drops to zero. Refrigerators and other devices that run all the time keep going. The EIA calls that steady floor of demand baseload.",
    "fallback": [
     "street lights",
     "kitchen"
@@ -60,7 +59,7 @@
   },
   {
    "query": "nuclear power plant",
-   "text": "The classic baseload plant is nuclear. A reactor costs a lot to build but very little to run, so operators keep it at full power around the clock.",
+   "text": "The classic baseload plant is nuclear. It's cheap to run once it's built, so operators try to keep it at full power around the clock.",
    "fallback": [
     "cooling tower",
     "power plant"
@@ -94,7 +93,7 @@
   },
   {
    "query": "wind turbines sunset",
-   "text": "By 2023, wind made up 36 percent of everything that grid generated across the whole year. Some nights there's more wind than anyone needs, and operators actually turn turbines down in the early morning to keep supply matched to demand.",
+   "text": "In 2023, wind made up 36 percent of that grid's total generation. Some nights there's more wind than anyone needs, so operators turn turbines down in the early morning to keep supply matched to demand.",
    "fallback": [
     "wind farm",
     "turbine blades"
@@ -129,7 +128,7 @@
   },
   {
    "query": "california solar farm",
-   "text": "California went even further. In 2024, solar met almost half of the California grid operator's demand between eight in the morning and four in the afternoon.",
+   "text": "California has gone even further. According to the EIA, solar now supplies almost half of the California grid operator's demand between eight in the morning and four in the afternoon.",
    "fallback": [
     "solar panels desert",
     "solar farm"
@@ -145,7 +144,7 @@
   },
   {
    "query": "electric outlet",
-   "text": "So at 3 a.m. in Kansas you might be running on wind and nuclear, and at 3 p.m. in California mostly on sunshine. Same country, same kind of outlet, a different machine.",
+   "text": "So at 3 a.m. on the Great Plains you might be running largely on wind, and at 3 p.m. in California largely on sunshine. Same country, same kind of outlet, a different machine.",
    "fallback": [
     "power socket",
     "light switch"
@@ -155,7 +154,7 @@
    "chapter": "The duck curve",
    "overlay": "THE DUCK CURVE",
    "query": "sunset power lines",
-   "text": "Now here's the twist I promised. You'd think the hardest moment for the grid is the hottest afternoon. Often it isn't. It's the hour right after the sun starts going down.",
+   "text": "Now here's the twist I promised. You'd think the toughest moment for the grid is the hottest afternoon. Often it isn't. It's the stretch around sunset.",
    "fallback": [
     "sunset city",
     "electricity pylon sunset"
@@ -172,20 +171,12 @@
   },
   {
    "query": "duck lake",
-   "text": "Plot net load over a typical spring day in California and it sags deep in the middle, then shoots up steeply in the evening. It looks like the outline of a duck, so that's what everyone calls it: the duck curve.",
+   "text": "Plot net load over a typical day in California and it sags deep in the middle, then shoots up steeply in the evening. It looks like the outline of a duck, so it's called the duck curve. And the EIA says the belly keeps getting deeper as solar grows.",
    "fallback": [
     "duck swimming",
     "pond"
    ],
    "graphic": "line chart: CAISO net load on a typical spring day, duck-shaped curve with belly at midday and steep neck at sunset"
-  },
-  {
-   "query": "solar panels aerial",
-   "text": "And the EIA says the duck's belly keeps getting deeper as more solar comes online.",
-   "fallback": [
-    "solar farm",
-    "solar field"
-   ]
   },
   {
    "query": "solar farm spring",
@@ -215,7 +206,7 @@
    "chapter": "Batteries: moving noon to night",
    "overlay": "MOVING NOON TO NIGHT",
    "query": "battery storage",
-   "text": "The fastest-growing answer is a battery. Charge it with cheap midday solar, then let it run in the evening. The EIA puts it neatly: storing midday solar flattens the duck's curve, and sending it out in the evening shortens the duck's neck.",
+   "text": "One fast-growing answer is a battery. Charge it with cheap midday solar, then let it run in the evening. The EIA puts it neatly: storing midday solar flattens the duck's curve, and sending it out in the evening shortens the duck's neck.",
    "fallback": [
     "batteries",
     "energy storage containers"
@@ -247,18 +238,18 @@
    ]
   },
   {
-   "query": "stock chart screen",
+   "query": "data screen",
    "text": "And operators run them largely on price. In 2024, 41 percent of U.S. utility-scale battery capacity was used mainly for arbitrage. That's a fancy word for charging when power is cheap and selling it back when it's expensive.",
    "fallback": [
-    "computer screen data",
-    "graph screen"
+    "computer screen graph",
+    "laptop chart"
    ]
   },
   {
    "chapter": "Why prices swing",
    "overlay": "WHY PRICES SWING",
    "query": "electricity meter",
-   "text": "Which brings us to price. On the wholesale market, where power plants sell to utilities, electricity can cost wildly different amounts from one hour to the next.",
+   "text": "Which brings us to price. On the wholesale market, where power is bought and sold in bulk, electricity can cost wildly different amounts from one hour to the next.",
    "fallback": [
     "power meter",
     "electric meter"
@@ -266,7 +257,7 @@
   },
   {
    "query": "money calculator",
-   "text": "A Berkeley Lab analysis found the average U.S. wholesale price in 2023 was 36 dollars per megawatt-hour. But in California that year, hourly prices ranged from over 500 dollars down to below zero.",
+   "text": "Berkeley Lab found that the average wholesale price across the major U.S. power markets in 2023 was 36 dollars per megawatt-hour. But in California that year, hourly prices ranged from over 500 dollars down to below zero.",
    "fallback": [
     "calculator",
     "coins"
@@ -291,7 +282,7 @@
   },
   {
    "query": "solar farm sunny",
-   "text": "And some wind and solar projects earn tax credits for every megawatt-hour they produce, so they may keep running even when the price dips below zero. For a few hours, paying a little beats shutting down.",
+   "text": "And some wind farms earn a tax credit for every megawatt-hour they produce, so they may keep running even when the price dips below zero. For a short stretch, paying a little beats shutting down.",
    "fallback": [
     "wind turbines",
     "solar panels"
@@ -299,7 +290,7 @@
   },
   {
    "query": "california hills sun",
-   "text": "In California's day-ahead market, prices were negative about 7 percent of the time in 2025, according to the grid operator's own market monitor. Most of those hours are sunny midday hours in spring.",
+   "text": "In California's day-ahead market, prices were negative about 7 percent of the time in 2025, according to the grid operator's own market monitor. And Berkeley Lab found that in 2023, California's negative prices showed up almost entirely in sunny hours of late spring and early summer.",
    "fallback": [
     "sunny landscape",
     "solar farm"
@@ -308,17 +299,15 @@
   },
   {
    "query": "gas turbine",
-   "text": "On the other end are the expensive hours, when the grid calls on peaker plants. These are often gas turbines that run only a small slice of the year. They cost more to run, but they can start up quickly, which is exactly what that evening ramp needs.",
+   "text": "On the other end are the expensive hours, when the grid calls on peakers. These are often gas turbines that run only occasionally. They cost more to run, but they respond quickly, which is exactly what that evening ramp needs.",
    "fallback": [
     "power plant",
     "industrial turbine"
    ]
   },
   {
-   "chapter": "Who keeps it balanced",
-   "overlay": "WHO KEEPS IT BALANCED",
    "query": "control room",
-   "text": "Someone has to coordinate all of this, every second. That job belongs to balancing authorities. There are dozens of them across the country, and their job is to keep supply and demand matched in real time.",
+   "text": "Someone has to coordinate all of this. That job belongs to balancing authorities, dozens of them across the country, keeping supply and demand matched in real time.",
    "fallback": [
     "operators monitors",
     "computer screens"
@@ -326,16 +315,15 @@
   },
   {
    "query": "power lines storm",
-   "text": "If supply and demand drift too far apart, the EIA warns, the result can be local or even wide-area blackouts. So operators forecast demand, line up plants ahead of time, trade power with neighbors, and adjust constantly.",
+   "text": "If supply and demand drift too far apart, the EIA warns, the result can be local or even wide-area blackouts. In the big regional markets, prices help with that job. The EIA notes they tend to fall when solar output is high and rise as it fades.",
    "fallback": [
     "thunderstorm",
     "electricity pylon"
-   ],
-   "graphic": "diagram: balancing authority in the middle, arrows to generators, batteries, neighbor grids and customers"
+   ]
   },
   {
    "query": "laptop chart",
-   "text": "The best part? You can watch it yourself. The EIA's free Hourly Electric Grid Monitor shows demand, and the mix of sources by region, hour by hour. It's one of the best free tools on the internet if you want to see the machine change shape.",
+   "text": "And you can watch it yourself. The EIA's free Hourly Electric Grid Monitor shows demand and the mix of sources by region, hour by hour.",
    "fallback": [
     "computer screen graph",
     "laptop desk"
@@ -345,7 +333,7 @@
    "chapter": "Your plug, your timing",
    "overlay": "YOUR TIMING MATTERS",
    "query": "home living room evening",
-   "text": "So what does any of this mean for you? Most of us never see those wholesale prices. But your timing still matters, and it matters more every year.",
+   "text": "So what does any of this mean for you? Most of us never see wholesale prices. But your timing still matters.",
    "fallback": [
     "house interior",
     "family home"
@@ -361,7 +349,7 @@
   },
   {
    "query": "smart meter",
-   "text": "That only works because most homes now have meters that record use by the hour. In 2022, about 72 percent of U.S. electricity meters were smart meters, the EIA reports.",
+   "text": "That's possible because most homes now have smart meters that record use at least hourly. In 2022, about 73 percent of U.S. residential electricity meters were smart meters, the EIA reports.",
    "fallback": [
     "electric meter",
     "electricity meter"
@@ -369,7 +357,7 @@
   },
   {
    "query": "dishwasher kitchen",
-   "text": "Here's the non-obvious part. The cheap hour on your grid might not be 3 a.m. anymore. In a sunny region it can be the middle of the day. So it's worth reading your own utility's rate plan instead of guessing.",
+   "text": "Here's the non-obvious part. On California's wholesale market, some of the cheapest hours are now in the middle of the day, not the middle of the night. So read your own utility's rate plan instead of guessing.",
    "fallback": [
     "washing machine",
     "kitchen appliances"
@@ -399,8 +387,7 @@
    "fallback": [
     "solar farm sunset",
     "power plant"
-   ],
-   "graphic": "side-by-side stacked bars: example generation mix at 3 a.m. vs. 3 p.m. (illustrative, labeled by source)"
+   ]
   },
   {
    "query": "power lines sunset",
@@ -429,13 +416,13 @@
  ],
  "meta": {
   "titles": [
-   "Where Your Power Comes From at 3 A.M. vs. 3 P.M.",
+   "Where Your Power REALLY Comes From at 3 A.M.",
    "Your Outlet Runs on a DIFFERENT Grid Every Hour",
-   "Why the Grid's Hardest Hour Is SUNSET",
+   "Why SUNSET Is the Grid's Toughest Hour",
    "The Duck Curve: Why Electricity Prices Go NEGATIVE",
-   "Same Plug, Two Power Plants: The Grid at 3 A.M."
+   "Same Plug, Two Power Plants, 12 HOURS Apart"
   ],
-  "description": "At 3 a.m. and 3 p.m., the same outlet in your wall can be fed by completely different power plants.\nWe follow one day on the U.S. grid, hour by hour: wind and nuclear at night, solar at midday, and the steep evening ramp in between.\n\nIn this video:\n- Why U.S. electricity demand bottoms out before dawn, and what baseload means\n- Nuclear running flat out, and why Great Plains wind peaks overnight\n- How solar took over the middle of the day in Texas and California\n- Net load and the duck curve, explained simply\n- Batteries shifting midday solar into the evening\n- Why wholesale prices swing, and how they can go negative\n- What balancing authorities do every second\n- Why your timing (EV charging, time-of-use rates) matters\n\nSources:\nEIA, Hourly electricity consumption varies throughout the day and across seasons (2020) - https://www.eia.gov/todayinenergy/detail.php?id=42915\nEIA, U.S. nuclear industry (capacity factor 2025) - https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php\nEIA, Electricity in the U.S. (2025 generation shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php\nEIA, The central United States set several wind power records this spring (2020) - https://www.eia.gov/todayinenergy/detail.php?id=44075\nEIA, Why are Midwest grid operators turning away wind power? (2024) - https://www.eia.gov/todayinenergy/detail.php?id=62406\nEIA, ERCOT increasingly meets rising demand with solar, wind, and batteries (2025) - https://www.eia.gov/todayinenergy/detail.php?id=66464\nEIA, Solar and wind power curtailments are increasing in California (2025) - https://www.eia.gov/todayinenergy/detail.php?id=65364\nEIA, Solar generation in CAISO surpassed natural gas in the first five months of 2026 - https://www.eia.gov/todayinenergy/detail.php?id=67784\nEIA, As solar capacity grows, duck curves are getting deeper in California (2023) - https://www.eia.gov/todayinenergy/detail.php?id=56880\nCalifornia ISO Department of Market Monitoring, 2025 Annual Report on Market Issues and Performance - https://www.caiso.com/documents/2025-annual-report-on-market-issues-and-performance.pdf\nEIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756\nEIA, Utility-scale batteries are more commonly used for price arbitrage (2025) - https://www.eia.gov/todayinenergy/detail.php?id=66164\nBerkeley Lab, Exploring Wholesale Energy Price Trends: ReWEP 2024.1 technical brief - https://eta-publications.lbl.gov/sites/default/files/rewep-2024update_tech-brief_20240429.pdf\nEIA, Negative wholesale electricity prices occur in RTOs (2012) - https://www.eia.gov/todayinenergy/detail.php?id=6730\nEIA, Natural gas-fired combustion turbines are generally used to meet peak electricity load (2013) - https://www.eia.gov/todayinenergy/detail.php?id=13191\nEIA, U.S. electric system is made up of interconnections and balancing authorities (2016) - https://www.eia.gov/todayinenergy/detail.php?id=27152\nEIA, Hourly Electric Grid Monitor - https://www.eia.gov/electricity/gridmonitor/\nU.S. DOE Alternative Fuels Data Center, Charging Electric Vehicles at Home - https://afdc.energy.gov/fuels/electricity-charging-home\nEIA, How many smart meters are installed in the United States? (FAQ) - https://www.eia.gov/tools/faqs/faq.php?id=108&t=3\n\nNarration is AI-generated; script researched and reviewed by a human.\nEducation only, not financial advice. The creator invests in the energy sector.\n\n#powergrid #electricity #duckcurve #solarenergy #howitworks",
+  "description": "At 3 a.m. and 3 p.m., the same outlet in your wall can be fed by completely different power plants.\nWe follow one day on the U.S. grid, hour by hour: wind and nuclear at night, solar at midday, and the steep evening ramp in between.\n\nIn this video:\n- Why U.S. electricity demand bottoms out before dawn, and what baseload means\n- Nuclear running flat out, and why Great Plains wind peaks overnight\n- How solar took over the middle of the day in Texas and California\n- Net load and the duck curve, explained simply\n- Batteries shifting midday solar into the evening\n- Why wholesale prices swing, and how they can go negative\n- What balancing authorities do\n- Why your timing (EV charging, time-of-use rates) matters\n\nSources:\nEIA, Hourly electricity consumption varies throughout the day and across seasons (2020) - https://www.eia.gov/todayinenergy/detail.php?id=42915\nEIA, U.S. nuclear industry (capacity factor 2025) - https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php\nEIA, Electricity in the U.S. (2025 generation shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php\nEIA, The central United States set several wind power records this spring (2020) - https://www.eia.gov/todayinenergy/detail.php?id=44075\nEIA, Why are Midwest grid operators turning away wind power? (2024) - https://www.eia.gov/todayinenergy/detail.php?id=62406\nEIA, ERCOT increasingly meets rising demand with solar, wind, and batteries (2025) - https://www.eia.gov/todayinenergy/detail.php?id=66464\nEIA, Solar and wind power curtailments are increasing in California (2025) - https://www.eia.gov/todayinenergy/detail.php?id=65364\nEIA, Solar generation in CAISO surpassed natural gas in the first five months of 2026 - https://www.eia.gov/todayinenergy/detail.php?id=67784\nEIA, As solar capacity grows, duck curves are getting deeper in California (2023) - https://www.eia.gov/todayinenergy/detail.php?id=56880\nCalifornia ISO Department of Market Monitoring, 2025 Annual Report on Market Issues and Performance - https://www.caiso.com/documents/2025-annual-report-on-market-issues-and-performance.pdf\nEIA, Batteries are a fast-growing secondary electricity source for the grid (2024) - https://www.eia.gov/todayinenergy/detail.php?id=63025\nEIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756\nEIA, Utility-scale batteries are more commonly used for price arbitrage (2025) - https://www.eia.gov/todayinenergy/detail.php?id=66164\nBerkeley Lab, Exploring Wholesale Energy Price Trends: ReWEP 2024.1 technical brief - https://eta-publications.lbl.gov/sites/default/files/rewep-2024update_tech-brief_20240429.pdf\nEIA, Negative wholesale electricity prices occur in RTOs (2012) - https://www.eia.gov/todayinenergy/detail.php?id=6730\nEIA, Natural gas-fired combustion turbines are generally used to meet peak electricity load (2013) - https://www.eia.gov/todayinenergy/detail.php?id=13191\nEIA, U.S. electric system is made up of interconnections and balancing authorities (2016) - https://www.eia.gov/todayinenergy/detail.php?id=27152\nEIA, The share of solar generation with co-located battery storage is increasing (2026) - https://www.eia.gov/todayinenergy/detail.php?id=68384\nEIA, Hourly Electric Grid Monitor - https://www.eia.gov/electricity/gridmonitor/\nU.S. DOE Alternative Fuels Data Center, Charging Electric Vehicles at Home - https://afdc.energy.gov/fuels/electricity-charging-home\nEIA, How many smart meters are installed in the United States? (FAQ) - https://www.eia.gov/tools/faqs/faq.php?id=108&t=3\n\nNarration is AI-generated; script researched and reviewed by a human.\nEducation only, not financial advice. The creator invests in the energy sector.\n\n#powergrid #electricity #duckcurve #solarenergy #howitworks",
   "tags": [
    "power grid explained",
    "duck curve",
