@@ -16,7 +16,7 @@
   },
   {
    "query": "sewer pipe",
-   "text": "That water just dropped into a network of pipes running under almost every street in America. And in a matter of hours, most of it will be cleaned up and sent back to a river, a lake, or the ocean.",
+   "text": "That water just dropped into a network of pipes running under almost every street in America. Within hours, most of it will be cleaned and sent back to a river, a lake, or the ocean.",
    "fallback": [
     "pipes",
     "manhole"
@@ -24,7 +24,7 @@
   },
   {
    "query": "water treatment plant",
-   "text": "When the local paper in Vancouver, Washington, followed the water through the city's treatment plant, raw sewage to reasonably clean took about eight hours.",
+   "text": "When the local paper in Vancouver, Washington, followed the water through the city's plant, raw sewage to reasonably clean took about eight hours.",
    "fallback": [
     "sewage plant",
     "water treatment"
@@ -40,7 +40,7 @@
   },
   {
    "query": "river city",
-   "text": "So let's follow one flush from start to finish. Five stops, one side business that turns the leftovers into fuel and fertilizer, and at the end, a place in California where this water ends up back in the drinking water supply. I'll show you exactly how they get it clean enough for that.",
+   "text": "So let's follow one flush, start to finish. Five stops, a side business that turns the leftovers into fuel and fertilizer, and at the end, a place in California where this water heads back toward the drinking water supply. And I'll show you how they get it that clean.",
    "fallback": [
     "river",
     "city skyline"
@@ -50,7 +50,7 @@
    "chapter": "Stop 1: Under the street",
    "overlay": "STOP 1: THE PIPES",
    "query": "manhole",
-   "text": "Stop one is the pipe network. According to the EPA, there are about seventeen and a half thousand public wastewater treatment plants in the U.S., serving roughly two hundred seventy million people. That's eighty-two percent of the country.",
+   "text": "Stop one, the pipes. The EPA counts about seventeen and a half thousand public wastewater plants in the U.S., serving roughly two hundred seventy million people, or eighty-two percent of the country.",
    "fallback": [
     "manhole cover",
     "street"
@@ -58,7 +58,7 @@
   },
   {
    "query": "rural house",
-   "text": "Most of the rest are on septic systems. The EPA says more than one in five American households rely on one. If that's you, your flush takes a much shorter trip, into a tank buried in your own yard.",
+   "text": "Most of the rest use septic systems. The EPA says more than one in five American households rely on one, so their flush ends in a tank buried in the yard.",
    "fallback": [
     "farmhouse",
     "country house"
@@ -82,7 +82,7 @@
   },
   {
    "query": "wet wipes",
-   "text": "This is where your choices matter. Pumps hate wipes. Utilities say even wipes sold as flushable can twist together with hair and grease into thick ropes that jam the pumps. Sewer crews call it ragging.",
+   "text": "This is where your choices matter. Pumps hate wipes. Utilities say even ones sold as flushable can twist together with hair and grease into thick ropes that jam the pumps. Crews call it ragging.",
    "fallback": [
     "wipes",
     "pump"
@@ -97,7 +97,7 @@
   },
   {
    "query": "rain street",
-   "text": "One more wrinkle. In some older cities, the same pipes also carry rainwater from the streets. ASCE counts more than seven hundred of these combined systems. In a heavy storm they can overflow, and that's one of the biggest headaches in the business.",
+   "text": "One more wrinkle. In some older cities, the same pipes also carry rain from the streets. ASCE counts more than seven hundred of these combined systems, and in a heavy storm they can overflow.",
    "fallback": [
     "heavy rain",
     "storm drain"
@@ -148,7 +148,7 @@
   },
   {
    "query": "dirty water",
-   "text": "The U.S. Geological Survey says this step removes about sixty percent of the suspended solids. Not bad for doing almost nothing. But the water is still cloudy, and it's still loaded with dissolved waste you can't just wait out.",
+   "text": "The U.S. Geological Survey says this step removes about sixty percent of the suspended solids. Not bad for doing almost nothing. But the water is still cloudy and loaded with dissolved waste you can't just wait out.",
    "fallback": [
     "murky water",
     "water"
@@ -164,7 +164,7 @@
   },
   {
    "query": "air bubbles",
-   "text": "So how do you clean water of something you can't even see? You put that same process to work, inside a tank, on purpose. You hire an army. It's alive, it's hungry, and keeping it breathing is a big reason sewer plants rank among the biggest power users in town.",
+   "text": "So how do you clean out something you can't even see? You run the river's own process inside a tank, on purpose. You hire an army. It's alive, it's hungry, and keeping it breathing helps make sewer plants some of the biggest power users in town.",
    "fallback": [
     "bubbles water",
     "bubbles"
@@ -190,17 +190,10 @@
   },
   {
    "query": "old factory",
-   "text": "The basic trick is more than a century old. In 1914, Edward Ardern and William Lockett, working at a sewage plant in Manchester, England, presented a simple idea. Don't throw the microbes away. Keep the sludge, and the next batch cleans up much faster.",
+   "text": "The basic trick is more than a century old. In 1914, Edward Ardern and William Lockett, working at a sewage plant in Manchester, England, presented a simple idea. Don't throw the microbes away. Keep the sludge, and the next batch cleans up much faster. They called it activated sludge, and plants worldwide still run on versions of it.",
    "fallback": [
     "brick factory",
     "manchester"
-   ]
-  },
-  {
-   "query": "sewage plant",
-   "text": "They called it activated sludge, and the name stuck. Treatment plants around the world still run on versions of it today.",
-   "fallback": [
-    "water treatment plant"
    ]
   },
   {
@@ -271,7 +264,7 @@
   },
   {
    "query": "algae water",
-   "text": "And about forty-two percent are now served by plants with advanced treatment, extra steps that often target nutrients like nitrogen and phosphorus, which feed algae blooms.",
+   "text": "And about forty-two percent now get advanced treatment, often extra steps to strip out nitrogen and phosphorus, which feed algae blooms.",
    "fallback": [
     "green algae",
     "pond"
@@ -297,7 +290,7 @@
   },
   {
    "query": "brooklyn",
-   "text": "In Brooklyn, the Newtown Creek plant does this in eight giant steel eggs. They're so striking that they show up in guides to the city's oddest sights.",
+   "text": "In Brooklyn, the Newtown Creek plant does this in eight giant steel eggs, one of the strangest sights in New York.",
    "fallback": [
     "new york skyline",
     "industrial building"
@@ -339,7 +332,7 @@
    "chapter": "Where it goes next",
    "overlay": "BACK TO THE TAP?",
    "query": "orange county",
-   "text": "Okay. The California story I promised. In Orange County, a big share of the treated water doesn't go to the ocean. It goes through another plant.",
+   "text": "Okay, the California story. In Orange County, a big share of the treated water skips the ocean and goes through another plant.",
    "fallback": [
     "california coast",
     "water treatment"
@@ -347,7 +340,7 @@
   },
   {
    "query": "water filter",
-   "text": "The Groundwater Replenishment System pushes it through microfiltration, then reverse osmosis membranes, then ultraviolet light combined with hydrogen peroxide. It's the water version of a triple check.",
+   "text": "The Groundwater Replenishment System pushes it through microfiltration, then reverse osmosis membranes, then ultraviolet light combined with hydrogen peroxide.",
    "fallback": [
     "membrane filter",
     "filtration"
@@ -389,7 +382,7 @@
   },
   {
    "query": "manhole cover",
-   "text": "All of it running day and night, mostly out of sight. ASCE says the average household sewer bill climbed from about thirty-five dollars a month in 2010 to nearly sixty-five by 2020. Now you know what that money is doing.",
+   "text": "All of it running day and night, mostly out of sight. ASCE says the average household sewer bill went from about thirty-five dollars a month in 2010 to nearly sixty-five in 2020. That's what you're paying for.",
    "fallback": [
     "street",
     "pipes"
@@ -417,10 +410,10 @@
    "What REALLY Happens After You Flush",
    "Where Your Toilet Water Goes (It's STRANGER Than You Think)",
    "The Invisible ARMY That Cleans Your Sewage",
-   "From Toilet to River in 8 HOURS: How Sewage Plants Work",
+   "Inside a Sewage Plant: Where Your Flush REALLY Ends Up",
    "Your Flush Doesn't Disappear. Here's Where It GOES"
   ],
-  "description": "You push the handle and it's gone. But gone isn't a place.\nWe follow one flush through the pipes, the treatment plant, and the microbes that do the real work, all the way back to a river, and in one California county, back toward the tap.\n\nIn this video:\n- The sewer network: gravity, lift stations and why wipes jam pumps\n- Bar screens and grit removal\n- Primary clarifiers: what settling alone can do\n- Activated sludge: the 1914 idea still cleaning our water\n- Chlorine vs. UV, and how the Cuyahoga River fire changed everything\n- Sludge, biogas, biosolids, Milorganite and the PFAS question\n- Orange County's Groundwater Replenishment System\n\nHave you ever toured your local treatment plant? Tell us in the comments.\n\nSources:\nEPA, 2022 Clean Watersheds Needs Survey summary - https://www.epa.gov/system/files/documents/2024-05/2022-cwns-summary.pdf\nASCE, 2025 Report Card for America's Infrastructure: Wastewater - https://infrastructurereportcard.org/wp-content/uploads/2025/03/Wastewater.pdf\nEPA, About septic systems - https://www.epa.gov/septic\nEPA, Energy efficiency for water utilities - https://www.epa.gov/sustainable-water-infrastructure/energy-efficiency-water-utilities\nUSGS Water Science School, Wastewater treatment water use - https://www.usgs.gov/water-science-school/science/wastewater-treatment-water-use\nNorth Davis Sewer District (Utah), Primary treatment - https://northdavissewer.gov/?p=1402\nEPA, Basic information about sewage sludge and biosolids - https://www.epa.gov/biosolids/basic-information-about-sewage-sludge-and-biosolids\nEPA, Draft sewage sludge risk assessment for PFOA and PFOS (Jan 2025) - https://www.epa.gov/system/files/documents/2025-01/draft-sewage-sludge-risk-assessment-pfoa-pfos.pdf\nEPA, Wastewater technology fact sheets: UV disinfection and dechlorination - https://webarchive.library.unt.edu/web/20090508051532/http:/epa.gov/owm/mtb/uv.pdf\nNACWA, Wipes fact sheet - https://www.nacwa.org/docs/default-source/resources---public/wipes-one-pager.pdf\nASCE, Civil Engineering Almanac: the 1969 Cuyahoga River fire - https://www.asce.org/publications-and-news/civil-engineering-source/article/2021/06/23/civil-engineering-almanac-the-1969-cuyahoga-river-fire\nWaterWorld, Activated sludge: 100 years - https://www.waterworld.com/international/wastewater/article/16200968/activated-sludge-100-years-not-out\nMilorganite, History - https://www.milorganite.com/about-us/history\nEPA, OCWD Groundwater Replenishment System case study - https://www.epa.gov/system/files/documents/2024-09/ocwd-groundwater-replenishment-system.pdf\nOrange County Water District, About GWRS - https://ocwd.com/gwrs/about-gwrs/\nThe Columbian, How Vancouver's wastewater goes from stinky to sanitary - https://columbian.com/news/2023/mar/25/how-vancouvers-wastewater-goes-from-stinky-to-sanitary\n\nNarration uses a synthetic voice. Script researched and fact-checked by a human-led team.\n\n#howitworks #wastewater #infrastructure #engineering #explained",
+  "description": "You push the handle and it's gone. But gone isn't a place.\nWe follow one flush through the pipes, the treatment plant, and the microbes that do the real work, all the way back to a river, and in one California county, back toward the tap.\n\nIn this video:\n- The sewer network: gravity, lift stations and why wipes jam pumps\n- Bar screens and grit removal\n- Primary clarifiers: what settling alone can do\n- Activated sludge: the 1914 idea still cleaning our water\n- Chlorine vs. UV, and how the Cuyahoga River fire changed everything\n- Sludge, biogas, biosolids, Milorganite and the PFAS question\n- Orange County's Groundwater Replenishment System\n\nHave you ever toured your local treatment plant? Tell us in the comments.\n\nSources:\nEPA, 2022 Clean Watersheds Needs Survey summary - https://www.epa.gov/system/files/documents/2024-05/2022-cwns-summary.pdf\nASCE, 2025 Report Card for America's Infrastructure: Wastewater - https://infrastructurereportcard.org/wp-content/uploads/2025/03/Wastewater.pdf\nEPA, About septic systems - https://www.epa.gov/septic\nEPA, Energy efficiency for water utilities - https://www.epa.gov/sustainable-water-infrastructure/energy-efficiency-water-utilities\nUSGS Water Science School, Wastewater treatment water use - https://www.usgs.gov/water-science-school/science/wastewater-treatment-water-use\nNorth Davis Sewer District (Utah), Primary treatment - https://northdavissewer.gov/?p=1402\nEPA, Basic information about sewage sludge and biosolids - https://www.epa.gov/biosolids/basic-information-about-sewage-sludge-and-biosolids\nEPA, Draft sewage sludge risk assessment for PFOA and PFOS (Jan 2025) - https://www.epa.gov/system/files/documents/2025-01/draft-sewage-sludge-risk-assessment-pfoa-pfos.pdf\nEPA, Wastewater technology fact sheets: UV disinfection and dechlorination - https://webarchive.library.unt.edu/web/20090508051532/http:/epa.gov/owm/mtb/uv.pdf\nNACWA, Wipes fact sheet - https://www.nacwa.org/docs/default-source/resources---public/wipes-one-pager.pdf\nASCE, Civil Engineering Almanac: the 1969 Cuyahoga River fire - https://www.asce.org/publications-and-news/civil-engineering-source/article/2021/06/23/civil-engineering-almanac-the-1969-cuyahoga-river-fire\nWaterWorld, Activated sludge: 100 years - https://www.waterworld.com/international/wastewater/article/16200968/activated-sludge-100-years-not-out\nMilorganite, History - https://www.milorganite.com/about-us/history\nEPA, OCWD Groundwater Replenishment System case study - https://www.epa.gov/system/files/documents/2024-09/ocwd-groundwater-replenishment-system.pdf\nOrange County Water District, About GWRS - https://ocwd.com/gwrs/about-gwrs/\nThe Columbian, How Vancouver's wastewater goes from stinky to sanitary - https://columbian.com/news/2023/mar/25/how-vancouvers-wastewater-goes-from-stinky-to-sanitary\n\nNarration uses a synthetic voice.\n\n#howitworks #wastewater #infrastructure #engineering #explained",
   "tags": [
    "how it works",
    "wastewater treatment",
