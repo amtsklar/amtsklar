@@ -62,7 +62,68 @@ def build_dir(project):
 
 
 # ---------------------------------------------------------------- voice
-async def _tts(text, voice, rate, out):
+def _sentences_by_length(text, total):
+    """Fallback caption timing: split into sentences, time proportional to length."""
+    parts = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    n = sum(len(p) for p in parts) or 1
+    t, out = 0.0, []
+    for p in parts:
+        d = total * len(p) / n
+        out.append({"start": t, "end": t + d, "text": p})
+        t += d
+    return out
+
+
+def _tts_elevenlabs(text, voice_id, out):
+    """Licensed voice via ElevenLabs (env ELEVENLABS_API_KEY; plan with commercial licence)."""
+    import base64
+    body = json.dumps({"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_multilingual_v2"),
+                       "output_format": "mp3_44100_128"}).encode()
+    req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps",
+                                 data=body, method="POST",
+                                 headers={"xi-api-key": os.environ.get("ELEVENLABS_API_KEY", "proxy-injected"),
+                                          "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        res = json.loads(r.read())
+    Path(out).write_bytes(base64.b64decode(res["audio_base64"]))
+    al = res.get("alignment") or {}
+    chars, starts, ends = al.get("characters", []), al.get("character_start_times_seconds", []), \
+        al.get("character_end_times_seconds", [])
+    sentences, buf, s0 = [], "", None
+    for c, a, e in zip(chars, starts, ends):
+        if s0 is None and not c.isspace():
+            s0 = a
+        buf += c
+        if c in ".!?" and s0 is not None:
+            sentences.append({"start": s0, "end": e, "text": buf.strip()})
+            buf, s0 = "", None
+    if buf.strip() and s0 is not None:
+        sentences.append({"start": s0, "end": ends[-1], "text": buf.strip()})
+    return sentences
+
+
+def _tts_azure(text, voice, rate, out):
+    """Licensed voice via Azure Speech (env AZURE_SPEECH_KEY, AZURE_SPEECH_REGION)."""
+    from xml.sax.saxutils import escape
+    region = os.environ.get("AZURE_SPEECH_REGION", "westeurope")
+    ssml = (f"<speak version='1.0' xml:lang='en-US'><voice name='{voice}'>"
+            f"<prosody rate='{rate}'>{escape(text)}</prosody></voice></speak>").encode()
+    req = urllib.request.Request(f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1",
+                                 data=ssml, method="POST",
+                                 headers={"Ocp-Apim-Subscription-Key": os.environ.get("AZURE_SPEECH_KEY", "proxy-injected"),
+                                          "Content-Type": "application/ssml+xml",
+                                          "X-Microsoft-OutputFormat": "audio-24khz-96kbitrate-mono-mp3",
+                                          "User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        Path(out).write_bytes(r.read())
+    return _sentences_by_length(text, duration(out))
+
+
+async def _tts(text, voice, rate, out, engine="edge"):
+    if engine == "elevenlabs":
+        return _tts_elevenlabs(text, voice, out)
+    if engine == "azure":
+        return _tts_azure(text, voice, rate, out)
     import edge_tts
     com = edge_tts.Communicate(text, voice, rate=rate, boundary="SentenceBoundary")
     sentences = []
@@ -104,7 +165,8 @@ def stage_voice(project):
         sentences = None
         for attempt in range(4):
             try:
-                sentences = asyncio.run(_tts(sc["text"], cfg["voice"], cfg.get("rate", "+0%"), mp3))
+                sentences = asyncio.run(_tts(sc["text"], cfg["voice"], cfg.get("rate", "+0%"), mp3,
+                                             cfg.get("tts", "edge")))
                 break
             except Exception as e:  # network hiccups
                 print("  tts retry", i, e)
