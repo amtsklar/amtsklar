@@ -331,10 +331,10 @@
   {
    "chapter": "Where it goes next",
    "overlay": "BACK TO THE TAP?",
-   "query": "orange county",
+   "query": "california coast",
    "text": "Okay, the California story. In Orange County, a big share of the treated water skips the ocean and goes through another plant.",
    "fallback": [
-    "california coast",
+    "california beach",
     "water treatment"
    ]
   },
@@ -450,7 +450,7 @@
    "badge": "8 HOURS LATER"
   },
   {
-   "image": "s20_0.jpg",
+   "image": "s21_0.jpg",
    "lines": [
     [
      "BACTERIA",
