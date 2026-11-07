@@ -289,6 +289,8 @@ def stage_images_pixabay(project):
     credits_path = b / "credits.json"
     credits = json.loads(credits_path.read_text()) if credits_path.exists() else {}
     used = {c["id"] for c in credits.values()}
+    if (b / "rejected.json").exists():
+        used |= set(json.loads((b / "rejected.json").read_text()))
     for i, sc in enumerate(cfg["scenes"]):
         need = max(1, math.ceil((tl[i]["dur"] + tl[i]["gap"]) / CLIP_MAX))
         k = len(list(img_dir.glob(f"s{i:02d}_*")))
@@ -653,12 +655,81 @@ def stage_meta(project):
     print("meta:", b / "metadata.md")
 
 
+def stage_sheets(project, per_sheet=25, cols=5):
+    """Contact sheets of build/images (videos: frame at 2 s) for the editor review -> build/sheets/."""
+    from PIL import Image, ImageDraw, ImageFont
+    b = build_dir(project)
+    out = b / "sheets"
+    out.mkdir(exist_ok=True)
+    for old in out.glob("*.jpg"):
+        old.unlink()
+    files = sorted(p for p in (b / "images").glob("s*_*") if p.suffix in (".jpg", ".mp4"))
+    font = ImageFont.truetype(str(FONT), 30)
+    w, h = 400, 225
+    for n0 in range(0, len(files), per_sheet):
+        chunk = files[n0:n0 + per_sheet]
+        rows = math.ceil(len(chunk) / cols)
+        sheet = Image.new("RGB", (w * cols, h * rows), "white")
+        d = ImageDraw.Draw(sheet)
+        for n, p in enumerate(chunk):
+            if p.suffix == ".mp4":
+                png = subprocess.run(["ffmpeg", "-v", "error", "-ss", "2", "-i", str(p), "-frames:v", "1",
+                                      "-f", "image2pipe", "-vcodec", "png", "-"], capture_output=True).stdout
+                im = Image.open(BytesIO(png)) if png else Image.new("RGB", (w, h), "grey")
+            else:
+                im = Image.open(p)
+            x, y = (n % cols) * w, (n // cols) * h
+            sheet.paste(im.convert("RGB").resize((w - 4, h - 4)), (x + 2, y + 2))
+            label = p.stem + (" VID" if p.suffix == ".mp4" else "")
+            d.rectangle((x + 2, y + 2, x + 170, y + 40), fill="black")
+            d.text((x + 8, y + 4), label, font=font, fill="yellow")
+        sheet.save(out / f"sheet_{n0 // per_sheet + 1:02d}.jpg", quality=78)
+    print(f"sheets: {math.ceil(len(files) / per_sheet)} in {out}")
+
+
+def stage_reject(project, names):
+    """Delete rejected media (e.g. s03_1 s07_0), renumber per scene (videos first)."""
+    b = build_dir(project)
+    img = b / "images"
+    cpath = b / "credits.json"
+    credits = json.loads(cpath.read_text()) if cpath.exists() else {}
+    rpath = b / "rejected.json"
+    rejected = set(json.loads(rpath.read_text())) if rpath.exists() else set()
+    for n in names:
+        for f in img.glob(f"{n}.*"):
+            f.unlink()
+            c = credits.pop(f.name, None)
+            if c:
+                rejected.add(c["id"])
+    rpath.write_text(json.dumps(sorted(rejected)))
+    scenes = sorted({p.name.split("_")[0] for p in img.glob("s*_*")})
+    for s in scenes:
+        fs = sorted(img.glob(f"{s}_*"), key=lambda f: (f.suffix != ".mp4", f.name))
+        tmp = []
+        for k, f in enumerate(fs):
+            t = img / f"tmp_{s}_{k}{f.suffix}"
+            f.rename(t)
+            tmp.append((t, f.name, k))
+        for t, old, k in tmp:
+            new = img / f"{s}_{k}{t.suffix}"
+            t.rename(new)
+            if old in credits:
+                credits[new.name + "__"] = credits.pop(old)
+    credits = {k.removesuffix("__"): v for k, v in credits.items()}
+    cpath.write_text(json.dumps(credits, indent=1))
+    print(f"reject: removed {len(names)}, now {len(list(img.glob('s*_*')))} files")
+
+
 STAGES = {"voice": stage_voice, "images": stage_images, "pool": stage_pool, "assign": stage_assign,
+          "sheets": stage_sheets,
           "render": stage_render,
           "thumbs": stage_thumbs, "meta": stage_meta}
 
 if __name__ == "__main__":
     project = Path(sys.argv[1]).resolve()
-    for st in (sys.argv[2:] or list(STAGES)):
+    if len(sys.argv) > 2 and sys.argv[2] == "reject":     # make_video.py <proj> reject s03_1 s07_0 ...
+        stage_reject(project, sys.argv[3:])
+        sys.exit()
+    for st in (sys.argv[2:] or ["voice", "images", "sheets", "render", "thumbs", "meta"]):
         print(f"== {st}")
         STAGES[st](project)
