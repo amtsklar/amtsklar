@@ -574,7 +574,8 @@ def stage_render(project):
                 src = ["-loop", "1", "-framerate", str(FPS), "-i", str(img)]
             if j == 0 and sc.get("overlay"):
                 txt = esc(sc["overlay"])
-                vf += (f",drawtext=fontfile='{FONT}':text='{txt}':fontsize=88:fontcolor=white:"
+                font = FONT.as_posix().replace(":", "\\:")   # Windows: C\:/...
+                vf += (f",drawtext=fontfile='{font}':text='{txt}':fontsize=88:fontcolor=white:"
                        f"x=(w-text_w)/2:y=h*0.12:box=1:boxcolor=0x1b3a1f@0.82:boxborderw=28:"
                        f"alpha='if(lt(t,0.3),t/0.3,if(lt(t,3.6),1,if(lt(t,4.0),(4.0-t)/0.4,0)))'")
             out = clip_dir / f"c{n:03d}.mp4"
@@ -583,7 +584,7 @@ def stage_render(project):
             n += 1
         print(f"  render s{i:02d} ({k} clips, {span:.1f}s)")
     lst = b / "clips.txt"
-    lst.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
+    lst.write_text("".join(f"file '{c.resolve().as_posix()}'\n" for c in clips))
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(b / "video_only.mp4"))
     # mux narration, loudness-normalised for YouTube (-14 LUFS)
     sh("ffmpeg", "-y", "-i", str(b / "video_only.mp4"), "-i", str(b / "voice.wav"),
