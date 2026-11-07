@@ -1,0 +1,501 @@
+{
+ "project": "energy-datacenter-01",
+ "channel": "The Hidden Grid",
+ "language": "en-US",
+ "voice": "en-US-GuyNeural",
+ "rate": "-6%",
+ "scenes": [
+  {
+   "chapter": "Intro",
+   "query": "smartphone screen",
+   "text": "When you ask an AI chatbot a simple question, the electricity behind the answer is tiny. Google measured its typical Gemini text prompt in 2025 at about a quarter of a watt-hour. Google says that's about the same as watching nine seconds of TV.",
+   "fallback": [
+    "phone hands",
+    "television"
+   ]
+  },
+  {
+   "query": "server room",
+   "text": "So here's what doesn't add up. In 2025, the electricity used by data centers worldwide grew by almost twenty percent, according to the International Energy Agency.",
+   "fallback": [
+    "data center",
+    "servers"
+   ]
+  },
+  {
+   "query": "construction site",
+   "text": "And according to the IEA, just five tech companies now spend more on construction and equipment, mostly for data centers, than the entire world invests in producing oil and natural gas.",
+   "fallback": [
+    "crane construction",
+    "building site"
+   ]
+  },
+  {
+   "query": "power lines",
+   "text": "Tiny per question. Enormous in total. Today we're going to follow the electricity, from the high-voltage line outside, through the building, into a single cabinet of AI chips, and out the other side.",
+   "fallback": [
+    "electricity pylon",
+    "high voltage"
+   ]
+  },
+  {
+   "query": "network cables",
+   "text": "Along the way I'll show you the one number engineers use to tell whether a data center is wasteful. And we'll find out where almost every watt ends up. Once you see that, the whole AI power story starts to make sense.",
+   "fallback": [
+    "server cables",
+    "fiber optic"
+   ]
+  },
+  {
+   "chapter": "How big is this, really?",
+   "overlay": "HOW BIG IS IT?",
+   "query": "city night",
+   "text": "Let's start with scale, because these numbers get thrown around a lot, and they're easy to mix up.",
+   "fallback": [
+    "city lights",
+    "skyline night"
+   ]
+  },
+  {
+   "query": "power plant",
+   "text": "Lawrence Berkeley National Laboratory, in a report for the Department of Energy, estimated that U.S. data centers used about 176 terawatt-hours of electricity in 2023. That was 4.4 percent of all the electricity used in the country.",
+   "fallback": [
+    "power station",
+    "electricity"
+   ]
+  },
+  {
+   "query": "suburban houses",
+   "text": "A terawatt-hour is a billion kilowatt-hours, so let's bring that home. The average American household used about 860 kilowatt-hours a month in 2023, according to the Energy Information Administration.",
+   "fallback": [
+    "houses street",
+    "neighborhood"
+   ]
+  },
+  {
+   "query": "electric meter",
+   "text": "Run the math, and U.S. data centers used about as much electricity in 2023 as seventeen million homes.",
+   "fallback": [
+    "electricity meter",
+    "house lights"
+   ]
+  },
+  {
+   "query": "server rack",
+   "text": "And it's climbing. The same Berkeley Lab report projects data centers could use between 6.7 and 12 percent of U.S. electricity by 2028. That's a wide range, and it's wide on purpose. Nobody knows exactly how fast AI will spread.",
+   "fallback": [
+    "data center",
+    "servers"
+   ]
+  },
+  {
+   "query": "earth night",
+   "text": "Worldwide, the IEA put data centers at about 415 terawatt-hours in 2024, roughly one and a half percent of global electricity. The United States alone accounted for 45 percent of that.",
+   "fallback": [
+    "globe",
+    "world map"
+   ]
+  },
+  {
+   "query": "aerial factory",
+   "text": "Individual sites are getting huge, too. The IEA says a typical AI-focused data center uses as much electricity as a hundred thousand households. The biggest ones under construction will use twenty times that.",
+   "fallback": [
+    "industrial building",
+    "warehouse aerial"
+   ]
+  },
+  {
+   "chapter": "From the grid to the building",
+   "overlay": "FROM GRID TO BUILDING",
+   "query": "transmission tower",
+   "text": "So how does all that power actually get in? Usually on high-voltage transmission lines, running at tens or even hundreds of thousands of volts.",
+   "fallback": [
+    "power lines",
+    "electricity pylon"
+   ]
+  },
+  {
+   "query": "electrical substation",
+   "text": "At a substation, often built right next to the campus, big transformers step that voltage down. Then it gets stepped down again, and again, until it reaches the few hundred volts the equipment inside can handle.",
+   "fallback": [
+    "substation",
+    "transformer"
+   ]
+  },
+  {
+   "query": "batteries",
+   "text": "Before it reaches a single chip, the power runs through an uninterruptible power supply, which is basically a room full of batteries.",
+   "fallback": [
+    "battery",
+    "electrical room"
+   ]
+  },
+  {
+   "query": "diesel generator",
+   "text": "If the grid flickers, those batteries carry the whole building for the seconds or minutes it takes the backup generators to start.",
+   "fallback": [
+    "generator",
+    "engine"
+   ]
+  },
+  {
+   "query": "thunderstorm",
+   "text": "Those generators usually run on diesel and sit outside in long rows. Most of the year they do nothing except get tested. Their whole job is to make sure a thunderstorm two counties over never takes your email offline.",
+   "fallback": [
+    "lightning storm",
+    "storm clouds"
+   ]
+  },
+  {
+   "query": "electrical transformer",
+   "text": "This chain matters for a reason that's easy to miss. Every link needs heavy equipment, and a lot of it is in short supply. In 2026, the IEA listed gas turbines, transformers, grid connections and new transmission lines among the bottlenecks slowing data center construction.",
+   "fallback": [
+    "power plant",
+    "turbine"
+   ]
+  },
+  {
+   "chapter": "Inside an AI rack",
+   "overlay": "INSIDE AN AI RACK",
+   "query": "server aisle",
+   "text": "Now we're inside, walking down a long aisle of server racks. A rack is a tall metal cabinet, a bit bigger than a refrigerator, stacked with computers from floor to top.",
+   "fallback": [
+    "server room",
+    "data center"
+   ]
+  },
+  {
+   "query": "space heater",
+   "text": "For years, a typical rack didn't need all that much power. Uptime Institute's 2024 global survey found the average rack still drew less than eight kilowatts. That's about five space heaters running on high.",
+   "fallback": [
+    "heater",
+    "radiator"
+   ]
+  },
+  {
+   "query": "computer chip",
+   "text": "An AI rack is a different animal. Nvidia's GB200 NVL72 packs seventy-two graphics processors into one rack, and Nvidia's own documentation puts it at roughly 120 kilowatts.",
+   "fallback": [
+    "processor",
+    "circuit board"
+   ]
+  },
+  {
+   "query": "house aerial",
+   "text": "That's about fifteen times the average. If one of those racks ran flat out for a full year, it would use about as much electricity as a hundred American homes. One cabinet.",
+   "fallback": [
+    "houses",
+    "suburb"
+   ]
+  },
+  {
+   "query": "server room",
+   "text": "And the biggest AI clusters link a hundred thousand or more of these chips together. At seventy-two per rack, that's well over a thousand of those cabinets, all humming in the same place.",
+   "fallback": [
+    "data center",
+    "server aisle"
+   ]
+  },
+  {
+   "query": "code screen",
+   "text": "Why so hungry? An AI model is basically a gigantic pile of numbers. Training it, and answering every question afterward, means multiplying those numbers together over and over, trillions of times every second.",
+   "fallback": [
+    "computer code",
+    "programming"
+   ]
+  },
+  {
+   "query": "laptop typing",
+   "text": "Training a big model can keep thousands of chips busy for weeks. And once it's done, every single question anyone asks runs the model again.",
+   "fallback": [
+    "typing keyboard",
+    "computer work"
+   ]
+  },
+  {
+   "query": "circuit board",
+   "text": "Graphics processors are built to do exactly that kind of math, thousands of calculations side by side. But cramming that much computing into one cabinet means cramming in a lot of power.",
+   "fallback": [
+    "motherboard",
+    "electronics"
+   ]
+  },
+  {
+   "chapter": "Where the power goes",
+   "overlay": "IT ALL BECOMES HEAT",
+   "query": "server lights",
+   "text": "So far we've followed the power in. Now comes the part almost nobody thinks about: what happens to it after the chip is done. This is where some data centers waste a lot, and others waste almost nothing.",
+   "fallback": [
+    "data center",
+    "network"
+   ]
+  },
+  {
+   "query": "heat haze",
+   "text": "Here's the answer I promised at the start. Nearly all the electricity a chip uses turns into heat. A computer doesn't store energy. It does the math, and the energy leaves as warmth.",
+   "fallback": [
+    "hot air",
+    "fire"
+   ]
+  },
+  {
+   "query": "thermometer",
+   "text": "So a 120-kilowatt rack is, in a very real sense, also a 120-kilowatt heater. And that heat has to come out constantly, or the chips slow themselves down or shut off.",
+   "fallback": [
+    "temperature",
+    "hot"
+   ]
+  },
+  {
+   "query": "air conditioner",
+   "text": "Older data centers handle this mostly with air. Cold air gets pushed into the aisles, server fans pull it through, and the hot air is carried off to cooling units.",
+   "fallback": [
+    "cooling fan",
+    "ventilation"
+   ]
+  },
+  {
+   "query": "water pipes",
+   "text": "At AI densities, air alone struggles to keep up. So in Nvidia's design, liquid coolant flows through metal cold plates sitting right on the chips and carries the heat out through pipes.",
+   "fallback": [
+    "pipes",
+    "plumbing"
+   ]
+  },
+  {
+   "query": "cooling tower",
+   "text": "Getting rid of that heat often uses water as well. Berkeley Lab estimated U.S. data centers directly consumed about seventeen billion gallons of water in 2023, mostly for cooling.",
+   "fallback": [
+    "water",
+    "steam"
+   ]
+  },
+  {
+   "query": "calculator",
+   "text": "Now, the one number. It's called PUE, short for power usage effectiveness. Take all the power coming into the building and divide it by the power that actually reaches the computers.",
+   "fallback": [
+    "numbers",
+    "math"
+   ]
+  },
+  {
+   "query": "data center",
+   "text": "A perfect score is 1.0, meaning every watt goes to computing. Uptime Institute's 2025 survey put the global average at 1.54, and it has barely moved for six years running.",
+   "fallback": [
+    "server room",
+    "servers"
+   ]
+  },
+  {
+   "query": "fan blades",
+   "text": "In plain English, for every watt the servers use, the average data center spends about another half a watt on cooling, power conversion and everything else.",
+   "fallback": [
+    "industrial fan",
+    "cooling fan"
+   ]
+  },
+  {
+   "query": "server room",
+   "text": "The biggest operators do far better. Google reports a fleet-wide PUE of 1.09 for 2025. And the IEA says cooling ranges from about seven percent of a site's power in efficient hyperscale data centers to over thirty percent in older, less efficient enterprise ones.",
+   "fallback": [
+    "data center",
+    "network"
+   ]
+  },
+  {
+   "chapter": "Why demand keeps climbing",
+   "overlay": "WHY IT KEEPS CLIMBING",
+   "query": "question mark",
+   "text": "So if the chips keep getting more efficient, and the best buildings are already this good, why does demand keep climbing?",
+   "fallback": [
+    "thinking",
+    "road sign"
+   ]
+  },
+  {
+   "query": "smartphone",
+   "text": "Efficiency really is improving fast. Google says the energy behind its typical Gemini text prompt fell thirty-three-fold between May 2024 and May 2025.",
+   "fallback": [
+    "phone screen",
+    "mobile phone"
+   ]
+  },
+  {
+   "query": "office computer",
+   "text": "But cheaper answers invite more questions, and bigger jobs. The IEA's 2026 analysis says future growth depends on newer uses, like AI agents that grind through long tasks on their own and can use far more energy per request than a quick text answer.",
+   "fallback": [
+    "computer screens",
+    "office work"
+   ]
+  },
+  {
+   "query": "power lines sunset",
+   "text": "You can see that tension in Google's own numbers. Even with all that efficiency, the company's electricity demand jumped 37 percent in 2025, the biggest increase in its history.",
+   "fallback": [
+    "power lines",
+    "electricity pylon"
+   ]
+  },
+  {
+   "query": "nuclear power plant",
+   "text": "That's why tech companies are hunting for power anywhere they can find it. In 2024, Microsoft signed a twenty-year deal to buy the output of a reactor at Three Mile Island in Pennsylvania. Constellation, the owner, aims to restart it around 2027.",
+   "fallback": [
+    "cooling tower",
+    "power plant"
+   ]
+  },
+  {
+   "query": "nuclear reactor",
+   "text": "And no, it's not the reactor that partially melted down in 1979. That was Unit 2. This is Unit 1, which ran until 2019.",
+   "fallback": [
+    "power plant",
+    "cooling tower"
+   ]
+  },
+  {
+   "query": "wind turbines",
+   "text": "Other companies are signing deals for small modular reactors, grid batteries, and huge amounts of wind and solar.",
+   "fallback": [
+    "wind farm",
+    "solar panels"
+   ]
+  },
+  {
+   "query": "solar farm",
+   "text": "None of this tells you who wins or loses. It's just physics and plumbing. More computing means more heat, and more heat means more power coming in through that substation.",
+   "fallback": [
+    "solar panels",
+    "energy"
+   ]
+  },
+  {
+   "chapter": "Recap",
+   "overlay": "RECAP",
+   "query": "server rack",
+   "text": "Quick recap. A single text prompt uses very little energy. But there are billions of them, plus training, plus newer and heavier kinds of AI work.",
+   "fallback": [
+    "data center",
+    "servers"
+   ]
+  },
+  {
+   "query": "power lines",
+   "text": "Power comes in at high voltage, gets stepped down, and is backed up by batteries and diesel generators. An AI rack can draw around 120 kilowatts, about fifteen times an average one.",
+   "fallback": [
+    "transmission tower",
+    "substation"
+   ]
+  },
+  {
+   "query": "cooling tower",
+   "text": "Nearly all of that becomes heat. And PUE tells you how much extra a building burns just to stay cool and keep the lights on.",
+   "fallback": [
+    "steam",
+    "water"
+   ]
+  },
+  {
+   "query": "construction site",
+   "text": "Now I want to hear from you. Is there a data center going up near where you live? Tell me your state in the comments. I'm curious how many of you have one being built right down the road.",
+   "fallback": [
+    "building site",
+    "crane construction"
+   ]
+  },
+  {
+   "query": "power lines sunset",
+   "text": "Next time, we'll follow this power back upstream to the grid itself, and why hooking up a new data center can take years. If you like seeing how the hidden machinery of modern life really works, subscribe to The Hidden Grid.",
+   "fallback": [
+    "electricity pylon",
+    "power lines"
+   ]
+  }
+ ],
+ "meta": {
+  "titles": [
+   "Where Does AI's Electricity Actually GO?",
+   "Why AI Is So HUNGRY for Electricity",
+   "One AI Rack Can Use the Power of 100 HOMES",
+   "Inside an AI Data Center: Follow the POWER",
+   "Almost All of AI's Power Ends Up as HEAT"
+  ],
+  "description": "One AI text prompt uses about as much energy as nine seconds of TV. So why did data center electricity use jump almost 20% worldwide in 2025?\nWe follow the power from the high-voltage line, through the substation and backup batteries, into a 120-kilowatt AI rack, and out the other side as heat.\n\nIn this video:\n- How much electricity data centers really use (US and worldwide)\n- From transmission line to chip: substations, UPS batteries, diesel generators\n- Why an AI rack draws about 15x the power of an average rack\n- Where the power goes: heat, air vs. liquid cooling, water use\n- PUE, the one number that shows how wasteful a data center is\n- Why demand keeps climbing even as AI gets more efficient\n- Three Mile Island, small modular reactors and the hunt for power\n\nThis channel explains how energy and digital infrastructure work. It is not financial or investment advice.\n\nIs a data center being built near you? Tell us your state in the comments.\n\nSources:\nLawrence Berkeley National Laboratory / US DOE, 2024 United States Data Center Energy Usage Report - https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers\nIEA, Energy and AI (2025), Executive Summary - https://www.iea.org/reports/energy-and-ai/executive-summary\nIEA, Energy and AI: Energy demand from AI - https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai\nIEA, Key Questions on Energy and AI (2026) - https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions\nUS EIA, average residential electricity use 2023 - https://www.eia.gov/todayinenergy/detail.php?id=61903\nUptime Institute, Global Data Center Survey 2024 - https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2024\nUptime Institute, Global Data Center Survey 2025 - https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2025\nNVIDIA, DGX GB200 User Guide (hardware) - https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html\nGoogle, Measuring the environmental impact of AI inference (2025) - https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference\nGoogle, Data centers: operating sustainably (PUE) - https://www.datacenters.google/operating-sustainably\nGoogle, 2026 Environmental Report - https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/\nConstellation / Microsoft, Crane Clean Energy Center restart - https://www.datacenterdynamics.com/en/news/three-mile-island-nuclear-plant-restart-ahead-of-schedule-in-boon-to-microsofts-ai-ambitions-report\n\n#datacenter #AI #electricity #powergrid #howitworks",
+  "tags": [
+   "ai data center",
+   "data center explained",
+   "how data centers work",
+   "ai electricity",
+   "ai power consumption",
+   "data center power",
+   "power grid",
+   "data center cooling",
+   "liquid cooling",
+   "pue",
+   "nvidia gb200",
+   "three mile island restart",
+   "small modular reactors",
+   "energy explained",
+   "electricity demand"
+  ]
+ },
+ "thumbnails": [
+  {
+   "image": "s00_0.jpg",
+   "lines": [
+    [
+     "WHERE DOES",
+     110,
+     "white"
+    ],
+    [
+     "AI POWER",
+     150,
+     "#FFD400"
+    ],
+    [
+     "GO?",
+     170,
+     "white"
+    ]
+   ],
+   "badge": "FOLLOW THE WATTS"
+  },
+  {
+   "image": "s18_0.jpg",
+   "lines": [
+    [
+     "1 RACK =",
+     130,
+     "white"
+    ],
+    [
+     "100 HOMES",
+     160,
+     "#FFD400"
+    ]
+   ],
+   "badge": "120 KW"
+  },
+  {
+   "image": "s31_0.jpg",
+   "lines": [
+    [
+     "IT ALL",
+     130,
+     "white"
+    ],
+    [
+     "BECOMES",
+     120,
+     "white"
+    ],
+    [
+     "HEAT",
+     170,
+     "#FF5A1F"
+    ]
+   ],
+   "badge": "AI DATA CENTER"
+  }
+ ]
+}

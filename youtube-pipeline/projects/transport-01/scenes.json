@@ -1,0 +1,482 @@
+{
+ "project": "transport-01",
+ "channel": "Follow the Freight",
+ "language": "en-US",
+ "voice": "en-US-BrianNeural",
+ "rate": "-6%",
+ "scenes": [
+  {
+   "chapter": "Intro",
+   "query": "container ship",
+   "text": "Look around the room you're sitting in. The shoes by the door, the coffee maker, the phone in your hand. Odds are, at least one of them crossed the Pacific Ocean inside a steel box.",
+   "fallback": [
+    "cargo ship ocean"
+   ]
+  },
+  {
+   "query": "container ship sea",
+   "text": "That box rode on a ship run by maybe twenty people. It sailed about six and a half thousand miles, then rolled another two thousand across America on a train. And it showed up on a store shelf like it had been there all along.",
+   "fallback": [
+    "cargo ship"
+   ]
+  },
+  {
+   "query": "shipping containers",
+   "text": "Today we're going to follow one single container, door to door, from a factory near Shanghai all the way to your porch. Every handoff, every machine, and the real numbers.",
+   "fallback": [
+    "container port"
+   ]
+  },
+  {
+   "query": "truck highway",
+   "text": "And at the very end, I'll tell you why any of this is cheap enough to make sense. It comes down to a North Carolina truck driver who got tired of waiting in line. Hang on to that.",
+   "fallback": [
+    "semi truck"
+   ]
+  },
+  {
+   "chapter": "The Box & Shanghai",
+   "overlay": "THE BOX",
+   "query": "shipping container",
+   "text": "So let's start with the box itself. The standard unit in shipping is the TEU, short for twenty-foot equivalent unit. One twenty-foot container is one TEU.",
+   "fallback": [
+    "container"
+   ]
+  },
+  {
+   "query": "container truck",
+   "text": "Our box is the bigger, more common kind you see on trucks: forty feet long, eight feet wide. In shipping math, it counts as two TEU.",
+   "fallback": [
+    "shipping container"
+   ]
+  },
+  {
+   "query": "warehouse forklift",
+   "text": "At a factory outside Shanghai, workers load it with cartons of, let's say, sneakers. Then they close the doors and snap on a numbered seal. If that seal is broken before the box reaches its buyer, somebody's going to ask questions.",
+   "fallback": [
+    "cardboard boxes",
+    "forklift"
+   ]
+  },
+  {
+   "query": "truck port",
+   "text": "A truck hauls the box to the port. And not just any port.",
+   "fallback": [
+    "container truck"
+   ]
+  },
+  {
+   "query": "shanghai port",
+   "text": "Shanghai is the busiest container port on the planet. In 2025 it handled more than fifty-five million TEU, and it has held the number one spot for sixteen years in a row.",
+   "fallback": [
+    "container port",
+    "port crane"
+   ]
+  },
+  {
+   "query": "container terminal",
+   "text": "About half of that moves through Yangshan, a deep-water terminal built out on islands in the East China Sea. It's connected to the mainland by a bridge about twenty miles long.",
+   "fallback": [
+    "port aerial",
+    "container port"
+   ]
+  },
+  {
+   "query": "documents office",
+   "text": "Before our box is even allowed on a ship headed to America, there's paperwork. U.S. Customs requires the importer to file security information at least twenty-four hours before the container is loaded overseas.",
+   "fallback": [
+    "paperwork",
+    "office desk"
+   ]
+  },
+  {
+   "query": "port crane",
+   "text": "Then the box waits in a stack, until a giant ship-to-shore crane picks it up and drops it into a precise slot on the ship.",
+   "fallback": [
+    "container crane",
+    "gantry crane"
+   ]
+  },
+  {
+   "query": "container stack",
+   "text": "That slot isn't random. A planner has already worked out where every single box goes. Heavy ones low, lighter ones higher up, and boxes for the first port of call where they can come off first.",
+   "fallback": [
+    "shipping containers"
+   ]
+  },
+  {
+   "query": "crane operator",
+   "text": "A typical crane moves somewhere around twenty-five to thirty boxes an hour. A big ship gets several cranes working at once, around the clock.",
+   "fallback": [
+    "port crane night",
+    "container crane"
+   ]
+  },
+  {
+   "chapter": "Crossing the Pacific",
+   "overlay": "THE PACIFIC",
+   "query": "container ship",
+   "text": "Now, the ship. The biggest container ships today, like the MSC Irina, can carry more than twenty-four thousand TEU.",
+   "fallback": [
+    "cargo ship"
+   ]
+  },
+  {
+   "query": "big ship",
+   "text": "The Irina is about thirteen hundred feet long and two hundred feet wide. Stand it on end and it would be taller than the Empire State Building's roof. Not every ship on the Pacific run is that big, but even the smaller ones carry thousands of boxes.",
+   "fallback": [
+    "container ship",
+    "cargo ship"
+   ]
+  },
+  {
+   "query": "ship bridge",
+   "text": "And here's the part that surprises people. A ship like that is often run by a crew of only about twenty people, give or take a few. Engineers, deck officers, a cook, the captain. That's it.",
+   "fallback": [
+    "sailor",
+    "ship deck"
+   ]
+  },
+  {
+   "query": "ship ocean",
+   "text": "Ships this size are also slower than you'd think. A lot of big container ships cruise at around twenty knots or less. That's roughly twenty-three miles an hour.",
+   "fallback": [
+    "cargo ship sea"
+   ]
+  },
+  {
+   "query": "ship wake",
+   "text": "That's on purpose. Fuel is one of the biggest costs in shipping, and burning less of it by going slower can save a fortune. Shipping lines call it slow steaming.",
+   "fallback": [
+    "ocean waves"
+   ]
+  },
+  {
+   "query": "ocean sunset",
+   "text": "Our box sails east. Port to port, Shanghai to Los Angeles usually takes around two weeks on a direct service, a few days less on the express runs.",
+   "fallback": [
+    "sea horizon"
+   ]
+  },
+  {
+   "query": "globe",
+   "text": "And the route isn't a straight line across the map. On a globe, the shortest path from Shanghai to L.A. actually bends north, curving up toward Alaska's Aleutian Islands.",
+   "fallback": [
+    "world map",
+    "earth"
+   ]
+  },
+  {
+   "query": "stormy sea",
+   "text": "Ships follow a version of that curve, adjusted for weather. Which brings up the North Pacific in winter. It can get ugly out there.",
+   "fallback": [
+    "ocean waves",
+    "storm ocean"
+   ]
+  },
+  {
+   "query": "container lashing",
+   "text": "Every box on deck is locked to the one below it by small steel fittings called twistlocks, then tied down with lashing bars. Most of the time, it holds.",
+   "fallback": [
+    "shipping containers",
+    "ship deck"
+   ]
+  },
+  {
+   "query": "stormy sea",
+   "text": "Most of the time. The World Shipping Council estimates about fourteen hundred and seventy-eight containers were lost at sea in 2025. One single accident accounted for six hundred and forty of them.",
+   "fallback": [
+    "big waves",
+    "ocean storm"
+   ]
+  },
+  {
+   "query": "calm ocean",
+   "text": "Before you panic about your sneakers, though, that's out of roughly two hundred eighty million containers shipped that year. The odds are very much on your side.",
+   "fallback": [
+    "sea"
+   ]
+  },
+  {
+   "query": "container ship port",
+   "text": "So our box has survived the Pacific. But honestly, the ocean is the easy part. The next few days, on land, are where things get crowded. And it's also where we'll meet that truck driver.",
+   "fallback": [
+    "port",
+    "harbor"
+   ]
+  },
+  {
+   "chapter": "Los Angeles",
+   "overlay": "AMERICA'S FRONT DOOR",
+   "query": "los angeles port",
+   "text": "Our ship pulls into San Pedro Bay, home to the twin ports of Los Angeles and Long Beach.",
+   "fallback": [
+    "harbor",
+    "container port"
+   ]
+  },
+  {
+   "query": "port crane",
+   "text": "The Port of Los Angeles alone moved about ten point two million TEU in 2025, and it's been the busiest container port in the country for more than twenty-five years running.",
+   "fallback": [
+    "container terminal"
+   ]
+  },
+  {
+   "query": "shipping containers",
+   "text": "Together with Long Beach next door, these two ports handle roughly thirty percent of all the container imports coming into the United States.",
+   "fallback": [
+    "container port"
+   ]
+  },
+  {
+   "query": "ships anchored",
+   "text": "And when this stretch jams, everybody feels it. In January 2022, more than a hundred container ships sat waiting off Southern California for a spot at the docks. It's one reason so many store shelves looked thin back then.",
+   "fallback": [
+    "cargo ship",
+    "container ship sea"
+   ]
+  },
+  {
+   "query": "container terminal",
+   "text": "Cranes pull our box off the ship and set it down in the terminal yard. On the way out, it'll generally pass through a radiation detector run by Customs and Border Protection.",
+   "fallback": [
+    "port",
+    "container yard"
+   ]
+  },
+  {
+   "query": "semi truck",
+   "text": "Now our box has a choice to make. If it's going somewhere nearby, a short-haul truck called a drayage truck takes it straight to a warehouse in Southern California.",
+   "fallback": [
+    "truck highway",
+    "container truck"
+   ]
+  },
+  {
+   "query": "freight train",
+   "text": "But our sneakers are headed to Chicago. So the box is going by train.",
+   "fallback": [
+    "train"
+   ]
+  },
+  {
+   "chapter": "Across America",
+   "overlay": "DOUBLE-STACK",
+   "query": "freight train",
+   "text": "This is where it gets clever. Freight railroads load containers two high on special well cars, which have a dip in the middle so the stack still clears bridges and tunnels. It's called double-stack, and it lets a train carry roughly twice as many boxes for the same length.",
+   "fallback": [
+    "cargo train",
+    "train containers"
+   ]
+  },
+  {
+   "query": "train desert",
+   "text": "Our box climbs out of the L.A. basin, crosses the desert, and heads east toward the Midwest.",
+   "fallback": [
+    "freight train",
+    "railroad"
+   ]
+  },
+  {
+   "query": "railroad",
+   "text": "On the fastest intermodal trains, Southern California to Chicago takes about three days. Union Pacific started a premium service in 2025 that runs from the Inland Empire to Chicago in just over three days.",
+   "fallback": [
+    "train tracks",
+    "freight train"
+   ]
+  },
+  {
+   "query": "train yard",
+   "text": "Chicago is the biggest freight rail hub in North America. Roughly a quarter of all U.S. rail freight starts, ends or passes through the area. Our box gets lifted off the train and onto a truck chassis one more time.",
+   "fallback": [
+    "railroad",
+    "freight train"
+   ]
+  },
+  {
+   "chapter": "The Last Mile",
+   "overlay": "THE LAST MILE",
+   "query": "distribution center",
+   "text": "From the rail yard, a truck drives our box to a distribution center. Workers break the seal for the first time since Shanghai and unload it by hand or forklift.",
+   "fallback": [
+    "warehouse",
+    "forklift"
+   ]
+  },
+  {
+   "query": "warehouse",
+   "text": "Inside, the cartons get split up. Some go to stores, some go to online orders. Our pair of sneakers gets scanned, packed in a smaller box and labeled with your address.",
+   "fallback": [
+    "packages",
+    "cardboard boxes"
+   ]
+  },
+  {
+   "query": "delivery van",
+   "text": "Then it rides in a delivery van, maybe for a few hours. And it lands on your porch. After all those thousands of miles, that last short stretch is one of the most expensive parts of the trip. It's one driver, one van, one doorstep at a time.",
+   "fallback": [
+    "package delivery",
+    "parcel"
+   ]
+  },
+  {
+   "query": "container stack",
+   "text": "The empty container, meanwhile, gets reloaded with something else, or heads back to a port. A lot of the time it sails back to Asia empty, because America imports far more by container than it exports.",
+   "fallback": [
+    "shipping containers"
+   ]
+  },
+  {
+   "chapter": "The Trucker",
+   "overlay": "THE TRUCKER",
+   "query": "truck driver",
+   "text": "Okay. Time to meet that truck driver I promised you.",
+   "fallback": [
+    "semi truck",
+    "truck"
+   ]
+  },
+  {
+   "query": "old truck",
+   "text": "His name was Malcolm McLean, from Maxton, North Carolina. In 1937 he drove a load of cotton bales to a dock in New Jersey, and then sat there for hours while dockworkers loaded ships by hand, one sack and one crate at a time.",
+   "fallback": [
+    "vintage truck",
+    "dock"
+   ]
+  },
+  {
+   "query": "container ship",
+   "text": "His idea was almost too simple. Why unpack the truck at all? Just lift the whole trailer body onto the ship.",
+   "fallback": [
+    "crane lifting"
+   ]
+  },
+  {
+   "query": "old ship",
+   "text": "On April 26, 1956, a converted tanker called the Ideal X left Newark, New Jersey, for Houston, carrying fifty-eight of his containers. They were loaded in less than eight hours.",
+   "fallback": [
+    "ship harbor",
+    "vintage ship"
+   ]
+  },
+  {
+   "query": "dollar bills",
+   "text": "And here's the number. Loading a ship the old way cost about five dollars and eighty-three cents a ton. McLean's containers brought that down to under sixteen cents. That's a cut of more than ninety-five percent.",
+   "fallback": [
+    "money",
+    "coins"
+   ]
+  },
+  {
+   "query": "container port",
+   "text": "That's why a pair of sneakers can cross an ocean and still be affordable. The box made moving things so cheap that the world built its economy around it. Today, roughly eighty percent of world trade by volume moves by sea.",
+   "fallback": [
+    "shipping containers",
+    "port aerial"
+   ]
+  },
+  {
+   "chapter": "Recap",
+   "overlay": "RECAP",
+   "query": "shipping containers",
+   "text": "So, quick recap. A sealed forty-foot box, a crane in Shanghai, about two weeks at sea, a crane in L.A., three days on a double-stack train, a warehouse, a van, your porch. Same box the whole way, and if all goes well, nobody opens it until Chicago.",
+   "fallback": [
+    "container port"
+   ]
+  },
+  {
+   "query": "cardboard boxes",
+   "text": "Now I want to hear from you. What's the farthest-traveled thing you own? Check the label and tell me in the comments. I might follow it in a future video.",
+   "fallback": [
+    "package delivery",
+    "parcel"
+   ]
+  },
+  {
+   "query": "freight train",
+   "text": "If you want to see where your gas, your groceries and your Amazon packages come from next, subscribe. We follow the freight, one trip at a time. See you on the next one.",
+   "fallback": [
+    "truck highway",
+    "container ship"
+   ]
+  }
+ ],
+ "meta": {
+  "titles": [
+   "We Followed ONE Box From Shanghai to Your Porch",
+   "How a Container Gets From CHINA to Your Door",
+   "6,500 MILES in a Steel Box: The Trip Your Stuff Takes",
+   "Why Shipping Across the Pacific Is So CHEAP",
+   "The Trucker Who Changed Everything You BUY"
+  ],
+  "description": "Your sneakers probably crossed the Pacific in a sealed steel box, on a ship run by about twenty people.\nWe follow one 40-foot container from a factory near Shanghai to your front porch, with every handoff and the real numbers.\n\nIn this video:\n- What a TEU is, and why the 40-foot box counts as two\n- Shanghai, the world's busiest container port (55 million TEU in 2025)\n- Giant ships like the MSC Irina, tiny crews and slow steaming\n- Why the route bends toward Alaska, and how many containers really fall overboard\n- Los Angeles, the 2022 ship backlog and the radiation check on the way out\n- Double-stack trains to Chicago in about three days\n- Distribution centers, the last mile, and the empty trip back\n- Malcolm McLean, the Ideal X, and the 1956 number that made all of this cheap\n\nWhat's the farthest-traveled thing you own? Check the label and tell us in the comments.\n\nSources:\nShanghai Municipal Government, Shanghai retains world's busiest container port title (2025) - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260107/981624ec9df14b6a9810893afcf1cad8.html\nAdani Ports, MSC Irina specifications - https://www.adani.com/newsroom/media-releases/worlds-largest-container-ship-msc-irina-makes-historic-debut-at-vizhinjam-international-seaport\nU.S. Customs and Border Protection, Importer Security Filing (10+2) - https://www.cbp.gov/sites/default/files/documents/10%2B2%20presentation.pdf\nWorld Shipping Council, Containers Lost at Sea Report 2026 Update - https://www.worldshipping.org/news/world-shipping-council-releases-containers-lost-at-sea-report-2026-update\ngCaptain, Port of Los Angeles tops 10.2M TEU in 2025 - https://gcaptain.com/port-of-los-angeles-posts-third-best-year-ever-tops-10-2m-teus-in-2025\nGlobeSt, L.A. and Long Beach share of U.S. container imports - https://globest.com/2024/08/20/imports-surge-puts-l-a-long-beach-ports-back-on-top\ngCaptain, Southern California containership backlog - https://gcaptain.com/los-angeles-and-long-beach-containership-backup-has-officially-ended/\nDHS Office of Inspector General, radiation portal monitors at U.S. seaports - https://oig.dhs.gov/sites/default/files/assets/Mgmt/2013/OIG_13-26_Jan13.pdf\nUnion Pacific, Southern California to Chicago intermodal service - https://www.up.com/news/service/la-chicago-intermodal-it-250808\nChicago Metropolitan Agency for Planning, freight - https://cmap.illinois.gov/mobility/freight\nThe Geography of Transport Systems, Ideal-X (1956) - https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/idealx-first-containeriship-1956/\nHarvard Business School Working Knowledge, The truck driver who reinvented shipping - https://hbswk.hbs.edu/archive/the-truck-driver-who-reinvented-shipping\nUNCTAD, Review of Maritime Transport 2024 - https://unctad.org/publication/review-maritime-transport-2024\n\nNarration uses a synthetic voice. Footage: Pixabay.\n\n#shipping #supplychain #containership #logistics #followthefreight",
+  "tags": [
+   "container ship",
+   "how shipping works",
+   "supply chain explained",
+   "shipping container",
+   "port of los angeles",
+   "port of shanghai",
+   "container shipping",
+   "freight train",
+   "double stack train",
+   "logistics explained",
+   "Malcolm McLean",
+   "Ideal X",
+   "how your package gets to you",
+   "MSC Irina",
+   "global trade"
+  ]
+ },
+ "thumbnails": [
+  {
+   "image": "s00_0.jpg",
+   "lines": [
+    [
+     "SHANGHAI",
+     120,
+     "white"
+    ],
+    [
+     "TO YOUR DOOR",
+     110,
+     "#FFD400"
+    ]
+   ],
+   "badge": "ONE BOX"
+  },
+  {
+   "image": "s14_0.jpg",
+   "lines": [
+    [
+     "6,500",
+     170,
+     "#FFD400"
+    ],
+    [
+     "MILES",
+     130,
+     "white"
+    ]
+   ],
+   "badge": "IN A STEEL BOX"
+  },
+  {
+   "image": "s41_0.jpg",
+   "lines": [
+    [
+     "WHY IT'S",
+     120,
+     "white"
+    ],
+    [
+     "SO CHEAP",
+     150,
+     "#FFD400"
+    ]
+   ],
+   "badge": "THE 1956 TRICK"
+  }
+ ]
+}
