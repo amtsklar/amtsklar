@@ -7,15 +7,16 @@
  "scenes": [
   {
    "chapter": "Intro",
-   "query": "container ship",
+   "query": "sneakers",
    "text": "Look around the room you're sitting in. The shoes by the door, the coffee maker, the phone in your hand. Odds are, at least one of them crossed the Pacific Ocean inside a steel box.",
    "fallback": [
-    "cargo ship ocean"
+    "shoes",
+    "container ship"
    ]
   },
   {
    "query": "container ship sea",
-   "text": "That box rode on a ship run by maybe twenty people. It sailed about six and a half thousand miles, then rolled another two thousand across America on a train. And it showed up on a store shelf like it had been there all along.",
+   "text": "That box rode on a ship run by maybe twenty people. It sailed about six and a half thousand miles, maybe rode another two thousand across America on a train, and then showed up on a store shelf or your doorstep like it had been there all along.",
    "fallback": [
     "cargo ship"
    ]
@@ -45,7 +46,7 @@
   },
   {
    "query": "container truck",
-   "text": "Our box is the bigger, more common kind you see on trucks: forty feet long, eight feet wide. In shipping math, it counts as two TEU.",
+   "text": "Our box is the bigger kind you usually see on trucks: forty feet long, eight feet wide. In shipping math, it counts as two TEU.",
    "fallback": [
     "shipping container"
    ]
@@ -82,10 +83,10 @@
    ]
   },
   {
-   "query": "documents office",
+   "query": "paperwork",
    "text": "Before our box is even allowed on a ship headed to America, there's paperwork. U.S. Customs requires the importer to file security information at least twenty-four hours before the container is loaded overseas.",
    "fallback": [
-    "paperwork",
+    "documents",
     "office desk"
    ]
   },
@@ -105,11 +106,11 @@
    ]
   },
   {
-   "query": "crane operator",
+   "query": "port crane",
    "text": "A typical crane moves somewhere around twenty-five to thirty boxes an hour. A big ship gets several cranes working at once, around the clock.",
    "fallback": [
-    "port crane night",
-    "container crane"
+    "container crane",
+    "port night"
    ]
   },
   {
@@ -122,16 +123,16 @@
    ]
   },
   {
-   "query": "big ship",
+   "query": "container ship",
    "text": "The Irina is about thirteen hundred feet long and two hundred feet wide. Stand it on end and it would be taller than the Empire State Building's roof. Not every ship on the Pacific run is that big, but even the smaller ones carry thousands of boxes.",
    "fallback": [
-    "container ship",
-    "cargo ship"
+    "cargo ship",
+    "big ship"
    ]
   },
   {
    "query": "ship bridge",
-   "text": "And here's the part that surprises people. A ship like that is often run by a crew of only about twenty people, give or take a few. Engineers, deck officers, a cook, the captain. That's it.",
+   "text": "This part surprises people. Ships like that are often run by a crew of only about twenty people, give or take a few. Engineers, deck officers, a cook, the captain. That's it.",
    "fallback": [
     "sailor",
     "ship deck"
@@ -175,7 +176,7 @@
    ]
   },
   {
-   "query": "container lashing",
+   "query": "container ship deck",
    "text": "Every box on deck is locked to the one below it by small steel fittings called twistlocks, then tied down with lashing bars. Most of the time, it holds.",
    "fallback": [
     "shipping containers",
@@ -230,7 +231,7 @@
    ]
   },
   {
-   "query": "ships anchored",
+   "query": "cargo ships",
    "text": "And when this stretch jams, everybody feels it. In January 2022, more than a hundred container ships sat waiting off Southern California for a spot at the docks. It's one reason so many store shelves looked thin back then.",
    "fallback": [
     "cargo ship",
@@ -380,7 +381,7 @@
    "chapter": "Recap",
    "overlay": "RECAP",
    "query": "shipping containers",
-   "text": "So, quick recap. A sealed forty-foot box, a crane in Shanghai, about two weeks at sea, a crane in L.A., three days on a double-stack train, a warehouse, a van, your porch. Same box the whole way, and if all goes well, nobody opens it until Chicago.",
+   "text": "So, quick recap. A sealed forty-foot box, a crane in Shanghai, about two weeks at sea, a crane in L.A., three days on a double-stack train, a warehouse, a van, your porch. One sealed box from a factory near Shanghai to a warehouse near Chicago, and if all goes well, nobody opens it in between.",
    "fallback": [
     "container port"
    ]
@@ -404,13 +405,13 @@
  ],
  "meta": {
   "titles": [
-   "We Followed ONE Box From Shanghai to Your Porch",
+   "Follow ONE Box From Shanghai to Your Porch",
    "How a Container Gets From CHINA to Your Door",
    "6,500 MILES in a Steel Box: The Trip Your Stuff Takes",
    "Why Shipping Across the Pacific Is So CHEAP",
    "The Trucker Who Changed Everything You BUY"
   ],
-  "description": "Your sneakers probably crossed the Pacific in a sealed steel box, on a ship run by about twenty people.\nWe follow one 40-foot container from a factory near Shanghai to your front porch, with every handoff and the real numbers.\n\nIn this video:\n- What a TEU is, and why the 40-foot box counts as two\n- Shanghai, the world's busiest container port (55 million TEU in 2025)\n- Giant ships like the MSC Irina, tiny crews and slow steaming\n- Why the route bends toward Alaska, and how many containers really fall overboard\n- Los Angeles, the 2022 ship backlog and the radiation check on the way out\n- Double-stack trains to Chicago in about three days\n- Distribution centers, the last mile, and the empty trip back\n- Malcolm McLean, the Ideal X, and the 1956 number that made all of this cheap\n\nWhat's the farthest-traveled thing you own? Check the label and tell us in the comments.\n\nSources:\nShanghai Municipal Government, Shanghai retains world's busiest container port title (2025) - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260107/981624ec9df14b6a9810893afcf1cad8.html\nAdani Ports, MSC Irina specifications - https://www.adani.com/newsroom/media-releases/worlds-largest-container-ship-msc-irina-makes-historic-debut-at-vizhinjam-international-seaport\nU.S. Customs and Border Protection, Importer Security Filing (10+2) - https://www.cbp.gov/sites/default/files/documents/10%2B2%20presentation.pdf\nWorld Shipping Council, Containers Lost at Sea Report 2026 Update - https://www.worldshipping.org/news/world-shipping-council-releases-containers-lost-at-sea-report-2026-update\ngCaptain, Port of Los Angeles tops 10.2M TEU in 2025 - https://gcaptain.com/port-of-los-angeles-posts-third-best-year-ever-tops-10-2m-teus-in-2025\nGlobeSt, L.A. and Long Beach share of U.S. container imports - https://globest.com/2024/08/20/imports-surge-puts-l-a-long-beach-ports-back-on-top\ngCaptain, Southern California containership backlog - https://gcaptain.com/los-angeles-and-long-beach-containership-backup-has-officially-ended/\nDHS Office of Inspector General, radiation portal monitors at U.S. seaports - https://oig.dhs.gov/sites/default/files/assets/Mgmt/2013/OIG_13-26_Jan13.pdf\nUnion Pacific, Southern California to Chicago intermodal service - https://www.up.com/news/service/la-chicago-intermodal-it-250808\nChicago Metropolitan Agency for Planning, freight - https://cmap.illinois.gov/mobility/freight\nThe Geography of Transport Systems, Ideal-X (1956) - https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/idealx-first-containeriship-1956/\nHarvard Business School Working Knowledge, The truck driver who reinvented shipping - https://hbswk.hbs.edu/archive/the-truck-driver-who-reinvented-shipping\nUNCTAD, Review of Maritime Transport 2024 - https://unctad.org/publication/review-maritime-transport-2024\n\nNarration uses a synthetic voice. Footage: Pixabay.\n\n#shipping #supplychain #containership #logistics #followthefreight",
+  "description": "Your sneakers may well have crossed the Pacific in a sealed steel box, on a ship run by about twenty people.\nWe follow one 40-foot container from a factory near Shanghai to your front porch, with every handoff and the real numbers.\n\nIn this video:\n- What a TEU is, and why the 40-foot box counts as two\n- Shanghai, the world's busiest container port (55 million TEU in 2025)\n- Giant ships like the MSC Irina, tiny crews and slow steaming\n- Why the route bends toward Alaska, and how many containers really fall overboard\n- Los Angeles, the 2022 ship backlog and the radiation check on the way out\n- Double-stack trains to Chicago in about three days\n- Distribution centers, the last mile, and the empty trip back\n- Malcolm McLean, the Ideal X, and the 1956 number that made all of this cheap\n\nWhat's the farthest-traveled thing you own? Check the label and tell us in the comments.\n\nSources:\nShanghai Municipal Government, Shanghai retains world's busiest container port title (2025) - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260107/981624ec9df14b6a9810893afcf1cad8.html\nAdani Ports, MSC Irina specifications - https://www.adani.com/newsroom/media-releases/worlds-largest-container-ship-msc-irina-makes-historic-debut-at-vizhinjam-international-seaport\nU.S. Customs and Border Protection, Importer Security Filing (10+2) - https://www.cbp.gov/sites/default/files/documents/10%2B2%20presentation.pdf\nWorld Shipping Council, Containers Lost at Sea Report 2026 Update - https://www.worldshipping.org/news/world-shipping-council-releases-containers-lost-at-sea-report-2026-update\ngCaptain, Port of Los Angeles tops 10.2M TEU in 2025 - https://gcaptain.com/port-of-los-angeles-posts-third-best-year-ever-tops-10-2m-teus-in-2025\nGlobeSt, L.A. and Long Beach share of U.S. container imports - https://globest.com/2024/08/20/imports-surge-puts-l-a-long-beach-ports-back-on-top\ngCaptain, Southern California containership backlog - https://gcaptain.com/los-angeles-and-long-beach-containership-backup-has-officially-ended/\nDHS Office of Inspector General, radiation portal monitors at U.S. seaports - https://oig.dhs.gov/sites/default/files/assets/Mgmt/2013/OIG_13-26_Jan13.pdf\nUnion Pacific, Southern California to Chicago intermodal service - https://www.up.com/news/service/la-chicago-intermodal-it-250808\nChicago Metropolitan Agency for Planning, freight - https://cmap.illinois.gov/mobility/freight\nThe Geography of Transport Systems, Ideal-X (1956) - https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/idealx-first-containeriship-1956/\nHarvard Business School Working Knowledge, The truck driver who reinvented shipping - https://hbswk.hbs.edu/archive/the-truck-driver-who-reinvented-shipping\nUNCTAD, Review of Maritime Transport 2024 - https://unctad.org/publication/review-maritime-transport-2024\n\nNarration uses a synthetic voice. Footage: Pixabay.\n\n#shipping #supplychain #containership #logistics #followthefreight",
   "tags": [
    "container ship",
    "how shipping works",

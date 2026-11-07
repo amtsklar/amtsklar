@@ -1,0 +1,492 @@
+{
+ "project": "how-it-works-01",
+ "channel": "The Civic Machine",
+ "language": "en-US",
+ "voice": "en-US-AndrewNeural",
+ "rate": "-8%",
+ "scenes": [
+  {
+   "chapter": "Intro",
+   "query": "toilet flush",
+   "text": "You push a little handle, the water swirls, and it's gone. Most of us never think about it again. But gone isn't a place.",
+   "fallback": [
+    "toilet",
+    "bathroom"
+   ]
+  },
+  {
+   "query": "sewer pipe",
+   "text": "That water just dropped into a network of pipes running under almost every street in America. And in a matter of hours, most of it will be cleaned up and sent back to a river, a lake, or the ocean.",
+   "fallback": [
+    "pipes",
+    "manhole"
+   ]
+  },
+  {
+   "query": "water treatment plant",
+   "text": "When the local paper in Vancouver, Washington, followed the water through the city's treatment plant, raw sewage to reasonably clean took about eight hours.",
+   "fallback": [
+    "sewage plant",
+    "water treatment"
+   ]
+  },
+  {
+   "query": "bacteria microscope",
+   "text": "And here's the strange part. The hardest worker in that plant isn't a pump or a filter. It's a living crowd you can't even see, and the plant has to keep it fed and breathing around the clock.",
+   "fallback": [
+    "microscope",
+    "bacteria"
+   ]
+  },
+  {
+   "query": "river city",
+   "text": "So let's follow one flush from start to finish. Five stops, one side business that turns the leftovers into fuel and fertilizer, and at the end, a place in California where this water ends up back in the drinking water supply. I'll show you exactly how they get it clean enough for that.",
+   "fallback": [
+    "river",
+    "city skyline"
+   ]
+  },
+  {
+   "chapter": "Stop 1: Under the street",
+   "overlay": "STOP 1: THE PIPES",
+   "query": "manhole",
+   "text": "Stop one is the pipe network. According to the EPA, there are about seventeen and a half thousand public wastewater treatment plants in the U.S., serving roughly two hundred seventy million people. That's eighty-two percent of the country.",
+   "fallback": [
+    "manhole cover",
+    "street"
+   ]
+  },
+  {
+   "query": "rural house",
+   "text": "Most of the rest are on septic systems. The EPA says more than one in five American households rely on one. If that's you, your flush takes a much shorter trip, into a tank buried in your own yard.",
+   "fallback": [
+    "farmhouse",
+    "country house"
+   ]
+  },
+  {
+   "query": "sewer pipe",
+   "text": "For everyone else, the trip is mostly downhill. Sewer lines are laid on a gentle slope so gravity does the work. Where a hill gets in the way, a lift station pumps the flow up so it can start falling again.",
+   "fallback": [
+    "pipes",
+    "drain pipe"
+   ]
+  },
+  {
+   "query": "sewer tunnel",
+   "text": "How much pipe are we talking about? The American Society of Civil Engineers puts it at well over a million miles. Their latest report card gave America's wastewater system a D-plus.",
+   "fallback": [
+    "tunnel",
+    "underground pipes"
+   ]
+  },
+  {
+   "query": "wet wipes",
+   "text": "This is where your choices matter. Pumps hate wipes. Utilities say even wipes sold as flushable can twist together with hair and grease into thick ropes that jam the pumps. Sewer crews call it ragging.",
+   "fallback": [
+    "wipes",
+    "pump"
+   ]
+  },
+  {
+   "query": "toilet paper",
+   "text": "During 2020, the EPA put out a simple request. Flush toilet paper and nothing else. Sewer people put it even shorter. Pee, poop, and paper.",
+   "fallback": [
+    "toilet paper roll"
+   ]
+  },
+  {
+   "query": "rain street",
+   "text": "One more wrinkle. In some older cities, the same pipes also carry rainwater from the streets. ASCE counts more than seven hundred of these combined systems. In a heavy storm they can overflow, and that's one of the biggest headaches in the business.",
+   "fallback": [
+    "heavy rain",
+    "storm drain"
+   ]
+  },
+  {
+   "chapter": "Stop 2: Screens and grit",
+   "overlay": "STOP 2: SCREENS",
+   "query": "water treatment plant",
+   "text": "Stop two. The flow reaches the plant, and the first job is pure muscle. Get the big stuff out.",
+   "fallback": [
+    "sewage plant"
+   ]
+  },
+  {
+   "query": "metal grate",
+   "text": "The water passes through bar screens, basically giant metal combs. Rakes scrape off whatever gets caught. Rags, wipes, plastic, things that never should have been flushed. Most of that ends up in a landfill.",
+   "fallback": [
+    "grate",
+    "landfill"
+   ]
+  },
+  {
+   "query": "sand",
+   "text": "Next comes grit removal. Sand, gravel, coffee grounds, eggshells. Heavy stuff that wears out pumps like sandpaper. The plant slows the water down just enough for the grit to drop out, while the lighter material keeps moving.",
+   "fallback": [
+    "gravel",
+    "coffee grounds"
+   ]
+  },
+  {
+   "chapter": "Stop 3: The big settle",
+   "overlay": "STOP 3: THE BIG SETTLE",
+   "query": "settling tank",
+   "text": "Stop three is the quietest part of the whole trip. The water flows into huge round tanks called primary clarifiers and basically just sits there.",
+   "fallback": [
+    "water treatment",
+    "round tank"
+   ]
+  },
+  {
+   "query": "water surface",
+   "text": "At one sewer district in Utah, it sits for two to four hours. Solids sink into a layer of sludge on the bottom, while grease floats to the top. Slow-moving arms sweep both away.",
+   "fallback": [
+    "calm water",
+    "water tank"
+   ]
+  },
+  {
+   "query": "dirty water",
+   "text": "The U.S. Geological Survey says this step removes about sixty percent of the suspended solids. Not bad for doing almost nothing. But the water is still cloudy, and it's still loaded with dissolved waste you can't just wait out.",
+   "fallback": [
+    "murky water",
+    "water"
+   ]
+  },
+  {
+   "query": "fish river",
+   "text": "That dissolved part is the real problem. Dump it into a river, and bacteria in the river start eating it. As they eat, they use up the oxygen fish need to breathe.",
+   "fallback": [
+    "fish underwater",
+    "river"
+   ]
+  },
+  {
+   "query": "air bubbles",
+   "text": "So how do you clean water of something you can't even see? You put that same process to work, inside a tank, on purpose. You hire an army. It's alive, it's hungry, and keeping it breathing is a big reason sewer plants rank among the biggest power users in town.",
+   "fallback": [
+    "bubbles water",
+    "bubbles"
+   ]
+  },
+  {
+   "chapter": "Stop 4: The bug farm",
+   "overlay": "STOP 4: THE BUG FARM",
+   "query": "aeration tank",
+   "text": "Stop four. The water moves into aeration tanks that look like giant hot tubs. Blowers push air through pipes along the bottom, and the whole tank churns with bubbles.",
+   "fallback": [
+    "bubbling water",
+    "water treatment"
+   ]
+  },
+  {
+   "query": "bacteria microscope",
+   "text": "In that water lives a dense crowd of bacteria and other microbes. They eat the dissolved waste, the same stuff that would have choked the river. The air is there because these microbes need oxygen to do it fast.",
+   "fallback": [
+    "microorganisms",
+    "microscope"
+   ]
+  },
+  {
+   "query": "old factory",
+   "text": "The basic trick is more than a century old. In 1914, Edward Ardern and William Lockett, working at a sewage plant in Manchester, England, presented a simple idea. Don't throw the microbes away. Keep the sludge, and the next batch cleans up much faster.",
+   "fallback": [
+    "brick factory",
+    "manchester"
+   ]
+  },
+  {
+   "query": "sewage plant",
+   "text": "They called it activated sludge, and the name stuck. Treatment plants around the world still run on versions of it today.",
+   "fallback": [
+    "water treatment plant"
+   ]
+  },
+  {
+   "query": "water tank",
+   "text": "After the aeration tank, the water goes to a second set of settling tanks. The well-fed microbes clump together and sink. Many of them get pumped right back to the start to keep the colony going. That's Ardern and Lockett's idea, still running.",
+   "fallback": [
+    "settling tank",
+    "pump"
+   ]
+  },
+  {
+   "query": "power lines",
+   "text": "That air isn't cheap. The EPA says water and wastewater plants often use thirty to forty percent of all the energy a city government consumes. And inside a typical sewer plant, blowing air for the microbes is usually the single biggest power draw.",
+   "fallback": [
+    "electricity pylon",
+    "blower"
+   ]
+  },
+  {
+   "query": "clear water",
+   "text": "When this stage is done, the USGS says more than ninety percent of the suspended solids are gone. The water is starting to look like water.",
+   "fallback": [
+    "water flowing",
+    "water"
+   ]
+  },
+  {
+   "chapter": "Stop 5: The final polish",
+   "overlay": "STOP 5: KILL THE GERMS",
+   "query": "ultraviolet light",
+   "text": "Stop five is about germs. Clean-looking water can still carry bacteria and viruses that make people sick, so plants disinfect it. Some use chlorine. Others shine strong ultraviolet light through it, which scrambles the microbes' DNA so they can't reproduce.",
+   "fallback": [
+    "uv lamp",
+    "chlorine"
+   ]
+  },
+  {
+   "query": "water outlet",
+   "text": "Chlorine has a catch. Leftover chlorine is toxic to fish, so plants that use it often have to remove it again before release. Then the treated water, called effluent, flows out to a river, a lake, or the ocean.",
+   "fallback": [
+    "river outflow",
+    "river"
+   ]
+  },
+  {
+   "query": "fire smoke",
+   "text": "It wasn't always like this. In 1969, the Cuyahoga River in Cleveland caught fire. And it wasn't even the first time. That river had been burning on and off since 1868.",
+   "fallback": [
+    "river fire",
+    "industrial river"
+   ]
+  },
+  {
+   "query": "capitol building",
+   "text": "That fire became a national symbol of pollution. Three years later, Congress passed the Clean Water Act, and cities across the country had to upgrade their plants.",
+   "fallback": [
+    "washington dc",
+    "congress"
+   ]
+  },
+  {
+   "query": "clean river",
+   "text": "The EPA says that back in 1972, almost twenty-eight percent of Americans were served by plants that didn't reach this secondary level of treatment. Today it's about one percent.",
+   "fallback": [
+    "river",
+    "lake"
+   ]
+  },
+  {
+   "query": "algae water",
+   "text": "And about forty-two percent are now served by plants with advanced treatment, extra steps that often target nutrients like nitrogen and phosphorus, which feed algae blooms.",
+   "fallback": [
+    "green algae",
+    "pond"
+   ]
+  },
+  {
+   "chapter": "The leftovers",
+   "overlay": "THE LEFTOVERS",
+   "query": "mud",
+   "text": "Now, remember everything that settled out? The solids from the first tanks, and the extra microbes from the bug farm? That's sludge. And a city's worth of toilets makes a lot of it.",
+   "fallback": [
+    "sludge",
+    "wet soil"
+   ]
+  },
+  {
+   "query": "biogas plant",
+   "text": "Many plants pump it into sealed, heated tanks called anaerobic digesters. No oxygen this time. A different crowd of microbes breaks the sludge down, typically held at around ninety-five degrees for two weeks or more.",
+   "fallback": [
+    "storage tanks",
+    "industrial tank"
+   ]
+  },
+  {
+   "query": "brooklyn",
+   "text": "In Brooklyn, the Newtown Creek plant does this in eight giant steel eggs. They're so striking that they show up in guides to the city's oddest sights.",
+   "fallback": [
+    "new york skyline",
+    "industrial building"
+   ]
+  },
+  {
+   "query": "gas flame",
+   "text": "Those microbes give off biogas, which is mostly methane, the main ingredient in natural gas. Plenty of plants burn it to heat the digesters or make their own electricity.",
+   "fallback": [
+    "blue flame",
+    "methane"
+   ]
+  },
+  {
+   "query": "farm field",
+   "text": "What's left is dewatered and treated, and the EPA calls it biosolids. For 2024, the EPA reported that about sixty percent went onto land, roughly a quarter went to landfills, and about fourteen percent was burned.",
+   "fallback": [
+    "tractor field",
+    "spreading manure"
+   ]
+  },
+  {
+   "query": "lawn fertilizer",
+   "text": "Milwaukee has been doing this since 1926. Its plant dries the microbes into pellets and sells them as a lawn fertilizer called Milorganite. The name comes from Milwaukee Organic Nitrogen.",
+   "fallback": [
+    "green lawn",
+    "fertilizer"
+   ]
+  },
+  {
+   "query": "laboratory test",
+   "text": "To be fair, it's not all good news. Sludge can carry PFAS, the so-called forever chemicals. In January 2025, the EPA released a draft risk assessment that flagged possible risks on some farms, even at very low levels. Maine has already banned spreading biosolids on land.",
+   "fallback": [
+    "test tubes",
+    "laboratory"
+   ]
+  },
+  {
+   "chapter": "Where it goes next",
+   "overlay": "BACK TO THE TAP?",
+   "query": "orange county",
+   "text": "Okay. The California story I promised. In Orange County, a big share of the treated water doesn't go to the ocean. It goes through another plant.",
+   "fallback": [
+    "california coast",
+    "water treatment"
+   ]
+  },
+  {
+   "query": "water filter",
+   "text": "The Groundwater Replenishment System pushes it through microfiltration, then reverse osmosis membranes, then ultraviolet light combined with hydrogen peroxide. It's the water version of a triple check.",
+   "fallback": [
+    "membrane filter",
+    "filtration"
+   ]
+  },
+  {
+   "query": "groundwater",
+   "text": "Then the purified water is either injected underground as a barrier against seawater, or sent to basins where it slowly soaks down into the same groundwater basin local wells draw from.",
+   "fallback": [
+    "well water",
+    "pond"
+   ]
+  },
+  {
+   "query": "drinking water",
+   "text": "The system can produce up to one hundred thirty million gallons a day. The water district says that's enough for nearly one million people.",
+   "fallback": [
+    "glass of water",
+    "faucet"
+   ]
+  },
+  {
+   "query": "faucet",
+   "text": "So the honest answer to where your flush goes is, back into the water cycle. Usually a river. In a few places, eventually, somebody's tap.",
+   "fallback": [
+    "tap water",
+    "water cycle"
+   ]
+  },
+  {
+   "chapter": "Recap",
+   "overlay": "RECAP",
+   "query": "city aerial",
+   "text": "Quick recap. Pipes carry it downhill to the plant. Screens and grit traps pull out the junk. Big tanks let the heavy stuff settle. Microbes eat what's dissolved. Chlorine or UV kills the germs. And the leftovers become fuel, fertilizer, or yes, landfill.",
+   "fallback": [
+    "aerial city",
+    "water treatment plant"
+   ]
+  },
+  {
+   "query": "manhole cover",
+   "text": "All of it running day and night, mostly out of sight. ASCE says the average household sewer bill climbed from about thirty-five dollars a month in 2010 to nearly sixty-five by 2020. Now you know what that money is doing.",
+   "fallback": [
+    "street",
+    "pipes"
+   ]
+  },
+  {
+   "query": "river bridge",
+   "text": "I'm curious. Have you ever toured your local treatment plant, or do you know where your town's water ends up? Tell me in the comments.",
+   "fallback": [
+    "river",
+    "town"
+   ]
+  },
+  {
+   "query": "garbage truck",
+   "text": "Here on The Civic Machine, we follow everyday things, a flush, a light switch, a trash bag, all the way to the other end. If that's your kind of curiosity, subscribe. Next time, we're following your garbage truck.",
+   "fallback": [
+    "trash truck",
+    "recycling truck"
+   ]
+  }
+ ],
+ "meta": {
+  "titles": [
+   "What REALLY Happens After You Flush",
+   "Where Your Toilet Water Goes (It's STRANGER Than You Think)",
+   "The Invisible ARMY That Cleans Your Sewage",
+   "From Toilet to River in 8 HOURS: How Sewage Plants Work",
+   "Your Flush Doesn't Disappear. Here's Where It GOES"
+  ],
+  "description": "You push the handle and it's gone. But gone isn't a place.\nWe follow one flush through the pipes, the treatment plant, and the microbes that do the real work, all the way back to a river, and in one California county, back toward the tap.\n\nIn this video:\n- The sewer network: gravity, lift stations and why wipes jam pumps\n- Bar screens and grit removal\n- Primary clarifiers: what settling alone can do\n- Activated sludge: the 1914 idea still cleaning our water\n- Chlorine vs. UV, and how the Cuyahoga River fire changed everything\n- Sludge, biogas, biosolids, Milorganite and the PFAS question\n- Orange County's Groundwater Replenishment System\n\nHave you ever toured your local treatment plant? Tell us in the comments.\n\nSources:\nEPA, 2022 Clean Watersheds Needs Survey summary - https://www.epa.gov/system/files/documents/2024-05/2022-cwns-summary.pdf\nASCE, 2025 Report Card for America's Infrastructure: Wastewater - https://infrastructurereportcard.org/wp-content/uploads/2025/03/Wastewater.pdf\nEPA, About septic systems - https://www.epa.gov/septic\nEPA, Energy efficiency for water utilities - https://www.epa.gov/sustainable-water-infrastructure/energy-efficiency-water-utilities\nUSGS Water Science School, Wastewater treatment water use - https://www.usgs.gov/water-science-school/science/wastewater-treatment-water-use\nNorth Davis Sewer District (Utah), Primary treatment - https://northdavissewer.gov/?p=1402\nEPA, Basic information about sewage sludge and biosolids - https://www.epa.gov/biosolids/basic-information-about-sewage-sludge-and-biosolids\nEPA, Draft sewage sludge risk assessment for PFOA and PFOS (Jan 2025) - https://www.epa.gov/system/files/documents/2025-01/draft-sewage-sludge-risk-assessment-pfoa-pfos.pdf\nEPA, Wastewater technology fact sheets: UV disinfection and dechlorination - https://webarchive.library.unt.edu/web/20090508051532/http:/epa.gov/owm/mtb/uv.pdf\nNACWA, Wipes fact sheet - https://www.nacwa.org/docs/default-source/resources---public/wipes-one-pager.pdf\nASCE, Civil Engineering Almanac: the 1969 Cuyahoga River fire - https://www.asce.org/publications-and-news/civil-engineering-source/article/2021/06/23/civil-engineering-almanac-the-1969-cuyahoga-river-fire\nWaterWorld, Activated sludge: 100 years - https://www.waterworld.com/international/wastewater/article/16200968/activated-sludge-100-years-not-out\nMilorganite, History - https://www.milorganite.com/about-us/history\nEPA, OCWD Groundwater Replenishment System case study - https://www.epa.gov/system/files/documents/2024-09/ocwd-groundwater-replenishment-system.pdf\nOrange County Water District, About GWRS - https://ocwd.com/gwrs/about-gwrs/\nThe Columbian, How Vancouver's wastewater goes from stinky to sanitary - https://columbian.com/news/2023/mar/25/how-vancouvers-wastewater-goes-from-stinky-to-sanitary\n\nNarration uses a synthetic voice. Script researched and fact-checked by a human-led team.\n\n#howitworks #wastewater #infrastructure #engineering #explained",
+  "tags": [
+   "how it works",
+   "wastewater treatment",
+   "what happens when you flush",
+   "sewage treatment plant",
+   "where does poop go",
+   "activated sludge",
+   "how sewers work",
+   "infrastructure explained",
+   "civil engineering",
+   "water treatment",
+   "biosolids",
+   "flushable wipes",
+   "water recycling",
+   "Clean Water Act",
+   "The Civic Machine"
+  ]
+ },
+ "thumbnails": [
+  {
+   "image": "s00_0.jpg",
+   "lines": [
+    [
+     "AFTER",
+     130,
+     "white"
+    ],
+    [
+     "YOU FLUSH",
+     150,
+     "#FFD400"
+    ]
+   ],
+   "badge": "8 HOURS LATER"
+  },
+  {
+   "image": "s20_0.jpg",
+   "lines": [
+    [
+     "BACTERIA",
+     140,
+     "#FFD400"
+    ],
+    [
+     "DO THIS",
+     130,
+     "white"
+    ]
+   ],
+   "badge": "THE BUG FARM"
+  },
+  {
+   "image": "s43_0.jpg",
+   "lines": [
+    [
+     "TOILET",
+     150,
+     "white"
+    ],
+    [
+     "TO TAP?",
+     170,
+     "#FFD400"
+    ]
+   ],
+   "badge": "CALIFORNIA"
+  }
+ ]
+}
