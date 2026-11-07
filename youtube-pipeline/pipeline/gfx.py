@@ -52,7 +52,7 @@ def arrow(ax, x0, y0, x1, y1, color=AMBER, lw=4):
     ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1), arrowstyle="-|>", mutation_scale=28, color=color, lw=lw))
 
 
-def bars(f, labels, values, texts, colors=None, ylim=None, rect=(0.22, 0.14, 0.56, 0.64), fs=54):
+def bars(f, labels, values, texts, colors=None, ylim=None, rect=(0.22, 0.19, 0.56, 0.60), fs=54):
     ax = axes(f, rect)
     colors = colors or [CYAN, AMBER, GREEN, RED][:len(values)]
     b = ax.bar(labels, values, color=colors, width=0.55)
