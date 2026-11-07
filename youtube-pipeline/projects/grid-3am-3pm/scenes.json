@@ -119,11 +119,11 @@
    "graphic": "bar chart: ERCOT average solar output at noon, summer 2023 (12 GW) vs. summer 2025 (24 GW)"
   },
   {
-   "query": "gas power plant",
+   "query": "gas turbine power plant",
    "text": "And natural gas made room for it. Gas supplied half of the Texas grid's midday power in the summer of 2023, and 37 percent in the summer of 2025.",
    "fallback": [
-    "power station",
-    "industrial chimney"
+    "power plant",
+    "natural gas plant"
    ]
   },
   {
@@ -143,11 +143,11 @@
    ]
   },
   {
-   "query": "electric outlet",
+   "query": "power outlet",
    "text": "So at 3 a.m. on the Great Plains you might be running largely on wind, and at 3 p.m. in California, close to half of it might be sunshine. Same country, same kind of outlet, a different machine.",
    "fallback": [
-    "power socket",
-    "light switch"
+    "wall socket",
+    "electric plug"
    ]
   },
   {
@@ -205,11 +205,11 @@
   {
    "chapter": "Batteries: moving noon to night",
    "overlay": "MOVING NOON TO NIGHT",
-   "query": "battery storage",
+   "query": "battery storage facility",
    "text": "One fast-growing answer is a battery. Charge it with cheap midday solar, then let it run in the evening. The EIA puts it neatly: storing midday solar flattens the duck's curve, and sending it out in the evening shortens the duck's neck.",
    "fallback": [
-    "batteries",
-    "energy storage containers"
+    "energy storage",
+    "batteries"
    ]
   },
   {
@@ -318,7 +318,7 @@
    "text": "If supply and demand drift too far apart, the EIA warns, the result can be local or even wide-area blackouts. In the big regional markets, prices help with that job. The EIA notes they tend to fall when solar output is high and rise as it fades.",
    "fallback": [
     "thunderstorm",
-    "electricity pylon"
+    "high voltage lines"
    ]
   },
   {
@@ -332,19 +332,19 @@
   {
    "chapter": "Your plug, your timing",
    "overlay": "YOUR TIMING MATTERS",
-   "query": "home living room evening",
+   "query": "living room lamp night",
    "text": "So what does this mean at your house? Most of us never see wholesale prices. But your timing still matters.",
    "fallback": [
-    "house interior",
-    "family home"
+    "house evening",
+    "home interior night"
    ]
   },
   {
-   "query": "electric car charging",
+   "query": "electric car charging home",
    "text": "Most electric vehicle drivers charge overnight at home, according to the Department of Energy. And some utilities offer time-of-use rates, where electricity costs less in certain hours and more in others.",
    "fallback": [
-    "ev charging",
-    "electric vehicle"
+    "electric vehicle charging",
+    "ev charger"
    ]
   },
   {
@@ -364,11 +364,11 @@
    ]
   },
   {
-   "query": "electric car garage",
+   "query": "electric vehicle charger",
    "text": "Running the dishwasher or charging the car in a cheap hour isn't just about your bill. It's you helping the grid fill the duck's belly instead of its neck.",
    "fallback": [
-    "car charging home",
-    "garage"
+    "ev charging station",
+    "electric car"
    ]
   },
   {
@@ -398,19 +398,19 @@
    ]
   },
   {
-   "query": "electricity bill",
+   "query": "utility bill",
    "text": "Now I'm curious: what does your utility charge at night versus in the afternoon? Do you have a time-of-use rate, or one flat price? Tell me your state in the comments.",
    "fallback": [
-    "paperwork desk",
-    "home office"
+    "paying bills",
+    "calculator bills"
    ]
   },
   {
-   "query": "city lights night",
+   "query": "new york night",
    "text": "If you like seeing how the hidden machinery of everyday life really works, subscribe to The Hidden Grid. And every source behind the numbers in this video is listed in the description.",
    "fallback": [
-    "skyline night",
-    "power lines night"
+    "american city night",
+    "city skyline night"
    ]
   }
  ],
@@ -443,7 +443,7 @@
  },
  "thumbnails": [
   {
-   "image": "s00_0.jpg",
+   "image": "s01_1.jpg",
    "lines": [
     [
      "3 A.M.",
@@ -464,7 +464,7 @@
    "badge": "SAME PLUG"
   },
   {
-   "image": "s18_0.jpg",
+   "image": "s17_1.jpg",
    "lines": [
     [
      "THE GRID'S",
@@ -485,7 +485,7 @@
    "badge": "THE DUCK CURVE"
   },
   {
-   "image": "s29_0.jpg",
+   "image": "s32_1.jpg",
    "lines": [
     [
      "PAID TO",

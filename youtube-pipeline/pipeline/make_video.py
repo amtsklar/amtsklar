@@ -355,6 +355,8 @@ def stage_images_pixabay(project):
         used |= set(json.loads((b / "rejected.json").read_text()))
     for i, sc in enumerate(cfg["scenes"]):
         need = max(1, math.ceil((tl[i]["dur"] + tl[i]["gap"]) / CLIP_MAX))
+        if (b / "graphics" / f"s{i:02d}.png").exists():
+            continue                      # own chart/diagram replaces stock footage
         k = len(list(img_dir.glob(f"s{i:02d}_*")))
         queries = list(dict.fromkeys([sc["query"]] + sc.get("fallback", []) + [" ".join(sc["query"].split()[-2:])]))
         if k == 0 and sc.get("video", True):
@@ -614,7 +616,9 @@ def stage_render(project):
     clips, n = [], 0
     for i, sc in enumerate(cfg["scenes"]):
         span = tl["scenes"][i]["dur"] + (tl["scenes"][i + 1]["gap"] if i + 1 < len(cfg["scenes"]) else 1.5)
-        imgs = sorted(p for p in (b / "images").glob(f"s{i:02d}_*") if p.suffix in (".jpg", ".mp4"))
+        g = b / "graphics" / f"s{i:02d}.png"
+        imgs = [g] if g.exists() else sorted(p for p in (b / "images").glob(f"s{i:02d}_*")
+                                             if p.suffix in (".jpg", ".mp4"))
         if not imgs:
             raise SystemExit(f"no image for scene {i}")
         k = len(imgs)
@@ -628,7 +632,11 @@ def stage_render(project):
             p = f"(t/{d:.3f})"
             x = f"({x0}+({x1}-{x0})*{p})*{rx}"
             y = f"({y0}+({y1}-{y0})*{p})*{ry}"
-            if img.suffix == ".mp4":   # real footage: cover-crop, no pan
+            if img.suffix == ".png":   # own graphic: static, gentle fade in
+                vf = (f"scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=0x080e1c,"
+                      f"fps={FPS},format=yuv420p,fade=t=in:st=0:d=0.4")
+                src = ["-loop", "1", "-framerate", str(FPS), "-i", str(img)]
+            elif img.suffix == ".mp4":   # real footage: cover-crop, no pan
                 vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
                       f"fps={FPS},format=yuv420p")
                 src = ["-stream_loop", "-1", "-i", str(img)]
@@ -636,7 +644,7 @@ def stage_render(project):
                 vf = (f"scale={fw}:{fh},crop={cw}:{ch}:x='{x}':y='{y}',scale={W}:{H}:flags=bicubic,"
                       f"fps={FPS},format=yuv420p")
                 src = ["-loop", "1", "-framerate", str(FPS), "-i", str(img)]
-            if j == 0 and sc.get("overlay"):
+            if j == 0 and sc.get("overlay") and img.suffix != ".png":
                 txt = esc(sc["overlay"])
                 font = FONT.as_posix().replace(":", "\\:")   # Windows: C\:/...
                 vf += (f",drawtext=fontfile='{font}':text='{txt}':fontsize=88:fontcolor=white:"
