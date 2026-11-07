@@ -106,3 +106,11 @@ Restates rows 1, 4, 6, 18, 20, 23–24, 31–33. No new numbers.
 - Production tax credit value ($22/MWh, EIA 2012): outdated; mentioned qualitatively only.
 - CAISO total battery capacity: EIA (16 GW, Apr 2026, CAISO) and CAISO DMM (~25,700 MW, Dec 2025, incl. WEIM areas) use different scopes; no capacity number used to avoid confusion.
 - Retail time-of-use price levels and specific "cheap hours": vary by utility; no figures used.
+
+## Own graphics (built 2026-11-07, `make_graphics.py`, data in `build/graphics/data/`)
+Data pulled from the EIA API v2 (EIA-930, `electricity/rto/region-data` and `fuel-type-data`), hourly, hour-ending, converted to local time; points plotted at the middle of each hour.
+- s04: US48 demand 2025, hourly averages (Eastern): low ≈ 423 GW (hour ending 5 a.m.), evening peak ≈ 547 GW (hour ending 7 p.m.). Matches critic's check (423–426 / 544–547 GW).
+- s07: US48 nuclear 2025, hourly averages: 89.6–90.0 GW in every hour.
+- s09: SPP wind ÷ demand 2025 (Central): 46.9 % (2 a.m.), 31.1 % (noon). Dec 28 callout from row 7.
+- s18/s19: CAISO April 2025 average day (Pacific): net load = demand − solar − wind; minimum ≈ 5.4 GW (hour ending 4 p.m.), maximum ≈ 22.2 GW (hour ending 10 p.m.) → "+17 GW in 6 hours" (on-screen label, marked "our calculation").
+- s12: 12 → 24 GW (row 11). s24: 5,700 → 9,100 MW (CAISO DMM, row on batteries). s29: $36 / >$500 / <$0 (LBNL ReWEP, rows 27–28). s33: 8.8 % → 7.1 % (row 32).
