@@ -639,7 +639,7 @@ def stage_render(project):
             elif img.suffix == ".mp4":   # real footage: cover-crop, no pan
                 vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
                       f"fps={FPS},format=yuv420p")
-                src = ["-stream_loop", "-1", "-i", str(img)]
+                src = ["-stream_loop", "-1", "-ss", "1.0", "-i", str(img)]   # skip fade-in/black lead frames
             else:
                 vf = (f"scale={fw}:{fh},crop={cw}:{ch}:x='{x}':y='{y}',scale={W}:{H}:flags=bicubic,"
                       f"fps={FPS},format=yuv420p")
