@@ -63,7 +63,7 @@ CHAPTERS
 6:30 Your plug, your timing
 7:31 Recap
 
-PHOTO CREDITS (Creative Commons, via Openverse)
+FOOTAGE & PHOTO CREDITS
 "phone, smartphone, mobile, portable, screen, digital, commun" by Natures_Embrace, Pixabay Content License, https://pixabay.com/videos/id-202987/
 "phone, iphone, mobile, green, smartphone" by rmartinr, Pixabay Content License, https://pixabay.com/photos/phone-iphone-mobile-green-8594571/
 "windmill, turbine, energy, storm clouds" by Ditscha, Pixabay Content License, https://pixabay.com/videos/id-112957/

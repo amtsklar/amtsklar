@@ -706,7 +706,7 @@ def stage_meta(project):
             s = int(t["start"]) if t["i"] else 0
             lines.append(f"{s // 60}:{s % 60:02d} {sc['chapter']}")
     credits = json.loads((b / "credits.json").read_text())
-    lines += ["", "PHOTO CREDITS (Creative Commons, via Openverse)"]
+    lines += ["", "FOOTAGE & PHOTO CREDITS"]
     seen = set()
     for c in credits.values():
         key = (c["creator"], c["url"])
