@@ -340,12 +340,14 @@
    ]
   },
   {
-   "query": "electric car charging home",
+   "query": "electric car charging garage",
    "text": "Most electric vehicle drivers charge overnight at home, according to the Department of Energy. And some utilities offer time-of-use rates, where electricity costs less in certain hours and more in others.",
    "fallback": [
-    "electric vehicle charging",
-    "ev charger"
-   ]
+    "tesla charging",
+    "home ev charger",
+    "electric car plug"
+   ],
+   "video": false
   },
   {
    "query": "smart meter",
