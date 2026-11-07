@@ -154,7 +154,7 @@
    "chapter": "The duck curve",
    "overlay": "THE DUCK CURVE",
    "query": "sunset power lines",
-   "text": "Now here's the twist I promised. You'd think the toughest moment for the grid is the hottest afternoon. Often it isn't. It's the stretch around sunset.",
+   "text": "Now here's the twist I promised. You'd think the toughest moment for the grid is the hottest afternoon, but often it isn't. It's the stretch around sunset.",
    "fallback": [
     "sunset city",
     "electricity pylon sunset"
@@ -180,7 +180,7 @@
   },
   {
    "query": "solar farm spring",
-   "text": "The belly has its own problem. In spring, when it's mild and demand is low, there can be more solar than the grid can use. In 2024, California's grid operator curtailed 3.4 million megawatt-hours of wind and solar, 29 percent more than in 2023. Solar was 93 percent of it.",
+   "text": "The belly has its own problem: in spring, when it's mild and demand is low, there can be more solar than the grid can use. In 2024, California's grid operator curtailed 3.4 million megawatt-hours of wind and solar, 29 percent more than in 2023. Solar was 93 percent of it.",
    "fallback": [
     "solar panels field",
     "green field solar"
@@ -274,7 +274,7 @@
   },
   {
    "query": "power plant chimney",
-   "text": "Why would anyone do that? The EIA explains that some plants can't easily or cheaply shut down for a short stretch. Nuclear operators try to run at full power. Big steam plants face costs every time they stop and restart.",
+   "text": "Why would anyone do that? The EIA explains that some plants can't easily or cheaply shut down for a short stretch. Nuclear operators try to run at full power, and big steam plants face costs every time they stop and restart.",
    "fallback": [
     "steam turbine",
     "industrial plant"
@@ -399,7 +399,7 @@
   },
   {
    "query": "electricity bill",
-   "text": "Now I'm curious. What does your utility charge at night versus in the afternoon? Do you have a time-of-use rate, or one flat price? Tell me your state in the comments.",
+   "text": "Now I'm curious: what does your utility charge at night versus in the afternoon? Do you have a time-of-use rate, or one flat price? Tell me your state in the comments.",
    "fallback": [
     "paperwork desk",
     "home office"
