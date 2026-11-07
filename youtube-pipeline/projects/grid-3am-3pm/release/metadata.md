@@ -21,7 +21,6 @@ In this video:
 - Net load and the duck curve, explained simply
 - Batteries shifting midday solar into the evening
 - Why wholesale prices swing, and how they can go negative
-- What balancing authorities do
 - Why your timing (EV charging, time-of-use rates) matters
 
 Sources:
@@ -57,18 +56,19 @@ Education only, not financial advice. The creator invests in the energy sector.
 CHAPTERS
 0:00 Intro
 0:44 3 a.m.: The night shift
-2:31 3 p.m.: The solar shift
-3:52 The duck curve
-5:20 Batteries: moving noon to night
-6:40 Why prices swing
-9:08 Your plug, your timing
-10:10 Recap
+2:15 3 p.m.: The solar shift
+3:09 The sunset problem
+4:18 Batteries: moving noon to night
+4:51 Why prices swing
+6:30 Your plug, your timing
+7:31 Recap
 
 PHOTO CREDITS (Creative Commons, via Openverse)
 "phone, smartphone, mobile, portable, screen, digital, commun" by Natures_Embrace, Pixabay Content License, https://pixabay.com/videos/id-202987/
 "phone, iphone, mobile, green, smartphone" by rmartinr, Pixabay Content License, https://pixabay.com/photos/phone-iphone-mobile-green-8594571/
 "windmill, turbine, energy, storm clouds" by Ditscha, Pixabay Content License, https://pixabay.com/videos/id-112957/
 "sky astronomy, northern lights, galaxy, universe, sky, natur" by rauschenberger, Pixabay Content License, https://pixabay.com/photos/sky-astronomy-northern-lights-galaxy-4856790/
+"wind mills, energy, clouds, power, nature, outdoors, sky, en" by ELG21, Pixabay Content License, https://pixabay.com/photos/wind-mills-energy-clouds-power-6928590/
 "star trails, night, stars, rotation, starry sky, dark, light" by Pexels, Pixabay Content License, https://pixabay.com/photos/star-trails-night-stars-rotation-1846734/
 "thunderclouds, clouds, nature, sunbeams, atmosphere, sky, we" by adege, Pixabay Content License, https://pixabay.com/photos/thunderclouds-clouds-sunbeams-9020956/
 "factory, sunset, smoke, sugar beet factory, sugar, clouds, w" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-91282/
@@ -85,10 +85,10 @@ PHOTO CREDITS (Creative Commons, via Openverse)
 "houses, solar panels, solar farm, solar estate, solar-powere" by Juras2021, Pixabay Content License, https://pixabay.com/videos/id-168801/
 "photovoltaic system, solar, solar energy, solar panel, photo" by mrganso, Pixabay Content License, https://pixabay.com/photos/photovoltaic-system-solar-2742302/
 "gas turbine equipment, work, factory" by evgenia_axsenova, Pixabay Content License, https://pixabay.com/photos/gas-turbine-equipment-work-factory-3428713/
+"power plant, carbon, coal fired power plant, industry, envir" by grunzibaer, Pixabay Content License, https://pixabay.com/photos/power-plant-carbon-5452632/
 "photovoltaic, photovoltaic system, solar system, solar, natu" by andreas160578, Pixabay Content License, https://pixabay.com/photos/photovoltaic-photovoltaic-system-2138992/
 "solar, panel, solar panels, solar energy, rooftop, man, work" by This_is_Engineering, Pixabay Content License, https://pixabay.com/photos/solar-panel-solar-panels-8499901/
-"alternative, blue, cell, construction, day, daytime, eco, ec" by Buvrix27, Pixabay Content License, https://pixabay.com/videos/id-2526/
-"energy, eco, solar, wood, photovoltaic, alternative energy, " by Antranias, Pixabay Content License, https://pixabay.com/photos/energy-eco-solar-wood-photovoltaic-1322810/
+"photovoltaic system, solar, solar energy, solar panel, photo" by mrganso, Pixabay Content License, https://pixabay.com/photos/photovoltaic-system-solar-2742304/
 "windmill, heaven, sun, dirty, high voltage, sunset, energy, " by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-355270/
 "sunset, countryside, nature, power lines, power poles, high-" by jplenio, Pixabay Content License, https://pixabay.com/photos/sunset-countryside-power-lines-3442835/
 "renewable, energy, environment, wind, solar, green, nature, " by seagul, Pixabay Content License, https://pixabay.com/photos/renewable-energy-environment-wind-1989416/
@@ -96,14 +96,7 @@ PHOTO CREDITS (Creative Commons, via Openverse)
 "solar energy, solar system, nature, solar panel, photovoltai" by andreas160578, Pixabay Content License, https://pixabay.com/photos/solar-energy-solar-system-2157212/
 "parand city, tehran suburb, residential towers, urban landsc" by mostafa_meraji, Pixabay Content License, https://pixabay.com/videos/id-377374/
 "street, melbourne, australia, metropolis, night, city, light" by raedon, Pixabay Content License, https://pixabay.com/photos/street-melbourne-australia-142638/
-"sunset, canal, city, light, afternoon, houses, urban, traffi" by Matthias_Groeneveld, Pixabay Content License, https://pixabay.com/videos/id-230248/
 "data center, engine room, the battery pack, data center, dat" by Akela999, Pixabay Content License, https://pixabay.com/photos/data-center-engine-room-2476790/
-"sun, heaven, clouds, evening sky, evening atmosphere, windmi" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-318540/
-"sunset, factory, electric, the industry, silhouette, color, " by rauschenberger, Pixabay Content License, https://pixabay.com/photos/sunset-factory-electric-4485701/
-"battery, free background, charge, technology, cool backgroun" by Finnrich, Pixabay Content License, https://pixabay.com/photos/battery-charge-technology-lithium-5305728/
-"battery, alkaline batteries, charge, source, energy, volt, c" by Alexei_other, Pixabay Content License, https://pixabay.com/photos/battery-alkaline-batteries-charge-4909979/
-"analysis, analytics, business, charts, computer, concept, da" by Pexels, Pixabay Content License, https://pixabay.com/photos/analysis-analytics-business-charts-1841158/
-"digital marketing, technology, notebook, stats, statistics, " by AS_Photography, Pixabay Content License, https://pixabay.com/photos/digital-marketing-technology-1433427/
 "wind, electricity, windpower, rice, vietnam, nature, farming" by Ponnguyenduy, Pixabay Content License, https://pixabay.com/videos/id-307864/
 "money, cash, bank, banknote, bill, currency, dollar, finance" by 34168960, Pixabay Content License, https://pixabay.com/videos/id-153458/
 "puzzle, money, business, finance, solution, success, jigsaw," by qimono, Pixabay Content License, https://pixabay.com/photos/puzzle-money-business-finance-2500328/
@@ -112,13 +105,6 @@ PHOTO CREDITS (Creative Commons, via Openverse)
 "smoke, chimney, pollution, smoking, environmental protection" by JuergenPM, Pixabay Content License, https://pixabay.com/photos/smoke-chimney-pollution-smoking-258786/
 "solar energy, sunlight, sun, energy, energy generation, ener" by adege, Pixabay Content License, https://pixabay.com/videos/id-156444/
 "solar cells, photovoltaic, electricity, green electricity, e" by blickpixel, Pixabay Content License, https://pixabay.com/photos/solar-cells-photovoltaic-electricity-491701/
-"controls, indoors, room, computer, control center, technolog" by Pexels, Pixabay Content License, https://pixabay.com/photos/controls-indoors-room-computer-1853330/
-"power plant, conducting, electronic, old, means, inspector, " by Bergadder, Pixabay Content License, https://pixabay.com/photos/power-plant-conducting-electronic-344231/
-"energy, electricity pylons, thunderstorm, electricity, indus" by MonikaP, Pixabay Content License, https://pixabay.com/photos/energy-electricity-pylons-2904606/
-"birds, wires, pole, nature, landscape, darling, clouds, elec" by ELG21, Pixabay Content License, https://pixabay.com/photos/birds-wires-pole-landscape-darling-9478544/
-"electricity, rain, weather, energy, electric, danger, downlo" by susan-lu4esm, Pixabay Content License, https://pixabay.com/photos/electricity-rain-weather-energy-4766686/
-"computer, summary, chart, business, seo, presentation, busin" by Lalmch, Pixabay Content License, https://pixabay.com/photos/computer-summary-chart-business-767776/
-"job, office, team, business, internet, technology, design, d" by RonaldCandonga, Pixabay Content License, https://pixabay.com/photos/job-office-team-business-internet-5382501/
 "apartment, room, house, residential interior, interior desig" by jarmoluk, Pixabay Content License, https://pixabay.com/photos/apartment-room-house-2094718/
 "room, apartment, interior design, furnishings, visual design" by keresi72, Pixabay Content License, https://pixabay.com/photos/room-apartment-interior-design-416050/
 "electric, parking, vehicle, transportation, automobile, plug" by stanvpetersen, Pixabay Content License, https://pixabay.com/photos/electric-parking-vehicle-2778403/
@@ -139,7 +125,7 @@ PHOTO CREDITS (Creative Commons, via Openverse)
 
 ## Tags
 
-power grid explained, duck curve, where does electricity come from, electricity at night, solar power grid, net load, baseload power, nuclear power baseload, wind power at night, grid batteries, negative electricity prices, time of use rates, ev charging off peak, balancing authority, how the grid works
+power grid explained, duck curve, where does electricity come from, electricity at night, solar power grid, net load, baseload power, nuclear power baseload, wind power at night, grid batteries, negative electricity prices, time of use rates, ev charging off peak, how the grid works
 
 ## Upload checklist
 
