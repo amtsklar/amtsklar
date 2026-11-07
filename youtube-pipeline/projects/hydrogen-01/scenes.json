@@ -7,11 +7,12 @@
  "scenes": [
   {
    "chapter": "Intro",
-   "query": "hydrogen tanks",
+   "query": "hydrogen tank",
    "text": "In 2024, engineers at the National Renewable Energy Laboratory in Colorado reported on a test at megawatt scale. They took electricity, turned it into hydrogen, stored it, and then turned it back into electricity.",
    "fallback": [
-    "industrial tanks",
-    "laboratory equipment"
+    "gas storage tanks",
+    "pressure tanks",
+    "industrial tanks"
    ]
   },
   {
@@ -24,45 +25,45 @@
    "graphic": "bar chart: electricity returned per 100 units stored. Hydrogen system, NREL ARIES test (2024): 28.3 at full power, 35.1 at low power. U.S. utility-scale battery fleet (EIA, 2019): 82"
   },
   {
-   "query": "battery storage facility",
+   "query": "battery storage",
    "text": "Now compare that with a battery. In 2019, the EIA found that America's grid batteries gave back about 82 percent of the electricity put into them. That number is called round-trip efficiency.",
    "fallback": [
-    "energy storage",
-    "battery containers"
+    "energy storage container",
+    "lithium battery"
    ]
   },
   {
-   "query": "dinner table food",
+   "query": "family dinner table",
    "text": "So why did the federal government commit billions of dollars to hydrogen? And why might the hydrogen that matters most already be on your dinner table?",
    "fallback": [
-    "family dinner",
-    "bread table"
+    "dinner plate food",
+    "bread vegetables table"
    ]
   },
   {
-   "query": "hydrogen fuel station",
+   "query": "fuel station",
    "text": "Both answers come down to one idea: hydrogen isn't really a fuel problem, it's a where-do-you-use-it problem. So let's follow the electron, and see where turning it into a molecule is worth the trip.",
    "fallback": [
-    "hydrogen car",
-    "gas station"
+    "gas station night",
+    "fueling car"
    ]
   },
   {
    "chapter": "What hydrogen is",
    "overlay": "WHAT HYDROGEN IS",
-   "query": "water drops",
+   "query": "water molecule",
    "text": "First, what hydrogen actually is. It's the most abundant element in the universe, but on Earth it comes combined with other elements: with oxygen in water, or with carbon in natural gas, coal and oil.",
    "fallback": [
-    "ocean waves",
-    "water splash"
+    "water splash",
+    "water drop"
    ]
   },
   {
-   "query": "oil well",
+   "query": "natural gas plant",
    "text": "So before we can use it, we have to pull it apart from those compounds. The EIA calls hydrogen an energy carrier, something that moves energy from one place to another, a bit like electricity.",
    "fallback": [
-    "drilling rig",
-    "pump jack"
+    "gas pipeline",
+    "oil refinery"
    ]
   },
   {
@@ -129,8 +130,7 @@
    "query": "solar panels",
    "text": "Either way, the IEA says low-emission hydrogen was still less than 1 percent of global production in 2024.",
    "fallback": [
-    "solar farm",
-    "wind farm"
+    "solar farm"
    ]
   },
   {
@@ -188,11 +188,11 @@
    "graphic": "bar chart (log scale or icon grid): U.S. alternative fueling station counts, AFDC, data as of Nov 7, 2026: hydrogen 44 stations (38 retail, 6 non-retail; 42 in California) vs. electric vehicle charging 83,972 station locations (excludes residential chargers)"
   },
   {
-   "query": "heat pump house",
+   "query": "heat pump",
    "text": "Home heating has the same problem, only sharper. The Energy Department says a heat pump can deliver up to three times more heat than the energy it uses.",
    "fallback": [
-    "air conditioner outside",
-    "house winter"
+    "air conditioner outdoor unit",
+    "house heating"
    ]
   },
   {
@@ -205,11 +205,11 @@
    "graphic": "two-path diagram from 1 unit of electricity: heat pump -> up to 3 units of heat (DOE); electrolysis -> about 0.61 units of energy in hydrogen (DOE 2022 status), before any burner losses"
   },
   {
-   "query": "suburb houses",
+   "query": "suburban houses",
    "text": "So for cars and homes, where electricity can do the job directly, hydrogen is the long way around.",
    "fallback": [
-    "house street",
-    "neighborhood"
+    "residential street",
+    "houses aerial"
    ]
   },
   {
@@ -240,35 +240,34 @@
    ]
   },
   {
-   "query": "farm field",
+   "query": "corn field",
    "text": "Worldwide, ammonia takes about 60 percent of the hydrogen used in industry. Switch to clean hydrogen, and the Energy Department says ammonia plants could cut their emissions by more than 90 percent.",
    "fallback": [
-    "corn field",
-    "agriculture"
+    "wheat field",
+    "farm crops"
    ]
   },
   {
    "query": "steel mill",
    "text": "Steel is next. About 70 percent of American steel is made by melting scrap in electric furnaces. But making new steel from iron ore relies on coke and natural gas.",
    "fallback": [
-    "molten steel",
-    "steel factory"
+    "steel factory",
+    "molten steel"
    ]
   },
   {
    "query": "iron ore",
    "text": "Use clean hydrogen to pull the oxygen out of the ore instead, and the Energy Department says the life-cycle emissions of new steel could drop by 40 to 70 percent.",
    "fallback": [
-    "molten metal",
-    "steel sparks"
+    "iron ore mine",
+    "ore pellets"
    ]
   },
   {
    "query": "cargo ship",
    "text": "Then come the maybes. Ships could run on fuels made from hydrogen, like ammonia and methanol. By mid-2025, the IEA counted more than 60 methanol-powered vessels on the water.",
    "fallback": [
-    "container ship",
-    "port cranes"
+    "container ship"
    ]
   },
   {
@@ -280,11 +279,11 @@
    ]
   },
   {
-   "query": "salt flats",
+   "query": "gas storage",
    "text": "And the grid could store hydrogen for days or even weeks, the EIA says, while the average U.S. grid battery in 2019 held about an hour and a half of output. The country already stores hydrogen in three underground caverns, and in Utah, a project backed by a federal loan guarantee is designed to pair a 220-megawatt electrolyzer with salt caverns.",
    "fallback": [
-    "utah desert",
-    "power lines desert"
+    "salt cavern",
+    "industrial tanks"
    ]
   },
   {
@@ -293,8 +292,8 @@
    "query": "industrial port",
    "text": "Which brings us back to the billions. The 2021 infrastructure law gave the Energy Department 9.5 billion dollars for hydrogen. In 2023, the Energy Department selected seven regional hydrogen hubs, with 7 billion dollars in funding, to put producers and users close together.",
    "fallback": [
-    "harbor industry",
-    "factory aerial"
+    "refinery",
+    "industrial plant"
    ]
   },
   {
@@ -310,8 +309,8 @@
    "query": "construction site",
    "text": "But plans have met reality. In 2025, the IEA reported that planned projects in North America had shrunk, mostly in the U.S., amid policy uncertainty, and that the future of four of the hubs was unclear.",
    "fallback": [
-    "empty construction",
-    "crane sky"
+    "industrial construction",
+    "crane construction"
    ]
   },
   {
@@ -321,15 +320,15 @@
    "text": "Quick recap. Hydrogen is a carrier, not a source. America makes most of it from natural gas, and turning electricity into hydrogen and back loses most of the energy.",
    "fallback": [
     "pipeline",
-    "natural gas"
+    "pipes industrial"
    ]
   },
   {
    "query": "steel mill",
    "text": "That's why it struggles in cars and homes, where electricity works directly. But in refineries, fertilizer and steel, the molecule itself is the point.",
    "fallback": [
-    "fertilizer field",
-    "oil refinery"
+    "molten steel",
+    "steel factory"
    ]
   },
   {
@@ -341,11 +340,11 @@
    ]
   },
   {
-   "query": "city night",
+   "query": "city skyline night",
    "text": "If you like seeing how the hidden machinery of everyday life works, subscribe to The Hidden Grid. Every source behind the numbers in this video is in the description.",
    "fallback": [
     "american city night",
-    "power lines sunset"
+    "new york night"
    ]
   }
  ],
@@ -378,7 +377,7 @@
  },
  "thumbnails": [
   {
-   "image": "s00_0.jpg",
+   "image": "s32_1.jpg",
    "lines": [
     [
      "100 IN",
@@ -394,7 +393,7 @@
    "badge": "HYDROGEN ROUND TRIP"
   },
   {
-   "image": "s26_0.jpg",
+   "image": "s26_1.jpg",
    "lines": [
     [
      "HYDROGEN",
@@ -410,7 +409,7 @@
    "badge": "WHERE IT MAKES SENSE"
   },
   {
-   "image": "s19_0.jpg",
+   "image": "s19_1.jpg",
    "lines": [
     [
      "HYDROGEN",
