@@ -1,0 +1,631 @@
+1
+00:00:00,100 --> 00:00:04,080
+In 2024, engineers at the National Renewable Energy Laboratory
+
+2
+00:00:04,080 --> 00:00:08,060
+in Colorado reported on a test at megawatt scale.
+
+3
+00:00:08,010 --> 00:00:11,167
+They took electricity, turned it into hydrogen, stored
+
+4
+00:00:11,167 --> 00:00:14,324
+it, and then turned it back into electricity.
+
+5
+00:00:14,826 --> 00:00:19,648
+At full power, about 28 percent of the electricity came back.
+
+6
+00:00:19,598 --> 00:00:22,596
+At low power, about 35.
+
+7
+00:00:23,096 --> 00:00:25,801
+Now compare that with a battery.
+
+8
+00:00:25,751 --> 00:00:29,724
+In 2019, the EIA found that America's grid batteries gave
+
+9
+00:00:29,724 --> 00:00:33,698
+back about 82 percent of the electricity put into them.
+
+10
+00:00:33,698 --> 00:00:37,014
+That number is called round-trip efficiency.
+
+11
+00:00:37,534 --> 00:00:39,901
+So why did the federal government
+
+12
+00:00:39,901 --> 00:00:42,267
+commit billions of dollars to hydrogen?
+
+13
+00:00:42,217 --> 00:00:44,615
+And why might the hydrogen that matters
+
+14
+00:00:44,615 --> 00:00:47,013
+most already be on your dinner table?
+
+15
+00:00:47,532 --> 00:00:50,990
+Both answers come down to one idea: hydrogen isn't
+
+16
+00:00:50,990 --> 00:00:54,064
+really a fuel problem, it's a where-do-you-use-it problem.
+
+17
+00:00:54,014 --> 00:00:56,911
+So let's follow the electron, and see where turning
+
+18
+00:00:56,911 --> 00:00:59,486
+it into a molecule is worth the trip.
+
+19
+00:01:00,452 --> 00:01:03,693
+First, what hydrogen actually is.
+
+20
+00:01:03,643 --> 00:01:06,874
+It's the most abundant element in the universe, but on
+
+21
+00:01:06,874 --> 00:01:10,105
+Earth it comes combined with other elements: with oxygen in
+
+22
+00:01:10,105 --> 00:01:13,337
+water, or with carbon in natural gas, coal and oil.
+
+23
+00:01:13,858 --> 00:01:16,328
+So before we can use it, we have
+
+24
+00:01:16,328 --> 00:01:18,489
+to pull it apart from those compounds.
+
+25
+00:01:18,439 --> 00:01:22,304
+The EIA calls hydrogen an energy carrier, something that moves
+
+26
+00:01:22,304 --> 00:01:26,169
+energy from one place to another, a bit like electricity.
+
+27
+00:01:26,688 --> 00:01:29,087
+And carrying has a price.
+
+28
+00:01:29,037 --> 00:01:32,825
+In the EIA's words, producing hydrogen requires more energy
+
+29
+00:01:32,825 --> 00:01:36,614
+than hydrogen provides when it's converted to useful energy.
+
+30
+00:01:36,614 --> 00:01:39,947
+So every use of hydrogen pays that toll somewhere, and it's
+
+31
+00:01:39,947 --> 00:01:42,978
+worth keeping in mind for the rest of this video.
+
+32
+00:01:43,952 --> 00:01:48,616
+America already makes plenty of it: about 10 million metric tons
+
+33
+00:01:48,616 --> 00:01:52,856
+a year, according to the Energy Department's 2023 hydrogen strategy.
+
+34
+00:01:52,806 --> 00:01:56,806
+Worldwide, the International Energy Agency counted almost 100
+
+35
+00:01:56,806 --> 00:02:00,306
+million metric tons of demand in 2024.
+
+36
+00:02:00,814 --> 00:02:04,107
+The Energy Department says about 95 percent of U.S.
+
+37
+00:02:04,107 --> 00:02:07,399
+hydrogen is made from natural gas, in large plants
+
+38
+00:02:07,399 --> 00:02:09,960
+that use a process called steam-methane reforming.
+
+39
+00:02:10,428 --> 00:02:16,041
+Methane and steam meet at 1,300 to 1,800 degrees Fahrenheit.
+
+40
+00:02:15,991 --> 00:02:19,939
+Out come hydrogen and carbon monoxide, and a second step
+
+41
+00:02:19,939 --> 00:02:23,887
+turns that carbon monoxide into carbon dioxide and more hydrogen.
+
+42
+00:02:24,386 --> 00:02:27,168
+That carbon dioxide adds up.
+
+43
+00:02:27,118 --> 00:02:31,881
+The Energy Department's 2023 hydrogen strategy put U.S. hydrogen production at
+
+44
+00:02:31,881 --> 00:02:36,212
+about 100 million metric tons of greenhouse gases a year.
+
+45
+00:02:36,712 --> 00:02:39,774
+Capture that carbon and store it underground, and
+
+46
+00:02:39,774 --> 00:02:42,453
+people often call the result blue hydrogen.
+
+47
+00:02:42,403 --> 00:02:45,745
+Let it go into the air, and it's called grey.
+
+48
+00:02:46,254 --> 00:02:49,947
+The other main route is electrolysis: running an electric current
+
+49
+00:02:49,947 --> 00:02:53,270
+through water to split it into hydrogen and oxygen.
+
+50
+00:02:53,220 --> 00:02:57,583
+With wind or solar power, that's usually called green hydrogen.
+
+51
+00:02:57,583 --> 00:03:01,639
+The Energy Department itself doesn't use the color code.
+
+52
+00:03:02,156 --> 00:03:05,747
+Either way, the IEA says low-emission hydrogen was still
+
+53
+00:03:05,747 --> 00:03:09,338
+less than 1 percent of global production in 2024.
+
+54
+00:03:10,252 --> 00:03:13,021
+Here's where the electron comes in.
+
+55
+00:03:12,971 --> 00:03:18,124
+The Energy Department's 2022 status figure for a typical electrolyzer system
+
+56
+00:03:18,124 --> 00:03:23,277
+was about 55 kilowatt-hours of electricity for every kilogram of hydrogen.
+
+57
+00:03:23,778 --> 00:03:26,617
+Only about 61 percent of that electricity's
+
+58
+00:03:26,617 --> 00:03:29,455
+energy ends up stored in the hydrogen.
+
+59
+00:03:29,405 --> 00:03:33,563
+The department's long-term targets are around 70 percent.
+
+60
+00:03:33,563 --> 00:03:36,178
+Better, but still a loss.
+
+61
+00:03:36,680 --> 00:03:39,564
+Then the hydrogen has to be stored.
+
+62
+00:03:39,514 --> 00:03:42,208
+It holds more energy per pound than any
+
+63
+00:03:42,208 --> 00:03:44,565
+other fuel, but very little per gallon.
+
+64
+00:03:44,565 --> 00:03:48,700
+So it gets squeezed into tanks at up to 10,000 psi,
+
+65
+00:03:48,700 --> 00:03:52,460
+or chilled into a liquid at minus 423 degrees Fahrenheit.
+
+66
+00:03:53,416 --> 00:03:55,764
+Now stack the losses.
+
+67
+00:03:55,714 --> 00:03:58,864
+That's the chain from the start of this
+
+68
+00:03:58,864 --> 00:04:02,015
+video: electricity to hydrogen, then back to electricity.
+
+69
+00:04:02,015 --> 00:04:05,112
+In that Colorado test, the fuel cell generator
+
+70
+00:04:05,112 --> 00:04:08,208
+alone turned only about 48 to 52 percent
+
+71
+00:04:08,208 --> 00:04:10,918
+of the hydrogen's energy back into electricity.
+
+72
+00:04:11,430 --> 00:04:14,441
+A hydrogen car runs the same chain.
+
+73
+00:04:14,391 --> 00:04:16,917
+Its fuel cell turns hydrogen back
+
+74
+00:04:16,917 --> 00:04:19,442
+into electricity for an electric motor.
+
+75
+00:04:19,442 --> 00:04:24,174
+A battery car skips the detour and stores the electricity directly.
+
+76
+00:04:24,692 --> 00:04:27,244
+Now look at the fueling map.
+
+77
+00:04:27,194 --> 00:04:30,646
+As of November 2026, the Energy Department's station
+
+78
+00:04:30,646 --> 00:04:34,097
+locator lists 44 hydrogen fueling stations in the
+
+79
+00:04:34,097 --> 00:04:37,118
+whole country, 42 of them in California.
+
+80
+00:04:37,118 --> 00:04:41,901
+It lists nearly 84,000 charging locations for electric cars.
+
+81
+00:04:42,418 --> 00:04:46,118
+Home heating has the same problem, only sharper.
+
+82
+00:04:46,068 --> 00:04:49,142
+The Energy Department says a heat pump can deliver up
+
+83
+00:04:49,142 --> 00:04:52,216
+to three times more heat than the energy it uses.
+
+84
+00:04:52,728 --> 00:04:56,185
+Turn that same electricity into hydrogen, and nearly 40 percent
+
+85
+00:04:56,185 --> 00:04:59,642
+of the energy is gone before you light a burner.
+
+86
+00:04:59,592 --> 00:05:02,862
+Hydrogen also packs only about a third of natural gas's
+
+87
+00:05:02,862 --> 00:05:06,131
+energy by volume, and the EIA says more research is
+
+88
+00:05:06,131 --> 00:05:09,401
+needed to know whether home heating appliances can handle it.
+
+89
+00:05:09,902 --> 00:05:13,021
+So for cars and homes, where electricity can do
+
+90
+00:05:13,021 --> 00:05:16,140
+the job directly, hydrogen is the long way around.
+
+91
+00:05:17,062 --> 00:05:19,180
+But flip the question.
+
+92
+00:05:19,130 --> 00:05:23,518
+What if you don't need energy, but the hydrogen atoms themselves?
+
+93
+00:05:23,518 --> 00:05:25,901
+That's where it makes sense, not as
+
+94
+00:05:25,901 --> 00:05:27,944
+a fuel, but as an ingredient.
+
+95
+00:05:28,452 --> 00:05:30,864
+Oil refineries are one.
+
+96
+00:05:30,814 --> 00:05:34,423
+They use hydrogen to remove sulfur from fuels.
+
+97
+00:05:34,423 --> 00:05:37,857
+Worldwide, refining used more than 43 million
+
+98
+00:05:37,857 --> 00:05:40,801
+metric tons of hydrogen in 2024.
+
+99
+00:05:41,306 --> 00:05:43,960
+Fertilizer is the big one.
+
+100
+00:05:43,910 --> 00:05:47,676
+Hydrogen plus nitrogen from the air makes ammonia, and in
+
+101
+00:05:47,676 --> 00:05:51,066
+the U.S., 88 percent of ammonia goes into fertilizer.
+
+102
+00:05:51,066 --> 00:05:55,109
+So in a sense, that's the hydrogen on your dinner table.
+
+103
+00:05:55,624 --> 00:05:58,373
+Worldwide, ammonia takes about 60 percent
+
+104
+00:05:58,373 --> 00:06:01,122
+of the hydrogen used in industry.
+
+105
+00:06:01,072 --> 00:06:04,682
+Switch to clean hydrogen, and the Energy Department says ammonia
+
+106
+00:06:04,682 --> 00:06:08,292
+plants could cut their emissions by more than 90 percent.
+
+107
+00:06:08,814 --> 00:06:10,856
+Steel is next.
+
+108
+00:06:10,806 --> 00:06:13,631
+About 70 percent of American steel is
+
+109
+00:06:13,631 --> 00:06:16,456
+made by melting scrap in electric furnaces.
+
+110
+00:06:16,456 --> 00:06:18,867
+But making new steel from iron ore
+
+111
+00:06:18,867 --> 00:06:20,933
+relies on coke and natural gas.
+
+112
+00:06:21,452 --> 00:06:24,684
+Use clean hydrogen to pull the oxygen out of the
+
+113
+00:06:24,684 --> 00:06:27,915
+ore instead, and the Energy Department says the life-cycle emissions
+
+114
+00:06:27,915 --> 00:06:31,147
+of new steel could drop by 40 to 70 percent.
+
+115
+00:06:31,618 --> 00:06:33,851
+Then come the maybes.
+
+116
+00:06:33,801 --> 00:06:36,295
+Ships could run on fuels made
+
+117
+00:06:36,295 --> 00:06:38,788
+from hydrogen, like ammonia and methanol.
+
+118
+00:06:38,788 --> 00:06:42,195
+By mid-2025, the IEA counted more than
+
+119
+00:06:42,195 --> 00:06:45,115
+60 methanol-powered vessels on the water.
+
+120
+00:06:45,624 --> 00:06:48,342
+Heavy trucks are another maybe.
+
+121
+00:06:48,292 --> 00:06:51,424
+The Energy Department's strategy says fuel cells are
+
+122
+00:06:51,424 --> 00:06:54,556
+particularly viable for trucks that need fill times
+
+123
+00:06:54,556 --> 00:06:57,297
+like diesel, or ranges above 500 miles.
+
+124
+00:06:57,806 --> 00:07:01,233
+And the grid could store hydrogen for days or even weeks,
+
+125
+00:07:01,233 --> 00:07:04,659
+the EIA says, while the average U.S. grid battery in 2019
+
+126
+00:07:04,659 --> 00:07:07,463
+held about an hour and a half of output.
+
+127
+00:07:07,413 --> 00:07:11,175
+The country already stores hydrogen in three underground caverns, and
+
+128
+00:07:11,175 --> 00:07:14,938
+in Utah, a project backed by a federal loan guarantee
+
+129
+00:07:14,938 --> 00:07:18,701
+is designed to pair a 220-megawatt electrolyzer with salt caverns.
+
+130
+00:07:19,654 --> 00:07:22,436
+Which brings us back to the billions.
+
+131
+00:07:22,386 --> 00:07:25,964
+The 2021 infrastructure law gave the Energy
+
+132
+00:07:25,964 --> 00:07:29,031
+Department 9.5 billion dollars for hydrogen.
+
+133
+00:07:29,031 --> 00:07:32,527
+In 2023, the Energy Department selected seven regional
+
+134
+00:07:32,527 --> 00:07:36,023
+hydrogen hubs, with 7 billion dollars in funding,
+
+135
+00:07:36,023 --> 00:07:39,082
+to put producers and users close together.
+
+136
+00:07:39,588 --> 00:07:43,106
+Its national strategy aims for 10 million metric tons
+
+137
+00:07:43,106 --> 00:07:46,623
+of clean hydrogen a year by 2030, 20 million
+
+138
+00:07:46,623 --> 00:07:49,359
+by 2040, and 50 million by 2050.
+
+139
+00:07:49,826 --> 00:07:52,506
+But plans have met reality.
+
+140
+00:07:52,456 --> 00:07:56,402
+In 2025, the IEA reported that planned projects in North America
+
+141
+00:07:56,402 --> 00:08:00,349
+had shrunk, mostly in the U.S., amid policy uncertainty, and that
+
+142
+00:08:00,349 --> 00:08:03,578
+the future of four of the hubs was unclear.
+
+143
+00:08:04,546 --> 00:08:06,371
+Quick recap.
+
+144
+00:08:06,321 --> 00:08:09,510
+Hydrogen is a carrier, not a source.
+
+145
+00:08:09,510 --> 00:08:13,113
+America makes most of it from natural gas, and turning
+
+146
+00:08:13,113 --> 00:08:16,716
+electricity into hydrogen and back loses most of the energy.
+
+147
+00:08:17,232 --> 00:08:19,694
+That's why it struggles in cars
+
+148
+00:08:19,694 --> 00:08:22,156
+and homes, where electricity works directly.
+
+149
+00:08:22,106 --> 00:08:24,677
+But in refineries, fertilizer and steel,
+
+150
+00:08:24,677 --> 00:08:27,247
+the molecule itself is the point.
+
+151
+00:08:27,758 --> 00:08:32,198
+Hydrogen isn't a fuel problem, it's a where-do-you-use-it problem.
+
+152
+00:08:32,148 --> 00:08:35,024
+So where would you use it: trucks, ships,
+
+153
+00:08:35,024 --> 00:08:37,900
+steel, or storing power for a windless week?
+
+154
+00:08:37,900 --> 00:08:40,056
+Tell me in the comments.
+
+155
+00:08:40,564 --> 00:08:43,549
+If you like seeing how the hidden machinery of
+
+156
+00:08:43,549 --> 00:08:46,203
+everyday life works, subscribe to The Hidden Grid.
+
+157
+00:08:46,153 --> 00:08:48,264
+Every source behind the numbers in
+
+158
+00:08:48,264 --> 00:08:50,375
+this video is in the description.
