@@ -131,18 +131,18 @@
    ]
   },
   {
-   "query": "ship bridge",
+   "query": "ship captain",
    "text": "This part surprises people. Ships like that are often run by a crew of only about twenty people, give or take a few. Engineers, deck officers, a cook, the captain. That's it.",
    "fallback": [
-    "sailor",
-    "ship deck"
+    "ship wheelhouse",
+    "sailor"
    ]
   },
   {
-   "query": "ship ocean",
+   "query": "cargo ship ocean",
    "text": "Ships this size are also slower than you'd think. A lot of big container ships cruise at around twenty knots or less. That's roughly twenty-three miles an hour.",
    "fallback": [
-    "cargo ship sea"
+    "container ship"
    ]
   },
   {
@@ -209,11 +209,10 @@
   {
    "chapter": "Los Angeles",
    "overlay": "AMERICA'S FRONT DOOR",
-   "query": "los angeles port",
+   "query": "container port",
    "text": "Our ship pulls into San Pedro Bay, home to the twin ports of Los Angeles and Long Beach.",
    "fallback": [
-    "harbor",
-    "container port"
+    "harbor cranes"
    ]
   },
   {
@@ -272,11 +271,10 @@
    ]
   },
   {
-   "query": "train desert",
+   "query": "freight train",
    "text": "Our box climbs out of the L.A. basin, crosses the desert, and heads east toward the Midwest.",
    "fallback": [
-    "freight train",
-    "railroad"
+    "cargo train"
    ]
   },
   {
@@ -309,8 +307,7 @@
    "query": "warehouse",
    "text": "Inside, the cartons get split up. Some go to stores, some go to online orders. Our pair of sneakers gets scanned, packed in a smaller box and labeled with your address.",
    "fallback": [
-    "packages",
-    "cardboard boxes"
+    "warehouse shelves"
    ]
   },
   {
@@ -390,8 +387,8 @@
    "query": "cardboard boxes",
    "text": "Now I want to hear from you. What's the farthest-traveled thing you own? Check the label and tell me in the comments. I might follow it in a future video.",
    "fallback": [
-    "package delivery",
-    "parcel"
+    "parcels",
+    "packages"
    ]
   },
   {
@@ -432,7 +429,7 @@
  },
  "thumbnails": [
   {
-   "image": "s00_0.jpg",
+   "image": "s47_1.jpg",
    "lines": [
     [
      "SHANGHAI",
@@ -448,7 +445,7 @@
    "badge": "ONE BOX"
   },
   {
-   "image": "s14_0.jpg",
+   "image": "s15_1.jpg",
    "lines": [
     [
      "6,500",
@@ -464,7 +461,7 @@
    "badge": "IN A STEEL BOX"
   },
   {
-   "image": "s41_0.jpg",
+   "image": "s30_1.jpg",
    "lines": [
     [
      "WHY IT'S",

@@ -176,8 +176,8 @@
    "query": "aeration tank",
    "text": "Stop four. The water moves into aeration tanks that look like giant hot tubs. Blowers push air through pipes along the bottom, and the whole tank churns with bubbles.",
    "fallback": [
-    "bubbling water",
-    "water treatment"
+    "wastewater treatment",
+    "sewage treatment"
    ]
   },
   {
@@ -197,11 +197,10 @@
    ]
   },
   {
-   "query": "water tank",
+   "query": "sewage treatment",
    "text": "After the aeration tank, the water goes to a second set of settling tanks. The well-fed microbes clump together and sink. Many of them get pumped right back to the start to keep the colony going. That's Ardern and Lockett's idea, still running.",
    "fallback": [
-    "settling tank",
-    "pump"
+    "water treatment plant"
    ]
   },
   {
@@ -223,11 +222,11 @@
   {
    "chapter": "Stop 5: The final polish",
    "overlay": "STOP 5: KILL THE GERMS",
-   "query": "ultraviolet light",
+   "query": "ultraviolet lamp",
    "text": "Stop five is about germs. Clean-looking water can still carry bacteria and viruses that make people sick, so plants disinfect it. Some use chlorine. Others shine strong ultraviolet light through it, which scrambles the microbes' DNA so they can't reproduce.",
    "fallback": [
-    "uv lamp",
-    "chlorine"
+    "uv light",
+    "laboratory"
    ]
   },
   {
@@ -239,11 +238,10 @@
    ]
   },
   {
-   "query": "fire smoke",
+   "query": "industrial smoke",
    "text": "It wasn't always like this. In 1969, the Cuyahoga River in Cleveland caught fire. And it wasn't even the first time. That river had been burning on and off since 1868.",
    "fallback": [
-    "river fire",
-    "industrial river"
+    "fire smoke"
    ]
   },
   {
@@ -339,11 +337,11 @@
    ]
   },
   {
-   "query": "water filter",
+   "query": "water filtration",
    "text": "The Groundwater Replenishment System pushes it through microfiltration, then reverse osmosis membranes, then ultraviolet light combined with hydrogen peroxide.",
    "fallback": [
-    "membrane filter",
-    "filtration"
+    "water pipes",
+    "water treatment"
    ]
   },
   {
@@ -434,7 +432,7 @@
  },
  "thumbnails": [
   {
-   "image": "s00_0.jpg",
+   "image": "s00_1.jpg",
    "lines": [
     [
      "AFTER",
@@ -450,7 +448,7 @@
    "badge": "8 HOURS LATER"
   },
   {
-   "image": "s21_0.jpg",
+   "image": "s03_1.jpg",
    "lines": [
     [
      "BACTERIA",
@@ -466,7 +464,7 @@
    "badge": "THE BUG FARM"
   },
   {
-   "image": "s43_0.jpg",
+   "image": "s43_1.jpg",
    "lines": [
     [
      "TOILET",

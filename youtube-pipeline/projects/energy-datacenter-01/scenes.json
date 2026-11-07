@@ -123,11 +123,11 @@
    ]
   },
   {
-   "query": "batteries",
+   "query": "battery storage",
    "text": "Before it reaches a single chip, the power runs through an uninterruptible power supply, which is basically a room full of batteries.",
    "fallback": [
-    "battery",
-    "electrical room"
+    "batteries",
+    "battery"
    ]
   },
   {
@@ -242,8 +242,7 @@
    "query": "thermometer",
    "text": "So a 120-kilowatt rack is, in a very real sense, also a 120-kilowatt heater. And that heat has to come out constantly, or the chips slow themselves down or shut off.",
    "fallback": [
-    "temperature",
-    "hot"
+    "heat"
    ]
   },
   {
@@ -274,7 +273,6 @@
    "query": "calculator",
    "text": "Now, the one number. It's called PUE, short for power usage effectiveness. Take all the power coming into the building and divide it by the power that actually reaches the computers.",
    "fallback": [
-    "numbers",
     "math"
    ]
   },
@@ -287,11 +285,11 @@
    ]
   },
   {
-   "query": "fan blades",
+   "query": "computer fan",
    "text": "In plain English, for every watt the servers use, the average data center spends about another half a watt on cooling, power conversion and everything else.",
    "fallback": [
-    "industrial fan",
-    "cooling fan"
+    "cooling fan",
+    "server"
    ]
   },
   {
@@ -374,8 +372,7 @@
    "query": "server rack",
    "text": "Quick recap. A single text prompt uses very little energy. But there are billions of them, plus training, plus newer and heavier kinds of AI work.",
    "fallback": [
-    "data center",
-    "servers"
+    "data center"
    ]
   },
   {
@@ -440,7 +437,7 @@
  },
  "thumbnails": [
   {
-   "image": "s00_0.jpg",
+   "image": "s09_2.jpg",
    "lines": [
     [
      "WHERE DOES",
@@ -461,7 +458,7 @@
    "badge": "FOLLOW THE WATTS"
   },
   {
-   "image": "s18_0.jpg",
+   "image": "s40_2.jpg",
    "lines": [
     [
      "1 RACK =",
@@ -477,7 +474,7 @@
    "badge": "120 KW"
   },
   {
-   "image": "s31_0.jpg",
+   "image": "s03_1.jpg",
    "lines": [
     [
      "IT ALL",
