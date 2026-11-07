@@ -1,429 +1,431 @@
 {
-  "project": "wind-windy-days-01",
-  "channel": "The Hidden Grid",
-  "language": "en-US",
-  "voice": "en-US-GuyNeural",
-  "rate": "-2%",
-  "meta": {
-    "titles": [
-      "Why Wind Turbines STOP on the Windiest Days",
-      "The Wind Is Perfect. So Why Isn't the Turbine Turning?",
-      "Too Much Wind: Why Turbines Shut Down in Storms",
-      "Why the Grid Tells Wind Farms to Make LESS Power",
-      "Double the Wind, 8x the Power: How Turbines Really Work"
-    ],
-    "description": "On the windiest day of the month, some wind turbines stand perfectly still. It looks like waste. Usually it's the machine, the grid or the engineers saying \"not now.\"\nWe follow the wind from the blade to the power line and look at every reason a turbine stops.\n\nIn this video:\n- Cut-in speed, and why the wind at hub height is what counts\n- Capacity factor: what the U.S. wind fleet actually produced in 2025\n- The cube law: double the wind, eight times the power\n- The power curve: rated speed, feathering and cut-out in storms\n- Curtailment: full power lines, negative prices and where it happens most\n- Ice on blades, bats, eagles and maintenance\n\nSources:\nEIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php\nEIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php\nLawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report\nLawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Market Report: 2024 Edition - https://eta-publications.lbl.gov/sites/default/files/2024-09/land-based_wind_market_report_2024_edition.pdf\nU.S. DOE, How Do Wind Turbines Survive Severe Weather and Storms? - https://www.energy.gov/cmei/wind/articles/how-do-wind-turbines-survive-severe-weather-and-storms\nU.S. DOE, Explore a Wind Turbine (text version) - https://www.energy.gov/cmei/systems/explore-wind-turbine-text-version\nBortolotti et al., IEA Wind TCP Task 37 Reference Wind Turbines (NREL/DTU/SINTEF, 2019) - https://doi.org/10.2172/1529216\nIowa State University Wind Science Program, Wind power - https://meteor.geol.iastate.edu/windresearch/windpower.html\nEIA, Capacity factor definition (Today in Energy, 2011) - https://www.eia.gov/todayinenergy/detail.php?id=1710\nEIA, Why are Midwest grid operators turning away wind power? (2024) - https://www.eia.gov/todayinenergy/detail.php?id=62406\nEIA, Negative wholesale electricity prices (2012) - https://www.eia.gov/todayinenergy/detail.php?id=5110\nIowa State University, Field study shows icing can cost wind turbines up to 80% of power production (2021) - https://research.iastate.edu/2021/03/10/field-study-shows-icing-can-cost-wind-turbines-up-to-80-of-power-production/\nAdams, Gulka & Williams, A review of the effectiveness of operational curtailment for reducing bat fatalities (PLOS ONE, 2021) - https://pmc.ncbi.nlm.nih.gov/articles/PMC8598023/\nMcClure et al., Eagle fatalities are reduced by automated curtailment of wind turbines (Journal of Applied Ecology, 2021) - https://doi.org/10.1111/1365-2664.13831\n\nNarration is AI-generated; script researched and reviewed by a human.\nEducation only, not financial advice. The creator invests in the energy sector.\n\n#windenergy #windturbine #powergrid #howitworks #electricity",
-    "tags": [
-      "wind turbines",
-      "wind energy explained",
-      "why wind turbines stop",
-      "wind turbine power curve",
-      "cut-out wind speed",
-      "cut-in wind speed",
-      "wind curtailment",
-      "capacity factor",
-      "wind turbine storm",
-      "negative electricity prices",
-      "wind turbine icing",
-      "bats and wind turbines",
-      "power grid explained",
-      "how wind turbines work",
-      "transmission lines"
-    ]
-  },
-  "thumbnails": [
-    {
-      "image": "s00_0.jpg",
-      "lines": [
-        [
-          "WINDY DAY.",
-          130,
-          "white"
-        ],
-        [
-          "NOT TURNING?",
-          150,
-          "#FFD400"
-        ]
-      ],
-      "badge": "FOLLOW THE ELECTRON"
-    },
-    {
-      "image": "s17_0.jpg",
-      "lines": [
-        [
-          "TOO MUCH",
-          140,
-          "white"
-        ],
-        [
-          "WIND",
-          170,
-          "#FF5A1F"
-        ]
-      ],
-      "badge": "CUT-OUT AT ~56 MPH"
-    },
-    {
-      "image": "s27_0.jpg",
-      "lines": [
-        [
-          "THE GRID",
-          130,
-          "white"
-        ],
-        [
-          "SAYS NO",
-          160,
-          "#FFD400"
-        ]
-      ],
-      "badge": "CURTAILMENT"
-    }
+ "project": "wind-windy-days-01",
+ "channel": "The Hidden Grid",
+ "language": "en-US",
+ "voice": "en-US-GuyNeural",
+ "rate": "-2%",
+ "meta": {
+  "titles": [
+   "Why Wind Turbines STOP on the Windiest Days",
+   "The Wind Is Perfect. So Why Isn't the Turbine Turning?",
+   "Too Much Wind: Why Turbines Shut Down in Storms",
+   "Why the Grid Tells Wind Farms to Make LESS Power",
+   "Double the Wind, 8x the Power: How Turbines Really Work"
   ],
-  "scenes": [
-    {
-      "chapter": "Intro",
-      "overlay": "WINDY. AND STILL.",
-      "query": "wind turbine storm",
-      "text": "Picture a gusty afternoon. Trees are bending, flags are snapping. But up on the ridge, some of the wind turbines aren't turning at all.",
-      "fallback": [
-        "wind farm clouds",
-        "windy trees"
-      ]
-    },
-    {
-      "query": "wind farm power lines",
-      "text": "A still turbine on a windy day is usually the machine, the grid, or the engineers saying: not now. Let's follow the wind from blade to power line and find out who's saying it, and why.",
-      "fallback": [
-        "power lines",
-        "wind turbine"
-      ]
-    },
-    {
-      "query": "wind turbine sunset",
-      "text": "Along the way, you'll see why a little more wind can mean a lot more power. And why, on some of the windiest days, turbines get told to make less.",
-      "fallback": [
-        "wind farm sunset",
-        "wind turbines"
-      ]
-    },
-    {
-      "query": "wind farm fields",
-      "text": "In 2025, wind made about 10.5 percent of America's utility-scale electricity, the Energy Information Administration reports. In Iowa, it was about 58 percent of the state's generation, according to Lawrence Berkeley National Laboratory.",
-      "fallback": [
-        "iowa farm",
-        "wind turbines"
-      ]
-    },
-    {
-      "query": "wind turbine tower",
-      "text": "And the machines are big. Berkeley Lab's annual wind report for the Energy Department says the average new land-based turbine in 2025 was rated at about 3.8 megawatts, with its hub about 335 feet up and a rotor about 460 feet across.",
-      "fallback": [
-        "wind turbine",
-        "turbine blades"
-      ],
-      "graphic": "diagram: average new U.S. land-based turbine installed in 2025 (LBNL/DOE Land-Based Wind Energy Technology Data Update 2026): nameplate 3.8 MW, hub height 102 m (~335 ft), rotor diameter 141 m (~460 ft); note '2025 data partial'"
-    },
-    {
-      "chapter": "Not enough wind",
-      "overlay": "NOT ENOUGH WIND",
-      "query": "calm wind turbine",
-      "text": "The simplest reason a turbine stands still: not enough wind where the blades are.",
-      "fallback": [
-        "wind turbine blue sky",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "wind turbine sky",
-      "text": "The Energy Department notes that wind speed increases with height, so the breeze you feel on the ground isn't the wind the rotor feels.",
-      "fallback": [
-        "tall wind turbine",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "wind turbine nacelle",
-      "text": "Every turbine has a wind gauge, an anemometer, feeding a controller. The department says the controller typically starts the machine at about 7 to 11 miles an hour. That's the cut-in speed. Below it, the turbine waits.",
-      "fallback": [
-        "anemometer",
-        "wind turbine"
-      ]
-    },
-    {
-      "query": "wind farm landscape",
-      "text": "Low wind is also why output looks modest on paper. Berkeley Lab found the U.S. wind fleet had a capacity factor of 34 percent in 2025. Projects built in 2024 reached about 37.",
-      "fallback": [
-        "wind turbines field",
-        "wind farm"
-      ],
-      "graphic": "bar chart: calendar-year 2025 wind capacity factor, U.S. fleet (projects built 1998-2024) 34% vs. projects built in 2024 37.1% (LBNL Technology Data Update 2026)"
-    },
-    {
-      "query": "wind turbines evening",
-      "text": "Capacity factor is what a plant actually produced, divided by the most it could have made running flat out. Berkeley Lab's figures already include losses from curtailment, downtime and ice on blades.",
-      "fallback": [
-        "wind farm",
-        "power lines"
-      ]
-    },
-    {
-      "chapter": "The cube law",
-      "overlay": "DOUBLE THE WIND",
-      "query": "wind turbine blades",
-      "text": "So why do a few extra miles an hour matter so much? Because of one number: three.",
-      "fallback": [
-        "turbine blades",
-        "wind turbine"
-      ]
-    },
-    {
-      "query": "wind turbine closeup",
-      "text": "The power in moving air rises with the cube of its speed. As Iowa State University's wind science program puts it, if the wind speed doubles, the power is multiplied by eight.",
-      "fallback": [
-        "turbine blades",
-        "wind"
-      ],
-      "graphic": "cube-law illustration (physics, P proportional to v^3): relative wind power at 1x, 1.5x and 2x wind speed = 1, 3.4 and 8; source note 'Iowa State University Wind Science Program'"
-    },
-    {
-      "query": "tall wind turbine",
-      "text": "Go from 10 miles an hour to 15, and the wind carries more than three times the power. It's also why towers keep getting taller: higher up, the wind is faster.",
-      "fallback": [
-        "wind turbine tower",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "turbine blades sky",
-      "text": "But extra power also means extra force on the blades, shaft and tower. And a generator can only use so much.",
-      "fallback": [
-        "wind turbine",
-        "turbine blade"
-      ]
-    },
-    {
-      "chapter": "Too much wind",
-      "overlay": "TOO MUCH WIND",
-      "query": "wind turbine power",
-      "text": "Engineers draw all of this as a power curve: how much electricity a turbine makes at each wind speed. Above cut-in, output climbs steeply until the turbine reaches its rated speed, where the generator hits its maximum.",
-      "fallback": [
-        "wind turbine",
-        "wind farm"
-      ],
-      "graphic": "line chart, ILLUSTRATIVE power-curve shape (not measured data): x = wind speed (mph), y = % of rated power; markers at cut-in 4 m/s (~9 mph), rated 9.8 m/s (~22 mph), cut-out 25 m/s (~56 mph) from the IEA Wind Task 37 3.4-MW land-based reference turbine (NREL/DTU/SINTEF, 2019); flat at 100% between rated and cut-out, drop to zero at cut-out"
-    },
-    {
-      "query": "wind farm hills",
-      "text": "Take a reference turbine U.S. and European researchers designed in 2019 to represent a modern land-based machine. It starts producing at about 9 miles an hour and hits full output at about 22.",
-      "fallback": [
-        "wind turbines",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "turbine blades rotating",
-      "text": "Above that, more wind doesn't add power. The pitch system turns the blades to catch less of it, and output stays flat.",
-      "fallback": [
-        "wind turbine",
-        "turbine blades"
-      ]
-    },
-    {
-      "query": "wind turbine storm clouds",
-      "text": "Keep going, and you hit the cut-out speed. For that reference turbine, it's about 56 miles an hour. The Energy Department says controllers typically shut turbines off once winds exceed 55 to 65.",
-      "fallback": [
-        "storm clouds",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "wind turbine stopped",
-      "text": "Then the blades feather. They turn so they no longer produce the force that spins the rotor, the rotor slows, and output drops to zero.",
-      "fallback": [
-        "turbine blades",
-        "wind turbine"
-      ]
-    },
-    {
-      "query": "storm wind",
-      "text": "Why stop so early? Under an international standard, the department says, most turbines today must be built to withstand sustained winds of 112 miles an hour and gusts of 156. Cut-out sits far below that on purpose, to reduce the risk of damage.",
-      "fallback": [
-        "storm clouds",
-        "wind turbine storm"
-      ],
-      "graphic": "bar chart (mph): typical cut-out 55-65 mph (DOE) vs. design survival limits under IEC 61400-1 as cited by DOE: 112 mph sustained, 156 mph 3-second gust"
-    },
-    {
-      "query": "wind turbine nacelle",
-      "text": "The yaw drive keeps the turbine facing the wind. When speeds drop, the blades unfeather, and power is normally flowing again within minutes.",
-      "fallback": [
-        "wind turbine",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "offshore wind farm",
-      "text": "In March 2017, a winter storm hit Block Island, home of America's first offshore wind farm. All five turbines shut down for several hours while winds topped 55 miles an hour, then powered back up once the storm eased. So the windiest hour of the year can be a zero hour for a turbine. That's not a flaw. That's the design.",
-      "fallback": [
-        "offshore wind turbines",
-        "stormy sea"
-      ]
-    },
-    {
-      "chapter": "The grid says not now",
-      "overlay": "THE GRID IS FULL",
-      "query": "power lines",
-      "text": "Now the surprising one. Sometimes the turbine is fine, the wind is perfect, and the grid operator still tells it to make less.",
-      "fallback": [
-        "transmission tower",
-        "electricity pylon"
-      ]
-    },
-    {
-      "query": "transmission lines",
-      "text": "That's curtailment, which the EIA defines as deliberately reducing generation below what a plant could produce. It happens when supply outruns demand, or when there aren't enough power lines to carry it.",
-      "fallback": [
-        "power lines",
-        "electricity pylon"
-      ]
-    },
-    {
-      "query": "wind farm power lines",
-      "text": "In the EIA's words, on very windy days in particular locations, transmission capacity is often insufficient to receive the large amount of wind power generated.",
-      "fallback": [
-        "power lines",
-        "wind farm"
-      ]
-    },
-    {
-      "query": "electricity substation",
-      "text": "Berkeley Lab notes that when wind is high and lines are full, or other plants can't ramp down far or fast enough, local wholesale prices can go negative, meaning sellers pay buyers to take their power. That can trigger curtailment, too.",
-      "fallback": [
-        "power station",
-        "power lines"
-      ]
-    },
-    {
-      "query": "control room",
-      "text": "Why is wind often first in line? In the Midwest, the EIA explains, it's cheaper and faster to shut down and restart wind and solar plants than other kinds of power plants.",
-      "fallback": [
-        "wind farm",
-        "power lines"
-      ]
-    },
-    {
-      "query": "great plains wind farm",
-      "text": "How much gets curtailed? Across seven U.S. grid operators, Berkeley Lab counted about 5 percent of potential wind generation in 2025. The Southwest Power Pool in the central U.S. was highest, at about 9 percent.",
-      "fallback": [
-        "wind farm",
-        "prairie"
-      ],
-      "graphic": "bar chart: wind curtailment as % of potential wind generation, 2025, by grid operator (LBNL Technology Data Update 2026 data file): SPP 9.4, ERCOT 4.7, MISO 2.9, ISO-NE 1.5, CAISO 1.3, NYISO 1.1, PJM 0.8 (PJM partial); all seven 5.1"
-    },
-    {
-      "query": "transmission tower",
-      "text": "Back in 2014, it was under 1 percent. Since then, wind's share of that region's demand has grown from about 12 percent to about 38. More wind on the same wires means more hours when the wires are full.",
-      "fallback": [
-        "power lines",
-        "wind farm"
-      ],
-      "graphic": "line chart: SPP wind curtailment rate and wind penetration, 2014-2025 (LBNL data file): curtailment 0.7% (2014) to 9.4% (2025); wind share of load 12.0% (2014) to 37.6% (2025)"
-    },
-    {
-      "query": "power lines texas",
-      "text": "New lines help. After a big transmission build-out serving West Texas wrapped up around 2013, Berkeley Lab notes, wind curtailment on the main Texas grid fell from 17 percent in 2009 to half a percent in 2014.",
-      "fallback": [
-        "transmission lines",
-        "electricity pylon"
-      ]
-    },
-    {
-      "chapter": "Ice and wildlife",
-      "overlay": "ICE, BATS, EAGLES",
-      "query": "frozen wind turbine",
-      "text": "Weather can stop a turbine in a quieter way, too: ice.",
-      "fallback": [
-        "winter wind farm",
-        "snow wind turbine"
-      ]
-    },
-    {
-      "query": "wind turbine winter",
-      "text": "An Iowa State-led field study, published in 2021, looked at a wind farm in eastern China. Ice grew nearly a foot thick near the blade tips, and despite high winds, the iced turbines turned slower, often shut down, and lost up to 80 percent of their power.",
-      "fallback": [
-        "snow wind turbine",
-        "frozen landscape"
-      ]
-    },
-    {
-      "query": "bat flying night",
-      "text": "Then there's wildlife. Bats are most at risk in late summer and fall, and they're more active when winds are light. So some wind farms raise their cut-in speed on those nights, and the blades may be feathered.",
-      "fallback": [
-        "night sky",
-        "wind turbine night"
-      ]
-    },
-    {
-      "query": "wind turbine night",
-      "text": "A 2021 review of curtailment experiments in the U.S. and Canada found it cut bat deaths by about 63 percent on average.",
-      "fallback": [
-        "night sky",
-        "wind farm"
-      ],
-      "graphic": "bar chart: bat fatality rate with curtailment relative to normal operation = 0.37 (i.e., -63%), meta-analysis of 36 control-treatment studies at 17 U.S./Canadian wind farms (Adams et al., PLOS ONE 2021); note typical factory cut-in 3.5 m/s (~8 mph)"
-    },
-    {
-      "query": "golden eagle",
-      "text": "For eagles, some sites use cameras. At one Wyoming wind farm, a system that slows or stops individual turbines when it detects an eagle at risk cut eagle deaths there by 63 percent, a 2021 study in the Journal of Applied Ecology found. Same number, different study.",
-      "fallback": [
-        "eagle flying",
-        "wind farm"
-      ]
-    },
-    {
-      "chapter": "The recap",
-      "overlay": "SIX REASONS TO STOP",
-      "query": "wind turbine maintenance",
-      "text": "Sometimes a still turbine is just being serviced. A turbine's brake isn't like a car's, the Energy Department explains. It holds the rotor still after shutdown, which crews need for maintenance.",
-      "fallback": [
-        "wind turbine technician",
-        "wind turbine"
-      ]
-    },
-    {
-      "query": "wind farm road",
-      "text": "So next time you pass a wind farm and some rotors are parked, run down the list. Not enough wind up high. Too much wind, past cut-out. A full grid, or prices below zero. Ice on the blades. Bats or eagles nearby. Or a crew at work.",
-      "fallback": [
-        "wind farm",
-        "wind turbines"
-      ],
-      "graphic": "checklist graphic: six reasons a turbine stands still: low wind (below cut-in), storm (above cut-out), curtailment (grid full / negative prices), icing, wildlife curtailment (bats, eagles), maintenance"
-    },
-    {
-      "query": "wind turbines sunset",
-      "text": "A rotor parked for an hour tells you about that hour, not about the machine. Usually, it's the machine, the grid or the engineers saying: not now.",
-      "fallback": [
-        "wind farm sunset",
-        "wind turbine"
-      ]
-    },
-    {
-      "query": "wind farm highway",
-      "text": "Have you ever passed a wind farm on a windy day with the blades standing still? What do you think was going on? Tell me in the comments.",
-      "fallback": [
-        "wind farm",
-        "road"
-      ]
-    },
-    {
-      "query": "wind turbines dusk",
-      "text": "If you'd like to keep following the electron, subscribe to The Hidden Grid. Every source behind the numbers in this video is in the description.",
-      "fallback": [
-        "wind farm",
-        "power lines"
-      ]
-    }
+  "description": "On the windiest day of the month, some wind turbines stand perfectly still. It looks like waste. Usually it's the machine, the grid or the engineers saying \"not now.\"\nWe follow the wind from the blade to the power line and look at every reason a turbine stops.\n\nIn this video:\n- Cut-in speed, and why the wind at hub height is what counts\n- Capacity factor: what the U.S. wind fleet actually produced in 2025\n- The cube law: double the wind, eight times the power\n- The power curve: rated speed, feathering and cut-out in storms\n- Curtailment: full power lines, negative prices and where it happens most\n- Ice on blades, bats, eagles and maintenance\n\nSources:\nEIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php\nEIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php\nLawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report\nLawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Market Report: 2024 Edition - https://eta-publications.lbl.gov/sites/default/files/2024-09/land-based_wind_market_report_2024_edition.pdf\nU.S. DOE, How Do Wind Turbines Survive Severe Weather and Storms? - https://www.energy.gov/cmei/wind/articles/how-do-wind-turbines-survive-severe-weather-and-storms\nU.S. DOE, Explore a Wind Turbine (text version) - https://www.energy.gov/cmei/systems/explore-wind-turbine-text-version\nBortolotti et al., IEA Wind TCP Task 37 Reference Wind Turbines (NREL/DTU/SINTEF, 2019) - https://doi.org/10.2172/1529216\nIowa State University Wind Science Program, Wind power - https://meteor.geol.iastate.edu/windresearch/windpower.html\nEIA, Capacity factor definition (Today in Energy, 2011) - https://www.eia.gov/todayinenergy/detail.php?id=1710\nEIA, Why are Midwest grid operators turning away wind power? (2024) - https://www.eia.gov/todayinenergy/detail.php?id=62406\nEIA, Negative wholesale electricity prices (2012) - https://www.eia.gov/todayinenergy/detail.php?id=5110\nIowa State University, Field study shows icing can cost wind turbines up to 80% of power production (2021) - https://research.iastate.edu/2021/03/10/field-study-shows-icing-can-cost-wind-turbines-up-to-80-of-power-production/\nAdams, Gulka & Williams, A review of the effectiveness of operational curtailment for reducing bat fatalities (PLOS ONE, 2021) - https://pmc.ncbi.nlm.nih.gov/articles/PMC8598023/\nMcClure et al., Eagle fatalities are reduced by automated curtailment of wind turbines (Journal of Applied Ecology, 2021) - https://doi.org/10.1111/1365-2664.13831\n\nNarration is AI-generated; script researched and reviewed by a human.\nEducation only, not financial advice. The creator invests in the energy sector.\n\n#windenergy #windturbine #powergrid #howitworks #electricity",
+  "tags": [
+   "wind turbines",
+   "wind energy explained",
+   "why wind turbines stop",
+   "wind turbine power curve",
+   "cut-out wind speed",
+   "cut-in wind speed",
+   "wind curtailment",
+   "capacity factor",
+   "wind turbine storm",
+   "negative electricity prices",
+   "wind turbine icing",
+   "bats and wind turbines",
+   "power grid explained",
+   "how wind turbines work",
+   "transmission lines"
   ]
+ },
+ "thumbnails": [
+  {
+   "image": "s00_1.jpg",
+   "lines": [
+    [
+     "WINDY DAY.",
+     130,
+     "white"
+    ],
+    [
+     "NOT TURNING?",
+     150,
+     "#FFD400"
+    ]
+   ],
+   "badge": "FOLLOW THE ELECTRON"
+  },
+  {
+   "image": "s17_0.jpg",
+   "lines": [
+    [
+     "TOO MUCH",
+     140,
+     "white"
+    ],
+    [
+     "WIND",
+     170,
+     "#FF5A1F"
+    ]
+   ],
+   "badge": "CUT-OUT AT ~56 MPH"
+  },
+  {
+   "image": "s22_1.jpg",
+   "lines": [
+    [
+     "THE GRID",
+     130,
+     "white"
+    ],
+    [
+     "SAYS NO",
+     160,
+     "#FFD400"
+    ]
+   ],
+   "badge": "CURTAILMENT"
+  }
+ ],
+ "scenes": [
+  {
+   "chapter": "Intro",
+   "overlay": "WINDY. AND STILL.",
+   "query": "wind turbine storm",
+   "text": "Picture a gusty afternoon. Trees are bending, flags are snapping. But up on the ridge, some of the wind turbines aren't turning at all.",
+   "fallback": [
+    "wind farm clouds",
+    "windy trees"
+   ]
+  },
+  {
+   "query": "wind farm power lines",
+   "text": "A still turbine on a windy day is usually the machine, the grid, or the engineers saying: not now. Let's follow the wind from blade to power line and find out who's saying it, and why.",
+   "fallback": [
+    "power lines",
+    "wind turbine"
+   ]
+  },
+  {
+   "query": "wind turbine sunset",
+   "text": "Along the way, you'll see why a little more wind can mean a lot more power. And why, on some of the windiest days, turbines get told to make less.",
+   "fallback": [
+    "wind farm sunset",
+    "wind turbines"
+   ]
+  },
+  {
+   "query": "wind farm fields",
+   "text": "In 2025, wind made about 10.5 percent of America's utility-scale electricity, the Energy Information Administration reports. In Iowa, it was about 58 percent of the state's generation, according to Lawrence Berkeley National Laboratory.",
+   "fallback": [
+    "iowa farm",
+    "wind turbines"
+   ]
+  },
+  {
+   "query": "wind turbine tower",
+   "text": "And the machines are big. Berkeley Lab's annual wind report for the Energy Department says the average new land-based turbine in 2025 was rated at about 3.8 megawatts, with its hub about 335 feet up and a rotor about 460 feet across.",
+   "fallback": [
+    "wind turbine",
+    "turbine blades"
+   ],
+   "graphic": "diagram: average new U.S. land-based turbine installed in 2025 (LBNL/DOE Land-Based Wind Energy Technology Data Update 2026): nameplate 3.8 MW, hub height 102 m (~335 ft), rotor diameter 141 m (~460 ft); note '2025 data partial'"
+  },
+  {
+   "chapter": "Not enough wind",
+   "overlay": "NOT ENOUGH WIND",
+   "query": "calm wind turbine",
+   "text": "The simplest reason a turbine stands still: not enough wind where the blades are.",
+   "fallback": [
+    "wind turbine blue sky",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "wind turbine sky",
+   "text": "The Energy Department notes that wind speed increases with height, so the breeze you feel on the ground isn't the wind the rotor feels.",
+   "fallback": [
+    "tall wind turbine",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "wind turbine nacelle",
+   "text": "Every turbine has a wind gauge, an anemometer, feeding a controller. The department says the controller typically starts the machine at about 7 to 11 miles an hour. That's the cut-in speed. Below it, the turbine waits.",
+   "fallback": [
+    "anemometer",
+    "wind turbine"
+   ]
+  },
+  {
+   "query": "wind farm landscape",
+   "text": "Low wind is also why output looks modest on paper. Berkeley Lab found the U.S. wind fleet had a capacity factor of 34 percent in 2025. Projects built in 2024 reached about 37.",
+   "fallback": [
+    "wind turbines field",
+    "wind farm"
+   ],
+   "graphic": "bar chart: calendar-year 2025 wind capacity factor, U.S. fleet (projects built 1998-2024) 34% vs. projects built in 2024 37.1% (LBNL Technology Data Update 2026)"
+  },
+  {
+   "query": "wind turbines evening",
+   "text": "Capacity factor is what a plant actually produced, divided by the most it could have made running flat out. Berkeley Lab's figures already include losses from curtailment, downtime and ice on blades.",
+   "fallback": [
+    "wind farm",
+    "power lines"
+   ]
+  },
+  {
+   "chapter": "The cube law",
+   "overlay": "DOUBLE THE WIND",
+   "query": "wind turbine blades",
+   "text": "So why do a few extra miles an hour matter so much? Because of one number: three.",
+   "fallback": [
+    "turbine blades",
+    "wind turbine"
+   ]
+  },
+  {
+   "query": "wind turbine closeup",
+   "text": "The power in moving air rises with the cube of its speed. As Iowa State University's wind science program puts it, if the wind speed doubles, the power is multiplied by eight.",
+   "fallback": [
+    "turbine blades",
+    "wind"
+   ],
+   "graphic": "cube-law illustration (physics, P proportional to v^3): relative wind power at 1x, 1.5x and 2x wind speed = 1, 3.4 and 8; source note 'Iowa State University Wind Science Program'"
+  },
+  {
+   "query": "tall wind turbine",
+   "text": "Go from 10 miles an hour to 15, and the wind carries more than three times the power. It's also why towers keep getting taller: higher up, the wind is faster.",
+   "fallback": [
+    "wind turbine tower",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "turbine blades sky",
+   "text": "But extra power also means extra force on the blades, shaft and tower. And a generator can only use so much.",
+   "fallback": [
+    "wind turbine",
+    "turbine blade"
+   ]
+  },
+  {
+   "chapter": "Too much wind",
+   "overlay": "TOO MUCH WIND",
+   "query": "wind turbine power",
+   "text": "Engineers draw all of this as a power curve: how much electricity a turbine makes at each wind speed. Above cut-in, output climbs steeply until the turbine reaches its rated speed, where the generator hits its maximum.",
+   "fallback": [
+    "wind turbine",
+    "wind farm"
+   ],
+   "graphic": "line chart, ILLUSTRATIVE power-curve shape (not measured data): x = wind speed (mph), y = % of rated power; markers at cut-in 4 m/s (~9 mph), rated 9.8 m/s (~22 mph), cut-out 25 m/s (~56 mph) from the IEA Wind Task 37 3.4-MW land-based reference turbine (NREL/DTU/SINTEF, 2019); flat at 100% between rated and cut-out, drop to zero at cut-out"
+  },
+  {
+   "query": "wind farm hills",
+   "text": "Take a reference turbine U.S. and European researchers designed in 2019 to represent a modern land-based machine. It starts producing at about 9 miles an hour and hits full output at about 22.",
+   "fallback": [
+    "wind turbines",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "wind turbine rotor",
+   "text": "Above that, more wind doesn't add power. The pitch system turns the blades to catch less of it, and output stays flat.",
+   "fallback": [
+    "wind turbine blades",
+    "wind turbine closeup"
+   ]
+  },
+  {
+   "query": "wind turbine storm clouds",
+   "text": "Keep going, and you hit the cut-out speed. For that reference turbine, it's about 56 miles an hour. The Energy Department says controllers typically shut turbines off once winds exceed 55 to 65.",
+   "fallback": [
+    "storm clouds",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "wind turbine stopped",
+   "text": "Then the blades feather. They turn so they no longer produce the force that spins the rotor, the rotor slows, and output drops to zero.",
+   "fallback": [
+    "turbine blades",
+    "wind turbine"
+   ]
+  },
+  {
+   "query": "storm wind",
+   "text": "Why stop so early? Under an international standard, the department says, most turbines today must be built to withstand sustained winds of 112 miles an hour and gusts of 156. Cut-out sits far below that on purpose, to reduce the risk of damage.",
+   "fallback": [
+    "storm clouds",
+    "wind turbine storm"
+   ],
+   "graphic": "bar chart (mph): typical cut-out 55-65 mph (DOE) vs. design survival limits under IEC 61400-1 as cited by DOE: 112 mph sustained, 156 mph 3-second gust"
+  },
+  {
+   "query": "wind turbine nacelle",
+   "text": "The yaw drive keeps the turbine facing the wind. When speeds drop, the blades unfeather, and power is normally flowing again within minutes.",
+   "fallback": [
+    "wind turbine",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "offshore wind farm",
+   "text": "In March 2017, a winter storm hit Block Island, home of America's first offshore wind farm. All five turbines shut down for several hours while winds topped 55 miles an hour, then powered back up once the storm eased. So the windiest hour of the year can be a zero hour for a turbine. That's not a flaw. That's the design.",
+   "fallback": [
+    "offshore wind turbines",
+    "stormy sea"
+   ]
+  },
+  {
+   "chapter": "The grid says not now",
+   "overlay": "THE GRID IS FULL",
+   "query": "power lines",
+   "text": "Now the surprising one. Sometimes the turbine is fine, the wind is perfect, and the grid operator still tells it to make less.",
+   "fallback": [
+    "transmission tower",
+    "electricity pylon"
+   ]
+  },
+  {
+   "query": "transmission lines",
+   "text": "That's curtailment, which the EIA defines as deliberately reducing generation below what a plant could produce. It happens when supply outruns demand, or when there aren't enough power lines to carry it.",
+   "fallback": [
+    "power lines",
+    "electricity pylon"
+   ]
+  },
+  {
+   "query": "wind farm power lines",
+   "text": "In the EIA's words, on very windy days in particular locations, transmission capacity is often insufficient to receive the large amount of wind power generated.",
+   "fallback": [
+    "power lines",
+    "wind farm"
+   ]
+  },
+  {
+   "query": "electricity substation",
+   "text": "Berkeley Lab notes that when wind is high and lines are full, or other plants can't ramp down far or fast enough, local wholesale prices can go negative, meaning sellers pay buyers to take their power. That can trigger curtailment, too.",
+   "fallback": [
+    "power station",
+    "power lines"
+   ]
+  },
+  {
+   "query": "control room",
+   "text": "Why is wind often first in line? In the Midwest, the EIA explains, it's cheaper and faster to shut down and restart wind and solar plants than other kinds of power plants.",
+   "fallback": [
+    "wind farm",
+    "power lines"
+   ]
+  },
+  {
+   "query": "great plains wind farm",
+   "text": "How much gets curtailed? Across seven U.S. grid operators, Berkeley Lab counted about 5 percent of potential wind generation in 2025. The Southwest Power Pool in the central U.S. was highest, at about 9 percent.",
+   "fallback": [
+    "wind farm",
+    "prairie"
+   ],
+   "graphic": "bar chart: wind curtailment as % of potential wind generation, 2025, by grid operator (LBNL Technology Data Update 2026 data file): SPP 9.4, ERCOT 4.7, MISO 2.9, ISO-NE 1.5, CAISO 1.3, NYISO 1.1, PJM 0.8 (PJM partial); all seven 5.1"
+  },
+  {
+   "query": "transmission tower",
+   "text": "Back in 2014, it was under 1 percent. Since then, wind's share of that region's demand has grown from about 12 percent to about 38. More wind on the same wires means more hours when the wires are full.",
+   "fallback": [
+    "power lines",
+    "wind farm"
+   ],
+   "graphic": "line chart: SPP wind curtailment rate and wind penetration, 2014-2025 (LBNL data file): curtailment 0.7% (2014) to 9.4% (2025); wind share of load 12.0% (2014) to 37.6% (2025)"
+  },
+  {
+   "query": "power lines texas",
+   "text": "New lines help. After a big transmission build-out serving West Texas wrapped up around 2013, Berkeley Lab notes, wind curtailment on the main Texas grid fell from 17 percent in 2009 to half a percent in 2014.",
+   "fallback": [
+    "transmission lines",
+    "electricity pylon"
+   ]
+  },
+  {
+   "chapter": "Ice and wildlife",
+   "overlay": "ICE, BATS, EAGLES",
+   "query": "wind turbine snow",
+   "text": "Weather can stop a turbine in a quieter way, too: ice.",
+   "fallback": [
+    "frozen wind turbine",
+    "winter wind farm",
+    "icicles"
+   ]
+  },
+  {
+   "query": "wind turbine winter",
+   "text": "An Iowa State-led field study, published in 2021, looked at a wind farm in eastern China. Ice grew nearly a foot thick near the blade tips, and despite high winds, the iced turbines turned slower, often shut down, and lost up to 80 percent of their power.",
+   "fallback": [
+    "snow wind turbine",
+    "frozen landscape"
+   ]
+  },
+  {
+   "query": "bat flying night",
+   "text": "Then there's wildlife. Bats are most at risk in late summer and fall, and they're more active when winds are light. So some wind farms raise their cut-in speed on those nights, and the blades may be feathered.",
+   "fallback": [
+    "night sky",
+    "wind turbine night"
+   ]
+  },
+  {
+   "query": "wind turbine night",
+   "text": "A 2021 review of curtailment experiments in the U.S. and Canada found it cut bat deaths by about 63 percent on average.",
+   "fallback": [
+    "night sky",
+    "wind farm"
+   ],
+   "graphic": "bar chart: bat fatality rate with curtailment relative to normal operation = 0.37 (i.e., -63%), meta-analysis of 36 control-treatment studies at 17 U.S./Canadian wind farms (Adams et al., PLOS ONE 2021); note typical factory cut-in 3.5 m/s (~8 mph)"
+  },
+  {
+   "query": "golden eagle",
+   "text": "For eagles, some sites use cameras. At one Wyoming wind farm, a system that slows or stops individual turbines when it detects an eagle at risk cut eagle deaths there by 63 percent, a 2021 study in the Journal of Applied Ecology found. Same number, different study.",
+   "fallback": [
+    "eagle flying",
+    "wind farm"
+   ]
+  },
+  {
+   "chapter": "The recap",
+   "overlay": "SIX REASONS TO STOP",
+   "query": "wind turbine technician",
+   "text": "Sometimes a still turbine is just being serviced. A turbine's brake isn't like a car's, the Energy Department explains. It holds the rotor still after shutdown, which crews need for maintenance.",
+   "fallback": [
+    "wind turbine repair",
+    "wind turbine crane",
+    "engineer wind turbine"
+   ]
+  },
+  {
+   "query": "wind farm road",
+   "text": "So next time you pass a wind farm and some rotors are parked, run down the list. Not enough wind up high. Too much wind, past cut-out. A full grid, or prices below zero. Ice on the blades. Bats or eagles nearby. Or a crew at work.",
+   "fallback": [
+    "wind farm",
+    "wind turbines"
+   ],
+   "graphic": "checklist graphic: six reasons a turbine stands still: low wind (below cut-in), storm (above cut-out), curtailment (grid full / negative prices), icing, wildlife curtailment (bats, eagles), maintenance"
+  },
+  {
+   "query": "wind turbines sunset",
+   "text": "A rotor parked for an hour tells you about that hour, not about the machine. Usually, it's the machine, the grid or the engineers saying: not now.",
+   "fallback": [
+    "wind farm sunset",
+    "wind turbine"
+   ]
+  },
+  {
+   "query": "wind farm highway",
+   "text": "Have you ever passed a wind farm on a windy day with the blades standing still? What do you think was going on? Tell me in the comments.",
+   "fallback": [
+    "wind farm",
+    "road"
+   ]
+  },
+  {
+   "query": "wind turbines dusk",
+   "text": "If you'd like to keep following the electron, subscribe to The Hidden Grid. Every source behind the numbers in this video is in the description.",
+   "fallback": [
+    "wind farm",
+    "power lines"
+   ]
+  }
+ ]
 }

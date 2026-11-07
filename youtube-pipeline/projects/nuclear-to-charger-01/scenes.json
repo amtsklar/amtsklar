@@ -41,12 +41,14 @@
   {
    "chapter": "Step 1: Splitting atoms for heat",
    "overlay": "STEP 1: MAKING HEAT",
-   "query": "uranium fuel pellets",
+   "query": "nuclear reactor core",
    "text": "Inside a reactor, the fuel is uranium, formed into small ceramic pellets. The EIA says each pellet holds about as much energy as 150 gallons of oil. The pellets are stacked end to end in fuel rods 12 feet long.",
    "fallback": [
-    "nuclear fuel",
-    "nuclear reactor"
-   ]
+    "nuclear reactor",
+    "uranium",
+    "nuclear fuel"
+   ],
+   "video": false
   },
   {
    "query": "atom model",
@@ -84,20 +86,24 @@
    ]
   },
   {
-   "query": "boiling water steam",
+   "query": "steam pipes industrial",
    "text": "In those, water under high pressure carries heat from the core to a steam generator, where it boils water in a separate loop. The other type, a boiling water reactor, makes steam right in the core.",
    "fallback": [
-    "steam",
-    "hot water"
-   ]
+    "boiling water",
+    "pressure vessel",
+    "steam"
+   ],
+   "video": false
   },
   {
-   "query": "steam turbine",
+   "query": "turbine hall",
    "text": "Either way, the steam is piped to a turbine and spins it. The turbine drives a generator, where a spinning magnet induces current in coils of wire. That's where motion finally becomes electricity.",
    "fallback": [
-    "turbine",
-    "generator"
-   ]
+    "power plant turbine",
+    "generator turbine",
+    "industrial turbine"
+   ],
+   "video": false
   },
   {
    "query": "power plant generator",
@@ -363,7 +369,7 @@
  },
  "thumbnails": [
   {
-   "image": "s00_0.jpg",
+   "image": "s01_0.jpg",
    "lines": [
     [
      "ATOM",
@@ -379,7 +385,7 @@
    "badge": "THE FULL TRIP"
   },
   {
-   "image": "s13_0.jpg",
+   "image": "s01_2.jpg",
    "lines": [
     [
      "2/3",
@@ -395,7 +401,7 @@
    "badge": "AT THE PLANT"
   },
   {
-   "image": "s25_0.jpg",
+   "image": "s25_1.jpg",
    "lines": [
     [
      "ELECTRONS",
