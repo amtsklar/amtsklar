@@ -68,5 +68,7 @@
  "endcard_seconds": 20,
  "music": "assets/music/hidden_grid_bed.wav (own, royalty-free) + hidden_grid_sting.wav on end screen",
  "ai_disclosure_studio": "Altered/synthetic content: answer YES voluntarily (synthetic narration) – consistent on every upload; description carries the disclosure line.",
- "upload_slot": "Tuesday 19:00 CET (13:00 ET); Shorts Thu + Sat"
+ "upload_slot": "Tuesday 19:00 CET (13:00 ET); Shorts Thu + Sat",
+ "voice_locked": false,
+ "voice_note": "Draft voice only. Final signature voice chosen once via channel/the-hidden-grid/stimme-casting.md, then voice_locked=true and never changed."
 }
