@@ -176,7 +176,7 @@
   },
   {
    "query": "power lines landscape",
-   "text": "Or in the EIA's words, higher voltage makes long-distance transmission more efficient and less expensive. The U.S. grid has thousands of miles of these high-voltage lines, and millions of miles of lower-voltage lines.",
+   "text": "Or in the EIA's words, higher voltage makes long-distance transmission more efficient and less expensive.",
    "fallback": [
     "electricity pylon field",
     "transmission lines"
