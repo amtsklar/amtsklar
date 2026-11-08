@@ -328,3 +328,84 @@ Common Law und Social Media:
 - **Tower in den USA:** Ob Tower-Geräte über Drittanbieter (z. B. Amazon-Marketplace-Importe) in den USA verkauft werden, habe ich nicht abschließend geprüft. Den Grund der Suspendierung von SN 99114440 habe ich nicht in TSDR nachgelesen (JavaScript-Seite, API mit Key).
 - **Swissreg "tower":** Bei über 8000 Volltexttreffern habe ich nur die ersten 500 auf Titeltreffer geprüft.
 - Die Einschätzungen zu § 2(e)(1) und failure to function (SERVER TO SUBSTATION, HOW THE LIGHTS STAY ON) sind Faktenschätzungen; die Entscheidung trifft der Examining Attorney im Einzelfall.
+
+---
+
+## Runde 6: vier neue Namen und Kurzform OTHER END WIRE (8. Nov. 2026)
+
+> Das ist keine Rechtsberatung, sondern eine Faktenrecherche.
+
+**Methode:** wie in Abschnitt 3 und Runde 5. USPTO über das JSON-Backend von tmsearch (`/prod-stage-v1-0-0/tmsearch`, `query_string` auf `wordmark`): exakte Phrase, Zusammenschreibung und Ziffernvarianten (PLANTTOPROMPT, PLANT 2 PROMPT, WIRETOWIRE, WIRE 2 WIRE, BEHIND THE BREAKERS, OTHERENDWIRE, END OF THE WIRE), alle Status, dazu Wortkombinationen über alle Klassen (PLANT+PROMPT, CLOUD+PLUG, BEHIND+BREAKER, OTHER+WIRE) und die Kernwörter (PROMPT, "PLANT TO", PLUG, "BEHIND THE", WIRE, "OTHER END") gefiltert auf lebende Marken in Kl. 41/38 bzw. 41/38/9/35/16 (Klassenfilter als `query_string` auf `internationalClass`). Swissreg über `/database/resources/query/search` (Ziel "chmarke", Header `X-IPI-VERSION: 11.0.6`, laut `build-info.json` unverändert). Common Law über Websuche und die iTunes Search API (Podcasts, Musik, E-Books, Apps, Filme, US-Store). Handles: YouTube und X über den HTTP-Status (Gegenprobe @nasa = 200, Fantasie-Handle = 404 auf beiden), TikTok über `statusCode` (10221 = nicht gefunden, @nasa = 0), belegte Konten zusätzlich über Seiteninhalt bzw. fxtwitter. Domains per RDAP bei Verisign.
+
+### 6.1 Ergebnis auf einen Blick
+
+| Name | Ampel | USPTO: exakter Treffer | Nächste relevante Konflikte (USPTO) | Common Law / Web | Swissreg | Handles (YT / X / TikTok / IG) | .com |
+|---|---|---|---|---|---|---|---|
+| **PLANT TO PROMPT** | 🟢 grün | keiner (auch PLANTTOPROMPT, PLANT 2 PROMPT, PLANT+PROMPT in jeder Klasse: 0) | Feld "PROMPT" in Kl. 41/38: 20 lebende Marken, v. a. KI-Schulungen: PROMPT (The Prompt Institute, registriert), THE PROMPT (zwei Inhaber, Kl. 41), **AT THE PROMPT** und **THE PROMPT ECONOMY** (What's Next Media and Analytics, Kl. 9/35/41, angemeldet 2025/2026). "PLANT TO …" in Kl. 41: nur PLANT TO PALATE (Kochkurse, registriert); FROM PLANT TO PUFF (Tabak) fernliegend | Kein Podcast, Kanal, Buch, Song oder Firma "Plant to Prompt" gefunden; iTunes 0 Treffer in allen Medien | kein Treffer; "prompt": PROMPT (Kl. 16 und 41, US-Inhaber, aktiv), THE PROMPT ATELIER (Kl. 16/35/41), .PROMPT (Kl. 9/38/45) | alle frei (YT, X, TikTok 404/10221); IG unklar | planttoprompt.com frei |
+| **THE CLOUD HAS A PLUG** | 🟢 grün (Eintragbarkeit mittel) | keiner ("CLOUD HAS A PLUG", CLOUD+PLUG in jeder Klasse: nur PLUG N PLAY CLOUD, Kl. 42, **dead**) | Keine. Nächstliegend THE POWER PLUG PODCAST (Kl. 41, registriert) und P THE PLUG NETWORK (Kl. 38), beide fernliegend | Kein Medienangebot mit dem Satz gefunden; Websuche liefert nur technische "Cloud Plug(in)"-Treffer und eine App "Cloud Plug" (Bluetooth-Steckdosen). iTunes 0 | kein Treffer | @TheCloudHasAPlug frei auf YT und TikTok, **für X zu lang** (16 Zeichen); **@CloudHasAPlug frei auf YT, X und TikTok**; IG unklar | thecloudhasaplug.com und cloudhasaplug.com frei |
+| **WIRE TO WIRE** | 🔴 rot | **ja:** WIRE TO WIRE, Florida Thoroughbred Breeders' and Owners' Association (FTBOA), **Kl. 16, registriert und verlängert** (RN 3564501, Erstbenutzung 1981), Zeitschrift über Pferderennen | **WIRE 2 WIRE PODCAST**, Yusuf Abubakar (Kanada), **Kl. 41**, Basketball-Podcast, angemeldet 07.05.2026, Prüfung für Veröffentlichung abgeschlossen. WIRE TO WIRE WEALTH (Kl. 36, registriert). Tot: WIRE-TO-WIRE (Equibase, Kl. 16), WIRE TO WIRE (Kl. 25, zweimal). Feld "WIRE" in Kl. 41/38: 75 lebende Marken (THE WIRE/HBO, DAILY WIRE, SYFY WIRE, BUSINESS WIRE …) | **Sportbezug klar belegt:** Die Wendung stammt aus dem Pferderennsport (Führung "vom Start- bis zum Zieldraht") und ist im Golf- und allgemeinen Sportjournalismus Standard. FTBOA betreibt **"Wire to Wire" seit 09/2023 als digitale Publikation** (Rennberichte, News). Podcast **"Wire to Wire: A show about fantasy football"** (The Athletic, 2020). Songs "Wire to Wire" (Razorlight 2008 u. a., 34 Treffer bei iTunes), Bücher "Wire to Wire" (George Cantor, Scott Sparling) | kein Treffer; "wire" nur WIRE ROAD (Kl. 9/35/42) unter den ersten 500 von 2982 Treffern | **YT @WiretoWire vergeben** (Kanal "WiretoWire", 1 Abonnent, keine sichtbaren Videos; widerspricht der Vorprüfung); **X @WireToWire vergeben** (x.com 200, fxtwitter 404, evtl. gesperrt/inaktiv), **@WireToWirePod vergeben**; **TikTok @WireToWire vergeben** (0 Videos); IG unklar | **wiretowire.com vergeben (seit 17.10.1996, geparkt)**; widerspricht der Vorprüfung |
+| **BEHIND THE BREAKER** | 🔴 rot | keiner ("BEHIND THE BREAKER(S)", BEHIND+BREAKER in jeder Klasse: 0) | **BEHIND THE SWITCH, Dominion Energy, Inc.**, SN 50054268, **Kl. 41**: *"Educational and entertainment services, namely, providing an online non-downloadable video series in the field of energy grid technology and infrastructure"*, angemeldet 17.08.2026 (Intent to Use), **veröffentlicht zum Widerspruch am 20.10.2026**. Sonst Feld "BEHIND THE" in Kl. 41/38: 188 lebende Marken (BEHIND THE MUSIC/Viacom, BEHIND THE SCENES, BEHIND THE LINES …) | Kein Kanal, Podcast oder Buch "Behind the Breaker" gefunden; iTunes 0. Viele Elektriker-Podcasts im Umfeld. Dominions eigene Grid-Videoserie auf dominionenergy.com (Energy Grid Transformation) läuft bislang ohne sichtbaren Titel | kein Treffer ("behind the breaker", "behind the switch": 0) | YT @BehindTheBreaker frei; **X nicht möglich** (16 Zeichen), **@BehindBreaker vergeben**; **TikTok @BehindTheBreaker vergeben** (0 Videos, 1 Follower); IG unklar | behindthebreaker.com frei |
+| **OTHER END WIRE** (Kurzform) | 🟢 grün | keiner (OTHERENDWIRE, "END WIRE", "END OF THE WIRE", OTHER+WIRE in jeder Klasse: 0; "OTHER END": 11 Einträge, alle dead) | Keine. Im Energie-Umfeld nahe, aber andere Wendung: **DOWN TO THE WIRE**, Southeast Lineman Training Center, Kl. 9/41, registriert (Reality-Videos über Linemen). OUTSIDE THE WIRE (Kazmo Studios, Rollenspiele, Kl. 9/28/41, angemeldet 2026) | Nichts: Websuche nur technische Treffer ("show other end" in CAD-Software, Kabelenden); iTunes 0 | kein Treffer ("other end": 4, keiner im Titel) | alle frei (YT, X, TikTok); @OtherEndOfTheWire auf YT/TikTok ebenfalls frei; IG unklar | otherendwire.com und otherendofthewire.com frei |
+
+**Ranking Runde 6:** 1. OTHER END WIRE (stützt den Favoriten OTHER END OF THE WIRE), 2. PLANT TO PROMPT, 3. THE CLOUD HAS A PLUG. Nicht empfohlen: WIRE TO WIRE, BEHIND THE BREAKER.
+
+### 6.2 Begründung je Name
+
+**PLANT TO PROMPT 🟢**
+- **Register:** keine Kollision. Das Feld "PROMPT" in Kl. 41 wächst schnell (KI-Schulungen, Coaching, mehrere Anmeldungen 2025/2026), alle Marken haben aber andere prägende Bestandteile. Am nächsten liegt ein Medienunternehmen mit AT THE PROMPT und THE PROMPT ECONOMY (Kl. 9/35/41), das KI-Inhalte publiziert. Die Kombination mit PLANT und der Bogen "Kraftwerk → Prompt" unterscheiden deutlich.
+- **Eintragbarkeit:** suggestiv. "Plant" ist mehrdeutig (Kraftwerk oder Pflanze), und die Brücke zum KI-Prompt erfordert einen gedanklichen Schritt. Ein § 2(e)(1)-Einwand wegen "X to Y"-Themenbogen (vgl. SERVER TO SUBSTATION, Runde 5) ist möglich, aber deutlich weniger naheliegend, weil keines der Wörter für sich die Dienstleistung benennt. Risiko gering bis mittel.
+- **Hinweis:** PLANT TO PALATE (Kl. 41, Kochkurse) und FROM PLANT TO PUFF (Tabak) zeigen, dass "Plant to …" als Muster eintragbar ist und nebeneinander besteht.
+- Alle Handles und die .com-Domain frei.
+
+**THE CLOUD HAS A PLUG 🟢 (Eintragbarkeit mittel)**
+- **Register und Common Law:** sauber. Weder der Satz noch die Kombination CLOUD/PLUG ist in einer lebenden Marke belegt.
+- **Eintragbarkeit:** Ein ganzer Satz wird vom Examining Attorney gern als bloße Aussage geprüft (failure to function). Anders als HOW THE LIGHTS STAY ON beschreibt der Satz den Inhalt aber nicht wörtlich, sondern pointiert bildhaft ("die Cloud hängt am Stromnetz"). Ich schätze die Eintragbarkeit als **mittel** ein; als Kanalname mit Logo und konsequenter Nutzung als Herkunftszeichen ist sie gut vertretbar.
+- **Praktisch:** Für X ist das Handle eine Stelle zu lang; @CloudHasAPlug ist überall frei und sollte gemeinsam gesichert werden.
+
+**WIRE TO WIRE 🔴**
+- **Sport und Rennsport (geprüft wie gewünscht):** Die Wendung ist ein fester Begriff aus dem Pferderennsport und im Sport allgemein verbreitet. Als **Marke** ist sie belegt: FTBOA hält WIRE TO WIRE in Kl. 16 seit 2009 eingetragen und verlängert (Nutzung seit 1981) und betreibt seit 2023 eine digitale Publikation "Wire to Wire". Als **Medium** ist sie mehrfach belegt: Fantasy-Football-Podcast von The Athletic (2020), Basketball-Podcast WIRE 2 WIRE PODCAST mit laufender Anmeldung in **Kl. 41** (2026).
+- **Konfliktlage:** Die FTBOA-Marke betrifft gedruckte Publikationen zum Pferderennsport. Ein Energie-Kanal ist inhaltlich fern, aber online-Publikation und Videoinhalte gelten schnell als verwandt (Kl. 16 ↔ 41). Die Kl.-41-Anmeldung WIRE 2 WIRE PODCAST ist klanglich identisch; ob sie einer eigenen Anmeldung entgegengehalten würde, hängt von der Leistungsnähe ab (Podcast vs. Videos, Sport vs. Energie). Eine § 2(d)-Zurückweisung ist **möglich**.
+- **Eintragbarkeit und Unterscheidungskraft:** Für Energie-Inhalte ist der Ausdruck ein Wortspiel (Draht zu Draht) und damit suggestiv. Wegen der festen Sportbedeutung und des vollen "WIRE"-Felds wäre der Schutzumfang aber schmal.
+- **Praktisch (ausschlaggebend):** Entgegen der Vorprüfung sind **YouTube @WiretoWire, X @WireToWire, TikTok @WireToWire und wiretowire.com bereits vergeben** (Domain seit 1996, geparkt). In der Suche dominiert die Sportbedeutung.
+
+**BEHIND THE BREAKER 🔴**
+- **Hauptbefund:** Dominion Energy, einer der größten US-Versorger, hat am 17.08.2026 **BEHIND THE SWITCH** für genau die Dienstleistung des geplanten Kanals angemeldet: online abrufbare Videoserie über Netztechnik und Energieinfrastruktur in Kl. 41. Die Marke wurde am 20.10.2026 zum Widerspruch veröffentlicht, die Widerspruchsfrist ist also gerade abgelaufen oder läuft (30 Tage, verlängerbar). Eine Eintragung folgt nach Benutzungsnachweis (Intent to Use).
+- **Verwechslungsgefahr (DuPont, faktenbasiert):** Dienstleistungen identisch, Vertriebswege identisch (YouTube/Web), Aufbau identisch ("BEHIND THE" + Schaltelement), Bedeutung sehr nahe (ein Leistungsschalter ist ein Schalter). Für die Gegenseite spricht das volle "BEHIND THE"-Feld (188 lebende Marken in Kl. 41/38), was den Präfix schwächt; das prägende Element ist aber jeweils das Elektro-Wort am Ende. Ich schätze das § 2(d)-Risiko als **mittel bis hoch** ein, das praktische Risiko (Abmahnung durch einen Versorger mit Markenanwältin, Verwechslung im Markt) als hoch.
+- **Eintragbarkeit:** für sich suggestiv, aber nicht gegen die ältere Dominion-Anmeldung.
+- **Praktisch:** TikTok @BehindTheBreaker vergeben, X-Handle zu lang, @BehindBreaker auf X vergeben.
+
+**OTHER END WIRE 🟢 (Kurzform)**
+- **Register:** sauber in allen Schreibweisen; "OTHER END" ist im US-Register nur mit toten Einträgen belegt (siehe Runde 5). Swissreg ohne Treffer.
+- **Umfeld "WIRE":** 75 lebende WIRE-Marken in Kl. 41/38, überwiegend Nachrichten-"Wires" (DAILY WIRE, SYFY WIRE, BUSINESS WIRE) und THE WIRE (HBO). Keine davon kombiniert "OTHER END". DOWN TO THE WIRE (Lineman-Schule, Videos über Linemen) liegt thematisch nah, ist aber eine andere Wendung mit anderem Sinn. Risiko gering.
+- **Eintragbarkeit:** suggestiv, gut eintragbar. Die Kurzform ist grammatisch verkürzt; als Handle-Kurzform von OTHER END OF THE WIRE ist sie unproblematisch und verstärkt den Favoriten, wenn beide Formen einheitlich genutzt werden.
+- **Praktisch:** @OtherEndWire auf YouTube, X und TikTok frei; otherendwire.com frei. Damit ist die X-Lücke aus Runde 5 (@OtherEndOfTheWire zu lang) geschlossen.
+
+### 6.3 Fundstellen
+
+USPTO (TSDR):
+- WIRE TO WIRE, FTBOA, Kl. 16, SN 77499649 / RN 3564501: https://tsdr.uspto.gov/#caseNumber=77499649&caseType=SERIAL_NO&searchType=statusSearch
+- WIRE 2 WIRE PODCAST, Kl. 41, SN 99810399: https://tsdr.uspto.gov/#caseNumber=99810399&caseType=SERIAL_NO&searchType=statusSearch
+- WIRE TO WIRE WEALTH, Kl. 36, SN 88925381: https://tsdr.uspto.gov/#caseNumber=88925381&caseType=SERIAL_NO&searchType=statusSearch
+- BEHIND THE SWITCH, Dominion Energy, Kl. 41, SN 50054268: https://tsdr.uspto.gov/#caseNumber=50054268&caseType=SERIAL_NO&searchType=statusSearch
+- DOWN TO THE WIRE, Southeast Lineman Training Center, SN 88101211: https://tsdr.uspto.gov/#caseNumber=88101211&caseType=SERIAL_NO&searchType=statusSearch
+- AT THE PROMPT, SN 99914232: https://tsdr.uspto.gov/#caseNumber=99914232&caseType=SERIAL_NO&searchType=statusSearch
+- THE PROMPT ECONOMY, SN 99443021: https://tsdr.uspto.gov/#caseNumber=99443021&caseType=SERIAL_NO&searchType=statusSearch
+- PLANT TO PALATE, SN 99014093: https://tsdr.uspto.gov/#caseNumber=99014093&caseType=SERIAL_NO&searchType=statusSearch
+- THE POWER PLUG PODCAST, SN 97712156: https://tsdr.uspto.gov/#caseNumber=97712156&caseType=SERIAL_NO&searchType=statusSearch
+
+Common Law und Social Media:
+- FTBOA "Wire to Wire" (digitale Publikation seit 2023): https://www.ftboa.com/florida-equine-communications-announces-new-wire-to-wire-format-ftboa-releases-new-website
+- Begriff "wire to wire" (Rennsport, Golf): https://www.wikiwand.com/en/articles/Wire-to-wire
+- Podcast "Wire to Wire: A show about fantasy football" (The Athletic, 2020): Apple Podcasts, über iTunes Search API
+- YouTube @WiretoWire: https://www.youtube.com/@WiretoWire, X @WireToWire: https://x.com/WireToWire, TikTok @WireToWire: https://www.tiktok.com/@WireToWire
+- TikTok @BehindTheBreaker: https://www.tiktok.com/@BehindTheBreaker, X @BehindBreaker: https://x.com/BehindBreaker
+- Dominion Energy, Videoserie Energy Grid Transformation: https://www.dominionenergy.com/projects-and-facilities/electric-projects/energy-grid-transformation
+
+### 6.4 Grenzen der Recherche (Runde 6)
+
+- Es gelten die Grenzen aus Abschnitt 5, 4.4 und 5.4: nur Text, keine Bildmarken, EUIPO/TMview/WIPO nicht geprüft, keine Firmenregister und State Trademarks, Spotify nicht direkt abgefragt.
+- **Instagram** ließ sich ohne Login wieder für keinen Namen klären.
+- **Abweichung zur Vorprüfung:** Für WIRE TO WIRE sind YouTube-Handle und .com nach meiner Abfrage vergeben. Möglicherweise wurde in der Vorprüfung eine andere Schreibweise geprüft.
+- **BEHIND THE SWITCH:** Ob Widerspruch gegen die Dominion-Anmeldung eingelegt wurde und unter welchem Titel Dominion die Serie veröffentlicht, habe ich nicht geprüft (TSDR per JavaScript, API mit Key).
+- **Swissreg "wire":** Bei 2982 Volltexttreffern habe ich nur die ersten 500 auf Titeltreffer geprüft.
+- Die Einschätzungen zu § 2(d), § 2(e)(1) und failure to function sind Faktenschätzungen; die Entscheidung trifft der Examining Attorney im Einzelfall.
