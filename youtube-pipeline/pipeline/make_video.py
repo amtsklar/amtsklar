@@ -665,7 +665,7 @@ def stage_render(project):
             y = f"({y0}+({y1}-{y0})*{p})*{ry}"
             if img.suffix == ".png":   # own graphic: static, gentle fade in
                 vf = (f"scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=0x080e1c,"
-                      f"fps={FPS},format=yuv420p,fade=t=in:st=0:d=0.4")
+                      f"fps={FPS},format=yuv420p")   # hard cut: a fade from black looked like text behind a curtain
                 src = ["-loop", "1", "-framerate", str(FPS), "-i", str(img)]
             elif img.suffix == ".mp4":   # real footage: cover-crop, no pan
                 vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
@@ -679,7 +679,7 @@ def stage_render(project):
                 txt = esc(sc["overlay"])
                 font = FONT.as_posix().replace(":", "\\:")   # Windows: C\:/...
                 vf += (f",drawtext=fontfile='{font}':text='{txt}':fontsize=88:fontcolor=white:"
-                       f"x=(w-text_w)/2:y=h*0.12:box=1:boxcolor=0x1b3a1f@0.82:boxborderw=28:"
+                       f"x=(w-text_w)/2:y=h*0.10:box=1:boxcolor=0x080e1c@0.92:boxborderw=30:"
                        f"alpha='if(lt(t,0.3),t/0.3,if(lt(t,3.6),1,if(lt(t,4.0),(4.0-t)/0.4,0)))'")
             out = clip_dir / f"c{n:03d}.mp4"
             sh("ffmpeg", "-y", *src, "-t", f"{d:.3f}", "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-an", str(out))
