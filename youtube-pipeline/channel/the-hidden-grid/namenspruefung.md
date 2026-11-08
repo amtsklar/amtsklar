@@ -86,3 +86,16 @@ Mein Favorit ist **The Electron Trail**, weil Handle und .com frei scheinen und 
 5. **Marke kurz selbst prüfen:** tmsearch.uspto.gov, tmdn.org/tmview und swissreg.ch nach dem finalen Namen durchsuchen, Klassen 41, 38, 9, 35 und 42.
 6. **Vor Monetarisierung oder Merch:** eine kurze Prüfung (Clearance Search) durch einen Markenanwalt. Eine eigene Markenanmeldung (CH/US) lohnt sich erst, wenn der Kanal Zug hat.
 7. `kanal-setup.md` anpassen: Die Fallback-Liste enthält das bereits vergebene `@hiddengridtv`.
+
+---
+## Nachprüfung „The Electron Trail“ (8. Nov. 2026)
+| Prüfung | Ergebnis |
+|---|---|
+| YouTube @TheElectronTrail | frei (404) |
+| YouTube @ElectronTrail | vergeben: Kanal „Electron Trail“, angelegt 11.3.2014, ohne Beschreibung, vermutlich inaktiv |
+| YouTube @FollowTheElectron | frei (404) |
+| theelectrontrail.com / .net / .org | nicht registriert (RDAP 404), also kaufbar |
+| electrontrail.com | **registriert am 5.6.2026**: „ElectronTrail“, ein interaktiver, quellenbasierter Lernführer, der *einem Elektron* vom CERN-Beschleuniger bis zum Bildschirm eines Röhrenfernsehers folgt (Entwickler: POLPROG, nicht kommerziell erkennbar) |
+| Marken „ELECTRON TRAIL“ | in Websuche keine Treffer; USPTO/EUIPO/Swissreg **nicht direkt abgefragt** |
+
+**Bewertung: gelb.** Handle und .com sind frei. Es gibt aber seit Juni 2026 ein Bildungsprojekt „ElectronTrail“ mit fast identischer Idee (einem Elektron folgen). Das bringt Verwechslungsgefahr, und in den USA kann durch frühere Nutzung im Bildungsbereich ein Markenrecht entstehen (common law, Klasse 41). Vor Kauf oder Branding: kurze Prüfung durch einen Markenanwalt oder das Gespräch mit dem Projekt suchen.
