@@ -99,3 +99,20 @@ Mein Favorit ist **The Electron Trail**, weil Handle und .com frei scheinen und 
 | Marken „ELECTRON TRAIL“ | in Websuche keine Treffer; USPTO/EUIPO/Swissreg **nicht direkt abgefragt** |
 
 **Bewertung: gelb.** Handle und .com sind frei. Es gibt aber seit Juni 2026 ein Bildungsprojekt „ElectronTrail“ mit fast identischer Idee (einem Elektron folgen). Das bringt Verwechslungsgefahr, und in den USA kann durch frühere Nutzung im Bildungsbereich ein Markenrecht entstehen (common law, Klasse 41). Vor Kauf oder Branding: kurze Prüfung durch einen Markenanwalt oder das Gespräch mit dem Projekt suchen.
+
+---
+## Runde 3: neue Kandidaten (8. Nov. 2026)
+Automatisch geprüft (YouTube-Handle 404 = frei, .com per RDAP nicht registriert), danach Websuche nach Kanälen, Podcasts, Firmen und Marken:
+
+| Name | Handle | .com | Websuche |
+|---|---|---|---|
+| The Electron Mile | @TheElectronMile / @ElectronMile frei | theelectronmile.com + electronmile.com frei | kein Treffer; ähnlich: „Electric Miles“ (UK, EV-Lade-Software) |
+| The Megawatt Mile | @TheMegawattMile / @MegawattMile frei | beide frei | kein Treffer |
+| The Long Current | @TheLongCurrent frei | frei | kein Treffer |
+| Past the Outlet | @PastTheOutlet frei | frei | kein Treffer |
+| The Copper Road | @TheCopperRoad frei | frei | kein Treffer als Kanal/Podcast |
+| Grid and Wire | @GridAndWire frei | frei | kein Treffer |
+
+Weitere freie Handles+Domains: The Watt Trail, The Current Path, The Volt Road, The Gigawatt Mile, The Electron Way, The Electron Path, The Copper Mile, Where Watts Go.
+Ausgeschieden (Handle oder .com vergeben): Current Trail, Volt Trail, Grid Trail, One Electron, Kilowatt Atlas, Watt Atlas, The Switchyard, Hidden Current, The Live Wire, Copper Trail (.com frei, aber CopperTrail-Handle vergeben) u. a.
+Markenregister weiterhin nicht direkt abgefragt.
