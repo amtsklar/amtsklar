@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Corporate-identity gate: every video/short must match channel/the-hidden-grid/brand.json.
+"""Corporate-identity gate: every video/short must match channel/other-end-of-the-wire/brand.json.
 Usage: python3 pipeline/brand_check.py projects/<name> [projects/<name> ...] | shorts/<name>
 Exit code 1 if anything fails (run before every upload)."""
 import json, re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BRAND = json.loads((ROOT / "channel" / "the-hidden-grid" / "brand.json").read_text())
+BRAND = json.loads((ROOT / "channel" / "other-end-of-the-wire" / "brand.json").read_text())
 
 
 def dur(p):

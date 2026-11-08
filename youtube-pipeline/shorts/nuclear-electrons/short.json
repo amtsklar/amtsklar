@@ -1,7 +1,7 @@
 {
  "title": "THE ELECTRONS BARELY MOVE",
  "parent": "nuclear-to-charger-01",
- "voice": "en-US-GuyNeural",
+ "voice": "X2seGlvinhLwJHI08IFY",
  "rate": "+2%",
  "scenes": [
   {
@@ -9,7 +9,7 @@
    "src": "nuclear-to-charger-01/build/images/s25_0.mp4"
   },
   {
-   "text": "In a copper wire, electrons drift on the order of millimeters per second. In one Georgia State University example, less than a third of a millimeter per second.",
+   "text": "In a copper wire, electrons drift only fractions of a millimeter per second. In one Georgia State University example, less than a third of a millimeter per second.",
    "src": "nuclear-to-charger-01/build/graphics/s26.png"
   },
   {
@@ -17,8 +17,9 @@
    "src": "nuclear-to-charger-01/build/graphics/s27.png"
   },
   {
-   "text": "What travels is the energy, at essentially the speed of light. The full story is on The Hidden Grid.",
+   "text": "What travels is the energy, close to the speed of light. The full story is on Other End of the Wire.",
    "src": "nuclear-to-charger-01/build/images/s29_0.jpg"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }

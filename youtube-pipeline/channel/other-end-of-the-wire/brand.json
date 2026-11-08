@@ -1,11 +1,11 @@
 {
- "channel": "The Hidden Grid",
+ "channel": "Other End of the Wire",
  "tagline": "Follow the electron",
- "voice": "en-US-GuyNeural",
- "rate_long": "-4%",
+ "voice": "X2seGlvinhLwJHI08IFY",
+ "rate_long": "+0%",
  "rate_short": "+2%",
- "outro": "If you like seeing how the hidden machinery of everyday life works, subscribe to The Hidden Grid. Every source behind the numbers in this video is in the description.",
- "short_outro_contains": "on The Hidden Grid",
+ "outro": "If you like seeing the hidden machinery behind everyday life, subscribe to Other End of the Wire. Every source behind the numbers in this video is in the description. Follow the electron.",
+ "short_outro_contains": "on Other End of the Wire",
  "length_long_seconds": [
   520,
   600
@@ -36,7 +36,8 @@
   "red": "#ff6b4a",
   "green": "#5fd38d",
   "text": "#ffffff",
-  "muted": "#9fb0c8"
+  "muted": "#9fb0c8",
+  "copper": "#c87533"
  },
  "fonts": {
   "headline": "Anton",
@@ -76,6 +77,17 @@
  "music": "assets/music/hidden_grid_bed.wav (own, royalty-free) + hidden_grid_sting.wav on end screen",
  "ai_disclosure_studio": "Altered/synthetic content: answer YES voluntarily (synthetic narration) – consistent on every upload; description carries the disclosure line.",
  "upload_slot": "Tuesday 19:00 CET (13:00 ET); Shorts Thu + Sat",
- "voice_locked": false,
- "voice_note": "Draft voice only. Final signature voice chosen once via channel/the-hidden-grid/stimme-casting.md, then voice_locked=true and never changed."
+ "voice_locked": true,
+ "short_name": "Other End",
+ "handle": "@OtherEndOfTheWire",
+ "social_handle": "@OtherEndWire",
+ "voice_name": "OEW Narrator F1 (ElevenLabs Voice Design, own account)",
+ "tts": "elevenlabs",
+ "tts_model": "eleven_multilingual_v2",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.15,
+  "use_speaker_boost": true
+ }
 }

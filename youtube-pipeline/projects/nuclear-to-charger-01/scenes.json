@@ -1,9 +1,9 @@
 {
  "project": "nuclear-to-charger-01",
- "channel": "The Hidden Grid",
+ "channel": "Other End of the Wire",
  "language": "en-US",
- "voice": "en-US-GuyNeural",
- "rate": "-4%",
+ "voice": "X2seGlvinhLwJHI08IFY",
+ "rate": "+0%",
  "scenes": [
   {
    "chapter": "Intro",
@@ -333,7 +333,7 @@
   },
   {
    "query": "city lights night",
-   "text": "If you like seeing how the hidden machinery of everyday life works, subscribe to The Hidden Grid. Every source behind the numbers in this video is in the description.",
+   "text": "If you like seeing the hidden machinery behind everyday life, subscribe to Other End of the Wire. Every source behind the numbers in this video is in the description. Follow the electron.",
    "fallback": [
     "power lines night",
     "skyline night"
@@ -416,5 +416,6 @@
    ],
    "badge": "SO WHAT TRAVELS?"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }

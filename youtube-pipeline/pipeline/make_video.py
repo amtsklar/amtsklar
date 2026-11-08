@@ -74,12 +74,20 @@ def _sentences_by_length(text, total):
     return out
 
 
-def _tts_elevenlabs(text, voice_id, out):
-    """Licensed voice via ElevenLabs (env ELEVENLABS_API_KEY; plan with commercial licence)."""
+BRAND_FILE = ROOT / "channel" / "other-end-of-the-wire" / "brand.json"
+
+
+def _tts_elevenlabs(text, voice_id, out, rate="+0%", prev="", nxt=""):
+    """Licensed voice via ElevenLabs (key injected by the network proxy; plan with commercial licence).
+    prev/next text keep intonation continuous across scene boundaries; rate '+2%' -> speed 1.02."""
     import base64
-    body = json.dumps({"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_multilingual_v2"),
-                       "output_format": "mp3_44100_128"}).encode()
-    req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps",
+    brand = json.loads(BRAND_FILE.read_text()) if BRAND_FILE.exists() else {}
+    vs = dict(brand.get("voice_settings", {}))
+    m = re.match(r"([+-]?\d+)%", rate or "")
+    vs["speed"] = max(0.7, min(1.2, 1 + (int(m.group(1)) if m else 0) / 100))
+    body = json.dumps({"text": text, "model_id": brand.get("tts_model", "eleven_multilingual_v2"),
+                       "voice_settings": vs, "previous_text": prev[-600:], "next_text": nxt[:300]}).encode()
+    req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps?output_format=mp3_44100_128",
                                  data=body, method="POST",
                                  headers={"xi-api-key": os.environ.get("ELEVENLABS_API_KEY", "proxy-injected"),
                                           "Content-Type": "application/json"})
@@ -119,9 +127,9 @@ def _tts_azure(text, voice, rate, out):
     return _sentences_by_length(text, duration(out))
 
 
-async def _tts(text, voice, rate, out, engine="edge"):
+async def _tts(text, voice, rate, out, engine="edge", prev="", nxt=""):
     if engine == "elevenlabs":
-        return _tts_elevenlabs(text, voice, out)
+        return _tts_elevenlabs(text, voice, out, rate, prev, nxt)
     if engine == "azure":
         return _tts_azure(text, voice, rate, out)
     import edge_tts
@@ -165,8 +173,11 @@ def stage_voice(project):
         sentences = None
         for attempt in range(4):
             try:
+                sc_all = cfg["scenes"]
                 sentences = asyncio.run(_tts(sc["text"], cfg["voice"], cfg.get("rate", "+0%"), mp3,
-                                             cfg.get("tts", "edge")))
+                                             cfg.get("tts", "edge"),
+                                             " ".join(x["text"] for x in sc_all[max(0, i - 2):i]),
+                                             sc_all[i + 1]["text"] if i + 1 < len(sc_all) else ""))
                 break
             except Exception as e:  # network hiccups
                 print("  tts retry", i, e)
@@ -353,8 +364,8 @@ def stage_images_pixabay(project):
     used = {c["id"] for c in credits.values()}
     if (b / "rejected.json").exists():
         used |= set(json.loads((b / "rejected.json").read_text()))
-    blk = ROOT / "channel" / "the-hidden-grid" / "blocked_media.json"   # channel-wide: logos, brands, off-topic
-    if blk.exists() and cfg.get("channel") == "The Hidden Grid":
+    blk = ROOT / "channel" / "other-end-of-the-wire" / "blocked_media.json"   # channel-wide: logos, brands, off-topic
+    if blk.exists() and cfg.get("channel") == "Other End of the Wire":
         used |= set(json.loads(blk.read_text()))
     for other in project.parent.glob("*/build/credits.json"):   # never reuse a clip from another video of the channel
         if other.parent.parent == project:
@@ -690,10 +701,18 @@ def make_endcard(path):
         d.line([(0, y), (W_, y)], fill=(14, 24, 44))
     big = ImageFont.truetype(str(FONT), 96)
     small = ImageFont.truetype(str(FONT), 46)
-    t = "THE HIDDEN GRID"
+    t = "OTHER END OF THE WIRE"
     d.text(((W_ - d.textlength(t, font=big)) / 2, 90), t, font=big, fill="white")
     t2 = "FOLLOW THE ELECTRON"
     d.text(((W_ - d.textlength(t2, font=small)) / 2, 205), t2, font=small, fill=(255, 196, 0))
+    # brand motif: copper wire ending in a glowing point (the "other end")
+    d.line([(0, 292), (1330, 292)], fill=(200, 117, 51), width=6)
+    glow = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
+    ImageDraw.Draw(glow).ellipse((1330 - 40, 292 - 40, 1330 + 40, 292 + 40), fill=(255, 196, 0, 150))
+    glow = glow.filter(ImageFilter.GaussianBlur(18))
+    im.paste(glow, (0, 0), glow)
+    d = ImageDraw.Draw(im)
+    d.ellipse((1330 - 10, 292 - 10, 1330 + 10, 292 + 10), fill=(255, 240, 200))
     # placeholder frames (YouTube end-screen elements are placed on top in Studio)
     d.rounded_rectangle((150, 340, 150 + 880, 340 + 495), 18, outline=(70, 190, 255), width=4)
     d.text((150 + 440 - d.textlength("WATCH NEXT", font=small) / 2, 340 + 220), "WATCH NEXT", font=small,

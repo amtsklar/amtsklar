@@ -1,7 +1,7 @@
 {
  "title": "100 IN, 28 BACK",
  "parent": "hydrogen-01",
- "voice": "en-US-GuyNeural",
+ "voice": "X2seGlvinhLwJHI08IFY",
  "rate": "+2%",
  "scenes": [
   {
@@ -17,8 +17,9 @@
    "src": "hydrogen-01/build/images/s02_0.jpg"
   },
   {
-   "text": "That's why hydrogen makes sense where you need the molecule, not just the energy. The full video is on The Hidden Grid.",
+   "text": "That's why hydrogen makes sense where you need the molecule, not just the energy. The full video is on Other End of the Wire.",
    "src": "hydrogen-01/build/images/s24_0.jpg"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }

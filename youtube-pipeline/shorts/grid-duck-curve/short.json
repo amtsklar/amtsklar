@@ -1,7 +1,7 @@
 {
  "title": "WHY SUNSET IS THE GRID'S HARDEST HOUR",
  "parent": "grid-3am-3pm",
- "voice": "en-US-GuyNeural",
+ "voice": "X2seGlvinhLwJHI08IFY",
  "rate": "+2%",
  "scenes": [
   {
@@ -17,8 +17,9 @@
    "src": "grid-3am-3pm/build/graphics/s21.png"
   },
   {
-   "text": "They charge on cheap midday sun and run after dark. The full video is on The Hidden Grid.",
+   "text": "They charge on cheap midday sun and run after dark. The full video is on Other End of the Wire.",
    "src": "grid-3am-3pm/build/images/s20_0.jpg"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }

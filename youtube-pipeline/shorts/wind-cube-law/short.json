@@ -1,7 +1,7 @@
 {
  "title": "DOUBLE THE WIND = 8X THE POWER",
  "parent": "wind-windy-days-01",
- "voice": "en-US-GuyNeural",
+ "voice": "X2seGlvinhLwJHI08IFY",
  "rate": "+2%",
  "scenes": [
   {
@@ -17,8 +17,9 @@
    "src": "wind-windy-days-01/build/graphics/s19.png"
   },
   {
-   "text": "That's why the windiest day can be a zero day. The full video is on The Hidden Grid.",
-   "src": "wind-windy-days-01/build/images/s00_0.mp4"
+   "text": "That's why the windiest day can be a zero day. The full video is on Other End of the Wire.",
+   "src": "wind-windy-days-01/build/images/s00_0.jpg"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }

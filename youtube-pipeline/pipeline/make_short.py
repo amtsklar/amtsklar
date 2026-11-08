@@ -60,7 +60,7 @@ def main(short):
     short = Path(short).resolve()
     cfg = json.loads((short / "short.json").read_text())
     # reuse the long-video voice stage (expects scenes.json)
-    (short / "scenes.json").write_text(json.dumps({"voice": cfg["voice"], "rate": cfg.get("rate", "+0%"),
+    (short / "scenes.json").write_text(json.dumps({"voice": cfg["voice"], "rate": cfg.get("rate", "+0%"), "tts": cfg.get("tts", "edge"),
                                                    "scenes": [{"text": s["text"]} for s in cfg["scenes"]]}))
     mv.GAP, mv.CHAPTER_GAP = 0.15, 0.15
     mv.stage_voice(short)
@@ -106,7 +106,7 @@ Style: Brand,Anton,46,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,9:00:00.00,Brand,,0,0,0,,THE HIDDEN GRID
+Dialogue: 0,0:00:00.00,9:00:00.00,Brand,,0,0,0,,OTHER END OF THE WIRE
 Dialogue: 0,0:00:00.00,9:00:00.00,Title,,0,0,0,,{title}
 """ + "\n".join(ev) + "\n"
     (b / "captions.ass").write_text(ass)

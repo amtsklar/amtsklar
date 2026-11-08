@@ -1,7 +1,7 @@
 {
  "title": "THE GRID SAYS 'NOT NOW'",
  "parent": "wind-windy-days-01",
- "voice": "en-US-GuyNeural",
+ "voice": "X2seGlvinhLwJHI08IFY",
  "rate": "+2%",
  "scenes": [
   {
@@ -17,8 +17,9 @@
    "src": "wind-windy-days-01/build/graphics/s28.png"
   },
   {
-   "text": "More wind on the same wires means more hours when the wires are full. The full story is on The Hidden Grid.",
+   "text": "More wind on the same wires means more hours when the wires are full. The full story is on Other End of the Wire.",
    "src": "wind-windy-days-01/build/images/s23_0.jpg"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Own, royalty-free ambient music bed for The Hidden Grid (no licence / Content ID risk).
+"""Own, royalty-free ambient music bed for Other End of the Wire (no licence / Content ID risk).
 Slow minor-key pad (A minor – F – C – G), soft pulse, gentle filter movement. Loopable.
 Usage: python3 pipeline/make_music.py  -> assets/music/hidden_grid_bed.wav (+ sting)"""
 import wave

@@ -1,9 +1,9 @@
 {
  "project": "energy-datacenter-01",
- "channel": "The Hidden Grid",
+ "channel": "Other End of the Wire",
  "language": "en-US",
- "voice": "en-US-GuyNeural",
- "rate": "-6%",
+ "voice": "X2seGlvinhLwJHI08IFY",
+ "rate": "+0%",
  "scenes": [
   {
    "chapter": "Intro",
@@ -401,7 +401,7 @@
   },
   {
    "query": "power lines sunset",
-   "text": "Next time, we'll follow this power back upstream to the grid itself, and why hooking up a new data center can take years. If you like seeing how the hidden machinery of modern life really works, subscribe to The Hidden Grid.",
+   "text": "Next time, we'll follow this power back upstream to the grid itself, and why hooking up a new data center can take years. If you like seeing how the hidden machinery of modern life really works, subscribe to Other End of the Wire.",
    "fallback": [
     "electricity pylon",
     "power lines"
@@ -495,5 +495,6 @@
    "badge": "AI DATA CENTER"
   }
  ],
- "status": "draft"
+ "status": "draft",
+ "tts": "elevenlabs"
 }

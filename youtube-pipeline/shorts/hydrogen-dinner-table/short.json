@@ -1,7 +1,7 @@
 {
  "title": "HYDROGEN ON YOUR PLATE",
  "parent": "hydrogen-01",
- "voice": "en-US-GuyNeural",
+ "voice": "X2seGlvinhLwJHI08IFY",
  "rate": "+2%",
  "scenes": [
   {
@@ -17,8 +17,9 @@
    "src": "hydrogen-01/build/graphics/s25.png"
   },
   {
-   "text": "And about 95 percent of U.S. hydrogen is made from natural gas, the Energy Department says. The full story is on The Hidden Grid.",
+   "text": "And about 95 percent of U.S. hydrogen is made from natural gas, the Energy Department says. The full story is on Other End of the Wire.",
    "src": "hydrogen-01/build/graphics/s09.png"
   }
- ]
+ ],
+ "tts": "elevenlabs"
 }
