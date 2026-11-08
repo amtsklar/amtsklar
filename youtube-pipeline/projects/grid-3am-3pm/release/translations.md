@@ -128,8 +128,7 @@ KAPITEL
 7:12 Deine Steckdose, dein Timing
 8:18 Zusammenfassung
 
-BILDNACHWEISE (VIDEO & FOTO)
-Stock footage and photos: Pixabay (Pixabay Content License).
+Stockvideos und Fotos: Pixabay (Pixabay Content License).
 ```
 
 ## Portuguese

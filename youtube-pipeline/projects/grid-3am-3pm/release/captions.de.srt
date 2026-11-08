@@ -49,7 +49,7 @@ draufzahlen, um ihren Strom loszuwerden.
 
 12
 00:00:36,211 --> 00:00:38,637
-Denn das Netz ist keine einzelne Maschine.
+Denn das Netz ist nicht eine Maschine.
 
 13
 00:00:38,881 --> 00:00:41,052
@@ -145,8 +145,8 @@ meist nachts am stärksten.
 
 33
 00:01:49,318 --> 00:01:51,959
-Nehmen wir den Southwest Power
-Pool, den Netzbetreiber
+Nimm den Southwest Power
+Pool, Netzbetreiber
 
 34
 00:01:51,959 --> 00:01:54,601
@@ -263,11 +263,11 @@ Jetzt die versprochene Wendung.
 
 58
 00:03:27,554 --> 00:03:29,452
-Man könnte meinen, am härtesten
+Du denkst, die härteste Stunde
 
 59
 00:03:29,452 --> 00:03:31,351
-ist es fürs Netz am heißesten Nachmittag.
+ist der heißeste Nachmittag.
 
 60
 00:03:31,734 --> 00:03:34,497
@@ -343,7 +343,7 @@ Nachfrage, kann der Bauch
 
 76
 00:04:21,636 --> 00:04:24,187
-mehr Solar fassen, als das Netz nutzen kann.
+mehr Solar fassen, als nutzbar ist.
 
 77
 00:04:24,756 --> 00:04:30,236
@@ -380,7 +380,7 @@ Eine rasch wachsende Lösung: Batterien.
 
 84
 00:04:53,105 --> 00:04:55,256
-Mittags mit billigem Solarstrom laden,
+Mittags mit billigem Solar laden,
 
 85
 00:04:55,256 --> 00:04:57,099
@@ -465,8 +465,8 @@ Unter null.
 
 103
 00:06:00,702 --> 00:06:03,361
-Das ist das Seltsame, das ich
-anfangs versprochen habe.
+Das Seltsame, das ich
+anfangs versprach.
 
 104
 00:06:03,686 --> 00:06:05,991
@@ -482,11 +482,11 @@ Warum sollte das jemand tun?
 
 107
 00:06:10,645 --> 00:06:12,636
-Manche Kraftwerke lassen sich nicht
+Manche Kraftwerke kann man kaum
 
 108
 00:06:12,636 --> 00:06:14,628
-einfach oder billig kurz abschalten.
+kurz und billig abschalten.
 
 109
 00:06:15,231 --> 00:06:19,323
@@ -504,7 +504,7 @@ Und manche Windparks bekommen eine
 
 112
 00:06:26,323 --> 00:06:28,483
-Steuergutschrift je erzeugter Megawattstunde.
+Steuergutschrift je erzeugter MWh.
 
 113
 00:06:28,727 --> 00:06:33,324
@@ -591,11 +591,12 @@ weniger, zu anderen mehr.
 
 131
 00:07:36,508 --> 00:07:39,548
-Das klappt, weil die meisten Haushalte
+Das klappt, weil die meisten
+Haushalte Smart Meter
 
 132
 00:07:39,548 --> 00:07:42,208
-Smart Meter haben, die mindestens stündlich messen.
+haben, die mindestens stündlich messen.
 
 133
 00:07:42,905 --> 00:07:47,394
@@ -629,12 +630,11 @@ Versorgers, statt zu raten.
 
 140
 00:08:08,137 --> 00:08:10,796
-In einer billigen Stunde spülen
-oder das Auto laden
+Spülen oder Auto laden in einer billigen
 
 141
 00:08:10,796 --> 00:08:13,454
-spart nicht nur Geld.
+Stunde spart nicht nur Geld.
 
 142
 00:08:13,733 --> 00:08:15,881
@@ -680,11 +680,11 @@ dann der steile Hals der Ente,
 151
 00:08:41,343 --> 00:08:44,741
 und Batterien und Gaskraftwerke
-müssen ihn schnell abdecken.
+müssen ihn rasch decken.
 
 152
 00:08:45,138 --> 00:08:47,030
-Das Netz ist keine einzelne Maschine.
+Das Netz: nicht eine Maschine.
 
 153
 00:08:47,309 --> 00:08:49,492
@@ -705,12 +705,11 @@ nachts und was nachmittags?
 157
 00:08:56,468 --> 00:08:59,661
 Hast du einen zeitvariablen
-Tarif oder einen Einheitspreis?
+Tarif oder Einheitspreis?
 
 158
 00:08:59,986 --> 00:09:02,110
-Schreib mir in die Kommentare,
-in welchem Bundesstaat du wohnst.
+Nenn mir unten deinen Bundesstaat.
 
 159
 00:09:02,504 --> 00:09:05,768

@@ -122,8 +122,7 @@ KAPITEL
 7:44 Amerikas Wasserstoff-Wette
 8:32 Zusammenfassung
 
-VIDEO- & BILDNACHWEISE
-Stock footage and photos: Pixabay (Pixabay Content License).
+Stockvideos und Fotos: Pixabay (Pixabay Content License).
 ```
 
 **Tags**

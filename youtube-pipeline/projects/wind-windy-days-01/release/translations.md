@@ -79,7 +79,7 @@ Wir folgen dem Wind vom Rotorblatt bis zur Stromleitung und schauen uns jeden Gr
 In diesem Video:
 - Anlaufgeschwindigkeit und warum der Wind in Nabenhöhe zählt
 - Kapazitätsfaktor: was die US-Windflotte 2025 tatsächlich erzeugt hat
-- Das Kubikgesetz: doppelter Wind, achtfache Leistung
+- Das kubische Gesetz: doppelter Wind, achtfache Leistung
 - Die Leistungskurve: Nenngeschwindigkeit, Fahnenstellung und Abschaltung bei Sturm
 - Abregelung: volle Leitungen, negative Preise und wo sie am häufigsten vorkommt
 - Eis an den Rotorblättern, Fledermäuse, Adler und Wartung
@@ -108,14 +108,13 @@ Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert in den En
 KAPITEL
 0:00 Intro
 1:10 Zu wenig Wind
-2:16 Das Kubikgesetz
+2:16 Das kubische Gesetz
 3:00 Zu viel Wind
 5:07 Das Netz sagt: nicht jetzt
 7:08 Eis und Tierwelt
 8:27 Zusammenfassung
 
-VIDEO- & FOTONACHWEISE
-Stock footage and photos: Pixabay (Pixabay Content License).
+Stockvideos und Fotos: Pixabay (Pixabay Content License).
 ```
 
 ### Tags

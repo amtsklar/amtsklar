@@ -122,8 +122,7 @@ KAPITEL
 7:26 Schritt 5: Das Ladegerät
 8:31 Zusammenfassung
 
-BILD- UND VIDEONACHWEISE
-Stock footage and photos: Pixabay (Pixabay Content License).
+Stockvideos und Fotos: Pixabay (Pixabay Content License).
 ```
 
 **Tags:** wie kommt der Strom ins Haus, Kernkraft erklärt, wie funktioniert ein Kernkraftwerk, Stromnetz erklärt, Hochspannungsleitungen, warum Hochspannung, Transformator, Masttransformator, Driftgeschwindigkeit Elektronen, Wechselstrom erklärt, 120 240 Volt, Netzverluste, wie funktioniert ein Ladegerät, other end of the wire

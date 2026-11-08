@@ -100,7 +100,7 @@ spaltet es sich in zwei kleinere Atome.
 
 24
 00:01:14,673 --> 00:01:15,776
-Das ist Kernspaltung.
+Kernspaltung.
 
 25
 00:01:16,054 --> 00:01:19,751
@@ -109,8 +109,8 @@ plus weitere Neutronen, die
 
 26
 00:01:19,751 --> 00:01:23,449
-weitere Atome spalten können und
-so eine Kettenreaktion in Gang halten.
+mehr Atome spalten können:
+So läuft eine Kettenreaktion.
 
 27
 00:01:24,134 --> 00:01:26,589
@@ -118,7 +118,7 @@ Das Kraftwerk nutzt die Wärme
 
 28
 00:01:26,589 --> 00:01:29,045
-aller Spaltungen, um Wasser zu verdampfen.
+aller Spaltungen, um Wasser zu kochen.
 
 29
 00:01:29,433 --> 00:01:35,442
@@ -206,7 +206,7 @@ zur Turbine und dreht sie.
 47
 00:02:34,967 --> 00:02:38,162
 Die Turbine treibt einen
-Generator an, in dem ein drehender
+Generator, wo ein drehender
 
 48
 00:02:38,162 --> 00:02:40,958
@@ -360,7 +360,7 @@ Halbiert man den Strom,
 
 82
 00:04:39,640 --> 00:04:41,550
-sinkt der Verlust auf ein Viertel.
+viertelt sich der Verlust.
 
 83
 00:04:42,154 --> 00:04:44,580
@@ -426,7 +426,7 @@ Er versorgt ein typisches US-Haus mit zwei
 
 96
 00:05:34,508 --> 00:05:37,112
-120-Volt-Außenleitern und einem Neutralleiter.
+120-Volt-Außenleitern plus Neutralleiter.
 
 97
 00:05:37,681 --> 00:05:39,440
@@ -434,7 +434,7 @@ Einer davon liefert dir
 
 98
 00:05:39,440 --> 00:05:41,199
-120 Volt an der normalen Steckdose.
+120 Volt an der Steckdose.
 
 99
 00:05:41,617 --> 00:05:45,267
@@ -530,8 +530,7 @@ Der Strom kehrt sich ständig um, und die
 
 119
 00:06:51,743 --> 00:06:54,235
-Elektronen pendeln meist auf
-der Stelle hin und her.
+Elektronen pendeln meist nur hin und her.
 
 120
 00:06:54,623 --> 00:06:56,759
@@ -656,11 +655,11 @@ Kurzes Fazit.
 
 146
 00:08:32,714 --> 00:08:33,945
-Spaltung erzeugt Wärme.
+Spaltung gibt Wärme.
 
 147
 00:08:34,189 --> 00:08:35,489
-Wärme erzeugt Dampf.
+Wärme gibt Dampf.
 
 148
 00:08:35,988 --> 00:08:38,937
@@ -710,8 +709,8 @@ Die Wärme, die nie zu Strom wird, oder
 
 158
 00:09:13,716 --> 00:09:16,322
-die Elektronen, die deine
-Wände nie verlassen?
+die Elektronen, die nie
+aus der Wand kommen?
 
 159
 00:09:16,926 --> 00:09:18,691
