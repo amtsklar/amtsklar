@@ -1,0 +1,663 @@
+1
+00:00:00,100 --> 00:00:02,614
+Picture a gusty afternoon.
+
+2
+00:00:02,564 --> 00:00:05,574
+Trees are bending, flags are snapping.
+
+3
+00:00:05,574 --> 00:00:07,774
+But up on the ridge, some of
+
+4
+00:00:07,774 --> 00:00:09,974
+the wind turbines aren't turning at all.
+
+5
+00:00:10,482 --> 00:00:13,839
+A still turbine on a windy day is usually the
+
+6
+00:00:13,839 --> 00:00:16,861
+machine, the grid, or the engineers saying: not now.
+
+7
+00:00:16,811 --> 00:00:19,451
+Let's follow the wind from blade to power line
+
+8
+00:00:19,451 --> 00:00:21,798
+and find out who's saying it, and why.
+
+9
+00:00:22,304 --> 00:00:24,639
+Along the way, you'll see why a little
+
+10
+00:00:24,639 --> 00:00:26,973
+more wind can mean a lot more power.
+
+11
+00:00:26,923 --> 00:00:29,328
+And why, on some of the windiest
+
+12
+00:00:29,328 --> 00:00:31,732
+days, turbines get told to make less.
+
+13
+00:00:32,254 --> 00:00:36,795
+In 2025, wind made about 10.5 percent of
+
+14
+00:00:36,795 --> 00:00:41,337
+America's utility-scale electricity, the Energy Information Administration reports.
+
+15
+00:00:41,287 --> 00:00:45,115
+In Iowa, it was about 58 percent of the
+
+16
+00:00:45,115 --> 00:00:48,519
+state's generation, according to Lawrence Berkeley National Laboratory.
+
+17
+00:00:49,020 --> 00:00:51,253
+And the machines are big.
+
+18
+00:00:51,203 --> 00:00:54,964
+Berkeley Lab's annual wind report for the Energy Department says
+
+19
+00:00:54,964 --> 00:00:58,725
+the average new land-based turbine in 2025 was rated at
+
+20
+00:00:58,725 --> 00:01:02,486
+about 3.8 megawatts, with its hub about 335 feet up
+
+21
+00:01:02,486 --> 00:01:05,119
+and a rotor about 460 feet across.
+
+22
+00:01:06,092 --> 00:01:08,605
+The simplest reason a turbine stands still:
+
+23
+00:01:08,605 --> 00:01:11,119
+not enough wind where the blades are.
+
+24
+00:01:11,578 --> 00:01:14,049
+The Energy Department notes that wind speed increases
+
+25
+00:01:14,049 --> 00:01:16,519
+with height, so the breeze you feel on
+
+26
+00:01:16,519 --> 00:01:18,990
+the ground isn't the wind the rotor feels.
+
+27
+00:01:19,440 --> 00:01:24,364
+Every turbine has a wind gauge, an anemometer, feeding a controller.
+
+28
+00:01:24,314 --> 00:01:27,536
+The department says the controller typically starts the machine
+
+29
+00:01:27,536 --> 00:01:30,399
+at about 7 to 11 miles an hour.
+
+30
+00:01:30,399 --> 00:01:32,631
+That's the cut-in speed.
+
+31
+00:01:32,631 --> 00:01:35,246
+Below it, the turbine waits.
+
+32
+00:01:35,750 --> 00:01:39,692
+Low wind is also why output looks modest on paper.
+
+33
+00:01:39,642 --> 00:01:42,908
+Berkeley Lab found the U.S. wind fleet had
+
+34
+00:01:42,908 --> 00:01:46,173
+a capacity factor of 34 percent in 2025.
+
+35
+00:01:46,173 --> 00:01:50,344
+Projects built in 2024 reached about 37.
+
+36
+00:01:50,860 --> 00:01:54,298
+Capacity factor is what a plant actually produced, divided by
+
+37
+00:01:54,298 --> 00:01:57,392
+the most it could have made running flat out.
+
+38
+00:01:57,342 --> 00:02:00,515
+Berkeley Lab's figures already include losses from
+
+39
+00:02:00,515 --> 00:02:03,234
+curtailment, downtime and ice on blades.
+
+40
+00:02:04,188 --> 00:02:06,095
+So why do a few extra
+
+41
+00:02:06,095 --> 00:02:08,003
+miles an hour matter so much?
+
+42
+00:02:07,953 --> 00:02:10,619
+Because of one number: three.
+
+43
+00:02:11,138 --> 00:02:13,014
+The power in moving air rises
+
+44
+00:02:13,014 --> 00:02:14,889
+with the cube of its speed.
+
+45
+00:02:14,839 --> 00:02:18,493
+As Iowa State University's wind science program puts it, if
+
+46
+00:02:18,493 --> 00:02:22,148
+the wind speed doubles, the power is multiplied by eight.
+
+47
+00:02:22,648 --> 00:02:25,423
+Go from 10 miles an hour to 15, and
+
+48
+00:02:25,423 --> 00:02:28,197
+the wind carries more than three times the power.
+
+49
+00:02:28,147 --> 00:02:30,696
+It's also why towers keep getting taller:
+
+50
+00:02:30,696 --> 00:02:32,880
+higher up, the wind is faster.
+
+51
+00:02:33,390 --> 00:02:36,069
+But extra power also means extra force
+
+52
+00:02:36,069 --> 00:02:38,366
+on the blades, shaft and tower.
+
+53
+00:02:38,316 --> 00:02:41,530
+And a generator can only use so much.
+
+54
+00:02:42,494 --> 00:02:45,831
+Engineers draw all of this as a power curve: how
+
+55
+00:02:45,831 --> 00:02:48,834
+much electricity a turbine makes at each wind speed.
+
+56
+00:02:48,784 --> 00:02:52,388
+Above cut-in, output climbs steeply until the turbine reaches
+
+57
+00:02:52,388 --> 00:02:55,991
+its rated speed, where the generator hits its maximum.
+
+58
+00:02:56,500 --> 00:03:00,417
+Take a reference turbine U.S. and European researchers designed
+
+59
+00:03:00,417 --> 00:03:03,899
+in 2019 to represent a modern land-based machine.
+
+60
+00:03:03,849 --> 00:03:06,579
+It starts producing at about 9 miles an
+
+61
+00:03:06,579 --> 00:03:09,308
+hour and hits full output at about 22.
+
+62
+00:03:09,810 --> 00:03:13,153
+Above that, more wind doesn't add power.
+
+63
+00:03:13,103 --> 00:03:15,640
+The pitch system turns the blades to catch
+
+64
+00:03:15,640 --> 00:03:17,861
+less of it, and output stays flat.
+
+65
+00:03:18,368 --> 00:03:21,634
+Keep going, and you hit the cut-out speed.
+
+66
+00:03:21,584 --> 00:03:25,985
+For that reference turbine, it's about 56 miles an hour.
+
+67
+00:03:25,985 --> 00:03:29,665
+The Energy Department says controllers typically shut turbines
+
+68
+00:03:29,665 --> 00:03:32,885
+off once winds exceed 55 to 65.
+
+69
+00:03:33,406 --> 00:03:35,601
+Then the blades feather.
+
+70
+00:03:35,551 --> 00:03:38,945
+They turn so they no longer produce the force that spins
+
+71
+00:03:38,945 --> 00:03:42,030
+the rotor, the rotor slows, and output drops to zero.
+
+72
+00:03:42,540 --> 00:03:44,646
+Why stop so early?
+
+73
+00:03:44,596 --> 00:03:48,150
+Under an international standard, the department says, most turbines
+
+74
+00:03:48,150 --> 00:03:51,704
+today must be built to withstand sustained winds of
+
+75
+00:03:51,704 --> 00:03:54,863
+112 miles an hour and gusts of 156.
+
+76
+00:03:54,863 --> 00:03:57,370
+Cut-out sits far below that on purpose,
+
+77
+00:03:57,370 --> 00:03:59,519
+to reduce the risk of damage.
+
+78
+00:04:00,026 --> 00:04:03,522
+The yaw drive keeps the turbine facing the wind.
+
+79
+00:04:03,472 --> 00:04:06,253
+When speeds drop, the blades unfeather, and
+
+80
+00:04:06,253 --> 00:04:09,033
+power is normally flowing again within minutes.
+
+81
+00:04:09,544 --> 00:04:12,912
+In March 2017, a winter storm hit Block
+
+82
+00:04:12,912 --> 00:04:16,280
+Island, home of America's first offshore wind farm.
+
+83
+00:04:16,230 --> 00:04:18,852
+All five turbines shut down for several hours
+
+84
+00:04:18,852 --> 00:04:21,474
+while winds topped 55 miles an hour, then
+
+85
+00:04:21,474 --> 00:04:23,768
+powered back up once the storm eased.
+
+86
+00:04:23,768 --> 00:04:26,163
+So the windiest hour of the year can
+
+87
+00:04:26,163 --> 00:04:28,258
+be a zero hour for a turbine.
+
+88
+00:04:28,258 --> 00:04:30,222
+That's not a flaw.
+
+89
+00:04:30,222 --> 00:04:32,148
+That's the design.
+
+90
+00:04:33,120 --> 00:04:35,455
+Now the surprising one.
+
+91
+00:04:35,405 --> 00:04:38,789
+Sometimes the turbine is fine, the wind is perfect, and
+
+92
+00:04:38,789 --> 00:04:41,834
+the grid operator still tells it to make less.
+
+93
+00:04:42,350 --> 00:04:45,788
+That's curtailment, which the EIA defines as deliberately
+
+94
+00:04:45,788 --> 00:04:49,226
+reducing generation below what a plant could produce.
+
+95
+00:04:49,176 --> 00:04:51,886
+It happens when supply outruns demand, or when
+
+96
+00:04:51,886 --> 00:04:54,597
+there aren't enough power lines to carry it.
+
+97
+00:04:55,108 --> 00:04:58,672
+In the EIA's words, on very windy days in
+
+98
+00:04:58,672 --> 00:05:02,235
+particular locations, transmission capacity is often insufficient to receive
+
+99
+00:05:02,235 --> 00:05:05,007
+the large amount of wind power generated.
+
+100
+00:05:05,466 --> 00:05:08,234
+Berkeley Lab notes that when wind is high and
+
+101
+00:05:08,234 --> 00:05:11,002
+lines are full, or other plants can't ramp down
+
+102
+00:05:11,002 --> 00:05:13,770
+far or fast enough, local wholesale prices can go
+
+103
+00:05:13,770 --> 00:05:16,538
+negative, meaning sellers pay buyers to take their power.
+
+104
+00:05:16,488 --> 00:05:19,435
+That can trigger curtailment, too.
+
+105
+00:05:19,952 --> 00:05:22,797
+Why is wind often first in line?
+
+106
+00:05:22,747 --> 00:05:25,750
+In the Midwest, the EIA explains, it's cheaper and
+
+107
+00:05:25,750 --> 00:05:28,754
+faster to shut down and restart wind and solar
+
+108
+00:05:28,754 --> 00:05:31,089
+plants than other kinds of power plants.
+
+109
+00:05:31,606 --> 00:05:33,814
+How much gets curtailed?
+
+110
+00:05:33,764 --> 00:05:37,876
+Across seven U.S. grid operators, Berkeley Lab counted about
+
+111
+00:05:37,876 --> 00:05:41,532
+5 percent of potential wind generation in 2025.
+
+112
+00:05:41,532 --> 00:05:44,172
+The Southwest Power Pool in the central
+
+113
+00:05:44,172 --> 00:05:46,812
+U.S. was highest, at about 9 percent.
+
+114
+00:05:47,316 --> 00:05:51,399
+Back in 2014, it was under 1 percent.
+
+115
+00:05:51,349 --> 00:05:54,556
+Since then, wind's share of that region's demand has
+
+116
+00:05:54,556 --> 00:05:57,407
+grown from about 12 percent to about 38.
+
+117
+00:05:57,407 --> 00:05:59,627
+More wind on the same wires means
+
+118
+00:05:59,627 --> 00:06:01,846
+more hours when the wires are full.
+
+119
+00:06:02,354 --> 00:06:04,230
+New lines help.
+
+120
+00:06:04,180 --> 00:06:07,550
+After a big transmission build-out serving West Texas wrapped
+
+121
+00:06:07,550 --> 00:06:10,919
+up around 2013, Berkeley Lab notes, wind curtailment on
+
+122
+00:06:10,919 --> 00:06:14,289
+the main Texas grid fell from 17 percent in
+
+123
+00:06:14,289 --> 00:06:16,910
+2009 to half a percent in 2014.
+
+124
+00:06:17,866 --> 00:06:22,076
+Weather can stop a turbine in a quieter way, too: ice.
+
+125
+00:06:22,536 --> 00:06:25,764
+An Iowa State-led field study, published in 2021,
+
+126
+00:06:25,764 --> 00:06:28,991
+looked at a wind farm in eastern China.
+
+127
+00:06:28,941 --> 00:06:32,254
+Ice grew nearly a foot thick near the blade tips, and
+
+128
+00:06:32,254 --> 00:06:35,567
+despite high winds, the iced turbines turned slower, often shut down,
+
+129
+00:06:35,567 --> 00:06:38,278
+and lost up to 80 percent of their power.
+
+130
+00:06:38,798 --> 00:06:40,916
+Then there's wildlife.
+
+131
+00:06:40,866 --> 00:06:43,507
+Bats are most at risk in late summer and
+
+132
+00:06:43,507 --> 00:06:46,147
+fall, and they're more active when winds are light.
+
+133
+00:06:46,147 --> 00:06:48,990
+So some wind farms raise their cut-in speed on
+
+134
+00:06:48,990 --> 00:06:51,517
+those nights, and the blades may be feathered.
+
+135
+00:06:52,036 --> 00:06:56,137
+A 2021 review of curtailment experiments in the U.S. and Canada
+
+136
+00:06:56,137 --> 00:07:00,239
+found it cut bat deaths by about 63 percent on average.
+
+137
+00:07:00,690 --> 00:07:03,893
+For eagles, some sites use cameras.
+
+138
+00:07:03,843 --> 00:07:07,228
+At one Wyoming wind farm, a system that slows or
+
+139
+00:07:07,228 --> 00:07:10,613
+stops individual turbines when it detects an eagle at risk
+
+140
+00:07:10,613 --> 00:07:13,998
+cut eagle deaths there by 63 percent, a 2021 study
+
+141
+00:07:13,998 --> 00:07:16,368
+in the Journal of Applied Ecology found.
+
+142
+00:07:16,368 --> 00:07:19,085
+Same number, different study.
+
+143
+00:07:20,042 --> 00:07:23,627
+Sometimes a still turbine is just being serviced.
+
+144
+00:07:23,577 --> 00:07:28,335
+A turbine's brake isn't like a car's, the Energy Department explains.
+
+145
+00:07:28,335 --> 00:07:30,637
+It holds the rotor still after
+
+146
+00:07:30,637 --> 00:07:32,939
+shutdown, which crews need for maintenance.
+
+147
+00:07:33,448 --> 00:07:36,096
+So next time you pass a wind farm and
+
+148
+00:07:36,096 --> 00:07:38,449
+some rotors are parked, run down the list.
+
+149
+00:07:38,399 --> 00:07:40,810
+Not enough wind up high.
+
+150
+00:07:40,810 --> 00:07:43,590
+Too much wind, past cut-out.
+
+151
+00:07:43,590 --> 00:07:46,907
+A full grid, or prices below zero.
+
+152
+00:07:46,907 --> 00:07:48,986
+Ice on the blades.
+
+153
+00:07:48,986 --> 00:07:51,371
+Bats or eagles nearby.
+
+154
+00:07:51,371 --> 00:07:53,437
+Or a crew at work.
+
+155
+00:07:53,958 --> 00:07:56,442
+A rotor parked for an hour tells you
+
+156
+00:07:56,442 --> 00:07:58,615
+about that hour, not about the machine.
+
+157
+00:07:58,565 --> 00:08:01,128
+Usually, it's the machine, the grid
+
+158
+00:08:01,128 --> 00:08:03,692
+or the engineers saying: not now.
+
+159
+00:08:04,196 --> 00:08:06,550
+Have you ever passed a wind farm on
+
+160
+00:08:06,550 --> 00:08:08,904
+a windy day with the blades standing still?
+
+161
+00:08:08,854 --> 00:08:11,264
+What do you think was going on?
+
+162
+00:08:11,264 --> 00:08:13,420
+Tell me in the comments.
+
+163
+00:08:13,930 --> 00:08:16,451
+If you'd like to keep following the
+
+164
+00:08:16,451 --> 00:08:18,612
+electron, subscribe to The Hidden Grid.
+
+165
+00:08:18,562 --> 00:08:20,673
+Every source behind the numbers in
+
+166
+00:08:20,673 --> 00:08:22,784
+this video is in the description.

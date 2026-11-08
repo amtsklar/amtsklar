@@ -1,0 +1,663 @@
+1
+00:00:00,100 --> 00:00:03,098
+Your phone is charging on the nightstand.
+
+2
+00:00:03,048 --> 00:00:05,753
+Now follow that cable backward.
+
+3
+00:00:05,753 --> 00:00:08,144
+Into the wall, out to the street,
+
+4
+00:00:08,144 --> 00:00:10,536
+up the power lines, and keep going.
+
+5
+00:00:11,058 --> 00:00:15,784
+In 2025, nuclear plants made about 18 percent of
+
+6
+00:00:15,784 --> 00:00:20,511
+America's utility-scale electricity, according to the Energy Information Administration.
+
+7
+00:00:20,461 --> 00:00:22,739
+So for a lot of us, part of
+
+8
+00:00:22,739 --> 00:00:24,734
+this trip starts with a split atom.
+
+9
+00:00:25,256 --> 00:00:28,497
+Today we follow that energy the whole way.
+
+10
+00:00:28,447 --> 00:00:31,674
+And two things on this trip might surprise you.
+
+11
+00:00:31,674 --> 00:00:34,129
+Roughly two-thirds of the energy never
+
+12
+00:00:34,129 --> 00:00:36,585
+leaves the power plant as electricity.
+
+13
+00:00:36,585 --> 00:00:40,182
+And the electrons at the plant never reach your phone.
+
+14
+00:00:40,702 --> 00:00:43,247
+Here's the idea: your phone charger is the
+
+15
+00:00:43,247 --> 00:00:45,792
+last link in a long chain of handoffs.
+
+16
+00:00:45,742 --> 00:00:48,043
+Each step turns the energy into a
+
+17
+00:00:48,043 --> 00:00:50,015
+form the next one can use.
+
+18
+00:00:50,982 --> 00:00:53,661
+Inside a reactor, the fuel is
+
+19
+00:00:53,661 --> 00:00:56,340
+uranium, formed into small ceramic pellets.
+
+20
+00:00:56,290 --> 00:00:59,311
+The EIA says each pellet holds about as
+
+21
+00:00:59,311 --> 00:01:01,953
+much energy as 150 gallons of oil.
+
+22
+00:01:01,953 --> 00:01:04,227
+The pellets are stacked end to end
+
+23
+00:01:04,227 --> 00:01:06,175
+in fuel rods 12 feet long.
+
+24
+00:01:06,692 --> 00:01:09,720
+When a neutron slams into a uranium atom,
+
+25
+00:01:09,720 --> 00:01:12,369
+the atom splits into two smaller atoms.
+
+26
+00:01:12,319 --> 00:01:14,054
+That's fission.
+
+27
+00:01:14,054 --> 00:01:17,529
+It releases a lot of energy, plus extra neutrons that
+
+28
+00:01:17,529 --> 00:01:21,005
+can split more atoms, which keeps a chain reaction going.
+
+29
+00:01:21,005 --> 00:01:22,995
+The plant uses the heat from
+
+30
+00:01:22,995 --> 00:01:24,985
+all that splitting to boil water.
+
+31
+00:01:25,498 --> 00:01:30,175
+As of March 2026, the U.S. had 94 operating commercial reactors
+
+32
+00:01:30,175 --> 00:01:34,428
+at 54 plants in 28 states, according to the EIA.
+
+33
+00:01:34,896 --> 00:01:36,925
+And they run hard.
+
+34
+00:01:36,875 --> 00:01:40,725
+In 2025, the average U.S. nuclear plant produced
+
+35
+00:01:40,725 --> 00:01:44,094
+91 percent of its maximum possible output.
+
+36
+00:01:44,094 --> 00:01:47,232
+The EIA calls that the capacity factor, and nuclear's
+
+37
+00:01:47,232 --> 00:01:50,370
+was higher than any other type of power plant.
+
+38
+00:01:51,320 --> 00:01:54,255
+Next, heat has to become motion.
+
+39
+00:01:54,205 --> 00:01:57,649
+The Nuclear Regulatory Commission says only two reactor types
+
+40
+00:01:57,649 --> 00:02:01,092
+make commercial power in the U.S., and about two-thirds
+
+41
+00:02:01,092 --> 00:02:04,154
+of the licensed reactors are pressurized water reactors.
+
+42
+00:02:04,654 --> 00:02:07,236
+In those, water under high pressure carries heat
+
+43
+00:02:07,236 --> 00:02:09,819
+from the core to a steam generator, where
+
+44
+00:02:09,819 --> 00:02:12,078
+it boils water in a separate loop.
+
+45
+00:02:12,028 --> 00:02:14,570
+The other type, a boiling water reactor,
+
+46
+00:02:14,570 --> 00:02:16,748
+makes steam right in the core.
+
+47
+00:02:17,268 --> 00:02:19,246
+Either way, the steam is piped
+
+48
+00:02:19,246 --> 00:02:21,223
+to a turbine and spins it.
+
+49
+00:02:21,173 --> 00:02:24,194
+The turbine drives a generator, where a spinning
+
+50
+00:02:24,194 --> 00:02:26,836
+magnet induces current in coils of wire.
+
+51
+00:02:26,836 --> 00:02:30,357
+That's where motion finally becomes electricity.
+
+52
+00:02:30,866 --> 00:02:34,400
+The generator doesn't spin at just any speed.
+
+53
+00:02:34,350 --> 00:02:37,509
+In North America, the grid runs on alternating current
+
+54
+00:02:37,509 --> 00:02:40,668
+at a standard 60 hertz, meaning 60 cycles every
+
+55
+00:02:40,668 --> 00:02:43,827
+second, and the generators run in sync with it.
+
+56
+00:02:44,344 --> 00:02:46,922
+And here's the first big loss.
+
+57
+00:02:46,872 --> 00:02:49,627
+The EIA tracks how much heat a plant
+
+58
+00:02:49,627 --> 00:02:52,037
+uses for each kilowatt-hour it sends out.
+
+59
+00:02:52,037 --> 00:02:55,411
+For U.S. nuclear plants in 2025, that works
+
+60
+00:02:55,411 --> 00:02:58,785
+out to an efficiency of about 33 percent.
+
+61
+00:02:59,286 --> 00:03:03,483
+So roughly two-thirds of the heat never becomes electricity.
+
+62
+00:03:03,433 --> 00:03:06,609
+The used steam is cooled back into water in a
+
+63
+00:03:06,609 --> 00:03:09,467
+condenser, and that leftover heat has to go somewhere.
+
+64
+00:03:09,467 --> 00:03:12,324
+Some plants use cooling towers.
+
+65
+00:03:12,324 --> 00:03:15,806
+Others use a lake, a river, or the ocean.
+
+66
+00:03:16,316 --> 00:03:18,919
+That's not unique to nuclear.
+
+67
+00:03:18,869 --> 00:03:22,890
+Coal plants also run on steam, and in 2025 their
+
+68
+00:03:22,890 --> 00:03:26,509
+average efficiency was about the same, around 32 percent.
+
+69
+00:03:27,460 --> 00:03:31,408
+According to the Department of Energy, generators usually
+
+70
+00:03:31,408 --> 00:03:35,356
+put out electricity at 5,000 to 34,500 volts.
+
+71
+00:03:35,306 --> 00:03:37,923
+Think of voltage as electrical pressure, the
+
+72
+00:03:37,923 --> 00:03:40,166
+push behind the flow of current.
+
+73
+00:03:40,674 --> 00:03:43,206
+Right at the plant, a step-up transformer
+
+74
+00:03:43,206 --> 00:03:45,739
+raises that pressure for the long haul.
+
+75
+00:03:45,689 --> 00:03:51,671
+Typical U.S. transmission lines run at 138,000,
+
+76
+00:03:51,671 --> 00:03:56,798
+230,000, 345,000, 500,000, or 765,000 volts.
+
+77
+00:03:57,320 --> 00:03:59,923
+Why push the voltage that high?
+
+78
+00:03:59,873 --> 00:04:02,794
+A transformer can't create power.
+
+79
+00:04:02,794 --> 00:04:05,205
+So when it raises the voltage, the
+
+80
+00:04:05,205 --> 00:04:07,271
+current drops by the same factor.
+
+81
+00:04:07,774 --> 00:04:10,217
+And the energy a wire loses as heat
+
+82
+00:04:10,217 --> 00:04:12,354
+depends on the square of the current.
+
+83
+00:04:12,304 --> 00:04:14,319
+Cut the current in half, and
+
+84
+00:04:14,319 --> 00:04:16,335
+that loss drops to a quarter.
+
+85
+00:04:16,335 --> 00:04:18,822
+That's why the grid goes high.
+
+86
+00:04:19,332 --> 00:04:22,754
+Or in the EIA's words, higher voltage makes
+
+87
+00:04:22,754 --> 00:04:25,749
+long-distance transmission more efficient and less expensive.
+
+88
+00:04:25,699 --> 00:04:28,996
+The U.S. grid has thousands of miles of these
+
+89
+00:04:28,996 --> 00:04:32,293
+high-voltage lines, and millions of miles of lower-voltage lines.
+
+90
+00:04:33,260 --> 00:04:37,662
+But you can't plug a lamp into 345,000 volts.
+
+91
+00:04:37,612 --> 00:04:40,833
+So the way back down starts at a substation,
+
+92
+00:04:40,833 --> 00:04:43,696
+where transformers lower the voltage for local lines.
+
+93
+00:04:44,218 --> 00:04:47,809
+In one Department of Energy example, a substation takes
+
+94
+00:04:47,809 --> 00:04:51,400
+power in at 34,000 volts and sends it out
+
+95
+00:04:51,400 --> 00:04:54,194
+at 7,200 volts on neighborhood distribution lines.
+
+96
+00:04:54,648 --> 00:04:57,637
+The final step-down happens close to your home: the
+
+97
+00:04:57,637 --> 00:05:00,627
+can-shaped transformer on a utility pole, or a box
+
+98
+00:05:00,627 --> 00:05:03,616
+on a concrete pad where the lines run underground.
+
+99
+00:05:04,070 --> 00:05:08,484
+It feeds a standard U.S. house two 120-volt wires.
+
+100
+00:05:08,434 --> 00:05:10,756
+One of them gives you the
+
+101
+00:05:10,756 --> 00:05:13,077
+120 volts at a regular outlet.
+
+102
+00:05:13,077 --> 00:05:16,332
+Both together give you 240 volts for big loads
+
+103
+00:05:16,332 --> 00:05:19,225
+like a clothes dryer or an electric range.
+
+104
+00:05:19,732 --> 00:05:23,649
+Along that whole route, some energy is lost on the way.
+
+105
+00:05:23,599 --> 00:05:27,591
+The EIA estimates that transmission and distribution losses
+
+106
+00:05:27,591 --> 00:05:31,584
+averaged about 5 percent from 2018 through 2022.
+
+107
+00:05:31,584 --> 00:05:34,913
+So the big loss happens back at the plant.
+
+108
+00:05:34,913 --> 00:05:37,770
+The grid itself is fairly thrifty.
+
+109
+00:05:38,724 --> 00:05:41,365
+Now for the second surprise.
+
+110
+00:05:41,315 --> 00:05:44,530
+We say electricity flows, so it's easy to picture
+
+111
+00:05:44,530 --> 00:05:47,387
+electrons racing from the plant to your house.
+
+112
+00:05:47,387 --> 00:05:49,083
+They don't.
+
+113
+00:05:49,586 --> 00:05:52,787
+In a copper wire, the average drift of electrons
+
+114
+00:05:52,787 --> 00:05:55,988
+is on the order of millimeters per second, according
+
+115
+00:05:55,988 --> 00:05:58,477
+to physics notes from Georgia State University.
+
+116
+00:05:58,427 --> 00:06:01,080
+In one of their examples, it's less than
+
+117
+00:06:01,080 --> 00:06:03,402
+a third of a millimeter per second.
+
+118
+00:06:03,904 --> 00:06:07,400
+And on our grid, they don't even drift one way.
+
+119
+00:06:07,350 --> 00:06:11,051
+With alternating current, the voltage swings positive, then
+
+120
+00:06:11,051 --> 00:06:14,289
+negative, and back, 60 times every second.
+
+121
+00:06:14,289 --> 00:06:17,241
+So the current keeps reversing, and the electrons
+
+122
+00:06:17,241 --> 00:06:19,824
+mostly shuffle back and forth in place.
+
+123
+00:06:20,334 --> 00:06:23,396
+Transformers break the chain, too.
+
+124
+00:06:23,346 --> 00:06:26,817
+Inside one, energy crosses from one coil of wire to
+
+125
+00:06:26,817 --> 00:06:29,941
+another through a magnetic field in an iron core.
+
+126
+00:06:30,452 --> 00:06:32,634
+So what makes the trip?
+
+127
+00:06:32,584 --> 00:06:34,383
+The energy.
+
+128
+00:06:34,383 --> 00:06:38,043
+Push on one end of the line, and the push travels.
+
+129
+00:06:38,043 --> 00:06:41,596
+Georgia State's notes put it this way: it's the change, the
+
+130
+00:06:41,596 --> 00:06:45,148
+signal, that moves along wires at essentially the speed of light.
+
+131
+00:06:45,148 --> 00:06:49,357
+Across a hundred miles, that's under a thousandth of a second.
+
+132
+00:06:50,332 --> 00:06:54,109
+Which brings us back to the little box on your nightstand.
+
+133
+00:06:54,059 --> 00:06:57,355
+Federal rules actually define it: an external power
+
+134
+00:06:57,355 --> 00:07:00,651
+supply converts household electric current into DC current,
+
+135
+00:07:00,651 --> 00:07:03,536
+or lower-voltage AC, to run a product.
+
+136
+00:07:04,050 --> 00:07:07,686
+A battery charges when current is pushed through it one
+
+137
+00:07:07,686 --> 00:07:11,321
+way, and wall current flips direction 120 times a second.
+
+138
+00:07:11,271 --> 00:07:14,519
+So the charger lowers the voltage and turns AC
+
+139
+00:07:14,519 --> 00:07:17,407
+into direct current, which flows in one direction.
+
+140
+00:07:17,912 --> 00:07:20,579
+Then comes the final handoff.
+
+141
+00:07:20,529 --> 00:07:24,445
+As the Department of Energy puts it, electricity has to be
+
+142
+00:07:24,445 --> 00:07:28,360
+converted into chemical potential energy before it can be readily stored.
+
+143
+00:07:28,360 --> 00:07:32,095
+While charging, electrons move through the circuit and ions move through
+
+144
+00:07:32,095 --> 00:07:35,491
+the battery, and the energy ends up held in chemistry.
+
+145
+00:07:35,998 --> 00:07:38,410
+And that's the end of the trip.
+
+146
+00:07:38,360 --> 00:07:41,224
+Energy from a split uranium atom, now
+
+147
+00:07:41,224 --> 00:07:43,679
+waiting as chemistry in your pocket.
+
+148
+00:07:44,646 --> 00:07:46,471
+Quick recap.
+
+149
+00:07:46,421 --> 00:07:48,487
+Fission makes heat.
+
+150
+00:07:48,487 --> 00:07:50,554
+Heat makes steam.
+
+151
+00:07:50,554 --> 00:07:53,468
+Steam spins a turbine, and the turbine
+
+152
+00:07:53,468 --> 00:07:56,383
+drives a generator that makes 60-hertz power.
+
+153
+00:07:56,383 --> 00:07:59,439
+In 2025, only about a third of
+
+154
+00:07:59,439 --> 00:08:02,059
+a nuclear plant's heat became electricity.
+
+155
+00:08:02,564 --> 00:08:05,855
+Transformers push the voltage up to hundreds of thousands of
+
+156
+00:08:05,855 --> 00:08:09,146
+volts so the long trip loses less, then step it
+
+157
+00:08:09,146 --> 00:08:12,437
+back down to 120 and 240 volts at your house.
+
+158
+00:08:12,387 --> 00:08:16,380
+The electrons mostly stay put; the energy makes the trip.
+
+159
+00:08:16,882 --> 00:08:20,901
+Here's my question for you: which step surprised you most?
+
+160
+00:08:20,851 --> 00:08:23,485
+The heat that never becomes electricity, or
+
+161
+00:08:23,485 --> 00:08:26,119
+the electrons that never leave your walls?
+
+162
+00:08:26,119 --> 00:08:28,274
+Tell me in the comments.
+
+163
+00:08:28,800 --> 00:08:31,479
+For more trips through the machinery behind
+
+164
+00:08:31,479 --> 00:08:34,158
+everyday life, subscribe to The Hidden Grid.
+
+165
+00:08:34,108 --> 00:08:36,219
+Every source behind the numbers in
+
+166
+00:08:36,219 --> 00:08:38,330
+this video is in the description.

@@ -51,3 +51,9 @@ Anfangs 10–20 Videos, Rest über Nacht.
 - ffmpeg muss im PATH sein (`ffmpeg -version`).
 - Der Pixabay-Key steht in der Umgebungsvariable `PIXABAY_API_KEY`. Niemals in Dateien oder in den Chat schreiben.
 - Große Dateien (Videos, build/) gehören nicht ins Git-Repo.
+
+## The Hidden Grid: feste Regeln (seit Nov. 2026)
+- **Corporate Identity:** verbindlich in `channel/the-hidden-grid/brand.json` (Stimme, Tempo, Abspann, Farben, Schriften, Längen, Disclosures). Vor jedem Upload `python3 pipeline/brand_check.py projects/<name>` (bzw. `shorts/<name>`); bei FAIL wird nicht hochgeladen.
+- **Sprach-Gegencheck bei jeder Übersetzung:** ein *zweiter*, unabhängiger Agent prüft jede Sprache (Grammatik, Satzstellung, Zeichensetzung, Fachbegriffe, Zahlen/Einheiten, Lesegeschwindigkeit max. ~17 Zeichen/s, Zeitmarken identisch zum Englischen). Erst danach gilt eine Übersetzung als fertig. Auch das englische Original wird so geprüft.
+- **Vorrat statt Vorproduktion:** höchstens 2–3 fertige Videos auf Vorrat (Puffer für Ausfälle). Nach jedem Upload die Zahlen aus YouTube Studio (CTR, Zuschauerbindung, Absprungstellen) in `channel/the-hidden-grid/learnings.md` eintragen; die Learnings fließen ins *nächste* Skript. Vorratsvideos werden vor dem Upload an neue Learnings angepasst (Titel, Thumbnail, Hook, ggf. Neurender – kostet nur Rechenzeit).
+- **QC:** `python3 pipeline/qc.py projects/<name> <ausgabeordner>` (Technik + 3 Standbilder je Szene gegen den Sprechtext) nach jedem Rendern.
