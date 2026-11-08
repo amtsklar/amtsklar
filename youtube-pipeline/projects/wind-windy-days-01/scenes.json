@@ -248,7 +248,7 @@
   },
   {
    "query": "storm wind",
-   "text": "Why stop so early? Under an international standard, the department says, most turbines today must be built to withstand sustained winds of 112 miles an hour and gusts of 156. Cut-out sits far below that on purpose, to reduce the risk of damage.",
+   "text": "Why stop so early? Under an international standard, the department says, turbines built for the windiest sites must be designed to withstand sustained winds of 112 miles an hour and gusts of 156. Cut-out sits far below that on purpose, to reduce the risk of damage.",
    "fallback": [
     "storm clouds",
     "wind turbine storm"
@@ -274,7 +274,7 @@
   {
    "chapter": "The grid says not now",
    "overlay": "THE GRID IS FULL",
-   "query": "power lines",
+   "query": "wind turbines blue sky",
    "text": "Now the surprising one. Sometimes the turbine is fine, the wind is perfect, and the grid operator still tells it to make less.",
    "fallback": [
     "transmission tower",
@@ -306,7 +306,7 @@
    ]
   },
   {
-   "query": "control room",
+   "query": "power lines sunset",
    "text": "Why is wind often first in line? In the Midwest, the EIA explains, it's cheaper and faster to shut down and restart wind and solar plants than other kinds of power plants.",
    "fallback": [
     "wind farm",
@@ -377,7 +377,7 @@
   },
   {
    "query": "golden eagle",
-   "text": "For eagles, some sites use cameras. At one Wyoming wind farm, a system that slows or stops individual turbines when it detects an eagle at risk cut eagle deaths there by 63 percent, a 2021 study in the Journal of Applied Ecology found. Same number, different study.",
+   "text": "For eagles, some sites use cameras. At one Wyoming wind farm, a system that slows or stops individual turbines when it detects an eagle at risk was linked to a drop in eagle deaths of more than 60 percent in a 2021 study in the Journal of Applied Ecology. A later U.S. Geological Survey reanalysis questioned how big that effect really is.",
    "fallback": [
     "eagle flying",
     "wind farm"
@@ -412,7 +412,7 @@
    ]
   },
   {
-   "query": "wind farm highway",
+   "query": "wind farm field",
    "text": "Have you ever passed a wind farm on a windy day with the blades standing still? What do you think was going on? Tell me in the comments.",
    "fallback": [
     "wind farm",

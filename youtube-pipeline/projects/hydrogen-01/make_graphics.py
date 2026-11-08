@@ -42,14 +42,14 @@ ax.text(4, 30, "Step 1: reforming\nStep 2: water-gas shift\nStep 3: purification
 save(f, OUT / "s10.png")
 
 # s15 electrolyzer
-f = fig("ELECTROLYSIS: ELECTRICITY IN, HYDROGEN OUT", "PEM electrolyzer system, electricity per kg of hydrogen (energy kept)",
+f = fig("ELECTROLYSIS: ELECTRICITY IN, HYDROGEN OUT", "PEM electrolyzer system, electricity per kg of hydrogen (energy kept, lower heating value)",
         "Source: U.S. DOE Hydrogen and Fuel Cell Technologies Office, technical targets for PEM electrolysis.")
 bars(f, ["2022 status", "2026 target", "Ultimate target"], [55, 51, 46], ["55 kWh\n(61%)", "51 kWh\n(65%)", "46 kWh\n(72%)"],
      colors=[RED, AMBER, GREEN], ylim=78, rect=(0.14, 0.19, 0.72, 0.60), fs=42)
 save(f, OUT / "s15.png")
 
 # s20 stations (log scale)
-f = fig("WHERE CAN YOU FILL UP?", "U.S. public fueling locations, data as of Nov. 7, 2026 (log scale)",
+f = fig("WHERE CAN YOU FILL UP?", "U.S. hydrogen fueling locations, data as of Nov. 7, 2026 (log scale)",
         "Source: U.S. DOE Alternative Fuels Data Center. EV count excludes residential chargers.")
 ax = axes(f, (0.30, 0.20, 0.62, 0.56))
 ax.barh([1, 0], [44, 83972], color=[AMBER, CYAN], height=0.5)

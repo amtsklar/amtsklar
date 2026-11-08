@@ -131,3 +131,8 @@ Fixes made in the critic pass:
 - Fuel cell vehicle vs. battery EV MPGe comparison: no primary figure opened; cut (the chain argument rests on ARIES + EIA numbers).
 - 45V tax credit details (construction before end of 2027, GHR25 p. 113): policy detail, not needed for the education thesis; cut to keep the video non-political.
 - U.S. hydrogen consumption split by end use (NCHSR Fig. 6, 2021): figure is an image without readable numbers; only the qualitative ranking (refining and ammonia largest) is used.
+
+## Update Nov. 2026 (scientific review)
+- DOE terminated the ARCHES (California) and Pacific Northwest hub awards in Oct. 2025 (~$2.2 bn combined); DOE release 21 Apr 2026 "Energy Department Preserves Nearly $5 Billion for Five Hydrogen Hubs" (via https://www.mccormick.senate.gov/?p=11590; Bloomberg 15 Apr 2026). Retained: HyVelocity, ARCH2, MachH2, MACH2, Heartland.
+- NREL renamed "National Laboratory of the Rockies" on 1 Dec 2025 (energy.gov).
+- 61 % electrolyzer efficiency = lower heating value (33.3 kWh/kg ÷ 55 kWh/kg).

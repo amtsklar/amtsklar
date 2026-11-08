@@ -129,3 +129,8 @@ Fixes made in the critic pass:
 - Wholesale market value of wind ($15/MWh SPP, 2025) and PTC mechanics: financial framing, not needed for the education goal; cut.
 - Block Island turbine make/model and developer named in the DOE photo caption: not used (no company names).
 - Football-field comparison for rotor size: DOE compares a 351-ft offshore blade, not the land-based rotor; cut.
+
+## Update Nov. 2026 (scientific review)
+- Eagle curtailment: McClure et al. 2021, J. Appl. Ecol., doi:10.1111/1365-2664.13831 (−63 % before/after on site, −82 % vs. control). Reanalysis: USGS publication 70248352, "Reanalysis indicates little evidence of reduction in eagle mortality rate by automated curtailment of wind turbines". Script now presents the effect as disputed.
+- Cut-in speed: DOE "How a Wind Turbine Works" says 7–11 mph; another DOE page says 6–9 mph. Script uses 7–11.
+- 112/156 mph = IEC 61400-1 class I design values (windiest sites); many U.S. onshore turbines are class II/III.

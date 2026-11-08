@@ -27,7 +27,7 @@ Subscribe and follow the electron.
 | Land | Schweiz |
 | Standardsprache der Videos | Englisch |
 | Kanal-Keywords | `power grid, electricity explained, data centers, AI energy, energy explained, how the grid works, nuclear power, grid batteries, renewable energy, infrastructure explained, engineering explained` |
-| Links | Newsletter „The Grid Weekly“ (sobald angelegt) |
+| Links | (vorerst keine; Newsletter erst, wenn er existiert und eine Datenschutzerklärung hat) |
 | Kontakt-E-Mail (für Sponsoren) | eigene Adresse, z. B. `hello@` + Domain, sobald vorhanden. Bis dahin die Kanal-Gmail. |
 
 ## 4. Standard-Einstellungen für Uploads (YouTube Studio → Einstellungen → Upload-Standards)
@@ -44,7 +44,6 @@ Subscribe and follow the electron.
 The Hidden Grid follows the electron: how power grids, data centers and energy infrastructure really work.
 Narration is AI-generated; script researched and reviewed by a human.
 Education only, not financial advice. The creator invests in the energy sector.
-Newsletter: The Grid Weekly (link in channel)
 ```
 
 ## 5. Vorlage für den angepinnten Kommentar
@@ -80,4 +79,13 @@ Corrections: if we got something wrong, reply here with a source and we'll pin t
 - Newsletter „The Grid Weekly“ bei Beehiiv oder Substack, gratis
 - Domain, z. B. `thehiddengrid.com` (vor dem Kauf prüfen, ob frei)
 - Lizenzierte Stimme: ElevenLabs (Tarif mit kommerzieller Lizenz) oder Azure Speech. Konto anlegen, den API-Key **nicht** in den Chat schreiben.
-- Mit dem Treuhänder klären: W-8BEN, AHV-Anmeldung ab ca. CHF 2.300 Gewinn, Belege sammeln
+- Mit dem Treuhänder klären: W-8BEN, AHV-Anmeldung als Selbständigerwerbender ab CHF 2.500 Einkommen pro Jahr (darunter auf Antrag beitragsfrei), Belege sammeln
+
+## Vor dem ersten Upload (Audit Nov. 2026)
+- Kanal per Telefon verifizieren (Studio → Einstellungen → Kanal → Funktionsberechtigung), sonst keine eigenen Thumbnails und keine Videos über 15 Min.
+- KI-Kennzeichnung: Bei „Altered or synthetic content“ immer **Ja** wählen, bei jedem Upload gleich.
+- Lizenzierte Stimme (Azure Speech S0 oder ElevenLabs bezahlt) – edge-tts nur für Entwürfe; `brand_check.py` blockiert sonst.
+- Playlists: „Follow the Electron“ (Netz/Strom), „Energy Myths, Checked“ (H2, Wind …); Wasserzeichen = Profilbild.
+- Upload-Slot: Dienstag 19:00 MEZ (13:00 ET), Shorts Do + Sa. Reihenfolge: Grid → Wind → Nuclear → Hydrogen.
+- Sperrliste: In den Tagen um eine Veröffentlichung keine Trades in Titeln, die im Video vorkommen (Interessenkonflikt, FinfraG Art. 143 vorsorglich).
+- Impressum: laut Compliance-Check wahrscheinlich nicht nötig – kurz mit dem Treuhänder bestätigen.

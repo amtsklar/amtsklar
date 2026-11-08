@@ -353,6 +353,9 @@ def stage_images_pixabay(project):
     used = {c["id"] for c in credits.values()}
     if (b / "rejected.json").exists():
         used |= set(json.loads((b / "rejected.json").read_text()))
+    blk = ROOT / "channel" / "the-hidden-grid" / "blocked_media.json"   # channel-wide: logos, brands, off-topic
+    if blk.exists() and cfg.get("channel") == "The Hidden Grid":
+        used |= set(json.loads(blk.read_text()))
     for other in project.parent.glob("*/build/credits.json"):   # never reuse a clip from another video of the channel
         if other.parent.parent == project:
             continue
@@ -874,7 +877,7 @@ def stage_reject(project, names):
 STAGES = {"voice": stage_voice, "images": stage_images, "pool": stage_pool, "assign": stage_assign,
           "sheets": stage_sheets,
           "render": stage_render,
-          "thumbs": stage_thumbs, "meta": stage_meta}
+          "finish": stage_finish, "thumbs": stage_thumbs, "meta": stage_meta}
 
 if __name__ == "__main__":
     project = Path(sys.argv[1]).resolve()

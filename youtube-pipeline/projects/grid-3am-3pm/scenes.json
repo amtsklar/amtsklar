@@ -84,7 +84,7 @@
   },
   {
    "query": "great plains wind farm",
-   "text": "Take the Southwest Power Pool, the grid operator for a big stretch of the Great Plains. We ran its 2025 numbers from the EIA's hourly grid data: on average, wind covered about 46 percent of demand at 2 a.m., but only about 31 percent at noon. And for five straight hours before dawn on December 28, 2025, it covered about 80 percent.",
+   "text": "Take the Southwest Power Pool, the grid operator for a big stretch of the Great Plains. We ran its 2025 numbers from the EIA's hourly grid data: on average, wind output equaled about 46 percent of demand at 2 a.m., but only about 31 percent at noon. And for five straight hours before dawn on December 28, 2025, it equaled about 80 percent.",
    "fallback": [
     "prairie wind turbines",
     "wind farm"
@@ -146,7 +146,7 @@
   },
   {
    "query": "control room screens",
-   "text": "To see why, grid operators look at net load: total demand minus whatever wind and solar are producing. It's the part every other power plant has to cover.",
+   "text": "To see why, grid operators look at net load: total demand minus whatever wind and solar are producing. It's the part every other power plant has to cover. One catch: this counts only big solar farms and wind farms. Rooftop panels don't show up as supply at all. They just make demand look smaller.",
    "fallback": [
     "computer monitors",
     "data screen"
@@ -181,7 +181,7 @@
   {
    "chapter": "Batteries: moving noon to night",
    "overlay": "MOVING NOON TO NIGHT",
-   "query": "battery storage facility",
+   "query": "battery energy storage",
    "text": "One fast-growing answer is a battery. Charge it with cheap midday solar, then let it run in the evening. As the EIA puts it, that flattens the duck's curve and shortens its neck.",
    "fallback": [
     "energy storage",
@@ -250,7 +250,7 @@
    "graphic": "bar chart: share of negative-price intervals in CAISO day-ahead market, 2024 (8.8%) vs. 2025 (7.1%)"
   },
   {
-   "query": "gas turbine",
+   "query": "gas power plant",
    "text": "On the other end are the expensive hours, when the grid calls on peakers, often gas turbines that run only occasionally. They cost more to run, but they respond quickly, which is exactly what that evening ramp needs.",
    "fallback": [
     "power plant",
@@ -268,7 +268,7 @@
    ]
   },
   {
-   "query": "electric car charging garage",
+   "query": "power outlet plug night",
    "text": "Most electric vehicle drivers charge overnight at home, according to the Department of Energy. And some utilities offer time-of-use rates, where electricity costs less in certain hours and more in others.",
    "fallback": [
     "tesla charging",

@@ -27,7 +27,7 @@ ax.set_xlim(0, 100); ax.set_yticks([]); ax.set_xticks([0, 25, 50, 75, 100]); ax.
 save(f, OUT / "s12.png")
 
 # s16 voltage ladder
-f = fig("THE VOLTAGE LADDER", "Typical U.S. voltages from the plant to your outlet",
+f = fig("THE VOLTAGE LADDER", "Typical U.S. voltages from the plant to your outlet (not to scale)",
         "Sources: U.S. DOE, United States Electricity Industry Primer (2015); HyperPhysics, Georgia State University.")
 ax = canvas(f)
 steps = [("GENERATOR", "5–34.5 kV", CYAN), ("STEP-UP\nTRANSFORMER", "", WHITE), ("TRANSMISSION", "138–765 kV", RED),
@@ -90,7 +90,7 @@ ax.barh([1, 0], vals, color=[AMBER, CYAN], height=0.5)
 ax.set_xscale("log"); ax.set_xlim(1e-5, 1e10)
 ax.set_yticks([1, 0]); ax.set_yticklabels(["Electron drift", "The signal\n(near light speed)"], fontsize=26)
 ax.text(0.00028 * 2, 1, "  0.00028 m/s", va="center", fontproperties=ANTON, fontsize=40, color=AMBER)
-ax.text(1e5, 0, "300,000,000 m/s  ", va="center", ha="right", fontproperties=ANTON, fontsize=40, color=BG)
+ax.text(1e5, 0, "up to ~300,000,000 m/s  ", va="center", ha="right", fontproperties=ANTON, fontsize=40, color=BG)
 ax.set_xlabel("meters per second", fontsize=20)
 save(f, OUT / "s26.png")
 

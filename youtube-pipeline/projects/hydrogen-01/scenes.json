@@ -7,8 +7,8 @@
  "scenes": [
   {
    "chapter": "Intro",
-   "query": "hydrogen tank",
-   "text": "In 2024, engineers at the National Renewable Energy Laboratory in Colorado reported on a test at megawatt scale. They took electricity, turned it into hydrogen, stored it, and then turned it back into electricity.",
+   "query": "laboratory equipment",
+   "text": "In 2024, engineers at the National Renewable Energy Laboratory in Colorado, now the National Laboratory of the Rockies, reported on a test at megawatt scale. They took electricity, turned it into hydrogen, stored it, and then turned it back into electricity.",
    "fallback": [
     "gas storage tanks",
     "pressure tanks",
@@ -17,7 +17,7 @@
   },
   {
    "query": "power lines",
-   "text": "At full power, about 28 percent of the electricity came back. At low power, about 35.",
+   "text": "In that one prototype, at full power, about 28 percent of the electricity came back. At low power, about 35.",
    "fallback": [
     "electricity pylon",
     "transmission tower"
@@ -26,7 +26,7 @@
   },
   {
    "query": "battery storage",
-   "text": "Now compare that with a battery. In 2019, the EIA found that America's grid batteries gave back about 82 percent of the electricity put into them. That number is called round-trip efficiency.",
+   "text": "Now compare that with a whole fleet of batteries. In 2019, the EIA found that America's grid batteries gave back about 82 percent of the electricity put into them. That number is called round-trip efficiency.",
    "fallback": [
     "energy storage container",
     "lithium battery"
@@ -59,7 +59,7 @@
    ]
   },
   {
-   "query": "natural gas plant",
+   "query": "water molecule",
    "text": "So before we can use it, we have to pull it apart from those compounds. The EIA calls hydrogen an energy carrier, something that moves energy from one place to another, a bit like electricity.",
    "fallback": [
     "gas pipeline",
@@ -112,7 +112,7 @@
   },
   {
    "query": "industrial pipes",
-   "text": "Capture that carbon and store it underground, and people often call the result blue hydrogen. Let it go into the air, and it's called grey.",
+   "text": "Capture most of that carbon and store it underground, and people often call the result blue hydrogen. Let it go into the air, and it's called grey.",
    "fallback": [
     "pipes factory",
     "steel pipes"
@@ -249,7 +249,7 @@
   },
   {
    "query": "steel mill",
-   "text": "Steel is next. About 70 percent of American steel is made by melting scrap in electric furnaces. But making new steel from iron ore relies on coke and natural gas.",
+   "text": "Steel is next. About 70 percent of American steel is made by melting mostly scrap in electric furnaces. But making new steel from iron ore relies on coke and natural gas.",
    "fallback": [
     "steel factory",
     "molten steel"
@@ -307,7 +307,7 @@
   },
   {
    "query": "construction site",
-   "text": "But plans have met reality. In 2025, the IEA reported that planned projects in North America had shrunk, mostly in the U.S., amid policy uncertainty, and that the future of four of the hubs was unclear.",
+   "text": "But plans have met reality. In October 2025, the Energy Department cancelled funding for the California and Pacific Northwest hubs. In April 2026, it said it would keep nearly 5 billion dollars for the other five.",
    "fallback": [
     "industrial construction",
     "crane construction"

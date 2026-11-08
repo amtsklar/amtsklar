@@ -126,7 +126,7 @@ save(f, "s12.png")
 d = [v / 1000 for v in he(cai["demand"])]; so = [max(0, v) / 1000 for v in he(cai["solar"])]
 wi = [v / 1000 for v in he(cai["wind"])]; net = [a - b - c for a, b, c in zip(d, so, wi)]
 f = fig("NET LOAD = DEMAND − WIND − SOLAR", "California grid operator (CAISO), average April day 2025 (Pacific time)",
-        "Source: EIA Hourly Electric Grid Monitor (EIA-930), CAISO balancing area. Our calculation.")
+        "Source: EIA Hourly Electric Grid Monitor (EIA-930), CAISO balancing area; utility-scale wind and solar only (rooftop solar not included). Our calculation.")
 ax = axes(f); hour_axis(ax)
 ax.stackplot(HOURS, net, wi, so, colors=["#2b4a7a", CYAN, AMBER], alpha=0.95,
              labels=["Net load: everything else must cover this", "Wind", "Solar"])
@@ -137,7 +137,7 @@ save(f, "s18.png")
 
 # s19 duck curve
 f = fig("THE DUCK CURVE", "California net load (demand minus wind and solar), average April day 2025",
-        "Source: EIA Hourly Electric Grid Monitor (EIA-930), CAISO balancing area. Our calculation.")
+        "Source: EIA Hourly Electric Grid Monitor (EIA-930), CAISO balancing area; utility-scale wind and solar only (rooftop solar not included). Our calculation.")
 ax = axes(f); hour_axis(ax)
 ax.plot(HOURS, net, color=AMBER, linewidth=7)
 ax.fill_between(HOURS, net, 0, color=AMBER, alpha=0.12)
@@ -181,7 +181,7 @@ for i, (big, unit, label, col) in enumerate(cards):
 save(f, "s29.png")
 
 # s33 negative prices
-f = fig("NEGATIVE PRICES IN CALIFORNIA", "Share of intervals with negative prices, CAISO day-ahead market",
+f = fig("NEGATIVE PRICES IN CALIFORNIA", "Share of intervals with negative prices, CAISO balancing area, day-ahead market",
         "Source: CAISO Department of Market Monitoring, 2025 Annual Report on Market Issues and Performance.")
 ax = axes(f, (0.25, 0.14, 0.5, 0.64))
 bars = ax.bar(["2024", "2025"], [8.8, 7.1], color=[CYAN, AMBER], width=0.55)

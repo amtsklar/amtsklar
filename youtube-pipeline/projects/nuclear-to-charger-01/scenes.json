@@ -7,7 +7,7 @@
  "scenes": [
   {
    "chapter": "Intro",
-   "query": "phone charging night",
+   "query": "charging cable bedside",
    "text": "Your phone is charging on the nightstand. Now follow that cable backward. Into the wall, out to the street, up the power lines, and keep going.",
    "fallback": [
     "phone charger",
@@ -52,7 +52,7 @@
   },
   {
    "query": "atom model",
-   "text": "When a neutron slams into a uranium atom, the atom splits into two smaller atoms. That's fission. It releases a lot of energy, plus extra neutrons that can split more atoms, which keeps a chain reaction going. The plant uses the heat from all that splitting to boil water.",
+   "text": "When a uranium-235 atom absorbs a slow-moving neutron, it splits into two smaller atoms. That's fission. It releases a lot of energy, plus extra neutrons that can split more atoms, which keeps a chain reaction going. The plant uses the heat from all that splitting to boil water.",
    "fallback": [
     "science laboratory",
     "nuclear reactor"
@@ -210,7 +210,7 @@
   },
   {
    "query": "house power line",
-   "text": "It feeds a standard U.S. house two 120-volt wires. One of them gives you the 120 volts at a regular outlet. Both together give you 240 volts for big loads like a clothes dryer or an electric range.",
+   "text": "It feeds a standard U.S. house two 120-volt hot wires plus a neutral. One of them gives you the 120 volts at a regular outlet. Both together give you 240 volts for big loads like a clothes dryer or an electric range.",
    "fallback": [
     "electric meter",
     "suburban house"
@@ -238,7 +238,7 @@
   },
   {
    "query": "copper cable closeup",
-   "text": "In a copper wire, the average drift of electrons is on the order of millimeters per second, according to physics notes from Georgia State University. In one of their examples, it's less than a third of a millimeter per second.",
+   "text": "In a copper wire, the average drift of electrons is only fractions of a millimeter per second, according to physics notes from Georgia State University. In one of their examples, it's less than a third of a millimeter per second.",
    "fallback": [
     "copper wire",
     "electrical wire"
@@ -264,7 +264,7 @@
   },
   {
    "query": "light speed",
-   "text": "So what makes the trip? The energy. Push on one end of the line, and the push travels. Georgia State's notes put it this way: it's the change, the signal, that moves along wires at essentially the speed of light. Across a hundred miles, that's under a thousandth of a second.",
+   "text": "So what makes the trip? The energy. Push on one end of the line, and the push travels. Georgia State's notes put it this way: it's the change, the signal, that moves along wires close to the speed of light. Across a hundred miles, that's under a thousandth of a second.",
    "fallback": [
     "fiber optic light",
     "light trails"
@@ -281,7 +281,7 @@
    ]
   },
   {
-   "query": "charger plug",
+   "query": "battery charging",
    "text": "A battery charges when current is pushed through it one way, and wall current flips direction 120 times a second. So the charger lowers the voltage and turns AC into direct current, which flows in one direction.",
    "fallback": [
     "power adapter",
