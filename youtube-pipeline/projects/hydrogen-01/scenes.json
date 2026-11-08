@@ -26,7 +26,7 @@
   },
   {
    "query": "battery storage",
-   "text": "Now compare that with a whole fleet of batteries. In 2019, the EIA found that America's grid batteries gave back about 82 percent of the electricity put into them. That number is called round-trip efficiency.",
+   "text": "Now compare that with a whole fleet of batteries. In 2019, the EIA found that America's grid batteries gave back about 82 percent. That's called round-trip efficiency.",
    "fallback": [
     "energy storage container",
     "lithium battery"
@@ -60,7 +60,7 @@
   },
   {
    "query": "water molecule",
-   "text": "So before we can use it, we have to pull it apart from those compounds. The EIA calls hydrogen an energy carrier, something that moves energy from one place to another, a bit like electricity.",
+   "text": "So before we can use it, we have to pull it apart. The EIA calls hydrogen an energy carrier: it moves energy from one place to another, a bit like electricity.",
    "fallback": [
     "gas pipeline",
     "oil refinery"
@@ -68,7 +68,7 @@
   },
   {
    "query": "energy laboratory",
-   "text": "And carrying has a price. In the EIA's words, producing hydrogen requires more energy than hydrogen provides when it's converted to useful energy. So every use of hydrogen pays that toll somewhere, and it's worth keeping in mind for the rest of this video.",
+   "text": "And carrying has a price. In the EIA's words, producing hydrogen requires more energy than hydrogen provides when it's converted to useful energy.",
    "fallback": [
     "laboratory flask",
     "science lab"
@@ -78,7 +78,7 @@
    "chapter": "How America makes it",
    "overlay": "MADE FROM NATURAL GAS",
    "query": "chemical plant",
-   "text": "America already makes plenty of it: about 10 million metric tons a year, according to the Energy Department's 2023 hydrogen strategy. Worldwide, the International Energy Agency counted almost 100 million metric tons of demand in 2024.",
+   "text": "America already makes plenty of it: about 10 million metric tons a year, according to the Energy Department's 2023 hydrogen strategy.",
    "fallback": [
     "refinery night",
     "industrial plant"
@@ -120,7 +120,7 @@
   },
   {
    "query": "electrolysis lab",
-   "text": "The other main route is electrolysis: running an electric current through water to split it into hydrogen and oxygen. With wind or solar power, that's usually called green hydrogen. The Energy Department itself doesn't use the color code.",
+   "text": "The other main route is electrolysis: running an electric current through water to split it into hydrogen and oxygen. With wind or solar power, that's usually called green hydrogen.",
    "fallback": [
     "laboratory water",
     "wind turbines"
@@ -146,7 +146,7 @@
   },
   {
    "query": "electric cables",
-   "text": "Only about 61 percent of that electricity's energy ends up stored in the hydrogen. The department's long-term targets are around 70 percent. Better, but still a loss.",
+   "text": "Only about 61 percent of that electricity's energy ends up stored in the hydrogen. The department's long-term targets are around 70 percent.",
    "fallback": [
     "power cables",
     "electricity"
@@ -154,7 +154,7 @@
   },
   {
    "query": "gas cylinders",
-   "text": "Then the hydrogen has to be stored. It holds more energy per pound than any other fuel, but very little per gallon. So it gets squeezed into tanks at up to 10,000 psi, or chilled into a liquid at minus 423 degrees Fahrenheit.",
+   "text": "Then the hydrogen has to be stored. It holds more energy per pound than any other fuel, but very little per gallon, so it gets squeezed into tanks at up to 10,000 psi or chilled into a liquid at minus 423 degrees Fahrenheit.",
    "fallback": [
     "pressure tank",
     "industrial tanks"
@@ -164,7 +164,7 @@
    "chapter": "The round-trip problem",
    "overlay": "THE ROUND-TRIP PROBLEM",
    "query": "power plant",
-   "text": "Now stack the losses. That's the chain from the start of this video: electricity to hydrogen, then back to electricity. In that Colorado test, the fuel cell generator alone turned only about 48 to 52 percent of the hydrogen's energy back into electricity.",
+   "text": "Now stack the losses. That's the chain from the start of this video: electricity to hydrogen, then back to electricity. In that Colorado test, the fuel cell generator alone turned only about half of the hydrogen's energy back into electricity.",
    "fallback": [
     "electric generator",
     "industrial machine"
@@ -197,7 +197,7 @@
   },
   {
    "query": "gas stove flame",
-   "text": "Turn that same electricity into hydrogen, and nearly 40 percent of the energy is gone before you light a burner. Hydrogen also packs only about a third of natural gas's energy by volume, and the EIA says more research is needed to know whether home heating appliances can handle it.",
+   "text": "Turn that same electricity into hydrogen, and nearly 40 percent of the energy is gone before you light a burner. And hydrogen packs only about a third of natural gas's energy by volume.",
    "fallback": [
     "gas burner",
     "furnace"
@@ -265,14 +265,14 @@
   },
   {
    "query": "cargo ship",
-   "text": "Then come the maybes. Ships could run on fuels made from hydrogen, like ammonia and methanol. By mid-2025, the IEA counted more than 60 methanol-powered vessels on the water.",
+   "text": "Then come the maybes. Ships could run on fuels made from hydrogen, like ammonia and methanol.",
    "fallback": [
     "container ship"
    ]
   },
   {
    "query": "truck highway",
-   "text": "Heavy trucks are another maybe. The Energy Department's strategy says fuel cells are particularly viable for trucks that need fill times like diesel, or ranges above 500 miles.",
+   "text": "Heavy trucks are another maybe. The Energy Department says fuel cells suit trucks that need diesel-like fill times or ranges above 500 miles.",
    "fallback": [
     "semi truck",
     "truck road"
@@ -280,7 +280,7 @@
   },
   {
    "query": "gas storage",
-   "text": "And the grid could store hydrogen for days or even weeks, the EIA says, while the average U.S. grid battery in 2019 held about an hour and a half of output. The country already stores hydrogen in three underground caverns, and in Utah, a project backed by a federal loan guarantee is designed to pair a 220-megawatt electrolyzer with salt caverns.",
+   "text": "And the grid could store hydrogen for days or even weeks, the EIA says, while the average U.S. grid battery in 2019 held about an hour and a half of output. In Utah, a project backed by a federal loan guarantee is designed to pair a 220-megawatt electrolyzer with salt caverns.",
    "fallback": [
     "salt cavern",
     "industrial tanks"
@@ -290,7 +290,7 @@
    "chapter": "America's hydrogen bet",
    "overlay": "AMERICA'S HYDROGEN BET",
    "query": "industrial port",
-   "text": "Which brings us back to the billions. The 2021 infrastructure law gave the Energy Department 9.5 billion dollars for hydrogen. In 2023, the Energy Department selected seven regional hydrogen hubs, with 7 billion dollars in funding, to put producers and users close together.",
+   "text": "Which brings us back to the billions. The 2021 infrastructure law gave the Energy Department 9.5 billion dollars for hydrogen. In 2023, the Energy Department selected seven regional hydrogen hubs, with 7 billion dollars in funding.",
    "fallback": [
     "refinery",
     "industrial plant"
