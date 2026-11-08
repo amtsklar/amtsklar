@@ -128,3 +128,105 @@ Common Law und Social Media:
    - **Ablauf und Dauer:** Anmeldung, nach ca. 6–8 Monaten die Prüfung durch den Examining Attorney (ggf. Office Action, Antwortfrist 3 Monate), dann die Veröffentlichung im Official Gazette mit 30 Tagen Widerspruchsfrist und schließlich die Eintragung. Realistisch sind **12–18 Monate** bis zur Eintragung.
    - **Gesamtbudget für 1 Klasse mit Anwalt:** etwa **USD 1'000–2'500**. Darin enthalten sind die Amtsgebühr und die Anwaltspauschale für die Anmeldung, nicht aber Antworten auf Office Actions (je ca. USD 300–1'000) und Widerspruchsverfahren.
 5. **Schweiz und EU:** Erst sinnvoll, wenn Merch oder Sponsoring außerhalb der USA geplant ist. Swissreg zeigt für die sechs exakten Namen keine Kollision.
+
+---
+
+## Runde 4: zehn weitere Namen (8. Nov. 2026)
+
+**Methode:** wie oben (Abschnitt 3). USPTO über das JSON-Backend von tmsearch (`/prod-stage-v1-0-0/tmsearch`): Wortmarke und Pseudo-Text, alle Status, dazu Kernwörter gefiltert auf lebende Marken in Kl. 41/38 sowie eine Inhabersuche (Hertz System, 60Hertz). Swissreg über `/database/resources/query/search` (Ziel "chmarke", Phrasensuche, Treffer auf den Markentitel gefiltert, weil die Volltextsuche auch Inhaberadressen trifft, z. B. "Heinrich-Hertz-Straße"). Common Law über Websuche und die iTunes Search API (Podcasts, Musik, E-Books, Apps). Handles über HTTP-Status (YouTube, X), TikTok-`statusCode` und für X zusätzlich die öffentliche fxtwitter-API. Domains per RDAP bei Verisign.
+
+### 4.1 Ergebnis auf einen Blick
+
+| Name | Ampel | USPTO: exakter Treffer | Nächste relevante Konflikte (USPTO) | Common Law / Web | Swissreg | Handles (YT / X / TikTok / IG) | .com |
+|---|---|---|---|---|---|---|---|
+| **SIXTY HERTZ / THE SIXTY HERTZ** | 🔴 rot | **60HERTZ**, 60Hertz Inc. (Alaska), Kl. 9, **registriert** (RN 5757618, § 8 akzeptiert): Software zur Überwachung von *Stromerzeugung und -verteilung* | **HERTZ** (Hertz System, berühmte Marke) live in Kl. 9, 16, 35; **HERTZ ELECTRIFIES** Kl. 41 (Bildung zu E-Autos), Kl. 16; HERTZ FOUNDATION Kl. 41 (MINT-Bildung) | **60Hertz Energy** (Anchorage, Wartungssoftware für Microgrids, Solar, Speicher, seit 2017, 60hertzenergy.com). Podcast "60 Hertz" (Bruno Floriano, Technologie, 9 Folgen, inaktiv seit 2022). X **@sixtyhertz** = "60Hz Podcast" (inaktiv). Song "Sixty Hertz" (Jude Rio, 2026), Binaural-Beats-Album "60 Hertz" (2022). Keine Audio-/Musikmarke "Sixty Hertz" im Register | kein Treffer; HERTZ (Hertz System) mehrfach aktiv, ZERO HERTZ (Healy) | **@SixtyHertz vergeben** auf YT (Kanal "Andale", 2 Videos), X und TikTok (inaktiv); **@TheSixtyHertz** frei auf YT, X, TikTok; IG unklar | **sixtyhertz.com vergeben (2009)**, 60hertz.com vergeben, thesixtyhertz.com frei |
+| **THE SIXTY CYCLE** | 🟡 gelb | keiner ("SIXTY CYCLE", "60 CYCLE", "60CYCLE": 0) | 40 CYCLE HUM (B. Mitchell, Kl. 9 Musik, Notice of Allowance). Feld "SIXTY" in Kl. 41 groß, aber ohne nahen Treffer | **60 Cycle Hum** (Ryan Burke & Steve): Gitarren-YouTube-Kanal (ca. 166 000 Abos laut Drittquelle) und Podcast, aktiv 2026, ohne US-Marke. Band "60 Cycle" (1996), Songs "Sixty Cycle", Album "Sixty Cycle Hum" (Massacoustics) | kein Treffer | @TheSixtyCycle frei (YT, X, TikTok); **@SixtyCycle vergeben** (YT: 3 Abos, X, TikTok); IG unklar | thesixtycycle.com frei, **sixtycycle.com vergeben (1998)** |
+| **TOWER TO TOASTER** | 🟢 grün | keiner | keine; "TOASTER" in Kl. 41 nur fernliegend (TICKET TOASTER, THE TIPSY TOASTER) | nichts gefunden. Hinweis: "Tower" ist eine britische Haushaltsgeräte-Marke (auch Toaster), nicht im Kanalumfeld | kein Treffer | alle frei (YT, X, TikTok); IG unklar | frei |
+| **THE OTHER END OF THE PLUG** | 🟢 grün | keiner | THE OTHER END (Kanada, Kl. 41 Videoproduktion) **dead**; sonst nur tote Slogans | nichts; ähnlich gebaut nur Buchtitel "The Other End of the Leash" (Hundetraining) | kein Titeltreffer | alle frei; IG unklar | frei |
+| **OTHER END OF THE WIRE** | 🟢 grün | keiner | wie oben | Gedicht "At the Other End of the Wire" (Sandra Lim), sonst nichts | kein Titeltreffer | alle frei; IG unklar | frei |
+| **THE LINE WALK** | 🟡 gelb | keiner | **WALK THE LINE**, Barstool Sports, Kl. 41, **registriert** (RN 6069545), Multimedia-Programm. LINE WALKER (Kl. 7, Werkzeug zum Ziehen von Strommasten, registriert) | keine Firma oder kein Podcast; Song "Line Walk" (Avia, 2024), Apps "Line Walk". Starke Assoziation zu "Walk the Line" (Johnny Cash, Film) | kein Treffer | YT @TheLineWalk frei; **X @thelinewalk vergeben** (inaktiv); **@LineWalk** vergeben (YT, X, TikTok); IG unklar | thelinewalk.com frei, linewalk.com vergeben |
+| **HERTZ AND HUM** | 🔴 rot | keiner | HERTZ (Hertz System) als **Anfangswort**: HERTZ live in Kl. 9/16/35, HERTZ ELECTRIFIES in Kl. 41 (Bildung zu E-Autos), HERTZ #1 CLUB und HERTZ RACING GOLD in Kl. 41; HERTZ FOUNDATION in Kl. 41 (MINT-Bildung). THE HUM, Kl. 41 (Videos zu psychischer Gesundheit, registriert) | nichts zum exakten Namen; "60 Cycle Hum" (s. o.) im Hintergrund | kein Treffer; HERTZ-Marken von Hertz System aktiv | alle frei; IG unklar | frei |
+| **TRACE THE PLUG** | 🟢 grün | keiner | "TRACE" in Kl. 41 dicht (43 lebende), aber nichts Nahes: THE TRACE (Trace Media, Waffengewalt-Journalismus), TRACE ELEMENTS MEDIA (Trace Dominguez), CLIMATE TRACE (WattTime). "PLUG" dicht, u. a. PLUG STAR (Plug In America, E-Autos) | nur Software-Begriffe (Tracing-Plugins) | kein Treffer | alle frei; IG unklar | frei |
+| **THE METER SPINS** | 🟢 grün | keiner | "METER" in Kl. 41: AS A METER OF FACT (Denton County Electric Cooperative, Kl. 41, registriert), BREAK THE METER (Kl. 41, Shows); ACROSS THE METER (Engine No. 1, Energie, Kl. 4/9/35 u. a., Notice of Allowance). Keine nahe Kombination | nichts gefunden | kein Treffer | alle frei; IG unklar | themeterspins.com und meterspins.com frei |
+| **CONTROL ROOM NOTES** | 🟡 gelb | keiner | **CONTROL ROOM**, Biegel/Larsen (Kanada), Kl. 9/25/41 (DJs, Musik), **angemeldet am 07.10.2026**, noch nicht geprüft. **CTRL ROOM** (CTRL ROOM LLC), Kl. 35/41, u. a. Podcasts und Videoproduktion, Office Action. CONTROLROOM (Kl. 9, Musiksoftware, registriert). Ältere CONTROL ROOM (Casbah, Kl. 38/41) gelöscht | Podcasts "Control Room" (Calarco/Gottlieb, TV & Film, 2026; Ad Libitum, Business), viele Songs und Bücher "Control Room" | MASTERING THE CONTROL ROOM (ABB, aktiv) | alle frei; IG unklar | frei |
+
+**Ranking:** 1. TOWER TO TOASTER, 2. THE METER SPINS, 3. TRACE THE PLUG, 4. THE OTHER END OF THE PLUG / OTHER END OF THE WIRE. Mit Vorbehalt: THE LINE WALK, CONTROL ROOM NOTES, THE SIXTY CYCLE. Nicht empfohlen: SIXTY HERTZ und HERTZ AND HUM.
+
+### 4.2 Begründung je Name
+
+**SIXTY HERTZ / THE SIXTY HERTZ 🔴**
+- **Registerkonflikt:** 60HERTZ ist für Kl. 9 eingetragen, für Software zu Stromerzeugung und -verteilung. Klang und Bedeutung sind identisch ("60" = "sixty"), und das Feld ist dasselbe (Strom). In Kl. 9 wäre eine Zurückweisung nach § 2(d) sehr wahrscheinlich. In Kl. 41 sind die Dienstleistungen verschieden, aber verwandt (Energie). Das Unternehmen tritt als **60Hertz Energy** auf und hat damit auch Common-Law-Rechte.
+- **Beschreibend nach § 2(e)(1):** 60 Hz ist die Netzfrequenz in den USA. Für Bildungsvideos über das US-Stromnetz beschreibt der Name direkt ein Thema. Eine Zurückweisung ist gut möglich, allenfalls ginge das Supplemental Register. "THE" ändert daran nichts.
+- **Hertz (Autovermietung):** Hertz System hält über 50 lebende US-Marken, darunter HERTZ in Kl. 9, 16 und 35 sowie HERTZ ELECTRIFIES in Kl. 41 (Bildung zu E-Autos und Ladeinfrastruktur, also energienah). HERTZ dürfte als "famous mark" für den Verwässerungsschutz gelten (15 U.S.C. § 1125(c)). Bei "Sixty Hertz" wird "Hertz" aber klar als physikalische Einheit verwendet. Darum schätze ich die Verwechslungs- und Verwässerungsgefahr als **gering bis mittel** ein: Ein Widerspruch ist denkbar, aber nicht naheliegend.
+- **Praktisch:** @SixtyHertz ist auf YouTube, X und TikTok vergeben, und sixtyhertz.com ist seit 2009 registriert. Die Vorprüfung bezog sich offenbar auf @TheSixtyHertz.
+- **Audio/Musik:** Eine eingetragene Audio- oder Musikmarke habe ich nicht gefunden. Es gibt aber einzelne Musik- und Podcast-Nutzungen (siehe Tabelle) und das Studio "80 Hertz" (UK).
+
+**THE SIXTY CYCLE 🟡**
+- Kein Registertreffer. "Sixty cycle" ist der ältere Ausdruck für 60 Hz und damit für Netz-Inhalte ebenfalls **eher beschreibend**. Er ist aber weniger geläufig, sodass eine Einstufung als suggestiv vertretbar ist (Risiko nach § 2(e)(1): mittel).
+- Common Law: **60 Cycle Hum** ist ein großer, aktiver YouTube-Kanal und Podcast (Gitarren). Beide Angebote wären YouTube-Unterhaltung, und das Element "60 cycle" ist gleich. Die Themen sind aber verschieden, und "Hum" fehlt. Das Risiko schätze ich als gering bis mittel ein. Dazu sind @SixtyCycle und sixtycycle.com vergeben.
+
+**TOWER TO TOASTER 🟢**
+- Kein Treffer in USPTO, Swissreg, Web oder Apple. Der Name ist suggestiv (vom Strommast bis zum Toaster), nicht beschreibend, und gut eintragbar. Alle Handles und die .com-Domain sind frei.
+- Branding-Hinweis: "Tower" ist im UK eine Toaster-Marke (Tower Housewares). Im US-Markt und in Kl. 41 ist das unerheblich.
+
+**THE OTHER END OF THE PLUG 🟢 / OTHER END OF THE WIRE 🟢**
+- Kein lebender Treffer. Die einzige Kl.-41-Marke THE OTHER END (Videoproduktion, Kanada) ist abandoned. Beide Namen sind suggestiv und eintragbar.
+- Nachteil: Sie sind lang. "The Other End of the Leash" (bekanntes Hundebuch) ist ein Buchtitel und markenrechtlich unkritisch. "Wire" kollidiert in dieser Wortfolge nicht mit THE WIRE (HBO).
+
+**THE LINE WALK 🟡**
+- Kein exakter Treffer. **WALK THE LINE** (Barstool Sports, Kl. 41, Multimedia-Programm) verwendet dieselben Wörter umgekehrt, und die Phrase ist durch Johnny Cash bekannt. Die Bedeutungen unterscheiden sich (Begehung einer Leitung gegenüber "auf Linie bleiben"). Ich halte das Risiko nach § 2(d) für gering bis mittel. Barstool ist allerdings ein streitbarer Medienkonzern.
+- "Line walk" ist ein Fachbegriff der Netzbetreiber für die Inspektion von Leitungen. Er wirkt suggestiv bis leicht beschreibend.
+- Praktisch: X @thelinewalk (inaktives Fremdkonto) und linewalk.com sind vergeben.
+
+**HERTZ AND HUM 🔴**
+- Kein exakter Treffer. "HERTZ" steht aber **am Anfang** und prägt den Gesamteindruck. Die berühmte Marke HERTZ ist in Kl. 41 mit HERTZ ELECTRIFIES (Bildung zu E-Autos), HERTZ #1 CLUB und HERTZ RACING GOLD vertreten, dazu kommt die Hertz Foundation (MINT-Bildung, Kl. 41). Im Gegensatz zu "Sixty Hertz" wird "Hertz" hier nicht eindeutig als Maßeinheit gelesen. Das Risiko von Verwechslung, Verwässerung und einem Widerspruch durch Hertz System ist **mittel bis hoch**.
+- Eintragbarkeit: Die Kombination selbst ist suggestiv. Das Problem ist der Konflikt mit HERTZ, nicht § 2(e)(1).
+
+**TRACE THE PLUG 🟢**
+- Kein Treffer. Die Felder "TRACE" und "PLUG" sind zwar voll, aber nichts kommt der Kombination nahe. Der Name ist suggestiv und eintragbar.
+- Branding-Hinweis: "the plug" ist im US-Slang auch der Ausdruck für einen Dealer bzw. eine Bezugsquelle.
+
+**THE METER SPINS 🟢**
+- Kein Treffer. Die "METER"-Marken in Kl. 41 haben andere Wortbilder. AS A METER OF FACT (Elektrizitätsgenossenschaft) liegt thematisch nahe, ist aber klar verschieden. Der Name ist suggestiv und eintragbar. Handles und beide .com-Varianten sind frei.
+
+**CONTROL ROOM NOTES 🟡**
+- Kein exakter Treffer. Eine **frische Anmeldung CONTROL ROOM** (07.10.2026, Kl. 9/41, Musik/DJ) und CTRL ROOM (Kl. 41, u. a. Podcasts) belegen aber das prägende Element. "Notes" ist schwach. Die Leistungen sind verschieden (Musik gegenüber Energiebildung), deshalb halte ich das Risiko für gering bis mittel.
+- "Control room" ist im Netzbetrieb ein Fachbegriff (Leitwarte). Mit "Notes" ist der Name für Inhalte über Netzbetrieb **teilweise beschreibend**: Das Risiko nach § 2(e)(1) ist mittel, wahrscheinlich müsste "CONTROL ROOM" disclaimt werden. Im Web und bei Podcasts gibt es zahlreiche "Control Room"-Nutzungen.
+
+### 4.3 Fundstellen
+
+USPTO (TSDR):
+- 60HERTZ, 60Hertz Inc., SN 88155484 / RN 5757618: https://tsdr.uspto.gov/#caseNumber=88155484&caseType=SERIAL_NO&searchType=statusSearch
+- HERTZ ELECTRIFIES, Hertz System, SN 98310129: https://tsdr.uspto.gov/#caseNumber=98310129&caseType=SERIAL_NO&searchType=statusSearch
+- HERTZ, Kl. 9, SN 85682572: https://tsdr.uspto.gov/#caseNumber=85682572&caseType=SERIAL_NO&searchType=statusSearch, Kl. 9/12/35/36/39, SN 87982503: https://tsdr.uspto.gov/#caseNumber=87982503&caseType=SERIAL_NO&searchType=statusSearch, Kl. 16, SN 87890365: https://tsdr.uspto.gov/#caseNumber=87890365&caseType=SERIAL_NO&searchType=statusSearch, Kl. 35, SN 76405097: https://tsdr.uspto.gov/#caseNumber=76405097&caseType=SERIAL_NO&searchType=statusSearch
+- HERTZ RACING GOLD, SN 99394547: https://tsdr.uspto.gov/#caseNumber=99394547&caseType=SERIAL_NO&searchType=statusSearch
+- HERTZ FOUNDATION, SN 78853805: https://tsdr.uspto.gov/#caseNumber=78853805&caseType=SERIAL_NO&searchType=statusSearch
+- 40 CYCLE HUM, SN 99552610: https://tsdr.uspto.gov/#caseNumber=99552610&caseType=SERIAL_NO&searchType=statusSearch
+- WALK THE LINE, Barstool Sports, SN 88733582: https://tsdr.uspto.gov/#caseNumber=88733582&caseType=SERIAL_NO&searchType=statusSearch
+- LINE WALKER, SN 77322769: https://tsdr.uspto.gov/#caseNumber=77322769&caseType=SERIAL_NO&searchType=statusSearch
+- THE OTHER END (dead), SN 97227125: https://tsdr.uspto.gov/#caseNumber=97227125&caseType=SERIAL_NO&searchType=statusSearch
+- THE HUM, SN 98307651: https://tsdr.uspto.gov/#caseNumber=98307651&caseType=SERIAL_NO&searchType=statusSearch
+- CONTROL ROOM (Biegel/Larsen), SN 50148219: https://tsdr.uspto.gov/#caseNumber=50148219&caseType=SERIAL_NO&searchType=statusSearch
+- CTRL ROOM, SN 50006870: https://tsdr.uspto.gov/#caseNumber=50006870&caseType=SERIAL_NO&searchType=statusSearch
+- CONTROLROOM, SN 88496192: https://tsdr.uspto.gov/#caseNumber=88496192&caseType=SERIAL_NO&searchType=statusSearch
+- AS A METER OF FACT, SN 88948352: https://tsdr.uspto.gov/#caseNumber=88948352&caseType=SERIAL_NO&searchType=statusSearch
+- ACROSS THE METER, SN 99762342: https://tsdr.uspto.gov/#caseNumber=99762342&caseType=SERIAL_NO&searchType=statusSearch
+
+Common Law und Social Media:
+- 60Hertz Energy: https://60hertzenergy.com, https://www.cbinsights.com/company/60hertz
+- Podcast "60 Hertz" (Floriano): https://podcasts.apple.com/us/podcast/60-hertz/id1451454528
+- X @sixtyhertz ("60Hz Podcast"): https://x.com/sixtyhertz, YouTube @SixtyHertz: https://www.youtube.com/@sixtyhertz
+- 60 Cycle Hum: https://sandiegoreader.com/news/2022/apr/07/blurt-60-cycle-hum-podcast-mines-gold-guitar-gear/, https://sponsorradar.com/channels/60cyclehumcast, https://rephonic.com/podcasts/60-cycle-hum-the-guitar-podcast
+- YouTube @SixtyCycle: https://www.youtube.com/@sixtycycle
+- X @thelinewalk: https://x.com/thelinewalk
+- Podcast "Control Room" (Calarco/Gottlieb): https://podcasts.apple.com/us/podcast/control-room/id1849502217
+- Gedicht "At the Other End of the Wire" (Sandra Lim): Websuche, keine stabile URL ermittelt
+
+### 4.4 Grenzen der Recherche (Runde 4)
+
+- Es gelten die Grenzen aus Abschnitt 5: nur Text, keine Bildmarken, EUIPO/TMview/WIPO nicht geprüft, keine Firmenregister der Bundesstaaten und keine State Trademarks, Spotify nicht direkt abgefragt.
+- **Instagram** ließ sich ohne Login für keinen der Namen klären.
+- Die **Swissreg-Volltextsuche** liefert bei Einzelwörtern ("hertz") viele Adress-Treffer. Ausgewertet habe ich nur Titeltreffer der ersten 500 Ergebnisse. Die Klassen von MASTERING THE CONTROL ROOM (ABB) habe ich nicht ausgelesen.
+- Die **Abozahl von 60 Cycle Hum** stammt aus einer Drittquelle ohne Datum.
+- Zur **Verwässerung (HERTZ):** Ob HERTZ als "famous" gilt und wie die Unterscheidung zwischen der Einheit Hertz und der Marke Hertz bewertet wird, ist eine Rechtsfrage. Meine Einstufung ist eine Faktenschätzung.
+- Die Handle-Prüfungen sind nur Indizien. Die Vorprüfung meldete die Handles als frei. Bei SIXTY HERTZ, SIXTY CYCLE und LINE WALK gilt das nur für die Variante mit "The".
