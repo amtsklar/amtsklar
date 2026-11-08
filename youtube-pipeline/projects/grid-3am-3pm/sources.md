@@ -114,3 +114,5 @@ Data pulled from the EIA API v2 (EIA-930, `electricity/rto/region-data` and `fue
 - s09: SPP wind ÷ demand 2025 (Central): 46.9 % (2 a.m.), 31.1 % (noon). Dec 28 callout from row 7.
 - s18/s19: CAISO April 2025 average day (Pacific): net load = demand − solar − wind; minimum ≈ 5.4 GW (hour ending 4 p.m.), maximum ≈ 22.2 GW (hour ending 10 p.m.) → "+17 GW in 6 hours" (on-screen label, marked "our calculation").
 - s12: 12 → 24 GW (row 11). s24: 5,700 → 9,100 MW (CAISO DMM, row on batteries). s29: $36 / >$500 / <$0 (LBNL ReWEP, rows 27–28). s33: 8.8 % → 7.1 % (row 32).
+
+- Net load / rooftop solar: EIA Hourly Electric Grid Monitor (EIA-930), "About" section – balancing-authority demand excludes behind-the-meter (rooftop) solar, which instead lowers measured demand. https://www.eia.gov/electricity/gridmonitor/about

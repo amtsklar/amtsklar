@@ -209,7 +209,7 @@
   },
   {
    "query": "money calculator",
-   "text": "Berkeley Lab found that the average wholesale price across the major U.S. power markets in 2023 was 36 dollars per megawatt-hour. But in Texas, some summer evenings topped 500 dollars, and in California, on sunny spring days, prices dropped below zero.",
+   "text": "Berkeley Lab found that the average wholesale price across the major U.S. power markets in 2023 was 36 dollars per megawatt-hour. But in Texas, hourly prices on some summer evenings topped 500 dollars, and in California, on sunny spring days, prices dropped below zero.",
    "fallback": [
     "calculator",
     "coins"
@@ -269,7 +269,7 @@
   },
   {
    "query": "power outlet plug night",
-   "text": "Most electric vehicle drivers charge overnight at home, the Department of Energy says, and some utilities offer time-of-use rates that change with the hour.",
+   "text": "Most electric vehicle drivers charge overnight at home, the Department of Energy says, and some utilities offer time-of-use rates that cost less in some hours.",
    "fallback": [
     "tesla charging",
     "home ev charger",
