@@ -94,7 +94,7 @@
   },
   {
    "query": "wind farm power lines",
-   "text": "They aren't broken. Someone decided to stop them. Let's follow the wind from blade to power line and find out who made that call, and why.",
+   "text": "Usually they aren't broken. Something told them to stop. Let's follow the wind from blade to power line and find out what made that call, and why.",
    "fallback": [
     "power lines",
     "wind turbine"

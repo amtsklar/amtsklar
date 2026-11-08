@@ -17,7 +17,7 @@
   },
   {
    "query": "power lines",
-   "text": "That was one prototype, running at full power. At low power, about 35 came back.",
+   "text": "That was one research test system, running at full power. At low power, about 35 came back.",
    "fallback": [
     "electricity pylon",
     "transmission tower"
