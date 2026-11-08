@@ -353,6 +353,14 @@ def stage_images_pixabay(project):
     used = {c["id"] for c in credits.values()}
     if (b / "rejected.json").exists():
         used |= set(json.loads((b / "rejected.json").read_text()))
+    for other in project.parent.glob("*/build/credits.json"):   # never reuse a clip from another video of the channel
+        if other.parent.parent == project:
+            continue
+        try:
+            if json.loads((other.parent.parent / "scenes.json").read_text()).get("channel") == cfg.get("channel"):
+                used |= {c.get("id") for c in json.loads(other.read_text()).values()}
+        except Exception:
+            pass
     for i, sc in enumerate(cfg["scenes"]):
         need = max(1, math.ceil((tl[i]["dur"] + tl[i]["gap"]) / CLIP_MAX))
         if (b / "graphics" / f"s{i:02d}.png").exists():
@@ -658,11 +666,73 @@ def stage_render(project):
     lst = b / "clips.txt"
     lst.write_text("".join(f"file '{c.resolve().as_posix()}'\n" for c in clips))
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(b / "video_only.mp4"))
-    # mux narration, loudness-normalised for YouTube (-14 LUFS)
-    sh("ffmpeg", "-y", "-i", str(b / "video_only.mp4"), "-i", str(b / "voice.wav"),
-       "-af", "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000", "-c:v", "copy",
-       "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(b / "video.mp4"))
-    print(f"render: {b / 'video.mp4'}  {duration(b / 'video.mp4') / 60:.2f} min")
+    stage_finish(project)
+
+
+# ---------------------------------------------------------------- end screen + music + final mix
+ENDCARD_S = 20.0
+MUSIC = ROOT / "assets" / "music"
+
+
+def make_endcard(path):
+    """1920x1080 end screen in brand style, with free areas where YouTube's end-screen
+    elements go (video tile left, subscribe circle right)."""
+    from PIL import Image, ImageDraw, ImageFont, ImageFilter
+    W_, H_ = 1920, 1080
+    im = Image.new("RGB", (W_, H_), (8, 14, 28))
+    d = ImageDraw.Draw(im)
+    for x in range(0, W_, 80):
+        d.line([(x, 0), (x, H_)], fill=(14, 24, 44))
+    for y in range(0, H_, 80):
+        d.line([(0, y), (W_, y)], fill=(14, 24, 44))
+    big = ImageFont.truetype(str(FONT), 96)
+    small = ImageFont.truetype(str(FONT), 46)
+    t = "THE HIDDEN GRID"
+    d.text(((W_ - d.textlength(t, font=big)) / 2, 90), t, font=big, fill="white")
+    t2 = "FOLLOW THE ELECTRON"
+    d.text(((W_ - d.textlength(t2, font=small)) / 2, 205), t2, font=small, fill=(255, 196, 0))
+    # placeholder frames (YouTube end-screen elements are placed on top in Studio)
+    d.rounded_rectangle((150, 340, 150 + 880, 340 + 495), 18, outline=(70, 190, 255), width=4)
+    d.text((150 + 440 - d.textlength("WATCH NEXT", font=small) / 2, 340 + 220), "WATCH NEXT", font=small,
+           fill=(70, 120, 170))
+    cx, cy, r = 1440, 588, 190
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=(255, 196, 0), width=6)
+    d.text((cx - d.textlength("SUBSCRIBE", font=small) / 2, cy + r + 30), "SUBSCRIBE", font=small, fill="white")
+    im.save(path)
+
+
+def stage_finish(project):
+    """Append the branded end screen, lay the channel's own music bed under the narration
+    (quiet under speech, up on the end screen + sonic logo), loudness-normalise."""
+    b = build_dir(project)
+    ec_png, ec_mp4 = b / "endcard.png", b / "endcard.mp4"
+    make_endcard(ec_png)
+    sh("ffmpeg", "-y", "-loop", "1", "-framerate", str(FPS), "-t", f"{ENDCARD_S}", "-i", str(ec_png),
+       "-vf", f"scale={W}:{H},fps={FPS},format=yuv420p,fade=t=in:st=0:d=0.6", "-c:v", "libx264",
+       "-preset", "veryfast", "-crf", "20", "-an", str(ec_mp4))
+    lst = b / "final_list.txt"
+    lst.write_text(f"file '{(b / 'video_only.mp4').resolve().as_posix()}'\nfile '{ec_mp4.resolve().as_posix()}'\n")
+    sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(b / "video_full.mp4"))
+    main_len = duration(b / "video_only.mp4")
+    total = main_len + ENDCARD_S
+    bed, sting = MUSIC / "hidden_grid_bed.wav", MUSIC / "hidden_grid_sting.wav"
+    if bed.exists():
+        fc = (f"[1:a]aresample=48000,aformat=channel_layouts=stereo,apad=whole_dur={total:.3f}[v];"
+              f"[2:a]aresample=48000,atrim=0:{total:.3f},"
+              f"volume='if(lt(t,{main_len:.2f}),0.09,0.09+0.31*min(1,(t-{main_len:.2f})/1.5))':eval=frame,"
+              f"afade=t=out:st={total - 3:.2f}:d=3[m];"
+              f"[3:a]aresample=48000,adelay={int(main_len * 1000)}|{int(main_len * 1000)},volume=0.8[s];"
+              f"[v][m][s]amix=inputs=3:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+        sh("ffmpeg", "-y", "-i", str(b / "video_full.mp4"), "-i", str(b / "voice.wav"),
+           "-stream_loop", "-1", "-i", str(bed), "-i", str(sting), "-filter_complex", fc,
+           "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{total:.3f}",
+           "-movflags", "+faststart", str(b / "video.mp4"))
+    else:
+        sh("ffmpeg", "-y", "-i", str(b / "video_full.mp4"), "-i", str(b / "voice.wav"),
+           "-af", f"apad=whole_dur={total:.3f},loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000",
+           "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{total:.3f}", "-movflags", "+faststart",
+           str(b / "video.mp4"))
+    print(f"render: {b / 'video.mp4'}  {duration(b / 'video.mp4') / 60:.2f} min (incl. {ENDCARD_S:.0f}s end screen)")
 
 
 # ---------------------------------------------------------------- thumbnails
@@ -687,8 +757,9 @@ def stage_thumbs(project):
         if t.get("badge"):
             f = ImageFont.truetype(str(FONT), 64)
             w = d.textlength(t["badge"], font=f)
-            d.rounded_rectangle((1280 - w - 110, 560, 1240, 680), 18, fill=(214, 40, 40))
-            d.text((1280 - w - 80, 572), t["badge"], font=f, fill="white")
+            # top-right: bottom-right is covered by YouTube's duration stamp
+            d.rounded_rectangle((1280 - w - 110, 40, 1240, 160), 18, fill=(214, 40, 40))
+            d.text((1280 - w - 80, 52), t["badge"], font=f, fill="white")
         bg.save(out / f"thumbnail_{n + 1}.jpg", quality=92)
         print("  thumb", n + 1)
 

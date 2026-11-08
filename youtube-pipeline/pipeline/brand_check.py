@@ -69,6 +69,25 @@ def check(path):
                 f = rel / f"captions.{lang}.srt"
                 if f.exists() and f.read_text().count(" --> ") != n_en:
                     errs.append(f"captions {lang}: cue count differs from English")
+    # licensed voice (edge-tts is fine for drafts only)
+    eng = cfg.get("tts", "edge")
+    if eng not in BRAND.get("tts_engine_release", []):
+        (warns if DRAFT else errs).append(f"tts engine '{eng}' is not licensed for publishing (use azure/elevenlabs)")
+    # media: no clip used in two different videos; download date recorded
+    cj = path / "build" / "credits.json"
+    if cj.exists() and not short:
+        mine = {c.get("id") for c in json.loads(cj.read_text()).values()}
+        for other in (ROOT / "projects").glob("*/build/credits.json"):
+            if other.parent.parent == path:
+                continue
+            try:
+                if json.loads((other.parent.parent / "scenes.json").read_text()).get("channel") != BRAND["channel"] or json.loads((other.parent.parent / "scenes.json").read_text()).get("status") == "draft":
+                    continue
+            except Exception:
+                continue
+            dup = mine & {c.get("id") for c in json.loads(other.read_text()).values()}
+            if dup:
+                errs.append(f"{len(dup)} clip(s) also used in {other.parent.parent.name}: {sorted(dup)[:5]}")
     status = "FAIL" if errs else "OK"
     print(f"[{status}] {path.name}")
     for e in errs:
@@ -78,6 +97,8 @@ def check(path):
     return not errs
 
 
+DRAFT = "--draft" in sys.argv
+
 if __name__ == "__main__":
-    good = all([check(p) for p in sys.argv[1:]])
+    good = all([check(p) for p in sys.argv[1:] if p != "--draft"])
     sys.exit(0 if good else 1)
