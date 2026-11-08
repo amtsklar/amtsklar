@@ -232,7 +232,7 @@ CHAPITRES
 7:08 Givre et faune
 8:27 Récap
 
-Stock footage and photos: Pixabay (Pixabay Content License).
+Vidéos et photos d'archives : Pixabay (Pixabay Content License).
 ```
 
 ### Tags

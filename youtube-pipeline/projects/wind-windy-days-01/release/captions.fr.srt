@@ -34,11 +34,11 @@ cette décision, et pourquoi.
 
 9
 00:00:21,859 --> 00:00:24,094
-En route, vous verrez pourquoi un peu
+Vous verrez pourquoi un peu plus
 
 10
 00:00:24,094 --> 00:00:26,329
-plus de vent donne bien plus de puissance.
+de vent donne bien plus de puissance.
 
 11
 00:00:26,607 --> 00:00:29,435
@@ -90,8 +90,8 @@ son moyeu à environ 335 pieds,
 
 21
 00:01:05,653 --> 00:01:09,551
-et un rotor plus large qu'un
-terrain de football américain.
+et un rotor plus large qu'un terrain
+de foot américain n'est long.
 
 22
 00:01:10,380 --> 00:01:13,259
@@ -354,8 +354,8 @@ pour réduire le risque de dégâts.
 
 78
 00:04:30,959 --> 00:04:34,047
-L'orientation garde
-l'éolienne face au vent.
+Le moteur d'orientation garde
+le rotor face au vent.
 
 79
 00:04:34,372 --> 00:04:37,774
@@ -603,13 +603,13 @@ Et puis il y a la faune.
 
 131
 00:07:36,188 --> 00:07:38,940
-Les chauves-souris risquent
-le plus en fin d'été
+Chauves-souris : risque
+maximal en fin d'été
 
 132
 00:07:38,940 --> 00:07:41,691
-et en automne, et volent
-plus par vent faible.
+et en automne ; plus
+actives par vent faible.
 
 133
 00:07:42,295 --> 00:07:45,663
@@ -662,8 +662,8 @@ Puis une réanalyse
 
 143
 00:08:20,887 --> 00:08:26,808
-de l'USGS, le service géologique américain,
-a mis en doute l'ampleur réelle de cet effet.
+de l'USGS (service géologique américain)
+a douté de l'ampleur réelle de cet effet.
 
 144
 00:08:27,646 --> 00:08:31,001

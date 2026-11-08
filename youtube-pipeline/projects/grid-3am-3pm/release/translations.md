@@ -199,7 +199,7 @@ Stock footage and photos: Pixabay (Pixabay Content License).
 
 Language code: fr
 
-**Title:** D'où vient votre électricité à 3 h du matin vs à 15 h
+**Title:** D'où vient votre électricité à 3 h du matin et à 15 h
 
 **Description:**
 
@@ -214,7 +214,7 @@ Dans cette vidéo :
 - La charge nette et la courbe du canard, expliquées simplement
 - Les batteries qui déplacent le solaire de midi vers le soir
 - Pourquoi les prix de gros fluctuent, et comment ils peuvent devenir négatifs
-- Pourquoi votre timing compte (recharge de voiture électrique, tarifs horaires)
+- Pourquoi le moment choisi compte (recharge de voiture électrique, tarifs horaires)
 
 Sources :
 EIA, Hourly electricity consumption varies throughout the day and across seasons (2020) - https://www.eia.gov/todayinenergy/detail.php?id=42915
@@ -253,10 +253,10 @@ CHAPITRES
 3:25 Le problème du coucher de soleil
 4:50 Batteries : déplacer midi vers le soir
 5:21 Pourquoi les prix fluctuent
-7:12 Votre prise, votre timing
+7:12 Votre prise, votre horaire
 8:18 Récap
 
-Stock footage and photos: Pixabay (Pixabay Content License).
+Vidéos et photos d'archives : Pixabay (Pixabay Content License).
 ```
 
 ## Hindi

@@ -21,13 +21,13 @@ vous vivez, les centrales
 
 6
 00:00:14,412 --> 00:00:17,408
-La nuit, peut-être un
-parc éolien des plaines.
+La nuit, peut-être
+un parc éolien en plaine.
 
 7
 00:00:17,918 --> 00:00:22,504
 L'après-midi, des panneaux
-solaires éteints à 3 h du matin.
+solaires inactifs à 3 h du matin.
 
 8
 00:00:22,904 --> 00:00:26,845
@@ -49,7 +49,7 @@ paient pour donner leur électricité.
 
 12
 00:00:36,211 --> 00:00:38,637
-Le réseau n'est pas une seule machine.
+Car le réseau n'est pas UNE machine.
 
 13
 00:00:38,881 --> 00:00:41,052
@@ -145,13 +145,13 @@ général plus fort la nuit.
 
 33
 00:01:49,318 --> 00:01:51,959
-Prenez le Southwest
-Power Pool, gestionnaire
+Prenez le Southwest Power Pool,
+qui gère le
 
 34
 00:01:51,959 --> 00:01:54,601
-du réseau d'une large
-part des Grandes Plaines.
+réseau d'une large part
+des Grandes Plaines.
 
 35
 00:01:55,274 --> 00:01:59,957
@@ -262,11 +262,11 @@ Voici le rebondissement promis.
 
 58
 00:03:27,554 --> 00:03:29,452
-Le pire pour le réseau, croit-on,
+Pour le réseau, le pire serait
 
 59
 00:03:29,452 --> 00:03:31,351
-c'est l'après-midi le plus chaud.
+l'après-midi le plus chaud.
 
 60
 00:03:31,734 --> 00:03:34,497
@@ -378,11 +378,11 @@ Une réponse en plein essor : la batterie.
 
 84
 00:04:53,105 --> 00:04:55,256
-Chargez-la au solaire bon marché de midi,
+Remplissez-la de solaire bon marché
 
 85
 00:04:55,256 --> 00:04:57,099
-puis utilisez-la le soir.
+à midi, puis videz-la le soir.
 
 86
 00:04:57,703 --> 00:05:00,484
@@ -480,11 +480,11 @@ Pourquoi faire ça ?
 
 107
 00:06:10,645 --> 00:06:12,636
-Pour certaines centrales, s'arrêter
+Pour certaines centrales, un bref
 
 108
 00:06:12,636 --> 00:06:14,628
-un moment est compliqué ou coûteux.
+arrêt est difficile ou coûteux.
 
 109
 00:06:15,231 --> 00:06:19,323
@@ -567,13 +567,13 @@ La plupart d'entre nous ne voient jamais
 
 126
 00:07:17,856 --> 00:07:20,549
-les prix de gros, mais
-votre timing compte.
+les prix de gros.
+L'heure compte pourtant.
 
 127
 00:07:20,929 --> 00:07:23,907
-Selon le ministère américain
-de l'Énergie, la plupart
+Selon le ministère de l'Énergie,
+la plupart
 
 128
 00:07:23,907 --> 00:07:26,885
@@ -592,12 +592,13 @@ heures et plus à d'autres.
 
 131
 00:07:36,508 --> 00:07:39,548
-Ça marche, car la plupart des foyers ont
+Ça marche, car la plupart des
+foyers ont désormais
 
 132
 00:07:39,548 --> 00:07:42,208
 des compteurs intelligents
-au relevé horaire.
+à relevé horaire.
 
 133
 00:07:42,905 --> 00:07:47,394
@@ -638,8 +639,8 @@ charger la voiture
 
 141
 00:08:10,796 --> 00:08:13,454
-en heure creuse ne sert
-pas qu'à votre facture.
+en heure creuse n'aide pas
+que votre facture.
 
 142
 00:08:13,733 --> 00:08:15,881
@@ -690,7 +691,7 @@ gaz foncent pour le couvrir.
 
 152
 00:08:45,138 --> 00:08:47,030
-Le réseau n'est pas une seule machine.
+Le réseau n'est pas UNE machine.
 
 153
 00:08:47,309 --> 00:08:49,492

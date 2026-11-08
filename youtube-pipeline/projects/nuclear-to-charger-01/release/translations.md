@@ -246,7 +246,7 @@ CHAPITRES
 7:26 Étape 5 : le chargeur
 8:31 Récap
 
-Stock footage and photos: Pixabay (Pixabay Content License).
+Vidéos et photos d'archives : Pixabay (Pixabay Content License).
 ```
 
 **Tags:** comment l'électricité arrive chez vous, nucléaire expliqué, comment fonctionne une centrale nucléaire, réseau électrique expliqué, lignes haute tension, pourquoi la haute tension, transformateur élévateur, transformateur sur poteau, vitesse de dérive des électrons, courant alternatif expliqué, 120 240 volts, pertes en ligne, comment fonctionne un chargeur, follow the electron, other end of the wire

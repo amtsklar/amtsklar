@@ -202,7 +202,7 @@ Mettez 100, récupérez 28 : l'ALLER-RETOUR de l'hydrogène
 
 ```
 Transformez de l'électricité en hydrogène, puis à nouveau en électricité : lors du test d'un laboratoire national américain, seuls 28 à 35 % sont revenus. Une batterie réseau en restitue environ 82.
-Alors, où l'hydrogène a-t-il vraiment du sens ? Nous suivons l'électron de la prise à l'électrolyseur, au réservoir, au champ fertilisé et à l'aciérie.
+Alors, où l'hydrogène est-il vraiment pertinent ? Nous suivons l'électron de la prise à l'électrolyseur, au réservoir, au champ fertilisé et à l'aciérie.
 
 Dans cette vidéo :
 - Pourquoi l'hydrogène est un vecteur énergétique, et non une source d'énergie
@@ -248,7 +248,7 @@ CHAPITRES
 7:44 Le pari hydrogène des États-Unis
 8:32 Récap
 
-Stock footage and photos: Pixabay (Pixabay Content License).
+Vidéos et photos d'archives : Pixabay (Pixabay Content License).
 ```
 
 **Tags**

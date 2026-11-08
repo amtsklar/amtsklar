@@ -22,7 +22,7 @@ Pour environ 18 % de l'électricité
 6
 00:00:16,854 --> 00:00:22,125
 selon l'EIA, l'agence d'information sur
-l'énergie, ce voyage part d'un atome scindé.
+l'énergie, tout part d'un atome scindé.
 
 7
 00:00:22,512 --> 00:00:25,821
@@ -36,12 +36,11 @@ vous surprendre en chemin.
 
 9
 00:00:30,024 --> 00:00:32,276
-Environ deux tiers de l'énergie ne
+Environ deux tiers de l'énergie
 
 10
 00:00:32,276 --> 00:00:34,528
-quittent jamais la
-centrale en électricité.
+ne sortent jamais en électricité.
 
 11
 00:00:34,911 --> 00:00:38,534
@@ -93,8 +92,8 @@ dans des crayons de 12 pieds de long.
 
 22
 00:01:07,219 --> 00:01:10,690
-Quand un atome d'uranium
-235 absorbe un neutron lent,
+Quand un atome d'uranium 235
+absorbe un neutron lent,
 
 23
 00:01:10,690 --> 00:01:14,162
@@ -343,8 +342,7 @@ Pourquoi une tension si haute ?
 
 76
 00:04:24,357 --> 00:04:26,737
-Un transformateur ne
-crée pas de puissance.
+Un transfo ne crée pas de puissance.
 
 77
 00:04:27,178 --> 00:04:29,609
@@ -396,8 +394,8 @@ dans un poste électrique,
 
 88
 00:05:03,386 --> 00:05:06,674
-où des transformateurs la
-baissent pour le réseau local.
+où des transfos la baissent
+pour les lignes locales.
 
 89
 00:05:07,050 --> 00:05:11,581
@@ -435,8 +433,8 @@ américaine type avec deux
 
 96
 00:05:34,508 --> 00:05:37,112
-fils de phase de 120
-volts, plus un neutre.
+fils de phase de 120 volts,
+plus un neutre.
 
 97
 00:05:37,681 --> 00:05:39,440
@@ -448,8 +446,8 @@ L'un d'eux donne les
 
 99
 00:05:41,617 --> 00:05:45,267
-Les deux ensemble donnent 240
-volts pour les gros appareils
+Les deux ensemble donnent
+240 volts pour les gros appareils
 
 100
 00:05:45,267 --> 00:05:48,513
@@ -642,7 +640,7 @@ chimique pour être facilement stockée.
 
 140
 00:08:12,689 --> 00:08:17,713
-Pendant la charge, les électrons parcourent
+Lors de la charge, les électrons suivent
 le circuit et les ions traversent
 
 141

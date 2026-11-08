@@ -55,11 +55,11 @@ C'est le rendement aller-retour.
 
 13
 00:00:45,693 --> 00:00:47,742
-Pourquoi l'État fédéral a-t-il
+Pourquoi Washington a-t-il misé
 
 14
 00:00:47,742 --> 00:00:49,791
-misé des milliards sur l'hydrogène ?
+des milliards sur l'hydrogène ?
 
 15
 00:00:50,174 --> 00:00:52,717
@@ -82,7 +82,7 @@ mais un problème d'usage.
 19
 00:01:03,934 --> 00:01:07,124
 Alors suivons l'électron,
-et voyons où le changer
+et voyons où le transformer
 
 20
 00:01:07,124 --> 00:01:09,959
@@ -335,7 +335,7 @@ du ministère de l'Énergie
 
 73
 00:04:47,494 --> 00:04:51,229
-recense 44 stations d'hydrogène dans
+recense 44 stations à hydrogène dans
 
 74
 00:04:51,229 --> 00:04:54,498
@@ -396,12 +396,12 @@ Mais inversons la question.
 
 86
 00:05:38,978 --> 00:05:43,401
-Et si l'on voulait non l'énergie, mais
+Et si vous vouliez non l'énergie, mais
 les atomes d'hydrogène eux-mêmes ?
 
 87
 00:05:44,005 --> 00:05:46,805
-C'est là qu'il a du sens : pas comme
+C'est là qu'il est pertinent : pas comme
 
 88
 00:05:46,805 --> 00:05:49,206
@@ -455,7 +455,7 @@ de l'hydrogène utilisé dans l'industrie.
 
 99
 00:06:24,598 --> 00:06:28,963
-Avec de l'hydrogène propre, selon
+En passant à l'hydrogène propre, selon
 le ministère, les usines d'ammoniac
 
 100
@@ -526,13 +526,13 @@ combustible conviennent aux camions qui
 
 114
 00:07:15,637 --> 00:07:19,944
-exigent des pleins rapides comme au
-diesel, ou plus de 500 miles d'autonomie.
+exigent un plein rapide comme au diesel
+ou plus de 500 miles d'autonomie.
 
 115
 00:07:20,343 --> 00:07:24,512
-Et le réseau pourrait stocker
-l'hydrogène des jours ou des semaines,
+Le réseau pourrait garder l'hydrogène
+des jours, voire des semaines,
 
 116
 00:07:24,512 --> 00:07:28,681
@@ -626,13 +626,13 @@ vecteur, pas une source.
 
 135
 00:08:37,293 --> 00:08:41,722
-Les États-Unis le produisent surtout
-à partir de gaz naturel, et convertir
+Les États-Unis le tirent surtout du gaz
+naturel, et convertir l'électricité
 
 136
 00:08:41,722 --> 00:08:46,151
-l'électricité en hydrogène et retour
-fait perdre l'essentiel de l'énergie.
+en hydrogène et inversement fait
+perdre l'essentiel de l'énergie.
 
 137
 00:08:46,533 --> 00:08:48,768
