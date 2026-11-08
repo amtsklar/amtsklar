@@ -50,7 +50,7 @@
    "graphic": "line chart: typical U.S. hourly electricity demand over 24 hours, low point near 5 a.m."
   },
   {
-   "query": "refrigerator kitchen night",
+   "query": "refrigerator",
    "text": "But it never drops to zero. Refrigerators and other always-on devices keep running, and the EIA calls that steady floor of demand baseload.",
    "fallback": [
     "street lights",
@@ -127,7 +127,7 @@
    ]
   },
   {
-   "query": "california solar farm",
+   "query": "natural gas power plant",
    "text": "California has gone even further. Solar now supplies almost half of the grid operator's demand between eight in the morning and four in the afternoon, and in the first five months of 2026, it out-generated natural gas on 82 percent of days.",
    "fallback": [
     "solar panels desert",
@@ -250,7 +250,7 @@
    "graphic": "bar chart: share of negative-price intervals in CAISO day-ahead market, 2024 (8.8%) vs. 2025 (7.1%)"
   },
   {
-   "query": "gas power plant",
+   "query": "gas turbine power station",
    "text": "On the other end are the expensive hours, when the grid calls on peakers, often gas turbines that run only occasionally. They cost more to run, but they respond quickly, which is exactly what that evening ramp needs.",
    "fallback": [
     "power plant",
@@ -312,7 +312,7 @@
    ]
   },
   {
-   "query": "sunset solar panels",
+   "query": "battery energy storage",
    "text": "At 3 p.m., solar carries more and more of the load, sometimes enough to push prices below zero. Then at sunset comes the steep neck of the duck, and batteries and gas plants race to cover it.",
    "fallback": [
     "solar farm sunset",
@@ -328,7 +328,7 @@
    ]
   },
   {
-   "query": "utility bill",
+   "query": "electricity bill",
    "text": "So what does your utility charge at night versus in the afternoon? Do you have a time-of-use rate, or one flat price? Tell me your state in the comments.",
    "fallback": [
     "paying bills",

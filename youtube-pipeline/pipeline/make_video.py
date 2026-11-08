@@ -86,7 +86,7 @@ def _tts_elevenlabs(text, voice_id, out, rate="+0%", prev="", nxt=""):
     m = re.match(r"([+-]?\d+)%", rate or "")
     vs["speed"] = max(0.7, min(1.2, 1 + (int(m.group(1)) if m else 0) / 100))
     body = json.dumps({"text": text, "model_id": brand.get("tts_model", "eleven_multilingual_v2"),
-                       "voice_settings": vs, "previous_text": prev[-600:], "next_text": nxt[:300]}).encode()
+                       "voice_settings": vs}).encode()
     req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps?output_format=mp3_44100_128",
                                  data=body, method="POST",
                                  headers={"xi-api-key": os.environ.get("ELEVENLABS_API_KEY", "proxy-injected"),
@@ -202,7 +202,7 @@ def stage_voice(project):
     inputs, filt, idx = [], [], 0
     for sc in timeline:
         if sc["gap"]:
-            filt.append(f"aevalsrc=0:d={sc['gap']}:s=24000[g{idx}]")
+            filt.append(f"aevalsrc=0:d={sc['gap']}:s=44100[g{idx}]")
             idx += 1
     seq, gi = [], 0
     args = ["ffmpeg", "-y"]
@@ -213,7 +213,8 @@ def stage_voice(project):
         if sc["gap"]:
             labels.append(f"[g{gi}]")
             gi += 1
-        filt.append(f"[{n}:a]aresample=24000,aformat=channel_layouts=mono[a{n}]")
+        filt.append(f"[{n}:a]aresample=44100,aformat=channel_layouts=mono,afade=t=in:d=0.012,areverse,"
+                    f"afade=t=in:d=0.035,areverse[a{n}]")  # micro-fades: no clicks at scene joins
         labels.append(f"[a{n}]")
     filt.append("".join(labels) + f"concat=n={len(labels)}:v=0:a=1[out]")
     args += ["-filter_complex", ";".join(filt), "-map", "[out]", str(b / "voice.wav")]
@@ -350,7 +351,10 @@ def pixabay(kind, query, per_page=20):
         params.update({"video_type": "film", "min_width": 1280})
     for attempt in range(3):
         try:
-            return json.loads(http_get(f"{base}?{urllib.parse.urlencode(params)}"))["hits"]
+            hits = json.loads(http_get(f"{base}?{urllib.parse.urlencode(params)}"))["hits"]
+            # brand rule: no AI-generated imagery (Pixabay tags it "ai generated")
+            return [h for h in hits if not re.search(r"\bai[ -]?generated\b|\bgenerative ai\b|\bai art\b",
+                                                      (h.get("tags") or "").lower())]
         except Exception as e:
             print("  pixabay retry", query, e)
             time.sleep(3 * (attempt + 1))
@@ -689,7 +693,7 @@ def stage_render(project):
 
 
 # ---------------------------------------------------------------- end screen + music + final mix
-ENDCARD_S = 20.0
+ENDCARD_S = 12.0
 MUSIC = ROOT / "assets" / "music"
 
 
@@ -746,7 +750,7 @@ def stage_finish(project):
     if bed.exists():
         fc = (f"[1:a]aresample=48000,aformat=channel_layouts=stereo,apad=whole_dur={total:.3f}[v];"
               f"[2:a]aresample=48000,atrim=0:{total:.3f},"
-              f"volume='if(lt(t,{main_len:.2f}),0.09,0.09+0.31*min(1,(t-{main_len:.2f})/1.5))':eval=frame,"
+              f"volume='if(lt(t,{main_len:.2f}),0.06,0.06+0.34*min(1,(t-{main_len:.2f})/1.5))':eval=frame,"
               f"afade=t=out:st={total - 3:.2f}:d=3[m];"
               f"[3:a]aresample=48000,adelay={int(main_len * 1000)}|{int(main_len * 1000)},volume=0.8[s];"
               f"[v][m][s]amix=inputs=3:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]")

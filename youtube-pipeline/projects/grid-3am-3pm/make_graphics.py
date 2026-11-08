@@ -40,7 +40,7 @@ def fig(title, subtitle, source):
     if subtitle:
         f.text(0.06, 0.845, subtitle, fontsize=24, color=MUTED)
     f.text(0.06, 0.035, source, fontsize=15, color="#6f7f99")
-    f.text(0.94, 0.035, "THE HIDDEN GRID", fontproperties=ANTON, fontsize=20, color=AMBER, ha="right")
+    f.text(0.94, 0.035, "OTHER END OF THE WIRE", fontproperties=ANTON, fontsize=20, color=AMBER, ha="right")
     return f
 
 

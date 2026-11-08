@@ -49,15 +49,16 @@ for k in range(int(length // bar)):
     for f in ch:
         n = note(f, bar + 2.5)
         mix[start:start + len(n)] += 0.22 * n * env(len(n))
-    bass = note(ch[0] / 2, bar + 2.0, voices=2)
-    mix[start:start + len(bass)] += 0.18 * bass * env(len(bass), 1.5, 2.0)
+    # (no sub-bass: it read as a hum under the voice on speakers)
 # soft pulse ("electron") on each beat, very quiet
 t = np.arange(len(mix)) / SR
-pulse = np.sin(2 * np.pi * 880 * t) * np.exp(-((t % 1.0)) * 18)
-mix += 0.025 * pulse
+ph = t % 1.0
+pulse = np.sin(2 * np.pi * 880 * t) * (1 - np.exp(-ph * 250)) * np.exp(-ph * 18)  # soft attack: no click
+mix += 0.012 * pulse
 # slow filter sweep for movement
 cut = 900 + 600 * np.sin(2 * np.pi * t / 32)
 mix = lowpass(mix, cut)
+mix = mix - lowpass(mix, 140.0)  # high-pass ~140 Hz: keep the low end clear for the voice
 mix = mix[: int(length * SR)]
 # crossfade end into start for seamless loop
 xf = int(3 * SR)
