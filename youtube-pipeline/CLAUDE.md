@@ -53,6 +53,8 @@ Anfangs 10–20 Videos, Rest über Nacht.
 - Große Dateien (Videos, build/) gehören nicht ins Git-Repo.
 
 ## Other End of the Wire (vormals The Hidden Grid): feste Regeln (seit Nov. 2026)
+- **Eigener Kanal von Philipp, komplett getrennt von ROOTED.** Nichts aus der Garten-Vorlage übernehmen: keine ROOTED-Farben (Grün), keine Garten-Defaults, keine ROOTED-Längen- oder Stimmregeln. Es gilt nur `brand.json`.
+- **Freigabe vor Serienproduktion:** Änderungen an Ton, Bild oder Stil erst an *einem* Video zeigen; die anderen Videos werden erst nach Philipps Freigabe neu gerendert.
 - **Corporate Identity:** verbindlich in `channel/other-end-of-the-wire/brand.json` (Stimme, Tempo, Abspann, Farben, Schriften, Längen, Disclosures). Vor jedem Upload `python3 pipeline/brand_check.py projects/<name>` (bzw. `shorts/<name>`); bei FAIL wird nicht hochgeladen.
 - **Sprach-Gegencheck bei jeder Übersetzung:** ein *zweiter*, unabhängiger Agent prüft jede Sprache (Grammatik, Satzstellung, Zeichensetzung, Fachbegriffe, Zahlen/Einheiten, Lesegeschwindigkeit max. ~17 Zeichen/s, Zeitmarken identisch zum Englischen). Erst danach gilt eine Übersetzung als fertig. Auch das englische Original wird so geprüft.
 - **Vorrat statt Vorproduktion:** höchstens 2–3 fertige Videos auf Vorrat (Puffer für Ausfälle). Nach jedem Upload die Zahlen aus YouTube Studio (CTR, Zuschauerbindung, Absprungstellen) in `channel/other-end-of-the-wire/learnings.md` eintragen; die Learnings fließen ins *nächste* Skript. Vorratsvideos werden vor dem Upload an neue Learnings angepasst (Titel, Thumbnail, Hook, ggf. Neurender – kostet nur Rechenzeit).

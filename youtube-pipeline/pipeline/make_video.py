@@ -29,7 +29,7 @@ W, H, FPS = 1920, 1080, 30
 CLIP_MAX = 7.0          # seconds per image before cutting to the next one
 GAP = 0.35              # pause between scenes (s)
 CHAPTER_GAP = 0.8       # pause before a new chapter (s)
-UA = "ROOTED-video-pipeline/1.0"
+UA = "OEW-video-pipeline/1.0"
 
 # The cloud sandbox routes HTTPS through a proxy with its own CA.
 CA = "/root/.ccr/ca-bundle.crt"
@@ -435,7 +435,7 @@ def stage_images_pixabay(project):
         print(f"  media s{i:02d}: {k}/{need}  ({sc['query']})")
 
 
-WM_UA = "ROOTEDVideoPipeline/1.0 (https://github.com/amtsklar/amtsklar; educational workshop)"
+WM_UA = "OEWVideoPipeline/1.0 (educational explainer channel)"
 
 
 def wm_get(url, timeout=40):
