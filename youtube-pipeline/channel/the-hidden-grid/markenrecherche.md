@@ -230,3 +230,101 @@ Common Law und Social Media:
 - Die **Abozahl von 60 Cycle Hum** stammt aus einer Drittquelle ohne Datum.
 - Zur **Verwässerung (HERTZ):** Ob HERTZ als "famous" gilt und wie die Unterscheidung zwischen der Einheit Hertz und der Marke Hertz bewertet wird, ist eine Rechtsfrage. Meine Einstufung ist eine Faktenschätzung.
 - Die Handle-Prüfungen sind nur Indizien. Die Vorprüfung meldete die Handles als frei. Bei SIXTY HERTZ, SIXTY CYCLE und LINE WALK gilt das nur für die Variante mit "The".
+
+---
+
+## Runde 5: fünf neue Namen und Gegenprobe der zwei Finalsieger (8. Nov. 2026)
+
+**Methode:** wie in Abschnitt 3 und Runde 4. USPTO über das JSON-Backend von tmsearch (`/prod-stage-v1-0-0/tmsearch`): exakte Phrase, Zusammenschreibung und Varianten (z. B. LINEMAN'S/LINEMANS/LINEMEN'S LOG, BREAK ROOM/BREAKROOM), alle Status, dazu die Kernwörter (BREAKER, LINEMAN, ELECTRON, SUBSTATION, LIGHTS ON, OTHER END, TOWER) gefiltert auf lebende Marken in Kl. 41, 38, 9, 35 und 16 sowie für TOWER zusätzlich Kl. 7, 8, 11 und 21 (Haushaltsgeräte) und eine Inhabersuche (Sutton Venture Group). Hinweis zur Technik: Der Klassenfilter funktioniert nur als `query_string` auf `internationalClass` (`"IC 041"`), nicht als `terms`-Filter. Swissreg über `/database/resources/query/search` (Ziel "chmarke"); das Backend verlangt inzwischen den Header `X-IPI-VERSION` mit der Version aus `/database-client/assets/build-info.json` (heute 11.0.6). Common Law über Websuche und die iTunes Search API (Podcasts, Musik, E-Books, Apps, Filme, US-Store). Handles: YouTube und X über den HTTP-Status (x.com: @nasa = 200, Fantasie-Handle = 404), TikTok über `statusCode` (10221 = nicht gefunden, @nasa = 0). Die fxtwitter-API lieferte diesmal inkonsistente Antworten (auch @NASA abwechselnd 200/404) und wurde nur als Zusatzindiz genutzt. Domains per RDAP bei Verisign.
+
+### 5.1 Ergebnis auf einen Blick
+
+| Name | Ampel | USPTO: exakter Treffer | Nächste relevante Konflikte (USPTO) | Common Law / Web | Swissreg | Handles (YT / X / TikTok / IG) | .com |
+|---|---|---|---|---|---|---|---|
+| **THE BREAKER ROOM** | 🟡 gelb | keiner ("BREAKER ROOM", "BREAKERROOM": 0) | Fast gleich klingend **BREAK ROOM**, Insomniac Holdings, **registriert** in Kl. 9 (Musikaufnahmen, RN 7778536) und Kl. 41 (Live-Musikevents, RN 8266400). **HR BREAK ROOM** (Paycom, Kl. 9/41, Podcasts, registriert). **THE BREAK ROOM** (Voisin, Kl. 41, Rage Room, **angemeldet 14.10.2026**). BREAKROOM (Sine Wave, Kl. 38, registriert), THE INDUSTRY BREAKROOM (Kl. 16/35, Bergbau-News), BREAKROOM MOM (Kl. 41, Podcast). Feld "BREAKER" in Kl. 41/38/9/35/16: 140 lebende Marken, u. a. CIRCUIT BREAKER (Vox Media, Kl. 41, Tech-Blog) | Podcasts "The Break Room" (Audacy), "The Breakroom", "Tha Break Room"; Podcast "Breaker Box"; Song "Breaker Room" (Cutter Fitz, 2026). Kein Kanal, keine Firma "The Breaker Room" gefunden | kein Treffer ("breaker room", "break room", "breakroom": 0) | YT @TheBreakerRoom frei; **X @TheBreakerRoom vergeben** (x.com 200; laut fxtwitter einmalig "Alasdair Gillespie", 0 Posts); **X @breakerroom vergeben** (inaktiv seit 2010); TikTok frei; IG unklar | thebreakerroom.com frei, **breakerroom.com vergeben (registriert 07.05.2026)** |
+| **THE LINEMAN'S LOG / LINEMANS LOG** | 🟡 gelb | keiner (alle Schreibweisen 0) | Lebende LINEMAN-Marken in Kl. 41 nur als Teil anderer Namen: BLACK LINEMAN NETWORK (Mentoring Strombranche, registriert), NORTHWEST LINEMAN COLLEGE (Quanta, registriert), **AMERICAN LINEMAN SCHOOL / PROGRAM** (angemeldet **04.11.2026**), NATIONAL LINEMAN DAY (angemeldet 06.09.2026). POWERLINEMAN (Kl. 16/42, registriert). Nichts mit "LOG" | Kein Podcast, Buch oder Kanal "Lineman's Log". Umfeld: Fachbücher ("Lineman's and Cableman's Handbook"), Forum powerlineman.com, App "Lineman Guide" | kein Treffer ("lineman": 0) | YT @TheLinemansLog und @LinemansLog frei; X beide frei (404); TikTok frei; IG unklar | linemanslog.com und thelinemanslog.com frei |
+| **ELECTRON COUNTRY** | 🟢 grün | keiner | Keine nahe Kombination. ELECTRON (GitHub/OpenJS, Kl. 9/38/41/42, Software-Framework, registriert), ELECTRON DONORS (Band, Kl. 41), CREATIVE ELECTRON (Kl. 41, Schulungen Röntgeninspektion). "ELECTRIC COUNTRY": 0 | Nichts. Einzige Fundstelle: Fachartikel "Electrons in carbon country" (Nature Materials 2004) | kein Treffer; ELECTRON (OpenJS, Kl. 9/38/41/42) und ELECTRON (Visa) aktiv, aber fernliegend | alle frei (YT, X, TikTok); IG unklar | electroncountry.com frei |
+| **SERVER TO SUBSTATION** | 🟡 gelb | keiner (auch Plural 0) | Keine. "SUBSTATION" nur in Kl. 9/37/42 (Netztechnik) und Kl. 32 (Bier); SUBSTATION (Sony, Kl. 41) gelöscht | Nur technische Fachliteratur zu Substation-Servern (SEL, GE, Dell). Kein Medienangebot | kein Treffer; CONCEPT SUBSTATION gelöscht | YT @ServerToSubstation frei; **X nicht möglich** (18 Zeichen, X erlaubt max. 15); TikTok frei; IG unklar | servertosubstation.com frei |
+| **HOW THE LIGHTS STAY ON** | 🟡 gelb (Eintragbarkeit schwach) | keiner ("HOW THE LIGHTS STAY ON", "HOW LIGHTS STAY ON", "LIGHTS STAY ON": 0) | Verwandte Slogans aus der Energiewirtschaft: **"WE KEEP THE LIGHTS ON."** (Delaware Electric Cooperative, Kl. 39, registriert), HELPING TO KEEP THE LIGHTS ON, BUSINESSES RUNNING… (American Transmission Co., Kl. 39, registriert), FOR THOSE WHO KEEP THE LIGHTS ON (Kl. 36). In Kl. 41 nichts Nahes | Viele gleichsinnige Titel im Energie-Umfeld: Podcast-Folge **"Keeping the Lights On"** (Google, Data-Centers-Podcast, S4E2), "Keeping the Lights on in the Age of AI" (Pew, 2025), "Why Keeping the Lights On Is Getting Harder" (Energy Central, 07/2026), "The Energy Grid: Why Your Lights Stay On" (The Radical Moderate, Ep. 25). Songs "Lights Stay On" (mehrere, 2025/26), Podcast "The Lights Stay On" (2020). Exakter Titel nicht gefunden | kein Treffer | **@HowLightsStayOn frei** auf YT, X und TikTok; @HowTheLightsStayOn frei auf YT/TikTok, für X zu lang; IG unklar | howlightsstayon.com und howthelightsstayon.com frei |
+| **OTHER END OF THE WIRE** (Gegenprobe) | 🟢 grün (bestätigt) | keiner | "OTHER END" insgesamt nur 11 Einträge, alle **dead** (THE OTHER END, Kanada, Kl. 41/42; Slogans mit "OTHER END OF THE LINE" in Kl. 35/38/42). "OTHER END OF THE LINE" als Marke: keine lebende. Keine Marke zum Film | Film **"The Other End of the Line"** (2008, MGM/Adlabs, Regie James Dodson, romantische Komödie im Callcenter-Milieu): keine Markeneintragung gefunden. Dazu Songs "Other End of the Line" (Clay Page, 2024; CreatiVets, 2020), Roman "The Other End of the Line" (Camilleri, 2019). Zu "Other End of the Wire" weiterhin nichts außer dem Gedicht (Runde 4) | kein Treffer ("other end": 4, keiner im Titel) | YT, TikTok frei; **X nicht möglich** (17 Zeichen), Ausweichform nötig; IG unklar | otherendofthewire.com und theotherendofthewire.com frei |
+| **TOWER TO TOASTER** (Gegenprobe) | 🟢 grün (mit Hinweis) | keiner ("TOWER" + "TOASTER" in einer Marke: 0) | **TOWER**, Sutton Venture Group Ltd (Stoke-on-Trent; Mutter von RKW, Inhaberin der Marke Tower), SN 99114440, **angemeldet 01.04.2025** auf Basis § 44(e) (UK-Marke), Kl. 6, 7, 8, 9, 11 (u. a. **toasters**, Wasserkocher), 21, 24; Status **suspendiert** (noch nicht eingetragen). Kl. 9 nur Waagen, Ladegeräte, Druckanzeiger, **keine Medien**; keine Kl. 16, 35, 38, 41. Sonst über 1100 lebende TOWER-Marken, in Kl. 41 z. B. TOWER (Tower Federal Credit Union, Kl. 36/41), TOWER PUBLISHING | Tower-Toaster werden in UK/IE breit verkauft (Currys, Argos, Dunelm, Ocado). **Kein Beleg für US-Vertrieb** (Walmart/Amazon US nicht gefunden). "Tower to Toaster" als Phrase im Web: nur Produktseiten von Tower-Toastern, keine Nutzung als Name | kein Titeltreffer "TOWER" unter den ersten 500 Treffern, "tower to toaster": 0 | alle frei (YT, X, TikTok); IG unklar | towertotoaster.com frei |
+
+**Ranking Runde 5:** 1. ELECTRON COUNTRY, 2. OTHER END OF THE WIRE und TOWER TO TOASTER (beide bestätigt), 3. THE LINEMAN'S LOG. Mit Vorbehalt: THE BREAKER ROOM, SERVER TO SUBSTATION, HOW THE LIGHTS STAY ON.
+
+### 5.2 Begründung je Name
+
+**THE BREAKER ROOM 🟡**
+- **Klang und Bedeutung:** Das Wortspiel funktioniert nur, weil man "break room" mithört. Genau das ist das Markenproblem: Zu "BREAK ROOM" ist der Unterschied eine Silbe. Insomniac (Veranstalter der EDC-Festivals, rechtlich aktiv) hält BREAK ROOM in Kl. 9 und 41 für Musik und Events. Die Leistungen sind verschieden (Energiebildung gegenüber Musikevents), Unterhaltungsdienstleistungen in Kl. 41 gelten aber schnell als verwandt. Dazu kommen HR BREAK ROOM (Podcasts, Kl. 41) und eine frische Anmeldung THE BREAK ROOM (Kl. 41).
+- **Gegenargument:** Das Feld "break room" ist voll (44 Einträge, viele Inhaber nebeneinander). Ein dichtes Feld spricht für einen engen Schutzumfang jeder einzelnen Marke. Ich schätze das Risiko nach § 2(d) als **gering bis mittel** ein.
+- **Eintragbarkeit:** suggestiv, nicht beschreibend. Eintragbar, wenn kein § 2(d)-Einwand kommt.
+- **Praktisch:** X @TheBreakerRoom und @breakerroom sind vergeben, breakerroom.com wurde im Mai 2026 registriert. Mehrere Podcasts "The Break Room" sorgen für Verwechslung in der Suche.
+
+**THE LINEMAN'S LOG / LINEMANS LOG 🟡**
+- **Register:** sauber, kein Treffer mit "LOG". Die LINEMAN-Marken in Kl. 41 sind Schulen und Netzwerke mit anderen Namen. Aktuell kommen neue Anmeldungen (AMERICAN LINEMAN SCHOOL, 04.11.2026) dazu, das Wort ist im Bildungsumfeld der Branche aktiv.
+- **Eintragbarkeit:** "Lineman" ist für Inhalte über Netze ein Gattungsbegriff; "Log" bedeutet Tagebuch. Zusammen ist der Name suggestiv bis leicht beschreibend ("Tagebuch eines Netzmonteurs"). Wahrscheinlich müsste LINEMAN'S disclaimt werden; das Risiko einer Zurückweisung nach § 2(e)(1) schätze ich als mittel ein.
+- **Vorbehalt Glaubwürdigkeit:** Der Name verspricht Inhalte aus Sicht eines echten Linemans. Ohne eigene Linemen-Erfahrung droht der Einwand der irreführenden Beschreibung (§ 2(e)(1) deceptively misdescriptive) und vor allem ein Glaubwürdigkeitsproblem bei der Zielgruppe. Die Branche wechselt außerdem zunehmend zu "lineworker".
+- **Schreibweise:** Mit Apostroph ist der Name als Handle und Domain nicht abbildbar. LINEMANS LOG (ohne Apostroph) ist klanglich identisch.
+
+**ELECTRON COUNTRY 🟢**
+- Kein Treffer in USPTO, Swissreg, Web oder Apple. ELECTRON (GitHub/OpenJS) bezeichnet ein Software-Framework, VISA ELECTRON eine Zahlungskarte. Beide liegen fern; "Country" verändert den Gesamteindruck deutlich.
+- Eintragbarkeit: suggestiv (ein "Land der Elektronen"), nicht beschreibend. Alle Handles und die .com-Domain sind frei.
+- Branding-Hinweis: "Country" kann im US-Englisch an Country-Musik denken lassen.
+
+**SERVER TO SUBSTATION 🟡**
+- Kein Registerkonflikt.
+- **Eintragbarkeit:** Beide Wörter benennen direkt Themen des Kanals (Rechenzentrum, Umspannwerk). Die Form "X to Y" beschreibt den Themenbogen ähnlich wie "Farm to Table". Eine Zurückweisung nach § 2(e)(1) ist **wahrscheinlich**, allenfalls ginge das Supplemental Register. Damit ist der Name schwer zu verteidigen.
+- Praktisch: Für X zu lang (18 Zeichen), ein Kurz-Handle wäre nötig.
+
+**HOW THE LIGHTS STAY ON 🟡**
+- Kein Registerkonflikt; die "KEEP THE LIGHTS ON"-Marken der Energieversorger liegen in Kl. 39 und haben eine andere Wortfolge.
+- **Eintragbarkeit (Hauptproblem):** Die Phrase beschreibt den Inhalt wörtlich ("wie das Licht anbleibt"). Zu erwarten ist eine Zurückweisung nach § 2(e)(1) oder als bloß informative Aussage, die nicht als Marke wirkt (failure to function). Eine Eintragung im Hauptregister halte ich für **unwahrscheinlich**, das Supplemental Register frühestens nach Nutzung.
+- **Common Law:** Die Wendung ist im Energie-Journalismus verbreitet (Google-Podcastfolge "Keeping the Lights On", Pew, Energy Central, "Why Your Lights Stay On"). Abwehrrechte entstehen so kaum, eine Kollision mit Dritten ist aber ebenso unwahrscheinlich.
+- Praktisch: Handle @HowLightsStayOn ist auf YouTube, X und TikTok frei, beide .com-Varianten auch.
+
+**OTHER END OF THE WIRE 🟢 (Gegenprobe bestätigt)**
+- **Film "The Other End of the Line" (2008):** Zum Film gibt es keine Marke im Register. Titel einzelner Werke (ein Film, ein Buch) sind in den USA als solche nicht als Marke eintragbar; Schutz entsteht allenfalls bei Serien oder Merch. Die Titel unterscheiden sich im prägenden Schlusswort (Wire gegenüber Line), und der Film ist eine Liebeskomödie ohne Energiebezug. Risiko: **gering**.
+- **"OTHER END"-Marken:** Alle 11 Einträge sind tot, darunter THE OTHER END (Kl. 41, Kanada) und mehrere Slogans mit "other end of the line". Kein lebender Konflikt.
+- Einschränkung: X erlaubt höchstens 15 Zeichen, @OtherEndOfTheWire geht nicht. Kurzform nötig (z. B. @OtherEndWire, nicht geprüft).
+
+**TOWER TO TOASTER 🟢 (Gegenprobe bestätigt, mit Hinweis)**
+- **Marke TOWER in den USA:** Sutton Venture Group, die Mutter von RKW und Inhaberin der britischen Haushaltsmarke Tower, hat TOWER am 01.04.2025 in den USA angemeldet, u. a. für **Toaster** (Kl. 11). Die Anmeldung beruht auf der UK-Marke (§ 44(e)), ist noch nicht eingetragen und derzeit suspendiert, vermutlich wegen älterer TOWER-Rechte Dritter. Einen US-Vertrieb von Tower-Geräten habe ich nicht gefunden.
+- **Verwechslungsgefahr "Tower" + "Toaster":** Gering. (1) Die Leistungen sind verschieden: Bildungsvideos in Kl. 41 gegenüber Küchengeräten in Kl. 7/11/21; die Kl.-9-Waren von Tower sind Waagen und Ladegeräte, keine Medien. (2) Im Gesamteindruck ist "Tower" der Strommast am Anfang einer Kette, nicht ein Herstellername; "Tower to Toaster" liest sich als "vom Mast bis zum Toaster". (3) Das Element TOWER ist in den USA extrem verwässert (über 1100 lebende Marken). (4) Tower ist in den USA kein bekannter Name, eine Verwässerung nach § 1125(c) scheidet aus.
+- **Restrisiken:** (a) Würde man ein Thumbnail oder Merch mit einem Toaster der Marke Tower zeigen oder Toaster als Merch verkaufen (Kl. 11/21), entstünde eine echte Nähe. (b) Im UK und in Irland ist Tower als Toaster-Marke sehr bekannt; britische Zuschauer werden die Assoziation haben. Markenrechtlich relevant würde das erst bei Merch oder Sponsoring im UK. (c) Kein Sponsoring durch Toaster-Konkurrenten mit dem Namen kombinieren.
+- Eintragbarkeit: suggestiv, gut eintragbar. Alle Handles und die .com-Domain sind frei.
+
+### 5.3 Fundstellen
+
+USPTO (TSDR):
+- BREAK ROOM, Insomniac, Kl. 9, SN 98872097: https://tsdr.uspto.gov/#caseNumber=98872097&caseType=SERIAL_NO&searchType=statusSearch
+- BREAK ROOM, Insomniac, Kl. 41, SN 98872106: https://tsdr.uspto.gov/#caseNumber=98872106&caseType=SERIAL_NO&searchType=statusSearch
+- HR BREAK ROOM, Paycom, SN 88302818: https://tsdr.uspto.gov/#caseNumber=88302818&caseType=SERIAL_NO&searchType=statusSearch
+- THE BREAK ROOM (Voisin, angemeldet 14.10.2026), SN 50161040: https://tsdr.uspto.gov/#caseNumber=50161040&caseType=SERIAL_NO&searchType=statusSearch
+- BREAKROOM, Sine Wave, Kl. 38, SN 90823231: https://tsdr.uspto.gov/#caseNumber=90823231&caseType=SERIAL_NO&searchType=statusSearch
+- CIRCUIT BREAKER, Vox Media, SN 86966577: https://tsdr.uspto.gov/#caseNumber=86966577&caseType=SERIAL_NO&searchType=statusSearch
+- BLACK LINEMAN NETWORK, SN 98047599: https://tsdr.uspto.gov/#caseNumber=98047599&caseType=SERIAL_NO&searchType=statusSearch
+- NORTHWEST LINEMAN COLLEGE, SN 88679385: https://tsdr.uspto.gov/#caseNumber=88679385&caseType=SERIAL_NO&searchType=statusSearch
+- AMERICAN LINEMAN SCHOOL, SN 50199100: https://tsdr.uspto.gov/#caseNumber=50199100&caseType=SERIAL_NO&searchType=statusSearch
+- ELECTRON, GitHub, SN 87283060: https://tsdr.uspto.gov/#caseNumber=87283060&caseType=SERIAL_NO&searchType=statusSearch
+- "WE KEEP THE LIGHTS ON.", Delaware Electric Cooperative, SN 78668497: https://tsdr.uspto.gov/#caseNumber=78668497&caseType=SERIAL_NO&searchType=statusSearch
+- HELPING TO KEEP THE LIGHTS ON…, American Transmission Co., SN 77823406: https://tsdr.uspto.gov/#caseNumber=77823406&caseType=SERIAL_NO&searchType=statusSearch
+- TOWER, Sutton Venture Group, SN 99114440: https://tsdr.uspto.gov/#caseNumber=99114440&caseType=SERIAL_NO&searchType=statusSearch
+- THE OTHER END (dead), SN 97227125: https://tsdr.uspto.gov/#caseNumber=97227125&caseType=SERIAL_NO&searchType=statusSearch
+
+Common Law und Social Media:
+- Podcast "The Break Room" (Audacy): https://podnews.net/podcast/iabde, "The Breakroom": https://www.podengine.ai/podcasts/the-breakroom
+- X @TheBreakerRoom: https://x.com/TheBreakerRoom, X @breakerroom: https://x.com/breakerroom
+- Google-Podcast "Keeping the Lights On": https://www.datacenters.google/podcast/keeping-the-lights-on
+- Pew "Keeping the Lights On in the Age of AI": https://www.pew.org/en/research-and-analysis/articles/2025/07/11/keeping-the-lights-on-in-the-age-of-ai
+- "The Energy Grid: Why Your Lights Stay On" (The Radical Moderate): https://www.buzzsprout.com/2536272/episodes/18901984-ep-25-the-energy-grid-why-your-lights-stay-on
+- Film "The Other End of the Line" (2008): https://tcm.com/tcmdb/title/684141/enwp, https://www.screendaily.com/story.aspx?storyCode=4041512
+- Tower gehört zu RKW / Sutton Venture Group: https://housewareslive.net/rkw-acquires-tower-brand/, https://housewareslive.net/svg-becomes-sole-shareholder-of-swan-products-limited/
+- Tower-Toaster im UK-Handel: https://www.currys.co.uk/appliances/small-kitchen-appliances/toasters/tower
+
+### 5.4 Grenzen der Recherche (Runde 5)
+
+- Es gelten die Grenzen aus Abschnitt 5 und 4.4: nur Text, keine Bildmarken, EUIPO/TMview/WIPO nicht geprüft, keine Firmenregister und State Trademarks, Spotify nicht direkt abgefragt.
+- **Instagram** ließ sich ohne Login wieder für keinen Namen klären.
+- **X-Prüfung:** fxtwitter lieferte widersprüchliche Antworten; maßgeblich ist der HTTP-Status von x.com. Ob @TheBreakerRoom aktiv genutzt wird, ist offen.
+- **Tower in den USA:** Ob Tower-Geräte über Drittanbieter (z. B. Amazon-Marketplace-Importe) in den USA verkauft werden, habe ich nicht abschließend geprüft. Den Grund der Suspendierung von SN 99114440 habe ich nicht in TSDR nachgelesen (JavaScript-Seite, API mit Key).
+- **Swissreg "tower":** Bei über 8000 Volltexttreffern habe ich nur die ersten 500 auf Titeltreffer geprüft.
+- Die Einschätzungen zu § 2(e)(1) und failure to function (SERVER TO SUBSTATION, HOW THE LIGHTS STAY ON) sind Faktenschätzungen; die Entscheidung trifft der Examining Attorney im Einzelfall.
