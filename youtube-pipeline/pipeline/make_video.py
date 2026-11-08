@@ -176,7 +176,17 @@ def stage_voice(project):
         t += gap
         mp3 = b / "audio" / f"s{i:02d}.mp3"
         sentences = None
-        for attempt in range(4):
+        # cache: only re-voice scenes whose text or voice settings changed (saves TTS credits)
+        import hashlib
+        key = hashlib.sha1(json.dumps([sc["text"], cfg["voice"], cfg.get("tts", "edge"), cfg.get("rate", "+0%"),
+                                       json.loads(BRAND_FILE.read_text()).get("voice_settings") if BRAND_FILE.exists() else None,
+                                       json.loads(BRAND_FILE.read_text()).get("tts_model") if BRAND_FILE.exists() else None]
+                                      ).encode()).hexdigest()
+        cache = b / "audio" / f"s{i:02d}.json"
+        if mp3.exists() and cache.exists() and json.loads(cache.read_text()).get("key") == key:
+            sentences = json.loads(cache.read_text())["sentences"]
+            print(f"  voice s{i:02d} cached")
+        for attempt in range(0 if sentences is not None else 4):
             try:
                 sc_all = cfg["scenes"]
                 sentences = asyncio.run(_tts(sc["text"], cfg["voice"], cfg.get("rate", "+0%"), mp3,
@@ -188,6 +198,8 @@ def stage_voice(project):
                 print("  tts retry", i, e)
                 time.sleep(2 ** attempt)
         d = duration(mp3)
+        if sentences is not None:
+            cache.write_text(json.dumps({"key": key, "sentences": sentences}))
         for s in sentences or [{"start": 0, "end": d, "text": sc["text"]}]:
             for c in split_cue(s):
                 cues.append({"start": t + c["start"], "end": t + c["end"], "text": c["text"]})

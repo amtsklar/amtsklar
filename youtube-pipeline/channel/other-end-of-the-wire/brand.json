@@ -7,16 +7,16 @@
  "outro": "If you like seeing the hidden machinery behind everyday life, subscribe to Other End of the Wire. Every source behind the numbers in this video is in the description. Follow the electron.",
  "short_outro_contains": "on Other End of the Wire",
  "length_long_seconds": [
-  520,
-  600
+  500,
+  540
  ],
  "length_short_seconds": [
   20,
   59
  ],
  "words_long": [
-  1150,
-  1260
+  1070,
+  1150
  ],
  "chapters": [
   6,
@@ -90,5 +90,5 @@
   "style": 0.15,
   "use_speaker_boost": true
  },
- "words_note": "Calibrated for voice F1 (~135-145 wpm): 1,150-1,260 words = 9:00-9:50 incl. end screen."
+ "words_note": "Target 8:20-9:00 incl. 12 s end screen (voice F1 ~135-140 wpm)."
 }

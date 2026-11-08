@@ -24,7 +24,7 @@
   },
   {
    "query": "city timelapse",
-   "text": "Stick with me, and you'll see why, in sunny states, the toughest hour for the grid often isn't the hottest one. And why, some days, power plants pay to give their electricity away.",
+   "text": "Stick with me, and you'll see why the grid's toughest hour often isn't the hottest one. And why, some days, power plants pay to give their electricity away.",
    "fallback": [
     "city lights night",
     "skyline sunset"
@@ -32,7 +32,7 @@
   },
   {
    "query": "power lines sunset",
-   "text": "Because the grid isn't one machine. It's a different machine every hour. So let's follow one day, hour by hour.",
+   "text": "Because the grid isn't one machine. It's a different machine every hour.",
    "fallback": [
     "electricity pylon",
     "transmission tower"
@@ -42,7 +42,7 @@
    "chapter": "3 a.m.: The night shift",
    "overlay": "3 A.M.: THE NIGHT SHIFT",
    "query": "city lights night",
-   "text": "Let's start in the dark. According to the Energy Information Administration, U.S. electricity use typically bottoms out around five in the morning, when most people are asleep and most offices are closed.",
+   "text": "Let's start in the dark. The Energy Information Administration says U.S. electricity use typically bottoms out around five in the morning.",
    "fallback": [
     "suburb night",
     "quiet street night"
@@ -59,7 +59,7 @@
   },
   {
    "query": "nuclear power plant",
-   "text": "The classic baseload plant is nuclear. It's cheap to run once it's built, so operators try to keep it at full power around the clock.",
+   "text": "The classic baseload plant is nuclear: cheap to run once it's built, so operators keep it at full power around the clock.",
    "fallback": [
     "cooling tower",
     "power plant"
@@ -67,7 +67,7 @@
   },
   {
    "query": "cooling tower steam",
-   "text": "In 2025, the average U.S. nuclear plant ran at 91 percent of its maximum possible output, higher than any other kind of power plant. Nuclear supplied about 18 percent of the country's utility-scale electricity that year.",
+   "text": "In 2025, the average U.S. nuclear plant ran at 91 percent of its maximum possible output, higher than any other kind of power plant.",
    "fallback": [
     "nuclear plant",
     "steam"
@@ -84,7 +84,7 @@
   },
   {
    "query": "great plains wind farm",
-   "text": "Take the Southwest Power Pool, the grid operator for a big stretch of the Great Plains. We ran its 2025 numbers from the EIA's hourly grid data: on average, wind output equaled about 46 percent of demand at 2 a.m., but only about 31 percent at noon. And for five straight hours before dawn on December 28, 2025, it equaled about 80 percent.",
+   "text": "Take the Southwest Power Pool, which runs the grid across a big stretch of the Great Plains. We ran its 2025 numbers from the EIA's hourly grid data: wind output equaled about 46 percent of demand at 2 a.m., but only about 31 percent at noon.",
    "fallback": [
     "prairie wind turbines",
     "wind farm"
@@ -128,7 +128,7 @@
   },
   {
    "query": "natural gas power plant",
-   "text": "California has gone even further. Solar now supplies almost half of the grid operator's demand between eight in the morning and four in the afternoon, and in the first five months of 2026, it out-generated natural gas on 82 percent of days.",
+   "text": "California has gone even further. Solar now supplies almost half of the grid operator's demand from 8 a.m. to 4 p.m., and in the first five months of 2026, it out-generated natural gas on 82 percent of days.",
    "fallback": [
     "solar panels desert",
     "solar farm"
@@ -146,7 +146,7 @@
   },
   {
    "query": "control room screens",
-   "text": "To see why, grid operators look at net load: total demand minus whatever wind and solar are producing. It's the part every other power plant has to cover. One catch: this counts only big solar farms and wind farms. Rooftop panels don't show up as supply at all. They just make demand look smaller.",
+   "text": "To see why, grid operators look at net load: total demand minus wind and solar. It's what every other power plant has to cover. Rooftop panels aren't counted as supply here; they just make demand look smaller.",
    "fallback": [
     "computer monitors",
     "data screen"
@@ -155,7 +155,7 @@
   },
   {
    "query": "duck lake",
-   "text": "Plot net load over a typical day in California and it sags deep in the middle, then shoots up steeply in the evening. It looks like the outline of a duck, so it's called the duck curve. And the EIA says the belly keeps getting deeper as solar grows.",
+   "text": "Plot net load over a typical California day and it sags at midday, then shoots up in the evening. It looks like a duck, so it's called the duck curve, and the EIA says the belly keeps getting deeper as solar grows.",
    "fallback": [
     "duck swimming",
     "pond"
@@ -201,7 +201,7 @@
    "chapter": "Why prices swing",
    "overlay": "WHY PRICES SWING",
    "query": "electricity meter",
-   "text": "Which brings us to price. On the wholesale market, where power is bought and sold in bulk, electricity can cost wildly different amounts from one hour to the next.",
+   "text": "Which brings us to price. On the wholesale market, where power is bought in bulk, electricity can cost wildly different amounts from hour to hour.",
    "fallback": [
     "power meter",
     "electric meter"
@@ -209,7 +209,7 @@
   },
   {
    "query": "money calculator",
-   "text": "Berkeley Lab found that the average wholesale price across the major U.S. power markets in 2023 was 36 dollars per megawatt-hour. But that average hides huge swings: in Texas, hourly prices on some summer evenings topped 500 dollars, and in California, on sunny spring days, they dropped below zero.",
+   "text": "Berkeley Lab found that the average wholesale price across the major U.S. power markets in 2023 was 36 dollars per megawatt-hour. But in Texas, some summer evenings topped 500 dollars, and in California, on sunny spring days, prices dropped below zero.",
    "fallback": [
     "calculator",
     "coins"
@@ -226,7 +226,7 @@
   },
   {
    "query": "power plant chimney",
-   "text": "Why would anyone do that? Some plants can't easily or cheaply shut down for a short stretch. Nuclear operators try to run at full power, and big steam plants face costs every time they stop and restart.",
+   "text": "Why would anyone do that? Some plants can't cheaply shut down for a short stretch. Nuclear operators try to stay at full power, and big steam plants pay a cost every time they stop and restart.",
    "fallback": [
     "steam turbine",
     "industrial plant"
@@ -242,7 +242,7 @@
   },
   {
    "query": "california hills sun",
-   "text": "In California's day-ahead market, prices were negative about 7 percent of the time in 2025, according to the grid operator's own market monitor. And Berkeley Lab found that in 2023, those negative prices showed up almost entirely in sunny hours of late spring and early summer.",
+   "text": "In California's day-ahead market, prices were negative about 7 percent of the time in 2025, according to the grid operator's own market monitor.",
    "fallback": [
     "sunny landscape",
     "solar farm"
@@ -269,7 +269,7 @@
   },
   {
    "query": "power outlet plug night",
-   "text": "Most electric vehicle drivers charge overnight at home, according to the Department of Energy. And some utilities offer time-of-use rates, where electricity costs less in certain hours and more in others.",
+   "text": "Most electric vehicle drivers charge overnight at home, the Department of Energy says, and some utilities offer time-of-use rates that change with the hour.",
    "fallback": [
     "tesla charging",
     "home ev charger",
@@ -279,7 +279,7 @@
   },
   {
    "query": "smart meter",
-   "text": "That works because most homes now have smart meters that record use at least hourly. In 2022, about 73 percent of U.S. residential meters were smart meters, the EIA reports.",
+   "text": "That works because smart meters record use at least hourly, and by 2022 about 73 percent of U.S. residential meters were smart meters, the EIA reports.",
    "fallback": [
     "electric meter",
     "electricity meter"
@@ -313,7 +313,7 @@
   },
   {
    "query": "battery energy storage",
-   "text": "At 3 p.m., solar carries more and more of the load, sometimes enough to push prices below zero. Then at sunset comes the steep neck of the duck, and batteries and gas plants race to cover it.",
+   "text": "At 3 p.m., solar carries more and more of the load, sometimes pushing prices below zero. Then at sunset comes the duck's steep neck, and batteries and gas plants race to cover it.",
    "fallback": [
     "solar farm sunset",
     "power plant"
