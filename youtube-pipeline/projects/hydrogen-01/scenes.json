@@ -393,7 +393,7 @@
    "badge": "HYDROGEN ROUND TRIP"
   },
   {
-   "image": "s26_1.jpg",
+   "image": "s27_1.jpg",
    "lines": [
     [
      "HYDROGEN",
@@ -409,20 +409,7 @@
    "badge": "WHERE IT MAKES SENSE"
   },
   {
-   "image": "s19_1.jpg",
-   "lines": [
-    [
-     "HYDROGEN",
-     140,
-     "white"
-    ],
-    [
-     "CARS?",
-     170,
-     "#FF5A1F"
-    ]
-   ],
-   "badge": "THE LONG WAY AROUND"
+   "asset": "thumb_assets/thumb_round_trip.png"
   }
  ]
 }

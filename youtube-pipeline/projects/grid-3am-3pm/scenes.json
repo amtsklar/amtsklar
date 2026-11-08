@@ -372,22 +372,20 @@
  },
  "thumbnails": [
   {
-   "image": "s01_1.jpg",
+   "split": [
+    "s08_0.jpg",
+    "s11_1.jpg"
+   ],
    "lines": [
     [
      "3 A.M.",
      150,
-     "white"
-    ],
-    [
-     "VS.",
-     110,
-     "white"
+     "#ffffff"
     ],
     [
      "3 P.M.",
-     170,
-     "#FFD400"
+     150,
+     "#ffc400"
     ]
    ],
    "badge": "SAME PLUG"

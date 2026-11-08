@@ -745,6 +745,28 @@ def stage_thumbs(project):
     out = b / "thumbnails"
     out.mkdir(exist_ok=True)
     for n, t in enumerate(cfg.get("thumbnails", [])):
+        if t.get("asset"):  # own chart/graphic, finished design (no extra text)
+            Image.open(project / t["asset"]).convert("RGB").resize((1280, 720)).save(out / f"thumbnail_{n + 1}.jpg", quality=92)
+            print("  thumb", n + 1, "(asset)")
+            continue
+        if t.get("split"):  # two photos side by side, e.g. night | noon
+            l, r = (cover(Image.open(b / "images" / f), 640, 720) for f in t["split"])
+            bg = Image.new("RGB", (1280, 720))
+            bg.paste(l, (0, 0)); bg.paste(r, (640, 0))
+            bg = ImageEnhance.Contrast(ImageEnhance.Color(bg).enhance(1.3)).enhance(1.1)
+            d = ImageDraw.Draw(bg)
+            d.rectangle((634, 0, 646, 720), fill=(200, 117, 51))  # copper seam = the wire
+            for (txt, size, color), x in zip(t["lines"], (60, 700)):
+                f = ImageFont.truetype(str(FONT), size)
+                d.text((x, 470), txt, font=f, fill=color, stroke_width=max(4, size // 16), stroke_fill="black")
+            if t.get("badge"):
+                f = ImageFont.truetype(str(FONT), 64)
+                w = d.textlength(t["badge"], font=f)
+                d.rounded_rectangle((1280 - w - 110, 40, 1240, 160), 18, fill=(214, 40, 40))
+                d.text((1280 - w - 80, 52), t["badge"], font=f, fill="white")
+            bg.save(out / f"thumbnail_{n + 1}.jpg", quality=92)
+            print("  thumb", n + 1, "(split)")
+            continue
         bg = cover(Image.open(b / "images" / t["image"]), 1280, 720)
         bg = ImageEnhance.Contrast(ImageEnhance.Color(bg).enhance(1.35)).enhance(1.15)
         shade = Image.new("L", (1280, 720), 0)
