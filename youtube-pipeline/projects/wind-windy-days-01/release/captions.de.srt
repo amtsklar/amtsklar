@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:01,950
-Denk an einen böigen Nachmittag.
+Stell dir einen böigen Nachmittag vor.
 
 2
 00:00:02,194 --> 00:00:04,609
@@ -38,7 +38,7 @@ Du siehst unterwegs, warum etwas
 
 10
 00:00:24,094 --> 00:00:26,329
-mehr Wind viel mehr Leistung bringt.
+mehr Wind viel mehr Leistung bringen kann.
 
 11
 00:00:26,607 --> 00:00:29,435
@@ -128,7 +128,7 @@ meist bei etwa 7 bis 11 mph.
 
 30
 00:01:38,534 --> 00:01:40,079
-Die Anlaufgeschwindigkeit.
+Das ist die Anlaufgeschwindigkeit.
 
 31
 00:01:40,775 --> 00:01:43,422
@@ -151,7 +151,7 @@ von 34 Prozent.
 
 35
 00:01:55,559 --> 00:02:00,029
-Anlagen von 2024 kamen auf etwa 37.
+Anlagen von 2024 kamen auf etwa 37 Prozent.
 
 36
 00:02:00,420 --> 00:02:04,116
@@ -178,7 +178,7 @@ Warum zählen also ein paar
 
 41
 00:02:18,324 --> 00:02:20,252
-mph mehr so viel?
+Meilen pro Stunde mehr so sehr?
 
 42
 00:02:20,530 --> 00:02:23,735
@@ -190,7 +190,8 @@ Die Leistung bewegter Luft steigt
 
 44
 00:02:26,099 --> 00:02:28,084
-mit dem Tempo hoch drei.
+mit der dritten Potenz
+der Geschwindigkeit.
 
 45
 00:02:28,525 --> 00:02:33,076
@@ -204,11 +205,11 @@ verachtfacht sich die Leistung.
 
 47
 00:02:38,021 --> 00:02:41,086
-Geh von 10 auf 15 mph, und
+Steigt er von 10 auf 15 mph,
 
 48
 00:02:41,086 --> 00:02:44,151
-der Wind trägt mehr als
+trägt der Wind mehr als
 dreimal so viel Leistung.
 
 49
@@ -229,7 +230,8 @@ auf Blätter, Welle und Turm.
 
 53
 00:02:56,462 --> 00:02:59,226
-Und ein Generator kann nur so viel nutzen.
+Und ein Generator kann
+nur begrenzt viel nutzen.
 
 54
 00:03:00,069 --> 00:03:03,607
@@ -239,7 +241,7 @@ Leistungskurve: wie viel
 55
 00:03:03,607 --> 00:03:06,791
 Strom eine Anlage bei
-jedem Windtempo liefert.
+welcher Windgeschwindigkeit liefert.
 
 56
 00:03:07,488 --> 00:03:11,812
@@ -253,8 +255,8 @@ mit maximaler Generatorleistung.
 
 58
 00:03:16,536 --> 00:03:21,404
-Nimm eine Referenzanlage, die
-US- und europäische Forscher
+Nehmen wir eine Referenzanlage,
+die US- und europäische Forscher
 
 59
 00:03:21,404 --> 00:03:25,731
@@ -280,11 +282,12 @@ Die Pitchverstellung dreht die Blätter aus
 
 64
 00:03:39,581 --> 00:03:42,181
-dem Wind, und die Leistung bleibt flach.
+dem Wind, und die Leistung bleibt konstant.
 
 65
 00:03:42,575 --> 00:03:45,338
-Noch mehr Wind: Abschaltgeschwindigkeit.
+Noch mehr Wind, und die Abschalt-
+geschwindigkeit ist erreicht.
 
 66
 00:03:45,547 --> 00:03:49,065
@@ -320,13 +323,13 @@ Warum so früh stoppen?
 
 73
 00:04:11,862 --> 00:04:16,346
-Laut internationaler Norm, so das
+Nach internationaler Norm, so das
 Ministerium, müssen Anlagen für
 
 74
 00:04:16,346 --> 00:04:20,830
-die windigsten Standorte
-Dauerwinden standhalten
+die windigsten Standorte auf
+Dauerwinde ausgelegt sein
 
 75
 00:04:20,830 --> 00:04:24,865
@@ -362,8 +365,8 @@ Im März 2017 traf ein Wintersturm Block
 
 82
 00:04:45,314 --> 00:04:49,052
-Island, Heimat von Amerikas
-erstem Offshore-Windpark.
+Island, wo Amerikas erster
+Offshore-Windpark steht.
 
 83
 00:04:49,563 --> 00:04:52,660
@@ -420,8 +423,8 @@ was eine Anlage könnte.
 
 95
 00:05:26,471 --> 00:05:29,821
-Sie passiert bei mehr
-Angebot als Nachfrage
+Dazu kommt es, wenn das Angebot
+die Nachfrage übersteigt
 
 96
 00:05:29,821 --> 00:05:33,170
@@ -459,8 +462,8 @@ genug drosseln, können lokale
 
 103
 00:05:57,570 --> 00:06:01,108
-Großhandelspreise negativ
-werden: Verkäufer zahlen Käufern.
+Großhandelspreise negativ werden:
+Verkäufer zahlen für die Abnahme.
 
 104
 00:06:01,805 --> 00:06:04,370
@@ -503,7 +506,7 @@ Der Southwest Power Pool in der Mitte
 
 113
 00:06:30,879 --> 00:06:33,468
-der USA lag vorn, mit etwa 9 Prozent.
+der USA lag am höchsten, mit etwa 9 Prozent.
 
 114
 00:06:33,850 --> 00:06:37,623
@@ -594,22 +597,23 @@ bei wenig Wind aktiver.
 
 133
 00:07:42,295 --> 00:07:45,663
-Deshalb erhöhen manche Windparks dann die
+Manche Windparks erhöhen in
+solchen Nächten die
 
 134
 00:07:45,663 --> 00:07:48,657
-Anlaufgeschwindigkeit,
-ggf. mit Fahnenstellung.
+Anlaufgeschwindigkeit, teils
+mit Fahnenstellung der Blätter.
 
 135
 00:07:49,036 --> 00:07:54,307
 Laut einer Übersichtsarbeit von 2021 zu
-Abregelungsversuchen in USA und Kanada
+Abregelungsversuchen in den USA und Kanada
 
 136
 00:07:54,307 --> 00:07:59,578
-sanken die Fledermaustode dadurch
-im Schnitt um etwa 63 Prozent.
+sank die Zahl toter Fledermäuse
+dadurch im Schnitt um etwa 63 Prozent.
 
 137
 00:07:59,966 --> 00:08:02,822
@@ -651,8 +655,8 @@ Windrad nur gewartet.
 
 145
 00:08:31,245 --> 00:08:35,657
-Die Bremse ist nicht wie beim Auto,
-erklärt das Energieministerium.
+Die Bremse eines Windrads ist nicht wie beim
+Auto, erklärt das Energieministerium.
 
 146
 00:08:36,353 --> 00:08:38,849
@@ -701,7 +705,8 @@ Ein Rotor, der eine Stunde steht, sagt
 
 157
 00:09:03,437 --> 00:09:05,799
-was über die Stunde, nicht die Maschine.
+etwas über die Stunde,
+nicht über die Maschine.
 
 158
 00:09:06,496 --> 00:09:09,422
@@ -714,11 +719,11 @@ die sagen: nicht jetzt.
 
 160
 00:09:12,738 --> 00:09:14,804
-Bist du mal an einem windigen Tag
+Bist du an einem windigen Tag schon
 
 161
 00:09:14,804 --> 00:09:16,871
-an stehenden Windrädern vorbei?
+mal an stehenden Windrädern vorbeigekommen?
 
 162
 00:09:17,382 --> 00:09:19,089

@@ -38,8 +38,8 @@ kamen etwa 35 zurück.
 
 9
 00:00:32,360 --> 00:00:35,181
-Vergleich das mit einer
-ganzen Batterieflotte.
+Vergleichen wir das mit
+einer ganzen Batterieflotte.
 
 10
 00:00:35,622 --> 00:00:38,937
@@ -73,7 +73,7 @@ vielleicht schon auf deinem Esstisch?
 17
 00:00:55,656 --> 00:00:59,805
 Beide Antworten laufen auf eine
-Idee hinaus: Wasserstoff hat
+Idee hinaus: Wasserstoff hat eigentlich
 
 18
 00:00:59,805 --> 00:01:03,493
@@ -110,7 +110,7 @@ in Erdgas, Kohle und Öl.
 
 25
 00:01:27,683 --> 00:01:29,268
-Bevor wir ihn nutzen,
+Bevor wir ihn nutzen können,
 
 26
 00:01:29,268 --> 00:01:30,853
@@ -147,7 +147,7 @@ davon: etwa 10 Millionen Tonnen
 
 33
 00:01:56,532 --> 00:02:01,243
-pro Jahr, laut Wasserstoffstrategie
+pro Jahr, laut der Wasserstoffstrategie
 des US-Energieministeriums von 2023.
 
 34
@@ -284,7 +284,7 @@ bei minus 423 Grad Fahrenheit verflüssigt.
 
 62
 00:04:05,658 --> 00:04:07,597
-Jetzt die Verluste addieren.
+Jetzt rechnen wir die Verluste zusammen.
 
 63
 00:04:08,038 --> 00:04:11,172
@@ -350,7 +350,7 @@ fast 84.000 Ladestandorte.
 76
 00:05:00,807 --> 00:05:04,383
 Heizen zu Hause hat dasselbe
-Problem, nur schärfer.
+Problem, nur noch stärker.
 
 77
 00:05:04,987 --> 00:05:08,818
@@ -359,8 +359,8 @@ kann eine Wärmepumpe bis zu
 
 78
 00:05:08,818 --> 00:05:12,649
-dreimal mehr Wärme liefern,
-als sie an Energie verbraucht.
+dreimal so viel Wärme liefern,
+wie sie an Energie verbraucht.
 
 79
 00:05:13,043 --> 00:05:16,874
@@ -474,8 +474,8 @@ Etwa 70 Prozent des US-Stahls entstehen
 
 103
 00:06:38,940 --> 00:06:41,980
-meist aus Schrott,
-eingeschmolzen in Elektroöfen.
+durch Einschmelzen von überwiegend
+Schrott in Elektroöfen.
 
 104
 00:06:42,583 --> 00:06:45,990
@@ -539,7 +539,7 @@ durchschnittliche US-Netzbatterie 2019
 
 117
 00:07:28,681 --> 00:07:32,092
-etwa anderthalb Stunden Leistung vorhielt.
+Strom für etwa anderthalb Stunden speicherte.
 
 118
 00:07:32,789 --> 00:07:38,223
@@ -590,7 +590,7 @@ bis 2040 und 50 Millionen bis 2050.
 
 128
 00:08:15,603 --> 00:08:17,751
-Doch dann kam die Realität.
+Doch die Pläne trafen auf die Realität.
 
 129
 00:08:18,320 --> 00:08:21,924
@@ -635,11 +635,11 @@ Deshalb tut er sich schwer bei Autos
 
 138
 00:08:48,768 --> 00:08:51,003
-und Häusern, wo Strom direkt wirkt.
+und Häusern, wo Strom direkt funktioniert.
 
 139
 00:08:51,607 --> 00:08:54,875
-Aber in Raffinerien, Dünger und Stahl
+Aber bei Raffinerien, Dünger und Stahl
 
 140
 00:08:54,875 --> 00:08:58,143
