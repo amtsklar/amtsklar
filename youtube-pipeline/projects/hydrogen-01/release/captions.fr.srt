@@ -1,0 +1,742 @@
+1
+00:00:00,100 --> 00:00:04,080
+En 2024, des ingénieurs du National
+Renewable Energy Laboratory
+
+2
+00:00:04,080 --> 00:00:08,060
+au Colorado ont publié un
+test à l'échelle du mégawatt.
+
+3
+00:00:08,010 --> 00:00:11,167
+Ils ont pris de l'électricité, l'ont
+transformée en hydrogène, l'ont stocké,
+
+4
+00:00:11,167 --> 00:00:14,324
+puis l'ont reconverti en électricité.
+
+5
+00:00:14,826 --> 00:00:19,648
+À pleine puissance, environ 28 %
+de l'électricité est revenue.
+
+6
+00:00:19,598 --> 00:00:22,596
+À faible puissance, environ 35.
+
+7
+00:00:23,096 --> 00:00:25,801
+Comparez maintenant avec une batterie.
+
+8
+00:00:25,751 --> 00:00:29,724
+En 2019, l'EIA a constaté que
+les batteries du réseau américain
+
+9
+00:00:29,724 --> 00:00:33,698
+restituaient environ 82 % de
+l'électricité qu'on y mettait.
+
+10
+00:00:33,698 --> 00:00:37,014
+Ce chiffre s'appelle le
+rendement aller-retour.
+
+11
+00:00:37,534 --> 00:00:39,901
+Alors pourquoi le gouvernement fédéral
+
+12
+00:00:39,901 --> 00:00:42,267
+a-t-il engagé des milliards
+de dollars dans l'hydrogène ?
+
+13
+00:00:42,217 --> 00:00:44,615
+Et pourquoi l'hydrogène qui compte le plus
+
+14
+00:00:44,615 --> 00:00:47,013
+serait-il déjà dans votre assiette ?
+
+15
+00:00:47,532 --> 00:00:50,990
+Les deux réponses tiennent en
+une idée : l'hydrogène n'a pas
+
+16
+00:00:50,990 --> 00:00:54,064
+un problème de carburant, mais un
+problème d'usage : où l'utiliser ?
+
+17
+00:00:54,014 --> 00:00:56,911
+Suivons donc l'électron,
+et voyons où le transformer
+
+18
+00:00:56,911 --> 00:00:59,486
+en molécule vaut le détour.
+
+19
+00:01:00,452 --> 00:01:03,693
+D'abord, ce qu'est vraiment l'hydrogène.
+
+20
+00:01:03,643 --> 00:01:06,874
+C'est l'élément le plus
+abondant de l'univers, mais sur
+
+21
+00:01:06,874 --> 00:01:10,105
+Terre, il est lié à d'autres
+éléments : à l'oxygène dans
+
+22
+00:01:10,105 --> 00:01:13,337
+l'eau, ou au carbone dans le gaz
+naturel, le charbon et le pétrole.
+
+23
+00:01:13,858 --> 00:01:16,328
+Avant de pouvoir l'utiliser,
+
+24
+00:01:16,328 --> 00:01:18,489
+il faut donc le séparer de ces composés.
+
+25
+00:01:18,439 --> 00:01:22,304
+L'EIA qualifie l'hydrogène de
+vecteur énergétique : il transporte
+
+26
+00:01:22,304 --> 00:01:26,169
+l'énergie d'un endroit à un
+autre, un peu comme l'électricité.
+
+27
+00:01:26,688 --> 00:01:29,087
+Et ce transport a un prix.
+
+28
+00:01:29,037 --> 00:01:32,825
+Selon l'EIA, produire de
+l'hydrogène demande plus d'énergie
+
+29
+00:01:32,825 --> 00:01:36,614
+que l'hydrogène n'en fournit une
+fois converti en énergie utile.
+
+30
+00:01:36,614 --> 00:01:39,947
+Chaque usage de l'hydrogène
+paie donc ce péage quelque part,
+
+31
+00:01:39,947 --> 00:01:42,978
+et il faut le garder en tête
+pour la suite de cette vidéo.
+
+32
+00:01:43,952 --> 00:01:48,616
+Les États-Unis en produisent déjà
+beaucoup : environ 10 millions de tonnes
+
+33
+00:01:48,616 --> 00:01:52,856
+par an, selon la stratégie hydrogène
+2023 du Department of Energy.
+
+34
+00:01:52,806 --> 00:01:56,806
+Dans le monde, l'Agence internationale
+de l'énergie a compté près de 100
+
+35
+00:01:56,806 --> 00:02:00,306
+millions de tonnes de demande en 2024.
+
+36
+00:02:00,814 --> 00:02:04,107
+Selon le Department of Energy,
+environ 95 % de l'hydrogène américain
+
+37
+00:02:04,107 --> 00:02:07,399
+est produit à partir de gaz
+naturel, dans de grandes usines
+
+38
+00:02:07,399 --> 00:02:09,960
+qui utilisent le vaporeformage du méthane.
+
+39
+00:02:10,428 --> 00:02:16,041
+Le méthane et la vapeur s'y rencontrent
+entre 1 300 et 1 800 degrés Fahrenheit.
+
+40
+00:02:15,991 --> 00:02:19,939
+Il en sort de l'hydrogène et du monoxyde
+de carbone, et une seconde étape
+
+41
+00:02:19,939 --> 00:02:23,887
+transforme ce monoxyde de carbone en
+dioxyde de carbone et en hydrogène.
+
+42
+00:02:24,386 --> 00:02:27,168
+Ce dioxyde de carbone s'accumule.
+
+43
+00:02:27,118 --> 00:02:31,881
+La stratégie 2023 estimait que la
+production américaine d'hydrogène émettait
+
+44
+00:02:31,881 --> 00:02:36,212
+environ 100 millions de tonnes
+de gaz à effet de serre par an.
+
+45
+00:02:36,712 --> 00:02:39,774
+Captez ce carbone et
+stockez-le sous terre,
+
+46
+00:02:39,774 --> 00:02:42,453
+et on parle souvent d'hydrogène bleu.
+
+47
+00:02:42,403 --> 00:02:45,745
+Laissez-le partir dans l'air,
+et on parle d'hydrogène gris.
+
+48
+00:02:46,254 --> 00:02:49,947
+L'autre grande voie est l'électrolyse :
+faire passer un courant électrique
+
+49
+00:02:49,947 --> 00:02:53,270
+dans l'eau pour la séparer
+en hydrogène et oxygène.
+
+50
+00:02:53,220 --> 00:02:57,583
+Avec de l'éolien ou du solaire, on
+parle en général d'hydrogène vert.
+
+51
+00:02:57,583 --> 00:03:01,639
+Le Department of Energy lui-même
+n'utilise pas ce code couleur.
+
+52
+00:03:02,156 --> 00:03:05,747
+Quoi qu'il en soit, selon l'AIE,
+l'hydrogène bas carbone restait
+
+53
+00:03:05,747 --> 00:03:09,338
+sous 1 % de la production
+mondiale en 2024.
+
+54
+00:03:10,252 --> 00:03:13,021
+C'est là que l'électron entre en jeu.
+
+55
+00:03:12,971 --> 00:03:18,124
+En 2022, selon le Department of
+Energy, un électrolyseur typique
+
+56
+00:03:18,124 --> 00:03:23,277
+consommait environ 55 kilowattheures
+d'électricité par kilo d'hydrogène.
+
+57
+00:03:23,778 --> 00:03:26,617
+Seuls environ 61 % de
+l'énergie de cette électricité
+
+58
+00:03:26,617 --> 00:03:29,455
+finissent stockés dans l'hydrogène.
+
+59
+00:03:29,405 --> 00:03:33,563
+Les objectifs à long terme du
+ministère tournent autour de 70 %.
+
+60
+00:03:33,563 --> 00:03:36,178
+Mieux, mais toujours une perte.
+
+61
+00:03:36,680 --> 00:03:39,564
+Ensuite, il faut stocker l'hydrogène.
+
+62
+00:03:39,514 --> 00:03:42,208
+Il contient plus d'énergie
+par livre que tout
+
+63
+00:03:42,208 --> 00:03:44,565
+autre carburant, mais très peu par gallon.
+
+64
+00:03:44,565 --> 00:03:48,700
+On le comprime donc dans des
+réservoirs jusqu'à 10 000 psi,
+
+65
+00:03:48,700 --> 00:03:52,460
+ou on le liquéfie à moins
+423 degrés Fahrenheit.
+
+66
+00:03:53,416 --> 00:03:55,764
+Maintenant, additionnons les pertes.
+
+67
+00:03:55,714 --> 00:03:58,864
+C'est la chaîne du début de cette
+
+68
+00:03:58,864 --> 00:04:02,015
+vidéo : électricité, hydrogène,
+puis retour à l'électricité.
+
+69
+00:04:02,015 --> 00:04:05,112
+Dans ce test au Colorado, le
+générateur à pile à combustible
+
+70
+00:04:05,112 --> 00:04:08,208
+à lui seul n'a reconverti
+qu'environ 48 à 52 %
+
+71
+00:04:08,208 --> 00:04:10,918
+de l'énergie de
+l'hydrogène en électricité.
+
+72
+00:04:11,430 --> 00:04:14,441
+Une voiture à hydrogène
+suit la même chaîne.
+
+73
+00:04:14,391 --> 00:04:16,917
+Sa pile à combustible
+reconvertit l'hydrogène
+
+74
+00:04:16,917 --> 00:04:19,442
+en électricité pour un moteur électrique.
+
+75
+00:04:19,442 --> 00:04:24,174
+Une voiture à batterie évite le détour
+et stocke l'électricité directement.
+
+76
+00:04:24,692 --> 00:04:27,244
+Regardez maintenant la carte des stations.
+
+77
+00:04:27,194 --> 00:04:30,646
+En novembre 2026, le localisateur
+de stations du Department of Energy
+
+78
+00:04:30,646 --> 00:04:34,097
+recense 44 stations d'hydrogène dans
+
+79
+00:04:34,097 --> 00:04:37,118
+tout le pays, dont 42 en Californie.
+
+80
+00:04:37,118 --> 00:04:41,901
+Il recense près de 84 000 points de
+recharge pour voitures électriques.
+
+81
+00:04:42,418 --> 00:04:46,118
+Le chauffage domestique a
+le même problème, en pire.
+
+82
+00:04:46,068 --> 00:04:49,142
+Selon le Department of Energy, une
+pompe à chaleur peut fournir jusqu'à
+
+83
+00:04:49,142 --> 00:04:52,216
+trois fois plus de chaleur que
+l'énergie qu'elle consomme.
+
+84
+00:04:52,728 --> 00:04:56,185
+Transformez cette même électricité
+en hydrogène, et près de 40 %
+
+85
+00:04:56,185 --> 00:04:59,642
+de l'énergie a disparu avant
+même d'allumer un brûleur.
+
+86
+00:04:59,592 --> 00:05:02,862
+L'hydrogène ne contient aussi qu'environ
+un tiers de l'énergie du gaz naturel
+
+87
+00:05:02,862 --> 00:05:06,131
+par volume, et selon l'EIA,
+il faut plus de recherche
+
+88
+00:05:06,131 --> 00:05:09,401
+pour savoir si les appareils de
+chauffage domestiques le supportent.
+
+89
+00:05:09,902 --> 00:05:13,021
+Pour les voitures et les maisons,
+où l'électricité peut faire
+
+90
+00:05:13,021 --> 00:05:16,140
+le travail directement,
+l'hydrogène est donc un détour.
+
+91
+00:05:17,062 --> 00:05:19,180
+Mais inversons la question.
+
+92
+00:05:19,130 --> 00:05:23,518
+Et si on n'avait pas besoin d'énergie,
+mais des atomes d'hydrogène eux-mêmes ?
+
+93
+00:05:23,518 --> 00:05:25,901
+C'est là qu'il a du sens : pas comme
+
+94
+00:05:25,901 --> 00:05:27,944
+carburant, mais comme ingrédient.
+
+95
+00:05:28,452 --> 00:05:30,864
+Les raffineries de pétrole
+en sont un exemple.
+
+96
+00:05:30,814 --> 00:05:34,423
+Elles utilisent l'hydrogène pour
+retirer le soufre des carburants.
+
+97
+00:05:34,423 --> 00:05:37,857
+Dans le monde, le raffinage
+a utilisé plus de 43 millions
+
+98
+00:05:37,857 --> 00:05:40,801
+de tonnes d'hydrogène en 2024.
+
+99
+00:05:41,306 --> 00:05:43,960
+Les engrais, c'est le gros morceau.
+
+100
+00:05:43,910 --> 00:05:47,676
+L'hydrogène et l'azote de l'air
+donnent de l'ammoniac, et aux
+
+101
+00:05:47,676 --> 00:05:51,066
+États-Unis, 88 % de l'ammoniac
+sert à fabriquer des engrais.
+
+102
+00:05:51,066 --> 00:05:55,109
+En un sens, c'est donc
+l'hydrogène dans votre assiette.
+
+103
+00:05:55,624 --> 00:05:58,373
+Dans le monde, l'ammoniac
+absorbe environ 60 %
+
+104
+00:05:58,373 --> 00:06:01,122
+de l'hydrogène utilisé dans l'industrie.
+
+105
+00:06:01,072 --> 00:06:04,682
+Avec de l'hydrogène propre, selon
+le DOE, les usines d'ammoniac
+
+106
+00:06:04,682 --> 00:06:08,292
+pourraient réduire leurs
+émissions de plus de 90 %.
+
+107
+00:06:08,814 --> 00:06:10,856
+Vient ensuite l'acier.
+
+108
+00:06:10,806 --> 00:06:13,631
+Environ 70 % de l'acier américain est
+
+109
+00:06:13,631 --> 00:06:16,456
+fabriqué en fondant de la ferraille
+dans des fours électriques.
+
+110
+00:06:16,456 --> 00:06:18,867
+Mais l'acier neuf issu du minerai de fer
+
+111
+00:06:18,867 --> 00:06:20,933
+dépend du coke et du gaz naturel.
+
+112
+00:06:21,452 --> 00:06:24,684
+Utilisez de l'hydrogène propre
+pour retirer l'oxygène du
+
+113
+00:06:24,684 --> 00:06:27,915
+minerai, et selon le Department of
+Energy, les émissions sur le cycle de vie
+
+114
+00:06:27,915 --> 00:06:31,147
+de l'acier neuf pourraient
+baisser de 40 à 70 %.
+
+115
+00:06:31,618 --> 00:06:33,851
+Viennent ensuite les « peut-être ».
+
+116
+00:06:33,801 --> 00:06:36,295
+Les navires pourraient
+utiliser des carburants issus
+
+117
+00:06:36,295 --> 00:06:38,788
+de l'hydrogène, comme
+l'ammoniac et le méthanol.
+
+118
+00:06:38,788 --> 00:06:42,195
+Mi-2025, l'AIE recensait plus de
+
+119
+00:06:42,195 --> 00:06:45,115
+60 navires au méthanol en service.
+
+120
+00:06:45,624 --> 00:06:48,342
+Les poids lourds sont
+un autre « peut-être ».
+
+121
+00:06:48,292 --> 00:06:51,424
+Selon la stratégie du Department of
+Energy, les piles à combustible sont
+
+122
+00:06:51,424 --> 00:06:54,556
+particulièrement adaptées aux
+camions qui exigent des pleins
+
+123
+00:06:54,556 --> 00:06:57,297
+aussi rapides qu'au diesel, ou
+plus de 500 miles d'autonomie.
+
+124
+00:06:57,806 --> 00:07:01,233
+Et le réseau pourrait stocker l'hydrogène
+des jours, voire des semaines,
+
+125
+00:07:01,233 --> 00:07:04,659
+selon l'EIA, alors que la batterie
+moyenne du réseau américain en 2019
+
+126
+00:07:04,659 --> 00:07:07,463
+contenait environ une heure
+et demie de production.
+
+127
+00:07:07,413 --> 00:07:11,175
+Le pays stocke déjà de l'hydrogène
+dans trois cavités souterraines, et
+
+128
+00:07:11,175 --> 00:07:14,938
+dans l'Utah, un projet soutenu
+par une garantie de prêt fédérale
+
+129
+00:07:14,938 --> 00:07:18,701
+doit associer un électrolyseur de
+220 mégawatts à des cavités salines.
+
+130
+00:07:19,654 --> 00:07:22,436
+Ce qui nous ramène aux milliards.
+
+131
+00:07:22,386 --> 00:07:25,964
+La loi sur les infrastructures
+de 2021 a donné au Department
+
+132
+00:07:25,964 --> 00:07:29,031
+of Energy 9,5 milliards de
+dollars pour l'hydrogène.
+
+133
+00:07:29,031 --> 00:07:32,527
+En 2023, le Department of
+Energy a retenu sept pôles
+
+134
+00:07:32,527 --> 00:07:36,023
+régionaux d'hydrogène, dotés
+de 7 milliards de dollars,
+
+135
+00:07:36,023 --> 00:07:39,082
+pour rapprocher producteurs
+et utilisateurs.
+
+136
+00:07:39,588 --> 00:07:43,106
+Sa stratégie nationale
+vise 10 millions de tonnes
+
+137
+00:07:43,106 --> 00:07:46,623
+d'hydrogène propre par an
+d'ici 2030, 20 millions
+
+138
+00:07:46,623 --> 00:07:49,359
+d'ici 2040 et 50 millions d'ici 2050.
+
+139
+00:07:49,826 --> 00:07:52,506
+Mais les projets se sont
+heurtés à la réalité.
+
+140
+00:07:52,456 --> 00:07:56,402
+En 2025, l'AIE a indiqué que les
+projets prévus en Amérique du Nord
+
+141
+00:07:56,402 --> 00:08:00,349
+avaient reculé, surtout aux États-Unis,
+sur fond d'incertitude politique, et que
+
+142
+00:08:00,349 --> 00:08:03,578
+l'avenir de quatre des
+pôles était incertain.
+
+143
+00:08:04,546 --> 00:08:06,371
+Petit récap.
+
+144
+00:08:06,321 --> 00:08:09,510
+L'hydrogène est un
+vecteur, pas une source.
+
+145
+00:08:09,510 --> 00:08:13,113
+Les États-Unis le produisent surtout
+à partir de gaz naturel, et convertir
+
+146
+00:08:13,113 --> 00:08:16,716
+l'électricité en hydrogène puis en retour
+fait perdre l'essentiel de l'énergie.
+
+147
+00:08:17,232 --> 00:08:19,694
+C'est pourquoi il peine dans les voitures
+
+148
+00:08:19,694 --> 00:08:22,156
+et les maisons, où l'électricité
+fonctionne directement.
+
+149
+00:08:22,106 --> 00:08:24,677
+Mais dans les raffineries,
+les engrais et l'acier,
+
+150
+00:08:24,677 --> 00:08:27,247
+c'est la molécule elle-même qui compte.
+
+151
+00:08:27,758 --> 00:08:32,198
+L'hydrogène n'a pas un problème de
+carburant, mais de choix d'usage.
+
+152
+00:08:32,148 --> 00:08:35,024
+Alors, où l'utiliseriez-vous :
+camions, navires,
+
+153
+00:08:35,024 --> 00:08:37,900
+acier, ou stockage pour
+une semaine sans vent ?
+
+154
+00:08:37,900 --> 00:08:40,056
+Dites-le-moi en commentaire.
+
+155
+00:08:40,564 --> 00:08:43,549
+Si vous aimez voir comment
+fonctionne la machinerie cachée
+
+156
+00:08:43,549 --> 00:08:46,203
+du quotidien, abonnez-vous
+à The Hidden Grid.
+
+157
+00:08:46,153 --> 00:08:48,264
+Toutes les sources derrière les chiffres
+
+158
+00:08:48,264 --> 00:08:50,375
+de cette vidéo sont dans la description.

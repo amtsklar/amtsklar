@@ -1,0 +1,24 @@
+{
+ "title": "WHY SUNSET IS THE GRID'S HARDEST HOUR",
+ "parent": "grid-3am-3pm",
+ "voice": "en-US-GuyNeural",
+ "rate": "+2%",
+ "scenes": [
+  {
+   "text": "You'd think the grid's toughest hour is the hottest afternoon. In sunny states, it's often sunset.",
+   "src": "grid-3am-3pm/build/images/s15_0.mp4"
+  },
+  {
+   "text": "Take demand, subtract wind and solar, and California's curve sags at midday, then shoots up at night. It's called the duck curve.",
+   "src": "grid-3am-3pm/build/graphics/s17.png"
+  },
+  {
+   "text": "Batteries help. In 2025, California's grid operator reported batteries delivered about 9,100 megawatts on average in the hour ending at 8 p.m. In 2024, it was about 5,700.",
+   "src": "grid-3am-3pm/build/graphics/s21.png"
+  },
+  {
+   "text": "They charge on cheap midday sun and run after dark. The full video is on The Hidden Grid.",
+   "src": "grid-3am-3pm/build/images/s20_0.jpg"
+  }
+ ]
+}

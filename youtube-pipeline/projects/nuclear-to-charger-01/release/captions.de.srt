@@ -1,0 +1,760 @@
+1
+00:00:00,100 --> 00:00:03,098
+Dein Handy lädt auf dem Nachttisch.
+
+2
+00:00:03,048 --> 00:00:05,753
+Jetzt folg dem Kabel zurück.
+
+3
+00:00:05,753 --> 00:00:08,144
+In die Wand, raus auf die Straße,
+
+4
+00:00:08,144 --> 00:00:10,536
+die Stromleitungen
+hinauf, und immer weiter.
+
+5
+00:00:11,058 --> 00:00:15,784
+2025 erzeugten Kernkraftwerke
+rund 18 Prozent
+
+6
+00:00:15,784 --> 00:00:20,511
+des Stroms aus US-Großanlagen, laut
+der Energy Information Administration.
+
+7
+00:00:20,461 --> 00:00:22,739
+Für viele von uns beginnt also ein Teil
+
+8
+00:00:22,739 --> 00:00:24,734
+dieser Reise mit einem gespaltenen Atom.
+
+9
+00:00:25,256 --> 00:00:28,497
+Heute folgen wir dieser
+Energie den ganzen Weg.
+
+10
+00:00:28,447 --> 00:00:31,674
+Und zwei Dinge auf dieser
+Reise könnten dich überraschen.
+
+11
+00:00:31,674 --> 00:00:34,129
+Etwa zwei Drittel der Energie verlassen
+
+12
+00:00:34,129 --> 00:00:36,585
+das Kraftwerk nie als Strom.
+
+13
+00:00:36,585 --> 00:00:40,182
+Und die Elektronen im Kraftwerk
+erreichen nie dein Handy.
+
+14
+00:00:40,702 --> 00:00:43,247
+Die Idee: Dein Ladegerät ist das
+
+15
+00:00:43,247 --> 00:00:45,792
+letzte Glied einer langen
+Kette von Übergaben.
+
+16
+00:00:45,742 --> 00:00:48,043
+Jeder Schritt wandelt die Energie in eine
+
+17
+00:00:48,043 --> 00:00:50,015
+Form um, die der nächste nutzen kann.
+
+18
+00:00:50,982 --> 00:00:53,661
+In einem Reaktor ist der Brennstoff
+
+19
+00:00:53,661 --> 00:00:56,340
+Uran, geformt zu kleinen Keramik-Pellets.
+
+20
+00:00:56,290 --> 00:00:59,311
+Laut EIA enthält jedes Pellet etwa so viel
+
+21
+00:00:59,311 --> 00:01:01,953
+Energie wie 150 Gallonen Öl.
+
+22
+00:01:01,953 --> 00:01:04,227
+Die Pellets werden
+hintereinander gestapelt,
+
+23
+00:01:04,227 --> 00:01:06,175
+in 12 Fuß langen Brennstäben.
+
+24
+00:01:06,692 --> 00:01:09,720
+Wenn ein Neutron auf ein Uranatom prallt,
+
+25
+00:01:09,720 --> 00:01:12,369
+spaltet es sich in zwei kleinere Atome.
+
+26
+00:01:12,319 --> 00:01:14,054
+Das ist Kernspaltung.
+
+27
+00:01:14,054 --> 00:01:17,529
+Dabei wird viel Energie frei,
+plus zusätzliche Neutronen,
+
+28
+00:01:17,529 --> 00:01:21,005
+die weitere Atome spalten und so
+eine Kettenreaktion aufrechterhalten.
+
+29
+00:01:21,005 --> 00:01:22,995
+Das Kraftwerk nutzt die Wärme
+
+30
+00:01:22,995 --> 00:01:24,985
+all dieser Spaltungen,
+um Wasser zu kochen.
+
+31
+00:01:25,498 --> 00:01:30,175
+Stand März 2026 hatten die USA 94
+kommerzielle Reaktoren in Betrieb,
+
+32
+00:01:30,175 --> 00:01:34,428
+in 54 Kraftwerken in 28
+Bundesstaaten, laut EIA.
+
+33
+00:01:34,896 --> 00:01:36,925
+Und sie laufen auf Hochtouren.
+
+34
+00:01:36,875 --> 00:01:40,725
+2025 erzeugte das
+durchschnittliche US-Kernkraftwerk
+
+35
+00:01:40,725 --> 00:01:44,094
+91 Prozent seiner maximal
+möglichen Strommenge.
+
+36
+00:01:44,094 --> 00:01:47,232
+Die EIA nennt das
+Kapazitätsfaktor, und bei Kernkraft
+
+37
+00:01:47,232 --> 00:01:50,370
+war er höher als bei jedem
+anderen Kraftwerkstyp.
+
+38
+00:01:51,320 --> 00:01:54,255
+Als Nächstes muss Wärme
+zu Bewegung werden.
+
+39
+00:01:54,205 --> 00:01:57,649
+Laut der Atomaufsichtsbehörde NRC
+erzeugen nur zwei Reaktortypen
+
+40
+00:01:57,649 --> 00:02:01,092
+in den USA kommerziell
+Strom, und etwa zwei Drittel
+
+41
+00:02:01,092 --> 00:02:04,154
+der zugelassenen Reaktoren
+sind Druckwasserreaktoren.
+
+42
+00:02:04,654 --> 00:02:07,236
+Darin transportiert Wasser
+unter hohem Druck die Wärme
+
+43
+00:02:07,236 --> 00:02:09,819
+vom Kern zu einem Dampferzeuger, wo
+
+44
+00:02:09,819 --> 00:02:12,078
+sie Wasser in einem separaten
+Kreislauf verdampft.
+
+45
+00:02:12,028 --> 00:02:14,570
+Der andere Typ, der Siedewasserreaktor,
+
+46
+00:02:14,570 --> 00:02:16,748
+erzeugt den Dampf direkt im Kern.
+
+47
+00:02:17,268 --> 00:02:19,246
+So oder so wird der Dampf
+
+48
+00:02:19,246 --> 00:02:21,223
+zu einer Turbine geleitet
+und treibt sie an.
+
+49
+00:02:21,173 --> 00:02:24,194
+Die Turbine treibt einen Generator
+an, in dem ein rotierender
+
+50
+00:02:24,194 --> 00:02:26,836
+Magnet Strom in Drahtspulen induziert.
+
+51
+00:02:26,836 --> 00:02:30,357
+Hier wird Bewegung endlich zu Strom.
+
+52
+00:02:30,866 --> 00:02:34,400
+Der Generator dreht sich
+nicht beliebig schnell.
+
+53
+00:02:34,350 --> 00:02:37,509
+In Nordamerika läuft das
+Netz mit Wechselstrom
+
+54
+00:02:37,509 --> 00:02:40,668
+mit standardmäßig 60
+Hertz, also 60 Zyklen pro
+
+55
+00:02:40,668 --> 00:02:43,827
+Sekunde, und die Generatoren
+laufen synchron dazu.
+
+56
+00:02:44,344 --> 00:02:46,922
+Und hier kommt der erste große Verlust.
+
+57
+00:02:46,872 --> 00:02:49,627
+Die EIA erfasst, wie
+viel Wärme ein Kraftwerk
+
+58
+00:02:49,627 --> 00:02:52,037
+für jede abgegebene
+Kilowattstunde braucht.
+
+59
+00:02:52,037 --> 00:02:55,411
+Für US-Kernkraftwerke ergibt das für 2025
+
+60
+00:02:55,411 --> 00:02:58,785
+einen Wirkungsgrad von etwa 33 Prozent.
+
+61
+00:02:59,286 --> 00:03:03,483
+Rund zwei Drittel der Wärme
+werden also nie zu Strom.
+
+62
+00:03:03,433 --> 00:03:06,609
+Der verbrauchte Dampf
+wird in einem Kondensator
+
+63
+00:03:06,609 --> 00:03:09,467
+wieder zu Wasser gekühlt, und
+die Restwärme muss irgendwohin.
+
+64
+00:03:09,467 --> 00:03:12,324
+Manche Kraftwerke nutzen Kühltürme.
+
+65
+00:03:12,324 --> 00:03:15,806
+Andere einen See, einen
+Fluss oder das Meer.
+
+66
+00:03:16,316 --> 00:03:18,919
+Das ist nicht nur bei Kernkraft so.
+
+67
+00:03:18,869 --> 00:03:22,890
+Auch Kohlekraftwerke arbeiten
+mit Dampf, und 2025 lag ihr
+
+68
+00:03:22,890 --> 00:03:26,509
+durchschnittlicher Wirkungsgrad
+ähnlich, bei rund 32 Prozent.
+
+69
+00:03:27,460 --> 00:03:31,408
+Laut dem US-Energieministerium
+(Department of Energy) liefern Generatoren
+
+70
+00:03:31,408 --> 00:03:35,356
+meist Strom mit 5.000 bis 34.500 Volt.
+
+71
+00:03:35,306 --> 00:03:37,923
+Stell dir Spannung als
+elektrischen Druck vor,
+
+72
+00:03:37,923 --> 00:03:40,166
+als Schub, der den Strom vorantreibt.
+
+73
+00:03:40,674 --> 00:03:43,206
+Direkt am Kraftwerk erhöht
+ein Aufspanntransformator
+
+74
+00:03:43,206 --> 00:03:45,739
+diesen Druck für die lange Strecke.
+
+75
+00:03:45,689 --> 00:03:51,671
+Typische US-Übertragungsleitungen
+arbeiten mit 138.000,
+
+76
+00:03:51,671 --> 00:03:56,798
+230.000, 345.000, 500.000
+oder 765.000 Volt.
+
+77
+00:03:57,320 --> 00:03:59,923
+Warum die Spannung so hochtreiben?
+
+78
+00:03:59,873 --> 00:04:02,794
+Ein Transformator kann
+keine Leistung erzeugen.
+
+79
+00:04:02,794 --> 00:04:05,205
+Wenn er also die Spannung erhöht,
+
+80
+00:04:05,205 --> 00:04:07,271
+sinkt der Strom um denselben Faktor.
+
+81
+00:04:07,774 --> 00:04:10,217
+Und die Energie, die ein
+Draht als Wärme verliert,
+
+82
+00:04:10,217 --> 00:04:12,354
+hängt vom Quadrat der Stromstärke ab.
+
+83
+00:04:12,304 --> 00:04:14,319
+Halbiert man den Strom,
+
+84
+00:04:14,319 --> 00:04:16,335
+sinkt dieser Verlust auf ein Viertel.
+
+85
+00:04:16,335 --> 00:04:18,822
+Deshalb setzt das Netz auf Hochspannung.
+
+86
+00:04:19,332 --> 00:04:22,754
+Oder mit den Worten der
+EIA: Höhere Spannung macht
+
+87
+00:04:22,754 --> 00:04:25,749
+die Übertragung über weite
+Strecken effizienter und günstiger.
+
+88
+00:04:25,699 --> 00:04:28,996
+Das US-Netz hat Tausende Meilen dieser
+
+89
+00:04:28,996 --> 00:04:32,293
+Hochspannungsleitungen und Millionen
+Meilen Leitungen mit weniger Spannung.
+
+90
+00:04:33,260 --> 00:04:37,662
+Aber eine Lampe kann man nicht
+an 345.000 Volt anschließen.
+
+91
+00:04:37,612 --> 00:04:40,833
+Der Weg nach unten beginnt
+also in einem Umspannwerk,
+
+92
+00:04:40,833 --> 00:04:43,696
+wo Transformatoren die Spannung
+für lokale Leitungen senken.
+
+93
+00:04:44,218 --> 00:04:47,809
+Im Beispiel des US-Energieministeriums
+nimmt ein Umspannwerk
+
+94
+00:04:47,809 --> 00:04:51,400
+Strom mit 34.000 Volt auf und gibt ihn
+
+95
+00:04:51,400 --> 00:04:54,194
+mit 7.200 Volt an die
+Verteilleitungen im Viertel ab.
+
+96
+00:04:54,648 --> 00:04:57,637
+Die letzte Absenkung passiert
+nahe bei dir zu Hause:
+
+97
+00:04:57,637 --> 00:05:00,627
+der dosenförmige Trafo am
+Strommast oder ein Kasten
+
+98
+00:05:00,627 --> 00:05:03,616
+auf einem Betonsockel, wo die
+Leitungen unterirdisch verlaufen.
+
+99
+00:05:04,070 --> 00:05:08,484
+Er versorgt ein typisches US-Haus
+mit zwei 120-Volt-Leitern.
+
+100
+00:05:08,434 --> 00:05:10,756
+Einer davon liefert dir
+
+101
+00:05:10,756 --> 00:05:13,077
+die 120 Volt an einer normalen Steckdose.
+
+102
+00:05:13,077 --> 00:05:16,332
+Beide zusammen ergeben 240
+Volt für große Verbraucher
+
+103
+00:05:16,332 --> 00:05:19,225
+wie Wäschetrockner oder Elektroherd.
+
+104
+00:05:19,732 --> 00:05:23,649
+Auf der ganzen Strecke geht
+unterwegs etwas Energie verloren.
+
+105
+00:05:23,599 --> 00:05:27,591
+Die EIA schätzt, dass die
+Übertragungs- und Verteilverluste
+
+106
+00:05:27,591 --> 00:05:31,584
+von 2018 bis 2022 im Schnitt
+etwa 5 Prozent betrugen.
+
+107
+00:05:31,584 --> 00:05:34,913
+Der große Verlust passiert
+also schon im Kraftwerk.
+
+108
+00:05:34,913 --> 00:05:37,770
+Das Netz selbst ist ziemlich sparsam.
+
+109
+00:05:38,724 --> 00:05:41,365
+Jetzt zur zweiten Überraschung.
+
+110
+00:05:41,315 --> 00:05:44,530
+Wir sagen, Strom fließt, also
+stellt man sich leicht vor,
+
+111
+00:05:44,530 --> 00:05:47,387
+wie Elektronen vom Kraftwerk
+zu dir nach Hause rasen.
+
+112
+00:05:47,387 --> 00:05:49,083
+Tun sie nicht.
+
+113
+00:05:49,586 --> 00:05:52,787
+In einem Kupferdraht liegt die
+mittlere Driftgeschwindigkeit
+
+114
+00:05:52,787 --> 00:05:55,988
+der Elektronen im Bereich
+von Millimetern pro Sekunde,
+
+115
+00:05:55,988 --> 00:05:58,477
+so Physik-Unterlagen der
+Georgia State University.
+
+116
+00:05:58,427 --> 00:06:01,080
+In einem ihrer Beispiele
+ist es weniger als
+
+117
+00:06:01,080 --> 00:06:03,402
+ein Drittel Millimeter pro Sekunde.
+
+118
+00:06:03,904 --> 00:06:07,400
+Und in unserem Netz driften
+sie nicht mal in eine Richtung.
+
+119
+00:06:07,350 --> 00:06:11,051
+Bei Wechselstrom schwingt die
+Spannung ins Positive, dann
+
+120
+00:06:11,051 --> 00:06:14,289
+ins Negative und zurück,
+60-mal pro Sekunde.
+
+121
+00:06:14,289 --> 00:06:17,241
+Der Strom kehrt sich also
+ständig um, und die Elektronen
+
+122
+00:06:17,241 --> 00:06:19,824
+rücken meist nur auf
+der Stelle hin und her.
+
+123
+00:06:20,334 --> 00:06:23,396
+Auch Transformatoren
+unterbrechen die Kette.
+
+124
+00:06:23,346 --> 00:06:26,817
+Darin wechselt die Energie
+von einer Drahtspule zur
+
+125
+00:06:26,817 --> 00:06:29,941
+nächsten, über ein Magnetfeld
+in einem Eisenkern.
+
+126
+00:06:30,452 --> 00:06:32,634
+Was macht also die Reise?
+
+127
+00:06:32,584 --> 00:06:34,383
+Die Energie.
+
+128
+00:06:34,383 --> 00:06:38,043
+Drück auf ein Ende der Leitung,
+und der Stoß wandert weiter.
+
+129
+00:06:38,043 --> 00:06:41,596
+Die Unterlagen der Georgia
+State sagen es so: Die Änderung,
+
+130
+00:06:41,596 --> 00:06:45,148
+das Signal, läuft praktisch mit
+Lichtgeschwindigkeit durch die Drähte.
+
+131
+00:06:45,148 --> 00:06:49,357
+Über hundert Meilen ist das weniger
+als eine tausendstel Sekunde.
+
+132
+00:06:50,332 --> 00:06:54,109
+Und damit zurück zum kleinen
+Kasten auf deinem Nachttisch.
+
+133
+00:06:54,059 --> 00:06:57,355
+Bundesvorschriften definieren
+ihn sogar: Ein externes Netzteil
+
+134
+00:06:57,355 --> 00:07:00,651
+wandelt Haushaltsstrom in Gleichstrom um
+
+135
+00:07:00,651 --> 00:07:03,536
+oder in Wechselstrom mit niedrigerer
+Spannung, um ein Gerät zu betreiben.
+
+136
+00:07:04,050 --> 00:07:07,686
+Ein Akku lädt, wenn
+Strom in einer Richtung
+
+137
+00:07:07,686 --> 00:07:11,321
+hindurchfließt, und Netzstrom wechselt
+120-mal pro Sekunde die Richtung.
+
+138
+00:07:11,271 --> 00:07:14,519
+Also senkt das Ladegerät die
+Spannung und macht aus Wechselstrom
+
+139
+00:07:14,519 --> 00:07:17,407
+Gleichstrom, der in eine Richtung fließt.
+
+140
+00:07:17,912 --> 00:07:20,579
+Dann kommt die letzte Übergabe.
+
+141
+00:07:20,529 --> 00:07:24,445
+Wie das US-Energieministerium
+sagt, muss Strom
+
+142
+00:07:24,445 --> 00:07:28,360
+erst zu chemischer potenzieller Energie
+werden, um gut speicherbar zu sein.
+
+143
+00:07:28,360 --> 00:07:32,095
+Beim Laden wandern Elektronen durch
+den Stromkreis und Ionen durch
+
+144
+00:07:32,095 --> 00:07:35,491
+den Akku, und die Energie
+steckt am Ende in der Chemie.
+
+145
+00:07:35,998 --> 00:07:38,410
+Und das ist das Ende der Reise.
+
+146
+00:07:38,360 --> 00:07:41,224
+Energie aus einem gespaltenen
+Uranatom, die jetzt
+
+147
+00:07:41,224 --> 00:07:43,679
+als Chemie in deiner Tasche wartet.
+
+148
+00:07:44,646 --> 00:07:46,471
+Kurz zusammengefasst.
+
+149
+00:07:46,421 --> 00:07:48,487
+Spaltung erzeugt Wärme.
+
+150
+00:07:48,487 --> 00:07:50,554
+Wärme erzeugt Dampf.
+
+151
+00:07:50,554 --> 00:07:53,468
+Dampf dreht eine Turbine, und die Turbine
+
+152
+00:07:53,468 --> 00:07:56,383
+treibt einen Generator an,
+der 60-Hertz-Strom erzeugt.
+
+153
+00:07:56,383 --> 00:07:59,439
+2025 wurde nur etwa ein Drittel
+
+154
+00:07:59,439 --> 00:08:02,059
+der Wärme eines Kernkraftwerks zu Strom.
+
+155
+00:08:02,564 --> 00:08:05,855
+Transformatoren erhöhen die
+Spannung auf Hunderttausende
+
+156
+00:08:05,855 --> 00:08:09,146
+Volt, damit die lange Reise weniger
+verliert, und senken sie dann
+
+157
+00:08:09,146 --> 00:08:12,437
+wieder auf 120 und 240
+Volt bei dir zu Hause.
+
+158
+00:08:12,387 --> 00:08:16,380
+Die Elektronen bleiben meist,
+wo sie sind; die Energie reist.
+
+159
+00:08:16,882 --> 00:08:20,901
+Meine Frage an dich: Welcher Schritt
+hat dich am meisten überrascht?
+
+160
+00:08:20,851 --> 00:08:23,485
+Die Wärme, die nie zu Strom wird, oder
+
+161
+00:08:23,485 --> 00:08:26,119
+die Elektronen, die nie
+deine Wände verlassen?
+
+162
+00:08:26,119 --> 00:08:28,274
+Schreib's mir in die Kommentare.
+
+163
+00:08:28,800 --> 00:08:31,479
+Für mehr Reisen durch die Technik hinter
+
+164
+00:08:31,479 --> 00:08:34,158
+unserem Alltag, abonniere The Hidden Grid.
+
+165
+00:08:34,108 --> 00:08:36,219
+Alle Quellen zu den Zahlen in
+
+166
+00:08:36,219 --> 00:08:38,330
+diesem Video stehen in der Beschreibung.

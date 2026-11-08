@@ -706,18 +706,28 @@ def stage_meta(project):
             s = int(t["start"]) if t["i"] else 0
             lines.append(f"{s // 60}:{s % 60:02d} {sc['chapter']}")
     credits = json.loads((b / "credits.json").read_text())
-    lines += ["", "FOOTAGE & PHOTO CREDITS"]
+    pix = {k: c for k, c in credits.items() if "Pixabay" in (c.get("license") or "")}
+    other = {k: c for k, c in credits.items() if k not in pix}
+    lines += [""]
+    if pix:  # Pixabay licence needs no attribution -> one line; full list in credits.md
+        lines.append("Stock footage and photos: Pixabay (Pixabay Content License).")
     seen = set()
-    for c in credits.values():
-        key = (c["creator"], c["url"])
+    for c in other.values():  # licences that require attribution are listed individually
+        key = (c.get("creator"), c.get("url"))
         if key in seen:
             continue
         seen.add(key)
-        lines.append(f"\"{(c['title'] or 'Untitled')[:60]}\" by {c['creator'] or 'unknown'}, {c['license']}, {c['url']}")
-    lines += ["```", "", "## Tags", "", ", ".join(meta.get("tags", [])), "",
+        lines.append(f"\"{(c.get('title') or 'Untitled')[:60]}\" by {c.get('creator') or 'unknown'}, {c.get('license')}, {c.get('url')}")
+    full = ["# Footage & photo credits", ""] + [
+        f"- {k}: \"{(c.get('title') or '')[:70]}\" by {c.get('creator')}, {c.get('license')}, {c.get('url')}"
+        for k, c in sorted(credits.items())]
+    (b / "credits.md").write_text("\n".join(full) + "\n")
+    desc_len = len("\n".join(lines[lines.index("```") + 1:]))
+    lines += ["```", "", f"_Description length: {desc_len} characters (YouTube limit 5,000)._", "",
+              "## Tags", "", ", ".join(meta.get("tags", [])), "",
               "## Upload checklist", "",
               "- Upload video.mp4, choose a thumbnail from thumbnails/",
-              "- Subtitles: upload captions.srt (English)",
+              "- Subtitles: upload captions.srt (English) and captions.<lang>.srt (translations.md has titles/descriptions)",
               "- Altered or synthetic content: answer honestly (narration voice is synthetic;"
               " no realistic AI people or events are shown)",
               "- Add end screen (last 20 s) and a pinned comment with a question", ""]

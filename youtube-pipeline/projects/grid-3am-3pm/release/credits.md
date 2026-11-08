@@ -1,0 +1,61 @@
+# Footage & photo credits
+
+- s00_0.mp4: "phone, smartphone, mobile, portable, screen, digital, communication, t" by Natures_Embrace, Pixabay Content License, https://pixabay.com/videos/id-202987/
+- s00_1.jpg: "phone, iphone, mobile, green, smartphone" by rmartinr, Pixabay Content License, https://pixabay.com/photos/phone-iphone-mobile-green-8594571/
+- s01_0.mp4: "windmill, turbine, energy, storm clouds" by Ditscha, Pixabay Content License, https://pixabay.com/videos/id-112957/
+- s01_1.jpg: "sky astronomy, northern lights, galaxy, universe, sky, nature, atmosph" by rauschenberger, Pixabay Content License, https://pixabay.com/photos/sky-astronomy-northern-lights-galaxy-4856790/
+- s01_2.jpg: "wind mills, energy, clouds, power, nature, outdoors, sky, energy, ener" by ELG21, Pixabay Content License, https://pixabay.com/photos/wind-mills-energy-clouds-power-6928590/
+- s02_0.jpg: "star trails, night, stars, rotation, starry sky, dark, light streaks, " by Pexels, Pixabay Content License, https://pixabay.com/photos/star-trails-night-stars-rotation-1846734/
+- s02_1.jpg: "thunderclouds, clouds, nature, sunbeams, atmosphere, sky, weather" by adege, Pixabay Content License, https://pixabay.com/photos/thunderclouds-clouds-sunbeams-9020956/
+- s03_0.mp4: "factory, sunset, smoke, sugar beet factory, sugar, clouds, work, elect" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-91282/
+- s03_1.jpg: "wires, electrical current, electricity, high voltage, energy, high vol" by Couleur, Pixabay Content License, https://pixabay.com/photos/wires-electrical-current-electricity-7997980/
+- s05_0.mp4: "laundry, washing machine, cleaning clothes, clean clothes, water, iron" by iha31, Pixabay Content License, https://pixabay.com/videos/id-30704/
+- s05_1.jpg: "kitchen, interior design, room, home, interior, residential, decor, de" by shadowfirearts, Pixabay Content License, https://pixabay.com/photos/kitchen-interior-design-room-home-1940174/
+- s06_0.jpg: "nuclear power plant, rhine, flow, nuclear power, atomic energy, smoke," by distelAPPArath, Pixabay Content License, https://pixabay.com/photos/nuclear-power-plant-rhine-flow-4535760/
+- s06_1.jpg: "nuclear power plant, cooling tower, water vapor, clouds, heaven, sunri" by distelAPPArath, Pixabay Content License, https://pixabay.com/photos/nuclear-power-plant-cooling-tower-4529392/
+- s08_0.jpg: "night, aurora, boreal, space, nature, stars, phenomenon, astronomy, wi" by rauschenberger, Pixabay Content License, https://pixabay.com/photos/night-aurora-boreal-space-nature-4793073/
+- s08_1.jpg: "skyrim, sunset glow, windmill, pier, container, purple, skyrim, skyrim" by 尼青, Pixabay Content License, https://pixabay.com/photos/skyrim-sunset-glow-windmill-pier-4920972/
+- s10_0.mp4: "wind energy, windmill, wind, turbine, landscape, fields, renewable, en" by invisiblepower, Pixabay Content License, https://pixabay.com/videos/id-6558/
+- s10_1.jpg: "wind power, energy, wind energy, eco-friendly, environmental technolog" by distelAPPArath, Pixabay Content License, https://pixabay.com/photos/wind-power-energy-wind-energy-4380274/
+- s10_2.jpg: "wind turbines, silhouettes, blue sky, nature, sunset, dusk, twilight, " by distelAPPArath, Pixabay Content License, https://pixabay.com/photos/wind-turbines-silhouettes-sunset-2991696/
+- s11_0.mp4: "houses, solar panels, solar farm, solar estate, solar-powered estate, " by Juras2021, Pixabay Content License, https://pixabay.com/videos/id-168801/
+- s11_1.jpg: "photovoltaic system, solar, solar energy, solar panel, photovoltaic, r" by mrganso, Pixabay Content License, https://pixabay.com/photos/photovoltaic-system-solar-2742302/
+- s13_0.jpg: "gas turbine equipment, work, factory" by evgenia_axsenova, Pixabay Content License, https://pixabay.com/photos/gas-turbine-equipment-work-factory-3428713/
+- s13_1.jpg: "power plant, carbon, coal fired power plant, industry, environment, ch" by grunzibaer, Pixabay Content License, https://pixabay.com/photos/power-plant-carbon-5452632/
+- s14_0.jpg: "photovoltaic, photovoltaic system, solar system, solar, nature, solar " by andreas160578, Pixabay Content License, https://pixabay.com/photos/photovoltaic-photovoltaic-system-2138992/
+- s14_1.jpg: "solar, panel, solar panels, solar energy, rooftop, man, worker, solar," by This_is_Engineering, Pixabay Content License, https://pixabay.com/photos/solar-panel-solar-panels-8499901/
+- s14_2.jpg: "photovoltaic system, solar, solar energy, solar panel, photovoltaic, n" by mrganso, Pixabay Content License, https://pixabay.com/photos/photovoltaic-system-solar-2742304/
+- s15_0.mp4: "windmill, heaven, sun, dirty, high voltage, sunset, energy, rotor blad" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-355270/
+- s15_1.jpg: "sunset, countryside, nature, power lines, power poles, high-voltage py" by jplenio, Pixabay Content License, https://pixabay.com/photos/sunset-countryside-power-lines-3442835/
+- s18_0.jpg: "renewable, energy, environment, wind, solar, green, nature, power, ele" by seagul, Pixabay Content License, https://pixabay.com/photos/renewable-energy-environment-wind-1989416/
+- s18_1.jpg: "sun, solar flare, nature, space, outer space, universe, cosmos, astron" by WikiImages, Pixabay Content License, https://pixabay.com/photos/sun-solar-flare-space-outer-space-11582/
+- s18_2.jpg: "solar energy, solar system, nature, solar panel, photovoltaic, renewab" by andreas160578, Pixabay Content License, https://pixabay.com/photos/solar-energy-solar-system-2157212/
+- s19_0.mp4: "parand city, tehran suburb, residential towers, urban landscape, citys" by mostafa_meraji, Pixabay Content License, https://pixabay.com/videos/id-377374/
+- s19_1.jpg: "street, melbourne, australia, metropolis, night, city, lighting, light" by raedon, Pixabay Content License, https://pixabay.com/photos/street-melbourne-australia-142638/
+- s20_0.jpg: "data center, engine room, the battery pack, data center, data center, " by Akela999, Pixabay Content License, https://pixabay.com/photos/data-center-engine-room-2476790/
+- s22_0.mp4: "wind, electricity, windpower, rice, vietnam, nature, farming, green, s" by Ponnguyenduy, Pixabay Content License, https://pixabay.com/videos/id-307864/
+- s24_0.mp4: "money, cash, bank, banknote, bill, currency, dollar, finance, macro, p" by 34168960, Pixabay Content License, https://pixabay.com/videos/id-153458/
+- s24_1.jpg: "puzzle, money, business, finance, solution, success, jigsaw, cash, inv" by qimono, Pixabay Content License, https://pixabay.com/photos/puzzle-money-business-finance-2500328/
+- s25_0.mp4: "brown coal, fields, away, nature, industry, environment, contrast, cur" by jplenio, Pixabay Content License, https://pixabay.com/videos/id-25608/
+- s25_1.jpg: "chimneys, power plant, industry, smoke, steam, thermal power station, " by wal_172619, Pixabay Content License, https://pixabay.com/photos/chimneys-power-plant-industry-smoke-9599975/
+- s25_2.jpg: "smoke, chimney, pollution, smoking, environmental protection, exhaust " by JuergenPM, Pixabay Content License, https://pixabay.com/photos/smoke-chimney-pollution-smoking-258786/
+- s26_0.mp4: "solar energy, sunlight, sun, energy, energy generation, energy product" by adege, Pixabay Content License, https://pixabay.com/videos/id-156444/
+- s26_1.jpg: "solar cells, photovoltaic, electricity, green electricity, energy tran" by blickpixel, Pixabay Content License, https://pixabay.com/photos/solar-cells-photovoltaic-electricity-491701/
+- s28_0.jpg: "gas turbine equipment, work, factory" by evgenia_axsenova, Pixabay Content License, https://pixabay.com/photos/gas-turbine-equipment-work-factory-3428713/
+- s29_0.jpg: "apartment, room, house, residential interior, interior design, decorat" by jarmoluk, Pixabay Content License, https://pixabay.com/photos/apartment-room-house-2094718/
+- s29_1.jpg: "room, apartment, interior design, furnishings, visual design, room, ro" by keresi72, Pixabay Content License, https://pixabay.com/photos/room-apartment-interior-design-416050/
+- s30_0.jpg: "electric, parking, vehicle, transportation, automobile, plug, transpor" by stanvpetersen, Pixabay Content License, https://pixabay.com/photos/electric-parking-vehicle-2778403/
+- s31_0.jpg: "meter, electrical meter, power, electrical, measure, meter, meter, met" by rgaudet17, Pixabay Content License, https://pixabay.com/photos/meter-electrical-meter-power-3410068/
+- s31_1.jpg: "electric meter, electricity, meter, voltmeter, multimeter, gauge, elec" by jillrose999, Pixabay Content License, https://pixabay.com/photos/electric-meter-electricity-meter-5229750/
+- s32_0.jpg: "dishwasher, kitchen utensils, washing, cup, macro, shiny, metal, house" by AS_Photography, Pixabay Content License, https://pixabay.com/photos/dishwasher-kitchen-utensils-washing-1772579/
+- s32_1.jpg: "kitchen, bar stools, decor, apartment, home, sit, chair, interior, des" by DokaRyan, Pixabay Content License, https://pixabay.com/photos/kitchen-bar-stools-decor-apartment-3689918/
+- s32_2.jpg: "kitchen, sink, high end, kitchen, kitchen, kitchen, kitchen, kitchen, " by shadowfirearts, Pixabay Content License, https://pixabay.com/photos/kitchen-sink-high-end-1597018/
+- s33_0.jpg: "electric car, car, electric, vehicle, power, electricity, transportati" by VariousPhotography, Pixabay Content License, https://pixabay.com/photos/electric-car-car-electric-vehicle-1458836/
+- s34_0.jpg: "water, clouds, night sky, evening sky, heaven, eve, night, coast, beac" by Bru-nO, Pixabay Content License, https://pixabay.com/photos/water-clouds-night-sky-evening-sky-2469111/
+- s34_1.jpg: "windmills, rainbow, fields, windmill farm, grass, grassland, landscape" by EdWhiteImages, Pixabay Content License, https://pixabay.com/photos/windmills-rainbow-fields-5643293/
+- s35_0.mp4: "solar panels, energy, renewable, electric current, solar, panel, ecolo" by Stdudioray, Pixabay Content License, https://pixabay.com/videos/id-72837/
+- s35_1.jpg: "solar energy, solar panels, solar power, renewable energy, solar cells" by fietzfotos, Pixabay Content License, https://pixabay.com/photos/solar-energy-solar-panels-5622969/
+- s36_0.jpg: "birds, perched, wire, avian, ornithology, birdwatching, sunrise, orang" by TheOtherKev, Pixabay Content License, https://pixabay.com/photos/birds-perched-wire-avian-8253985/
+- s37_0.jpg: "electric meter, electricity, meter, voltmeter, multimeter, gauge, elec" by jillrose999, Pixabay Content License, https://pixabay.com/photos/electric-meter-electricity-meter-5229750/
+- s38_0.jpg: "hong kong, city, traffic, lights, illuminated, motion blur, long expos" by 12019, Pixabay Content License, https://pixabay.com/photos/hong-kong-city-traffic-lights-1990268/
+- s38_1.jpg: "park, little island, usa, architecture, manhattan, america, usa, usa, " by Paphop, Pixabay Content License, https://pixabay.com/photos/park-little-island-usa-architecture-8081967/

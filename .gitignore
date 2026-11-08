@@ -1,3 +1,4 @@
 youtube-pipeline/projects/*/build/
 __pycache__/
 youtube-pipeline/projects/*/build/graphics/data/
+youtube-pipeline/shorts/*/build/

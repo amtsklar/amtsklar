@@ -1,0 +1,323 @@
+# Translations — hydrogen-01
+
+Source: metadata.md (English). Title based on English option 1. Source titles, URLs and footage credits kept in original English.
+
+## Spanish (es, Latin America)
+
+**Title**
+
+Hidrógeno: dónde tiene sentido y dónde NO
+
+**Description**
+
+```
+Convierte electricidad en hidrógeno y de vuelta en electricidad, y una prueba de un laboratorio nacional recuperó solo entre el 28 y el 35 por ciento. Una batería de red devuelve cerca del 82.
+Entonces, ¿dónde tiene sentido el hidrógeno? Seguimos al electrón desde el enchufe hasta el electrolizador, el tanque de combustible, el campo fertilizado y la acería.
+
+En este video:
+- Por qué el hidrógeno es un portador de energía, no una fuente de energía
+- Cómo EE. UU. produce unos 10 millones de toneladas métricas al año, sobre todo a partir de gas natural
+- Hidrógeno gris, azul y verde, y por qué el DOE no usa los colores
+- Las pérdidas de la electrólisis y el problema de ida y vuelta frente a las baterías
+- Por qué al hidrógeno le cuesta en autos y en la calefacción del hogar
+- Donde la molécula importa: refinerías, amoníaco/fertilizantes, acero
+- Los "quizás": combustibles marítimos, camiones pesados, almacenamiento de larga duración
+- Los polos de hidrógeno de EE. UU. y la estrategia nacional
+
+Fuentes (títulos originales en inglés):
+NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
+EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
+EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
+EIA, Hydrogen explained: Production of hydrogen - https://www.eia.gov/energyexplained/hydrogen/production-of-hydrogen.php
+EIA, Hydrogen explained: Use of hydrogen - https://www.eia.gov/energyexplained/hydrogen/use-of-hydrogen.php
+U.S. DOE, U.S. National Clean Hydrogen Strategy and Roadmap (2023) - https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/us-national-clean-hydrogen-strategy-roadmap.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Hydrogen Production - https://www.energy.gov/eere/fuelcells/hydrogen-production
+U.S. DOE, Hydrogen Production: Natural Gas Reforming - https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming
+U.S. DOE, Hydrogen Production: Electrolysis - https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis
+U.S. DOE, Technical Targets for Proton Exchange Membrane Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-proton-exchange-membrane-electrolysis
+U.S. DOE, Technical Targets for Liquid Alkaline Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-liquid-alkaline-electrolysis
+U.S. DOE, Hydrogen Storage - https://www.energy.gov/eere/fuelcells/hydrogen-storage
+U.S. DOE Alternative Fuels Data Center, Hydrogen Basics - https://afdc.energy.gov/fuels/hydrogen-basics
+U.S. DOE Alternative Fuels Data Center, Alternative Fueling Station Counts by State (data as of Nov. 7, 2026) - https://afdc.energy.gov/stations/states
+U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
+IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
+
+La narración fue generada con IA; el guion fue investigado y revisado por una persona.
+Solo con fines educativos; no es asesoría financiera. El creador invierte en el sector energético.
+
+#hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
+
+CAPÍTULOS
+0:00 Intro
+1:00 Qué es el hidrógeno
+1:43 Cómo lo produce EE. UU.
+3:10 La pérdida de la electrólisis
+3:53 El problema de ida y vuelta
+5:16 Donde la molécula importa
+7:19 La apuesta de EE. UU. por el hidrógeno
+8:04 Resumen
+
+CRÉDITOS DE VIDEO Y FOTOS
+Stock footage and photos: Pixabay (Pixabay Content License).
+```
+
+**Tags**
+
+hidrógeno explicado, hidrógeno verde, hidrógeno azul, hidrógeno gris, electrólisis, hidrógeno vs baterías, autos de hidrógeno, calefacción con hidrógeno, eficiencia de ida y vuelta, reformado de metano con vapor, amoníaco fertilizante hidrógeno, acero verde, polos de hidrógeno, almacenamiento de energía de larga duración, cómo funciona la energía
+
+## German (de)
+
+**Title**
+
+Wasserstoff: Wo er Sinn ergibt und wo NICHT
+
+**Description**
+
+```
+Strom in Wasserstoff umwandeln und wieder zurück: Bei einem Test eines US-Nationallabors kamen nur 28 bis 35 Prozent zurück. Eine Netzbatterie liefert etwa 82.
+Wo ergibt Wasserstoff also wirklich Sinn? Wir folgen dem Elektron von der Steckdose zum Elektrolyseur, zum Tank, zum gedüngten Feld und ins Stahlwerk.
+
+In diesem Video:
+- Warum Wasserstoff ein Energieträger ist, keine Energiequelle
+- Wie die USA rund 10 Millionen Tonnen pro Jahr herstellen, überwiegend aus Erdgas
+- Grauer, blauer und grüner Wasserstoff und warum das DOE auf Farben verzichtet
+- Elektrolyseverluste und das Round-Trip-Problem im Vergleich zu Batterien
+- Warum Wasserstoff bei Autos und beim Heizen zu Hause schwächelt
+- Wo das Molekül zählt: Raffinerien, Ammoniak/Dünger, Stahl
+- Die Vielleichts: Schiffskraftstoffe, schwere Lkw, Langzeitspeicher
+- Die US-Wasserstoff-Hubs und die nationale Strategie
+
+Quellen (Originaltitel auf Englisch):
+NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
+EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
+EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
+EIA, Hydrogen explained: Production of hydrogen - https://www.eia.gov/energyexplained/hydrogen/production-of-hydrogen.php
+EIA, Hydrogen explained: Use of hydrogen - https://www.eia.gov/energyexplained/hydrogen/use-of-hydrogen.php
+U.S. DOE, U.S. National Clean Hydrogen Strategy and Roadmap (2023) - https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/us-national-clean-hydrogen-strategy-roadmap.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Hydrogen Production - https://www.energy.gov/eere/fuelcells/hydrogen-production
+U.S. DOE, Hydrogen Production: Natural Gas Reforming - https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming
+U.S. DOE, Hydrogen Production: Electrolysis - https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis
+U.S. DOE, Technical Targets for Proton Exchange Membrane Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-proton-exchange-membrane-electrolysis
+U.S. DOE, Technical Targets for Liquid Alkaline Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-liquid-alkaline-electrolysis
+U.S. DOE, Hydrogen Storage - https://www.energy.gov/eere/fuelcells/hydrogen-storage
+U.S. DOE Alternative Fuels Data Center, Hydrogen Basics - https://afdc.energy.gov/fuels/hydrogen-basics
+U.S. DOE Alternative Fuels Data Center, Alternative Fueling Station Counts by State (data as of Nov. 7, 2026) - https://afdc.energy.gov/stations/states
+U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
+IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
+
+Die Sprecherstimme ist KI-generiert; das Skript wurde von einem Menschen recherchiert und geprüft.
+Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert in den Energiesektor.
+
+#hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
+
+KAPITEL
+0:00 Intro
+1:00 Was Wasserstoff ist
+1:43 Wie Amerika ihn herstellt
+3:10 Der Elektrolyseverlust
+3:53 Das Round-Trip-Problem
+5:16 Wo das Molekül zählt
+7:19 Amerikas Wasserstoff-Wette
+8:04 Zusammenfassung
+
+VIDEO- & BILDNACHWEISE
+Stock footage and photos: Pixabay (Pixabay Content License).
+```
+
+**Tags**
+
+Wasserstoff erklärt, grüner Wasserstoff, blauer Wasserstoff, grauer Wasserstoff, Elektrolyse, Wasserstoff vs Batterie, Wasserstoffauto, Heizen mit Wasserstoff, Round-Trip-Wirkungsgrad, Dampfreformierung, Ammoniak Dünger Wasserstoff, grüner Stahl, Wasserstoff-Hubs, Langzeitspeicher, wie Energie funktioniert
+
+## Portuguese (pt-BR)
+
+**Title**
+
+Hidrogênio: onde faz sentido e onde NÃO faz
+
+**Description**
+
+```
+Transforme eletricidade em hidrogênio e de volta, e um teste de um laboratório nacional recuperou só 28 a 35 por cento. Uma bateria da rede devolve cerca de 82.
+Então, onde o hidrogênio realmente faz sentido? Seguimos o elétron da tomada ao eletrolisador, ao tanque de combustível, à lavoura adubada e à siderúrgica.
+
+Neste vídeo:
+- Por que o hidrogênio é um vetor energético, não uma fonte de energia
+- Como os EUA produzem cerca de 10 milhões de toneladas métricas por ano, principalmente a partir de gás natural
+- Hidrogênio cinza, azul e verde, e por que o DOE dispensa as cores
+- As perdas da eletrólise e o problema de ida e volta em comparação com baterias
+- Por que o hidrogênio tem dificuldade em carros e no aquecimento residencial
+- Onde a molécula importa: refinarias, amônia/fertilizantes, aço
+- Os "talvez": combustíveis para navios, caminhões pesados, armazenamento de longa duração
+- Os polos de hidrogênio dos EUA e a estratégia nacional
+
+Fontes (títulos originais em inglês):
+NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
+EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
+EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
+EIA, Hydrogen explained: Production of hydrogen - https://www.eia.gov/energyexplained/hydrogen/production-of-hydrogen.php
+EIA, Hydrogen explained: Use of hydrogen - https://www.eia.gov/energyexplained/hydrogen/use-of-hydrogen.php
+U.S. DOE, U.S. National Clean Hydrogen Strategy and Roadmap (2023) - https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/us-national-clean-hydrogen-strategy-roadmap.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Hydrogen Production - https://www.energy.gov/eere/fuelcells/hydrogen-production
+U.S. DOE, Hydrogen Production: Natural Gas Reforming - https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming
+U.S. DOE, Hydrogen Production: Electrolysis - https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis
+U.S. DOE, Technical Targets for Proton Exchange Membrane Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-proton-exchange-membrane-electrolysis
+U.S. DOE, Technical Targets for Liquid Alkaline Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-liquid-alkaline-electrolysis
+U.S. DOE, Hydrogen Storage - https://www.energy.gov/eere/fuelcells/hydrogen-storage
+U.S. DOE Alternative Fuels Data Center, Hydrogen Basics - https://afdc.energy.gov/fuels/hydrogen-basics
+U.S. DOE Alternative Fuels Data Center, Alternative Fueling Station Counts by State (data as of Nov. 7, 2026) - https://afdc.energy.gov/stations/states
+U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
+IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
+
+A narração é gerada por IA; o roteiro foi pesquisado e revisado por uma pessoa.
+Apenas para fins educativos, não é recomendação financeira. O criador investe no setor de energia.
+
+#hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
+
+CAPÍTULOS
+0:00 Intro
+1:00 O que é o hidrogênio
+1:43 Como os EUA o produzem
+3:10 A perda na eletrólise
+3:53 O problema de ida e volta
+5:16 Onde a molécula importa
+7:19 A aposta dos EUA no hidrogênio
+8:04 Resumo
+
+CRÉDITOS DE VÍDEOS E FOTOS
+Stock footage and photos: Pixabay (Pixabay Content License).
+```
+
+**Tags**
+
+hidrogênio explicado, hidrogênio verde, hidrogênio azul, hidrogênio cinza, eletrólise, hidrogênio vs baterias, carros a hidrogênio, aquecimento a hidrogênio, eficiência de ida e volta, reforma a vapor do metano, amônia fertilizante hidrogênio, aço verde, polos de hidrogênio, armazenamento de energia de longa duração, como a energia funciona
+
+## French (fr)
+
+**Title**
+
+L'hydrogène : où il a du sens, et où il n'en a PAS
+
+**Description**
+
+```
+Transformez de l'électricité en hydrogène puis à nouveau en électricité : lors d'un test d'un laboratoire national américain, seuls 28 à 35 % sont revenus. Une batterie réseau en restitue environ 82.
+Alors, où l'hydrogène a-t-il vraiment du sens ? Nous suivons l'électron de la prise à l'électrolyseur, au réservoir, au champ fertilisé et à l'aciérie.
+
+Dans cette vidéo :
+- Pourquoi l'hydrogène est un vecteur énergétique, et non une source d'énergie
+- Comment les États-Unis en produisent environ 10 millions de tonnes par an, surtout à partir de gaz naturel
+- Hydrogène gris, bleu et vert, et pourquoi le DOE se passe des couleurs
+- Les pertes de l'électrolyse et le problème de l'aller-retour face aux batteries
+- Pourquoi l'hydrogène peine dans les voitures et le chauffage domestique
+- Là où la molécule compte : raffineries, ammoniac/engrais, acier
+- Les « peut-être » : carburants maritimes, poids lourds, stockage de longue durée
+- Les pôles hydrogène américains et la stratégie nationale
+
+Sources (titres originaux en anglais) :
+NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
+EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
+EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
+EIA, Hydrogen explained: Production of hydrogen - https://www.eia.gov/energyexplained/hydrogen/production-of-hydrogen.php
+EIA, Hydrogen explained: Use of hydrogen - https://www.eia.gov/energyexplained/hydrogen/use-of-hydrogen.php
+U.S. DOE, U.S. National Clean Hydrogen Strategy and Roadmap (2023) - https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/us-national-clean-hydrogen-strategy-roadmap.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Hydrogen Production - https://www.energy.gov/eere/fuelcells/hydrogen-production
+U.S. DOE, Hydrogen Production: Natural Gas Reforming - https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming
+U.S. DOE, Hydrogen Production: Electrolysis - https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis
+U.S. DOE, Technical Targets for Proton Exchange Membrane Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-proton-exchange-membrane-electrolysis
+U.S. DOE, Technical Targets for Liquid Alkaline Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-liquid-alkaline-electrolysis
+U.S. DOE, Hydrogen Storage - https://www.energy.gov/eere/fuelcells/hydrogen-storage
+U.S. DOE Alternative Fuels Data Center, Hydrogen Basics - https://afdc.energy.gov/fuels/hydrogen-basics
+U.S. DOE Alternative Fuels Data Center, Alternative Fueling Station Counts by State (data as of Nov. 7, 2026) - https://afdc.energy.gov/stations/states
+U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
+IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
+
+La narration est générée par IA ; le script a été recherché et vérifié par un humain.
+À but éducatif uniquement, ceci n'est pas un conseil financier. Le créateur investit dans le secteur de l'énergie.
+
+#hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
+
+CHAPITRES
+0:00 Intro
+1:00 Ce qu'est l'hydrogène
+1:43 Comment les États-Unis le produisent
+3:10 La perte de l'électrolyse
+3:53 Le problème de l'aller-retour
+5:16 Là où la molécule compte
+7:19 Le pari hydrogène des États-Unis
+8:04 Récap
+
+CRÉDITS VIDÉOS ET PHOTOS
+Stock footage and photos: Pixabay (Pixabay Content License).
+```
+
+**Tags**
+
+hydrogène expliqué, hydrogène vert, hydrogène bleu, hydrogène gris, électrolyse, hydrogène vs batteries, voiture à hydrogène, chauffage à l'hydrogène, rendement aller-retour, vaporeformage du méthane, ammoniac engrais hydrogène, acier vert, pôles hydrogène, stockage d'énergie longue durée, comment fonctionne l'énergie
+
+## Hindi (hi)
+
+**Title**
+
+हाइड्रोजन: कहाँ यह काम का है और कहाँ बिल्कुल नहीं
+
+**Description**
+
+```
+बिजली को हाइड्रोजन में बदलिए और फिर वापस बिजली में, तो एक अमेरिकी नेशनल लैब के टेस्ट में सिर्फ़ 28 से 35 प्रतिशत ही वापस मिला। एक ग्रिड बैटरी लगभग 82 प्रतिशत लौटाती है।
+तो हाइड्रोजन असल में कहाँ समझदारी है? हम इलेक्ट्रॉन के पीछे चलते हैं: सॉकेट से इलेक्ट्रोलाइज़र, फ़्यूल टैंक, उर्वरक वाले खेत और स्टील मिल तक।
+
+इस वीडियो में:
+- हाइड्रोजन ऊर्जा का वाहक क्यों है, ऊर्जा का स्रोत नहीं
+- अमेरिका हर साल लगभग 10 मिलियन मीट्रिक टन कैसे बनाता है, ज़्यादातर प्राकृतिक गैस से
+- ग्रे, ब्लू और ग्रीन हाइड्रोजन, और DOE रंगों का इस्तेमाल क्यों नहीं करता
+- इलेक्ट्रोलिसिस के नुकसान और बैटरियों के मुकाबले राउंड-ट्रिप की समस्या
+- कारों और घरेलू हीटिंग में हाइड्रोजन क्यों पिछड़ती है
+- जहाँ अणु मायने रखता है: रिफ़ाइनरी, अमोनिया/उर्वरक, स्टील
+- "शायद" वाले इस्तेमाल: जहाज़ों के ईंधन, भारी ट्रक, लंबी अवधि का स्टोरेज
+- अमेरिका के हाइड्रोजन हब और राष्ट्रीय रणनीति
+
+स्रोत (मूल अंग्रेज़ी शीर्षक):
+NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
+EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
+EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
+EIA, Hydrogen explained: Production of hydrogen - https://www.eia.gov/energyexplained/hydrogen/production-of-hydrogen.php
+EIA, Hydrogen explained: Use of hydrogen - https://www.eia.gov/energyexplained/hydrogen/use-of-hydrogen.php
+U.S. DOE, U.S. National Clean Hydrogen Strategy and Roadmap (2023) - https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/us-national-clean-hydrogen-strategy-roadmap.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Hydrogen Production - https://www.energy.gov/eere/fuelcells/hydrogen-production
+U.S. DOE, Hydrogen Production: Natural Gas Reforming - https://www.energy.gov/eere/fuelcells/hydrogen-production-natural-gas-reforming
+U.S. DOE, Hydrogen Production: Electrolysis - https://www.energy.gov/eere/fuelcells/hydrogen-production-electrolysis
+U.S. DOE, Technical Targets for Proton Exchange Membrane Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-proton-exchange-membrane-electrolysis
+U.S. DOE, Technical Targets for Liquid Alkaline Electrolysis - https://www.energy.gov/eere/fuelcells/technical-targets-liquid-alkaline-electrolysis
+U.S. DOE, Hydrogen Storage - https://www.energy.gov/eere/fuelcells/hydrogen-storage
+U.S. DOE Alternative Fuels Data Center, Hydrogen Basics - https://afdc.energy.gov/fuels/hydrogen-basics
+U.S. DOE Alternative Fuels Data Center, Alternative Fueling Station Counts by State (data as of Nov. 7, 2026) - https://afdc.energy.gov/stations/states
+U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf
+U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
+IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
+
+नैरेशन AI से बनाया गया है; स्क्रिप्ट की रिसर्च और समीक्षा एक इंसान ने की है।
+सिर्फ़ शिक्षा के लिए, यह वित्तीय सलाह नहीं है। क्रिएटर ऊर्जा क्षेत्र में निवेश करता है।
+
+#hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
+
+चैप्टर
+0:00 परिचय
+1:00 हाइड्रोजन क्या है
+1:43 अमेरिका इसे कैसे बनाता है
+3:10 इलेक्ट्रोलिसिस का नुकसान
+3:53 राउंड-ट्रिप की समस्या
+5:16 जहाँ अणु मायने रखता है
+7:19 अमेरिका का हाइड्रोजन दांव
+8:04 सारांश
+
+फ़ुटेज और फ़ोटो क्रेडिट
+Stock footage and photos: Pixabay (Pixabay Content License).
+```
+
+**Tags**
+
+हाइड्रोजन, ग्रीन हाइड्रोजन, ब्लू हाइड्रोजन, ग्रे हाइड्रोजन, इलेक्ट्रोलिसिस, हाइड्रोजन बनाम बैटरी, हाइड्रोजन कार, राउंड-ट्रिप दक्षता, स्टीम मीथेन रिफ़ॉर्मिंग, अमोनिया उर्वरक, ग्रीन स्टील, हाइड्रोजन हब, ऊर्जा भंडारण, hydrogen explained, green hydrogen

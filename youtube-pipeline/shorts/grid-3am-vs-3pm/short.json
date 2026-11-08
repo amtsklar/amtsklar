@@ -1,0 +1,28 @@
+{
+ "title": "3 A.M. VS. 3 P.M.",
+ "parent": "grid-3am-3pm",
+ "voice": "en-US-GuyNeural",
+ "rate": "+2%",
+ "scenes": [
+  {
+   "text": "Plug in your phone at 3 a.m., then again at 3 p.m. Same outlet. Different power plants.",
+   "src": "grid-3am-3pm/build/images/s00_0.mp4"
+  },
+  {
+   "text": "U.S. electricity use usually bottoms out around five in the morning, the EIA says.",
+   "src": "grid-3am-3pm/build/graphics/s04.png"
+  },
+  {
+   "text": "In 2025, on the Great Plains grid, wind covered about 46 percent of demand at 2 a.m., and only about 31 percent at noon.",
+   "src": "grid-3am-3pm/build/graphics/s09.png"
+  },
+  {
+   "text": "At noon in Texas, solar averaged 24 gigawatts in the summer of 2025. Two summers earlier, it was 12.",
+   "src": "grid-3am-3pm/build/graphics/s12.png"
+  },
+  {
+   "text": "The grid isn't one machine. It's a different machine every hour. The full story is on The Hidden Grid.",
+   "src": "grid-3am-3pm/build/images/s15_0.mp4"
+  }
+ ]
+}

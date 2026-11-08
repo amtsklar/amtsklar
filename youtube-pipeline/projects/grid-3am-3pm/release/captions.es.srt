@@ -1,0 +1,717 @@
+1
+00:00:00,100 --> 00:00:02,896
+Conecta tu celular a las 3 a. m.
+
+2
+00:00:02,846 --> 00:00:05,299
+Luego conéctalo al mismo enchufe
+
+3
+00:00:05,299 --> 00:00:07,753
+a las 3 p. m. Misma pared, mismos cables.
+
+4
+00:00:08,274 --> 00:00:11,338
+Pero según dónde vivas, las centrales
+
+5
+00:00:11,338 --> 00:00:14,062
+del otro lado pueden ser
+totalmente distintas.
+
+6
+00:00:14,012 --> 00:00:17,536
+De noche, quizá un parque
+eólico en las llanuras.
+
+7
+00:00:17,536 --> 00:00:21,884
+Por la tarde, paneles solares que
+a las 3 a. m. estaban a oscuras.
+
+8
+00:00:22,400 --> 00:00:25,898
+Quédate y verás por qué,
+en estados soleados,
+
+9
+00:00:25,898 --> 00:00:29,079
+la hora más difícil para la red
+no suele ser la más calurosa.
+
+10
+00:00:29,029 --> 00:00:31,549
+Y por qué, algunos días, las centrales
+
+11
+00:00:31,549 --> 00:00:34,069
+pagan por regalar su electricidad.
+
+12
+00:00:34,582 --> 00:00:37,591
+Porque la red no es una sola máquina.
+
+13
+00:00:37,541 --> 00:00:40,479
+Es una máquina distinta cada hora.
+
+14
+00:00:40,479 --> 00:00:43,923
+Así que sigamos un día, hora por hora.
+
+15
+00:00:44,886 --> 00:00:47,203
+Empecemos en la oscuridad.
+
+16
+00:00:47,153 --> 00:00:50,686
+Según la EIA, el consumo
+eléctrico en EE. UU.
+
+17
+00:00:50,686 --> 00:00:54,219
+suele tocar fondo hacia
+las cinco de la mañana,
+
+18
+00:00:54,219 --> 00:00:57,751
+cuando casi todos duermen y
+las oficinas están cerradas.
+
+19
+00:00:58,268 --> 00:01:00,944
+Pero nunca llega a cero.
+
+20
+00:01:00,894 --> 00:01:04,780
+Refrigeradores y aparatos siempre
+encendidos siguen funcionando, y la
+
+21
+00:01:04,780 --> 00:01:08,234
+EIA llama a ese piso estable
+de demanda «carga base».
+
+22
+00:01:08,746 --> 00:01:11,927
+La central de carga base
+clásica es la nuclear.
+
+23
+00:01:11,877 --> 00:01:14,999
+Es barata de operar una vez
+construida, así que se busca
+
+24
+00:01:14,999 --> 00:01:17,808
+mantenerla a plena potencia día y noche.
+
+25
+00:01:18,312 --> 00:01:21,513
+En 2025, la central nuclear
+promedio de EE. UU. operó
+
+26
+00:01:21,513 --> 00:01:24,715
+al 91 % de su producción máxima posible,
+
+27
+00:01:24,715 --> 00:01:27,916
+más que cualquier otro tipo de central.
+
+28
+00:01:27,866 --> 00:01:30,938
+La nuclear aportó cerca del 18 % de
+
+29
+00:01:30,938 --> 00:01:34,010
+la electricidad a gran
+escala del país ese año.
+
+30
+00:01:34,526 --> 00:01:36,710
+Ahora sumemos el viento.
+
+31
+00:01:36,660 --> 00:01:39,944
+En el centro del país, la EIA
+
+32
+00:01:39,944 --> 00:01:42,817
+dice que el viento en tierra
+suele ser más fuerte de noche.
+
+33
+00:01:43,324 --> 00:01:46,131
+Tomemos el Southwest Power
+Pool, el operador de la red
+
+34
+00:01:46,131 --> 00:01:48,939
+de una gran parte de las Grandes Llanuras.
+
+35
+00:01:48,889 --> 00:01:52,572
+Analizamos sus cifras de
+2025 con los datos horarios
+
+36
+00:01:52,572 --> 00:01:56,256
+de la EIA: en promedio, el viento
+cubrió cerca del 46 % de la demanda
+
+37
+00:01:56,256 --> 00:01:59,939
+a las 2 a. m., pero solo
+cerca del 31 % al mediodía.
+
+38
+00:01:59,939 --> 00:02:03,490
+Y durante cinco horas
+seguidas antes del amanecer
+
+39
+00:02:03,490 --> 00:02:07,040
+del 28 de diciembre de
+2025, cubrió cerca del 80 %.
+
+40
+00:02:07,554 --> 00:02:11,181
+Algunas noches sobra viento,
+así que los operadores
+
+41
+00:02:11,181 --> 00:02:14,445
+reducen las turbinas para
+igualar oferta y demanda.
+
+42
+00:02:15,362 --> 00:02:19,501
+Doce horas después, la máquina
+es totalmente distinta.
+
+43
+00:02:19,451 --> 00:02:23,198
+El sol está alto, los aires
+acondicionados funcionan y en
+
+44
+00:02:23,198 --> 00:02:26,605
+cada vez más lugares la
+solar hace el trabajo pesado.
+
+45
+00:02:27,112 --> 00:02:29,003
+Por ejemplo, Texas.
+
+46
+00:02:28,953 --> 00:02:32,996
+En el verano de 2025, las
+plantas solares de la red
+
+47
+00:02:32,996 --> 00:02:37,039
+principal de Texas promediaron 24
+gigavatios entre las 12 y la 1 p. m.
+
+48
+00:02:37,039 --> 00:02:40,310
+Dos veranos antes, eran 12.
+
+49
+00:02:40,830 --> 00:02:43,759
+El gas natural le hizo espacio.
+
+50
+00:02:43,709 --> 00:02:48,090
+El gas aportó la mitad de la
+energía de mediodía en Texas
+
+51
+00:02:48,090 --> 00:02:52,472
+en el verano de 2023, y
+el 37 % en el de 2025.
+
+52
+00:02:52,988 --> 00:02:56,050
+California ha ido aún más lejos.
+
+53
+00:02:56,000 --> 00:02:59,457
+La solar ya cubre casi la mitad
+de la demanda del operador
+
+54
+00:02:59,457 --> 00:03:02,915
+entre las ocho de la mañana
+y las cuatro de la tarde,
+
+55
+00:03:02,915 --> 00:03:06,372
+y en los primeros cinco
+meses de 2026 superó
+
+56
+00:03:06,372 --> 00:03:08,792
+al gas natural en el 82 % de los días.
+
+57
+00:03:09,748 --> 00:03:12,584
+Aquí viene el giro que prometí.
+
+58
+00:03:12,534 --> 00:03:14,814
+Uno pensaría que el momento más difícil
+
+59
+00:03:14,814 --> 00:03:17,095
+para la red es la tarde más calurosa.
+
+60
+00:03:17,095 --> 00:03:19,751
+Pero donde hay mucha energía solar,
+
+61
+00:03:19,751 --> 00:03:22,028
+suele ser el tramo cerca del atardecer.
+
+62
+00:03:22,530 --> 00:03:25,996
+Para entenderlo, los
+operadores miran la carga neta:
+
+63
+00:03:25,996 --> 00:03:29,461
+la demanda total menos lo que
+producen el viento y el sol.
+
+64
+00:03:29,411 --> 00:03:33,068
+Es lo que deben cubrir
+todas las demás centrales.
+
+65
+00:03:33,584 --> 00:03:36,050
+Grafica la carga neta de un día típico en
+
+66
+00:03:36,050 --> 00:03:38,517
+California: se hunde mucho en el medio
+
+67
+00:03:38,517 --> 00:03:40,675
+y luego se dispara al anochecer.
+
+68
+00:03:40,625 --> 00:03:42,766
+Parece la silueta de un
+
+69
+00:03:42,766 --> 00:03:44,907
+pato, por eso se llama curva del pato.
+
+70
+00:03:44,907 --> 00:03:47,221
+Y la EIA dice que la panza
+
+71
+00:03:47,221 --> 00:03:49,535
+se hace más profunda a
+medida que crece la solar.
+
+72
+00:03:50,038 --> 00:03:53,060
+En primavera, con la
+demanda baja, la panza puede
+
+73
+00:03:53,060 --> 00:03:55,746
+recibir más solar de la
+que la red puede usar.
+
+74
+00:03:55,696 --> 00:04:00,403
+En 2024, el operador de California
+recortó 3,4 millones de MWh
+
+75
+00:04:00,403 --> 00:04:05,111
+de eólica y solar, y el 93 % fue solar.
+
+76
+00:04:05,628 --> 00:04:07,839
+Luego viene el cuello.
+
+77
+00:04:07,789 --> 00:04:11,224
+Cuando el sol se apaga,
+la gente llega a casa,
+
+78
+00:04:11,224 --> 00:04:14,278
+prepara la cena y prende
+luces y aires acondicionados.
+
+79
+00:04:14,278 --> 00:04:18,055
+Todo lo que no es el
+sol debe subir rápido.
+
+80
+00:04:19,004 --> 00:04:22,212
+Una solución en auge es la batería.
+
+81
+00:04:22,162 --> 00:04:24,532
+Se carga con solar barata al mediodía
+
+82
+00:04:24,532 --> 00:04:26,564
+y se usa al anochecer.
+
+83
+00:04:26,564 --> 00:04:29,084
+Como dice la EIA, eso aplana
+
+84
+00:04:29,084 --> 00:04:31,603
+la curva del pato y acorta su cuello.
+
+85
+00:04:32,122 --> 00:04:35,011
+Y la escala ha cambiado rápido.
+
+86
+00:04:34,961 --> 00:04:38,534
+El operador de California
+informó que en 2025 las baterías
+
+87
+00:04:38,534 --> 00:04:42,106
+de su mercado entregaron en
+promedio unos 9.100 megavatios
+
+88
+00:04:42,106 --> 00:04:45,679
+en la hora que termina a las 8 p. m.
+
+89
+00:04:45,679 --> 00:04:50,267
+En 2024, eran unos 5.700.
+
+90
+00:04:51,234 --> 00:04:53,671
+Lo que nos lleva al precio.
+
+91
+00:04:53,621 --> 00:04:56,378
+En el mercado mayorista,
+donde la energía se compra
+
+92
+00:04:56,378 --> 00:04:59,135
+y se vende al por mayor, la
+electricidad puede costar
+
+93
+00:04:59,135 --> 00:05:01,892
+montos muy distintos de una hora a otra.
+
+94
+00:05:02,408 --> 00:05:07,091
+Berkeley Lab halló que el
+precio mayorista promedio
+
+95
+00:05:07,091 --> 00:05:11,347
+en los grandes mercados de EE. UU.
+en 2023 fue de 36 dólares por MWh.
+
+96
+00:05:11,297 --> 00:05:15,192
+Pero ese promedio oculta grandes
+vaivenes: en Texas, el precio horario
+
+97
+00:05:15,192 --> 00:05:19,086
+superó los 500 dólares algunas
+tardes de verano, y en California,
+
+98
+00:05:19,086 --> 00:05:22,202
+en días soleados de
+primavera, cayó bajo cero.
+
+99
+00:05:22,726 --> 00:05:24,644
+Bajo cero.
+
+100
+00:05:24,594 --> 00:05:28,264
+Esa es la parte extraña
+que prometí al inicio.
+
+101
+00:05:28,264 --> 00:05:30,512
+Un precio negativo
+significa que los vendedores
+
+102
+00:05:30,512 --> 00:05:32,759
+pagan a los compradores
+por llevarse su energía.
+
+103
+00:05:33,276 --> 00:05:35,660
+¿Por qué alguien haría eso?
+
+104
+00:05:35,610 --> 00:05:37,824
+Algunas centrales no pueden apagarse fácil
+
+105
+00:05:37,824 --> 00:05:40,038
+ni barato por un rato corto.
+
+106
+00:05:40,038 --> 00:05:43,608
+Las nucleares buscan operar a
+plena potencia, y las grandes
+
+107
+00:05:43,608 --> 00:05:47,179
+centrales de vapor pagan costos
+cada vez que paran y arrancan.
+
+108
+00:05:47,690 --> 00:05:50,448
+Y algunos parques eólicos ganan un crédito
+
+109
+00:05:50,448 --> 00:05:52,813
+fiscal por cada
+megavatio-hora que producen.
+
+110
+00:05:52,763 --> 00:05:56,726
+Por un rato, pagar un poco
+es mejor que apagarse.
+
+111
+00:05:57,232 --> 00:06:00,647
+En el mercado diario de
+California, los precios fueron
+
+112
+00:06:00,647 --> 00:06:04,061
+negativos cerca del 7 %
+del tiempo en 2025, según
+
+113
+00:06:04,061 --> 00:06:07,049
+el propio monitor de mercado del operador.
+
+114
+00:06:06,999 --> 00:06:10,024
+Y Berkeley Lab halló que en 2023 esos
+
+115
+00:06:10,024 --> 00:06:13,049
+precios negativos aparecieron
+casi solo en horas
+
+116
+00:06:13,049 --> 00:06:15,696
+soleadas de fines de
+primavera e inicios de verano.
+
+117
+00:06:16,206 --> 00:06:20,185
+En el otro extremo están las
+horas caras, cuando la red
+
+118
+00:06:20,185 --> 00:06:23,802
+recurre a centrales de punta, a
+menudo turbinas de gas ocasionales.
+
+119
+00:06:23,752 --> 00:06:26,934
+Cuesta más operarlas,
+pero responden rápido,
+
+120
+00:06:26,934 --> 00:06:29,763
+justo lo que necesita
+esa rampa del atardecer.
+
+121
+00:06:30,734 --> 00:06:33,570
+Entonces, ¿qué significa esto en tu casa?
+
+122
+00:06:33,520 --> 00:06:35,980
+Casi nadie ve los precios
+
+123
+00:06:35,980 --> 00:06:38,440
+mayoristas, pero tu horario sí importa.
+
+124
+00:06:38,956 --> 00:06:42,056
+La mayoría de quienes tienen
+auto eléctrico lo cargan de noche
+
+125
+00:06:42,056 --> 00:06:45,156
+en casa, según el Departamento de Energía.
+
+126
+00:06:45,106 --> 00:06:48,795
+Y algunas compañías ofrecen
+tarifas horarias: la luz cuesta
+
+127
+00:06:48,795 --> 00:06:52,074
+menos en ciertas horas y más en otras.
+
+128
+00:06:52,578 --> 00:06:55,473
+Funciona porque la mayoría de
+los hogares ya tiene medidores
+
+129
+00:06:55,473 --> 00:06:58,007
+inteligentes que registran el
+consumo al menos cada hora.
+
+130
+00:06:57,957 --> 00:07:02,013
+En 2022, cerca del 73 % de
+los medidores residenciales
+
+131
+00:07:02,013 --> 00:07:05,563
+de EE. UU. eran
+inteligentes, según la EIA.
+
+132
+00:07:06,080 --> 00:07:09,221
+Y aquí es donde falla el viejo consejo.
+
+133
+00:07:09,171 --> 00:07:11,683
+En el mercado mayorista de
+California, algunas horas
+
+134
+00:07:11,683 --> 00:07:14,195
+de las más baratas ahora están a mitad del
+
+135
+00:07:14,195 --> 00:07:16,392
+día, no a mitad de la noche.
+
+136
+00:07:16,392 --> 00:07:20,382
+Así que revisa la tarifa de tu
+compañía en vez de adivinar.
+
+137
+00:07:20,902 --> 00:07:23,530
+Usar el lavavajillas o cargar el auto en
+
+138
+00:07:23,530 --> 00:07:26,158
+una hora barata no es solo por tu factura.
+
+139
+00:07:26,108 --> 00:07:28,122
+Ayuda a la red a llenar la
+
+140
+00:07:28,122 --> 00:07:30,137
+panza del pato en vez de su cuello.
+
+141
+00:07:31,110 --> 00:07:33,015
+Resumen rápido.
+
+142
+00:07:32,965 --> 00:07:35,638
+A las 3 a. m., la demanda
+está cerca de su mínimo,
+
+143
+00:07:35,638 --> 00:07:38,312
+la nuclear opera a tope y en las Grandes
+
+144
+00:07:38,312 --> 00:07:40,651
+Llanuras el viento suele
+estar en su punto más fuerte.
+
+145
+00:07:41,156 --> 00:07:44,329
+A las 3 p. m., la solar cubre cada vez más
+
+146
+00:07:44,329 --> 00:07:47,502
+demanda, a veces lo bastante para
+llevar los precios bajo cero.
+
+147
+00:07:47,452 --> 00:07:50,616
+Luego, al atardecer, llega
+el empinado cuello del pato,
+
+148
+00:07:50,616 --> 00:07:53,463
+y baterías y centrales
+de gas corren a cubrirlo.
+
+149
+00:07:53,986 --> 00:07:56,649
+La red no es una sola máquina.
+
+150
+00:07:56,599 --> 00:07:59,538
+Es una máquina distinta cada hora.
+
+151
+00:07:59,538 --> 00:08:02,144
+Y ahora ya sabes leerla.
+
+152
+00:08:02,664 --> 00:08:04,866
+¿Cuánto cobra tu compañía eléctrica
+
+153
+00:08:04,866 --> 00:08:07,069
+de noche y cuánto por la tarde?
+
+154
+00:08:07,019 --> 00:08:10,862
+¿Tienes tarifa horaria o un precio fijo?
+
+155
+00:08:10,862 --> 00:08:13,654
+Cuéntame tu estado en los comentarios.
+
+156
+00:08:14,174 --> 00:08:17,287
+Si te gusta ver cómo
+funciona la maquinaria oculta
+
+157
+00:08:17,287 --> 00:08:20,055
+de la vida diaria,
+suscríbete a The Hidden Grid.
+
+158
+00:08:20,005 --> 00:08:22,206
+Todas las fuentes de las cifras de
+
+159
+00:08:22,206 --> 00:08:24,406
+este video están en la descripción.

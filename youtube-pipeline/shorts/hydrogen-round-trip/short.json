@@ -1,0 +1,24 @@
+{
+ "title": "100 IN, 28 BACK",
+ "parent": "hydrogen-01",
+ "voice": "en-US-GuyNeural",
+ "rate": "+2%",
+ "scenes": [
+  {
+   "text": "In 2024, engineers at the National Renewable Energy Laboratory turned electricity into hydrogen, stored it, and turned it back into electricity.",
+   "src": "hydrogen-01/build/images/s00_0.jpg"
+  },
+  {
+   "text": "At full power, about 28 percent came back. At low power, about 35.",
+   "src": "hydrogen-01/build/graphics/s01.png"
+  },
+  {
+   "text": "America's grid batteries? About 82 percent, according to EIA data from 2019.",
+   "src": "hydrogen-01/build/images/s02_0.jpg"
+  },
+  {
+   "text": "That's why hydrogen makes sense where you need the molecule, not just the energy. The full video is on The Hidden Grid.",
+   "src": "hydrogen-01/build/images/s24_0.jpg"
+  }
+ ]
+}

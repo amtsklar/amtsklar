@@ -1,0 +1,763 @@
+1
+00:00:00,100 --> 00:00:02,614
+Stell dir einen böigen Nachmittag vor.
+
+2
+00:00:02,564 --> 00:00:05,574
+Bäume biegen sich, Fahnen knattern.
+
+3
+00:00:05,574 --> 00:00:07,774
+Aber oben auf dem Hügel drehen sich
+
+4
+00:00:07,774 --> 00:00:09,974
+einige Windräder überhaupt nicht.
+
+5
+00:00:10,482 --> 00:00:13,839
+Ein stillstehendes Windrad an
+einem windigen Tag ist meist
+
+6
+00:00:13,839 --> 00:00:16,861
+die Maschine, das Netz oder die
+Ingenieure, die sagen: nicht jetzt.
+
+7
+00:00:16,811 --> 00:00:19,451
+Folgen wir dem Wind vom
+Rotorblatt bis zur Stromleitung
+
+8
+00:00:19,451 --> 00:00:21,798
+und finden wir heraus,
+wer das sagt und warum.
+
+9
+00:00:22,304 --> 00:00:24,639
+Unterwegs siehst du, warum ein bisschen
+
+10
+00:00:24,639 --> 00:00:26,973
+mehr Wind viel mehr
+Leistung bedeuten kann.
+
+11
+00:00:26,923 --> 00:00:29,328
+Und warum Windräder an manchen der
+
+12
+00:00:29,328 --> 00:00:31,732
+windigsten Tage weniger erzeugen sollen.
+
+13
+00:00:32,254 --> 00:00:36,795
+2025 lieferte Wind rund 10,5 Prozent
+
+14
+00:00:36,795 --> 00:00:41,337
+des Stroms aus US-Großkraftwerken,
+berichtet die EIA.
+
+15
+00:00:41,287 --> 00:00:45,115
+In Iowa waren es laut
+Berkeley Lab rund 58 Prozent
+
+16
+00:00:45,115 --> 00:00:48,519
+der gesamten Stromerzeugung
+des Bundesstaats.
+
+17
+00:00:49,020 --> 00:00:51,253
+Und die Maschinen sind groß.
+
+18
+00:00:51,203 --> 00:00:54,964
+Der jährliche Windbericht von Berkeley
+Lab für das Department of Energy sagt,
+
+19
+00:00:54,964 --> 00:00:58,725
+die durchschnittliche neue
+Onshore-Anlage 2025 hatte
+
+20
+00:00:58,725 --> 00:01:02,486
+rund 3,8 Megawatt, mit
+der Nabe etwa 335 Fuß hoch
+
+21
+00:01:02,486 --> 00:01:05,119
+und einem Rotor von etwa
+460 Fuß Durchmesser.
+
+22
+00:01:06,092 --> 00:01:08,605
+Der einfachste Grund für Stillstand:
+
+23
+00:01:08,605 --> 00:01:11,119
+nicht genug Wind dort,
+wo die Blätter sind.
+
+24
+00:01:11,578 --> 00:01:14,049
+Das Department of Energy weist
+darauf hin, dass der Wind
+
+25
+00:01:14,049 --> 00:01:16,519
+mit der Höhe zunimmt, die Brise, die du am
+
+26
+00:01:16,519 --> 00:01:18,990
+Boden spürst, ist also
+nicht der Wind am Rotor.
+
+27
+00:01:19,440 --> 00:01:24,364
+Jede Anlage hat einen Windmesser, ein
+Anemometer, das eine Steuerung speist.
+
+28
+00:01:24,314 --> 00:01:27,536
+Laut dem Ministerium startet
+die Steuerung die Anlage meist
+
+29
+00:01:27,536 --> 00:01:30,399
+bei etwa 7 bis 11 Meilen pro Stunde.
+
+30
+00:01:30,399 --> 00:01:32,631
+Das ist die Einschaltgeschwindigkeit.
+
+31
+00:01:32,631 --> 00:01:35,246
+Darunter wartet die Anlage.
+
+32
+00:01:35,750 --> 00:01:39,692
+Schwacher Wind ist auch der Grund, warum
+der Ertrag auf dem Papier bescheiden wirkt.
+
+33
+00:01:39,642 --> 00:01:42,908
+Berkeley Lab ermittelte
+für die US-Windflotte
+
+34
+00:01:42,908 --> 00:01:46,173
+2025 einen Kapazitätsfaktor
+von 34 Prozent.
+
+35
+00:01:46,173 --> 00:01:50,344
+Anlagen, die 2024 gebaut
+wurden, kamen auf etwa 37.
+
+36
+00:01:50,860 --> 00:01:54,298
+Der Kapazitätsfaktor ist die
+tatsächliche Erzeugung, geteilt durch
+
+37
+00:01:54,298 --> 00:01:57,392
+das Maximum bei durchgehendem
+Volllastbetrieb.
+
+38
+00:01:57,342 --> 00:02:00,515
+Die Zahlen von Berkeley Lab
+enthalten bereits Verluste durch
+
+39
+00:02:00,515 --> 00:02:03,234
+Abregelung, Ausfallzeiten
+und Eis an den Rotorblättern.
+
+40
+00:02:04,188 --> 00:02:06,095
+Warum also zählen ein paar
+
+41
+00:02:06,095 --> 00:02:08,003
+Meilen pro Stunde mehr so viel?
+
+42
+00:02:07,953 --> 00:02:10,619
+Wegen einer einzigen Zahl: drei.
+
+43
+00:02:11,138 --> 00:02:13,014
+Die Leistung bewegter Luft steigt
+
+44
+00:02:13,014 --> 00:02:14,889
+mit der dritten Potenz
+ihrer Geschwindigkeit.
+
+45
+00:02:14,839 --> 00:02:18,493
+Wie das Windforschungsprogramm
+der Iowa State University sagt:
+
+46
+00:02:18,493 --> 00:02:22,148
+Verdoppelt sich die Windgeschwindigkeit,
+verachtfacht sich die Leistung.
+
+47
+00:02:22,648 --> 00:02:25,423
+Von 10 auf 15 Meilen pro Stunde, und
+
+48
+00:02:25,423 --> 00:02:28,197
+der Wind trägt mehr als
+dreimal so viel Leistung.
+
+49
+00:02:28,147 --> 00:02:30,696
+Deshalb werden die Türme auch immer höher:
+
+50
+00:02:30,696 --> 00:02:32,880
+Weiter oben weht der Wind schneller.
+
+51
+00:02:33,390 --> 00:02:36,069
+Doch mehr Leistung heißt auch mehr Kraft
+
+52
+00:02:36,069 --> 00:02:38,366
+auf Rotorblätter, Welle und Turm.
+
+53
+00:02:38,316 --> 00:02:41,530
+Und ein Generator kann nur so viel nutzen.
+
+54
+00:02:42,494 --> 00:02:45,831
+Ingenieure zeichnen das als
+Leistungskurve: wie viel
+
+55
+00:02:45,831 --> 00:02:48,834
+Strom eine Anlage bei jeder
+Windgeschwindigkeit erzeugt.
+
+56
+00:02:48,784 --> 00:02:52,388
+Ab der Einschaltgeschwindigkeit steigt
+die Leistung steil, bis die Anlage
+
+57
+00:02:52,388 --> 00:02:55,991
+ihre Nenngeschwindigkeit erreicht,
+wo der Generator am Maximum ist.
+
+58
+00:02:56,500 --> 00:03:00,417
+Nehmen wir eine Referenzanlage,
+die US- und europäische Forscher
+
+59
+00:03:00,417 --> 00:03:03,899
+2019 als typische moderne
+Onshore-Anlage entwarfen.
+
+60
+00:03:03,849 --> 00:03:06,579
+Sie beginnt bei etwa 9 Meilen pro
+
+61
+00:03:06,579 --> 00:03:09,308
+Stunde und erreicht Volllast bei etwa 22.
+
+62
+00:03:09,810 --> 00:03:13,153
+Darüber bringt mehr Wind
+keine zusätzliche Leistung.
+
+63
+00:03:13,103 --> 00:03:15,640
+Die Pitchverstellung dreht
+die Blätter so, dass sie
+
+64
+00:03:15,640 --> 00:03:17,861
+weniger Wind einfangen, und
+die Leistung bleibt konstant.
+
+65
+00:03:18,368 --> 00:03:21,634
+Steigt der Wind weiter, kommt
+die Abschaltgeschwindigkeit.
+
+66
+00:03:21,584 --> 00:03:25,985
+Bei dieser Referenzanlage liegt
+sie bei etwa 56 Meilen pro Stunde.
+
+67
+00:03:25,985 --> 00:03:29,665
+Laut Department of Energy schalten
+Steuerungen Anlagen meist ab,
+
+68
+00:03:29,665 --> 00:03:32,885
+sobald der Wind 55 bis 65 überschreitet.
+
+69
+00:03:33,406 --> 00:03:35,601
+Dann gehen die Blätter
+in die Fahnenstellung.
+
+70
+00:03:35,551 --> 00:03:38,945
+Sie drehen sich so, dass sie
+keine Kraft mehr erzeugen, die
+
+71
+00:03:38,945 --> 00:03:42,030
+den Rotor antreibt; er wird langsamer,
+die Leistung fällt auf null.
+
+72
+00:03:42,540 --> 00:03:44,646
+Warum so früh abschalten?
+
+73
+00:03:44,596 --> 00:03:48,150
+Nach einer internationalen Norm, so das
+Ministerium, müssen die meisten Anlagen
+
+74
+00:03:48,150 --> 00:03:51,704
+heute Dauerwinden von
+
+75
+00:03:51,704 --> 00:03:54,863
+112 Meilen pro Stunde und
+Böen von 156 standhalten.
+
+76
+00:03:54,863 --> 00:03:57,370
+Die Abschaltgeschwindigkeit
+liegt absichtlich weit darunter,
+
+77
+00:03:57,370 --> 00:03:59,519
+um das Risiko von Schäden zu senken.
+
+78
+00:04:00,026 --> 00:04:03,522
+Die Windnachführung (Yaw)
+hält die Anlage im Wind.
+
+79
+00:04:03,472 --> 00:04:06,253
+Lässt der Wind nach, verlassen die
+Blätter die Fahnenstellung, und
+
+80
+00:04:06,253 --> 00:04:09,033
+meist fließt binnen Minuten wieder Strom.
+
+81
+00:04:09,544 --> 00:04:12,912
+Im März 2017 traf ein Wintersturm Block
+
+82
+00:04:12,912 --> 00:04:16,280
+Island, wo Amerikas erster
+Offshore-Windpark steht.
+
+83
+00:04:16,230 --> 00:04:18,852
+Alle fünf Anlagen standen
+mehrere Stunden still,
+
+84
+00:04:18,852 --> 00:04:21,474
+während der Wind über 55
+Meilen pro Stunde lag, und
+
+85
+00:04:21,474 --> 00:04:23,768
+liefen wieder an, als der Sturm nachließ.
+
+86
+00:04:23,768 --> 00:04:26,163
+Die windigste Stunde des Jahres kann also
+
+87
+00:04:26,163 --> 00:04:28,258
+für ein Windrad eine Nullstunde sein.
+
+88
+00:04:28,258 --> 00:04:30,222
+Das ist kein Fehler.
+
+89
+00:04:30,222 --> 00:04:32,148
+Das ist so konstruiert.
+
+90
+00:04:33,120 --> 00:04:35,455
+Jetzt der überraschende Grund.
+
+91
+00:04:35,405 --> 00:04:38,789
+Manchmal ist die Anlage in
+Ordnung, der Wind perfekt, und
+
+92
+00:04:38,789 --> 00:04:41,834
+der Netzbetreiber sagt
+trotzdem: weniger erzeugen.
+
+93
+00:04:42,350 --> 00:04:45,788
+Das ist Abregelung, die die
+EIA definiert als bewusstes
+
+94
+00:04:45,788 --> 00:04:49,226
+Absenken der Erzeugung unter
+das, was eine Anlage könnte.
+
+95
+00:04:49,176 --> 00:04:51,886
+Sie passiert, wenn das Angebot die
+Nachfrage übersteigt, oder wenn
+
+96
+00:04:51,886 --> 00:04:54,597
+es nicht genug Leitungen gibt,
+um den Strom abzutransportieren.
+
+97
+00:04:55,108 --> 00:04:58,672
+Wie die EIA schreibt, reicht
+an sehr windigen Tagen an
+
+98
+00:04:58,672 --> 00:05:02,235
+bestimmten Orten die
+Übertragungskapazität oft nicht aus, um
+
+99
+00:05:02,235 --> 00:05:05,007
+die große Menge an erzeugtem
+Windstrom aufzunehmen.
+
+100
+00:05:05,466 --> 00:05:08,234
+Berkeley Lab merkt an:
+Wenn viel Wind weht und
+
+101
+00:05:08,234 --> 00:05:11,002
+die Leitungen voll sind, oder
+andere Kraftwerke nicht weit
+
+102
+00:05:11,002 --> 00:05:13,770
+oder schnell genug drosseln können,
+können lokale Großhandelspreise
+
+103
+00:05:13,770 --> 00:05:16,538
+negativ werden: Verkäufer zahlen
+Käufern für die Abnahme ihres Stroms.
+
+104
+00:05:16,488 --> 00:05:19,435
+Auch das kann Abregelung auslösen.
+
+105
+00:05:19,952 --> 00:05:22,797
+Warum ist Wind oft als Erstes dran?
+
+106
+00:05:22,747 --> 00:05:25,750
+Im Mittleren Westen, erklärt
+die EIA, ist es billiger und
+
+107
+00:05:25,750 --> 00:05:28,754
+schneller, Wind- und Solaranlagen
+abzuschalten und neu zu starten
+
+108
+00:05:28,754 --> 00:05:31,089
+als andere Arten von Kraftwerken.
+
+109
+00:05:31,606 --> 00:05:33,814
+Wie viel wird abgeregelt?
+
+110
+00:05:33,764 --> 00:05:37,876
+Bei sieben US-Netzbetreibern
+zählte Berkeley Lab etwa
+
+111
+00:05:37,876 --> 00:05:41,532
+5 Prozent der möglichen
+Winderzeugung im Jahr 2025.
+
+112
+00:05:41,532 --> 00:05:44,172
+Der Southwest Power Pool in der Mitte
+
+113
+00:05:44,172 --> 00:05:46,812
+der USA lag am höchsten,
+bei etwa 9 Prozent.
+
+114
+00:05:47,316 --> 00:05:51,399
+2014 waren es noch unter 1 Prozent.
+
+115
+00:05:51,349 --> 00:05:54,556
+Seitdem ist der Windanteil an
+der Nachfrage dieser Region
+
+116
+00:05:54,556 --> 00:05:57,407
+von etwa 12 Prozent auf etwa 38 gewachsen.
+
+117
+00:05:57,407 --> 00:05:59,627
+Mehr Wind auf denselben Leitungen heißt
+
+118
+00:05:59,627 --> 00:06:01,846
+mehr Stunden, in denen
+die Leitungen voll sind.
+
+119
+00:06:02,354 --> 00:06:04,230
+Neue Leitungen helfen.
+
+120
+00:06:04,180 --> 00:06:07,550
+Nach einem großen Netzausbau
+für West-Texas, der
+
+121
+00:06:07,550 --> 00:06:10,919
+um 2013 abgeschlossen war, so
+Berkeley Lab, sank die Abregelung im
+
+122
+00:06:10,919 --> 00:06:14,289
+texanischen Hauptnetz
+von 17 Prozent im Jahr
+
+123
+00:06:14,289 --> 00:06:16,910
+2009 auf ein halbes Prozent im Jahr 2014.
+
+124
+00:06:17,866 --> 00:06:22,076
+Wetter kann ein Windrad auch
+leiser stoppen: mit Eis.
+
+125
+00:06:22,536 --> 00:06:25,764
+Eine von Iowa State
+geleitete Feldstudie von 2021
+
+126
+00:06:25,764 --> 00:06:28,991
+untersuchte einen
+Windpark im Osten Chinas.
+
+127
+00:06:28,941 --> 00:06:32,254
+Das Eis wurde nahe den Blattspitzen
+fast einen Fuß dick, und
+
+128
+00:06:32,254 --> 00:06:35,567
+trotz starkem Wind drehten die vereisten
+Anlagen langsamer, schalteten oft ab
+
+129
+00:06:35,567 --> 00:06:38,278
+und verloren bis zu 80
+Prozent ihrer Leistung.
+
+130
+00:06:38,798 --> 00:06:40,916
+Dann gibt es noch die Tierwelt.
+
+131
+00:06:40,866 --> 00:06:43,507
+Fledermäuse sind im Spätsommer und
+
+132
+00:06:43,507 --> 00:06:46,147
+Herbst am stärksten gefährdet,
+und aktiver bei schwachem Wind.
+
+133
+00:06:46,147 --> 00:06:48,990
+Deshalb erhöhen manche
+Windparks in diesen Nächten
+
+134
+00:06:48,990 --> 00:06:51,517
+ihre Einschaltgeschwindigkeit; die
+Blätter können in Fahnenstellung gehen.
+
+135
+00:06:52,036 --> 00:06:56,137
+Eine Übersichtsarbeit von 2021 zu
+Abregelungsversuchen in den USA und Kanada
+
+136
+00:06:56,137 --> 00:07:00,239
+fand, dass sie Fledermaustode im
+Schnitt um etwa 63 Prozent senkte.
+
+137
+00:07:00,690 --> 00:07:03,893
+Bei Adlern setzen manche
+Standorte Kameras ein.
+
+138
+00:07:03,843 --> 00:07:07,228
+In einem Windpark in Wyoming
+senkte ein System, das
+
+139
+00:07:07,228 --> 00:07:10,613
+einzelne Anlagen bremst oder stoppt,
+wenn es einen gefährdeten Adler erkennt,
+
+140
+00:07:10,613 --> 00:07:13,998
+die Adlertode dort um 63
+Prozent, so eine Studie von 2021
+
+141
+00:07:13,998 --> 00:07:16,368
+im Journal of Applied Ecology.
+
+142
+00:07:16,368 --> 00:07:19,085
+Gleiche Zahl, andere Studie.
+
+143
+00:07:20,042 --> 00:07:23,627
+Manchmal wird ein stillstehendes
+Windrad einfach gewartet.
+
+144
+00:07:23,577 --> 00:07:28,335
+Die Bremse eines Windrads ist nicht wie
+beim Auto, erklärt das Department of Energy.
+
+145
+00:07:28,335 --> 00:07:30,637
+Sie hält den Rotor nach dem
+
+146
+00:07:30,637 --> 00:07:32,939
+Abschalten fest, was
+Wartungsteams brauchen.
+
+147
+00:07:33,448 --> 00:07:36,096
+Wenn du also das nächste Mal an
+einem Windpark vorbeikommst und
+
+148
+00:07:36,096 --> 00:07:38,449
+einige Rotoren stillstehen,
+geh die Liste durch.
+
+149
+00:07:38,399 --> 00:07:40,810
+Nicht genug Wind in der Höhe.
+
+150
+00:07:40,810 --> 00:07:43,590
+Zu viel Wind, über der Abschaltgrenze.
+
+151
+00:07:43,590 --> 00:07:46,907
+Ein volles Netz, oder Preise unter null.
+
+152
+00:07:46,907 --> 00:07:48,986
+Eis an den Blättern.
+
+153
+00:07:48,986 --> 00:07:51,371
+Fledermäuse oder Adler in der Nähe.
+
+154
+00:07:51,371 --> 00:07:53,437
+Oder ein Wartungsteam bei der Arbeit.
+
+155
+00:07:53,958 --> 00:07:56,442
+Ein Rotor, der eine Stunde
+stillsteht, sagt dir
+
+156
+00:07:56,442 --> 00:07:58,615
+etwas über diese Stunde,
+nicht über die Maschine.
+
+157
+00:07:58,565 --> 00:08:01,128
+Meist sind es die Maschine, das Netz
+
+158
+00:08:01,128 --> 00:08:03,692
+oder die Ingenieure,
+die sagen: nicht jetzt.
+
+159
+00:08:04,196 --> 00:08:06,550
+Bist du schon mal an einem
+Windpark vorbeigefahren,
+
+160
+00:08:06,550 --> 00:08:08,904
+an einem windigen Tag, und
+die Blätter standen still?
+
+161
+00:08:08,854 --> 00:08:11,264
+Was glaubst du, was da los war?
+
+162
+00:08:11,264 --> 00:08:13,420
+Schreib es in die Kommentare.
+
+163
+00:08:13,930 --> 00:08:16,451
+Wenn du dem Elektron weiter
+
+164
+00:08:16,451 --> 00:08:18,612
+folgen willst, abonniere The Hidden Grid.
+
+165
+00:08:18,562 --> 00:08:20,673
+Alle Quellen hinter den Zahlen in
+
+166
+00:08:20,673 --> 00:08:22,784
+diesem Video stehen in der Beschreibung.

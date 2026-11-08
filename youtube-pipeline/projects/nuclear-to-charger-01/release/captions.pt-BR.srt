@@ -1,0 +1,753 @@
+1
+00:00:00,100 --> 00:00:03,098
+Seu celular está carregando
+na mesinha de cabeceira.
+
+2
+00:00:03,048 --> 00:00:05,753
+Agora siga esse cabo de volta.
+
+3
+00:00:05,753 --> 00:00:08,144
+Para dentro da parede, até a rua,
+
+4
+00:00:08,144 --> 00:00:10,536
+pelas linhas de energia, e continue.
+
+5
+00:00:11,058 --> 00:00:15,784
+Em 2025, as usinas nucleares
+geraram cerca de 18%
+
+6
+00:00:15,784 --> 00:00:20,511
+da eletricidade de grande
+escala dos EUA, segundo a EIA.
+
+7
+00:00:20,461 --> 00:00:22,739
+Então, para muitos de nós, parte
+
+8
+00:00:22,739 --> 00:00:24,734
+desta viagem começa com um átomo dividido.
+
+9
+00:00:25,256 --> 00:00:28,497
+Hoje vamos seguir essa
+energia por todo o caminho.
+
+10
+00:00:28,447 --> 00:00:31,674
+E duas coisas nessa viagem
+podem te surpreender.
+
+11
+00:00:31,674 --> 00:00:34,129
+Cerca de dois terços da energia nunca
+
+12
+00:00:34,129 --> 00:00:36,585
+sai da usina como eletricidade.
+
+13
+00:00:36,585 --> 00:00:40,182
+E os elétrons da usina
+nunca chegam ao seu celular.
+
+14
+00:00:40,702 --> 00:00:43,247
+A ideia é esta: seu carregador é o
+
+15
+00:00:43,247 --> 00:00:45,792
+último elo de uma longa
+cadeia de repasses.
+
+16
+00:00:45,742 --> 00:00:48,043
+Cada etapa transforma a energia em uma
+
+17
+00:00:48,043 --> 00:00:50,015
+forma que a próxima pode usar.
+
+18
+00:00:50,982 --> 00:00:53,661
+Dentro de um reator, o combustível é
+
+19
+00:00:53,661 --> 00:00:56,340
+urânio, em forma de pequenas
+pastilhas de cerâmica.
+
+20
+00:00:56,290 --> 00:00:59,311
+Segundo a EIA, cada pastilha contém tanta
+
+21
+00:00:59,311 --> 00:01:01,953
+energia quanto cerca de
+150 galões de petróleo.
+
+22
+00:01:01,953 --> 00:01:04,227
+As pastilhas são
+empilhadas uma após a outra
+
+23
+00:01:04,227 --> 00:01:06,175
+em varetas de combustível
+de 12 pés de comprimento.
+
+24
+00:01:06,692 --> 00:01:09,720
+Quando um nêutron atinge
+um átomo de urânio,
+
+25
+00:01:09,720 --> 00:01:12,369
+o átomo se divide em dois átomos menores.
+
+26
+00:01:12,319 --> 00:01:14,054
+Isso é a fissão.
+
+27
+00:01:14,054 --> 00:01:17,529
+Ela libera muita energia,
+além de nêutrons extras que
+
+28
+00:01:17,529 --> 00:01:21,005
+podem dividir mais átomos,
+mantendo uma reação em cadeia.
+
+29
+00:01:21,005 --> 00:01:22,995
+A usina usa o calor de
+
+30
+00:01:22,995 --> 00:01:24,985
+toda essa fissão para ferver água.
+
+31
+00:01:25,498 --> 00:01:30,175
+Em março de 2026, os EUA tinham
+94 reatores comerciais em operação
+
+32
+00:01:30,175 --> 00:01:34,428
+em 54 usinas em 28 estados, segundo a EIA.
+
+33
+00:01:34,896 --> 00:01:36,925
+E elas trabalham pesado.
+
+34
+00:01:36,875 --> 00:01:40,725
+Em 2025, a usina nuclear
+média dos EUA produziu
+
+35
+00:01:40,725 --> 00:01:44,094
+91% de sua produção máxima possível.
+
+36
+00:01:44,094 --> 00:01:47,232
+A EIA chama isso de fator de
+capacidade, e o da nuclear
+
+37
+00:01:47,232 --> 00:01:50,370
+foi maior que o de qualquer
+outro tipo de usina.
+
+38
+00:01:51,320 --> 00:01:54,255
+Agora, o calor precisa virar movimento.
+
+39
+00:01:54,205 --> 00:01:57,649
+A Comissão Reguladora Nuclear (NRC)
+diz que só dois tipos de reator
+
+40
+00:01:57,649 --> 00:02:01,092
+geram energia comercial nos
+EUA, e cerca de dois terços
+
+41
+00:02:01,092 --> 00:02:04,154
+dos reatores licenciados
+são de água pressurizada.
+
+42
+00:02:04,654 --> 00:02:07,236
+Neles, água sob alta pressão leva o calor
+
+43
+00:02:07,236 --> 00:02:09,819
+do núcleo a um gerador de vapor, onde
+
+44
+00:02:09,819 --> 00:02:12,078
+ferve a água de um circuito separado.
+
+45
+00:02:12,028 --> 00:02:14,570
+O outro tipo, o reator de água fervente,
+
+46
+00:02:14,570 --> 00:02:16,748
+gera vapor direto no núcleo.
+
+47
+00:02:17,268 --> 00:02:19,246
+Em ambos os casos, o vapor segue por tubos
+
+48
+00:02:19,246 --> 00:02:21,223
+até uma turbina e a faz girar.
+
+49
+00:02:21,173 --> 00:02:24,194
+A turbina aciona um gerador,
+onde um ímã giratório
+
+50
+00:02:24,194 --> 00:02:26,836
+induz corrente em bobinas de fio.
+
+51
+00:02:26,836 --> 00:02:30,357
+É aí que o movimento
+finalmente vira eletricidade.
+
+52
+00:02:30,866 --> 00:02:34,400
+O gerador não gira em qualquer velocidade.
+
+53
+00:02:34,350 --> 00:02:37,509
+Na América do Norte, a rede
+funciona com corrente alternada
+
+54
+00:02:37,509 --> 00:02:40,668
+no padrão de 60 hertz,
+ou seja, 60 ciclos por
+
+55
+00:02:40,668 --> 00:02:43,827
+segundo, e os geradores
+giram em sincronia com ela.
+
+56
+00:02:44,344 --> 00:02:46,922
+E aqui está a primeira grande perda.
+
+57
+00:02:46,872 --> 00:02:49,627
+A EIA acompanha quanto calor uma usina
+
+58
+00:02:49,627 --> 00:02:52,037
+usa para cada quilowatt-hora que entrega.
+
+59
+00:02:52,037 --> 00:02:55,411
+Para as usinas nucleares
+dos EUA em 2025, isso dá
+
+60
+00:02:55,411 --> 00:02:58,785
+uma eficiência de cerca de 33%.
+
+61
+00:02:59,286 --> 00:03:03,483
+Ou seja, cerca de dois terços do
+calor nunca viram eletricidade.
+
+62
+00:03:03,433 --> 00:03:06,609
+O vapor usado é resfriado
+e volta a ser água em um
+
+63
+00:03:06,609 --> 00:03:09,467
+condensador, e esse calor que
+sobra precisa ir para algum lugar.
+
+64
+00:03:09,467 --> 00:03:12,324
+Algumas usinas usam
+torres de resfriamento.
+
+65
+00:03:12,324 --> 00:03:15,806
+Outras usam um lago, um rio ou o oceano.
+
+66
+00:03:16,316 --> 00:03:18,919
+Isso não é exclusivo da nuclear.
+
+67
+00:03:18,869 --> 00:03:22,890
+As usinas a carvão também
+usam vapor, e em 2025 sua
+
+68
+00:03:22,890 --> 00:03:26,509
+eficiência média foi quase
+a mesma, em torno de 32%.
+
+69
+00:03:27,460 --> 00:03:31,408
+Segundo o Departamento de
+Energia, os geradores costumam
+
+70
+00:03:31,408 --> 00:03:35,356
+fornecer eletricidade
+de 5.000 a 34.500 volts.
+
+71
+00:03:35,306 --> 00:03:37,923
+Pense na tensão como pressão elétrica, o
+
+72
+00:03:37,923 --> 00:03:40,166
+empurrão por trás do fluxo de corrente.
+
+73
+00:03:40,674 --> 00:03:43,206
+Na própria usina, um
+transformador elevador
+
+74
+00:03:43,206 --> 00:03:45,739
+aumenta essa pressão para o longo trajeto.
+
+75
+00:03:45,689 --> 00:03:51,671
+As linhas de transmissão típicas
+dos EUA operam a 138.000,
+
+76
+00:03:51,671 --> 00:03:56,798
+230.000, 345.000,
+500.000 ou 765.000 volts.
+
+77
+00:03:57,320 --> 00:03:59,923
+Por que elevar tanto a tensão?
+
+78
+00:03:59,873 --> 00:04:02,794
+Um transformador não pode criar potência.
+
+79
+00:04:02,794 --> 00:04:05,205
+Então, quando ele aumenta a tensão, a
+
+80
+00:04:05,205 --> 00:04:07,271
+corrente cai na mesma proporção.
+
+81
+00:04:07,774 --> 00:04:10,217
+E a energia que um fio perde como calor
+
+82
+00:04:10,217 --> 00:04:12,354
+depende do quadrado da corrente.
+
+83
+00:04:12,304 --> 00:04:14,319
+Corte a corrente pela metade, e
+
+84
+00:04:14,319 --> 00:04:16,335
+essa perda cai para um quarto.
+
+85
+00:04:16,335 --> 00:04:18,822
+É por isso que a rede vai lá para cima.
+
+86
+00:04:19,332 --> 00:04:22,754
+Ou, nas palavras da EIA,
+uma tensão mais alta torna
+
+87
+00:04:22,754 --> 00:04:25,749
+a transmissão de longa distância
+mais eficiente e mais barata.
+
+88
+00:04:25,699 --> 00:04:28,996
+A rede dos EUA tem
+milhares de milhas dessas
+
+89
+00:04:28,996 --> 00:04:32,293
+linhas de alta tensão, e milhões de
+milhas de linhas de tensão mais baixa.
+
+90
+00:04:33,260 --> 00:04:37,662
+Mas não dá para ligar uma
+luminária em 345.000 volts.
+
+91
+00:04:37,612 --> 00:04:40,833
+Então a descida começa numa subestação,
+
+92
+00:04:40,833 --> 00:04:43,696
+onde transformadores reduzem a
+tensão para as linhas locais.
+
+93
+00:04:44,218 --> 00:04:47,809
+Num exemplo do Departamento de
+Energia, uma subestação recebe
+
+94
+00:04:47,809 --> 00:04:51,400
+energia a 34.000 volts e a envia
+
+95
+00:04:51,400 --> 00:04:54,194
+a 7.200 volts pelas linhas
+de distribuição do bairro.
+
+96
+00:04:54,648 --> 00:04:57,637
+A última redução acontece
+perto da sua casa: o
+
+97
+00:04:57,637 --> 00:05:00,627
+transformador em forma de
+lata no poste, ou uma caixa
+
+98
+00:05:00,627 --> 00:05:03,616
+sobre uma base de concreto onde
+as linhas são subterrâneas.
+
+99
+00:05:04,070 --> 00:05:08,484
+Ele alimenta uma casa típica dos
+EUA com dois fios de 120 volts.
+
+100
+00:05:08,434 --> 00:05:10,756
+Um deles fornece os
+
+101
+00:05:10,756 --> 00:05:13,077
+120 volts de uma tomada comum.
+
+102
+00:05:13,077 --> 00:05:16,332
+Os dois juntos dão 240
+volts para cargas grandes
+
+103
+00:05:16,332 --> 00:05:19,225
+como uma secadora de roupas
+ou um fogão elétrico.
+
+104
+00:05:19,732 --> 00:05:23,649
+Ao longo de todo esse trajeto,
+parte da energia se perde.
+
+105
+00:05:23,599 --> 00:05:27,591
+A EIA estima que as perdas
+de transmissão e distribuição
+
+106
+00:05:27,591 --> 00:05:31,584
+ficaram em média em cerca
+de 5% de 2018 a 2022.
+
+107
+00:05:31,584 --> 00:05:34,913
+Então a grande perda acontece lá na usina.
+
+108
+00:05:34,913 --> 00:05:37,770
+A rede em si é bem econômica.
+
+109
+00:05:38,724 --> 00:05:41,365
+Agora, a segunda surpresa.
+
+110
+00:05:41,315 --> 00:05:44,530
+Dizemos que a eletricidade
+flui, então é fácil imaginar
+
+111
+00:05:44,530 --> 00:05:47,387
+elétrons correndo da usina até sua casa.
+
+112
+00:05:47,387 --> 00:05:49,083
+Não é bem assim.
+
+113
+00:05:49,586 --> 00:05:52,787
+Num fio de cobre, a
+deriva média dos elétrons
+
+114
+00:05:52,787 --> 00:05:55,988
+é da ordem de milímetros
+por segundo, segundo
+
+115
+00:05:55,988 --> 00:05:58,477
+notas de física da
+Georgia State University.
+
+116
+00:05:58,427 --> 00:06:01,080
+Num dos exemplos deles, é menos de
+
+117
+00:06:01,080 --> 00:06:03,402
+um terço de milímetro por segundo.
+
+118
+00:06:03,904 --> 00:06:07,400
+E na nossa rede, eles nem
+derivam num só sentido.
+
+119
+00:06:07,350 --> 00:06:11,051
+Com corrente alternada, a
+tensão vai para positivo, depois
+
+120
+00:06:11,051 --> 00:06:14,289
+negativo, e volta, 60 vezes por segundo.
+
+121
+00:06:14,289 --> 00:06:17,241
+Então a corrente vive se
+invertendo, e os elétrons
+
+122
+00:06:17,241 --> 00:06:19,824
+basicamente vão e voltam no mesmo lugar.
+
+123
+00:06:20,334 --> 00:06:23,396
+Os transformadores
+também quebram a cadeia.
+
+124
+00:06:23,346 --> 00:06:26,817
+Dentro de um, a energia passa
+de uma bobina de fio para
+
+125
+00:06:26,817 --> 00:06:29,941
+outra por meio de um campo
+magnético num núcleo de ferro.
+
+126
+00:06:30,452 --> 00:06:32,634
+Então, o que faz a viagem?
+
+127
+00:06:32,584 --> 00:06:34,383
+A energia.
+
+128
+00:06:34,383 --> 00:06:38,043
+Empurre uma ponta da
+linha, e o empurrão viaja.
+
+129
+00:06:38,043 --> 00:06:41,596
+As notas da Georgia State
+dizem assim: é a mudança, o
+
+130
+00:06:41,596 --> 00:06:45,148
+sinal, que se move pelos fios
+praticamente à velocidade da luz.
+
+131
+00:06:45,148 --> 00:06:49,357
+Em cem milhas, isso leva menos
+de um milésimo de segundo.
+
+132
+00:06:50,332 --> 00:06:54,109
+O que nos leva de volta à caixinha
+na sua mesinha de cabeceira.
+
+133
+00:06:54,059 --> 00:06:57,355
+As normas federais até o
+definem: uma fonte de alimentação
+
+134
+00:06:57,355 --> 00:07:00,651
+externa converte a corrente elétrica
+doméstica em corrente contínua,
+
+135
+00:07:00,651 --> 00:07:03,536
+ou em CA de tensão mais baixa,
+para fazer um produto funcionar.
+
+136
+00:07:04,050 --> 00:07:07,686
+Uma bateria carrega quando a
+corrente passa por ela em um
+
+137
+00:07:07,686 --> 00:07:11,321
+só sentido, e a corrente da tomada
+inverte 120 vezes por segundo.
+
+138
+00:07:11,271 --> 00:07:14,519
+Então o carregador reduz
+a tensão e transforma CA
+
+139
+00:07:14,519 --> 00:07:17,407
+em corrente contínua,
+que flui num só sentido.
+
+140
+00:07:17,912 --> 00:07:20,579
+Aí vem o último repasse.
+
+141
+00:07:20,529 --> 00:07:24,445
+Como diz o Departamento de
+Energia, a eletricidade precisa ser
+
+142
+00:07:24,445 --> 00:07:28,360
+convertida em energia potencial
+química antes de ser armazenada.
+
+143
+00:07:28,360 --> 00:07:32,095
+Ao carregar, os elétrons percorrem
+o circuito e os íons atravessam
+
+144
+00:07:32,095 --> 00:07:35,491
+a bateria, e a energia
+acaba guardada na química.
+
+145
+00:07:35,998 --> 00:07:38,410
+E esse é o fim da viagem.
+
+146
+00:07:38,360 --> 00:07:41,224
+Energia de um átomo de
+urânio dividido, agora
+
+147
+00:07:41,224 --> 00:07:43,679
+esperando como química no seu bolso.
+
+148
+00:07:44,646 --> 00:07:46,471
+Resumo rápido.
+
+149
+00:07:46,421 --> 00:07:48,487
+A fissão gera calor.
+
+150
+00:07:48,487 --> 00:07:50,554
+O calor gera vapor.
+
+151
+00:07:50,554 --> 00:07:53,468
+O vapor gira uma turbina, e a turbina
+
+152
+00:07:53,468 --> 00:07:56,383
+aciona um gerador que
+produz energia em 60 hertz.
+
+153
+00:07:56,383 --> 00:07:59,439
+Em 2025, só cerca de um terço do
+
+154
+00:07:59,439 --> 00:08:02,059
+calor de uma usina nuclear
+virou eletricidade.
+
+155
+00:08:02,564 --> 00:08:05,855
+Os transformadores elevam a
+tensão a centenas de milhares de
+
+156
+00:08:05,855 --> 00:08:09,146
+volts para a longa viagem
+perder menos, e depois a reduzem
+
+157
+00:08:09,146 --> 00:08:12,437
+de volta para 120 e 240 volts na sua casa.
+
+158
+00:08:12,387 --> 00:08:16,380
+Os elétrons quase não saem do
+lugar; a energia faz a viagem.
+
+159
+00:08:16,882 --> 00:08:20,901
+Minha pergunta pra você: qual
+etapa mais te surpreendeu?
+
+160
+00:08:20,851 --> 00:08:23,485
+O calor que nunca vira eletricidade, ou
+
+161
+00:08:23,485 --> 00:08:26,119
+os elétrons que nunca
+saem das suas paredes?
+
+162
+00:08:26,119 --> 00:08:28,274
+Me conta nos comentários.
+
+163
+00:08:28,800 --> 00:08:31,479
+Para mais viagens pela maquinaria por trás
+
+164
+00:08:31,479 --> 00:08:34,158
+do dia a dia, inscreva-se
+no The Hidden Grid.
+
+165
+00:08:34,108 --> 00:08:36,219
+Todas as fontes dos números deste
+
+166
+00:08:36,219 --> 00:08:38,330
+vídeo estão na descrição.

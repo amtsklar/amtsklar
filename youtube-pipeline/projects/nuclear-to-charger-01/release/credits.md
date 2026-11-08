@@ -1,0 +1,65 @@
+# Footage & photo credits
+
+- s00_0.mp4: "phone, smartphone, mobile, portable, screen, digital, communication, t" by Natures_Embrace, Pixabay Content License, https://pixabay.com/videos/id-202987/
+- s00_1.jpg: "phone, iphone, mobile, green, smartphone" by rmartinr, Pixabay Content License, https://pixabay.com/photos/phone-iphone-mobile-green-8594571/
+- s01_0.jpg: "energy, nuclear power plant, grohnde, weser, flow, eve, evening atmosp" by 11703009, Pixabay Content License, https://pixabay.com/photos/energy-nuclear-power-plant-grohnde-4030427/
+- s01_1.jpg: "nuclear power plant, nuclear power plant isar, nuclear power, atomic e" by ulleo, Pixabay Content License, https://pixabay.com/photos/nuclear-power-plant-3545244/
+- s01_2.jpg: "nuclear power plant, rhine, flow, nuclear power, atomic energy, smoke," by distelAPPArath, Pixabay Content License, https://pixabay.com/photos/nuclear-power-plant-rhine-flow-4535760/
+- s02_0.mp4: "factory, sunset, smoke, sugar beet factory, sugar, clouds, work, elect" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-91282/
+- s02_1.jpg: "wires, electrical current, electricity, high voltage, energy, high vol" by Couleur, Pixabay Content License, https://pixabay.com/photos/wires-electrical-current-electricity-7997980/
+- s02_2.jpg: "sunset, countryside, nature, power lines, power poles, high-voltage py" by jplenio, Pixabay Content License, https://pixabay.com/photos/sunset-countryside-power-lines-3442835/
+- s03_0.mp4: "transmission tower, electricity pylon, sky, clouds, wire, cable, techn" by YakupIpek, Pixabay Content License, https://pixabay.com/videos/id-85824/
+- s04_0.jpg: "germany, lubmin, nuclear, reactor, power plant, visitor center, waste," by 2427999, Pixabay Content License, https://pixabay.com/photos/germany-lubmin-nuclear-reactor-3702210/
+- s04_1.jpg: "germany, lubmin, nuclear, reactor, power plant, cooling pump base, coo" by 2427999, Pixabay Content License, https://pixabay.com/photos/germany-lubmin-nuclear-reactor-3723381/
+- s05_0.jpg: "atom, chemistry, molecular, physics, research, laboratory, study, to l" by andreas160578, Pixabay Content License, https://pixabay.com/photos/atom-chemistry-molecular-physics-1331961/
+- s05_1.jpg: "symbol, metal, character, atom, atomic model, abstract, atom, atom, at" by Hans, Pixabay Content License, https://pixabay.com/photos/symbol-metal-character-atom-636/
+- s05_2.jpg: "icosahedral, atoms, models, balls, construction, 3d, presentation, ani" by PIRO4D, Pixabay Content License, https://pixabay.com/photos/icosahedral-atoms-models-balls-2071276/
+- s07_0.mp4: "fog, steam, nuclear power, cooling tower, nuclear power plant, law, gö" by adege, Pixabay Content License, https://pixabay.com/videos/id-29413/
+- s07_1.jpg: "factory, powerplant, landscape, clouds, dusk, evening, industry, natur" by Randgruppe, Pixabay Content License, https://pixabay.com/photos/factory-powerplant-landscape-clouds-4338627/
+- s07_2.jpg: "nuclear power plant, cooling tower, water vapor, clouds, heaven, sunri" by distelAPPArath, Pixabay Content License, https://pixabay.com/photos/nuclear-power-plant-cooling-tower-4529392/
+- s08_0.mp4: "pipe, steam, industry, exhaust fumes, water steam, heat, hot, factory," by Life-Of-Vids, Pixabay Content License, https://pixabay.com/videos/id-268/
+- s08_1.jpg: "machine, train, locomotive, railroad, engine, power, diesel, old train" by SeppH, Pixabay Content License, https://pixabay.com/photos/machine-train-locomotive-railroad-1715424/
+- s09_0.jpg: "manometer, pressure, technology, machine, old, advertisement, instrume" by ThomasWolter, Pixabay Content License, https://pixabay.com/photos/manometer-pressure-technology-4345880/
+- s10_0.jpg: "lost place, generators, turbines, power generation, energy, power plan" by herbert2512, Pixabay Content License, https://pixabay.com/photos/lost-place-generators-turbines-2765843/
+- s10_1.jpg: "power plant, hoover dam, generator, power plant, power plant, hoover d" by grunzibaer, Pixabay Content License, https://pixabay.com/photos/power-plant-hoover-dam-generator-2728059/
+- s11_0.jpg: "power plant, conducting, electronic, old, means, inspector, power plan" by Bergadder, Pixabay Content License, https://pixabay.com/photos/power-plant-conducting-electronic-344231/
+- s11_1.jpg: "pforphoto, machinery, power plant, industrial plants, machine, factory" by Tama66, Pixabay Content License, https://pixabay.com/photos/pforphoto-machinery-power-plant-6826340/
+- s13_0.jpg: "fan, cooling, propeller, power plant, cooling tower, cooler, industry," by Tama66, Pixabay Content License, https://pixabay.com/photos/fan-cooling-propeller-power-plant-3645379/
+- s14_0.mp4: "climate change, industry, power plant, chemistry, landscape, energy, c" by Al3xanderD, Pixabay Content License, https://pixabay.com/videos/id-128310/
+- s14_1.jpg: "power plant, cooling tower, coal-fired power station, chimney, electri" by denfran, Pixabay Content License, https://pixabay.com/photos/power-plant-cooling-tower-4349830/
+- s15_0.mp4: "power pole, power line, electricity, insulators, substation, transform" by mrpixel000, Pixabay Content License, https://pixabay.com/videos/id-343932/
+- s15_1.jpg: "transformer, power supply, connection, substation 2, insulators, curre" by 10512837, Pixabay Content License, https://pixabay.com/photos/transformer-power-supply-connection-5724320/
+- s17_0.mp4: "smoke, electricity, forest, high voltage, energy, power line, power po" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-324019/
+- s17_1.jpg: "power lines, fields, sunset, twilight, sun, current, sky, evening sky," by Nikiko, Pixabay Content License, https://pixabay.com/photos/power-lines-fields-sunset-twilight-532720/
+- s19_0.mp4: "power pole, power line, electricity, landscape, nature, sunset, fields" by mrpixel000, Pixabay Content License, https://pixabay.com/videos/id-343934/
+- s19_1.jpg: "pylon, cables, sunrise, sunlight, sun, fog, mist, field, nature, meado" by blickpixel, Pixabay Content License, https://pixabay.com/photos/pylon-cables-sunrise-sunlight-sun-503935/
+- s20_0.mp4: "electricity, wires, time lapse, sunset, cables, industrial, timelapse," by FindingFootage, Pixabay Content License, https://pixabay.com/videos/id-2151/
+- s20_1.jpg: "coil, high voltage, technology, power generation, span, voltage, elect" by analogicus, Pixabay Content License, https://pixabay.com/photos/coil-high-voltage-technology-4320892/
+- s21_0.jpg: "power pole, electricity, high voltage, high voltage pylon, power line," by Simon, Pixabay Content License, https://pixabay.com/photos/power-pole-electricity-high-voltage-725/
+- s21_1.jpg: "power lines, cables, tower, overhead power lines, electrical, electric" by Pexels, Pixabay Content License, https://pixabay.com/photos/power-lines-cables-tower-1868352/
+- s22_0.jpg: "power pole, structure, architecture, electricity, metal, wood, energy," by analogicus, Pixabay Content License, https://pixabay.com/photos/power-pole-structure-architecture-3906852/
+- s22_1.jpg: "power line, telephone pole, utility, electricity, cable, wire, energy," by ErikaWittlieb, Pixabay Content License, https://pixabay.com/photos/power-line-telephone-pole-utility-1005204/
+- s25_0.mp4: "idea, light bulb, electricity, light, shine, glowing, darkness, electr" by Coverr-Free-Footage, Pixabay Content License, https://pixabay.com/videos/id-122/
+- s25_1.jpg: "wire, copper, electric, stop, closeup, metal, recycling, the industry," by disign, Pixabay Content License, https://pixabay.com/photos/wire-copper-electric-stop-closeup-2681887/
+- s28_0.jpg: "circuit, circuit board, resistor, computer, technology, chip, hardware" by T_Tide, Pixabay Content License, https://pixabay.com/photos/circuit-circuit-board-resistor-1443256/
+- s28_1.jpg: "substation, electricity, high voltage, transformer, power generation, " by maxmann, Pixabay Content License, https://pixabay.com/photos/substation-electricity-high-voltage-1705947/
+- s29_0.jpg: "light, movement, abstract, lines, light painting, art, technology, fut" by Pexels, Pixabay Content License, https://pixabay.com/photos/light-movement-abstract-lines-1834289/
+- s29_1.jpg: "fiber, cable, wire, connection, network, cord, twine, internet, techno" by Lucent_Designs_dinoson20, Pixabay Content License, https://pixabay.com/photos/fiber-cable-wire-connection-4814456/
+- s29_2.jpg: "traffic, highway, lights, night, speed, road, long exposure, light, mo" by jonbonsilver, Pixabay Content License, https://pixabay.com/photos/traffic-highway-lights-night-speed-332857/
+- s30_0.mp4: "woman, phone, smartphone, technology, mobile, telephone, cellphone, pe" by mephala1980, Pixabay Content License, https://pixabay.com/videos/id-38084/
+- s30_1.jpg: "phone, smartphone, iphone, charging, mobile, technology, internet, com" by stokpic, Pixabay Content License, https://pixabay.com/photos/phone-smartphone-iphone-charging-603048/
+- s30_2.jpg: "two pin, two pin plug, accessories, accessory, adapter, cable, cellpho" by ReadyElements, Pixabay Content License, https://pixabay.com/photos/two-pin-two-pin-plug-accessories-3509490/
+- s31_0.mp4: "charger, mobile, battery, technology, device, smart, screen, digital, " by Matthias_Groeneveld, Pixabay Content License, https://pixabay.com/videos/id-8501/
+- s31_1.jpg: "electric car, car, electric, vehicle, power, electricity, transportati" by VariousPhotography, Pixabay Content License, https://pixabay.com/photos/electric-car-car-electric-vehicle-1458836/
+- s32_0.mp4: "charge, power, mobile, smartphone, energy, cellphone, digital, equipme" by aghyadnajjar, Pixabay Content License, https://pixabay.com/videos/id-44082/
+- s32_1.jpg: "smartphone, mobile, phone, gadget, touchscreen, battery, charger, cord" by StockSnap, Pixabay Content License, https://pixabay.com/photos/smartphone-mobile-phone-gadget-2568602/
+- s32_2.jpg: "battery, loading, smartphone, android, technology, cellular, battery, " by VeConsultaHoy, Pixabay Content License, https://pixabay.com/photos/battery-loading-smartphone-android-3255267/
+- s33_0.mp4: "smartphone, cellphone, text, message, woman, discuss, technology" by conte_public, Pixabay Content License, https://pixabay.com/videos/id-204527/
+- s33_1.jpg: "iphone, hand, screen, smartphone, apps, mobile phone, cell phone, phon" by JESHOOTS-com, Pixabay Content License, https://pixabay.com/photos/iphone-hand-screen-smartphone-apps-410311/
+- s35_0.mp4: "windmill, heaven, sun, dirty, high voltage, sunset, energy, rotor blad" by Kaffeesüchtig, Pixabay Content License, https://pixabay.com/videos/id-355270/
+- s35_1.jpg: "industry, environmental pollution, smog, sunrise, air pollution, air, " by SD-Pictures, Pixabay Content License, https://pixabay.com/photos/industry-environmental-pollution-1761801/
+- s35_2.jpg: "power pole, high voltage pylon, electric tower, overhead lines, electr" by NickyPe, Pixabay Content License, https://pixabay.com/photos/power-pole-high-voltage-pylon-5581755/
+- s36_0.mp4: "woman, social networking, post, website management, communication, net" by Amorn_mimi, Pixabay Content License, https://pixabay.com/videos/id-174003/
+- s36_1.jpg: "apple, iphone, close up, smartphone, mobile phone, cellphone, technolo" by Pexels, Pixabay Content License, https://pixabay.com/photos/apple-iphone-close-up-smartphone-1867461/
+- s37_0.jpg: "hong kong, city, traffic, lights, illuminated, motion blur, long expos" by 12019, Pixabay Content License, https://pixabay.com/photos/hong-kong-city-traffic-lights-1990268/
+- s37_1.jpg: "buildings, city, illuminated, city lights, cityscape, skyline, downtow" by Jorge2015, Pixabay Content License, https://pixabay.com/photos/buildings-city-illuminated-936589/
