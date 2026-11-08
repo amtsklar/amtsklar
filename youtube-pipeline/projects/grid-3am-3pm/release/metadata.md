@@ -55,13 +55,13 @@ Education only, not financial advice. The creator invests in the energy sector.
 
 CHAPTERS
 0:00 Intro
-0:44 3 a.m.: The night shift
-2:15 3 p.m.: The solar shift
-3:09 The sunset problem
-4:18 Batteries: moving noon to night
-4:51 Why prices swing
-6:30 Your plug, your timing
-7:31 Recap
+0:46 3 a.m.: The night shift
+2:26 3 p.m.: The solar shift
+3:25 The sunset problem
+4:50 Batteries: moving noon to night
+5:21 Why prices swing
+7:12 Your plug, your timing
+8:18 Recap
 
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```

@@ -2,10 +2,10 @@
 
 ## Title options
 
-1. From Nuclear Plant to Phone Charger: The FULL Trip
-2. Follow the ELECTRON: From a Split Atom to Your Phone
-3. Why Two-Thirds of a Nuclear Plant's Heat NEVER Reaches You
-4. The Electrons in Your Wall Barely MOVE. So What Travels?
+1. The Electrons in Your Wall Barely MOVE. So What Travels?
+2. From Nuclear Plant to Phone Charger: The FULL Trip
+3. Follow the ELECTRON: From a Split Atom to Your Phone
+4. Why Two-Thirds of a Nuclear Plant's Heat NEVER Reaches You
 5. Your Phone Charger Is the LAST Step of a Long Trip
 
 ## Description
@@ -54,12 +54,12 @@ Education only, not financial advice. The creator invests in the energy sector.
 CHAPTERS
 0:00 Intro
 0:50 Step 1: Splitting atoms for heat
-1:51 Step 2: Heat to motion
-3:27 Step 3: Up the voltage ladder
-4:33 Step 4: Stepping down
-5:38 Who actually makes the trip?
-6:50 Step 5: The charger
-7:44 Recap
+1:58 Step 2: Heat to motion
+3:48 Step 3: Up the voltage ladder
+4:54 Step 4: Stepping down
+6:08 Who actually makes the trip?
+7:26 Step 5: The charger
+8:31 Recap
 
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```

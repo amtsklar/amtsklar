@@ -45,12 +45,12 @@ Education only, not financial advice. The creator invests in the energy sector.
 
 CHAPTERS
 0:00 Intro
-1:05 Not enough wind
-2:04 The cube law
-2:42 Too much wind
-4:33 The grid says not now
-6:17 Ice and wildlife
-7:19 The recap
+1:10 Not enough wind
+2:16 The cube law
+3:00 Too much wind
+5:07 The grid says not now
+7:08 Ice and wildlife
+8:27 The recap
 
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```

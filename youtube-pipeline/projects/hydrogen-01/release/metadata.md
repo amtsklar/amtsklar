@@ -2,8 +2,8 @@
 
 ## Title options
 
-1. Hydrogen: Where It Makes Sense and Where It DOESN'T
-2. Put In 100, Get Back 28: The Hydrogen ROUND TRIP
+1. Put In 100, Get Back 28: The Hydrogen ROUND TRIP
+2. Hydrogen: Where It Makes Sense and Where It DOESN'T
 3. Hydrogen Isn't a Fuel Problem. It's a WHERE Problem
 4. The Hydrogen on Your DINNER TABLE, Explained
 5. America Makes 10 Million Tons of Hydrogen. Where Does It GO?
@@ -50,13 +50,13 @@ Education only, not financial advice. The creator invests in the energy sector.
 
 CHAPTERS
 0:00 Intro
-1:00 What hydrogen is
-1:43 How America makes it
-3:10 The electrolysis loss
-3:53 The round-trip problem
-5:16 Where the molecule matters
-7:19 America's hydrogen bet
-8:04 Recap
+1:10 What hydrogen is
+1:51 How America makes it
+3:19 The electrolysis loss
+4:05 The round-trip problem
+5:36 Where the molecule matters
+7:44 America's hydrogen bet
+8:32 Recap
 
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
