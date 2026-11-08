@@ -70,25 +70,25 @@ hidrógeno explicado, hidrógeno verde, hidrógeno azul, hidrógeno gris, electr
 
 **Title**
 
-Wasserstoff: Wo er Sinn ergibt und wo NICHT
+100 rein, 28 zurück: Die Wasserstoff-RUNDREISE
 
 **Description**
 
 ```
-Strom in Wasserstoff umwandeln und wieder zurück: Bei einem Test eines US-Nationallabors kamen nur 28 bis 35 Prozent zurück. Eine Netzbatterie liefert etwa 82.
+Wandle Strom in Wasserstoff um und wieder zurück: Bei einem Test eines US-Nationallabors kamen nur 28 bis 35 Prozent zurück. Eine Netzbatterie liefert etwa 82.
 Wo ergibt Wasserstoff also wirklich Sinn? Wir folgen dem Elektron von der Steckdose zum Elektrolyseur, zum Tank, zum gedüngten Feld und ins Stahlwerk.
 
 In diesem Video:
 - Warum Wasserstoff ein Energieträger ist, keine Energiequelle
-- Wie die USA rund 10 Millionen Tonnen pro Jahr herstellen, überwiegend aus Erdgas
-- Grauer, blauer und grüner Wasserstoff und warum das DOE auf Farben verzichtet
+- Wie die USA etwa 10 Millionen Tonnen pro Jahr herstellen, überwiegend aus Erdgas
+- Grauer, blauer und grüner Wasserstoff und warum das DOE (US-Energieministerium) auf Farben verzichtet
 - Elektrolyseverluste und das Round-Trip-Problem im Vergleich zu Batterien
 - Warum Wasserstoff bei Autos und beim Heizen zu Hause schwächelt
 - Wo das Molekül zählt: Raffinerien, Ammoniak/Dünger, Stahl
 - Die Vielleichts: Schiffskraftstoffe, schwere Lkw, Langzeitspeicher
 - Die US-Wasserstoff-Hubs und die nationale Strategie
 
-Quellen (Originaltitel auf Englisch):
+Quellen (englischsprachig):
 NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
 EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
 EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
@@ -114,13 +114,13 @@ Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert in den En
 
 KAPITEL
 0:00 Intro
-1:00 Was Wasserstoff ist
-1:43 Wie Amerika ihn herstellt
-3:10 Der Elektrolyseverlust
-3:53 Das Round-Trip-Problem
-5:16 Wo das Molekül zählt
-7:19 Amerikas Wasserstoff-Wette
-8:04 Zusammenfassung
+1:10 Was Wasserstoff ist
+1:51 Wie Amerika ihn herstellt
+3:19 Der Elektrolyseverlust
+4:05 Das Round-Trip-Problem
+5:36 Wo das Molekül zählt
+7:44 Amerikas Wasserstoff-Wette
+8:32 Zusammenfassung
 
 VIDEO- & BILDNACHWEISE
 Stock footage and photos: Pixabay (Pixabay Content License).
@@ -134,25 +134,25 @@ Wasserstoff erklärt, grüner Wasserstoff, blauer Wasserstoff, grauer Wasserstof
 
 **Title**
 
-Hidrogênio: onde faz sentido e onde NÃO faz
+Coloque 100, receba 28: a IDA E VOLTA do hidrogênio
 
 **Description**
 
 ```
-Transforme eletricidade em hidrogênio e de volta, e um teste de um laboratório nacional recuperou só 28 a 35 por cento. Uma bateria da rede devolve cerca de 82.
+Transforme eletricidade em hidrogênio e de volta, e um teste de um laboratório nacional recuperou só 28% a 35%. Uma bateria da rede devolve cerca de 82%.
 Então, onde o hidrogênio realmente faz sentido? Seguimos o elétron da tomada ao eletrolisador, ao tanque de combustível, à lavoura adubada e à siderúrgica.
 
 Neste vídeo:
 - Por que o hidrogênio é um vetor energético, não uma fonte de energia
 - Como os EUA produzem cerca de 10 milhões de toneladas métricas por ano, principalmente a partir de gás natural
-- Hidrogênio cinza, azul e verde, e por que o DOE dispensa as cores
+- Hidrogênio cinza, azul e verde, e por que o DOE (Departamento de Energia dos EUA) dispensa as cores
 - As perdas da eletrólise e o problema de ida e volta em comparação com baterias
 - Por que o hidrogênio tem dificuldade em carros e no aquecimento residencial
 - Onde a molécula importa: refinarias, amônia/fertilizantes, aço
 - Os "talvez": combustíveis para navios, caminhões pesados, armazenamento de longa duração
 - Os polos de hidrogênio dos EUA e a estratégia nacional
 
-Fontes (títulos originais em inglês):
+Fontes (em inglês):
 NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
 EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
 EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
@@ -172,21 +172,20 @@ U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fu
 IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
 
 A narração é gerada por IA; o roteiro foi pesquisado e revisado por uma pessoa.
-Apenas para fins educativos, não é recomendação financeira. O criador investe no setor de energia.
+Conteúdo apenas educativo, não é recomendação financeira. O criador investe no setor de energia.
 
 #hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
 
 CAPÍTULOS
-0:00 Intro
-1:00 O que é o hidrogênio
-1:43 Como os EUA o produzem
-3:10 A perda na eletrólise
-3:53 O problema de ida e volta
-5:16 Onde a molécula importa
-7:19 A aposta dos EUA no hidrogênio
-8:04 Resumo
+0:00 Introdução
+1:10 O que é o hidrogênio
+1:51 Como os EUA o produzem
+3:19 A perda na eletrólise
+4:05 O problema de ida e volta
+5:36 Onde a molécula importa
+7:44 A aposta dos EUA no hidrogênio
+8:32 Resumo
 
-CRÉDITOS DE VÍDEOS E FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 

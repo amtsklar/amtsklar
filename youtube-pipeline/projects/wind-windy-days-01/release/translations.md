@@ -73,18 +73,18 @@ Warum Windräder an den windigsten Tagen STILLSTEHEN
 ### Description
 
 ```
-Am windigsten Tag des Monats stehen manche Windräder völlig still. Das wirkt wie Verschwendung. Meist sind es die Maschine, das Netz oder die Ingenieure, die sagen: "nicht jetzt".
+Am windigsten Tag des Monats stehen manche Windräder völlig still. Das wirkt wie Verschwendung. Meist sind es die Maschine, das Netz oder die Ingenieure, die sagen: „nicht jetzt“.
 Wir folgen dem Wind vom Rotorblatt bis zur Stromleitung und schauen uns jeden Grund an, warum eine Anlage stoppt.
 
 In diesem Video:
-- Einschaltgeschwindigkeit und warum der Wind in Nabenhöhe zählt
+- Anlaufgeschwindigkeit und warum der Wind in Nabenhöhe zählt
 - Kapazitätsfaktor: was die US-Windflotte 2025 tatsächlich erzeugt hat
 - Das Kubikgesetz: doppelter Wind, achtfache Leistung
 - Die Leistungskurve: Nenngeschwindigkeit, Fahnenstellung und Abschaltung bei Sturm
-- Abregelung: volle Leitungen, negative Preise und wo es am häufigsten passiert
+- Abregelung: volle Leitungen, negative Preise und wo sie am häufigsten vorkommt
 - Eis an den Rotorblättern, Fledermäuse, Adler und Wartung
 
-Quellen:
+Quellen (englischsprachig):
 EIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php
 Lawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report
@@ -101,18 +101,18 @@ Adams, Gulka & Williams, A review of the effectiveness of operational curtailmen
 McClure et al., Eagle fatalities are reduced by automated curtailment of wind turbines (Journal of Applied Ecology, 2021) - https://doi.org/10.1111/1365-2664.13831
 
 Die Sprecherstimme ist KI-generiert; das Skript wurde von einem Menschen recherchiert und geprüft.
-Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert im Energiesektor.
+Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert in den Energiesektor.
 
 #windenergy #windturbine #powergrid #howitworks #electricity
 
 KAPITEL
 0:00 Intro
-1:05 Zu wenig Wind
-2:04 Das Kubikgesetz
-2:42 Zu viel Wind
-4:33 Das Netz sagt: nicht jetzt
-6:17 Eis und Tierwelt
-7:19 Zusammenfassung
+1:10 Zu wenig Wind
+2:16 Das Kubikgesetz
+3:00 Zu viel Wind
+5:07 Das Netz sagt: nicht jetzt
+7:08 Eis und Tierwelt
+8:27 Zusammenfassung
 
 VIDEO- & FOTONACHWEISE
 Stock footage and photos: Pixabay (Pixabay Content License).
@@ -137,14 +137,14 @@ No dia de mais vento do mês, algumas turbinas eólicas ficam totalmente paradas
 Seguimos o vento da pá até a linha de transmissão e analisamos cada motivo para uma turbina parar.
 
 Neste vídeo:
-- Velocidade de partida (cut-in) e por que o vento na altura do cubo é o que conta
+- Velocidade de partida (cut-in) e por que o que conta é o vento na altura do cubo
 - Fator de capacidade: o que a frota eólica dos EUA realmente produziu em 2025
 - A lei do cubo: o dobro de vento, oito vezes a potência
-- A curva de potência: velocidade nominal, posição de bandeira e corte em tempestades
+- A curva de potência: velocidade nominal, posição de bandeira e velocidade de corte em tempestades
 - Corte de geração (curtailment): linhas lotadas, preços negativos e onde isso mais acontece
 - Gelo nas pás, morcegos, águias e manutenção
 
-Fontes:
+Fontes (em inglês):
 EIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php
 Lawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report
@@ -167,14 +167,13 @@ Conteúdo apenas educativo, não é recomendação financeira. O criador investe
 
 CAPÍTULOS
 0:00 Introdução
-1:05 Vento de menos
-2:04 A lei do cubo
-2:42 Vento demais
-4:33 A rede diz "agora não"
-6:17 Gelo e vida selvagem
-7:19 Resumo
+1:10 Vento de menos
+2:16 A lei do cubo
+3:00 Vento demais
+5:07 A rede diz "agora não"
+7:08 Gelo e vida selvagem
+8:27 Resumo
 
-CRÉDITOS DE VÍDEOS E FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 

@@ -120,13 +120,13 @@ Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert in den En
 
 KAPITEL
 0:00 Intro
-0:44 3 Uhr nachts: die Nachtschicht
-2:15 15 Uhr: die Solarschicht
-3:09 Das Problem mit dem Sonnenuntergang
-4:18 Batterien: Mittag in den Abend verschieben
-4:51 Warum Preise schwanken
-6:30 Deine Steckdose, dein Timing
-7:31 Zusammenfassung
+0:46 3 Uhr nachts: die Nachtschicht
+2:26 15 Uhr: die Solarschicht
+3:25 Das Problem mit dem Sonnenuntergang
+4:50 Batterien: Mittag in den Abend verschieben
+5:21 Warum Preise schwanken
+7:12 Deine Steckdose, dein Timing
+8:18 Zusammenfassung
 
 BILDNACHWEISE (VIDEO & FOTO)
 Stock footage and photos: Pixabay (Pixabay Content License).
@@ -185,15 +185,14 @@ Conteúdo apenas educativo, não é recomendação financeira. O criador investe
 
 CAPÍTULOS
 0:00 Introdução
-0:44 3 da manhã: o turno da noite
-2:15 3 da tarde: o turno solar
-3:09 O problema do pôr do sol
-4:18 Baterias: levando o meio-dia para a noite
-4:51 Por que os preços oscilam
-6:30 Sua tomada, seu horário
-7:31 Resumo
+0:46 3 da manhã: o turno da noite
+2:26 3 da tarde: o turno solar
+3:25 O problema do pôr do sol
+4:50 Baterias: levando o meio-dia para a noite
+5:21 Por que os preços oscilam
+7:12 Sua tomada, seu horário
+8:18 Resumo
 
-CRÉDITOS DE VÍDEOS E FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 

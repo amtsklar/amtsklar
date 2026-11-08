@@ -1,765 +1,767 @@
 1
-00:00:00,100 --> 00:00:02,614
-Imagine uma tarde de muito vento.
+00:00:00,000 --> 00:00:01,950
+Imagine uma tarde de ventania.
 
 2
-00:00:02,564 --> 00:00:05,574
-As árvores se curvam,
-as bandeiras estalam.
+00:00:02,194 --> 00:00:04,609
+Árvores se curvam, bandeiras estalam.
 
 3
-00:00:05,574 --> 00:00:07,774
+00:00:04,853 --> 00:00:07,442
 Mas lá no alto do morro, algumas
 
 4
-00:00:07,774 --> 00:00:09,974
+00:00:07,442 --> 00:00:10,031
 das turbinas eólicas nem estão girando.
 
 5
-00:00:10,482 --> 00:00:13,839
-Uma turbina parada num
-dia de vento costuma ser
+00:00:10,407 --> 00:00:12,032
+Em geral, não quebraram.
 
 6
-00:00:13,839 --> 00:00:16,861
-a máquina, a rede ou os
-engenheiros dizendo: agora não.
+00:00:12,357 --> 00:00:14,227
+Algo mandou que parassem.
 
 7
-00:00:16,811 --> 00:00:19,451
+00:00:14,830 --> 00:00:18,145
 Vamos seguir o vento da pá
 até a linha de transmissão
 
 8
-00:00:19,451 --> 00:00:21,798
-e descobrir quem está
-dizendo isso, e por quê.
+00:00:18,145 --> 00:00:21,460
+e descobrir o que tomou
+essa decisão, e por quê.
 
 9
-00:00:22,304 --> 00:00:24,639
-No caminho, você vai ver por que um pouco
+00:00:21,859 --> 00:00:24,094
+Você vai ver por que um pouco mais
 
 10
-00:00:24,639 --> 00:00:26,973
-mais de vento pode significar
-muito mais potência.
+00:00:24,094 --> 00:00:26,329
+de vento pode dar bem mais potência.
 
 11
-00:00:26,923 --> 00:00:29,328
-E por que, em alguns dos dias
+00:00:26,607 --> 00:00:29,435
+E por que, em alguns
+dos dias de mais vento,
 
 12
-00:00:29,328 --> 00:00:31,732
-de mais vento, as turbinas
-recebem ordem de gerar menos.
+00:00:29,435 --> 00:00:32,262
+as turbinas recebem ordem de gerar menos.
 
 13
-00:00:32,254 --> 00:00:36,795
-Em 2025, o vento gerou
-cerca de 10,5 por cento
+00:00:32,658 --> 00:00:37,616
+Em 2025, o vento gerou cerca de 10,5%
+da eletricidade de grande escala
 
 14
-00:00:36,795 --> 00:00:41,337
-da eletricidade das grandes
-usinas dos EUA, segundo a EIA.
+00:00:37,616 --> 00:00:42,573
+dos EUA, segundo a EIA, órgão de
+estatísticas de energia do país.
 
 15
-00:00:41,287 --> 00:00:45,115
-Em Iowa, foram cerca de 58 por cento da
+00:00:43,270 --> 00:00:47,339
+Em Iowa, foram cerca de
+58% da geração do estado,
 
 16
-00:00:45,115 --> 00:00:48,519
-geração do estado, segundo o Berkeley Lab.
+00:00:47,339 --> 00:00:50,955
+segundo o Laboratório
+Nacional Lawrence Berkeley.
 
 17
-00:00:49,020 --> 00:00:51,253
-E as máquinas são grandes.
+00:00:51,346 --> 00:00:53,262
+E as máquinas são enormes.
 
 18
-00:00:51,203 --> 00:00:54,964
-O relatório eólico anual do Berkeley
-Lab para o Department of Energy diz que
+00:00:53,958 --> 00:00:57,856
+O relatório eólico anual
+do Berkeley Lab para o
 
 19
-00:00:54,964 --> 00:00:58,725
-a turbina terrestre
-nova média em 2025 tinha
+00:00:57,856 --> 00:01:01,755
+Departamento de Energia dos
+EUA diz que a turbina terrestre
 
 20
-00:00:58,725 --> 00:01:02,486
-cerca de 3,8 megawatts, com o
-cubo a uns 335 pés de altura
+00:01:01,755 --> 00:01:05,653
+nova média de 2025 tinha o
+cubo a uns 335 pés de altura,
 
 21
-00:01:02,486 --> 00:01:05,119
-e um rotor com cerca
-de 460 pés de diâmetro.
+00:01:05,653 --> 00:01:09,551
+e pás varrendo um círculo maior
+que um campo de futebol americano.
 
 22
-00:01:06,092 --> 00:01:08,605
+00:01:10,380 --> 00:01:13,259
 O motivo mais simples
 para uma turbina parada:
 
 23
-00:01:08,605 --> 00:01:11,119
+00:01:13,259 --> 00:01:16,139
 falta de vento onde as pás estão.
 
 24
-00:01:11,578 --> 00:01:14,049
-O Department of Energy observa
-que a velocidade do vento aumenta
+00:01:16,529 --> 00:01:19,733
+O Departamento de Energia
+observa que o vento acelera
 
 25
-00:01:14,049 --> 00:01:16,519
-com a altura, então a brisa que você sente
+00:01:19,733 --> 00:01:22,937
+com a altura, então a
+brisa que você sente no
 
 26
-00:01:16,519 --> 00:01:18,990
-no chão não é o vento que o rotor sente.
+00:01:22,937 --> 00:01:26,142
+chão não é o vento que o rotor sente.
 
 27
-00:01:19,440 --> 00:01:24,364
+00:01:26,518 --> 00:01:31,464
 Toda turbina tem um medidor de vento,
 um anemômetro, ligado a um controlador.
 
 28
-00:01:24,314 --> 00:01:27,536
-Segundo o departamento, o
-controlador costuma ligar a máquina
+00:01:32,068 --> 00:01:35,258
+Segundo o departamento,
+o controlador costuma
 
 29
-00:01:27,536 --> 00:01:30,399
-com ventos de cerca de
+00:01:35,258 --> 00:01:38,093
+ligar a máquina com uns
 7 a 11 milhas por hora.
 
 30
-00:01:30,399 --> 00:01:32,631
-Essa é a velocidade de partida.
+00:01:38,534 --> 00:01:40,079
+É a velocidade de partida.
 
 31
-00:01:32,631 --> 00:01:35,246
+00:01:40,775 --> 00:01:43,422
 Abaixo dela, a turbina espera.
 
 32
-00:01:35,750 --> 00:01:39,692
-Vento fraco também explica por que
-a produção parece modesta no papel.
+00:01:43,821 --> 00:01:47,513
+Vento fraco também faz a produção
+parecer modesta no papel.
 
 33
-00:01:39,642 --> 00:01:42,908
+00:01:47,931 --> 00:01:51,408
 O Berkeley Lab constatou que
 a frota eólica dos EUA teve
 
 34
-00:01:42,908 --> 00:01:46,173
-um fator de capacidade
-de 34 por cento em 2025.
+00:01:51,408 --> 00:01:54,885
+um fator de capacidade de 34% em 2025.
 
 35
-00:01:46,173 --> 00:01:50,344
+00:01:55,559 --> 00:02:00,029
 Projetos construídos em
 2024 chegaram a cerca de 37.
 
 36
-00:01:50,860 --> 00:01:54,298
-Fator de capacidade é o que uma
-usina realmente produziu, dividido
+00:02:00,420 --> 00:02:04,116
+Fator de capacidade é o que a
+usina de fato produziu, dividido
 
 37
-00:01:54,298 --> 00:01:57,392
-pelo máximo que poderia
-gerar operando a todo vapor.
+00:02:04,116 --> 00:02:07,444
+pelo máximo que geraria
+operando a todo vapor.
 
 38
-00:01:57,342 --> 00:02:00,515
+00:02:07,955 --> 00:02:12,049
 Os números do Berkeley
 Lab já incluem perdas por
 
 39
-00:02:00,515 --> 00:02:03,234
+00:02:12,049 --> 00:02:15,559
 corte de geração, paradas e gelo nas pás.
 
 40
-00:02:04,188 --> 00:02:06,095
+00:02:16,397 --> 00:02:18,324
 Então, por que algumas milhas
 
 41
-00:02:06,095 --> 00:02:08,003
+00:02:18,324 --> 00:02:20,252
 por hora a mais importam tanto?
 
 42
-00:02:07,953 --> 00:02:10,619
+00:02:20,530 --> 00:02:23,735
 Por causa de um número: três.
 
 43
-00:02:11,138 --> 00:02:13,014
-A potência do ar em movimento cresce
+00:02:24,113 --> 00:02:26,099
+A potência do ar em movimento
 
 44
-00:02:13,014 --> 00:02:14,889
-com o cubo da sua velocidade.
+00:02:26,099 --> 00:02:28,084
+cresce com o cubo da velocidade.
 
 45
-00:02:14,839 --> 00:02:18,493
+00:02:28,525 --> 00:02:33,076
 Como diz o programa de ciência
 eólica da Iowa State University, se
 
 46
-00:02:18,493 --> 00:02:22,148
+00:02:33,076 --> 00:02:37,627
 a velocidade do vento dobra, a
 potência é multiplicada por oito.
 
 47
-00:02:22,648 --> 00:02:25,423
-Passe de 10 milhas por hora para 15, e
+00:02:38,021 --> 00:02:41,086
+Passe de 10 para 15 milhas por hora, e
 
 48
-00:02:25,423 --> 00:02:28,197
+00:02:41,086 --> 00:02:44,151
 o vento carrega mais que
 o triplo da potência.
 
 49
-00:02:28,147 --> 00:02:30,696
-É também por isso que as torres
-estão cada vez mais altas:
+00:02:44,848 --> 00:02:47,799
+Por isso, também, as torres
+não param de crescer:
 
 50
-00:02:30,696 --> 00:02:32,880
+00:02:47,799 --> 00:02:50,328
 lá em cima, o vento é mais rápido.
 
 51
-00:02:33,390 --> 00:02:36,069
+00:02:50,727 --> 00:02:53,540
 Mas mais potência também
 significa mais força
 
 52
-00:02:36,069 --> 00:02:38,366
+00:02:53,540 --> 00:02:55,951
 nas pás, no eixo e na torre.
 
 53
-00:02:38,316 --> 00:02:41,530
-E um gerador só consegue
-aproveitar até certo ponto.
+00:02:56,462 --> 00:02:59,226
+E um gerador só aproveita até certo ponto.
 
 54
-00:02:42,494 --> 00:02:45,831
-Os engenheiros desenham tudo isso
-como uma curva de potência: quanta
+00:03:00,069 --> 00:03:03,607
+Os engenheiros desenham
+tudo numa curva de potência:
 
 55
-00:02:45,831 --> 00:02:48,834
-eletricidade uma turbina gera
-em cada velocidade de vento.
+00:03:03,607 --> 00:03:06,791
+quanta eletricidade a turbina
+gera em cada velocidade.
 
 56
-00:02:48,784 --> 00:02:52,388
+00:03:07,488 --> 00:03:11,812
 Acima da partida, a produção
 sobe rápido até a turbina atingir
 
 57
-00:02:52,388 --> 00:02:55,991
-sua velocidade nominal, onde
+00:03:11,812 --> 00:03:16,137
+a velocidade nominal, quando
 o gerador chega ao máximo.
 
 58
-00:02:56,500 --> 00:03:00,417
-Pegue uma turbina de referência que
-pesquisadores dos EUA e da Europa projetaram
+00:03:16,536 --> 00:03:21,404
+Veja uma turbina de referência que
+cientistas dos EUA e da Europa projetaram
 
 59
-00:03:00,417 --> 00:03:03,899
+00:03:21,404 --> 00:03:25,731
 em 2019 para representar uma
-máquina terrestre moderna.
+turbina terrestre moderna.
 
 60
-00:03:03,849 --> 00:03:06,579
+00:03:26,114 --> 00:03:29,290
 Ela começa a gerar com
 cerca de 9 milhas por
 
 61
-00:03:06,579 --> 00:03:09,308
+00:03:29,290 --> 00:03:32,465
 hora e atinge potência
 máxima com cerca de 22.
 
 62
-00:03:09,810 --> 00:03:13,153
+00:03:32,847 --> 00:03:36,226
 Acima disso, mais vento
 não acrescenta potência.
 
 63
-00:03:13,103 --> 00:03:15,640
+00:03:36,609 --> 00:03:39,581
 O controle de passo
 gira as pás para captar
 
 64
-00:03:15,640 --> 00:03:17,861
+00:03:39,581 --> 00:03:42,181
 menos vento, e a produção fica estável.
 
 65
-00:03:18,368 --> 00:03:21,634
-Se o vento continuar subindo,
-chega a velocidade de corte.
+00:03:42,575 --> 00:03:45,338
+Continue, e você chega
+à velocidade de corte.
 
 66
-00:03:21,584 --> 00:03:25,985
-Para essa turbina de referência,
-são cerca de 56 milhas por hora.
+00:03:45,547 --> 00:03:49,065
+Nessa turbina de referência,
+são umas 56 milhas por hora.
 
 67
-00:03:25,985 --> 00:03:29,665
-O Department of Energy diz que os
-controladores costumam desligar as turbinas
+00:03:49,762 --> 00:03:54,202
+Segundo o Departamento de Energia,
+os controladores costumam desligar
 
 68
-00:03:29,665 --> 00:03:32,885
-quando o vento passa de 55 a 65.
+00:03:54,202 --> 00:03:58,086
+as turbinas quando o
+vento passa de 55 a 65.
 
 69
-00:03:33,406 --> 00:03:35,601
-Aí as pás entram em posição de bandeira.
+00:03:58,468 --> 00:04:00,314
+Aí as pás entram em bandeira.
 
 70
-00:03:35,551 --> 00:03:38,945
+00:04:00,639 --> 00:04:05,097
 Elas giram para deixar de
 produzir a força que move
 
 71
-00:03:38,945 --> 00:03:42,030
+00:04:05,097 --> 00:04:09,149
 o rotor; o rotor desacelera
 e a produção cai a zero.
 
 72
-00:03:42,540 --> 00:03:44,646
+00:04:09,528 --> 00:04:11,374
 Por que parar tão cedo?
 
 73
-00:03:44,596 --> 00:03:48,150
+00:04:11,862 --> 00:04:16,346
 Por uma norma internacional, diz o
-departamento, a maioria das turbinas
+departamento, turbinas feitas para
 
 74
-00:03:48,150 --> 00:03:51,704
-atuais precisa suportar
-ventos constantes de
+00:04:16,346 --> 00:04:20,830
+os locais de mais vento precisam
+suportar ventos constantes
 
 75
-00:03:51,704 --> 00:03:54,863
-112 milhas por hora e rajadas de 156.
+00:04:20,830 --> 00:04:24,865
+de 112 milhas por hora e rajadas de 156.
 
 76
-00:03:54,863 --> 00:03:57,370
-A velocidade de corte fica
-bem abaixo disso de propósito,
+00:04:25,283 --> 00:04:28,128
+O corte fica bem abaixo
+disso de propósito,
 
 77
-00:03:57,370 --> 00:03:59,519
+00:04:28,128 --> 00:04:30,566
 para reduzir o risco de danos.
 
 78
-00:04:00,026 --> 00:04:03,522
-O sistema de guinada (yaw) mantém
-a turbina de frente para o vento.
+00:04:30,959 --> 00:04:34,047
+O sistema de guinada vira
+a turbina para o vento.
 
 79
-00:04:03,472 --> 00:04:06,253
-Quando o vento diminui, as pás
-saem da posição de bandeira, e
+00:04:34,372 --> 00:04:37,774
+Quando o vento diminui,
+as pás saem da bandeira, e
 
 80
-00:04:06,253 --> 00:04:09,033
+00:04:37,774 --> 00:04:41,176
 a energia normalmente
 volta a fluir em minutos.
 
 81
-00:04:09,544 --> 00:04:12,912
+00:04:41,575 --> 00:04:45,314
 Em março de 2017, uma tempestade
 de inverno atingiu Block
 
 82
-00:04:12,912 --> 00:04:16,280
+00:04:45,314 --> 00:04:49,052
 Island, onde fica o primeiro
 parque eólico offshore dos EUA.
 
 83
-00:04:16,230 --> 00:04:18,852
+00:04:49,563 --> 00:04:52,660
 As cinco turbinas
 desligaram por várias horas
 
 84
-00:04:18,852 --> 00:04:21,474
+00:04:52,660 --> 00:04:55,758
 enquanto o vento passava
 de 55 milhas por hora, e
 
 85
-00:04:21,474 --> 00:04:23,768
-voltaram a funcionar quando
-a tempestade diminuiu.
+00:04:55,758 --> 00:04:58,468
+voltaram a gerar quando
+a tempestade passou.
 
 86
-00:04:23,768 --> 00:04:26,163
-Então a hora de mais vento do ano pode
+00:04:58,909 --> 00:05:01,144
+Então a hora mais ventosa do ano pode
 
 87
-00:04:26,163 --> 00:04:28,258
-ser uma hora zerada para uma turbina.
+00:05:01,144 --> 00:05:03,100
+ser uma hora zero para a turbina.
 
 88
-00:04:28,258 --> 00:04:30,222
+00:05:03,704 --> 00:05:04,946
 Isso não é defeito.
 
 89
-00:04:30,222 --> 00:04:32,148
+00:05:05,225 --> 00:05:06,885
 É o projeto.
 
 90
-00:04:33,120 --> 00:04:35,455
+00:05:07,714 --> 00:05:09,281
 Agora, a surpresa.
 
 91
-00:04:35,405 --> 00:04:38,789
+00:05:09,525 --> 00:05:13,533
 Às vezes a turbina está bem,
 o vento está perfeito, e
 
 92
-00:04:38,789 --> 00:04:41,834
+00:05:13,533 --> 00:05:17,141
 o operador da rede ainda
-manda ela gerar menos.
+manda que ela gere menos.
 
 93
-00:04:42,350 --> 00:04:45,788
+00:05:17,520 --> 00:05:21,648
 Isso é o corte de geração, que a
 EIA define como reduzir de propósito
 
 94
-00:04:45,788 --> 00:04:49,226
+00:05:21,648 --> 00:05:25,775
 a geração abaixo do que
 uma usina poderia produzir.
 
 95
-00:04:49,176 --> 00:04:51,886
+00:05:26,471 --> 00:05:29,821
 Acontece quando a oferta
 supera a demanda, ou quando
 
 96
-00:04:51,886 --> 00:04:54,597
-não há linhas de transmissão
-suficientes para escoar a energia.
+00:05:29,821 --> 00:05:33,170
+não há linhas suficientes
+para escoar a energia.
 
 97
-00:04:55,108 --> 00:04:58,672
+00:05:33,570 --> 00:05:38,251
 Nas palavras da EIA, em
 dias de muito vento em
 
 98
-00:04:58,672 --> 00:05:02,235
+00:05:38,251 --> 00:05:42,932
 certos locais, a capacidade de transmissão
 muitas vezes não basta para receber
 
 99
-00:05:02,235 --> 00:05:05,007
+00:05:42,932 --> 00:05:46,573
 a grande quantidade de
 energia eólica gerada.
 
 100
-00:05:05,466 --> 00:05:08,234
+00:05:46,955 --> 00:05:50,493
 O Berkeley Lab observa
 que, com muito vento e
 
 101
-00:05:08,234 --> 00:05:11,002
+00:05:50,493 --> 00:05:54,031
 linhas cheias, ou quando outras
 usinas não conseguem reduzir
 
 102
-00:05:11,002 --> 00:05:13,770
-o bastante ou rápido o suficiente, os
-preços no atacado locais podem ficar
+00:05:54,031 --> 00:05:57,570
+tanto ou tão rápido, o preço
+local no atacado pode ficar
 
 103
-00:05:13,770 --> 00:05:16,538
-negativos: quem vende paga a
-quem compra para levar a energia.
+00:05:57,570 --> 00:06:01,108
+negativo: quem vende paga para
+o comprador levar a energia.
 
 104
-00:05:16,488 --> 00:05:19,435
+00:06:01,805 --> 00:06:04,370
 Isso também pode levar
 ao corte de geração.
 
 105
-00:05:19,952 --> 00:05:22,797
-Por que o vento costuma
-ser o primeiro da fila?
+00:06:04,755 --> 00:06:07,460
+Por que o vento muitas vezes é o primeiro?
 
 106
-00:05:22,747 --> 00:05:25,750
+00:06:08,157 --> 00:06:11,697
 No Meio-Oeste, explica
 a EIA, é mais barato e
 
 107
-00:05:25,750 --> 00:05:28,754
+00:06:11,697 --> 00:06:15,236
 mais rápido desligar e religar
 usinas eólicas e solares
 
 108
-00:05:28,754 --> 00:05:31,089
-do que outros tipos de usinas.
+00:06:15,236 --> 00:06:17,990
+do que outros tipos de usina.
 
 109
-00:05:31,606 --> 00:05:33,814
+00:06:18,375 --> 00:06:19,931
 Quanto é cortado?
 
 110
-00:05:33,764 --> 00:05:37,876
+00:06:20,233 --> 00:06:24,283
 Em sete operadores de rede dos
 EUA, o Berkeley Lab contou cerca de
 
 111
-00:05:37,876 --> 00:05:41,532
-5 por cento da geração
-eólica potencial em 2025.
+00:06:24,283 --> 00:06:27,884
+5% da geração eólica potencial em 2025.
 
 112
-00:05:41,532 --> 00:05:44,172
-O Southwest Power Pool, no centro
+00:06:28,290 --> 00:06:30,879
+O Southwest Power Pool, operador no centro
 
 113
-00:05:44,172 --> 00:05:46,812
-dos EUA, teve o maior
-índice, cerca de 9 por cento.
+00:06:30,879 --> 00:06:33,468
+dos EUA, teve o maior índice: cerca de 9%.
 
 114
-00:05:47,316 --> 00:05:51,399
-Em 2014, era menos de 1 por cento.
+00:06:33,850 --> 00:06:37,623
+Em 2014, era menos de 1%.
 
 115
-00:05:51,349 --> 00:05:54,556
-Desde então, a fatia eólica
-da demanda daquela região
+00:06:38,215 --> 00:06:41,589
+Desde então, a fatia do
+vento na demanda da região
 
 116
-00:05:54,556 --> 00:05:57,407
-cresceu de cerca de 12 por
-cento para cerca de 38.
+00:06:41,589 --> 00:06:44,589
+cresceu de cerca de 12% para cerca de 38.
 
 117
-00:05:57,407 --> 00:05:59,627
+00:06:45,170 --> 00:06:47,474
 Mais vento nos mesmos fios significa
 
 118
-00:05:59,627 --> 00:06:01,846
+00:06:47,474 --> 00:06:49,779
 mais horas com os fios lotados.
 
 119
-00:06:02,354 --> 00:06:04,230
+00:06:50,161 --> 00:06:51,856
 Novas linhas ajudam.
 
 120
-00:06:04,180 --> 00:06:07,550
-Depois de uma grande expansão da
-transmissão no oeste do Texas, concluída
+00:06:52,518 --> 00:06:56,639
+Após uma grande expansão de linhas
+para o oeste do Texas, concluída
 
 121
-00:06:07,550 --> 00:06:10,919
+00:06:56,639 --> 00:07:00,760
 por volta de 2013, observa o
 Berkeley Lab, o corte eólico na
 
 122
-00:06:10,919 --> 00:06:14,289
-principal rede do Texas
-caiu de 17 por cento em
+00:07:00,760 --> 00:07:04,881
+principal rede do Texas caiu de 17% em
 
 123
-00:06:14,289 --> 00:06:16,910
-2009 para meio por cento em 2014.
+00:07:04,881 --> 00:07:08,087
+2009 para 0,5% em 2014.
 
 124
-00:06:17,866 --> 00:06:22,076
+00:07:08,933 --> 00:07:13,577
 O clima também pode parar uma turbina
-de um jeito mais silencioso: o gelo.
+de um jeito mais discreto: o gelo.
 
 125
-00:06:22,536 --> 00:06:25,764
-Um estudo de campo liderado pela
-Iowa State, publicado em 2021,
+00:07:13,959 --> 00:07:17,326
+Um estudo de campo liderado
+pela Iowa State, de 2021,
 
 126
-00:06:25,764 --> 00:06:28,991
+00:07:17,326 --> 00:07:20,693
 analisou um parque
 eólico no leste da China.
 
 127
-00:06:28,941 --> 00:06:32,254
-O gelo chegou a quase um pé de
-espessura perto das pontas das pás, e
+00:07:21,204 --> 00:07:25,686
+Quase um pé de gelo se formou
+perto das pontas das pás e,
 
 128
-00:06:32,254 --> 00:06:35,567
-mesmo com vento forte, as turbinas congeladas
-giravam mais devagar, paravam muito
+00:07:25,686 --> 00:07:30,168
+mesmo com vento forte, as turbinas
+congeladas giravam mais devagar,
 
 129
-00:06:35,567 --> 00:06:38,278
-e perdiam até 80 por
-cento da sua potência.
+00:07:30,168 --> 00:07:33,836
+muitas vezes paravam e
+perdiam até 80% da potência.
 
 130
-00:06:38,798 --> 00:06:40,916
+00:07:34,214 --> 00:07:35,863
 E tem a vida selvagem.
 
 131
-00:06:40,866 --> 00:06:43,507
-Os morcegos correm mais
+00:07:36,188 --> 00:07:38,940
+Morcegos correm mais
 risco no fim do verão e
 
 132
-00:06:43,507 --> 00:06:46,147
-no outono, e ficam mais
+00:07:38,940 --> 00:07:41,691
+no outono, e são mais
 ativos com vento fraco.
 
 133
-00:06:46,147 --> 00:06:48,990
-Por isso alguns parques eólicos
-aumentam a velocidade de partida
+00:07:42,295 --> 00:07:45,663
+Por isso, alguns parques
+elevam a velocidade de partida
 
 134
-00:06:48,990 --> 00:06:51,517
+00:07:45,663 --> 00:07:48,657
 nessas noites, e as pás
 podem ficar em bandeira.
 
 135
-00:06:52,036 --> 00:06:56,137
+00:07:49,036 --> 00:07:54,307
 Uma revisão de 2021 de testes de
 corte de geração nos EUA e no Canadá
 
 136
-00:06:56,137 --> 00:07:00,239
-concluiu que isso reduziu as mortes de
-morcegos em cerca de 63 por cento, em média.
+00:07:54,307 --> 00:07:59,578
+concluiu que isso reduziu as mortes
+de morcegos em cerca de 63%, em média.
 
 137
-00:07:00,690 --> 00:07:03,893
+00:07:59,966 --> 00:08:02,822
 Para as águias, alguns
 locais usam câmeras.
 
 138
-00:07:03,843 --> 00:07:07,228
-Num parque eólico em Wyoming,
-um sistema que desacelera ou
+00:08:03,136 --> 00:08:07,204
+Num parque eólico em Wyoming, um
+sistema que desacelera ou para
 
 139
-00:07:07,228 --> 00:07:10,613
-para turbinas individuais ao
-detectar uma águia em risco
+00:08:07,204 --> 00:08:11,273
+turbinas individuais ao detectar
+uma águia em risco foi associado
 
 140
-00:07:10,613 --> 00:07:13,998
-reduziu ali as mortes de águias em 63
-por cento, segundo um estudo de 2021
+00:08:11,273 --> 00:08:15,342
+a uma queda de mais de
+60% nas mortes de águias,
 
 141
-00:07:13,998 --> 00:07:16,368
-no Journal of Applied Ecology.
+00:08:15,342 --> 00:08:19,041
+num estudo de 2021 no
+Journal of Applied Ecology.
 
 142
-00:07:16,368 --> 00:07:19,085
-Mesmo número, outro estudo.
+00:08:19,737 --> 00:08:20,864
+Mais tarde, o
 
 143
-00:07:20,042 --> 00:07:23,627
+00:08:20,887 --> 00:08:26,808
+Serviço Geológico dos EUA reanalisou
+e questionou o tamanho real do efeito.
+
+144
+00:08:27,646 --> 00:08:31,001
 Às vezes, uma turbina parada
 só está em manutenção.
 
-144
-00:07:23,577 --> 00:07:28,335
-O freio de uma turbina não é como o de
-um carro, explica o Department of Energy.
-
 145
-00:07:28,335 --> 00:07:30,637
-Ele mantém o rotor parado depois
+00:08:31,245 --> 00:08:35,657
+O freio da turbina não é igual ao do
+carro, diz o Departamento de Energia.
 
 146
-00:07:30,637 --> 00:07:32,939
-do desligamento, o que as equipes
-precisam para a manutenção.
+00:08:36,353 --> 00:08:38,849
+Ele mantém o rotor parado depois
 
 147
-00:07:33,448 --> 00:07:36,096
-Então, da próxima vez que
-passar por um parque eólico e
+00:08:38,849 --> 00:08:41,346
+do desligamento, o que a manutenção exige.
 
 148
-00:07:36,096 --> 00:07:38,449
-vir rotores parados, repasse a lista.
+00:08:41,736 --> 00:08:44,373
+Na próxima vez que vir um parque eólico
 
 149
-00:07:38,399 --> 00:07:40,810
-Pouco vento lá no alto.
+00:08:44,373 --> 00:08:46,717
+com rotores parados, repasse a lista.
 
 150
-00:07:40,810 --> 00:07:43,590
-Vento demais, acima do corte.
+00:08:47,158 --> 00:08:48,795
+Pouco vento lá no alto.
 
 151
-00:07:43,590 --> 00:07:46,907
-Uma rede lotada, ou preços abaixo de zero.
+00:08:49,120 --> 00:08:51,256
+Vento demais, acima do corte.
 
 152
-00:07:46,907 --> 00:07:48,986
-Gelo nas pás.
+00:08:51,465 --> 00:08:54,275
+Uma rede lotada, ou preços abaixo de zero.
 
 153
-00:07:48,986 --> 00:07:51,371
-Morcegos ou águias por perto.
+00:08:54,786 --> 00:08:56,005
+Gelo nas pás.
 
 154
-00:07:51,371 --> 00:07:53,437
-Ou uma equipe trabalhando.
+00:08:56,249 --> 00:08:57,909
+Morcegos ou águias perto.
 
 155
-00:07:53,958 --> 00:07:56,442
-Um rotor parado por uma hora diz algo
+00:08:58,350 --> 00:09:00,359
+Ou uma equipe trabalhando.
 
 156
-00:07:56,442 --> 00:07:58,615
-sobre aquela hora, não sobre a máquina.
+00:09:00,737 --> 00:09:03,437
+Um rotor parado por uma hora diz algo
 
 157
-00:07:58,565 --> 00:08:01,128
-Normalmente, é a máquina, a rede
+00:09:03,437 --> 00:09:05,799
+sobre aquela hora, não sobre a máquina.
 
 158
-00:08:01,128 --> 00:08:03,692
-ou os engenheiros dizendo: agora não.
+00:09:06,496 --> 00:09:09,422
+Normalmente, é a máquina, a rede
 
 159
-00:08:04,196 --> 00:08:06,550
-Você já passou por um parque eólico
+00:09:09,422 --> 00:09:12,347
+ou os engenheiros dizendo: agora não.
 
 160
-00:08:06,550 --> 00:08:08,904
-num dia de vento com as pás paradas?
+00:09:12,738 --> 00:09:14,804
+Você já passou por um parque eólico
 
 161
-00:08:08,854 --> 00:08:11,264
-O que você acha que estava acontecendo?
+00:09:14,804 --> 00:09:16,871
+num dia de vento, com pás paradas?
 
 162
-00:08:11,264 --> 00:08:13,420
-Conta aqui nos comentários.
+00:09:17,382 --> 00:09:19,089
+O que você acha que houve?
 
 163
-00:08:13,930 --> 00:08:16,451
-Se quiser continuar seguindo o
+00:09:19,692 --> 00:09:21,654
+Conte nos comentários.
 
 164
-00:08:16,451 --> 00:08:18,612
-elétron, se inscreva no The Hidden Grid.
+00:09:22,048 --> 00:09:25,312
+Se você gosta de ver a
+engrenagem oculta do dia a dia,
 
 165
-00:08:18,562 --> 00:08:20,673
-Todas as fontes por trás dos números
+00:09:25,312 --> 00:09:28,213
+inscreva-se no Other End of the Wire.
 
 166
-00:08:20,673 --> 00:08:22,784
+00:09:29,026 --> 00:09:31,063
+Todas as fontes dos números
+
+167
+00:09:31,063 --> 00:09:33,101
 deste vídeo estão na descrição.
+
+168
+00:09:33,542 --> 00:09:35,051
+Follow the electron.

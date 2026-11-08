@@ -67,7 +67,7 @@ Stock footage and photos: Pixabay (Pixabay Content License).
 
 ## German (de)
 
-**Title** (54 chars): Vom Kernkraftwerk zum Handy-Ladegerät: Die GANZE Reise
+**Title** (64 chars): Die Elektronen in deiner Wand bewegen sich KAUM. Was reist dann?
 
 **Description:**
 
@@ -76,16 +76,16 @@ Steck dein Handy ein und folge dem Kabel zurück: durch die Wand, die Straße en
 Schritt für Schritt verfolgen wir jede Übergabe, wo Energie verloren geht und warum die Elektronen selbst die Reise nie antreten.
 
 In diesem Video:
-- Kernspaltung, Brennstoff-Pellets und wie ein Reaktor Wärme erzeugt
+- Kernspaltung, Brennstoffpellets und wie ein Reaktor Wärme erzeugt
 - Dampf, Turbinen und ein Generator im 60-Hertz-Takt
-- Warum rund zwei Drittel der Wärme eines Kernkraftwerks nie zu Strom werden
-- Die Spannungsleiter: warum Übertragungsleitungen mit Hunderttausenden Volt laufen
-- Umspannwerke, Masttransformatoren und das 120/240-Volt-System in US-Haushalten
-- Wie viel im Netz verloren geht (etwa 5 Prozent)
+- Warum etwa zwei Drittel der Wärme eines Kernkraftwerks nie zu Strom werden
+- Die Spannungsleiter: warum Übertragungsleitungen mit Hunderttausenden Volt arbeiten
+- Umspannwerke, Masttrafos und die 120/240-Volt-Versorgung in US-Häusern
+- Wie viel im Netz verloren geht (etwa 5 %)
 - Elektronendrift vs. Geschwindigkeit der Energie
 - Was dein Handy-Ladegerät eigentlich macht
 
-Quellen (auf Englisch):
+Quellen (englischsprachig):
 EIA, U.S. nuclear industry (reactors, plants, states as of March 2026; capacity factor 2025) - https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php
 EIA, Electricity in the U.S. (2025 generation shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Nuclear power plants (fission, fuel pellets, cooling) - https://www.eia.gov/energyexplained/nuclear/nuclear-power-plants.php
@@ -115,22 +115,22 @@ Nur zu Bildungszwecken, keine Finanzberatung. Der Ersteller investiert in den En
 KAPITEL
 0:00 Intro
 0:50 Schritt 1: Atome spalten für Wärme
-1:51 Schritt 2: Von Wärme zu Bewegung
-3:27 Schritt 3: Die Spannungsleiter hinauf
-4:33 Schritt 4: Wieder herunter
-5:38 Wer macht eigentlich die Reise?
-6:50 Schritt 5: Das Ladegerät
-7:44 Zusammenfassung
+1:58 Schritt 2: Von Wärme zu Bewegung
+3:48 Schritt 3: Die Spannungsleiter hinauf
+4:54 Schritt 4: Wieder herunter
+6:08 Wer macht eigentlich die Reise?
+7:26 Schritt 5: Das Ladegerät
+8:31 Zusammenfassung
 
 BILD- UND VIDEONACHWEISE
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 
-**Tags:** wie kommt der Strom ins Haus, Kernkraft erklärt, wie funktioniert ein Kernkraftwerk, Stromnetz erklärt, Hochspannungsleitungen, warum Hochspannung, Transformator, Masttransformator, Driftgeschwindigkeit Elektronen, Wechselstrom erklärt, 120 240 Volt, Netzverluste, wie funktioniert ein Ladegerät, the hidden grid
+**Tags:** wie kommt der Strom ins Haus, Kernkraft erklärt, wie funktioniert ein Kernkraftwerk, Stromnetz erklärt, Hochspannungsleitungen, warum Hochspannung, Transformator, Masttransformator, Driftgeschwindigkeit Elektronen, Wechselstrom erklärt, 120 240 Volt, Netzverluste, wie funktioniert ein Ladegerät, other end of the wire
 
 ## Portuguese (pt-BR)
 
-**Title** (60 chars): Da usina nuclear ao carregador do celular: a viagem COMPLETA
+**Title** (65 chars): Os elétrons na sua parede quase não SE MOVEM. Então, o que viaja?
 
 **Description:**
 
@@ -178,18 +178,17 @@ Conteúdo apenas educativo, não é recomendação financeira. O criador investe
 CAPÍTULOS
 0:00 Introdução
 0:50 Etapa 1: Dividindo átomos para gerar calor
-1:51 Etapa 2: Do calor ao movimento
-3:27 Etapa 3: Subindo a escada da tensão
-4:33 Etapa 4: Descendo a tensão
-5:38 Quem realmente faz a viagem?
-6:50 Etapa 5: O carregador
-7:44 Resumo
+1:58 Etapa 2: Do calor ao movimento
+3:48 Etapa 3: Subindo a escada da tensão
+4:54 Etapa 4: Descendo a tensão
+6:08 Quem realmente faz a viagem?
+7:26 Etapa 5: O carregador
+8:31 Resumo
 
-CRÉDITOS DE VÍDEOS E FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 
-**Tags:** como a eletricidade chega na sua casa, energia nuclear explicada, como funciona uma usina nuclear, rede elétrica explicada, linhas de transmissão, por que alta tensão, transformador elevador, transformador de poste, velocidade de deriva dos elétrons, corrente alternada explicada, 120 240 volts, perdas de transmissão e distribuição, como funciona um carregador, the hidden grid
+**Tags:** como a eletricidade chega na sua casa, energia nuclear explicada, como funciona uma usina nuclear, rede elétrica explicada, linhas de transmissão, por que alta tensão, transformador elevador, transformador de poste, velocidade de deriva dos elétrons, corrente alternada explicada, 120 240 volts, perdas de transmissão e distribuição, como funciona um carregador, follow the electron, other end of the wire
 
 ## French (fr)
 

@@ -1,736 +1,689 @@
 1
-00:00:00,100 --> 00:00:04,080
-Em 2024, engenheiros do Laboratório
-Nacional de Energia Renovável (NREL)
+00:00:00,000 --> 00:00:02,601
+Coloque 100 unidades de eletricidade.
 
 2
-00:00:04,080 --> 00:00:08,060
-no Colorado relataram um
-teste em escala de megawatts.
+00:00:02,833 --> 00:00:04,598
+Receba cerca de 28 de volta.
 
 3
-00:00:08,010 --> 00:00:11,167
-Eles pegaram eletricidade,
-transformaram em hidrogênio, armazenaram
+00:00:05,364 --> 00:00:10,263
+Foi o que engenheiros do Laboratório
+Nacional de Energia Renovável (NREL)
 
 4
-00:00:11,167 --> 00:00:14,324
-e depois transformaram
-de volta em eletricidade.
+00:00:10,263 --> 00:00:15,161
+no Colorado, hoje chamado National
+Laboratory of the Rockies,
 
 5
-00:00:14,826 --> 00:00:19,648
-Em potência máxima, cerca de
-28% da eletricidade voltou.
+00:00:15,161 --> 00:00:20,060
+relataram em 2024 após um teste em
+escala de megawatts: eletricidade
 
 6
-00:00:19,598 --> 00:00:22,596
-Em baixa potência, cerca de 35.
+00:00:20,060 --> 00:00:23,870
+em hidrogênio, depois armazenada
+e de volta em eletricidade.
 
 7
-00:00:23,096 --> 00:00:25,801
-Agora compare isso com uma bateria.
+00:00:24,252 --> 00:00:28,095
+Foi um único sistema de teste,
+operando em potência máxima.
 
 8
-00:00:25,751 --> 00:00:29,724
-Em 2019, a EIA descobriu que
-as baterias da rede dos EUA
+00:00:28,606 --> 00:00:31,961
+Em baixa potência, voltaram cerca de 35.
 
 9
-00:00:29,724 --> 00:00:33,698
-devolviam cerca de 82% da
-eletricidade colocada nelas.
+00:00:32,360 --> 00:00:35,181
+Agora compare com toda
+uma frota de baterias.
 
 10
-00:00:33,698 --> 00:00:37,014
-Esse número se chama
-eficiência de ida e volta.
+00:00:35,622 --> 00:00:38,937
+Em 2019, a EIA, órgão de
+estatísticas de energia, viu
 
 11
-00:00:37,534 --> 00:00:39,901
-Então por que o governo federal
+00:00:38,937 --> 00:00:42,252
+que as baterias da rede dos
+EUA devolviam cerca de 82%.
 
 12
-00:00:39,901 --> 00:00:42,267
-comprometeu bilhões de
-dólares com hidrogênio?
+00:00:42,577 --> 00:00:45,317
+Isso se chama eficiência de ida e volta.
 
 13
-00:00:42,217 --> 00:00:44,615
-E por que o hidrogênio que mais importa
+00:00:45,693 --> 00:00:47,742
+Então por que o governo federal
 
 14
-00:00:44,615 --> 00:00:47,013
-talvez já esteja na sua mesa de jantar?
+00:00:47,742 --> 00:00:49,791
+destinou bilhões ao hidrogênio?
 
 15
-00:00:47,532 --> 00:00:50,990
-As duas respostas se resumem a
-uma ideia: o hidrogênio não tem
+00:00:50,174 --> 00:00:52,717
+E por que o hidrogênio que mais importa
 
 16
-00:00:50,990 --> 00:00:54,064
-um problema de combustível,
-e sim de onde usá-lo.
+00:00:52,717 --> 00:00:55,260
+talvez já esteja na sua mesa de jantar?
 
 17
-00:00:54,014 --> 00:00:56,911
+00:00:55,656 --> 00:00:59,805
+As duas respostas se resumem a
+uma ideia: o hidrogênio não é
+
+18
+00:00:59,805 --> 00:01:03,493
+um problema de combustível,
+mas de onde usá-lo.
+
+19
+00:01:03,934 --> 00:01:07,124
 Então vamos seguir o elétron
 e ver onde transformá-lo
 
-18
-00:00:56,911 --> 00:00:59,486
+20
+00:01:07,124 --> 00:01:09,959
 numa molécula vale a viagem.
 
-19
-00:01:00,452 --> 00:01:03,693
+21
+00:01:10,798 --> 00:01:13,909
 Primeiro, o que o hidrogênio realmente é.
 
-20
-00:01:03,643 --> 00:01:06,874
+22
+00:01:14,293 --> 00:01:18,623
 É o elemento mais abundante
 do universo, mas na
 
-21
-00:01:06,874 --> 00:01:10,105
+23
+00:01:18,623 --> 00:01:22,953
 Terra ele vem combinado com
 outros elementos: com oxigênio na
 
-22
-00:01:10,105 --> 00:01:13,337
+24
+00:01:22,953 --> 00:01:27,284
 água, ou com carbono no gás
 natural, no carvão e no petróleo.
 
-23
-00:01:13,858 --> 00:01:16,328
-Então, antes de usá-lo, a gente
-
-24
-00:01:16,328 --> 00:01:18,489
-precisa separá-lo desses compostos.
-
 25
-00:01:18,439 --> 00:01:22,304
-A EIA chama o hidrogênio de
-vetor energético, algo que leva
+00:01:27,683 --> 00:01:29,268
+Então, antes de usá-lo,
 
 26
-00:01:22,304 --> 00:01:26,169
-energia de um lugar para outro,
-um pouco como a eletricidade.
+00:01:29,268 --> 00:01:30,853
+precisamos separá-lo.
 
 27
-00:01:26,688 --> 00:01:29,087
-E esse transporte tem um preço.
+00:01:31,363 --> 00:01:35,684
+A EIA chama o hidrogênio de vetor
+energético: ele leva energia
 
 28
-00:01:29,037 --> 00:01:32,825
+00:01:35,684 --> 00:01:39,572
+de um lugar para outro, um
+pouco como a eletricidade.
+
+29
+00:01:39,971 --> 00:01:41,782
+E transportar tem um preço.
+
+30
+00:01:42,107 --> 00:01:46,310
 Nas palavras da EIA, produzir
 hidrogênio exige mais energia
 
-29
-00:01:32,825 --> 00:01:36,614
-do que o hidrogênio fornece ao
-ser convertido em energia útil.
-
-30
-00:01:36,614 --> 00:01:39,947
-Então todo uso de hidrogênio
-paga esse pedágio em algum ponto,
-
 31
-00:01:39,947 --> 00:01:42,978
-e vale a pena lembrar
-disso pelo resto do vídeo.
+00:01:46,310 --> 00:01:50,513
+do que ele fornece ao ser
+convertido em energia útil.
 
 32
-00:01:43,952 --> 00:01:48,616
+00:01:51,351 --> 00:01:56,532
 Os EUA já produzem bastante: cerca
 de 10 milhões de toneladas métricas
 
 33
-00:01:48,616 --> 00:01:52,856
-por ano, segundo a estratégia de
-2023 do Departamento de Energia.
+00:01:56,532 --> 00:02:01,243
+por ano, segundo a estratégia de 2023
+do Departamento de Energia dos EUA.
 
 34
-00:01:52,806 --> 00:01:56,806
-No mundo, a Agência Internacional
-de Energia contou quase 100
-
-35
-00:01:56,806 --> 00:02:00,306
-milhões de toneladas
-métricas de demanda em 2024.
-
-36
-00:02:00,814 --> 00:02:04,107
+00:02:01,627 --> 00:02:05,790
 O Departamento de Energia diz
 que cerca de 95% do hidrogênio
 
-37
-00:02:04,107 --> 00:02:07,399
+35
+00:02:05,790 --> 00:02:09,953
 dos EUA vem do gás
 natural, em grandes usinas
 
-38
-00:02:07,399 --> 00:02:09,960
-que usam um processo chamado
+36
+00:02:09,953 --> 00:02:13,191
+que usam a chamada
 reforma a vapor do metano.
 
-39
-00:02:10,428 --> 00:02:16,041
+37
+00:02:13,576 --> 00:02:18,777
 Metano e vapor se encontram entre
 1.300 e 1.800 graus Fahrenheit.
 
-40
-00:02:15,991 --> 00:02:19,939
+38
+00:02:19,102 --> 00:02:24,117
 Saem hidrogênio e monóxido de
 carbono, e uma segunda etapa
 
-41
-00:02:19,939 --> 00:02:23,887
+39
+00:02:24,117 --> 00:02:29,133
 transforma esse monóxido de carbono em
 dióxido de carbono e mais hidrogênio.
 
-42
-00:02:24,386 --> 00:02:27,168
+40
+00:02:29,521 --> 00:02:32,006
 Esse dióxido de carbono se acumula.
 
-43
-00:02:27,118 --> 00:02:31,881
-A estratégia de 2023 estimou que a
-produção de hidrogênio dos EUA gera
+41
+00:02:32,818 --> 00:02:38,826
+Segundo a estratégia de 2023 do
+departamento, o hidrogênio dos EUA gera
 
-44
-00:02:31,881 --> 00:02:36,212
+42
+00:02:38,826 --> 00:02:44,289
 cerca de 100 milhões de toneladas métricas
 de gases de efeito estufa por ano.
 
-45
-00:02:36,712 --> 00:02:39,774
-Capture esse carbono e
-armazene no subsolo, e
+43
+00:02:44,682 --> 00:02:48,210
+Capture a maior parte desse
+carbono e armazene no subsolo,
 
-46
-00:02:39,774 --> 00:02:42,453
-o resultado costuma ser
+44
+00:02:48,210 --> 00:02:51,346
+e o resultado costuma ser
 chamado de hidrogênio azul.
 
-47
-00:02:42,403 --> 00:02:45,745
-Deixe ir para o ar, e
+45
+00:02:52,043 --> 00:02:55,317
+Deixe-o ir para o ar, e
 ele é chamado de cinza.
 
-48
-00:02:46,254 --> 00:02:49,947
+46
+00:02:55,716 --> 00:02:59,853
 A outra rota principal é a eletrólise:
 passar uma corrente elétrica
 
-49
-00:02:49,947 --> 00:02:53,270
+47
+00:02:59,853 --> 00:03:03,576
 pela água para separá-la
 em hidrogênio e oxigênio.
 
-50
-00:02:53,220 --> 00:02:57,583
+48
+00:03:04,017 --> 00:03:09,509
 Com energia eólica ou solar, costuma
 ser chamado de hidrogênio verde.
 
+49
+00:03:09,885 --> 00:03:14,506
+De todo modo, a AIE (Agência Internacional
+de Energia) diz que o hidrogênio
+
+50
+00:03:14,506 --> 00:03:19,127
+de baixa emissão ainda era menos
+de 1% da produção mundial em 2024.
+
 51
-00:02:57,583 --> 00:03:01,639
-O próprio Departamento de Energia
-não usa o código de cores.
-
-52
-00:03:02,156 --> 00:03:05,747
-De todo modo, a AIE diz que o
-hidrogênio de baixa emissão ainda era
-
-53
-00:03:05,747 --> 00:03:09,338
-menos de 1% da produção mundial em 2024.
-
-54
-00:03:10,252 --> 00:03:13,021
+00:03:19,958 --> 00:03:22,164
 É aqui que o elétron entra.
 
-55
-00:03:12,971 --> 00:03:18,124
-O valor de 2022 do Departamento de
-Energia para um eletrolisador típico
+52
+00:03:22,547 --> 00:03:28,846
+O valor de 2022 do Departamento de Energia
+para um sistema típico de eletrolisador
 
-56
-00:03:18,124 --> 00:03:23,277
+53
+00:03:28,846 --> 00:03:35,144
 era de cerca de 55 quilowatts-hora de
 eletricidade por quilo de hidrogênio.
 
-57
-00:03:23,778 --> 00:03:26,617
+54
+00:03:35,538 --> 00:03:38,585
 Só cerca de 61% da
 energia dessa eletricidade
 
-58
-00:03:26,617 --> 00:03:29,455
+55
+00:03:38,585 --> 00:03:41,633
 acaba armazenada no hidrogênio.
 
-59
-00:03:29,405 --> 00:03:33,563
+56
+00:03:42,446 --> 00:03:47,798
 As metas de longo prazo do
 departamento ficam em torno de 70%.
 
+57
+00:03:48,191 --> 00:03:50,304
+Depois, é preciso armazená-lo.
+
+58
+00:03:50,536 --> 00:03:54,106
+Ele guarda mais energia por
+libra que qualquer outro
+
+59
+00:03:54,106 --> 00:03:57,676
+combustível, mas muito
+pouca por galão, então é
+
 60
-00:03:33,563 --> 00:03:36,178
-Melhor, mas ainda é uma perda.
+00:03:57,676 --> 00:04:01,246
+comprimido em tanques a até 10.000 psi ou
 
 61
-00:03:36,680 --> 00:03:39,564
-Depois, o hidrogênio
-precisa ser armazenado.
-
-62
-00:03:39,514 --> 00:03:42,208
-Ele guarda mais energia
-por libra do que qualquer
-
-63
-00:03:42,208 --> 00:03:44,565
-outro combustível, mas
-muito pouca por galão.
-
-64
-00:03:44,565 --> 00:03:48,700
-Então ele é comprimido em
-tanques a até 10.000 psi,
-
-65
-00:03:48,700 --> 00:03:52,460
-ou resfriado até virar líquido
+00:04:01,246 --> 00:04:04,816
+resfriado até virar líquido
 a menos 423 graus Fahrenheit.
 
-66
-00:03:53,416 --> 00:03:55,764
+62
+00:04:05,658 --> 00:04:07,597
 Agora some as perdas.
 
-67
-00:03:55,714 --> 00:03:58,864
-É a cadeia do começo deste
+63
+00:04:08,038 --> 00:04:11,172
+É a cadeia do começo
+do vídeo: eletricidade
 
-68
-00:03:58,864 --> 00:04:02,015
-vídeo: eletricidade em hidrogênio,
-depois de volta em eletricidade.
-
-69
-00:04:02,015 --> 00:04:05,112
-Naquele teste no Colorado, o
-gerador de célula a combustível
-
-70
-00:04:05,112 --> 00:04:08,208
-sozinho converteu só cerca de 48 a 52%
-
-71
-00:04:08,208 --> 00:04:10,918
-da energia do hidrogênio
+64
+00:04:11,172 --> 00:04:14,307
+em hidrogênio e depois
 de volta em eletricidade.
 
-72
-00:04:11,430 --> 00:04:14,441
+65
+00:04:15,004 --> 00:04:19,712
+Naquele teste no Colorado, o gerador de
+célula a combustível sozinho converteu
+
+66
+00:04:19,712 --> 00:04:24,420
+só cerca de metade da energia do
+hidrogênio de volta em eletricidade.
+
+67
+00:04:24,816 --> 00:04:27,800
 Um carro a hidrogênio
 percorre a mesma cadeia.
 
-73
-00:04:14,391 --> 00:04:16,917
-A célula a combustível
-transforma o hidrogênio de volta
+68
+00:04:28,612 --> 00:04:31,439
+Sua célula a combustível
+converte o hidrogênio
 
-74
-00:04:16,917 --> 00:04:19,442
-em eletricidade para um motor elétrico.
+69
+00:04:31,439 --> 00:04:34,267
+de volta em eletricidade
+para um motor elétrico.
 
-75
-00:04:19,442 --> 00:04:24,174
+70
+00:04:35,219 --> 00:04:41,024
 Um carro a bateria pula o desvio
 e armazena a eletricidade direto.
 
-76
-00:04:24,692 --> 00:04:27,244
-Agora olhe o mapa de abastecimento.
+71
+00:04:41,414 --> 00:04:43,272
+Agora, o mapa de abastecimento.
 
-77
-00:04:27,194 --> 00:04:30,646
-Em novembro de 2026, o localizador
-de postos do Departamento de Energia
+72
+00:04:43,759 --> 00:04:47,494
+Em novembro de 2026, o
+localizador de postos do
 
-78
-00:04:30,646 --> 00:04:34,097
-lista 44 postos de hidrogênio no
+73
+00:04:47,494 --> 00:04:51,229
+Departamento de Energia lista
+44 postos de hidrogênio no
 
-79
-00:04:34,097 --> 00:04:37,118
+74
+00:04:51,229 --> 00:04:54,498
 país inteiro, 42 deles na Califórnia.
 
-80
-00:04:37,118 --> 00:04:41,901
+75
+00:04:55,160 --> 00:05:00,408
 E lista quase 84.000 locais de
 recarga para carros elétricos.
 
-81
-00:04:42,418 --> 00:04:46,118
+76
+00:05:00,807 --> 00:05:04,383
 O aquecimento residencial tem
 o mesmo problema, só que pior.
 
-82
-00:04:46,068 --> 00:04:49,142
-O Departamento de Energia diz que
-uma bomba de calor pode entregar até
+77
+00:05:04,987 --> 00:05:08,818
+Segundo o Departamento de
+Energia, uma bomba de calor pode
 
-83
-00:04:49,142 --> 00:04:52,216
-três vezes mais calor do
-que a energia que consome.
+78
+00:05:08,818 --> 00:05:12,649
+entregar até três vezes mais
+calor do que a energia que usa.
 
-84
-00:04:52,728 --> 00:04:56,185
-Transforme essa mesma eletricidade
+79
+00:05:13,043 --> 00:05:16,874
+Transforme essa eletricidade
 em hidrogênio, e quase 40%
 
-85
-00:04:56,185 --> 00:04:59,642
-da energia some antes de
+80
+00:05:16,874 --> 00:05:20,706
+da energia se perde antes de
 você acender um queimador.
 
-86
-00:04:59,592 --> 00:05:02,862
-O hidrogênio também tem só cerca de
-um terço da energia do gás natural
+81
+00:05:21,309 --> 00:05:24,810
+E o hidrogênio tem só cerca de um terço
 
-87
-00:05:02,862 --> 00:05:06,131
-por volume, e a EIA diz
-que é preciso mais pesquisa
+82
+00:05:24,810 --> 00:05:27,811
+da energia do gás natural por volume.
 
-88
-00:05:06,131 --> 00:05:09,401
-para saber se aparelhos de
-aquecimento residencial aguentam.
-
-89
-00:05:09,902 --> 00:05:13,021
+83
+00:05:28,204 --> 00:05:32,152
 Então, para carros e casas,
 onde a eletricidade pode fazer
 
-90
-00:05:13,021 --> 00:05:16,140
+84
+00:05:32,152 --> 00:05:36,099
 o trabalho diretamente, o
 hidrogênio é o caminho mais longo.
 
-91
-00:05:17,062 --> 00:05:19,180
+85
+00:05:36,946 --> 00:05:38,537
 Mas inverta a pergunta.
 
-92
-00:05:19,130 --> 00:05:23,518
+86
+00:05:38,978 --> 00:05:43,401
 E se você não precisa de energia, mas
 dos próprios átomos de hidrogênio?
 
-93
-00:05:23,518 --> 00:05:25,901
+87
+00:05:44,005 --> 00:05:46,805
 É aí que ele faz sentido: não como
 
-94
-00:05:25,901 --> 00:05:27,944
+88
+00:05:46,805 --> 00:05:49,206
 combustível, mas como ingrediente.
 
-95
-00:05:28,452 --> 00:05:30,864
-As refinarias de petróleo são um exemplo.
+89
+00:05:49,599 --> 00:05:51,515
+Um caso: refinarias de petróleo.
 
-96
-00:05:30,814 --> 00:05:34,423
-Elas usam hidrogênio para remover
-o enxofre dos combustíveis.
+90
+00:05:51,724 --> 00:05:54,649
+O hidrogênio tira o
+enxofre dos combustíveis.
 
-97
-00:05:34,423 --> 00:05:37,857
+91
+00:05:55,253 --> 00:05:59,260
 No mundo, o refino usou mais de 43 milhões
 
-98
-00:05:37,857 --> 00:05:40,801
+92
+00:05:59,260 --> 00:06:02,695
 de toneladas métricas
 de hidrogênio em 2024.
 
-99
-00:05:41,306 --> 00:05:43,960
+93
+00:06:03,089 --> 00:06:04,877
 Fertilizante é o grande caso.
 
-100
-00:05:43,910 --> 00:05:47,676
+94
+00:06:05,202 --> 00:06:09,503
 Hidrogênio mais nitrogênio
 do ar dá amônia, e nos
 
-101
-00:05:47,676 --> 00:05:51,066
+95
+00:06:09,503 --> 00:06:13,375
 EUA, 88% da amônia vai para fertilizantes.
 
-102
-00:05:51,066 --> 00:05:55,109
+96
+00:06:13,886 --> 00:06:17,950
 Então, de certa forma, esse é o
 hidrogênio na sua mesa de jantar.
 
-103
-00:05:55,624 --> 00:05:58,373
+97
+00:06:18,329 --> 00:06:21,115
 No mundo, a amônia fica com cerca de 60%
 
-104
-00:05:58,373 --> 00:06:01,122
+98
+00:06:21,115 --> 00:06:23,902
 do hidrogênio usado na indústria.
 
-105
-00:06:01,072 --> 00:06:04,682
+99
+00:06:24,598 --> 00:06:28,963
 Com hidrogênio limpo, diz o Departamento
 de Energia, fábricas de amônia
 
-106
-00:06:04,682 --> 00:06:08,292
+100
+00:06:28,963 --> 00:06:33,329
 poderiam cortar suas
 emissões em mais de 90%.
 
-107
-00:06:08,814 --> 00:06:10,856
+101
+00:06:33,725 --> 00:06:35,188
 Depois vem o aço.
 
-108
-00:06:10,806 --> 00:06:13,631
-Cerca de 70% do aço americano é
+102
+00:06:35,466 --> 00:06:38,940
+Cerca de 70% do aço americano é feito
 
-109
-00:06:13,631 --> 00:06:16,456
-feito derretendo sucata
-em fornos elétricos.
+103
+00:06:38,940 --> 00:06:41,980
+derretendo sobretudo
+sucata em fornos elétricos.
 
-110
-00:06:16,456 --> 00:06:18,867
+104
+00:06:42,583 --> 00:06:45,990
 Mas fazer aço novo a
 partir de minério de ferro
 
-111
-00:06:18,867 --> 00:06:20,933
+105
+00:06:45,990 --> 00:06:48,911
 depende de coque e gás natural.
 
-112
-00:06:21,452 --> 00:06:24,684
+106
+00:06:49,304 --> 00:06:53,097
 Use hidrogênio limpo
 para tirar o oxigênio do
 
-113
-00:06:24,684 --> 00:06:27,915
-minério, e o Departamento de Energia
-diz que as emissões de ciclo de vida
+107
+00:06:53,097 --> 00:06:56,890
+minério, e o departamento diz
+que as emissões de ciclo de vida
 
-114
-00:06:27,915 --> 00:06:31,147
+108
+00:06:56,890 --> 00:07:00,682
 do aço novo poderiam cair de 40 a 70%.
 
-115
-00:06:31,618 --> 00:06:33,851
+109
+00:07:01,070 --> 00:07:02,614
 Depois vêm os "talvez".
 
-116
-00:06:33,801 --> 00:06:36,295
+110
+00:07:03,055 --> 00:07:05,777
 Navios poderiam usar combustíveis feitos
 
-117
-00:06:36,295 --> 00:06:38,788
+111
+00:07:05,777 --> 00:07:08,500
 de hidrogênio, como amônia e metanol.
 
-118
-00:06:38,788 --> 00:06:42,195
-Em meados de 2025, a AIE contava mais de
+112
+00:07:08,891 --> 00:07:11,050
+Caminhões pesados, outro "talvez".
 
-119
-00:06:42,195 --> 00:06:45,115
-60 embarcações movidas
-a metanol em operação.
+113
+00:07:11,329 --> 00:07:15,637
+Segundo o departamento, células a
+combustível servem para caminhões que
 
-120
-00:06:45,624 --> 00:06:48,342
-Caminhões pesados são outro "talvez".
+114
+00:07:15,637 --> 00:07:19,944
+precisam abastecer rápido como a
+diesel ou rodar mais de 500 milhas.
 
-121
-00:06:48,292 --> 00:06:51,424
-A estratégia do Departamento de Energia
-diz que células a combustível são
-
-122
-00:06:51,424 --> 00:06:54,556
-especialmente viáveis para
-caminhões que precisam abastecer
-
-123
-00:06:54,556 --> 00:06:57,297
-tão rápido quanto a diesel,
-ou rodar mais de 500 milhas.
-
-124
-00:06:57,806 --> 00:07:01,233
+115
+00:07:20,343 --> 00:07:24,512
 E a rede poderia armazenar
 hidrogênio por dias ou até semanas,
 
-125
-00:07:01,233 --> 00:07:04,659
+116
+00:07:24,512 --> 00:07:28,681
 diz a EIA, enquanto a bateria
 média da rede dos EUA em 2019
 
-126
-00:07:04,659 --> 00:07:07,463
+117
+00:07:28,681 --> 00:07:32,092
 guardava cerca de uma
 hora e meia de produção.
 
-127
-00:07:07,413 --> 00:07:11,175
-O país já armazena hidrogênio
-em três cavernas subterrâneas, e
-
-128
-00:07:11,175 --> 00:07:14,938
-em Utah, um projeto apoiado por
+118
+00:07:32,789 --> 00:07:38,223
+Em Utah, um projeto apoiado por
 uma garantia de empréstimo federal
 
-129
-00:07:14,938 --> 00:07:18,701
+119
+00:07:38,223 --> 00:07:43,656
 foi projetado para unir um eletrolisador
 de 220 megawatts a cavernas de sal.
 
-130
-00:07:19,654 --> 00:07:22,436
-O que nos traz de volta aos bilhões.
+120
+00:07:44,497 --> 00:07:46,529
+E voltamos aos bilhões.
 
-131
-00:07:22,386 --> 00:07:25,964
+121
+00:07:46,784 --> 00:07:50,541
 A lei de infraestrutura de
 2021 deu ao Departamento
 
-132
-00:07:25,964 --> 00:07:29,031
+122
+00:07:50,541 --> 00:07:53,762
 de Energia 9,5 bilhões de
 dólares para hidrogênio.
 
-133
-00:07:29,031 --> 00:07:32,527
-Em 2023, o Departamento de
-Energia escolheu sete polos
+123
+00:07:54,400 --> 00:07:58,620
+Em 2023, o Departamento de Energia
+escolheu sete polos regionais
 
-134
-00:07:32,527 --> 00:07:36,023
-regionais de hidrogênio,
-com 7 bilhões de dólares,
+124
+00:07:58,620 --> 00:08:02,841
+de hidrogênio, com 7 bilhões
+de dólares em recursos.
 
-135
-00:07:36,023 --> 00:07:39,082
-para aproximar produtores e usuários.
-
-136
-00:07:39,588 --> 00:07:43,106
-A estratégia nacional mira 10
+125
+00:08:03,237 --> 00:08:07,550
+Sua estratégia nacional mira 10
 milhões de toneladas métricas
 
-137
-00:07:43,106 --> 00:07:46,623
+126
+00:08:07,550 --> 00:08:11,863
 de hidrogênio limpo por
 ano até 2030, 20 milhões
 
-138
-00:07:46,623 --> 00:07:49,359
+127
+00:08:11,863 --> 00:08:15,218
 até 2040 e 50 milhões até 2050.
 
-139
-00:07:49,826 --> 00:07:52,506
-Mas os planos esbarraram na realidade.
+128
+00:08:15,603 --> 00:08:17,751
+Mas os planos bateram na realidade.
 
-140
-00:07:52,456 --> 00:07:56,402
-Em 2025, a AIE relatou que os projetos
-planejados na América do Norte
+129
+00:08:18,320 --> 00:08:21,924
+Em outubro de 2025, o
+departamento cancelou a verba
 
-141
-00:07:56,402 --> 00:08:00,349
-tinham encolhido, principalmente nos
-EUA, em meio à incerteza política, e que
+130
+00:08:21,924 --> 00:08:25,077
+dos polos da Califórnia e
+do Noroeste do Pacífico.
 
-142
-00:08:00,349 --> 00:08:03,578
-o futuro de quatro dos polos era incerto.
+131
+00:08:25,437 --> 00:08:28,671
+Em abril de 2026, disse que manteria
 
-143
-00:08:04,546 --> 00:08:06,371
+132
+00:08:28,671 --> 00:08:31,904
+quase 5 bilhões de dólares
+para os outros cinco.
+
+133
+00:08:32,730 --> 00:08:33,856
 Resumo rápido.
 
-144
-00:08:06,321 --> 00:08:09,510
+134
+00:08:34,135 --> 00:08:36,852
 O hidrogênio é um vetor, não uma fonte.
 
-145
-00:08:09,510 --> 00:08:13,113
+135
+00:08:37,293 --> 00:08:41,722
 Os EUA produzem a maior parte a
 partir de gás natural, e transformar
 
-146
-00:08:13,113 --> 00:08:16,716
+136
+00:08:41,722 --> 00:08:46,151
 eletricidade em hidrogênio e de
 volta perde a maior parte da energia.
 
-147
-00:08:17,232 --> 00:08:19,694
-Por isso ele sofre em carros
+137
+00:08:46,533 --> 00:08:48,768
+Por isso ele sofre em carros e casas,
 
-148
-00:08:19,694 --> 00:08:22,156
-e casas, onde a eletricidade
-funciona direto.
+138
+00:08:48,768 --> 00:08:51,003
+onde a eletricidade funciona direto.
 
-149
-00:08:22,106 --> 00:08:24,677
+139
+00:08:51,607 --> 00:08:54,875
 Mas em refinarias, fertilizantes e aço,
 
-150
-00:08:24,677 --> 00:08:27,247
+140
+00:08:54,875 --> 00:08:58,143
 a própria molécula é o que importa.
 
-151
-00:08:27,758 --> 00:08:32,198
-O hidrogênio não tem um problema de
-combustível, e sim de onde usá-lo.
+141
+00:08:58,533 --> 00:09:03,223
+O hidrogênio não é um problema de
+combustível, mas de onde usá-lo.
 
-152
-00:08:32,148 --> 00:08:35,024
+142
+00:09:03,607 --> 00:09:06,422
 Então, onde você usaria:
 caminhões, navios,
 
-153
-00:08:35,024 --> 00:08:37,900
-aço ou guardar energia
+143
+00:09:06,422 --> 00:09:09,237
+aço ou estocar energia
 para uma semana sem vento?
 
-154
-00:08:37,900 --> 00:08:40,056
-Conta aqui nos comentários.
+144
+00:09:09,679 --> 00:09:11,675
+Conte nos comentários.
 
-155
-00:08:40,564 --> 00:08:43,549
-Se você gosta de ver como
-funciona a engrenagem escondida
+145
+00:09:12,075 --> 00:09:15,425
+Se você gosta de ver a
+engrenagem oculta do dia a dia,
 
-156
-00:08:43,549 --> 00:08:46,203
-do dia a dia, se inscreva
-no The Hidden Grid.
+146
+00:09:15,425 --> 00:09:18,402
+inscreva-se no Other End of the Wire.
 
-157
-00:08:46,153 --> 00:08:48,264
-Todas as fontes por trás dos números
+147
+00:09:19,099 --> 00:09:21,015
+Todas as fontes dos números
 
-158
-00:08:48,264 --> 00:08:50,375
+148
+00:09:21,015 --> 00:09:22,930
 deste vídeo estão na descrição.
+
+149
+00:09:23,174 --> 00:09:24,753
+Follow the electron.

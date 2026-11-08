@@ -68,7 +68,7 @@ _Description length: 3821 characters (YouTube limit 5,000)._
 
 ## Tags
 
-how electricity gets to your house, nuclear power explained, how a nuclear power plant works, power grid explained, transmission lines, why high voltage transmission, step up transformer, utility pole transformer, electron drift velocity, alternating current explained, 120 240 volts, transmission and distribution losses, phone charger how it works, follow the electron, the hidden grid
+how electricity gets to your house, nuclear power explained, how a nuclear power plant works, power grid explained, transmission lines, why high voltage transmission, step up transformer, utility pole transformer, electron drift velocity, alternating current explained, 120 240 volts, transmission and distribution losses, phone charger how it works, follow the electron, other end of the wire
 
 ## Upload checklist
 
