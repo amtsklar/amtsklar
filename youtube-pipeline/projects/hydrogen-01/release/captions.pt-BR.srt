@@ -23,7 +23,7 @@ escala de megawatts: eletricidade
 
 6
 00:00:20,060 --> 00:00:23,870
-em hidrogênio, depois armazenada
+em hidrogênio, depois em estoque
 e de volta em eletricidade.
 
 7
@@ -43,7 +43,7 @@ uma frota de baterias.
 10
 00:00:35,622 --> 00:00:38,937
 Em 2019, a EIA, órgão de
-estatísticas de energia, viu
+estatísticas de energia, apurou
 
 11
 00:00:38,937 --> 00:00:42,252
@@ -77,21 +77,21 @@ uma ideia: o hidrogênio não é
 
 18
 00:00:59,805 --> 00:01:03,493
-um problema de combustível,
+bem um problema de combustível,
 mas de onde usá-lo.
 
 19
 00:01:03,934 --> 00:01:07,124
 Então vamos seguir o elétron
-e ver onde transformá-lo
+e ver onde vale a pena
 
 20
 00:01:07,124 --> 00:01:09,959
-numa molécula vale a viagem.
+transformá-lo numa molécula.
 
 21
 00:01:10,798 --> 00:01:13,909
-Primeiro, o que o hidrogênio realmente é.
+Primeiro, o que é, de fato, o hidrogênio.
 
 22
 00:01:14,293 --> 00:01:18,623
@@ -186,8 +186,8 @@ Esse dióxido de carbono se acumula.
 
 41
 00:02:32,818 --> 00:02:38,826
-Segundo a estratégia de 2023 do
-departamento, o hidrogênio dos EUA gera
+Segundo a estratégia de 2023, a produção
+de hidrogênio dos EUA emite
 
 42
 00:02:38,826 --> 00:02:44,289
@@ -206,8 +206,8 @@ chamado de hidrogênio azul.
 
 45
 00:02:52,043 --> 00:02:55,317
-Deixe-o ir para o ar, e
-ele é chamado de cinza.
+Solte o CO₂ no ar, e
+o hidrogênio é chamado de cinza.
 
 46
 00:02:55,716 --> 00:02:59,853
@@ -374,8 +374,8 @@ em hidrogênio, e quase 40%
 
 80
 00:05:16,874 --> 00:05:20,706
-da energia se perde antes de
-você acender um queimador.
+da energia se perde antes
+de você acender a chama.
 
 81
 00:05:21,309 --> 00:05:24,810
@@ -401,8 +401,8 @@ Mas inverta a pergunta.
 
 86
 00:05:38,978 --> 00:05:43,401
-E se você não precisa de energia, mas
-dos próprios átomos de hidrogênio?
+E se você não precisar de energia,
+mas dos próprios átomos de hidrogênio?
 
 87
 00:05:44,005 --> 00:05:46,805
@@ -418,7 +418,7 @@ Um caso: refinarias de petróleo.
 
 90
 00:05:51,724 --> 00:05:54,649
-O hidrogênio tira o
+Elas o usam para tirar
 enxofre dos combustíveis.
 
 91
@@ -500,7 +500,7 @@ que as emissões de ciclo de vida
 
 108
 00:06:56,890 --> 00:07:00,682
-do aço novo poderiam cair de 40 a 70%.
+do aço novo poderiam cair entre 40% e 70%.
 
 109
 00:07:01,070 --> 00:07:02,614
@@ -525,8 +525,8 @@ combustível servem para caminhões que
 
 114
 00:07:15,637 --> 00:07:19,944
-precisam abastecer rápido como a
-diesel ou rodar mais de 500 milhas.
+precisam abastecer rápido como os
+a diesel ou rodar mais de 500 milhas.
 
 115
 00:07:20,343 --> 00:07:24,512
@@ -660,7 +660,7 @@ caminhões, navios,
 
 143
 00:09:06,422 --> 00:09:09,237
-aço ou estocar energia
+aço ou armazenamento
 para uma semana sem vento?
 
 144

@@ -1,774 +1,771 @@
 1
-00:00:00,100 --> 00:00:02,614
-Imaginez un après-midi de rafales.
+00:00:00,000 --> 00:00:01,950
+Imaginez un après-midi venteux.
 
 2
-00:00:02,564 --> 00:00:05,574
+00:00:02,194 --> 00:00:04,609
 Les arbres plient, les drapeaux claquent.
 
 3
-00:00:05,574 --> 00:00:07,774
+00:00:04,853 --> 00:00:07,442
 Mais là-haut, sur la crête, certaines
 
 4
-00:00:07,774 --> 00:00:09,974
+00:00:07,442 --> 00:00:10,031
 éoliennes ne tournent pas du tout.
 
 5
-00:00:10,482 --> 00:00:13,839
-Une éolienne immobile un
-jour de vent, c'est souvent
+00:00:10,407 --> 00:00:12,032
+En général, pas de panne.
 
 6
-00:00:13,839 --> 00:00:16,861
-la machine, le réseau ou les
-ingénieurs qui disent : pas maintenant.
+00:00:12,357 --> 00:00:14,227
+On leur a dit de s'arrêter.
 
 7
-00:00:16,811 --> 00:00:19,451
-Suivons le vent, de la pale
-jusqu'à la ligne électrique,
+00:00:14,830 --> 00:00:18,145
+Suivons le vent, de la
+pale à la ligne électrique,
 
 8
-00:00:19,451 --> 00:00:21,798
-pour découvrir qui le dit, et pourquoi.
+00:00:18,145 --> 00:00:21,460
+pour savoir qui a pris
+cette décision, et pourquoi.
 
 9
-00:00:22,304 --> 00:00:24,639
-En chemin, vous verrez pourquoi un peu
+00:00:21,859 --> 00:00:24,094
+En route, vous verrez pourquoi un peu
 
 10
-00:00:24,639 --> 00:00:26,973
-plus de vent peut donner
-beaucoup plus de puissance.
+00:00:24,094 --> 00:00:26,329
+plus de vent donne bien plus de puissance.
 
 11
-00:00:26,923 --> 00:00:29,328
-Et pourquoi, certains des jours
+00:00:26,607 --> 00:00:29,435
+Et pourquoi, certains jours très venteux,
 
 12
-00:00:29,328 --> 00:00:31,732
-les plus venteux, on demande
-aux éoliennes de produire moins.
+00:00:29,435 --> 00:00:32,262
+on demande aux éoliennes
+de produire moins.
 
 13
-00:00:32,254 --> 00:00:36,795
-En 2025, l'éolien a fourni
-environ 10,5 pour cent
+00:00:32,658 --> 00:00:37,616
+En 2025, l'éolien a produit environ
+10,5 % de l'électricité à grande échelle
 
 14
-00:00:36,795 --> 00:00:41,337
-de l'électricité des grandes
-centrales américaines, selon l'EIA.
+00:00:37,616 --> 00:00:42,573
+des États-Unis, selon l'EIA,
+l'agence d'information sur l'énergie.
 
 15
-00:00:41,287 --> 00:00:45,115
-En Iowa, c'était environ
-58 pour cent de la
+00:00:43,270 --> 00:00:47,339
+En Iowa, c'était environ 58 %
+de la production de l'État,
 
 16
-00:00:45,115 --> 00:00:48,519
-production de l'État,
-selon le Berkeley Lab.
+00:00:47,339 --> 00:00:50,955
+selon le laboratoire
+national Lawrence Berkeley.
 
 17
-00:00:49,020 --> 00:00:51,253
-Et ces machines sont grandes.
+00:00:51,346 --> 00:00:53,262
+Et ces machines sont énormes.
 
 18
-00:00:51,203 --> 00:00:54,964
-Le rapport éolien annuel du Berkeley
-Lab pour le Department of Energy indique
+00:00:53,958 --> 00:00:57,856
+Selon le rapport annuel de
+Berkeley Lab sur l'éolien
 
 19
-00:00:54,964 --> 00:00:58,725
-que la nouvelle éolienne
-terrestre moyenne en 2025 avait
+00:00:57,856 --> 00:01:01,755
+pour le ministère américain de
+l'Énergie, la nouvelle éolienne
 
 20
-00:00:58,725 --> 00:01:02,486
-une puissance d'environ 3,8 mégawatts,
-un moyeu à environ 335 pieds
+00:01:01,755 --> 00:01:05,653
+terrestre moyenne de 2025 avait
+son moyeu à environ 335 pieds,
 
 21
-00:01:02,486 --> 00:01:05,119
-et un rotor d'environ
-460 pieds de diamètre.
+00:01:05,653 --> 00:01:09,551
+et un rotor plus large qu'un
+terrain de football américain.
 
 22
-00:01:06,092 --> 00:01:08,605
-La raison la plus simple
-d'une éolienne à l'arrêt :
+00:01:10,380 --> 00:01:13,259
+La raison la plus simple d'un arrêt :
 
 23
-00:01:08,605 --> 00:01:11,119
+00:01:13,259 --> 00:01:16,139
 pas assez de vent à la hauteur des pales.
 
 24
-00:01:11,578 --> 00:01:14,049
-Le Department of Energy rappelle
-que la vitesse du vent augmente
+00:01:16,529 --> 00:01:19,733
+Le ministère de l'Énergie
+note que le vent forcit
 
 25
-00:01:14,049 --> 00:01:16,519
-avec l'altitude : la brise que vous sentez
+00:01:19,733 --> 00:01:22,937
+avec l'altitude : la brise que vous sentez
 
 26
-00:01:16,519 --> 00:01:18,990
+00:01:22,937 --> 00:01:26,142
 au sol n'est pas le vent
 que reçoit le rotor.
 
 27
-00:01:19,440 --> 00:01:24,364
-Chaque éolienne a un anémomètre, qui
-mesure le vent et alimente un automate.
+00:01:26,518 --> 00:01:31,464
+Chaque éolienne a un capteur de vent,
+un anémomètre, relié à un automate.
 
 28
-00:01:24,314 --> 00:01:27,536
-Selon le département, l'automate
-démarre généralement la machine
+00:01:32,068 --> 00:01:35,258
+Selon le ministère, l'automate
+la démarre en général
 
 29
-00:01:27,536 --> 00:01:30,399
-vers 7 à 11 miles par heure.
+00:01:35,258 --> 00:01:38,093
+entre 7 et 11 miles par heure (mph).
 
 30
-00:01:30,399 --> 00:01:32,631
-C'est la vitesse de démarrage.
+00:01:38,534 --> 00:01:40,079
+La vitesse de démarrage.
 
 31
-00:01:32,631 --> 00:01:35,246
+00:01:40,775 --> 00:01:43,422
 En dessous, l'éolienne attend.
 
 32
-00:01:35,750 --> 00:01:39,692
-Le vent faible explique aussi pourquoi la
-production paraît modeste sur le papier.
+00:01:43,821 --> 00:01:47,513
+Le vent faible rend aussi la
+production modeste sur le papier.
 
 33
-00:01:39,642 --> 00:01:42,908
-Le Berkeley Lab a calculé que
-le parc éolien américain avait
+00:01:47,931 --> 00:01:51,408
+Selon Berkeley Lab, le
+parc éolien américain avait
 
 34
-00:01:42,908 --> 00:01:46,173
-un facteur de charge de
-34 pour cent en 2025.
+00:01:51,408 --> 00:01:54,885
+un facteur de charge de 34 % en 2025.
 
 35
-00:01:46,173 --> 00:01:50,344
+00:01:55,559 --> 00:02:00,029
 Les projets construits en
 2024 atteignaient environ 37.
 
 36
-00:01:50,860 --> 00:01:54,298
-Le facteur de charge, c'est ce qu'une
-centrale a réellement produit, divisé par
+00:02:00,420 --> 00:02:04,116
+Facteur de charge : ce qu'une
+centrale a produit, divisé par
 
 37
-00:01:54,298 --> 00:01:57,392
+00:02:04,116 --> 00:02:07,444
 le maximum possible en
 tournant à plein régime.
 
 38
-00:01:57,342 --> 00:02:00,515
-Les chiffres du Berkeley Lab
+00:02:07,955 --> 00:02:12,049
+Les chiffres de Berkeley Lab
 incluent déjà les pertes dues
 
 39
-00:02:00,515 --> 00:02:03,234
+00:02:12,049 --> 00:02:15,559
 à l'écrêtement, aux arrêts
 et au givre sur les pales.
 
 40
-00:02:04,188 --> 00:02:06,095
-Alors pourquoi quelques miles
+00:02:16,397 --> 00:02:18,324
+Pourquoi quelques mph de plus
 
 41
-00:02:06,095 --> 00:02:08,003
-par heure de plus comptent-ils autant ?
+00:02:18,324 --> 00:02:20,252
+comptent-ils tant ?
 
 42
-00:02:07,953 --> 00:02:10,619
-À cause d'un seul nombre : trois.
+00:02:20,530 --> 00:02:23,735
+À cause d'un seul nombre : trois.
 
 43
-00:02:11,138 --> 00:02:13,014
-La puissance de l'air
-en mouvement augmente
+00:02:24,113 --> 00:02:26,099
+La puissance du vent croît
 
 44
-00:02:13,014 --> 00:02:14,889
-avec le cube de sa vitesse.
+00:02:26,099 --> 00:02:28,084
+comme le cube de sa vitesse.
 
 45
-00:02:14,839 --> 00:02:18,493
-Comme le dit le programme de science
-éolienne de l'Iowa State University, si
+00:02:28,525 --> 00:02:33,076
+Comme le résume le programme éolien
+de l'Iowa State University, si
 
 46
-00:02:18,493 --> 00:02:22,148
+00:02:33,076 --> 00:02:37,627
 la vitesse du vent double, la
 puissance est multipliée par huit.
 
 47
-00:02:22,648 --> 00:02:25,423
-Passez de 10 miles par heure à 15, et
+00:02:38,021 --> 00:02:41,086
+Passez de 10 à 15 mph, et
 
 48
-00:02:25,423 --> 00:02:28,197
-le vent transporte plus de
-trois fois plus de puissance.
+00:02:41,086 --> 00:02:44,151
+le vent porte plus de trois
+fois plus de puissance.
 
 49
-00:02:28,147 --> 00:02:30,696
-C'est aussi pour ça que les mâts
-sont de plus en plus hauts :
+00:02:44,848 --> 00:02:47,799
+C'est aussi pour ça que
+les mâts grandissent :
 
 50
-00:02:30,696 --> 00:02:32,880
+00:02:47,799 --> 00:02:50,328
 plus haut, le vent est plus rapide.
 
 51
-00:02:33,390 --> 00:02:36,069
+00:02:50,727 --> 00:02:53,540
 Mais plus de puissance,
-c'est aussi plus d'efforts
+c'est plus de force
 
 52
-00:02:36,069 --> 00:02:38,366
+00:02:53,540 --> 00:02:55,951
 sur les pales, l'arbre et le mât.
 
 53
-00:02:38,316 --> 00:02:41,530
-Et un générateur ne peut
-en utiliser qu'une partie.
+00:02:56,462 --> 00:02:59,226
+Et un générateur ne
+peut pas tout absorber.
 
 54
-00:02:42,494 --> 00:02:45,831
-Les ingénieurs résument tout cela
-dans une courbe de puissance : combien
+00:03:00,069 --> 00:03:03,607
+Les ingénieurs résument tout
+ça en une courbe de puissance :
 
 55
-00:02:45,831 --> 00:02:48,834
-d'électricité une éolienne
-produit à chaque vitesse de vent.
+00:03:03,607 --> 00:03:06,791
+la production d'une éolienne
+à chaque vitesse de vent.
 
 56
-00:02:48,784 --> 00:02:52,388
-Au-delà du démarrage, la production grimpe
-vite jusqu'à ce que l'éolienne atteigne
+00:03:07,488 --> 00:03:11,812
+Passé le démarrage, la production
+grimpe en flèche jusqu'à
 
 57
-00:02:52,388 --> 00:02:55,991
-sa vitesse nominale, où le
-générateur est à son maximum.
+00:03:11,812 --> 00:03:16,137
+la vitesse nominale, où le
+générateur atteint son maximum.
 
 58
-00:02:56,500 --> 00:03:00,417
-Prenons une éolienne de référence conçue
+00:03:16,536 --> 00:03:21,404
+Prenez une éolienne de référence conçue
 par des chercheurs américains et européens
 
 59
-00:03:00,417 --> 00:03:03,899
+00:03:21,404 --> 00:03:25,731
 en 2019 pour représenter une
-machine terrestre moderne.
+éolienne terrestre moderne.
 
 60
-00:03:03,849 --> 00:03:06,579
-Elle commence à produire vers 9 miles par
+00:03:26,114 --> 00:03:29,290
+Elle commence à produire vers 9 mph
 
 61
-00:03:06,579 --> 00:03:09,308
-heure et atteint sa
-pleine puissance vers 22.
+00:03:29,290 --> 00:03:32,465
+et atteint sa pleine puissance vers 22.
 
 62
-00:03:09,810 --> 00:03:13,153
+00:03:32,847 --> 00:03:36,226
 Au-delà, plus de vent
 n'ajoute pas de puissance.
 
 63
-00:03:13,103 --> 00:03:15,640
-Le système de calage (pitch)
-tourne les pales pour capter
+00:03:36,609 --> 00:03:39,581
+Le système de calage oriente
+les pales pour capter
 
 64
-00:03:15,640 --> 00:03:17,861
-moins de vent, et la
+00:03:39,581 --> 00:03:42,181
+moins de vent : la
 production reste stable.
 
 65
-00:03:18,368 --> 00:03:21,634
-Si le vent continue de forcir,
-on atteint la vitesse de coupure.
+00:03:42,575 --> 00:03:45,338
+Plus fort encore, c'est
+la vitesse de coupure.
 
 66
-00:03:21,584 --> 00:03:25,985
-Pour cette éolienne de référence,
-c'est environ 56 miles par heure.
+00:03:45,547 --> 00:03:49,065
+Pour cette éolienne de
+référence : environ 56 mph.
 
 67
-00:03:25,985 --> 00:03:29,665
-Selon le Department of Energy, les automates
-arrêtent généralement les éoliennes
+00:03:49,762 --> 00:03:54,202
+Selon le ministère de l'Énergie,
+les automates arrêtent généralement
 
 68
-00:03:29,665 --> 00:03:32,885
-quand le vent dépasse 55 à 65.
+00:03:54,202 --> 00:03:58,086
+les éoliennes quand le
+vent dépasse 55 à 65 mph.
 
 69
-00:03:33,406 --> 00:03:35,601
-Les pales se mettent alors en drapeau.
+00:03:58,468 --> 00:04:00,314
+Les pales passent en drapeau.
 
 70
-00:03:35,551 --> 00:03:38,945
+00:04:00,639 --> 00:04:05,097
 Elles pivotent pour ne plus
 produire la force qui fait tourner
 
 71
-00:03:38,945 --> 00:03:42,030
-le rotor ; le rotor ralentit,
-et la production tombe à zéro.
+00:04:05,097 --> 00:04:09,149
+le rotor ; il ralentit, et
+la production tombe à zéro.
 
 72
-00:03:42,540 --> 00:03:44,646
-Pourquoi s'arrêter si tôt ?
+00:04:09,528 --> 00:04:11,374
+Pourquoi s'arrêter si tôt ?
 
 73
-00:03:44,596 --> 00:03:48,150
-Selon une norme internationale, explique
-le département, la plupart des éoliennes
+00:04:11,862 --> 00:04:16,346
+Selon une norme internationale,
+explique le ministère, les éoliennes
 
 74
-00:03:48,150 --> 00:03:51,704
-actuelles doivent résister
-à des vents soutenus de
+00:04:16,346 --> 00:04:20,830
+des sites les plus venteux doivent
+résister à des vents soutenus
 
 75
-00:03:51,704 --> 00:03:54,863
-112 miles par heure et
-à des rafales de 156.
+00:04:20,830 --> 00:04:24,865
+de 112 mph et à des rafales de 156.
 
 76
-00:03:54,863 --> 00:03:57,370
-La vitesse de coupure est
-volontairement bien plus basse,
+00:04:25,283 --> 00:04:28,128
+La coupure est volontairement
+bien plus basse,
 
 77
-00:03:57,370 --> 00:03:59,519
+00:04:28,128 --> 00:04:30,566
 pour réduire le risque de dégâts.
 
 78
-00:04:00,026 --> 00:04:03,522
-Le système d'orientation (yaw)
-garde l'éolienne face au vent.
+00:04:30,959 --> 00:04:34,047
+L'orientation garde
+l'éolienne face au vent.
 
 79
-00:04:03,472 --> 00:04:06,253
+00:04:34,372 --> 00:04:37,774
 Quand le vent faiblit, les
 pales sortent du drapeau, et
 
 80
-00:04:06,253 --> 00:04:09,033
+00:04:37,774 --> 00:04:41,176
 le courant revient en
 général en quelques minutes.
 
 81
-00:04:09,544 --> 00:04:12,912
+00:04:41,575 --> 00:04:45,314
 En mars 2017, une tempête
 hivernale a frappé Block
 
 82
-00:04:12,912 --> 00:04:16,280
-Island, qui abrite le premier
-parc éolien en mer des États-Unis.
+00:04:45,314 --> 00:04:49,052
+Island, site du premier parc
+éolien en mer des États-Unis.
 
 83
-00:04:16,230 --> 00:04:18,852
+00:04:49,563 --> 00:04:52,660
 Les cinq éoliennes se sont
 arrêtées plusieurs heures
 
 84
-00:04:18,852 --> 00:04:21,474
-pendant que le vent dépassait
-55 miles par heure, puis
+00:04:52,660 --> 00:04:55,758
+pendant que le vent dépassait 55 mph, puis
 
 85
-00:04:21,474 --> 00:04:23,768
+00:04:55,758 --> 00:04:58,468
 ont redémarré quand la
 tempête s'est calmée.
 
 86
-00:04:23,768 --> 00:04:26,163
-L'heure la plus venteuse
-de l'année peut donc
+00:04:58,909 --> 00:05:01,144
+L'heure la plus venteuse de l'année
 
 87
-00:04:26,163 --> 00:04:28,258
-être une heure à zéro pour une éolienne.
+00:05:01,144 --> 00:05:03,100
+peut donc être une heure à zéro.
 
 88
-00:04:28,258 --> 00:04:30,222
-Ce n'est pas un défaut.
+00:05:03,704 --> 00:05:04,946
+Pas un défaut.
 
 89
-00:04:30,222 --> 00:04:32,148
-C'est voulu dès la conception.
+00:05:05,225 --> 00:05:06,885
+C'est voulu.
 
 90
-00:04:33,120 --> 00:04:35,455
-Et maintenant, la raison surprenante.
+00:05:07,714 --> 00:05:09,281
+Maintenant, la surprise.
 
 91
-00:04:35,405 --> 00:04:38,789
+00:05:09,525 --> 00:05:13,533
 Parfois l'éolienne va bien,
 le vent est parfait, et
 
 92
-00:04:38,789 --> 00:04:41,834
+00:05:13,533 --> 00:05:17,141
 le gestionnaire de réseau lui
-demande quand même de produire moins.
+fait pourtant produire moins.
 
 93
-00:04:42,350 --> 00:04:45,788
-C'est l'écrêtement, que l'EIA définit
-comme le fait de réduire volontairement
+00:05:17,520 --> 00:05:21,648
+C'est l'écrêtement : selon
+l'EIA, réduire volontairement
 
 94
-00:04:45,788 --> 00:04:49,226
+00:05:21,648 --> 00:05:25,775
 la production sous ce qu'une
 centrale pourrait produire.
 
 95
-00:04:49,176 --> 00:04:51,886
+00:05:26,471 --> 00:05:29,821
 Ça arrive quand l'offre
 dépasse la demande, ou quand
 
 96
-00:04:51,886 --> 00:04:54,597
+00:05:29,821 --> 00:05:33,170
 il n'y a pas assez de lignes
 pour évacuer le courant.
 
 97
-00:04:55,108 --> 00:04:58,672
-Selon les mots de l'EIA,
-les jours très venteux, à
+00:05:33,570 --> 00:05:38,251
+Selon l'EIA, les jours très
+venteux, à certains endroits,
 
 98
-00:04:58,672 --> 00:05:02,235
-certains endroits, la capacité de transport
-est souvent insuffisante pour recevoir
+00:05:38,251 --> 00:05:42,932
+la capacité de transport est
+souvent insuffisante pour recevoir
 
 99
-00:05:02,235 --> 00:05:05,007
+00:05:42,932 --> 00:05:46,573
 la grande quantité
 d'électricité éolienne produite.
 
 100
-00:05:05,466 --> 00:05:08,234
-Le Berkeley Lab note que
-quand le vent est fort et
+00:05:46,955 --> 00:05:50,493
+Berkeley Lab note que lorsque
+le vent est fort et les lignes
 
 101
-00:05:08,234 --> 00:05:11,002
-les lignes saturées, ou que d'autres
-centrales ne peuvent pas baisser
+00:05:50,493 --> 00:05:54,031
+saturées, ou que d'autres
+centrales ne peuvent baisser
 
 102
-00:05:11,002 --> 00:05:13,770
-assez ou assez vite, les prix
-de gros locaux peuvent devenir
+00:05:54,031 --> 00:05:57,570
+ni assez ni assez vite, les
+prix de gros locaux peuvent
 
 103
-00:05:13,770 --> 00:05:16,538
-négatifs : les vendeurs paient les
-acheteurs pour prendre leur électricité.
+00:05:57,570 --> 00:06:01,108
+devenir négatifs : le vendeur
+paie pour écouler son courant.
 
 104
-00:05:16,488 --> 00:05:19,435
-Ça aussi peut déclencher un écrêtement.
+00:06:01,805 --> 00:06:04,370
+Ce qui peut aussi
+déclencher un écrêtement.
 
 105
-00:05:19,952 --> 00:05:22,797
-Pourquoi l'éolien passe-t-il
-souvent en premier ?
+00:06:04,755 --> 00:06:07,460
+Pourquoi l'éolien est-il
+souvent le premier ?
 
 106
-00:05:22,747 --> 00:05:25,750
+00:06:08,157 --> 00:06:11,697
 Dans le Midwest, explique
-l'EIA, c'est moins cher et
+l'EIA, il est moins cher et
 
 107
-00:05:25,750 --> 00:05:28,754
-plus rapide d'arrêter et de relancer
-des centrales éoliennes et solaires
+00:06:11,697 --> 00:06:15,236
+plus rapide d'arrêter et
+relancer l'éolien et le solaire
 
 108
-00:05:28,754 --> 00:05:31,089
+00:06:15,236 --> 00:06:17,990
 que d'autres types de centrales.
 
 109
-00:05:31,606 --> 00:05:33,814
-Combien est écrêté ?
+00:06:18,375 --> 00:06:19,931
+Quelle part est écrêtée ?
 
 110
-00:05:33,764 --> 00:05:37,876
-Sur sept gestionnaires de réseau
-américains, le Berkeley Lab a compté environ
+00:06:20,233 --> 00:06:24,283
+Chez sept gestionnaires de réseau
+américains, Berkeley Lab a compté
 
 111
-00:05:37,876 --> 00:05:41,532
-5 pour cent de la production
+00:06:24,283 --> 00:06:27,884
+environ 5 % de la production
 éolienne potentielle en 2025.
 
 112
-00:05:41,532 --> 00:05:44,172
-Le Southwest Power Pool, dans le centre
+00:06:28,290 --> 00:06:30,879
+Le Southwest Power
+Pool, au centre du pays,
 
 113
-00:05:44,172 --> 00:05:46,812
-des États-Unis, était le plus
-élevé, à environ 9 pour cent.
+00:06:30,879 --> 00:06:33,468
+était en tête, avec environ 9 %.
 
 114
-00:05:47,316 --> 00:05:51,399
-En 2014, c'était moins de 1 pour cent.
+00:06:33,850 --> 00:06:37,623
+En 2014, c'était moins de 1 %.
 
 115
-00:05:51,349 --> 00:05:54,556
+00:06:38,215 --> 00:06:41,589
 Depuis, la part de l'éolien
-dans la demande de cette région
+dans la demande de la région
 
 116
-00:05:54,556 --> 00:05:57,407
-est passée d'environ 12
-pour cent à environ 38.
+00:06:41,589 --> 00:06:44,589
+est passée d'environ 12 % à environ 38.
 
 117
-00:05:57,407 --> 00:05:59,627
-Plus de vent sur les mêmes lignes, c'est
+00:06:45,170 --> 00:06:47,474
+Plus de vent sur les mêmes lignes,
 
 118
-00:05:59,627 --> 00:06:01,846
-plus d'heures où les lignes sont saturées.
+00:06:47,474 --> 00:06:49,779
+c'est plus d'heures de lignes saturées.
 
 119
-00:06:02,354 --> 00:06:04,230
+00:06:50,161 --> 00:06:51,856
 Les nouvelles lignes aident.
 
 120
-00:06:04,180 --> 00:06:07,550
+00:06:52,518 --> 00:06:56,639
 Après un grand chantier de lignes
-desservant l'ouest du Texas, achevé
+pour l'ouest du Texas, achevé
 
 121
-00:06:07,550 --> 00:06:10,919
-vers 2013, note le Berkeley
+00:06:56,639 --> 00:07:00,760
+vers 2013, note Berkeley
 Lab, l'écrêtement éolien sur
 
 122
-00:06:10,919 --> 00:06:14,289
+00:07:00,760 --> 00:07:04,881
 le principal réseau texan
-est passé de 17 pour cent en
+est passé de 17 % en
 
 123
-00:06:14,289 --> 00:06:16,910
+00:07:04,881 --> 00:07:08,087
 2009 à un demi pour cent en 2014.
 
 124
-00:06:17,866 --> 00:06:22,076
+00:07:08,933 --> 00:07:13,577
 La météo peut aussi arrêter une
-éolienne plus discrètement : le givre.
+éolienne plus discrètement : le givre.
 
 125
-00:06:22,536 --> 00:06:25,764
-Une étude de terrain menée par
-l'Iowa State, publiée en 2021,
+00:07:13,959 --> 00:07:17,326
+Une étude de terrain de
+l'Iowa State, parue en 2021,
 
 126
-00:06:25,764 --> 00:06:28,991
+00:07:17,326 --> 00:07:20,693
 a observé un parc éolien
 dans l'est de la Chine.
 
 127
-00:06:28,941 --> 00:06:32,254
+00:07:21,204 --> 00:07:25,686
 La glace a atteint près d'un pied
-d'épaisseur près du bout des pales, et
+d'épaisseur au bout des pales, et
 
 128
-00:06:32,254 --> 00:06:35,567
-malgré un vent fort, les éoliennes givrées
-tournaient moins vite, s'arrêtaient souvent,
+00:07:25,686 --> 00:07:30,168
+malgré un vent fort, les éoliennes
+givrées tournaient moins vite,
 
 129
-00:06:35,567 --> 00:06:38,278
-et perdaient jusqu'à 80 pour
-cent de leur production.
+00:07:30,168 --> 00:07:33,836
+s'arrêtaient souvent, et perdaient
+jusqu'à 80 % de puissance.
 
 130
-00:06:38,798 --> 00:06:40,916
+00:07:34,214 --> 00:07:35,863
 Et puis il y a la faune.
 
 131
-00:06:40,866 --> 00:06:43,507
-Les chauves-souris sont le plus
-menacées à la fin de l'été et
+00:07:36,188 --> 00:07:38,940
+Les chauves-souris risquent
+le plus en fin d'été
 
 132
-00:06:43,507 --> 00:06:46,147
-en automne, et plus actives
-quand le vent est faible.
+00:07:38,940 --> 00:07:41,691
+et en automne, et volent
+plus par vent faible.
 
 133
-00:06:46,147 --> 00:06:48,990
+00:07:42,295 --> 00:07:45,663
 Certains parcs relèvent donc
 leur vitesse de démarrage
 
 134
-00:06:48,990 --> 00:06:51,517
-ces nuits-là, et les pales
-peuvent être mises en drapeau.
+00:07:45,663 --> 00:07:48,657
+ces nuits-là ; les pales
+peuvent être en drapeau.
 
 135
-00:06:52,036 --> 00:06:56,137
+00:07:49,036 --> 00:07:54,307
 Une synthèse de 2021 sur des essais
 de bridage aux États-Unis et au Canada
 
 136
-00:06:56,137 --> 00:07:00,239
-a montré une baisse moyenne d'environ 63
-pour cent des morts de chauves-souris.
+00:07:54,307 --> 00:07:59,578
+a montré qu'il réduisait la mortalité des
+chauves-souris d'environ 63 % en moyenne.
 
 137
-00:07:00,690 --> 00:07:03,893
+00:07:59,966 --> 00:08:02,822
 Pour les aigles, certains
-sites utilisent des caméras.
+sites ont des caméras.
 
 138
-00:07:03,843 --> 00:07:07,228
+00:08:03,136 --> 00:08:07,204
 Dans un parc éolien du Wyoming,
-un système qui ralentit ou
+un système qui ralentit ou arrête
 
 139
-00:07:07,228 --> 00:07:10,613
-arrête chaque éolienne quand
-il détecte un aigle en danger
+00:08:07,204 --> 00:08:11,273
+chaque éolienne quand il détecte
+un aigle en danger a été associé
 
 140
-00:07:10,613 --> 00:07:13,998
-a réduit de 63 pour cent la mortalité
-des aigles, selon une étude de 2021
+00:08:11,273 --> 00:08:15,342
+à une baisse de plus de 60 %
+de la mortalité des aigles,
 
 141
-00:07:13,998 --> 00:07:16,368
-parue dans le Journal of Applied Ecology.
+00:08:15,342 --> 00:08:19,041
+dans une étude de 2021 du
+Journal of Applied Ecology.
 
 142
-00:07:16,368 --> 00:07:19,085
-Même chiffre, autre étude.
+00:08:19,737 --> 00:08:20,864
+Puis une réanalyse
 
 143
-00:07:20,042 --> 00:07:23,627
-Parfois, une éolienne à l'arrêt
-est juste en maintenance.
+00:08:20,887 --> 00:08:26,808
+de l'USGS, le service géologique américain,
+a mis en doute l'ampleur réelle de cet effet.
 
 144
-00:07:23,577 --> 00:07:28,335
-Un frein d'éolienne n'est pas un frein de
-voiture, explique le Department of Energy.
+00:08:27,646 --> 00:08:31,001
+Parfois, une éolienne arrêtée
+est juste en maintenance.
 
 145
-00:07:28,335 --> 00:07:30,637
-Il immobilise le rotor après
+00:08:31,245 --> 00:08:35,657
+Un frein d'éolienne n'est pas un frein
+de voiture, explique le ministère.
 
 146
-00:07:30,637 --> 00:07:32,939
-l'arrêt, ce dont les équipes
-ont besoin pour la maintenance.
+00:08:36,353 --> 00:08:38,849
+Il maintient le rotor immobile après
 
 147
-00:07:33,448 --> 00:07:36,096
-Alors la prochaine fois que vous
-passez près d'un parc éolien et
+00:08:38,849 --> 00:08:41,346
+l'arrêt, utile aux équipes d'entretien.
 
 148
-00:07:36,096 --> 00:07:38,449
-que certains rotors sont à
-l'arrêt, reprenez la liste.
+00:08:41,736 --> 00:08:44,373
+La prochaine fois, devant un parc éolien
 
 149
-00:07:38,399 --> 00:07:40,810
-Pas assez de vent en altitude.
+00:08:44,373 --> 00:08:46,717
+aux rotors arrêtés, reprenez la liste.
 
 150
-00:07:40,810 --> 00:07:43,590
-Trop de vent, au-delà de la coupure.
+00:08:47,158 --> 00:08:48,795
+Trop peu de vent en haut.
 
 151
-00:07:43,590 --> 00:07:46,907
-Un réseau saturé, ou des prix sous zéro.
+00:08:49,120 --> 00:08:51,256
+Trop de vent, au-delà de la coupure.
 
 152
-00:07:46,907 --> 00:07:48,986
-Du givre sur les pales.
+00:08:51,465 --> 00:08:54,275
+Un réseau saturé, ou des prix sous zéro.
 
 153
-00:07:48,986 --> 00:07:51,371
-Des chauves-souris ou
-des aigles à proximité.
+00:08:54,786 --> 00:08:56,005
+Des pales givrées.
 
 154
-00:07:51,371 --> 00:07:53,437
-Ou une équipe au travail.
+00:08:56,249 --> 00:08:57,909
+Chauves-souris ou aigles.
 
 155
-00:07:53,958 --> 00:07:56,442
-Un rotor arrêté pendant
-une heure vous parle
+00:08:58,350 --> 00:09:00,359
+Ou une équipe au travail.
 
 156
-00:07:56,442 --> 00:07:58,615
-de cette heure-là, pas de la machine.
+00:09:00,737 --> 00:09:03,437
+Un rotor arrêté une heure vous parle
 
 157
-00:07:58,565 --> 00:08:01,128
-En général, c'est la machine, le réseau
+00:09:03,437 --> 00:09:05,799
+de cette heure-là, pas de la machine.
 
 158
-00:08:01,128 --> 00:08:03,692
-ou les ingénieurs qui
-disent : pas maintenant.
+00:09:06,496 --> 00:09:09,422
+Le plus souvent, c'est
+la machine, le réseau
 
 159
-00:08:04,196 --> 00:08:06,550
-Avez-vous déjà vu un parc éolien
+00:09:09,422 --> 00:09:12,347
+ou les ingénieurs qui
+disent : pas maintenant.
 
 160
-00:08:06,550 --> 00:08:08,904
-un jour de vent, avec
-les pales immobiles ?
+00:09:12,738 --> 00:09:14,804
+Avez-vous déjà vu un parc éolien
 
 161
-00:08:08,854 --> 00:08:11,264
-À votre avis, que se passait-il ?
+00:09:14,804 --> 00:09:16,871
+aux pales figées un jour de vent ?
 
 162
-00:08:11,264 --> 00:08:13,420
-Dites-le-moi en commentaire.
+00:09:17,382 --> 00:09:19,089
+Selon vous, pourquoi ?
 
 163
-00:08:13,930 --> 00:08:16,451
-Si vous voulez continuer à suivre
+00:09:19,692 --> 00:09:21,654
+Dites-le-moi en commentaire.
 
 164
-00:08:16,451 --> 00:08:18,612
-l'électron, abonnez-vous
-à The Hidden Grid.
+00:09:22,048 --> 00:09:25,312
+Si vous aimez voir la
+machinerie cachée du quotidien,
 
 165
-00:08:18,562 --> 00:08:20,673
-Toutes les sources des chiffres de
+00:09:25,312 --> 00:09:28,213
+abonnez-vous à Other End of the Wire.
 
 166
-00:08:20,673 --> 00:08:22,784
-cette vidéo sont dans la description.
+00:09:29,026 --> 00:09:31,063
+Toutes les sources des chiffres
+
+167
+00:09:31,063 --> 00:09:33,101
+de la vidéo sont en description.
+
+168
+00:09:33,542 --> 00:09:35,051
+Follow the electron.

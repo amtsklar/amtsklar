@@ -16,7 +16,7 @@ das turbinas eólicas nem estão girando.
 
 5
 00:00:10,407 --> 00:00:12,032
-Em geral, não quebraram.
+Em geral, não há defeito.
 
 6
 00:00:12,357 --> 00:00:14,227
@@ -51,7 +51,7 @@ as turbinas recebem ordem de gerar menos.
 
 13
 00:00:32,658 --> 00:00:37,616
-Em 2025, o vento gerou cerca de 10,5%
+Em 2025, a eólica gerou cerca de 10,5%
 da eletricidade de grande escala
 
 14
@@ -80,13 +80,13 @@ do Berkeley Lab para o
 
 19
 00:00:57,856 --> 00:01:01,755
-Departamento de Energia dos
-EUA diz que a turbina terrestre
+Departamento de Energia dos EUA
+diz que a turbina terrestre média
 
 20
 00:01:01,755 --> 00:01:05,653
-nova média de 2025 tinha o
-cubo a uns 335 pés de altura,
+instalada em 2025 tinha o cubo
+a uns 335 pés de altura,
 
 21
 00:01:05,653 --> 00:01:09,551
@@ -96,7 +96,7 @@ que um campo de futebol americano.
 22
 00:01:10,380 --> 00:01:13,259
 O motivo mais simples
-para uma turbina parada:
+de uma turbina parada:
 
 23
 00:01:13,259 --> 00:01:16,139
@@ -128,7 +128,7 @@ o controlador costuma
 
 29
 00:01:35,258 --> 00:01:38,093
-ligar a máquina com uns
+ligar a máquina com umas
 7 a 11 milhas por hora.
 
 30
@@ -156,7 +156,7 @@ um fator de capacidade de 34% em 2025.
 35
 00:01:55,559 --> 00:02:00,029
 Projetos construídos em
-2024 chegaram a cerca de 37.
+2024 chegaram a cerca de 37%.
 
 36
 00:02:00,420 --> 00:02:04,116
@@ -165,8 +165,8 @@ usina de fato produziu, dividido
 
 37
 00:02:04,116 --> 00:02:07,444
-pelo máximo que geraria
-operando a todo vapor.
+pelo máximo que poderia gerar
+operando a plena carga.
 
 38
 00:02:07,955 --> 00:02:12,049
@@ -250,8 +250,8 @@ gera em cada velocidade.
 
 56
 00:03:07,488 --> 00:03:11,812
-Acima da partida, a produção
-sobe rápido até a turbina atingir
+Acima da velocidade de partida, a
+produção sobe rápido até atingir
 
 57
 00:03:11,812 --> 00:03:16,137
@@ -261,7 +261,7 @@ o gerador chega ao máximo.
 58
 00:03:16,536 --> 00:03:21,404
 Veja uma turbina de referência que
-cientistas dos EUA e da Europa projetaram
+pesquisadores dos EUA e da Europa projetaram
 
 59
 00:03:21,404 --> 00:03:25,731
@@ -309,8 +309,8 @@ os controladores costumam desligar
 
 68
 00:03:54,202 --> 00:03:58,086
-as turbinas quando o
-vento passa de 55 a 65.
+as turbinas quando o vento passa
+de 55 a 65 milhas por hora.
 
 69
 00:03:58,468 --> 00:04:00,314
@@ -337,8 +337,8 @@ departamento, turbinas feitas para
 
 74
 00:04:16,346 --> 00:04:20,830
-os locais de mais vento precisam
-suportar ventos constantes
+os locais de mais vento devem
+suportar, por projeto, ventos constantes
 
 75
 00:04:20,830 --> 00:04:24,865
@@ -420,7 +420,7 @@ o vento está perfeito, e
 
 92
 00:05:13,533 --> 00:05:17,141
-o operador da rede ainda
+o operador da rede mesmo assim
 manda que ela gere menos.
 
 93
@@ -554,8 +554,8 @@ para o oeste do Texas, concluída
 
 121
 00:06:56,639 --> 00:07:00,760
-por volta de 2013, observa o
-Berkeley Lab, o corte eólico na
+por volta de 2013, diz o Berkeley Lab,
+o corte de geração eólica na
 
 122
 00:07:00,760 --> 00:07:04,881
@@ -582,8 +582,8 @@ eólico no leste da China.
 
 127
 00:07:21,204 --> 00:07:25,686
-Quase um pé de gelo se formou
-perto das pontas das pás e,
+Uma camada de gelo de quase 30 cm se
+formou perto das pontas das pás e,
 
 128
 00:07:25,686 --> 00:07:30,168

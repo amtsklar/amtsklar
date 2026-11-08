@@ -17,7 +17,8 @@ você mora, as usinas
 
 5
 00:00:11,409 --> 00:00:13,971
-do outro lado podem ser totalmente outras.
+do outro lado podem ser
+totalmente outras.
 
 6
 00:00:14,412 --> 00:00:17,408
@@ -90,8 +91,8 @@ ligados continuam funcionando, e a
 
 21
 00:01:07,798 --> 00:01:11,808
-EIA chama esse piso estável
-de demanda de carga de base.
+EIA chama de carga de base esse
+piso estável de demanda.
 
 22
 00:01:12,192 --> 00:01:14,886
@@ -105,7 +106,8 @@ de operar, e os operadores
 
 24
 00:01:18,399 --> 00:01:21,341
-tentam mantê-la em potência máxima sempre.
+tentam mantê-la no máximo
+24 horas por dia.
 
 25
 00:01:21,738 --> 00:01:25,163
@@ -182,8 +184,8 @@ que se precisa, então os operadores
 
 41
 00:02:21,816 --> 00:02:25,687
-reduzem as turbinas para manter
-a oferta igual à demanda.
+reduzem a potência das turbinas
+para equilibrar oferta e demanda.
 
 42
 00:02:26,517 --> 00:02:30,627
@@ -260,7 +262,7 @@ Agora, a reviravolta que prometi.
 
 58
 00:03:27,554 --> 00:03:29,452
-Parece que o pior momento
+Você acha que o pior momento
 
 59
 00:03:29,452 --> 00:03:31,351
@@ -305,7 +307,7 @@ Só fazem a demanda parecer menor.
 
 68
 00:03:59,947 --> 00:04:02,616
-Desenhe a carga líquida
+Trace a carga líquida
 de um dia típico na
 
 69
@@ -340,7 +342,7 @@ baixa, a barriga pode
 76
 00:04:21,636 --> 00:04:24,187
 receber mais solar do
-que a rede aproveita.
+que a rede absorve.
 
 77
 00:04:24,756 --> 00:04:30,236
@@ -357,8 +359,8 @@ Depois vem o pescoço.
 
 80
 00:04:38,173 --> 00:04:41,670
-Quando a solar some ao pôr
-do sol, todos chegam em casa,
+No pôr do sol, a solar some,
+as pessoas chegam em casa,
 
 81
 00:04:41,670 --> 00:04:44,779
@@ -433,7 +435,7 @@ de uma hora para outra.
 97
 00:05:34,558 --> 00:05:39,539
 O Berkeley Lab, laboratório nacional dos
-EUA, viu que o preço médio no atacado
+EUA, constatou que o preço médio no atacado
 
 98
 00:05:39,539 --> 00:05:44,067
@@ -522,7 +524,7 @@ o próprio monitor de mercado do operador.
 
 117
 00:06:44,930 --> 00:06:48,621
-E o Berkeley Lab viu que, em 2023, esses
+E o Berkeley Lab constatou que, em 2023, esses
 
 118
 00:06:48,621 --> 00:06:52,312

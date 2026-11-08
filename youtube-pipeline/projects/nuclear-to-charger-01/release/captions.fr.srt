@@ -1,776 +1,752 @@
 1
-00:00:00,100 --> 00:00:03,098
-Votre téléphone charge
-sur la table de nuit.
+00:00:00,000 --> 00:00:02,461
+Votre téléphone charge sur le chevet.
 
 2
-00:00:03,048 --> 00:00:05,753
-Maintenant, suivez ce câble à l'envers.
+00:00:02,972 --> 00:00:05,062
+Remontez maintenant ce câble.
 
 3
-00:00:05,753 --> 00:00:08,144
+00:00:05,445 --> 00:00:08,318
 Dans le mur, jusqu'à la rue,
 
 4
-00:00:08,144 --> 00:00:10,536
-le long des lignes électriques,
-et plus loin encore.
+00:00:08,318 --> 00:00:11,192
+par les lignes électriques, et au-delà.
 
 5
-00:00:11,058 --> 00:00:15,784
-En 2025, les centrales nucléaires
-ont produit environ 18 %
+00:00:11,583 --> 00:00:16,854
+Pour environ 18 % de l'électricité
+à grande échelle des États-Unis,
 
 6
-00:00:15,784 --> 00:00:20,511
-de l'électricité des grandes
-centrales américaines, selon l'EIA.
+00:00:16,854 --> 00:00:22,125
+selon l'EIA, l'agence d'information sur
+l'énergie, ce voyage part d'un atome scindé.
 
 7
-00:00:20,461 --> 00:00:22,739
-Pour beaucoup d'entre nous, une partie
+00:00:22,512 --> 00:00:25,821
+Aujourd'hui, nous suivons
+cette énergie de bout en bout.
 
 8
-00:00:22,739 --> 00:00:24,734
-de ce voyage commence par
-la fission d'un atome.
-
-9
-00:00:25,256 --> 00:00:28,497
-Aujourd'hui, on suit cette
-énergie de bout en bout.
-
-10
-00:00:28,447 --> 00:00:31,674
+00:00:26,425 --> 00:00:29,582
 Et deux choses pourraient
 vous surprendre en chemin.
 
+9
+00:00:30,024 --> 00:00:32,276
+Environ deux tiers de l'énergie ne
+
+10
+00:00:32,276 --> 00:00:34,528
+quittent jamais la
+centrale en électricité.
+
 11
-00:00:31,674 --> 00:00:34,129
-Environ deux tiers de
-l'énergie ne quittent
+00:00:34,911 --> 00:00:38,534
+Et ses électrons n'atteignent
+jamais votre téléphone.
 
 12
-00:00:34,129 --> 00:00:36,585
-jamais la centrale sous
-forme d'électricité.
+00:00:38,928 --> 00:00:41,853
+L'idée : votre chargeur est le
 
 13
-00:00:36,585 --> 00:00:40,182
-Et les électrons de la centrale
-n'atteignent jamais votre téléphone.
-
-14
-00:00:40,702 --> 00:00:43,247
-L'idée, c'est que votre chargeur est le
-
-15
-00:00:43,247 --> 00:00:45,792
+00:00:41,853 --> 00:00:44,779
 dernier maillon d'une
 longue chaîne de relais.
 
-16
-00:00:45,742 --> 00:00:48,043
+14
+00:00:45,221 --> 00:00:47,633
 Chaque étape transforme l'énergie en une
 
-17
-00:00:48,043 --> 00:00:50,015
-forme que la suivante peut utiliser.
+15
+00:00:47,633 --> 00:00:49,702
+forme utilisable par la suivante.
 
-18
-00:00:50,982 --> 00:00:53,661
+16
+00:00:50,542 --> 00:00:53,253
 Dans un réacteur, le combustible est
 
+17
+00:00:53,253 --> 00:00:55,964
+de l'uranium, en petites
+pastilles céramiques.
+
+18
+00:00:56,208 --> 00:00:59,155
+Selon l'EIA, chaque
+pastille contient à peu près
+
 19
-00:00:53,661 --> 00:00:56,340
-de l'uranium, façonné en
-petites pastilles céramiques.
+00:00:59,155 --> 00:01:01,734
+l'énergie de 150 gallons de pétrole.
 
 20
-00:00:56,290 --> 00:00:59,311
-Selon l'EIA, chaque
-pastille contient autant
-
-21
-00:00:59,311 --> 00:01:01,953
-d'énergie qu'environ
-150 gallons de pétrole.
-
-22
-00:01:01,953 --> 00:01:04,227
+00:01:01,943 --> 00:01:04,581
 Les pastilles sont empilées bout à bout
 
+21
+00:01:04,581 --> 00:01:06,842
+dans des crayons de 12 pieds de long.
+
+22
+00:01:07,219 --> 00:01:10,690
+Quand un atome d'uranium
+235 absorbe un neutron lent,
+
 23
-00:01:04,227 --> 00:01:06,175
-dans des crayons combustibles
-de 12 pieds de long.
+00:01:10,690 --> 00:01:14,162
+il se scinde en deux atomes plus petits.
 
 24
-00:01:06,692 --> 00:01:09,720
-Quand un neutron percute
-un atome d'uranium,
-
-25
-00:01:09,720 --> 00:01:12,369
-l'atome se scinde en
-deux atomes plus petits.
-
-26
-00:01:12,319 --> 00:01:14,054
+00:01:14,673 --> 00:01:15,776
 C'est la fission.
 
-27
-00:01:14,054 --> 00:01:17,529
+25
+00:01:16,054 --> 00:01:19,751
 Elle libère beaucoup d'énergie,
 et des neutrons en plus
 
+26
+00:01:19,751 --> 00:01:23,449
+qui peuvent scinder d'autres
+atomes : une réaction en chaîne.
+
+27
+00:01:24,134 --> 00:01:26,589
+La chaleur de toutes ces fissions
+
 28
-00:01:17,529 --> 00:01:21,005
-qui peuvent scinder d'autres atomes
-et entretenir une réaction en chaîne.
+00:01:26,589 --> 00:01:29,045
+sert à faire bouillir de l'eau.
 
 29
-00:01:21,005 --> 00:01:22,995
-La centrale utilise la chaleur
-
-30
-00:01:22,995 --> 00:01:24,985
-de toutes ces fissions pour
-faire bouillir de l'eau.
-
-31
-00:01:25,498 --> 00:01:30,175
+00:01:29,433 --> 00:01:35,442
 En mars 2026, les États-Unis comptaient
 94 réacteurs commerciaux en service
 
-32
-00:01:30,175 --> 00:01:34,428
+30
+00:01:35,442 --> 00:01:40,904
 dans 54 centrales réparties
 sur 28 États, selon l'EIA.
 
-33
-00:01:34,896 --> 00:01:36,925
-Et ils tournent à plein régime.
+31
+00:01:41,303 --> 00:01:42,510
+Ils tournent à fond.
 
-34
-00:01:36,875 --> 00:01:40,725
+32
+00:01:43,416 --> 00:01:47,311
 En 2025, la centrale nucléaire
 américaine moyenne a produit
 
-35
-00:01:40,725 --> 00:01:44,094
+33
+00:01:47,311 --> 00:01:50,719
 91 % de sa production maximale possible.
 
-36
-00:01:44,094 --> 00:01:47,232
-L'EIA appelle ça le facteur de
+34
+00:01:51,137 --> 00:01:54,626
+L'EIA parle de facteur de
 charge, et celui du nucléaire
 
-37
-00:01:47,232 --> 00:01:50,370
-était plus élevé que celui de
-tout autre type de centrale.
+35
+00:01:54,626 --> 00:01:58,114
+dépassait celui de tout
+autre type de centrale.
 
-38
-00:01:51,320 --> 00:01:54,255
+36
+00:01:58,952 --> 00:02:01,704
 Ensuite, la chaleur
 doit devenir mouvement.
 
-39
-00:01:54,205 --> 00:01:57,649
+37
+00:02:02,214 --> 00:02:06,663
 Selon la NRC, l'autorité de sûreté
 nucléaire, seuls deux types de réacteurs
 
-40
-00:01:57,649 --> 00:02:01,092
-produisent de l'électricité commerciale
+38
+00:02:06,663 --> 00:02:11,112
+produisent l'électricité commerciale
 aux États-Unis, et environ deux tiers
 
-41
-00:02:01,092 --> 00:02:04,154
+39
+00:02:11,112 --> 00:02:15,067
 des réacteurs autorisés
 sont à eau pressurisée.
 
+40
+00:02:15,446 --> 00:02:18,454
+Là, de l'eau sous haute
+pression porte la chaleur
+
+41
+00:02:18,454 --> 00:02:21,463
+du cœur à un générateur de vapeur, où
+
 42
-00:02:04,654 --> 00:02:07,236
-Dans ceux-ci, de l'eau sous haute
-pression transporte la chaleur
+00:02:21,463 --> 00:02:24,095
+elle fait bouillir l'eau
+d'un autre circuit.
 
 43
-00:02:07,236 --> 00:02:09,819
-du cœur vers un générateur de vapeur, où
-
-44
-00:02:09,819 --> 00:02:12,078
-elle fait bouillir l'eau
-d'un circuit séparé.
-
-45
-00:02:12,028 --> 00:02:14,570
+00:02:24,699 --> 00:02:27,868
 L'autre type, le réacteur
 à eau bouillante,
 
-46
-00:02:14,570 --> 00:02:16,748
+44
+00:02:27,868 --> 00:02:30,585
 produit la vapeur
 directement dans le cœur.
 
+45
+00:02:30,973 --> 00:02:32,831
+Dans les deux cas, la vapeur
+
+46
+00:02:32,831 --> 00:02:34,688
+fait tourner une turbine.
+
 47
-00:02:17,268 --> 00:02:19,246
-Dans les deux cas, la vapeur est envoyée
+00:02:34,967 --> 00:02:38,162
+La turbine entraîne un
+alternateur, où un aimant
 
 48
-00:02:19,246 --> 00:02:21,223
-vers une turbine qu'elle fait tourner.
+00:02:38,162 --> 00:02:40,958
+en rotation induit un
+courant dans des bobines.
 
 49
-00:02:21,173 --> 00:02:24,194
-La turbine entraîne un alternateur,
-où un aimant en rotation
-
-50
-00:02:24,194 --> 00:02:26,836
-induit un courant dans des bobines de fil.
-
-51
-00:02:26,836 --> 00:02:30,357
+00:02:41,654 --> 00:02:45,973
 C'est là que le mouvement
 devient enfin électricité.
 
-52
-00:02:30,866 --> 00:02:34,400
+50
+00:02:46,370 --> 00:02:49,690
 L'alternateur ne tourne pas
 à n'importe quelle vitesse.
 
-53
-00:02:34,350 --> 00:02:37,509
+51
+00:02:50,132 --> 00:02:53,986
 En Amérique du Nord, le réseau
 fonctionne en courant alternatif
 
-54
-00:02:37,509 --> 00:02:40,668
-à 60 hertz, la norme, soit 60 cycles par
+52
+00:02:53,986 --> 00:02:57,840
+à la fréquence standard de
+60 hertz, soit 60 cycles par
 
-55
-00:02:40,668 --> 00:02:43,827
+53
+00:02:57,840 --> 00:03:01,695
 seconde, et les alternateurs
-tournent synchronisés avec lui.
+sont synchronisés avec lui.
 
-56
-00:02:44,344 --> 00:02:46,922
+54
+00:03:02,080 --> 00:03:04,332
 Et voici la première grosse perte.
 
+55
+00:03:04,715 --> 00:03:07,798
+L'EIA mesure la chaleur qu'une centrale
+
+56
+00:03:07,798 --> 00:03:10,497
+utilise pour chaque kilowattheure fourni.
+
 57
-00:02:46,872 --> 00:02:49,627
-L'EIA mesure combien
-de chaleur une centrale
-
-58
-00:02:49,627 --> 00:02:52,037
-utilise pour chaque
-kilowattheure qu'elle fournit.
-
-59
-00:02:52,037 --> 00:02:55,411
+00:03:11,101 --> 00:03:14,624
 Pour les centrales nucléaires
 américaines en 2025, cela
 
-60
-00:02:55,411 --> 00:02:58,785
+58
+00:03:14,624 --> 00:03:18,148
 correspond à un rendement d'environ 33 %.
 
+59
+00:03:18,547 --> 00:03:22,193
+Environ deux tiers de la chaleur
+ne sont jamais convertis.
+
+60
+00:03:22,634 --> 00:03:25,952
+La vapeur usée est refroidie
+en eau dans un condenseur,
+
 61
-00:02:59,286 --> 00:03:03,483
-Environ deux tiers de la chaleur ne
-deviennent donc jamais électricité.
+00:03:25,952 --> 00:03:28,938
+et ce reste de chaleur
+doit aller quelque part.
 
 62
-00:03:03,433 --> 00:03:06,609
-La vapeur utilisée
-redevient de l'eau dans un
+00:03:29,542 --> 00:03:31,480
+Des tours de refroidissement,
 
 63
-00:03:06,609 --> 00:03:09,467
-condenseur, et cette chaleur résiduelle
-doit bien aller quelque part.
+00:03:31,724 --> 00:03:34,754
+ou un lac, une rivière ou l'océan.
 
 64
-00:03:09,467 --> 00:03:12,324
-Certaines centrales utilisent
-des tours de refroidissement.
-
-65
-00:03:12,324 --> 00:03:15,806
-D'autres, un lac, une rivière ou l'océan.
-
-66
-00:03:16,316 --> 00:03:18,919
+00:03:35,145 --> 00:03:37,177
 Ce n'est pas propre au nucléaire.
 
-67
-00:03:18,869 --> 00:03:22,890
+65
+00:03:37,780 --> 00:03:42,748
 Les centrales à charbon fonctionnent
-aussi à la vapeur, et en 2025 leur
+aussi à la vapeur, et en 2025, leur
 
-68
-00:03:22,890 --> 00:03:26,509
+66
+00:03:42,748 --> 00:03:47,219
 rendement moyen était à peu
 près le même, autour de 32 %.
 
-69
-00:03:27,460 --> 00:03:31,408
-Selon le département de l'Énergie,
-les alternateurs produisent
+67
+00:03:48,066 --> 00:03:52,524
+Selon le ministère américain de
+l'Énergie, les alternateurs produisent
 
-70
-00:03:31,408 --> 00:03:35,356
-généralement du courant
+68
+00:03:52,524 --> 00:03:56,982
+en général une tension
 de 5 000 à 34 500 volts.
 
-71
-00:03:35,306 --> 00:03:37,923
+69
+00:03:57,679 --> 00:04:00,505
 Voyez la tension comme
 une pression électrique,
 
-72
-00:03:37,923 --> 00:03:40,166
+70
+00:04:00,505 --> 00:04:02,927
 la poussée derrière le courant.
 
+71
+00:04:03,306 --> 00:04:05,634
+Sur place, un transformateur élévateur
+
+72
+00:04:05,634 --> 00:04:07,962
+l'augmente pour le long trajet.
+
 73
-00:03:40,674 --> 00:03:43,206
-Dès la centrale, un
-transformateur élévateur
+00:04:08,449 --> 00:04:15,507
+Les lignes de transport américaines
+fonctionnent en général à 138 000,
 
 74
-00:03:43,206 --> 00:03:45,739
-augmente cette pression
-pour le long trajet.
-
-75
-00:03:45,689 --> 00:03:51,671
-Les lignes de transport américaines
-typiques fonctionnent à 138 000,
-
-76
-00:03:51,671 --> 00:03:56,798
+00:04:15,507 --> 00:04:21,557
 230 000, 345 000,
 500 000 ou 765 000 volts.
 
+75
+00:04:21,942 --> 00:04:23,916
+Pourquoi une tension si haute ?
+
+76
+00:04:24,357 --> 00:04:26,737
+Un transformateur ne
+crée pas de puissance.
+
 77
-00:03:57,320 --> 00:03:59,923
-Pourquoi pousser la tension si haut ?
+00:04:27,178 --> 00:04:29,609
+Donc quand il élève la tension,
 
 78
-00:03:59,873 --> 00:04:02,794
-Un transformateur ne peut
-pas créer de puissance.
-
-79
-00:04:02,794 --> 00:04:05,205
-Donc quand il augmente la tension,
-
-80
-00:04:05,205 --> 00:04:07,271
+00:04:29,609 --> 00:04:31,694
 le courant baisse du même facteur.
 
-81
-00:04:07,774 --> 00:04:10,217
+79
+00:04:32,088 --> 00:04:34,825
 Et l'énergie qu'un fil perd en chaleur
 
-82
-00:04:10,217 --> 00:04:12,354
+80
+00:04:34,825 --> 00:04:37,220
 dépend du carré du courant.
 
-83
-00:04:12,304 --> 00:04:14,319
+81
+00:04:37,730 --> 00:04:39,640
 Divisez le courant par deux,
 
-84
-00:04:14,319 --> 00:04:16,335
+82
+00:04:39,640 --> 00:04:41,550
 et cette perte tombe au quart.
 
-85
-00:04:16,335 --> 00:04:18,822
+83
+00:04:42,154 --> 00:04:44,580
 Voilà pourquoi le réseau monte si haut.
 
-86
-00:04:19,332 --> 00:04:22,754
+84
+00:04:44,976 --> 00:04:49,633
 Ou, selon les mots de l'EIA,
 une tension plus élevée rend
 
-87
-00:04:22,754 --> 00:04:25,749
+85
+00:04:49,633 --> 00:04:53,707
 le transport longue distance
 plus efficace et moins coûteux.
 
-88
-00:04:25,699 --> 00:04:28,996
-Le réseau américain compte
-des milliers de miles de ces
-
-89
-00:04:28,996 --> 00:04:32,293
-lignes à haute tension, et des
-millions de miles à plus basse tension.
-
-90
-00:04:33,260 --> 00:04:37,662
+86
+00:04:54,553 --> 00:04:59,081
 Mais on ne branche pas une
 lampe sur 345 000 volts.
 
-91
-00:04:37,612 --> 00:04:40,833
+87
+00:04:59,685 --> 00:05:03,386
 La descente commence donc
 dans un poste électrique,
 
-92
-00:04:40,833 --> 00:04:43,696
-où des transformateurs abaissent
-la tension pour les lignes locales.
+88
+00:05:03,386 --> 00:05:06,674
+où des transformateurs la
+baissent pour le réseau local.
 
-93
-00:04:44,218 --> 00:04:47,809
-Dans un exemple du département
+89
+00:05:07,050 --> 00:05:11,581
+Dans un exemple du ministère
 de l'Énergie, un poste reçoit
 
-94
-00:04:47,809 --> 00:04:51,400
+90
+00:05:11,581 --> 00:05:16,112
 le courant à 34 000 volts et le renvoie
 
-95
-00:04:51,400 --> 00:04:54,194
+91
+00:05:16,112 --> 00:05:19,635
 à 7 200 volts sur les lignes
 de distribution du quartier.
 
-96
-00:04:54,648 --> 00:04:57,637
+92
+00:05:20,018 --> 00:05:23,702
 La dernière baisse a
 lieu près de chez vous :
 
-97
-00:04:57,637 --> 00:05:00,627
-le transformateur en forme de
-bidon sur un poteau, ou un boîtier
+93
+00:05:23,702 --> 00:05:27,386
+le transformateur cylindrique
+sur un poteau, ou un boîtier
 
-98
-00:05:00,627 --> 00:05:03,616
+94
+00:05:27,386 --> 00:05:31,071
 sur un socle en béton là où
 les lignes sont enterrées.
 
+95
+00:05:31,470 --> 00:05:34,508
+Il alimente une maison
+américaine type avec deux
+
+96
+00:05:34,508 --> 00:05:37,112
+fils de phase de 120
+volts, plus un neutre.
+
+97
+00:05:37,681 --> 00:05:39,440
+L'un d'eux donne les
+
+98
+00:05:39,440 --> 00:05:41,199
+120 volts d'une prise murale.
+
 99
-00:05:04,070 --> 00:05:08,484
-Il alimente une maison américaine
-type avec deux fils de 120 volts.
-
-100
-00:05:08,434 --> 00:05:10,756
-L'un d'eux vous donne les
-
-101
-00:05:10,756 --> 00:05:13,077
-120 volts d'une prise ordinaire.
-
-102
-00:05:13,077 --> 00:05:16,332
+00:05:41,617 --> 00:05:45,267
 Les deux ensemble donnent 240
 volts pour les gros appareils
 
-103
-00:05:16,332 --> 00:05:19,225
+100
+00:05:45,267 --> 00:05:48,513
 comme un sèche-linge ou
 une cuisinière électrique.
 
-104
-00:05:19,732 --> 00:05:23,649
+101
+00:05:48,904 --> 00:05:52,654
 Tout au long du trajet, une
 partie de l'énergie se perd.
 
-105
-00:05:23,599 --> 00:05:27,591
+102
+00:05:52,933 --> 00:05:57,072
 L'EIA estime que les pertes de
 transport et de distribution
 
-106
-00:05:27,591 --> 00:05:31,584
+103
+00:05:57,072 --> 00:06:01,211
 étaient en moyenne d'environ
 5 % de 2018 à 2022.
 
-107
-00:05:31,584 --> 00:05:34,913
-La grosse perte a donc lieu à la centrale.
+104
+00:06:01,907 --> 00:06:04,346
+La grosse perte est donc à la centrale.
 
-108
-00:05:34,913 --> 00:05:37,770
+105
+00:06:04,671 --> 00:06:07,620
 Le réseau lui-même est plutôt économe.
 
+106
+00:06:08,460 --> 00:06:10,120
+Et la deuxième surprise.
+
+107
+00:06:10,445 --> 00:06:14,010
+On dit que l'électricité
+circule, alors on imagine
+
+108
+00:06:14,010 --> 00:06:17,179
+des électrons filant de la
+centrale jusque chez vous.
+
 109
-00:05:38,724 --> 00:05:41,365
-Passons à la deuxième surprise.
-
-110
-00:05:41,315 --> 00:05:44,530
-On dit que l'électricité circule,
-alors on imagine facilement
-
-111
-00:05:44,530 --> 00:05:47,387
-des électrons qui foncent de
-la centrale jusque chez vous.
-
-112
-00:05:47,387 --> 00:05:49,083
+00:06:17,620 --> 00:06:19,327
 Ce n'est pas le cas.
 
-113
-00:05:49,586 --> 00:05:52,787
+110
+00:06:19,703 --> 00:06:23,218
 Dans un fil de cuivre, la
 dérive moyenne des électrons
 
-114
-00:05:52,787 --> 00:05:55,988
-est de l'ordre du millimètre
-par seconde, selon
+111
+00:06:23,218 --> 00:06:26,733
+n'est que de fractions de
+millimètre par seconde,
 
-115
-00:05:55,988 --> 00:05:58,477
-des notes de physique de la
+112
+00:06:26,733 --> 00:06:29,467
+selon un cours de la
 Georgia State University.
 
-116
-00:05:58,427 --> 00:06:01,080
+113
+00:06:30,164 --> 00:06:33,154
 Dans un de leurs exemples, c'est moins
 
-117
-00:06:01,080 --> 00:06:03,402
+114
+00:06:33,154 --> 00:06:35,771
 d'un tiers de millimètre par seconde.
 
-118
-00:06:03,904 --> 00:06:07,400
-Et sur notre réseau, ils ne
-dérivent même pas dans un seul sens.
+115
+00:06:36,170 --> 00:06:39,572
+Et sur le réseau, ils ne vont
+même pas dans un seul sens.
 
-119
-00:06:07,350 --> 00:06:11,051
+116
+00:06:40,164 --> 00:06:44,455
 En courant alternatif, la
 tension passe au positif, puis
 
-120
-00:06:11,051 --> 00:06:14,289
+117
+00:06:44,455 --> 00:06:48,210
 au négatif, et revient,
 60 fois par seconde.
 
+118
+00:06:48,895 --> 00:06:51,743
+Le courant s'inverse sans
+cesse : les électrons
+
+119
+00:06:51,743 --> 00:06:54,235
+font surtout du va-et-vient sur place.
+
+120
+00:06:54,623 --> 00:06:56,759
+Autre rupture : les transformateurs.
+
 121
-00:06:14,289 --> 00:06:17,241
-Le courant s'inverse donc
-sans cesse, et les électrons
-
-122
-00:06:17,241 --> 00:06:19,824
-font surtout du surplace, en va-et-vient.
-
-123
-00:06:20,334 --> 00:06:23,396
-Les transformateurs
-brisent aussi la chaîne.
-
-124
-00:06:23,346 --> 00:06:26,817
+00:06:57,003 --> 00:07:01,201
 À l'intérieur, l'énergie
 passe d'une bobine de fil à
 
-125
-00:06:26,817 --> 00:06:29,941
+122
+00:07:01,201 --> 00:07:04,979
 une autre via un champ
 magnétique dans un noyau de fer.
 
-126
-00:06:30,452 --> 00:06:32,634
-Alors, qu'est-ce qui fait le voyage ?
+123
+00:07:05,370 --> 00:07:06,775
+Qu'est-ce qui voyage ?
 
-127
-00:06:32,584 --> 00:06:34,383
+124
+00:07:07,158 --> 00:07:08,133
 L'énergie.
 
-128
-00:06:34,383 --> 00:06:38,043
+125
+00:07:08,307 --> 00:07:11,605
 Poussez à un bout de la ligne,
 et la poussée se propage.
 
-129
-00:06:38,043 --> 00:06:41,596
-Les notes de Georgia State le disent
+126
+00:07:12,301 --> 00:07:16,295
+Le cours de Georgia State le dit
 ainsi : c'est le changement, le
 
-130
-00:06:41,596 --> 00:06:45,148
+127
+00:07:16,295 --> 00:07:20,289
 signal, qui parcourt les fils
-pratiquement à la vitesse de la lumière.
+presque à la vitesse de la lumière.
 
-131
-00:06:45,148 --> 00:06:49,357
-Sur cent miles, ça prend moins
-d'un millième de seconde.
+128
+00:07:20,730 --> 00:07:25,804
+Sur cent miles, cela prend
+moins d'un millième de seconde.
 
-132
-00:06:50,332 --> 00:06:54,109
+129
+00:07:26,650 --> 00:07:30,179
 Ce qui nous ramène au petit
-boîtier sur votre table de nuit.
+boîtier sur votre chevet.
 
-133
-00:06:54,059 --> 00:06:57,355
+130
+00:07:30,690 --> 00:07:35,132
 Les règles fédérales le
 définissent : une alimentation
 
-134
-00:06:57,355 --> 00:07:00,651
+131
+00:07:35,132 --> 00:07:39,574
 externe convertit le courant
 domestique en courant continu,
 
-135
-00:07:00,651 --> 00:07:03,536
-ou en alternatif de plus basse tension,
-pour faire fonctionner un appareil.
+132
+00:07:39,574 --> 00:07:43,461
+ou en alternatif à tension réduite,
+pour alimenter un appareil.
 
-136
-00:07:04,050 --> 00:07:07,686
+133
+00:07:43,849 --> 00:07:47,976
 Une batterie se charge quand
 le courant la traverse dans un
 
-137
-00:07:07,686 --> 00:07:11,321
-seul sens, et le courant du secteur
-change de sens 120 fois par seconde.
+134
+00:07:47,976 --> 00:07:52,104
+seul sens ; or le courant du secteur
+s'inverse 120 fois par seconde.
 
-138
-00:07:11,271 --> 00:07:14,519
+135
+00:07:52,545 --> 00:07:56,325
 Le chargeur abaisse donc la
 tension et transforme l'alternatif
 
-139
-00:07:14,519 --> 00:07:17,407
+136
+00:07:56,325 --> 00:07:59,685
 en courant continu, qui
 circule dans un seul sens.
 
-140
-00:07:17,912 --> 00:07:20,579
+137
+00:08:00,081 --> 00:08:02,264
 Vient alors le dernier relais.
 
-141
-00:07:20,529 --> 00:07:24,445
-Comme le dit le département de
+138
+00:08:03,192 --> 00:08:07,645
+Comme le dit le ministère de
 l'Énergie, l'électricité doit être
 
-142
-00:07:24,445 --> 00:07:28,360
+139
+00:08:07,645 --> 00:08:12,097
 convertie en énergie potentielle
 chimique pour être facilement stockée.
 
-143
-00:07:28,360 --> 00:07:32,095
-En charge, les électrons parcourent
+140
+00:08:12,689 --> 00:08:17,713
+Pendant la charge, les électrons parcourent
 le circuit et les ions traversent
 
-144
-00:07:32,095 --> 00:07:35,491
+141
+00:08:17,713 --> 00:08:22,279
 la batterie, et l'énergie finit
 stockée sous forme chimique.
 
-145
-00:07:35,998 --> 00:07:38,410
+142
+00:08:22,661 --> 00:08:24,391
 Et c'est la fin du voyage.
 
-146
-00:07:38,360 --> 00:07:41,224
+143
+00:08:24,716 --> 00:08:27,811
 L'énergie d'un atome
 d'uranium scindé, qui attend
 
+144
+00:08:27,811 --> 00:08:30,463
+sous forme chimique dans votre poche.
+
+145
+00:08:31,298 --> 00:08:32,285
+Petit récap.
+
+146
+00:08:32,714 --> 00:08:33,945
+La fission chauffe.
+
 147
-00:07:41,224 --> 00:07:43,679
-maintenant, sous forme
-chimique, dans votre poche.
+00:08:34,189 --> 00:08:35,489
+D'où la vapeur.
 
 148
-00:07:44,646 --> 00:07:46,471
-Petit récapitulatif.
+00:08:35,988 --> 00:08:38,937
+La vapeur fait tourner une turbine, qui
 
 149
-00:07:46,421 --> 00:07:48,487
-La fission produit de la chaleur.
+00:08:38,937 --> 00:08:41,886
+entraîne un alternateur
+produisant du 60 hertz.
 
 150
-00:07:48,487 --> 00:07:50,554
-La chaleur produit de la vapeur.
+00:08:42,676 --> 00:08:46,027
+En 2025, seul un tiers
+environ de la chaleur
 
 151
-00:07:50,554 --> 00:07:53,468
-La vapeur fait tourner
-une turbine, et la turbine
+00:08:46,027 --> 00:08:48,899
+d'une centrale nucléaire
+est devenu électricité.
 
 152
-00:07:53,468 --> 00:07:56,383
-entraîne un alternateur qui
-produit du courant à 60 hertz.
+00:08:49,281 --> 00:08:53,139
+Les transformateurs élèvent
+la tension à des centaines
 
 153
-00:07:56,383 --> 00:07:59,439
-En 2025, seul un tiers environ de
+00:08:53,139 --> 00:08:56,997
+de milliers de volts pour que
+le trajet perde moins, puis
 
 154
-00:07:59,439 --> 00:08:02,059
-la chaleur d'une centrale
-nucléaire est devenu électricité.
+00:08:56,997 --> 00:09:00,856
+la ramènent à 120 et 240 volts chez vous.
 
 155
-00:08:02,564 --> 00:08:05,855
-Les transformateurs montent la
-tension à des centaines de milliers de
-
-156
-00:08:05,855 --> 00:08:09,146
-volts pour que le long trajet
-perde moins, puis la redescendent
-
-157
-00:08:09,146 --> 00:08:12,437
-à 120 et 240 volts chez vous.
-
-158
-00:08:12,387 --> 00:08:16,380
+00:09:01,530 --> 00:09:06,278
 Les électrons restent surtout sur
 place ; c'est l'énergie qui voyage.
 
-159
-00:08:16,882 --> 00:08:20,901
+156
+00:09:06,663 --> 00:09:10,726
 Ma question pour vous : quelle
 étape vous a le plus surpris ?
 
-160
-00:08:20,851 --> 00:08:23,485
-La chaleur qui ne devient
-jamais électricité, ou
+157
+00:09:11,110 --> 00:09:13,716
+La chaleur jamais convertie en courant, ou
 
-161
-00:08:23,485 --> 00:08:26,119
-les électrons qui ne
-quittent jamais vos murs ?
+158
+00:09:13,716 --> 00:09:16,322
+les électrons qui restent dans vos murs ?
 
-162
-00:08:26,119 --> 00:08:28,274
+159
+00:09:16,926 --> 00:09:18,691
 Dites-le-moi en commentaire.
 
+160
+00:09:19,081 --> 00:09:22,419
+Si vous aimez voir la
+machinerie cachée du quotidien,
+
+161
+00:09:22,419 --> 00:09:25,385
+abonnez-vous à Other End of the Wire.
+
+162
+00:09:25,989 --> 00:09:28,079
+Toutes les sources des chiffres
+
 163
-00:08:28,800 --> 00:08:31,479
-Pour d'autres voyages dans les coulisses
+00:09:28,079 --> 00:09:30,169
+de la vidéo sont en description.
 
 164
-00:08:31,479 --> 00:08:34,158
-de la vie quotidienne,
-abonnez-vous à The Hidden Grid.
-
-165
-00:08:34,108 --> 00:08:36,219
-Toutes les sources des chiffres de
-
-166
-00:08:36,219 --> 00:08:38,330
-cette vidéo sont dans la description.
+00:09:30,610 --> 00:09:32,038
+Follow the electron.

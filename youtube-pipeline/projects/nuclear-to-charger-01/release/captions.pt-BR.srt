@@ -16,7 +16,7 @@ pelas linhas de energia, e continue.
 
 5
 00:00:11,583 --> 00:00:16,854
-Em cerca de 18% da eletricidade de
+Para cerca de 18% da eletricidade de
 grande escala dos EUA, segundo a EIA,
 
 6
@@ -88,7 +88,8 @@ empilhadas uma após a outra
 
 21
 00:01:04,581 --> 00:01:06,842
-em varetas de combustível de 12 pés.
+em varetas de 12 pés
+de comprimento.
 
 22
 00:01:07,219 --> 00:01:10,690
@@ -194,7 +195,7 @@ gera vapor direto no núcleo.
 
 45
 00:02:30,973 --> 00:02:32,831
-Nos dois, o vapor vai por tubos
+Em ambos, o vapor vai por tubos
 
 46
 00:02:32,831 --> 00:02:34,688
@@ -271,7 +272,7 @@ ir para algum lugar.
 
 62
 00:03:29,542 --> 00:03:31,480
-Algumas usam torres de resfriamento.
+Umas têm torres de resfriamento.
 
 63
 00:03:31,724 --> 00:03:34,754
@@ -361,7 +362,7 @@ essa perda cai para um quarto.
 
 83
 00:04:42,154 --> 00:04:44,580
-É por isso que a rede vai lá para cima.
+É por isso que a rede usa tensão alta.
 
 84
 00:04:44,976 --> 00:04:49,633
@@ -424,7 +425,8 @@ típica dos EUA com dois
 
 96
 00:05:34,508 --> 00:05:37,112
-fios energizados de 120 volts e um neutro.
+duas fases de 120 volts
+mais um neutro.
 
 97
 00:05:37,681 --> 00:05:39,440
@@ -465,7 +467,7 @@ Ou seja, a grande perda é lá na usina.
 
 105
 00:06:04,671 --> 00:06:07,620
-A rede em si é bem econômica.
+A rede em si é relativamente econômica.
 
 106
 00:06:08,460 --> 00:06:10,120
@@ -624,7 +626,7 @@ Energia, a eletricidade precisa ser
 139
 00:08:07,645 --> 00:08:12,097
 convertida em energia potencial
-química antes de ser armazenada.
+química para poder ser armazenada.
 
 140
 00:08:12,689 --> 00:08:17,713

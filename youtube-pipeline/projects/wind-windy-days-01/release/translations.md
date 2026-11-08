@@ -192,18 +192,18 @@ Pourquoi les éoliennes S'ARRÊTENT les jours de grand vent
 ### Description
 
 ```
-Le jour le plus venteux du mois, certaines éoliennes restent parfaitement immobiles. On dirait du gaspillage. En général, c'est la machine, le réseau ou les ingénieurs qui disent « pas maintenant ».
+Le jour le plus venteux du mois, certaines éoliennes restent parfaitement immobiles. On dirait du gaspillage. En général, c'est la machine, le réseau ou les ingénieurs qui disent « pas maintenant ».
 Nous suivons le vent de la pale jusqu'à la ligne électrique et passons en revue toutes les raisons pour lesquelles une éolienne s'arrête.
 
-Dans cette vidéo :
+Dans cette vidéo :
 - La vitesse de démarrage, et pourquoi c'est le vent à hauteur du moyeu qui compte
-- Le facteur de charge : ce que le parc éolien américain a réellement produit en 2025
-- La loi du cube : deux fois plus de vent, huit fois plus de puissance
-- La courbe de puissance : vitesse nominale, mise en drapeau et coupure pendant les tempêtes
-- L'écrêtement : lignes saturées, prix négatifs et où cela arrive le plus
+- Le facteur de charge : ce que le parc éolien américain a réellement produit en 2025
+- La loi du cube : deux fois plus de vent, huit fois plus de puissance
+- La courbe de puissance : vitesse nominale, mise en drapeau et coupure pendant les tempêtes
+- L'écrêtement : lignes saturées, prix négatifs et où cela arrive le plus
 - Givre sur les pales, chauves-souris, aigles et maintenance
 
-Sources :
+Sources :
 EIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php
 Lawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report
@@ -219,21 +219,20 @@ Iowa State University, Field study shows icing can cost wind turbines up to 80% 
 Adams, Gulka & Williams, A review of the effectiveness of operational curtailment for reducing bat fatalities (PLOS ONE, 2021) - https://pmc.ncbi.nlm.nih.gov/articles/PMC8598023/
 McClure et al., Eagle fatalities are reduced by automated curtailment of wind turbines (Journal of Applied Ecology, 2021) - https://doi.org/10.1111/1365-2664.13831
 
-La narration est générée par IA ; le script a été documenté et relu par un humain.
+La narration est générée par IA ; le script a été documenté et relu par un humain.
 À but éducatif uniquement, ceci n'est pas un conseil financier. Le créateur investit dans le secteur de l'énergie.
 
 #windenergy #windturbine #powergrid #howitworks #electricity
 
 CHAPITRES
 0:00 Intro
-1:05 Pas assez de vent
-2:04 La loi du cube
-2:42 Trop de vent
-4:33 Le réseau dit « pas maintenant »
-6:17 Givre et faune
-7:19 Récapitulatif
+1:10 Pas assez de vent
+2:16 La loi du cube
+3:00 Trop de vent
+5:07 Le réseau dit « pas maintenant »
+7:08 Givre et faune
+8:27 Récap
 
-CRÉDITS VIDÉOS ET PHOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 

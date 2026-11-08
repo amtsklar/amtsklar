@@ -197,25 +197,25 @@ hidrogênio explicado, hidrogênio verde, hidrogênio azul, hidrogênio cinza, e
 
 **Title**
 
-L'hydrogène : où il a du sens, et où il n'en a PAS
+Mettez 100, récupérez 28 : l'ALLER-RETOUR de l'hydrogène
 
 **Description**
 
 ```
-Transformez de l'électricité en hydrogène puis à nouveau en électricité : lors d'un test d'un laboratoire national américain, seuls 28 à 35 % sont revenus. Une batterie réseau en restitue environ 82.
-Alors, où l'hydrogène a-t-il vraiment du sens ? Nous suivons l'électron de la prise à l'électrolyseur, au réservoir, au champ fertilisé et à l'aciérie.
+Transformez de l'électricité en hydrogène, puis à nouveau en électricité : lors du test d'un laboratoire national américain, seuls 28 à 35 % sont revenus. Une batterie réseau en restitue environ 82.
+Alors, où l'hydrogène a-t-il vraiment du sens ? Nous suivons l'électron de la prise à l'électrolyseur, au réservoir, au champ fertilisé et à l'aciérie.
 
-Dans cette vidéo :
+Dans cette vidéo :
 - Pourquoi l'hydrogène est un vecteur énergétique, et non une source d'énergie
 - Comment les États-Unis en produisent environ 10 millions de tonnes par an, surtout à partir de gaz naturel
-- Hydrogène gris, bleu et vert, et pourquoi le DOE se passe des couleurs
+- Hydrogène gris, bleu et vert, et pourquoi le DOE (ministère américain de l'Énergie) se passe des couleurs
 - Les pertes de l'électrolyse et le problème de l'aller-retour face aux batteries
 - Pourquoi l'hydrogène peine dans les voitures et le chauffage domestique
-- Là où la molécule compte : raffineries, ammoniac/engrais, acier
-- Les « peut-être » : carburants maritimes, poids lourds, stockage de longue durée
+- Là où la molécule compte : raffineries, ammoniac/engrais, acier
+- Les « peut-être » : carburants maritimes, poids lourds, stockage de longue durée
 - Les pôles hydrogène américains et la stratégie nationale
 
-Sources (titres originaux en anglais) :
+Sources :
 NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
 EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
 EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
@@ -234,22 +234,21 @@ U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files
 U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
 IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
 
-La narration est générée par IA ; le script a été recherché et vérifié par un humain.
+La narration est générée par IA ; le script a été documenté et relu par un humain.
 À but éducatif uniquement, ceci n'est pas un conseil financier. Le créateur investit dans le secteur de l'énergie.
 
 #hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
 
 CHAPITRES
 0:00 Intro
-1:00 Ce qu'est l'hydrogène
-1:43 Comment les États-Unis le produisent
-3:10 La perte de l'électrolyse
-3:53 Le problème de l'aller-retour
-5:16 Là où la molécule compte
-7:19 Le pari hydrogène des États-Unis
-8:04 Récap
+1:10 Ce qu'est l'hydrogène
+1:51 Comment les États-Unis le produisent
+3:19 La perte de l'électrolyse
+4:05 Le problème de l'aller-retour
+5:36 Là où la molécule compte
+7:44 Le pari hydrogène des États-Unis
+8:32 Récap
 
-CRÉDITS VIDÉOS ET PHOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 

@@ -192,13 +192,13 @@ Stock footage and photos: Pixabay (Pixabay Content License).
 
 ## French (fr)
 
-**Title** (69 chars): De la centrale nucléaire au chargeur de téléphone : le voyage COMPLET
+**Title** (72 chars): Les électrons de vos murs BOUGENT à peine. Alors, qu'est-ce qui voyage ?
 
 **Description:**
 
 ```
-Branchez votre téléphone, puis suivez le câble à l'envers : à travers le mur, le long de la rue, sur les lignes électriques, jusqu'à un réacteur nucléaire.
-Étape par étape, on suit chaque relais, les endroits où l'énergie se perd, et pourquoi les électrons eux-mêmes ne font jamais le voyage.
+Branchez votre téléphone, puis remontez le câble : à travers le mur, le long de la rue, par les lignes électriques, jusqu'à un réacteur nucléaire.
+Étape par étape, nous suivons chaque relais, les endroits où l'énergie se perd, et pourquoi les électrons eux-mêmes ne font jamais le voyage.
 
 Dans cette vidéo :
 - La fission, les pastilles de combustible et comment un réacteur produit de la chaleur
@@ -210,7 +210,7 @@ Dans cette vidéo :
 - La dérive des électrons face à la vitesse de l'énergie
 - Ce que fait vraiment votre chargeur de téléphone
 
-Sources (en anglais) :
+Sources :
 EIA, U.S. nuclear industry (reactors, plants, states as of March 2026; capacity factor 2025) - https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php
 EIA, Electricity in the U.S. (2025 generation shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Nuclear power plants (fission, fuel pellets, cooling) - https://www.eia.gov/energyexplained/nuclear/nuclear-power-plants.php
@@ -232,26 +232,25 @@ OpenStax (Rice University), College Physics 2e, 20.5 Alternating Current versus 
 Code of Federal Regulations, 10 CFR 430.2 (definition of external power supply) - https://www.ecfr.gov/current/title-10/chapter-II/subchapter-D/part-430/subpart-A/section-430.2
 U.S. DOE Office of Science, DOE Explains...Batteries - https://www.energy.gov/science/doe-explainsbatteries
 
-La narration est générée par IA ; le script a été recherché et vérifié par un humain.
+La narration est générée par IA ; le script a été documenté et relu par un humain.
 À but éducatif uniquement, ceci n'est pas un conseil financier. Le créateur investit dans le secteur de l'énergie.
 
 #nuclearenergy #powergrid #electricity #howitworks #physics
 
 CHAPITRES
-0:00 Introduction
-0:50 Étape 1 : Scinder des atomes pour produire de la chaleur
-1:51 Étape 2 : De la chaleur au mouvement
-3:27 Étape 3 : On monte l'échelle des tensions
-4:33 Étape 4 : On redescend
-5:38 Qui fait vraiment le voyage ?
-6:50 Étape 5 : Le chargeur
-7:44 Récapitulatif
+0:00 Intro
+0:50 Étape 1 : scinder des atomes pour produire de la chaleur
+1:58 Étape 2 : de la chaleur au mouvement
+3:48 Étape 3 : on monte l'échelle des tensions
+4:54 Étape 4 : on redescend
+6:08 Qui fait vraiment le voyage ?
+7:26 Étape 5 : le chargeur
+8:31 Récap
 
-CRÉDITS VIDÉOS ET PHOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 
-**Tags:** comment l'électricité arrive chez vous, nucléaire expliqué, comment fonctionne une centrale nucléaire, réseau électrique expliqué, lignes haute tension, pourquoi la haute tension, transformateur élévateur, transformateur sur poteau, vitesse de dérive des électrons, courant alternatif expliqué, 120 240 volts, pertes en ligne, comment fonctionne un chargeur, the hidden grid
+**Tags:** comment l'électricité arrive chez vous, nucléaire expliqué, comment fonctionne une centrale nucléaire, réseau électrique expliqué, lignes haute tension, pourquoi la haute tension, transformateur élévateur, transformateur sur poteau, vitesse de dérive des électrons, courant alternatif expliqué, 120 240 volts, pertes en ligne, comment fonctionne un chargeur, follow the electron, other end of the wire
 
 ## Hindi (hi)
 

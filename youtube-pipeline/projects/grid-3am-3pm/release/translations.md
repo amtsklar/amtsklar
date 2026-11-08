@@ -136,7 +136,7 @@ Stock footage and photos: Pixabay (Pixabay Content License).
 
 Language code: pt-BR
 
-**Title:** De onde vem a sua energia às 3 da manhã vs. às 3 da tarde
+**Title:** De onde vem a sua energia às 3 da manhã e às 3 da tarde
 
 **Description:**
 
@@ -206,18 +206,18 @@ Language code: fr
 
 ```
 À 3 h du matin et à 15 h, la même prise murale peut être alimentée par des centrales complètement différentes.
-Nous suivons une journée sur le réseau électrique américain, heure par heure : le vent et le nucléaire la nuit, le solaire à midi, et entre les deux, la rampe abrupte du soir.
+Nous suivons une journée sur le réseau électrique américain, heure par heure : l'éolien et le nucléaire la nuit, le solaire à midi, et entre les deux, la rampe abrupte du soir.
 
-Dans cette vidéo :
+Dans cette vidéo :
 - Pourquoi la demande d'électricité aux États-Unis atteint son minimum avant l'aube, et ce qu'est la charge de base
-- Le nucléaire à plein régime, et pourquoi le vent des Grandes Plaines culmine la nuit
-- Comment le solaire a pris le contrôle du milieu de journée au Texas et en Californie
+- Le nucléaire à plein régime, et pourquoi l'éolien des Grandes Plaines culmine la nuit
+- Comment le solaire a pris le relais en milieu de journée au Texas et en Californie
 - La charge nette et la courbe du canard, expliquées simplement
 - Les batteries qui déplacent le solaire de midi vers le soir
 - Pourquoi les prix de gros fluctuent, et comment ils peuvent devenir négatifs
 - Pourquoi votre timing compte (recharge de voiture électrique, tarifs horaires)
 
-Sources (en anglais) :
+Sources :
 EIA, Hourly electricity consumption varies throughout the day and across seasons (2020) - https://www.eia.gov/todayinenergy/detail.php?id=42915
 EIA, U.S. nuclear industry (capacity factor 2025) - https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php
 EIA, Electricity in the U.S. (2025 generation shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
@@ -242,22 +242,21 @@ EIA, Hourly Electric Grid Monitor - https://www.eia.gov/electricity/gridmonitor/
 U.S. DOE Alternative Fuels Data Center, Charging Electric Vehicles at Home - https://afdc.energy.gov/fuels/electricity-charging-home
 EIA, How many smart meters are installed in the United States? (FAQ) - https://www.eia.gov/tools/faqs/faq.php?id=108&t=3
 
-La narration est générée par IA ; le script a été documenté et relu par un humain.
+La narration est générée par IA ; le script a été documenté et relu par un humain.
 À but éducatif uniquement, ceci n'est pas un conseil financier. Le créateur investit dans le secteur de l'énergie.
 
 #powergrid #electricity #duckcurve #solarenergy #howitworks
 
 CHAPITRES
 0:00 Intro
-0:44 3 h du matin : l'équipe de nuit
-2:15 15 h : l'équipe solaire
-3:09 Le problème du coucher de soleil
-4:18 Batteries : déplacer midi vers le soir
-4:51 Pourquoi les prix fluctuent
-6:30 Votre prise, votre timing
-7:31 Récap
+0:46 3 h du matin : l'équipe de nuit
+2:26 15 h : l'équipe solaire
+3:25 Le problème du coucher de soleil
+4:50 Batteries : déplacer midi vers le soir
+5:21 Pourquoi les prix fluctuent
+7:12 Votre prise, votre timing
+8:18 Récap
 
-CRÉDITS VIDÉOS ET PHOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 
