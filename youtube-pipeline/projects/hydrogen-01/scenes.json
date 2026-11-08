@@ -8,7 +8,7 @@
   {
    "chapter": "Intro",
    "query": "laboratory equipment",
-   "text": "In 2024, engineers at the National Renewable Energy Laboratory in Colorado, now the National Laboratory of the Rockies, reported on a test at megawatt scale. They took electricity, turned it into hydrogen, stored it, and then turned it back into electricity.",
+   "text": "Put 100 units of electricity in. Get about 28 back. That's what engineers at the National Renewable Energy Laboratory in Colorado, now the National Laboratory of the Rockies, reported in 2024 after a megawatt-scale test: electricity into hydrogen, into storage, and back into electricity.",
    "fallback": [
     "gas storage tanks",
     "pressure tanks",
@@ -17,7 +17,7 @@
   },
   {
    "query": "power lines",
-   "text": "In that one prototype, at full power, about 28 percent of the electricity came back. At low power, about 35.",
+   "text": "That was one prototype, running at full power. At low power, about 35 came back.",
    "fallback": [
     "electricity pylon",
     "transmission tower"
@@ -350,8 +350,8 @@
  ],
  "meta": {
   "titles": [
-   "Hydrogen: Where It Makes Sense and Where It DOESN'T",
    "Put In 100, Get Back 28: The Hydrogen ROUND TRIP",
+   "Hydrogen: Where It Makes Sense and Where It DOESN'T",
    "Hydrogen Isn't a Fuel Problem. It's a WHERE Problem",
    "The Hydrogen on Your DINNER TABLE, Explained",
    "America Makes 10 Million Tons of Hydrogen. Where Does It GO?"

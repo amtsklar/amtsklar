@@ -94,7 +94,7 @@
   },
   {
    "query": "wind farm power lines",
-   "text": "A still turbine on a windy day is usually the machine, the grid, or the engineers saying: not now. Let's follow the wind from blade to power line and find out who's saying it, and why.",
+   "text": "They aren't broken. Someone decided to stop them. Let's follow the wind from blade to power line and find out who made that call, and why.",
    "fallback": [
     "power lines",
     "wind turbine"
@@ -118,7 +118,7 @@
   },
   {
    "query": "wind turbine tower",
-   "text": "And the machines are big. Berkeley Lab's annual wind report for the Energy Department says the average new land-based turbine in 2025 was rated at about 3.8 megawatts, with its hub about 335 feet up and a rotor about 460 feet across.",
+   "text": "And the machines are huge. Berkeley Lab's annual wind report for the Energy Department says the average new land-based turbine in 2025 had its hub about 335 feet up, with blades sweeping a circle wider than a football field is long.",
    "fallback": [
     "wind turbine",
     "turbine blades"

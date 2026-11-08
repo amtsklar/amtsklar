@@ -792,8 +792,11 @@ def stage_meta(project):
             continue
         seen.add(key)
         lines.append(f"\"{(c.get('title') or 'Untitled')[:60]}\" by {c.get('creator') or 'unknown'}, {c.get('license')}, {c.get('url')}")
-    full = ["# Footage & photo credits", ""] + [
-        f"- {k}: \"{(c.get('title') or '')[:70]}\" by {c.get('creator')}, {c.get('license')}, {c.get('url')}"
+    def fetched(k):  # download date = file date of the media (licence proof)
+        f = b / "images" / k
+        return time.strftime("%Y-%m-%d", time.localtime(f.stat().st_mtime)) if f.exists() else "n/a"
+    full = ["# Footage & photo credits", "", "Downloaded = date the file was fetched (licence terms as of that date).", ""] + [
+        f"- {k}: \"{(c.get('title') or '')[:70]}\" by {c.get('creator')}, {c.get('license')}, {c.get('url')}, downloaded {fetched(k)}"
         for k, c in sorted(credits.items())]
     (b / "credits.md").write_text("\n".join(full) + "\n")
     desc_len = len("\n".join(lines[lines.index("```") + 1:]))

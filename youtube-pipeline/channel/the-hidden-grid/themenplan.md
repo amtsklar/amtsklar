@@ -1,4 +1,6 @@
-# The Hidden Grid – Themenplan Videos 5–16 (8.12.2026 – 23.2.2027)
+# Other End of the Wire (vormals The Hidden Grid) – Themenplan Videos 5–16 (8.12.2026 – 23.2.2027)
+
+> **Zeitplan-Update 8.11.2026:** Start am 17.11. statt am 10.11. Es gilt die Tabelle „Gültiger Zeitplan“ am Ende dieses Dokuments. Die Saisonthemen bleiben auf ihren Terminen, die übrigen rücken nach.
 
 Stand: 8.11.2026 · erstellt von US-YouTube-Marketing + Energie-Wissenschaft
 Grundlage: `brand.json`, `kanal-setup.md`, `learnings.md` (noch leer), `projects/*/scenes.json`, `projects/energy-datacenter-01/themen-ranking.md` (YouTube-Suchsignale vom 7.11.2026), `shorts/SHORTS.md`, Websuche vom 8.11.2026.
@@ -164,3 +166,29 @@ Feste Termine bleiben unverändert: V7 (22.12.), V14 (9.2.), V15 (16.2.). Versch
 - NASA, Holiday Lights from Space (Dez. 2014): https://svs.gsfc.nasa.gov/gallery/holiday-lights/ · https://science.nasa.gov/earth/earth-observatory/even-from-space-holidays-shine-brightly-84897/
 - IEA, Heat Pump Monitor 2026: https://www.iea.org/reports/heat-pump-monitor-2026/key-findings
 - Super Bowl LXI, 14.2.2027, SoFi Stadium: https://www.foxla.com/news/2027-super-bowl-lxi-sofi-staduim-los-angeles
+
+
+---
+## Gültiger Zeitplan (Stand 8.11.2026, Start 17.11.)
+Upload jeweils Dienstag 19:00 MEZ (13:00 ET). Die Saisonthemen sind fest, alle anderen Termine verschiebbar (Learnings-Schleife).
+
+| Datum | Video | Hinweis |
+|---|---|---|
+| 17.11. | Where Your Power Comes From at 3 A.M. vs. 3 P.M. | Start |
+| 24.11. | Why Wind Turbines STOP on the Windiest Days | 2 Tage vor Thanksgiving: Dienstag ist ok |
+| 1.12. | The Electrons in Your Wall Barely MOVE. So What Travels? (Nuclear) | |
+| 8.12. | Put In 100, Get Back 28: The Hydrogen ROUND TRIP | |
+| 15.12. | Where Does AI's Electricity Actually GO? (Überarbeitung) | Nachrichtenlage nach der PJM-Auktion am 9.12. einbauen |
+| 22.12. | Christmas Lights Are Visible From SPACE… | fest (Saison) |
+| 29.12. | America's Grid in 2026: The Year in 7 CHARTS | fest (Jahresrückblick) |
+| 5.1. | Why Winter Is Becoming the Grid's DANGER Season | vom 15.12. verschoben; NERC-Winterbericht 2026/27 vorher prüfen |
+| 12.1. | How a Heat Pump Pulls Heat Out of FREEZING Air | |
+| 19.1. | Why It Takes YEARS to Plug Into the Grid (Even for AI) | |
+| 26.1. | Where Does the Water GO Inside a Hydroelectric Dam? | |
+| 2.2. | Do AI Data Centers Really DRINK Our Water? | |
+| 9.2. | Can the Power Grid SEE the Super Bowl? | fest (Spiel am 14.2.); Entscheid bis 15.1., sonst R1 |
+| 16.2. | The 4 MINUTES That Nearly Broke the Texas Grid | fest (Uri-Jahrestag) |
+| 23.2. | Why So Many Grid Batteries Last Just 4 HOURS | |
+| 2.3. | Why Electricity Bills Are RISING: Follow the Dollar | |
+
+Reihen-Titel für Rechenzentren-Videos (15.12., 19.1., 2.2.): „The Cloud Has a Plug“.
