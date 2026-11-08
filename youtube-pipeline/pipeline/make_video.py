@@ -98,11 +98,16 @@ def _tts_elevenlabs(text, voice_id, out, rate="+0%", prev="", nxt=""):
     chars, starts, ends = al.get("characters", []), al.get("character_start_times_seconds", []), \
         al.get("character_end_times_seconds", [])
     sentences, buf, s0 = [], "", None
-    for c, a, e in zip(chars, starts, ends):
+    def ends_sentence(k):  # "3 a.m. Then" ends, "a.m." mid-word and "U.S. grid" do not
+        if k + 1 < len(chars) and not chars[k + 1].isspace():
+            return False
+        rest = "".join(chars[k + 1:k + 4]).lstrip()
+        return not rest or rest[0].isupper() or rest[0].isdigit() or rest[0] in "\"'"
+    for k, (c, a, e) in enumerate(zip(chars, starts, ends)):
         if s0 is None and not c.isspace():
             s0 = a
         buf += c
-        if c in ".!?" and s0 is not None:
+        if c in ".!?" and s0 is not None and ends_sentence(k):
             sentences.append({"start": s0, "end": e, "text": buf.strip()})
             buf, s0 = "", None
     if buf.strip() and s0 is not None:
