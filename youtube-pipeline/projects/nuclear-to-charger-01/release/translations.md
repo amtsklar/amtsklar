@@ -4,23 +4,23 @@ Base title: option 1, "From Nuclear Plant to Phone Charger: The FULL Trip". Sour
 
 ## Spanish (es, Latin America)
 
-**Title** (66 chars): De la planta nuclear al cargador de tu teléfono: el viaje COMPLETO
+**Title** (66 chars): Los electrones de tu pared apenas SE MUEVEN. Entonces, ¿qué viaja?
 
 **Description:**
 
 ```
-Conecta tu teléfono y sigue el cable hacia atrás: por la pared, por la calle, por las líneas eléctricas, hasta llegar a un reactor nuclear.
-Paso a paso, seguimos cada relevo, dónde se pierde energía y por qué los electrones nunca hacen el viaje.
+Conecta tu celular y sigue el cable hacia atrás: por la pared, por la calle, por las líneas eléctricas, hasta llegar a un reactor nuclear.
+Paso a paso, seguimos cada relevo, dónde se pierde energía y por qué los electrones mismos nunca hacen el viaje.
 
 En este video:
 - Fisión, pastillas de combustible y cómo un reactor produce calor
 - Vapor, turbinas y un generador sincronizado a 60 hertz
-- Por qué cerca de dos tercios del calor de una planta nuclear nunca se vuelven electricidad
+- Por qué cerca de dos tercios del calor de una central nuclear nunca se vuelven electricidad
 - La escalera del voltaje: por qué las líneas de transmisión operan a cientos de miles de voltios
-- Subestaciones, transformadores de poste y el sistema de 120/240 voltios de los hogares de EE. UU.
-- Cuánto se pierde en la red (cerca del 5 %)
+- Subestaciones, transformadores de poste y el sistema de 120/240 voltios de los hogares de EE. UU.
+- Cuánto se pierde en la red (cerca del 5 %)
 - La deriva de los electrones frente a la velocidad de la energía
-- Qué hace realmente el cargador de tu teléfono
+- Qué hace realmente el cargador de tu celular
 
 Fuentes (en inglés):
 EIA, U.S. nuclear industry (reactors, plants, states as of March 2026; capacity factor 2025) - https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php
@@ -52,18 +52,18 @@ Solo con fines educativos; no es asesoría financiera. El creador invierte en el
 CAPÍTULOS
 0:00 Introducción
 0:50 Paso 1: Dividir átomos para obtener calor
-1:51 Paso 2: Del calor al movimiento
-3:27 Paso 3: Subiendo la escalera del voltaje
-4:33 Paso 4: Bajando el voltaje
-5:38 ¿Quién hace realmente el viaje?
-6:50 Paso 5: El cargador
-7:44 Resumen
+1:58 Paso 2: Del calor al movimiento
+3:48 Paso 3: Subiendo la escalera del voltaje
+4:54 Paso 4: Bajando el voltaje
+6:08 ¿Quién hace realmente el viaje?
+7:26 Paso 5: El cargador
+8:31 Resumen
 
-CRÉDITOS DE VIDEOS Y FOTOS
+CRÉDITOS DE VIDEO Y FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 
-**Tags:** cómo llega la electricidad a tu casa, energía nuclear explicada, cómo funciona una planta nuclear, red eléctrica explicada, líneas de transmisión, por qué alta tensión, transformador elevador, transformador de poste, velocidad de deriva de electrones, corriente alterna explicada, 120 240 voltios, pérdidas de transmisión y distribución, cómo funciona un cargador, the hidden grid
+**Tags:** cómo llega la electricidad a tu casa, energía nuclear explicada, cómo funciona una planta nuclear, red eléctrica explicada, líneas de transmisión, por qué alta tensión, transformador elevador, transformador de poste, velocidad de deriva de electrones, corriente alterna explicada, 120 240 voltios, pérdidas de transmisión y distribución, cómo funciona un cargador, other end of the wire
 
 ## German (de)
 
@@ -255,18 +255,18 @@ Stock footage and photos: Pixabay (Pixabay Content License).
 
 ## Hindi (hi)
 
-**Title** (51 chars): परमाणु प्लांट से फ़ोन चार्जर तक: बिजली का पूरा सफ़र
+**Title** (67 chars): आपकी दीवार के इलेक्ट्रॉन मुश्किल से हिलते हैं। तो सफ़र कौन करता है?
 
 **Description:**
 
 ```
-अपना फ़ोन चार्ज पर लगाइए, फिर केबल को उल्टा फ़ॉलो कीजिए: दीवार के अंदर, सड़क तक, बिजली की लाइनों से होते हुए, एक परमाणु रिएक्टर तक।
-कदम-दर-कदम, हम हर हस्तांतरण, ऊर्जा कहाँ खोती है, और इलेक्ट्रॉन ख़ुद यह सफ़र क्यों नहीं करते, यह सब देखते हैं।
+अपना फ़ोन चार्ज पर लगाइए, फिर केबल को उल्टा फ़ॉलो कीजिए: दीवार के अंदर, सड़क तक, बिजली की लाइनों से होते हुए, एक न्यूक्लियर रिएक्टर तक।
+कदम-दर-कदम, हम हर हस्तांतरण को देखते हैं: ऊर्जा कहाँ खोती है, और इलेक्ट्रॉन खुद यह सफ़र क्यों नहीं करते।
 
 इस वीडियो में:
-- विखंडन, ईंधन पेलेट्स, और रिएक्टर गर्मी कैसे बनाता है
-- भाप, टरबाइन, और 60 हर्ट्ज़ पर चलने वाला जनरेटर
-- परमाणु प्लांट की लगभग दो-तिहाई गर्मी कभी बिजली क्यों नहीं बनती
+- फ़िशन, ईंधन पेलेट्स, और रिएक्टर गर्मी कैसे बनाता है
+- भाप, टर्बाइन, और 60 हर्ट्ज़ से बंधा जनरेटर
+- न्यूक्लियर प्लांट की लगभग दो-तिहाई गर्मी कभी बिजली क्यों नहीं बनती
 - वोल्टेज की सीढ़ी: ट्रांसमिशन लाइनें लाखों वोल्ट पर क्यों चलती हैं
 - सबस्टेशन, खंभे वाले ट्रांसफ़ॉर्मर, और अमेरिकी घरों का 120/240 वोल्ट सिस्टम
 - ग्रिड पर कितनी बिजली खोती है (लगभग 5%)
@@ -295,23 +295,23 @@ OpenStax (Rice University), College Physics 2e, 20.5 Alternating Current versus 
 Code of Federal Regulations, 10 CFR 430.2 (definition of external power supply) - https://www.ecfr.gov/current/title-10/chapter-II/subchapter-D/part-430/subpart-A/section-430.2
 U.S. DOE Office of Science, DOE Explains...Batteries - https://www.energy.gov/science/doe-explainsbatteries
 
-नैरेशन AI से जनरेट किया गया है; स्क्रिप्ट की रिसर्च और समीक्षा एक इंसान ने की है।
-सिर्फ़ शैक्षिक उद्देश्य के लिए, यह वित्तीय सलाह नहीं है। क्रिएटर ऊर्जा क्षेत्र में निवेश करते हैं।
+नैरेशन AI से बनाया गया है; स्क्रिप्ट पर रिसर्च और उसकी समीक्षा एक इंसान ने की है।
+यह केवल शिक्षा के लिए है, वित्तीय सलाह नहीं। क्रिएटर ऊर्जा क्षेत्र में निवेश करते हैं।
 
 #nuclearenergy #powergrid #electricity #howitworks #physics
 
 चैप्टर
 0:00 परिचय
 0:50 कदम 1: गर्मी के लिए परमाणु तोड़ना
-1:51 कदम 2: गर्मी से गति
-3:27 कदम 3: वोल्टेज की सीढ़ी पर ऊपर
-4:33 कदम 4: वोल्टेज नीचे
-5:38 असल में सफ़र कौन करता है?
-6:50 कदम 5: चार्जर
-7:44 सारांश
+1:58 कदम 2: गर्मी से गति
+3:48 कदम 3: वोल्टेज की सीढ़ी पर ऊपर
+4:54 कदम 4: वोल्टेज नीचे
+6:08 असल में सफ़र कौन करता है?
+7:26 कदम 5: चार्जर
+8:31 सारांश
 
 फ़ुटेज और फ़ोटो क्रेडिट
 Stock footage and photos: Pixabay (Pixabay Content License).
 ```
 
-**Tags:** बिजली घर तक कैसे पहुँचती है, परमाणु ऊर्जा समझाई, परमाणु बिजलीघर कैसे काम करता है, पावर ग्रिड समझाया, ट्रांसमिशन लाइन, हाई वोल्टेज क्यों, स्टेप अप ट्रांसफ़ॉर्मर, इलेक्ट्रॉन ड्रिफ़्ट वेलोसिटी, अल्टरनेटिंग करंट, 120 240 वोल्ट, ट्रांसमिशन लॉस, फ़ोन चार्जर कैसे काम करता है, the hidden grid
+**Tags:** बिजली घर तक कैसे पहुँचती है, परमाणु ऊर्जा समझाई, परमाणु बिजलीघर कैसे काम करता है, पावर ग्रिड समझाया, ट्रांसमिशन लाइन, हाई वोल्टेज क्यों, स्टेप अप ट्रांसफ़ॉर्मर, इलेक्ट्रॉन ड्रिफ़्ट वेलोसिटी, अल्टरनेटिंग करंट, 120 240 वोल्ट, ट्रांसमिशन लॉस, फ़ोन चार्जर कैसे काम करता है

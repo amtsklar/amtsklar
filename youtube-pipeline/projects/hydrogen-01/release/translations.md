@@ -6,25 +6,25 @@ Source: metadata.md (English). Title based on English option 1. Source titles, U
 
 **Title**
 
-Hidrógeno: dónde tiene sentido y dónde NO
+Metes 100, recuperas 28: el VIAJE DE IDA Y VUELTA del hidrógeno
 
 **Description**
 
 ```
-Convierte electricidad en hidrógeno y de vuelta en electricidad, y una prueba de un laboratorio nacional recuperó solo entre el 28 y el 35 por ciento. Una batería de red devuelve cerca del 82.
+Convierte electricidad en hidrógeno y de vuelta en electricidad: en una prueba de un laboratorio nacional se recuperó solo entre el 28 % y el 35 %. Una batería de red devuelve cerca del 82 %.
 Entonces, ¿dónde tiene sentido el hidrógeno? Seguimos al electrón desde el enchufe hasta el electrolizador, el tanque de combustible, el campo fertilizado y la acería.
 
 En este video:
 - Por qué el hidrógeno es un portador de energía, no una fuente de energía
 - Cómo EE. UU. produce unos 10 millones de toneladas métricas al año, sobre todo a partir de gas natural
-- Hidrógeno gris, azul y verde, y por qué el DOE no usa los colores
+- Hidrógeno gris, azul y verde, y por qué el Departamento de Energía (DOE) no usa los colores
 - Las pérdidas de la electrólisis y el problema de ida y vuelta frente a las baterías
 - Por qué al hidrógeno le cuesta en autos y en la calefacción del hogar
 - Donde la molécula importa: refinerías, amoníaco/fertilizantes, acero
-- Los "quizás": combustibles marítimos, camiones pesados, almacenamiento de larga duración
+- Los «quizás»: combustibles marítimos, camiones pesados, almacenamiento de larga duración
 - Los polos de hidrógeno de EE. UU. y la estrategia nacional
 
-Fuentes (títulos originales en inglés):
+Fuentes (en inglés):
 NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
 EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
 EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
@@ -49,14 +49,14 @@ Solo con fines educativos; no es asesoría financiera. El creador invierte en el
 #hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
 
 CAPÍTULOS
-0:00 Intro
-1:00 Qué es el hidrógeno
-1:43 Cómo lo produce EE. UU.
-3:10 La pérdida de la electrólisis
-3:53 El problema de ida y vuelta
-5:16 Donde la molécula importa
-7:19 La apuesta de EE. UU. por el hidrógeno
-8:04 Resumen
+0:00 Introducción
+1:10 Qué es el hidrógeno
+1:51 Cómo lo produce EE. UU.
+3:19 La pérdida de la electrólisis
+4:05 El problema de ida y vuelta
+5:36 Donde la molécula importa
+7:44 La apuesta de EE. UU. por el hidrógeno
+8:32 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
@@ -261,17 +261,17 @@ hydrogène expliqué, hydrogène vert, hydrogène bleu, hydrogène gris, électr
 
 **Title**
 
-हाइड्रोजन: कहाँ यह काम का है और कहाँ बिल्कुल नहीं
+100 डालिए, 28 वापस पाइए: हाइड्रोजन का राउंड ट्रिप
 
 **Description**
 
 ```
-बिजली को हाइड्रोजन में बदलिए और फिर वापस बिजली में, तो एक अमेरिकी नेशनल लैब के टेस्ट में सिर्फ़ 28 से 35 प्रतिशत ही वापस मिला। एक ग्रिड बैटरी लगभग 82 प्रतिशत लौटाती है।
+बिजली को हाइड्रोजन में बदलिए और फिर वापस बिजली में, तो एक नेशनल लैब के टेस्ट में सिर्फ़ 28 से 35 प्रतिशत ही वापस मिला। एक ग्रिड बैटरी लगभग 82 लौटाती है।
 तो हाइड्रोजन असल में कहाँ समझदारी है? हम इलेक्ट्रॉन के पीछे चलते हैं: सॉकेट से इलेक्ट्रोलाइज़र, फ़्यूल टैंक, उर्वरक वाले खेत और स्टील मिल तक।
 
 इस वीडियो में:
 - हाइड्रोजन ऊर्जा का वाहक क्यों है, ऊर्जा का स्रोत नहीं
-- अमेरिका हर साल लगभग 10 मिलियन मीट्रिक टन कैसे बनाता है, ज़्यादातर प्राकृतिक गैस से
+- अमेरिका हर साल लगभग 10 मिलियन मीट्रिक टन कैसे बनाता है, ज़्यादातर नेचुरल गैस से
 - ग्रे, ब्लू और ग्रीन हाइड्रोजन, और DOE रंगों का इस्तेमाल क्यों नहीं करता
 - इलेक्ट्रोलिसिस के नुकसान और बैटरियों के मुकाबले राउंड-ट्रिप की समस्या
 - कारों और घरेलू हीटिंग में हाइड्रोजन क्यों पिछड़ती है
@@ -279,7 +279,7 @@ hydrogène expliqué, hydrogène vert, hydrogène bleu, hydrogène gris, électr
 - "शायद" वाले इस्तेमाल: जहाज़ों के ईंधन, भारी ट्रक, लंबी अवधि का स्टोरेज
 - अमेरिका के हाइड्रोजन हब और राष्ट्रीय रणनीति
 
-स्रोत (मूल अंग्रेज़ी शीर्षक):
+स्रोत (अंग्रेज़ी में):
 NREL / DOE Hydrogen and Fuel Cell Technologies Office, H2IQ Hour: ARIES Flatirons Campus MW-Scale Hydrogen System Research (July 2024) - https://www.energy.gov/sites/default/files/2024-07/h2iqhour-07252024.pdf
 EIA, Utility-scale batteries and pumped storage return about 80% of the electricity they store (2021) - https://www.eia.gov/todayinenergy/detail.php?id=46756
 EIA, Hydrogen explained - https://www.eia.gov/energyexplained/hydrogen/
@@ -298,20 +298,20 @@ U.S. DOE, Energy Saver Guide (2022) - https://www.energy.gov/sites/default/files
 U.S. DOE Hydrogen and Fuel Cell Technologies Office, Progress in Hydrogen and Fuel Cells (2025) - https://www.energy.gov/sites/default/files/2025-03/progress-hydrogen-fuel-cells-2025.pdf
 IEA, Global Hydrogen Review 2025 (CC BY 4.0) - https://iea.blob.core.windows.net/assets/a6c466dd-b6f0-44bd-a60a-6940eccfb1c3/GlobalHydrogenReview2025.pdf
 
-नैरेशन AI से बनाया गया है; स्क्रिप्ट की रिसर्च और समीक्षा एक इंसान ने की है।
-सिर्फ़ शिक्षा के लिए, यह वित्तीय सलाह नहीं है। क्रिएटर ऊर्जा क्षेत्र में निवेश करता है।
+नैरेशन AI से बनाया गया है; स्क्रिप्ट पर रिसर्च और उसकी समीक्षा एक इंसान ने की है।
+यह केवल शिक्षा के लिए है, वित्तीय सलाह नहीं। क्रिएटर ऊर्जा क्षेत्र में निवेश करते हैं।
 
 #hydrogen #greenhydrogen #energystorage #electrolysis #howitworks
 
 चैप्टर
 0:00 परिचय
-1:00 हाइड्रोजन क्या है
-1:43 अमेरिका इसे कैसे बनाता है
-3:10 इलेक्ट्रोलिसिस का नुकसान
-3:53 राउंड-ट्रिप की समस्या
-5:16 जहाँ अणु मायने रखता है
-7:19 अमेरिका का हाइड्रोजन दांव
-8:04 सारांश
+1:10 हाइड्रोजन क्या है
+1:51 अमेरिका इसे कैसे बनाता है
+3:19 इलेक्ट्रोलिसिस का नुकसान
+4:05 राउंड-ट्रिप की समस्या
+5:36 जहाँ अणु मायने रखता है
+7:44 अमेरिका का हाइड्रोजन दांव
+8:32 सारांश
 
 फ़ुटेज और फ़ोटो क्रेडिट
 Stock footage and photos: Pixabay (Pixabay Content License).

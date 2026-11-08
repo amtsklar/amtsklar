@@ -48,7 +48,7 @@ de Información Energética),
 11
 00:00:38,937 --> 00:00:42,252
 en 2019 las baterías de red
-del país devolvían un 82 %.
+del país devolvían un 82 %.
 
 12
 00:00:42,577 --> 00:00:45,317
@@ -142,7 +142,7 @@ al convertirse en energía útil.
 
 32
 00:01:51,351 --> 00:01:56,532
-EE. UU. ya produce mucho: unos
+EE. UU. ya produce mucho: unos
 10 millones de toneladas métricas
 
 33
@@ -153,11 +153,11 @@ al año, según la estrategia de hidrógeno
 34
 00:02:01,627 --> 00:02:05,790
 El Departamento de Energía dice
-que cerca del 95 % del hidrógeno
+que cerca del 95 % del hidrógeno
 
 35
 00:02:05,790 --> 00:02:09,953
-de EE. UU. se produce a partir de
+de EE. UU. se produce a partir de
 gas natural, en grandes plantas
 
 36
@@ -187,7 +187,7 @@ Ese dióxido de carbono se acumula.
 41
 00:02:32,818 --> 00:02:38,826
 Según la estrategia 2023 del Departamento
-de Energía, el hidrógeno de EE. UU. emite
+de Energía, el hidrógeno de EE. UU. emite
 
 42
 00:02:38,826 --> 00:02:44,289
@@ -231,7 +231,7 @@ de Energía) dice que el hidrógeno
 50
 00:03:14,506 --> 00:03:19,127
 de bajas emisiones aún era menos del
-1 % de la producción mundial en 2024.
+1 % de la producción mundial en 2024.
 
 51
 00:03:19,958 --> 00:03:22,164
@@ -249,7 +249,7 @@ electricidad por kilogramo de hidrógeno.
 
 54
 00:03:35,538 --> 00:03:38,585
-Solo cerca del 61 % de
+Solo cerca del 61 % de
 esa energía eléctrica
 
 55
@@ -259,7 +259,7 @@ queda almacenada en el hidrógeno.
 56
 00:03:42,446 --> 00:03:47,798
 Las metas a largo plazo del
-departamento rondan el 70 %.
+departamento rondan el 70 %.
 
 57
 00:03:48,191 --> 00:03:50,304
@@ -369,7 +369,7 @@ que la energía que consume.
 79
 00:05:13,043 --> 00:05:16,874
 Convierte esa misma electricidad
-en hidrógeno, y casi el 40 %
+en hidrógeno, y casi el 40 %
 
 80
 00:05:16,874 --> 00:05:20,706
@@ -442,7 +442,7 @@ del aire da amoníaco, y en
 
 95
 00:06:09,503 --> 00:06:13,375
-EE. UU., el 88 % del
+EE. UU., el 88 % del
 amoníaco va a fertilizantes.
 
 96
@@ -453,7 +453,7 @@ es el hidrógeno de tu mesa.
 97
 00:06:18,329 --> 00:06:21,115
 En el mundo, el amoníaco
-consume cerca del 60 %
+consume cerca del 60 %
 
 98
 00:06:21,115 --> 00:06:23,902
@@ -467,7 +467,7 @@ Departamento de Energía, las plantas
 100
 00:06:28,963 --> 00:06:33,329
 de amoníaco podrían reducir
-sus emisiones en más del 90 %.
+sus emisiones en más del 90 %.
 
 101
 00:06:33,725 --> 00:06:35,188
@@ -475,7 +475,7 @@ Sigue el acero.
 
 102
 00:06:35,466 --> 00:06:38,940
-Cerca del 70 % del acero
+Cerca del 70 % del acero
 estadounidense se fabrica
 
 103
@@ -505,7 +505,7 @@ de Energía, las emisiones
 108
 00:06:56,890 --> 00:07:00,682
 de ciclo de vida del acero nuevo
-bajarían entre un 40 y un 70 %.
+bajarían entre un 40 y un 70 %.
 
 109
 00:07:01,070 --> 00:07:02,614
@@ -543,7 +543,7 @@ durante días o incluso semanas,
 116
 00:07:24,512 --> 00:07:28,681
 dice la EIA, mientras que en 2019 la
-batería de red promedio de EE. UU.
+batería de red promedio de EE. UU.
 
 117
 00:07:28,681 --> 00:07:32,092
@@ -632,7 +632,7 @@ portador, no una fuente.
 
 135
 00:08:37,293 --> 00:08:41,722
-EE. UU. produce la mayor parte a
+EE. UU. produce la mayor parte a
 partir de gas natural, y convertir
 
 136

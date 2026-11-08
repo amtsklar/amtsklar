@@ -13,18 +13,18 @@ Por qué los aerogeneradores SE DETIENEN en los días de más viento
 ### Description
 
 ```
-En el día más ventoso del mes, algunos aerogeneradores están completamente quietos. Parece un desperdicio. Por lo general, es la máquina, la red o los ingenieros diciendo "ahora no".
+En el día más ventoso del mes, algunos aerogeneradores están completamente quietos. Parece un desperdicio. Por lo general, es la máquina, la red o los ingenieros diciendo «ahora no».
 Seguimos el viento desde la pala hasta la línea eléctrica y repasamos cada razón por la que una turbina se detiene.
 
 En este video:
-- Velocidad de arranque (cut-in) y por qué cuenta el viento a la altura del buje
+- Velocidad de arranque y por qué cuenta el viento a la altura del buje
 - Factor de planta: lo que realmente produjo la flota eólica de EE. UU. en 2025
 - La ley del cubo: el doble de viento, ocho veces la potencia
 - La curva de potencia: velocidad nominal, puesta en bandera y velocidad de corte en tormentas
-- Recorte de generación (curtailment): líneas saturadas, precios negativos y dónde ocurre más
+- Recorte de generación: líneas saturadas, precios negativos y dónde ocurre más
 - Hielo en las palas, murciélagos, águilas y mantenimiento
 
-Fuentes:
+Fuentes (en inglés):
 EIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php
 Lawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report
@@ -41,18 +41,18 @@ Adams, Gulka & Williams, A review of the effectiveness of operational curtailmen
 McClure et al., Eagle fatalities are reduced by automated curtailment of wind turbines (Journal of Applied Ecology, 2021) - https://doi.org/10.1111/1365-2664.13831
 
 La narración fue generada con IA; el guion fue investigado y revisado por una persona.
-Solo con fines educativos, no es asesoría financiera. El creador invierte en el sector energético.
+Solo con fines educativos; no es asesoría financiera. El creador invierte en el sector energético.
 
 #windenergy #windturbine #powergrid #howitworks #electricity
 
 CAPÍTULOS
-0:00 Intro
-1:05 Falta de viento
-2:04 La ley del cubo
-2:42 Demasiado viento
-4:33 La red dice "ahora no"
-6:17 Hielo y fauna
-7:19 Resumen
+0:00 Introducción
+1:10 Falta de viento
+2:16 La ley del cubo
+3:00 Demasiado viento
+5:07 La red dice «ahora no»
+7:08 Hielo y fauna
+8:27 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
@@ -260,10 +260,10 @@ Language code: hi
 - कैपेसिटी फ़ैक्टर: 2025 में अमेरिकी विंड फ़्लीट ने असल में कितना उत्पादन किया
 - क्यूब नियम: दोगुनी हवा, आठ गुना शक्ति
 - पावर कर्व: रेटेड स्पीड, फ़ेदरिंग और तूफ़ान में कट-आउट
-- कर्टेलमेंट (उत्पादन कटौती): भरी हुई लाइनें, नेगेटिव कीमतें और यह सबसे ज़्यादा कहाँ होता है
+- कर्टेलमेंट: भरी हुई लाइनें, नेगेटिव कीमतें और यह सबसे ज़्यादा कहाँ होता है
 - ब्लेड पर बर्फ़, चमगादड़, ईगल और मेंटेनेंस
 
-स्रोत:
+स्रोत (अंग्रेज़ी में):
 EIA, Electricity explained: Electricity in the U.S. (2025 shares) - https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php
 EIA, Wind explained: Electricity generation from wind (2025) - https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php
 Lawrence Berkeley National Laboratory / U.S. DOE, Land-Based Wind Energy Technology Data Update: 2026 Edition (figure file and data file) - https://eta-publications.lbl.gov/research-areas/land-based-wind-market-report
@@ -286,12 +286,12 @@ McClure et al., Eagle fatalities are reduced by automated curtailment of wind tu
 
 चैप्टर
 0:00 परिचय
-1:05 हवा कम है
-2:04 क्यूब नियम
-2:42 हवा बहुत ज़्यादा है
-4:33 ग्रिड कहता है: अभी नहीं
-6:17 बर्फ़ और वन्यजीव
-7:19 सारांश
+1:10 हवा कम है
+2:16 क्यूब नियम
+3:00 हवा बहुत ज़्यादा है
+5:07 ग्रिड कहता है: अभी नहीं
+7:08 बर्फ़ और वन्यजीव
+8:27 सारांश
 
 फ़ुटेज और फ़ोटो क्रेडिट
 Stock footage and photos: Pixabay (Pixabay Content License).

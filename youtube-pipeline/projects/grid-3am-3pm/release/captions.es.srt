@@ -1,11 +1,11 @@
 1
 00:00:00,000 --> 00:00:02,020
-Conecta tu celular a las 3 a. m.
+Conecta tu celular a las 3 a. m.
 
 2
 00:00:02,299 --> 00:00:05,074
 Luego conéctalo al mismo
-enchufe a las 3 p. m.
+enchufe a las 3 p. m.
 
 3
 00:00:05,770 --> 00:00:08,127
@@ -27,7 +27,7 @@ eólico en las llanuras.
 7
 00:00:17,918 --> 00:00:22,504
 Por la tarde, paneles solares que
-a las 3 a. m. estaban a oscuras.
+a las 3 a. m. estaban a oscuras.
 
 8
 00:00:22,904 --> 00:00:26,845
@@ -70,7 +70,7 @@ Información Energética), el consumo
 
 17
 00:00:52,371 --> 00:00:56,527
-eléctrico de EE. UU. suele tocar
+eléctrico de EE. UU. suele tocar
 fondo hacia las cinco de la mañana,
 
 18
@@ -110,11 +110,11 @@ plena potencia día y noche.
 25
 00:01:21,738 --> 00:01:25,163
 En 2025, la central nuclear
-promedio de EE. UU. operó
+promedio de EE. UU. operó
 
 26
 00:01:25,163 --> 00:01:28,588
-al 91 % de su producción máxima posible,
+al 91 % de su producción máxima posible,
 
 27
 00:01:28,588 --> 00:01:32,013
@@ -122,7 +122,7 @@ más que cualquier otro tipo de central.
 
 28
 00:01:32,965 --> 00:01:36,105
-La nuclear aportó cerca del 18 % de
+La nuclear aportó cerca del 18 % de
 
 29
 00:01:36,105 --> 00:01:39,246
@@ -160,12 +160,12 @@ los datos horarios de red de la EIA:
 36
 00:01:59,957 --> 00:02:04,641
 en promedio, la producción eólica
-equivalió a cerca del 46 % de la demanda
+equivalió a cerca del 46 % de la demanda
 
 37
 00:02:04,641 --> 00:02:08,474
-a las 2 a. m., pero solo a
-cerca del 31 % al mediodía.
+a las 2 a. m., pero solo a
+cerca del 31 % al mediodía.
 
 38
 00:02:09,426 --> 00:02:13,280
@@ -175,7 +175,7 @@ seguidas antes del amanecer
 39
 00:02:13,280 --> 00:02:17,135
 del 28 de diciembre de 2025,
-equivalió a cerca del 80 %.
+equivalió a cerca del 80 %.
 
 40
 00:02:17,514 --> 00:02:21,816
@@ -214,7 +214,7 @@ plantas solares de la red
 47
 00:02:46,035 --> 00:02:50,801
 principal de Texas promediaron 24
-gigavatios entre las 12 y la 1 p. m.
+gigavatios entre las 12 y la 1 p. m.
 
 48
 00:02:51,498 --> 00:02:54,342
@@ -232,7 +232,7 @@ de mediodía de la red de Texas
 51
 00:03:01,863 --> 00:03:06,658
 en el verano de 2023, y el
-37 % en el verano de 2025.
+37 % en el verano de 2025.
 
 52
 00:03:07,038 --> 00:03:09,302
@@ -255,7 +255,7 @@ meses de 2026 generó más
 
 56
 00:03:21,562 --> 00:03:24,361
-que el gas natural en el 82 % de los días.
+que el gas natural en el 82 % de los días.
 
 57
 00:03:25,209 --> 00:03:27,310
@@ -351,7 +351,7 @@ recortó 3,4 millones de megavatios-hora
 
 78
 00:04:30,236 --> 00:04:35,716
-de eólica y solar, y el 93 % fue solar.
+de eólica y solar, y el 93 % fue solar.
 
 79
 00:04:36,095 --> 00:04:37,569
@@ -407,7 +407,7 @@ promedio unos 9100 megavatios
 
 91
 00:05:13,225 --> 00:05:16,588
-en la hora que termina a las 8 p. m.
+en la hora que termina a las 8 p. m.
 
 92
 00:05:16,982 --> 00:05:20,930
@@ -438,7 +438,7 @@ mayorista promedio en los principales
 
 98
 00:05:39,539 --> 00:05:44,067
-mercados eléctricos de EE. UU. en 2023
+mercados eléctricos de EE. UU. en 2023
 fue de 36 dólares por megavatio-hora.
 
 99
@@ -514,7 +514,7 @@ California, los precios fueron
 
 115
 00:06:37,462 --> 00:06:41,210
-negativos cerca del 7 %
+negativos cerca del 7 %
 del tiempo en 2025, según
 
 116
@@ -596,12 +596,12 @@ inteligentes que miden al menos cada hora.
 
 133
 00:07:42,905 --> 00:07:47,394
-En 2022, cerca del 73 % de
+En 2022, cerca del 73 % de
 los medidores residenciales
 
 134
 00:07:47,394 --> 00:07:51,322
-de EE. UU. eran
+de EE. UU. eran
 inteligentes, según la EIA.
 
 135
@@ -648,7 +648,7 @@ Resumen rápido.
 
 145
 00:08:20,362 --> 00:08:23,637
-A las 3 a. m., la demanda
+A las 3 a. m., la demanda
 está cerca de su mínimo,
 
 146
@@ -662,7 +662,7 @@ suele estar en su máximo.
 
 148
 00:08:30,159 --> 00:08:33,561
-A las 3 p. m., la solar cubre cada vez más
+A las 3 p. m., la solar cubre cada vez más
 
 149
 00:08:33,561 --> 00:08:36,962

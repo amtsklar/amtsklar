@@ -49,19 +49,19 @@ U.S. DOE Alternative Fuels Data Center, Charging Electric Vehicles at Home - htt
 EIA, How many smart meters are installed in the United States? (FAQ) - https://www.eia.gov/tools/faqs/faq.php?id=108&t=3
 
 La narración fue generada con IA; el guion fue investigado y revisado por una persona.
-Solo con fines educativos, no es asesoría financiera. El creador invierte en el sector energético.
+Solo con fines educativos; no es asesoría financiera. El creador invierte en el sector energético.
 
 #powergrid #electricity #duckcurve #solarenergy #howitworks
 
 CAPÍTULOS
 0:00 Introducción
-0:44 3 a. m.: el turno de noche
-2:15 3 p. m.: el turno solar
-3:09 El problema del atardecer
-4:18 Baterías: llevar el mediodía a la noche
-4:51 Por qué oscilan los precios
-6:30 Tu enchufe, tu horario
-7:31 Resumen
+0:46 3 a. m.: el turno de noche
+2:26 3 p. m.: el turno solar
+3:25 El problema del atardecer
+4:50 Baterías: llevar el mediodía a la noche
+5:21 Por qué oscilan los precios
+7:12 Tu enchufe, tu horario
+8:18 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
 Stock footage and photos: Pixabay (Pixabay Content License).
@@ -270,15 +270,15 @@ Language code: hi
 **Description:**
 
 ```
-रात 3 बजे और दोपहर 3 बजे, आपकी दीवार का एक ही सॉकेट बिल्कुल अलग-अलग पावर प्लांट से बिजली पा सकता है।
+रात 3 बजे और दोपहर 3 बजे, आपकी दीवार के एक ही सॉकेट को बिल्कुल अलग-अलग पावर प्लांट बिजली दे सकते हैं।
 हम अमेरिकी ग्रिड पर एक दिन को घंटे-दर-घंटे देखते हैं: रात में हवा और न्यूक्लियर, दोपहर में सोलर, और बीच में शाम का तेज़ रैंप।
 
 इस वीडियो में:
 - अमेरिका में बिजली की मांग सुबह होने से पहले सबसे कम क्यों होती है, और बेसलोड क्या है
 - पूरी क्षमता पर चलता न्यूक्लियर, और ग्रेट प्लेन्स की हवा रात में सबसे तेज़ क्यों होती है
-- टेक्सास और कैलिफ़ोर्निया में सोलर ने दोपहर पर कैसे कब्ज़ा किया
+- टेक्सास और कैलिफ़ोर्निया में सोलर ने दोपहर का समय कैसे संभाल लिया
 - नेट लोड और डक कर्व, आसान भाषा में
-- बैटरियाँ जो दोपहर की सोलर बिजली को शाम तक ले जाती हैं
+- बैटरियाँ, जो दोपहर की सोलर बिजली को शाम तक ले जाती हैं
 - होलसेल कीमतें क्यों ऊपर-नीचे होती हैं, और कैसे नेगेटिव हो सकती हैं
 - आपका समय क्यों मायने रखता है (EV चार्जिंग, टाइम-ऑफ़-यूज़ रेट)
 
@@ -307,20 +307,20 @@ EIA, Hourly Electric Grid Monitor - https://www.eia.gov/electricity/gridmonitor/
 U.S. DOE Alternative Fuels Data Center, Charging Electric Vehicles at Home - https://afdc.energy.gov/fuels/electricity-charging-home
 EIA, How many smart meters are installed in the United States? (FAQ) - https://www.eia.gov/tools/faqs/faq.php?id=108&t=3
 
-नैरेशन AI से बनाया गया है; स्क्रिप्ट पर रिसर्च और समीक्षा एक इंसान ने की है।
+नैरेशन AI से बनाया गया है; स्क्रिप्ट पर रिसर्च और उसकी समीक्षा एक इंसान ने की है।
 यह केवल शिक्षा के लिए है, वित्तीय सलाह नहीं। क्रिएटर ऊर्जा क्षेत्र में निवेश करते हैं।
 
 #powergrid #electricity #duckcurve #solarenergy #howitworks
 
 चैप्टर
 0:00 परिचय
-0:44 रात 3 बजे: नाइट शिफ़्ट
-2:15 दोपहर 3 बजे: सोलर शिफ़्ट
-3:09 सूर्यास्त की समस्या
-4:18 बैटरियाँ: दोपहर को रात तक ले जाना
-4:51 कीमतें क्यों बदलती हैं
-6:30 आपका प्लग, आपका समय
-7:31 सारांश
+0:46 रात 3 बजे: नाइट शिफ़्ट
+2:26 दोपहर 3 बजे: सोलर शिफ़्ट
+3:25 सूर्यास्त की समस्या
+4:50 बैटरियाँ: दोपहर को रात तक ले जाना
+5:21 कीमतें क्यों बदलती हैं
+7:12 आपका प्लग, आपका समय
+8:18 सारांश
 
 फ़ुटेज और फ़ोटो क्रेडिट
 Stock footage and photos: Pixabay (Pixabay Content License).
