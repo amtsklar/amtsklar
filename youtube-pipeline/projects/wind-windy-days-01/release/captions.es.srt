@@ -150,16 +150,16 @@ flota eólica de EE. UU. tuvo
 
 34
 00:01:51,408 --> 00:01:54,885
-un factor de planta del 34 % en 2025.
+un factor de capacidad del 34 % en 2025.
 
 35
 00:01:55,559 --> 00:02:00,029
 Los proyectos construidos en
-2024 llegaron a cerca del 37.
+2024 llegaron a cerca del 37 %.
 
 36
 00:02:00,420 --> 00:02:04,116
-El factor de planta es lo
+El factor de capacidad: lo
 producido realmente, dividido entre
 
 37
@@ -283,7 +283,7 @@ viento no añade potencia.
 
 63
 00:03:36,609 --> 00:03:39,581
-El sistema de pitch gira
+El sistema de paso gira
 las palas para captar
 
 64
@@ -298,8 +298,8 @@ la velocidad de corte.
 
 66
 00:03:45,547 --> 00:03:49,065
-En esa turbina de referencia,
-es de unas 56 millas por hora.
+En la de referencia, es de
+unas 56 millas por hora.
 
 67
 00:03:49,762 --> 00:03:54,202
@@ -308,8 +308,8 @@ Energía, los controladores suelen
 
 68
 00:03:54,202 --> 00:03:58,086
-apagar las turbinas cuando
-el viento pasa de 55 a 65.
+apagar las turbinas cuando el
+viento supera las 55 a 65 millas.
 
 69
 00:03:58,468 --> 00:04:00,314
@@ -397,7 +397,7 @@ Así que la hora más ventosa del año
 
 87
 00:05:01,144 --> 00:05:03,100
-puede ser una hora en cero.
+puede dejar una turbina en cero.
 
 88
 00:05:03,704 --> 00:05:04,946
@@ -474,7 +474,7 @@ precios mayoristas locales
 103
 00:05:57,570 --> 00:06:01,108
 pueden ser negativos: el vendedor
-paga para que le compren.
+paga a quien se la lleve.
 
 104
 00:06:01,805 --> 00:06:04,370
@@ -540,7 +540,8 @@ Más viento en los mismos cables
 
 118
 00:06:47,474 --> 00:06:49,779
-es más horas con los cables llenos.
+implica más horas
+con cables llenos.
 
 119
 00:06:50,161 --> 00:06:51,856
@@ -587,7 +588,7 @@ grosor cerca de las puntas, y
 128
 00:07:25,686 --> 00:07:30,168
 pese al viento fuerte, las turbinas
-heladas giraban más lento, solían pararse
+giraban más lento, solían pararse
 
 129
 00:07:30,168 --> 00:07:33,836

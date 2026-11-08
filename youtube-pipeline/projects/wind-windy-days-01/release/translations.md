@@ -18,7 +18,7 @@ Seguimos el viento desde la pala hasta la línea eléctrica y repasamos cada raz
 
 En este video:
 - Velocidad de arranque y por qué cuenta el viento a la altura del buje
-- Factor de planta: lo que realmente produjo la flota eólica de EE. UU. en 2025
+- Factor de capacidad: lo que realmente produjo la flota eólica de EE. UU. en 2025
 - La ley del cubo: el doble de viento, ocho veces la potencia
 - La curva de potencia: velocidad nominal, puesta en bandera y velocidad de corte en tormentas
 - Recorte de generación: líneas saturadas, precios negativos y dónde ocurre más
@@ -55,12 +55,12 @@ CAPÍTULOS
 8:27 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
-Stock footage and photos: Pixabay (Pixabay Content License).
+Videos y fotos de archivo: Pixabay (Pixabay Content License).
 ```
 
 ### Tags
 
-aerogeneradores, energía eólica explicada, por qué se detienen los aerogeneradores, curva de potencia, velocidad de corte, velocidad de arranque, recorte de generación, factor de planta, aerogenerador en tormenta, precios negativos de electricidad, hielo en aerogeneradores, murciélagos y aerogeneradores, red eléctrica explicada, cómo funciona un aerogenerador, líneas de transmisión
+aerogeneradores, energía eólica explicada, por qué se detienen los aerogeneradores, curva de potencia, velocidad de corte, velocidad de arranque, recorte de generación, factor de capacidad, aerogenerador en tormenta, precios negativos de electricidad, hielo en aerogeneradores, murciélagos y aerogeneradores, red eléctrica explicada, cómo funciona un aerogenerador, líneas de transmisión
 
 ## German
 

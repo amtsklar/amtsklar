@@ -59,7 +59,7 @@ CAPÍTULOS
 8:32 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
-Stock footage and photos: Pixabay (Pixabay Content License).
+Videos y fotos de archivo: Pixabay (Pixabay Content License).
 ```
 
 **Tags**

@@ -64,7 +64,7 @@ CAPÍTULOS
 8:18 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
-Stock footage and photos: Pixabay (Pixabay Content License).
+Videos y fotos de archivo: Pixabay (Pixabay Content License).
 ```
 
 ## German

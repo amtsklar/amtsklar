@@ -60,7 +60,7 @@ CAPÍTULOS
 8:31 Resumen
 
 CRÉDITOS DE VIDEO Y FOTOS
-Stock footage and photos: Pixabay (Pixabay Content License).
+Videos y fotos de archivo: Pixabay (Pixabay Content License).
 ```
 
 **Tags:** cómo llega la electricidad a tu casa, energía nuclear explicada, cómo funciona una planta nuclear, red eléctrica explicada, líneas de transmisión, por qué alta tensión, transformador elevador, transformador de poste, velocidad de deriva de electrones, corriente alterna explicada, 120 240 voltios, pérdidas de transmisión y distribución, cómo funciona un cargador, other end of the wire

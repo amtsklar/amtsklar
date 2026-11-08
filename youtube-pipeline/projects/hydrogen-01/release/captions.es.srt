@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,601
-Mete 100 unidades de electricidad.
+Pon 100 unidades de electricidad.
 
 2
 00:00:02,833 --> 00:00:04,598
@@ -28,8 +28,8 @@ y de vuelta a electricidad.
 
 7
 00:00:24,252 --> 00:00:28,095
-Fue un sistema de investigación,
-funcionando a plena potencia.
+Fue un sistema de prueba
+de investigación, a plena potencia.
 
 8
 00:00:28,606 --> 00:00:31,961
@@ -56,11 +56,11 @@ Se llama eficiencia de ida y vuelta.
 
 13
 00:00:45,693 --> 00:00:47,742
-¿Por qué el gobierno federal apostó
+¿Por qué el gobierno federal puso
 
 14
 00:00:47,742 --> 00:00:49,791
-miles de millones al hidrógeno?
+miles de millones en el hidrógeno?
 
 15
 00:00:50,174 --> 00:00:52,717
@@ -196,7 +196,7 @@ de gases de efecto invernadero al año.
 
 43
 00:02:44,682 --> 00:02:48,210
-Captura la mayor parte de ese
+Capta la mayor parte de ese
 carbono, guárdalo bajo tierra,
 
 44
@@ -225,8 +225,8 @@ le suele llamar hidrógeno verde.
 
 49
 00:03:09,885 --> 00:03:14,506
-En todo caso, la IEA (Agencia Internacional
-de Energía) dice que el hidrógeno
+En todo caso, según la AIE (Agencia
+Internacional de Energía), el hidrógeno
 
 50
 00:03:14,506 --> 00:03:19,127
@@ -418,7 +418,7 @@ Las refinerías son un caso.
 
 90
 00:05:51,724 --> 00:05:54,649
-Lo usan para quitar el
+Lo usan para quitar
 azufre de los combustibles.
 
 91
@@ -494,13 +494,13 @@ depende del coque y del gas natural.
 
 106
 00:06:49,304 --> 00:06:53,097
-Usa mejor hidrógeno limpio para
-sacar el oxígeno del mineral,
+Si en cambio usas hidrógeno
+limpio para quitarle el oxígeno,
 
 107
 00:06:53,097 --> 00:06:56,890
-y, según el Departamento
-de Energía, las emisiones
+según el Departamento de
+Energía, las emisiones
 
 108
 00:06:56,890 --> 00:07:00,682
@@ -542,8 +542,8 @@ durante días o incluso semanas,
 
 116
 00:07:24,512 --> 00:07:28,681
-dice la EIA, mientras que en 2019 la
-batería de red promedio de EE. UU.
+dice la EIA, pero en 2019 la
+batería de red promedio de EE. UU.
 
 117
 00:07:28,681 --> 00:07:32,092
@@ -610,7 +610,7 @@ departamento canceló los fondos
 130
 00:08:21,924 --> 00:08:25,077
 de los polos de California
-y el Noroeste del Pacífico.
+y el Pacífico Noroeste.
 
 131
 00:08:25,437 --> 00:08:28,671

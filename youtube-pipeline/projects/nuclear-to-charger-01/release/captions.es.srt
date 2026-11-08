@@ -16,8 +16,8 @@ por las líneas eléctricas, y sigue.
 
 5
 00:00:11,583 --> 00:00:16,854
-Según la EIA (Administración de Información
-Energética), para cerca del 18 %
+Según la EIA (Administración de
+Información Energética), en cerca del 18 %
 
 6
 00:00:16,854 --> 00:00:22,125
@@ -90,8 +90,8 @@ en barras de combustible de 12 pies.
 
 22
 00:01:07,219 --> 00:01:10,690
-Cuando un átomo de uranio
-235 absorbe un neutrón lento,
+Cuando un átomo de
+uranio-235 absorbe un neutrón lento,
 
 23
 00:01:10,690 --> 00:01:14,162
@@ -145,7 +145,7 @@ el 91 % de su producción máxima posible.
 34
 00:01:51,137 --> 00:01:54,626
 La EIA lo llama factor de
-planta, y el de la nuclear
+capacidad, y el de la nuclear
 
 35
 00:01:54,626 --> 00:01:58,114
@@ -259,7 +259,7 @@ a una eficiencia de cerca del 33 %.
 
 59
 00:03:18,547 --> 00:03:22,193
-Así, unos dos tercios del calor
+Unos dos tercios del calor
 nunca se vuelven electricidad.
 
 60
@@ -437,7 +437,7 @@ Una de ellas te da los
 
 98
 00:05:39,440 --> 00:05:41,199
-120 voltios del enchufe común.
+120 voltios de enchufe común.
 
 99
 00:05:41,617 --> 00:05:45,267
@@ -468,7 +468,7 @@ La gran pérdida ocurre en la central.
 
 105
 00:06:04,671 --> 00:06:07,620
-La red en sí es bastante ahorradora.
+La red en sí es bastante eficiente.
 
 106
 00:06:08,460 --> 00:06:10,120

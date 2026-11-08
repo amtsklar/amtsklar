@@ -17,7 +17,8 @@ Pero, según dónde vivas, las centrales
 
 5
 00:00:11,409 --> 00:00:13,971
-del otro lado pueden ser totalmente otras.
+del otro lado pueden
+cambiar por completo.
 
 6
 00:00:14,412 --> 00:00:17,408
@@ -184,8 +185,8 @@ así que los operadores
 
 41
 00:02:21,816 --> 00:02:25,687
-reducen las turbinas para
-igualar oferta y demanda.
+bajan la potencia de las turbinas
+para igualar oferta y demanda.
 
 42
 00:02:26,517 --> 00:02:30,627
@@ -342,7 +343,7 @@ demanda, la panza puede
 76
 00:04:21,636 --> 00:04:24,187
 tener más solar de la
-que la red puede usar.
+que la red aprovecha.
 
 77
 00:04:24,756 --> 00:04:30,236
@@ -470,7 +471,7 @@ Con un precio negativo, los vendedores
 
 105
 00:06:05,991 --> 00:06:08,295
-pagan para que les compren su energía.
+pagan para que se lleven su energía.
 
 106
 00:06:08,695 --> 00:06:10,402
@@ -541,8 +542,8 @@ horas caras, cuando la red
 
 121
 00:07:00,338 --> 00:07:04,346
-recurre a centrales de punta, a
-menudo turbinas de gas ocasionales.
+usa centrales de punta, a menudo
+turbinas de gas de uso ocasional.
 
 122
 00:07:04,857 --> 00:07:08,613
@@ -568,7 +569,7 @@ mayoristas, pero tu horario sí importa.
 
 127
 00:07:20,929 --> 00:07:23,907
-Según el Departamento de
+Para el Departamento de
 Energía, la mayoría de los
 
 128
@@ -587,7 +588,7 @@ menos en ciertas horas y más en otras.
 
 131
 00:07:36,508 --> 00:07:39,548
-Funciona porque la mayoría
+Sirve porque la mayoría
 de hogares tiene medidores
 
 132
